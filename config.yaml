@@ -6,6 +6,7 @@ intro_image_positions:
   - above
   - left
   - right
+
 intro_backgrounds:
   - horizontal gradient
   - none
@@ -19,3 +20,12 @@ test_image_positions:
 
 image_styles:
   - blob behind
+
+header_styles:
+  - logo left cta right
+  - logo left cta top
+  - logo centered cta top
+
+footer_styles:
+  - simple
+  - large footer

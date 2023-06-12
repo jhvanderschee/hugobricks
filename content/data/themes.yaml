@@ -3,3 +3,5 @@ aqua:
   text_color: gray
   accent_color: blue
   secondary_accent_color: green
+  header_style: logo left cta right
+  footer_style: simple
