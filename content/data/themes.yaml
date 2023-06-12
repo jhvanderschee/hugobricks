@@ -1,0 +1,5 @@
+aqua:
+  font_family: Arial
+  text_color: gray
+  accent_color: blue
+  secondary_accent_color: green

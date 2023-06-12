@@ -1,0 +1,21 @@
+theme: aqua
+
+intro_image_positions: 
+  - below
+  - behind
+  - above
+  - left
+  - right
+intro_backgrounds:
+  - horizontal gradient
+  - none
+  - vertical gradient
+  - image with overlay
+
+
+test_image_positions:
+  - left
+  - right
+
+image_styles:
+  - blob behind
