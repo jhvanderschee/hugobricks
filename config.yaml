@@ -29,3 +29,7 @@ header_styles:
 footer_styles:
   - simple
   - large footer
+
+font_families: 
+  - Arial
+  - Signika
