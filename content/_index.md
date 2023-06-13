@@ -1,11 +1,8 @@
 ---
 title: Home
-bricks:
-  - intro
-  - imageleft
-  - imageright
-  - products
 ---
+
+{{< brick_intro >}}
 
 ## The Ultimate Starter Template You Need To Start Your Hugo Project
 
@@ -15,7 +12,8 @@ Get Started For Free
 
 ![](/uploads/image.jpg)
 
----
+{{< /brick_intro >}}
+{{< brick_image >}}
 
 ## What’s Included in Hugoplate
 
@@ -31,10 +29,13 @@ Hugoplate is a comprehensive starter template that includes everything you need 
 - Open-source and free for personal and commercial use
 
 
----
+{{< /brick_image >}}
+{{< brick_image >}}
 
 ## Our products
 
 ![](/uploads/image.jpg)
 
 Lorem ipsum
+
+{{< /brick_image >}}

@@ -5,14 +5,15 @@ bricks:
   - imageleft
   - products
 ---
-
+{{< brick_title >}}
 # Title of about 2
 
 ![](/uploads/image.jpg)
 
 Lorem ipsum
 
----
+{{< /brick_title >}}
+{{< brick_image >}}
 
 ## What’s Included in Hugoplate
 
@@ -27,12 +28,12 @@ Hugoplate is a comprehensive starter template that includes everything you need 
 - SEO-optimized for better search engine rankings
 - Open-source and free for personal and commercial use
 
----
-
+{{< /brick_image >}}
+{{< brick_products >}}
 ## Our products
 
 ![](/uploads/image.jpg)
 
 Lorem ipsum
 
----
+{{< /brick_products >}}

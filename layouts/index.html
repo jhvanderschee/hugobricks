@@ -1,8 +1,3 @@
 {{ define "content" }}
-    {{ $contenparts := split .RawContent "---" }}
-    {{ range $i,$c :=  $contenparts }}
-        
-        {{ partial "renderbricks.html" .}}
-
-    {{ end }}
+    {{ .Content }}
 {{ end }}

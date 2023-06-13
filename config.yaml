@@ -26,10 +26,4 @@ params:
   font_families: 
     - Arial
     - Signika
-  bricks:
-    - imageleft
-    - imageright
-    - intro
-    - title
-    - products
     
