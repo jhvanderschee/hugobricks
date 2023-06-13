@@ -1,12 +1,12 @@
 ---
 title: About 2
 bricks:
-  - intro
+  - title 
   - imageleft
   - products
 ---
 
-## Title of about 2
+# Title of about 2
 
 ![](/uploads/image.jpg)
 

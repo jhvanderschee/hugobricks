@@ -1,34 +1,35 @@
-hugobrick_theme: aqua
-
-intro_image_positions: 
-  - below
-  - behind
-  - above
-  - left
-  - right
-
-intro_backgrounds:
-  - horizontal gradient
-  - none
-  - vertical gradient
-  - image with overlay
-
-test_image_positions:
-  - left
-  - right
-
-image_styles:
-  - blob behind
-
-header_styles:
-  - logo left cta right
-  - logo left cta top
-  - logo centered cta top
-
-footer_styles:
-  - simple
-  - large footer
-
-font_families: 
-  - Arial
-  - Signika
+params:
+  hugobrick_theme: aqua
+  intro_image_positions: 
+    - below
+    - behind
+    - above
+    - left
+    - right
+  intro_backgrounds:
+    - horizontal gradient
+    - none
+    - vertical gradient
+    - image with overlay
+  test_image_positions:
+    - left
+    - right
+  image_styles:
+    - blob behind
+  header_styles:
+    - logo left cta right
+    - logo left cta top
+    - logo centered cta top
+  footer_styles:
+    - simple
+    - large footer
+  font_families: 
+    - Arial
+    - Signika
+  bricks:
+    - imageleft
+    - imageright
+    - intro
+    - title
+    - products
+    
