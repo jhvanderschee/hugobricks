@@ -30,6 +30,7 @@ Hugoplate is a comprehensive starter template that includes everything you need 
 
 {{< /brick_image >}}
 {{< brick_products >}}
+
 ## Our products
 
 ![](/uploads/image.jpg)
