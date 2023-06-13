@@ -1,4 +1,4 @@
-theme: aqua
+hugobrick_theme: aqua
 
 intro_image_positions: 
   - below
@@ -12,7 +12,6 @@ intro_backgrounds:
   - none
   - vertical gradient
   - image with overlay
-
 
 test_image_positions:
   - left

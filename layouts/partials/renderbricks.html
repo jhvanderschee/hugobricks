@@ -1,0 +1,8 @@
+{{ $contenparts := split page.RawContent "---" }}
+{{ range $i,$c :=  $contenparts }}
+    {{ if (index page.Params.bricks $i) }}
+        {{ partial (print "bricks/" (index page.Params.bricks $i) ".html") .}}
+    {{ else }}
+        <div>{{ markdownify . }}</div>
+    {{ end }}
+{{ end }}

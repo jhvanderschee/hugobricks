@@ -1,4 +1,4 @@
 ---
-title: image2
+title: imageleft
 test_image_position: left
 ---
