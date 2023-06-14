@@ -9,7 +9,7 @@ Hugobricks is a free website theme built with Hugo and vanilla CSS, providing ev
 
 [Get Started For Free](/get-started/)
 
-![](/uploads/image.webp)
+![](/uploads/intro_brick.png)
 
 {{< /brick_intro >}}
 {{< brick_image >}}
