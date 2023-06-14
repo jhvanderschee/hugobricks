@@ -44,7 +44,32 @@ p {margin-bottom: 1.625em;}
 header {padding: 1.5rem 0; position: sticky; top: 0; background: white;}
 header ul, footer ul {display: flex; justify-content: center; gap: 2rem;}
 header ul li, footer ul li {list-style: none;}
-header ul li a {font-weight: bold; color: black;}
+header nav > ul > li a {font-weight: bold; color: black; padding: 0.75rem 0; display: block;}
+header nav > ul > li > ul {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 0px 1.5rem rgba(0,0,0,0.1);
+    margin-left: -1rem;
+    background: white;
+    border-radius: 0.4rem;
+    text-align: left;
+    padding: 0.75rem 0 1rem;
+}
+header nav > ul > li > ul li a {padding: 0.4rem 2rem 0.4rem 1rem;}
+header nav > ul > li:hover > ul {display: block;}
+header nav > ul > li.haschildren > a::after {
+    content:""; 
+    width: 0.3rem; 
+    height: 0.3rem; 
+    border: 0.14rem solid black; 
+    border-left: 0; 
+    border-top: 0;
+    margin-left: 0.3rem;
+    position: relative;
+    bottom: 0.19rem;
+    display: inline-block;
+    transform: rotate(45deg);
+}
 header ul li a, footer ul li a {text-decoration: none;}
 footer ul li a {color: rgba(0,0,0,0.7)}
 header .container, footer .container {display: flex; align-items: center;}
@@ -55,7 +80,7 @@ footer .container > div:first-child:last-child {text-align: center;}
 footer {background: rgba(0,0,0,0.03);}
 footer, footer > div:last-child a {color: rgba(0,0,0,0.4); text-decoration: none;}
 footer .container {padding: 3rem 1rem;}
-footer > div:last-child {border-top: 1px solid rgba(0,0,0,0.075);}
+footer > div:last-child {border-top: 1px solid rgba(0,0,0,0.075); font-size: 0.9rem;}
 footer > div:last-child .container {justify-content: center; padding: 2rem 1rem;}
 footer ul.buttons {justify-content: flex-end;}
 

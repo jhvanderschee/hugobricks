@@ -25,7 +25,15 @@
           <nav>
             <ul>
               {{ range .Site.Data.header.menuitems }}
-                <li><a href="{{ .link }}">{{ .title }}</a></li>
+                <li class="{{ if (index .items 0).title }}haschildren{{ end }}"><a href="{{ .link }}">{{ .title }}</a>
+                  {{ if (index .items 0).title }}
+                  <ul>
+                    {{ range .items }}
+                      <li><a href="{{ .link }}">{{ .title }}</a></li>
+                    {{ end }}
+                  </ul>
+                  {{ end }}
+                </li>
               {{ end }}
             </ul>
           </nav>

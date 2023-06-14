@@ -18,5 +18,11 @@ menuitems:
   - title: Pages
     link:
     items: 
+      - title: Contact
+        link:
+      - title: Blog
+        link:
+      - title: Authors
+        link:
       - title: 404 Page
         link:
