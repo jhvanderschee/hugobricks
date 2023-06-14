@@ -1,9 +1,5 @@
 ---
 title: About 2
-bricks:
-  - title 
-  - imageleft
-  - products
 ---
 {{< brick_title >}}
 # Title of about 2
