@@ -9,14 +9,14 @@ menuitems:
 socials:
   - title: Facebook
     link: https://facebook.com
-    logo: /img/facebook.svg
+    logo_image: /img/facebook.svg
   - title: Twitter
     link: https://twitter.com
-    logo: /img/twitter.svg      
+    logo_image: /img/twitter.svg      
   - title: Mastodon
     link: https://joinmastodon.org
-    logo: /img/mastodon.svg      
+    logo_image: /img/mastodon.svg      
   - title: Instagram
     link: https://instagram.com
-    logo: /img/instagram.svg
+    logo_image: /img/instagram.svg
 
