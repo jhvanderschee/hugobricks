@@ -9,14 +9,14 @@ Hugobricks is a free website theme built with Hugo and vanilla CSS, providing ev
 
 [Get Started For Free](/get-started/)
 
-![](/uploads/intro_brick.png)
+![](/uploads/brick_intro.png)
 
 {{< /brick_intro >}}
 {{< brick_image >}}
 
 ## What’s Included in Hugobricks
 
-![](/uploads/image.jpg)
+![](/uploads/brick_image.jpg)
 
 Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What’s Included in 
 
