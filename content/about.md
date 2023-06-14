@@ -8,7 +8,7 @@ bricks:
 {{< brick_title >}}
 # Title of about 2
 
-![](/uploads/image.jpg)
+![](/uploads/image.webp)
 
 Lorem ipsum
 
