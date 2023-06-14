@@ -1,17 +1,22 @@
 logo_image:
 menuitems:
   - title: About
-    link:
+    link:  /about/
   - title: Elements
-    link:
+    link:  /elements/
   - title: Privacy Policy
-    link:
+    link:  /privacy-policy/
 socials:
   - title: Facebook
-    link:
+    link: https://facebook.com
+    logo: /img/facebook.svg
   - title: Twitter
-    link:
+    link: https://twitter.com
+    logo: /img/twitter.svg      
   - title: Mastodon
-    link:
+    link: https://joinmastodon.org
+    logo: /img/mastodon.svg      
   - title: Instagram
-    link:
+    link: https://instagram.com
+    logo: /img/instagram.svg
+
