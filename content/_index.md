@@ -16,7 +16,7 @@ Hugobricks is a free website theme built with Hugo and vanilla CSS, providing ev
 
 ## What’s Included in Hugobricks
 
-![](/uploads/brick_image.jpg)
+![](/uploads/brick_image.png)
 
 Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What’s Included in 
 
@@ -32,7 +32,7 @@ Hugoplate is a comprehensive starter template that includes everything you need 
 
 ## Our products
 
-![](/uploads/image.jpg)
+![](/uploads/brick_image.png)
 
 Lorem ipsum
 
