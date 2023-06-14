@@ -8,6 +8,8 @@ html {font-size: clamp(11px, 2.5vw, 15px); line-height: 1.4; height: 100%; scrol
 body {font-family: sans-serif; font-size: 1rem;}
 .container {margin: 0 auto; max-width: 82rem; padding: 0 1rem;}
 img {max-width: 100%;}
+a.logo {font-size: 1.5rem; font-weight: bold; text-decoration: none; color: black;}
+
 
 header ul, footer ul {display: flex; justify-content: center;}
 header ul li, footer ul li {list-style: none;}

@@ -19,7 +19,7 @@
     <header>
       <div class="container">
         <div>
-          <img src="{{ .Site.Data.footer.logo_image }}" alt="{{ .Site.Data.general.title }} logo" />
+          <a href="/" class="logo">{{ if .Site.Data.header.logo_image }}<img src="{{ .Site.Data.header.logo_image }}" alt="{{ .Site.Data.general.title }} logo" />{{ else }}{{ .Site.Data.general.title }}{{ end }}</a>
         </div>
         <div>
           <nav>
@@ -40,7 +40,7 @@
     <footer>
       <div class="container">
         <div>
-          <img src="{{ .Site.Data.footer.logo_image }}" alt="{{ .Site.Data.general.title }} logo" />
+          <a href="/" class="logo">{{ if .Site.Data.footer.logo_image }}<img src="{{ .Site.Data.footer.logo_image }}" alt="{{ .Site.Data.general.title }} logo" />{{ else }}{{ .Site.Data.general.title }}{{ end }}</a>
         </div>
         <div>
           <ul>
