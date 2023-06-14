@@ -16,7 +16,50 @@
   </head>
   <body id="top">
 
+    <header>
+      <div class="container">
+        <div>
+          <img src="{{ .Site.Data.footer.logo_image }}" alt="{{ .Site.Data.general.title }} logo" />
+        </div>
+        <div>
+          <nav>
+            <ul>
+              {{ range .Site.Data.header.menuitems }}
+                <li><a href="{{ .link }}">{{ .title }}</a></li>
+              {{ end }}
+            </ul>
+          </nav>
+        </div>
+        <div>
+          cta
+        </div>
+    </header>
+
     {{ block "content" . }}{{ end }}
     
+    <footer>
+      <div class="container">
+        <div>
+          <img src="{{ .Site.Data.footer.logo_image }}" alt="{{ .Site.Data.general.title }} logo" />
+        </div>
+        <div>
+          <ul>
+            {{ range .Site.Data.footer.menuitems }}
+              <li><a href="{{ .link }}">{{ .title }}</a></li>
+            {{ end }}
+          </ul>  
+        </div>
+        <div>
+          <ul>
+            {{ range .Site.Data.footer.socials }}
+              <li><a href="{{ .link }}">{{ .title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        Designed by Zeon Studio & Developed by Usecue BV
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,11 +1,22 @@
 logo_image: /uploads/branding/logo.png
 menuitems:
-  - title:
+  - title: Home
     link:
-  - title:
+    items: 
+      - title:
+        link:
+  - title: About
     link:
-  - title:
+    items: 
+      - title:
+        link:
+  - title: Elements
     link:
-socials:
-  - title:
+    items: 
+      - title:
+        link:
+  - title: Pages
     link:
+    items: 
+      - title: 404 Page
+        link:

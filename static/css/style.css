@@ -1,0 +1,27 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+}
+  
+* {padding: 0; margin: 0; box-sizing: border-box;}
+html {font-size: clamp(11px, 2.5vw, 15px); line-height: 1.4; height: 100%; scroll-behavior: smooth;}
+body {font-family: sans-serif; font-size: 1rem;}
+.container {margin: 0 auto; max-width: 82rem; padding: 0 1rem;}
+img {max-width: 100%;}
+
+header ul, footer ul {display: flex; justify-content: center;}
+header ul li, footer ul li {list-style: none;}
+header .container, footer .container {display: flex;}
+header .container div, footer .container > div {flex: 3; text-align: center;}
+header .container div:first-child, footer .container > div:first-child {flex: 1; text-align: left;}
+header .container div:last-child, footer .container > div:last-child {flex: 1; text-align: right;}
+footer {background: rgba(0,0,0,0.03);}
+
+section:nth-child(even) {background: rgba(0,0,0,0.03);}
+
+/*------------------------*/
+/* intro
+/*------------------------*/
+
+section.intro {text-align: center;}
+section.intro .container > * {max-width: 50rem; margin-left: auto; margin-right: auto;}

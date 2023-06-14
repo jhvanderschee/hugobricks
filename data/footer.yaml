@@ -1,8 +1,17 @@
 logo_image: /uploads/branding/logo.png
 menuitems:
-  - title:
+  - title: About
     link:
-  - title:
+  - title: Elements
     link:
-  - title:
+  - title: Privacy Policy
+    link:
+socials:
+  - title: Facebook
+    link:
+  - title: Twitter
+    link:
+  - title: Mastodon
+    link:
+  - title: Instagram
     link:
