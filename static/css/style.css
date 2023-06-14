@@ -4,20 +4,33 @@
 }
   
 * {padding: 0; margin: 0; box-sizing: border-box;}
-html {font-size: clamp(11px, 2.5vw, 15px); line-height: 1.4; height: 100%; scroll-behavior: smooth;}
+html {font-size: clamp(11px, 2.5vw, 16px); line-height: 1.4; height: 100%; scroll-behavior: smooth;}
 body {font-family: sans-serif; font-size: 1rem;}
 .container {margin: 0 auto; max-width: 82rem; padding: 0 1rem;}
 img {max-width: 100%;}
+a {color: black;}
 a.logo {font-size: 1.5rem; font-weight: bold; text-decoration: none; color: black;}
+ul.buttons {gap: 1rem;}
 
+/*------------------------*/
+/* header and footer
+/*------------------------*/
 
-header ul, footer ul {display: flex; justify-content: center;}
+header ul, footer ul {display: flex; justify-content: center; gap: 3rem;}
 header ul li, footer ul li {list-style: none;}
+header ul li a {font-weight: bold;}
+header ul li a, footer ul li a {text-decoration: none;}
+footer ul li a {color: rgba(0,0,0,0.8)}
 header .container, footer .container {display: flex;}
 header .container div, footer .container > div {flex: 3; text-align: center;}
 header .container div:first-child, footer .container > div:first-child {flex: 1; text-align: left;}
 header .container div:last-child, footer .container > div:last-child {flex: 1; text-align: right;}
 footer {background: rgba(0,0,0,0.03);}
+
+
+/*------------------------*/
+/* sections general
+/*------------------------*/
 
 section:nth-child(even) {background: rgba(0,0,0,0.03);}
 
@@ -27,3 +40,32 @@ section:nth-child(even) {background: rgba(0,0,0,0.03);}
 
 section.intro {text-align: center;}
 section.intro .container > * {max-width: 50rem; margin-left: auto; margin-right: auto;}
+
+/*------------------------*/
+/* buttons
+/*------------------------*/
+
+.button, button, p > a:first-child:last-child {
+    background: black; 
+    color: white;
+    text-decoration: none;
+    padding: 0.7em 1.25em;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+}
+.button.icon {
+    padding: 0; 
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    aspect-ratio: 1;
+    width: 2.25rem;
+}
+.button.icon img {
+    width: calc(100% - 1.25em); 
+    height: calc(100% - 1.25em);
+    filter: invert(1);
+}
