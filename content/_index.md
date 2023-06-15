@@ -7,6 +7,7 @@ title: Home
 
 Hugobricks is a free website theme built with Hugo and vanilla CSS, which makes builiding Hugo website childs play and will save you valuable time.
 
+
 [Get Started For Free](/get-started/)
 
 ![](/uploads/brick_intro.png)
