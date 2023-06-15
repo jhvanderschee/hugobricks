@@ -19,7 +19,7 @@
     <header>
       <div class="container">
         <div>
-          <a href="/" class="logo">{{ if .Site.Data.header.logo_image }}<img src="{{ .Site.Data.header.logo_image }}" alt="{{ .Site.Data.general.title }} logo" />{{ else }}{{ .Site.Data.general.title }}{{ end }}</a>
+          {{ partial "logo.html" . }}
         </div>
         <div>
           <nav>
@@ -49,7 +49,7 @@
       <div>
         <div class="container">
           <div>
-            <a href="/" class="logo">{{ if .Site.Data.footer.logo_image }}<img src="{{ .Site.Data.footer.logo_image }}" alt="{{ .Site.Data.general.title }} logo" />{{ else }}{{ .Site.Data.general.title }}{{ end }}</a>
+            {{ partial "logo.html" . }}
           </div>
           <div>
             <ul>
