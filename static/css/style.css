@@ -90,7 +90,7 @@ footer ul.buttons {justify-content: flex-end;}
 /*------------------------*/
 
 section {padding: 3.5rem 0;}
-section:nth-child(even) {background: rgba(0,0,0,0.03);}
+section:nth-child(odd) {background: rgba(0,0,0,0.03);}
 
 
 /*------------------------*/
