@@ -1,6 +1,7 @@
 ---
 title: Home
 ---
+
 {{< brick_intro >}}
 
 # The Ultimate Theme You Need To Start Your Hugo Website
