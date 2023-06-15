@@ -48,4 +48,4 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 Lorem ipsum
 
 {{< /brick_image >}}
-{{< brick_cta >}}{{< /brick_cta >}}
+{{< brick_cta >}} {{< /brick_cta >}}
