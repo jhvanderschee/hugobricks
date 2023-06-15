@@ -34,3 +34,4 @@ Hugoplate is a comprehensive starter template that includes everything you need 
 Lorem ipsum
 
 {{< /brick_products >}}
+{{< brick_cta >}}{{< /brick_cta >}}

@@ -1,7 +1,6 @@
 ---
 title: Home
 ---
-
 {{< brick_intro >}}
 
 # What if building a website was as easy as stacking LEGO bricks?
@@ -49,14 +48,4 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 Lorem ipsum
 
 {{< /brick_image >}}
-{{< brick_cta >}}
-
-## Ready to build your next project with Next?
-
-Experience the future of web development with Nextplate and Next. Build lightning-fast static sites with ease and flexibility.
-
-[Get Started Now](/get-started/)
-
-![](/uploads/brick_cta.png)
-
-{{< /brick_cta >}}
+{{< brick_cta >}}{{< /brick_cta >}}
