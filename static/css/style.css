@@ -99,7 +99,7 @@ section:nth-child(even) {background: rgba(0,0,0,0.03);}
 section.intro {text-align: center;}
 section.intro .container > * {max-width: 45rem; margin-left: auto; margin-right: auto;}
 section.intro h1 {margin-bottom: 1.25rem;}
-section.intro img {margin: 2rem auto 0; max-width: 38rem;}
+section.intro img {margin: 4rem auto 0; max-width: 38rem;}
 
 /*------------------------*/
 /* buttons
