@@ -7,8 +7,6 @@ title: Home
 
 Hugobricks is a free website theme for Hugo. It makes building Hugo websites child's play due to its stackable (LEGO-like) content bricks. How about this intro brick with a clear call-to-action? Stack it on top op image bricks and pricing tables.
 
-Do you like the concept? Get your own Hugobricks theme. What will you build?
-
 [Get Started For Free](/get-started/)
 
 ![](/uploads/brick_intro.png)
