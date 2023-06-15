@@ -12,7 +12,6 @@ Hugobricks is a free website theme built with Hugo and vanilla CSS, providing ev
 ![](/uploads/brick_intro.png)
 
 {{< /brick_intro >}}
-
 {{< brick_intro >}}
 
 # The Ultimate Theme You Need To Start Your Hugo Website
