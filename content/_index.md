@@ -49,3 +49,15 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 Lorem ipsum
 
 {{< /brick_image >}}
+
+{{< brick_cta >}}
+
+# The Ultimate Theme You Need To Start Your Hugo Website
+
+Hugobricks is a free website theme built with Hugo and vanilla CSS, providing everything you need to jumpstart your Hugo website and save valuable time.
+
+[Get Started For Free](/get-started/)
+
+![](/uploads/brick_cta.png)
+
+{{< /brick_cta >}}
