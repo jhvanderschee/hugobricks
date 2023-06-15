@@ -92,14 +92,6 @@ footer ul.buttons {justify-content: flex-end;}
 section {padding: 3.5rem 0;}
 section:nth-child(even) {background: rgba(0,0,0,0.03);}
 
-/*------------------------*/
-/* intro
-/*------------------------*/
-
-section.intro {text-align: center;}
-section.intro .container > * {max-width: 45rem; margin-left: auto; margin-right: auto;}
-section.intro h1 {margin-bottom: 1.25rem;}
-section.intro img {margin: 4rem auto 0; max-width: 38rem;}
 
 /*------------------------*/
 /* buttons
@@ -130,3 +122,20 @@ section.intro img {margin: 4rem auto 0; max-width: 38rem;}
     filter: invert(1);
 }
 p > a:first-child:last-child {margin-top: 0.5rem;}
+
+
+
+
+/*----------------- BRICKS -------------------*/
+
+
+
+
+/*------------------------*/
+/* brick intro
+/*------------------------*/
+
+section.intro {text-align: center;}
+section.intro .container > * {max-width: 45rem; margin-left: auto; margin-right: auto;}
+section.intro h1 {margin-bottom: 1.25rem;}
+section.intro img {margin: 4rem auto 0; max-width: 38rem;}
