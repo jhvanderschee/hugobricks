@@ -52,11 +52,11 @@ Lorem ipsum
 
 {{< brick_cta >}}
 
-# The Ultimate Theme You Need To Start Your Hugo Website
+## Ready to build your next project with Next?
 
-Hugobricks is a free website theme built with Hugo and vanilla CSS, providing everything you need to jumpstart your Hugo website and save valuable time.
+Experience the future of web development with Nextplate and Next. Build lightning-fast static sites with ease and flexibility.
 
-[Get Started For Free](/get-started/)
+[Get Started Now](/get-started/)
 
 ![](/uploads/brick_cta.png)
 
