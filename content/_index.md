@@ -5,7 +5,7 @@ title: Home
 
 # Building a Hugo website with stackable LEGO-like bricks
 
-Hugobricks is a free website theme built with Hugo and vanilla CSS. It makes building Hugo websites child's play due to its stackabel content bricks.
+Hugobricks is a free website theme built with Hugo and vanilla CSS. It makes building Hugo websites child's play due to its stackable content bricks.
 
 [Get Started For Free](/get-started/)
 
