@@ -1,0 +1,13 @@
+
+{{- $inner := . -}}
+{{- if or (eq (substr $inner 0 4) "Page") (eq $inner "") -}}
+    {{- $inner = "Brick content not set" -}}
+    {{- with .Site.GetPage "bricks/intro.md" -}}
+        {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+<section class="intro">
+    <div class="container">
+        {{- markdownify $inner -}}
+    </div>
+</section>

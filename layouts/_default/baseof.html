@@ -40,7 +40,8 @@
         </div>
     </header>
 
-    {{ block "content" . }}{{ end }}
+    {{- partial "brick_intro.html" . -}}
+    {{- block "content" . -}}{{- end -}}
     
     <footer>
       <div>
