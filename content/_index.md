@@ -34,27 +34,9 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 
 ![](/uploads/brick_image.png)
 
-- intro
-- title
-- image
-- cta
-- contact
-- team
-- testimonials
-- about
-- pricing
-- products
-- product
-- usps
-- stats
-- gallery
-- quote
-- faqs
-- brands
-- video
-- blogs
-- post
-- related
+We aim to provide the following blocks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
+
+Are you missing a block? Let us know!
 
 {{< /brick_image >}}
 {{< brick_cta >}}{{< /brick_cta >}}

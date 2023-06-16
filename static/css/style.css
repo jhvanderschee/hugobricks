@@ -37,14 +37,16 @@ h1 {font-size: 3rem;}
 h2 {margin-bottom: 1.25rem;}
 a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: black; position: relative; bottom: 0.05em; display: flex; gap: 0.5rem;}
 a.logo img.inline {height: 2rem; position: relative; top: 0.1rem;}
-p {margin-bottom: 1.7em;}
+p, ul, ol {margin-bottom: 1.7em;}
+ul {margin-left: 1rem;}
+ol {margin-left: 2rem;}
 
 /*------------------------*/
 /* header and footer
 /*------------------------*/
 
 header {padding: 1.5rem 0; position: sticky; top: 0; background: white;}
-header ul, footer ul {display: flex; justify-content: center; gap: 2rem;}
+header ul, footer ul {display: flex; justify-content: center; gap: 2rem; margin: 0;}
 header ul li, footer ul li {list-style: none;}
 header nav > ul > li a {font-weight: bold; color: black; padding: 0.75rem 0; display: block;}
 header nav > ul > li > ul {
