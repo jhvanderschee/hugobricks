@@ -147,8 +147,8 @@ section.intro img {margin: 4rem auto 0; max-width: 38rem;}
 /*------------------------*/
 
 section.cta {background: white;}
-section.cta .container > div > div {flex: 2;}
-section.cta .container > div > p {flex: 1;} 
+section.cta div.cta-text {flex: 2;}
+section.cta div.cta-image {flex: 1;} 
 section.cta .container > div {
     background: rgba(0,0,0,0.03); 
     padding: 3.5rem clamp(2rem, 5vw, 5rem);

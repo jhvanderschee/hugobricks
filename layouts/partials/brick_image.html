@@ -13,9 +13,11 @@
 
 <section class="image">
     <div class="container">
-        <div>
+        <div class="cta-text">
             {{ $inner | safeHTML }}
         </div>
-        {{ if $image }}{{- $image | safeHTML -}}{{ end }}
+        <div class="cta-image">
+            {{- $image | safeHTML -}}
+        </div>
     </div>
 </section>
