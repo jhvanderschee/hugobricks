@@ -14,7 +14,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 {{< /brick_intro >}}
 {{< brick_image >}}
 
-## What’s Included in Hugobricks
+## What’s Included in Hugobricks?
 
 ![](/uploads/brick_image.png)
 
@@ -30,13 +30,13 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 {{< /brick_image >}}
 {{< brick_image >}}
 
-## Our bricks
+## What bricks do you offer?
 
 ![](/uploads/brick_image.png)
 
-We aim to provide the following blocks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
+We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
 
-Are you missing a block? Let us know!
+Are you missing a brick? Let us know!
 
 {{< /brick_image >}}
 {{< brick_cta >}}{{< /brick_cta >}}
