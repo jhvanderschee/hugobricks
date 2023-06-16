@@ -14,7 +14,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 {{< /brick_intro >}}
 {{< brick_image >}}
 
-## What’s Included in Hugobricks?
+## What’s included in Hugobricks?
 
 ![](/uploads/brick_image.png)
 
