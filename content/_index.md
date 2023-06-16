@@ -30,11 +30,31 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 {{< /brick_image >}}
 {{< brick_image >}}
 
-## Our products
+## Our bricks
 
 ![](/uploads/brick_image.png)
 
-Lorem ipsum
+- intro
+- title
+- image
+- cta
+- contact
+- team
+- testimonials
+- about
+- pricing
+- products
+- product
+- usps
+- stats
+- gallery
+- quote
+- faqs
+- brands
+- video
+- blogs
+- post
+- related
 
 {{< /brick_image >}}
 {{< brick_cta >}}{{< /brick_cta >}}
