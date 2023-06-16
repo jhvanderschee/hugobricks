@@ -1,5 +1,18 @@
-<section class="image">
-    <div class="container">
-        {{ markdownify .Inner }}
-    </div>
-</section>
+<!-- 
+{{/* 
+
+Usage:
+
+{{< brick_image >}}
+
+## Ready to build your next project with Next?
+
+Experience the future of web development with Nextplate and Next. Build lightning-fast static sites with ease and flexibility.
+
+![](/uploads/brick_image.png)
+
+{{< /brick_image >}}
+    
+*/}}
+-->
+{{- partial "brick_image.html" .Inner -}}

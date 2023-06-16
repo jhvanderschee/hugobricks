@@ -144,7 +144,7 @@ section.intro img {margin: 4rem auto 0; max-width: 38rem;}
 /* brick cta
 /*------------------------*/
 
-section.cta {text-align: left; background: white;}
+section.cta {background: white;}
 section.cta .container > div > div {flex: 2;}
 section.cta .container > div > p {flex: 1;} 
 section.cta .container > div {
@@ -163,5 +163,17 @@ section.cta .container > div {
 section.image + section.image + section.image + section.image + section.image,
 section.image + section.image + section.image,
 section.image {background: rgba(0,0,0,0.02);}
-section.image + section.image + section.image,
+section.image + section.image + section.image + section.image + section.image + section.image,
+section.image + section.image + section.image + section.image,
 section.image + section.image {background: white;}
+section.image + section.image + section.image + section.image + section.image + section.image .container,
+section.image + section.image + section.image + section.image .container,
+section.image + section.image .container {flex-direction: row-reverse;} 
+
+section.image .container > div {flex: 1;}
+section.image .container > p {flex: 1;} 
+section.image .container {
+    display: flex;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 5rem);
+}
