@@ -1,12 +1,14 @@
 {{ define "content" }}
 
-{{ if eq .RelPermalink "/contact/" }}
+    {{ if eq .RelPermalink "/contact/" }}
 
-  <div>  
-        <h2>Contact us:</h2>
-        {{ partial "contactform.html" . }}
-  </div>
-
+        <section>
+	    <div class="container">  
+		<h2>Contact us:</h2>
+		{{ partial "contactform.html" . }}
+	  </div>
+        </section>
+	
   {{ else }}
       {{ .Content }}
   {{ end }}
