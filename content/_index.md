@@ -12,17 +12,6 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 ![](/uploads/brick_intro.png)
 
 {{< /brick_intro >}}
-{{< brick_intro >}}
-
-# The Ultimate Theme You Need To Start Your Hugo Website
-
-Hugobricks is a free website theme built with Hugo and vanilla CSS, providing everything you need to jumpstart your Hugo website and save valuable time.
-
-[Get Started For Free](/get-started/)
-
-![](/uploads/brick_intro.png)
-
-{{< /brick_intro >}}
 {{< brick_image >}}
 
 ## What’s Included in Hugobricks
@@ -37,15 +26,6 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 - Fully responsive on all devices
 - SEO-optimized for better search engine rankings
 
-
-{{< /brick_image >}}
-{{< brick_image >}}
-
-## Our products
-
-![](/uploads/brick_image.png)
-
-Lorem ipsum
 
 {{< /brick_image >}}
 {{< brick_image >}}
