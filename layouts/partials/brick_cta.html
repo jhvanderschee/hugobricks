@@ -14,10 +14,12 @@
 <section class="cta">
     <div class="container">
         <div>
-            <div>
+            <div class="text">
                 {{ $inner | safeHTML }}
             </div>
-            {{ if $image }}{{- $image | safeHTML -}}{{ end }}
+            <div class="image">
+                {{- $image | safeHTML -}}
+            </div>
         </div>
     </div>
 </section>
