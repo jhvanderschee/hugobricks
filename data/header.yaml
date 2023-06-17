@@ -1,7 +1,7 @@
 logo_image:
 menuitems:
   - title: Home
-    link:
+    link: /
     items: 
       - title:
         link:

@@ -1,1 +1,13 @@
-<section class="title">{{ markdownify .Inner }}</section>
+<!-- 
+{{/* 
+
+Usage:
+{{< brick_title >}}
+
+# Ready to build your next project with Next?
+
+{{< /brick_title >}}
+    
+*/}}
+-->
+{{- partial "brick_title.html" .Inner -}}

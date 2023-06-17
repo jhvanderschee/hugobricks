@@ -2,6 +2,7 @@
 title: About 2
 ---
 {{< brick_title >}}
+
 # Title of about 2
 
 ![](/uploads/image.webp)
