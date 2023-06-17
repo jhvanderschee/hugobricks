@@ -28,7 +28,7 @@
 * {padding: 0; margin: 0; box-sizing: border-box;}
 html {font-size: clamp(14px, 2vw, 16px); line-height: 1.7; height: 100%; scroll-behavior: smooth;}
 body {font-family: 'Heebo', sans-serif; font-size: 1rem; color: rgba(0,0,0,0.7);}
-.container {margin: 0 auto; max-width: 82rem; padding: 0 1rem;}
+.container {margin: 0 auto; max-width: 82rem; padding: 0 clamp(1rem,4vw,3rem);}
 img {max-width: 100%; display: block;}
 a {color: rgba(0,0,0,0.7);}
 ul.buttons {gap: 1rem;}
@@ -83,7 +83,7 @@ header .container div:last-child, footer .container > div:last-child {flex: 1; t
 footer .container > div:first-child:last-child {text-align: center;}
 footer {background: rgba(0,0,0,0.03);}
 footer, footer > div:last-child a {color: rgba(0,0,0,0.4); text-decoration: none;}
-footer .container {padding: 3rem 1rem;}
+footer .container {padding-top: 3rem; padding-bottom: 3rem;}
 footer > div:last-child {border-top: 1px solid rgba(0,0,0,0.075); font-size: 0.9rem;}
 footer > div:last-child .container {justify-content: center; padding: 2rem 1rem;}
 footer ul.buttons {justify-content: flex-end;}
