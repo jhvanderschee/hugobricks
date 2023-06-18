@@ -5,4 +5,8 @@
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
-<section class="404">{{ markdownify $inner }}</section>
+<section class="404">
+    <div class="container small">
+        {{ markdownify $inner }}
+    </div>
+</section>

@@ -32,21 +32,23 @@ body {font-family: 'Heebo', sans-serif; font-size: 1rem; color: rgba(0,0,0,0.7);
 img {max-width: 100%; display: block;}
 a {color: rgba(0,0,0,0.7);}
 h1, h2, a.logo {font-family: 'Signika', sans-serif; line-height: 1.2; font-size: 2.4rem; color: black;}
-h1 {font-size: 3rem; margin-bottom: 1.25rem;}
-h2 {margin-bottom: 1.25rem;}
+h1 {font-size: 3rem; margin-bottom: 1.75rem;}
+h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
+h2:first-child {margin-top: 0;}
 a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: black; position: relative; bottom: 0.05em; display: flex; gap: 0.5rem;}
 a.logo img.inline {height: 2rem; position: relative; top: 0.1rem;}
-p, ul, ol {margin-bottom: 1.7em;}
+p, ul, ol, .box.map {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
 hr {margin: 3.5rem 0; height: 1px; background: rgba(0,0,0,0.1); border: 0;}
-
+p > img {border-radius: 1rem; overflow: hidden;}
 
 /*------------------------*/
 /* header and footer
 /*------------------------*/
 
-header {padding: 1.5rem 0; position: sticky; top: 0; background: white;}
+header {padding: 1.5rem 0; position: sticky; top: 0; background: white; z-index: 9;}
+header + section {border-top: 1rem solid white;}
 header ul, footer ul {display: flex; justify-content: center; gap: 2rem; margin: 0;}
 header ul li, footer ul li {list-style: none;}
 header nav > ul > li a {font-weight: bold; color: black; padding: 0.75rem 0; display: block;}
@@ -83,7 +85,7 @@ header .container div, footer .container > div {flex: 3; text-align: center;}
 header .container div:first-child, footer .container > div:first-child {flex: 1; text-align: left;}
 header .container div:last-child, footer .container > div:last-child {flex: 1; text-align: right;}
 footer .container > div:first-child:last-child {text-align: center;}
-footer {background: rgba(0,0,0,0.03);}
+footer {background: rgba(0,0,0,0.03); border-top: 3.5rem solid white;}
 footer, footer > div:last-child a {color: rgba(0,0,0,0.4); text-decoration: none;}
 footer .container {padding-top: 3rem; padding-bottom: 3rem;}
 footer > div:last-child {border-top: 1px solid rgba(0,0,0,0.075); font-size: 0.9rem;}
@@ -107,10 +109,23 @@ section .container.small > * {text-align: center; max-width: 40rem; margin-left:
 /* box
 /*------------------------*/
 
-div.box {
-    background: rgba(0,0,0,0.03); 
-    padding: 3.5rem clamp(2rem, 5vw, 5rem);
-    border-radius: 1rem;
+div.box {background: rgba(0,0,0,0.03); padding: 3.5rem clamp(2rem, 5vw, 5rem); border-radius: 1rem; margin-bottom: 1.7em;}
+
+/*------------------------*/
+/* map
+/*------------------------*/
+
+div.box.map {aspect-ratio: 2.25; width: 100%;}
+.map {position: relative; background-position: center calc(50% + 2rem); background-repeat: repeat;}
+.map::after {
+    content: ""; 
+    width: 100%; 
+    height: 100%; 
+    background: url(/img/marker.svg) center center / auto 4rem no-repeat; 
+    left: 0; 
+    top: 0;
+    position: absolute;
+    display: block;
 }
 
 /*------------------------*/
@@ -119,6 +134,22 @@ div.box {
 
 div:not(.box) > .image {padding: 2rem;}
 
+/*------------------------*/
+/* forms
+/*------------------------*/
+
+form > div {display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 1rem;}
+form > div.radio + div.radio {margin-top: -1rem;}
+input, textarea, select {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1rem;
+    padding: 0.5em 0.5em;
+    border: 1px solid rgba(0,0,0,0.2);
+    color: black;
+    border-radius: 0.25rem;
+}
+textarea {resize: vertical; height: 9rem;}
+input[type="checkbox"], input[type="radio"] {margin-right: 0.5rem;} 
 
 /*------------------------*/
 /* buttons
@@ -133,6 +164,7 @@ div:not(.box) > .image {padding: 2rem;}
     display: inline-block;
     font-size: 1rem;
     border-radius: 0.4rem;
+    border: 0;
 }
 .button.icon {
     padding: 0; 
@@ -161,14 +193,13 @@ ul.buttons li {list-style: none;}
 /*------------------------*/
 
 section.about .container p img {display: inline-block; border-radius: 100%; overflow: hidden;}
-section.about .container h1 {margin-top: -1rem; padding-bottom: 1rem;}
+section.about .container h1 {margin-top: -1rem;}
 
 /*------------------------*/
 /* brick intro
 /*------------------------*/
 
 section.intro {text-align: center; background: white;}
-section.intro h1 {margin-bottom: 1.25rem;}
 section.intro img {margin: 4rem auto 0; max-width: 38rem;}
 
 /*------------------------*/
@@ -203,3 +234,19 @@ section.title {padding-bottom: 1.75rem;}
 /*------------------------*/
 
 section.wide {max-width: 60rem; margin-left: auto; margin-right: auto;}
+
+/*------------------------*/
+/* brick map
+/*------------------------*/
+
+section.map > .container {display: flex; justify-content: flex-end;}
+section.map > .container > div {background: white; padding: 2.5rem 3rem 1rem; border-radius: 1rem; position: relative; z-index: 2; min-width: 22rem;} 
+@media (max-width: 55rem) {
+    section.map > .container {justify-content: center;}
+}
+
+/*------------------------*/
+/* brick 404
+/*------------------------*/
+
+section.404 > .container p:first-child > img {margin-top: -1rem;}

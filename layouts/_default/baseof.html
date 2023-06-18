@@ -36,12 +36,12 @@
           </nav>
         </div>
         <div>
-          <a href="/get-started/" class="button">Start now</a>
+          <a href="{{ .Site.Data.header.cta.link }}" class="button">{{ .Site.Data.header.cta.title }}</a>
         </div>
     </header>
 
     {{- block "content" . -}}{{- end -}}
-    
+
     <footer>
       <div>
         <div class="container">

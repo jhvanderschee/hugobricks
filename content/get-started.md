@@ -1,29 +1,22 @@
 ---
-title: About 2
+title: Get started
 ---
 {{< brick_title >}}
 
-# Title of about 2
+# Get started
 
-![](/uploads/image.webp)
-
-Lorem ipsum
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, nulla et scelerisque volutpat, elit felis condimentum odio, et bibendum lacus sem sed turpis. 
 
 {{< /brick_title >}}
 {{< brick_image >}}
 
 ## What’s Included in Hugoplate
 
-![](/uploads/image.jpg)
+![](/uploads/brick_image.png)
 
-Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What’s Included in 
+Quisque aliquet orci quis massa scelerisque gravida. Cras maximus lacus et orci lacinia fermentum. Integer venenatis bibendum condimentum. Maecenas non rutrum magna. Sed varius metus sit amet augue condimentum, quis faucibus nulla tempor. Phasellus nec ipsum dolor. Aliquam non maximus orci.
 
-- 10+ Pre-build pages
-- 95+ Google Pagespeed Score
-- Build with Hugo and TailwindCSS for easy and customizable styling
-- Fully responsive on all devices
-- SEO-optimized for better search engine rankings
-- Open-source and free for personal and commercial use
+Integer sollicitudin dui quis nibh tincidunt, et pharetra nulla varius. Vestibulum malesuada quam dapibus lacus molestie, sed maximus nulla sagittis. Ut dui quam, convallis eu justo quis, posuere sodales dolor. Maecenas eu sem et purus finibus auctor in vel dolor. Fusce vitae diam pellentesque, suscipit nisl nec, varius erat. Curabitur condimentum mauris ut sapien rhoncus, quis venenatis purus pulvinar. Ut in imperdiet augue, et porttitor magna. Praesent euismod urna ut lectus pretium suscipit. Sed nec mauris in nunc condimentum viverra. Praesent vitae hendrerit sem, eu suscipit arcu. Ut sollicitudin dolor lacus, nec interdum purus volutpat in. Phasellus aliquet quis nunc vitae maximus.
 
 {{< /brick_image >}}
 {{< brick_products >}}

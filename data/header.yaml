@@ -26,3 +26,6 @@ menuitems:
         link: /authors/
       - title: 404 Page
         link: /abc
+cta:
+  title: Get started
+  link: /get-started/

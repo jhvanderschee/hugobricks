@@ -10,14 +10,24 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt
 {{< /brick_title >}}
 {{< brick_contact >}}
 
-## Company name
+## Got a question?
 
-Company address  
-Company address  
-Phone number  
-Email address
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
 
-{{< socialbuttons >}}
+### Visit us
+
+Soetendaal 7  
+1081BL Amsterdam  
+The Netherlands
+
+### Email us
+
+joost@vdschee.nl
+
+### Call us
+
++31 618 518 928
+
 
 {{< /brick_contact >}}
-{{< brick_cta >}}{{< /brick_cta >}}
+{{< brick_map >}}{{< /brick_map >}}

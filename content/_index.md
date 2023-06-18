@@ -7,7 +7,7 @@ title: Home
 
 Hugobricks is a free website theme for Hugo. It makes building Hugo websites child's play due to its stackable (LEGO-like) content bricks. How about this 'intro brick' with a clear call-to-action? Stack it on top of some image bricks and a pricing table and build a complete website in seconds!
 
-{{< button "Get Started For Free" "/get-started/" >}}
+{{< button "Get started for free" "/get-started/" >}}
 
 ![](/uploads/brick_intro.png)
 
@@ -22,7 +22,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 
 - 10+ Pre-build pages
 - 99+ Google Pagespeed Score
-- Build with Hugo and vanilla CSS for easy and customizable styling
+- Built with Hugo and CSS variables for easy styling
 - Fully responsive on all devices
 - SEO-optimized for better search engine rankings
 
@@ -36,7 +36,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 
 We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
 
-Are you missing a brick? Let us know! We will build it for you!
+Are you missing a brick? [Let us know](/contact/)! We will build it for you!
 
 {{< /brick_image >}}
 {{< brick_cta >}}{{< /brick_cta >}}

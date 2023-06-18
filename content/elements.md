@@ -25,7 +25,7 @@ Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cra
 
 Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cras id hendrerit eros.
 
-{{< button "Get Started For Free" "/get-started/" >}}
+{{< button "Get started for free" "/get-started/" >}}
 
 Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cras id hendrerit eros.
 
@@ -57,12 +57,18 @@ Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cra
 
 ## Image
 
-![](/uploads/brick_image.png)
+![](/uploads/image-placeholder.png)
 
 ---
 
 ## Map
 
-{{< map >}}
+{{< map "/uploads/map.png" "https://www.google.com/maps" >}}
+
+---
+
+## Contact form
+
+{{< contactform >}}
 
 {{< /brick_wide >}}
