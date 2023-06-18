@@ -31,7 +31,6 @@ body {font-family: 'Heebo', sans-serif; font-size: 1rem; color: rgba(0,0,0,0.7);
 .container {margin: 0 auto; max-width: 82rem; padding: 0 clamp(1rem,4vw,3rem);}
 img {max-width: 100%; display: block;}
 a {color: rgba(0,0,0,0.7);}
-ul.buttons {gap: 1rem;}
 h1, h2, a.logo {font-family: 'Signika', sans-serif; line-height: 1.2; font-size: 2.4rem; color: black;}
 h1 {font-size: 3rem; margin-bottom: 1.25rem;}
 h2 {margin-bottom: 1.25rem;}
@@ -40,6 +39,8 @@ a.logo img.inline {height: 2rem; position: relative; top: 0.1rem;}
 p, ul, ol {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
+hr {margin: 3.5rem 0; height: 1px; background: rgba(0,0,0,0.1); border: 0;}
+
 
 /*------------------------*/
 /* header and footer
@@ -87,7 +88,7 @@ footer, footer > div:last-child a {color: rgba(0,0,0,0.4); text-decoration: none
 footer .container {padding-top: 3rem; padding-bottom: 3rem;}
 footer > div:last-child {border-top: 1px solid rgba(0,0,0,0.075); font-size: 0.9rem;}
 footer > div:last-child .container {justify-content: center; padding: 2rem 1rem;}
-footer ul.buttons {justify-content: flex-end;}
+footer ul.buttons {justify-content: flex-end; padding: 0;}
 
 /*------------------------*/
 /* sections general
@@ -123,7 +124,7 @@ div:not(.box) > .image {padding: 2rem;}
 /* buttons
 /*------------------------*/
 
-.button, button, p > a:first-child:last-child {
+.button, button {
     background: black; 
     color: white;
     text-decoration: none;
@@ -147,9 +148,10 @@ div:not(.box) > .image {padding: 2rem;}
     height: calc(100% - 1.25em);
     filter: invert(1);
 }
-p > a:first-child:last-child {margin-top: 0.5rem;}
+p > .button {margin: 0.5rem 0;}
 
-
+ul.buttons {gap: 1rem; margin-left: 0; display: flex; padding: 0.5rem 0;}
+ul.buttons li {list-style: none;}
 
 
 /*----------------- BRICKS -------------------*/
@@ -194,4 +196,10 @@ section.contact .twocols {align-items: flex-start;}
 /* brick title
 /*------------------------*/
 
-section.title {padding-bottom: 0;}
+section.title {padding-bottom: 1.75rem;}
+
+/*------------------------*/
+/* brick wide
+/*------------------------*/
+
+section.wide {max-width: 60rem; margin-left: auto; margin-right: auto;}

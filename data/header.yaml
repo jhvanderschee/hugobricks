@@ -19,15 +19,10 @@ menuitems:
     link:
     items: 
       - title: Contact
-        link:
+        link: /contac/
       - title: Blog
-        link:
+        link: /blog/
       - title: Authors
-        link:
+        link: /authors/
       - title: 404 Page
-        link:
-  - title: Contact
-    link: /contact/
-    items: 
-      - title:
-        link:
+        link: /abc

@@ -17,5 +17,7 @@ Company address
 Phone number  
 Email address
 
+{{< socialbuttons >}}
+
 {{< /brick_contact >}}
 {{< brick_cta >}}{{< /brick_cta >}}
