@@ -249,4 +249,5 @@ section.map > .container > div {background: white; padding: 2.5rem 3rem 1rem; bo
 /* brick 404
 /*------------------------*/
 
-section.404 > .container p:first-child > img {margin-top: -1rem;}
+section.error404 > .container p:first-child > img {margin-top: -1rem;}
+section.error404 > .container h1 {font-size: 2.4rem;}
