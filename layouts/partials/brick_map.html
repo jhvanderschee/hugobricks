@@ -13,7 +13,12 @@
 {{ $inner = replace $inner $image "" 1 }}
 {{ $imagesrc := index (split $image `"`) 1 }}
 
+{{ $link := index (findRE `(?s)<p><a.*?p>` $inner 1) 0 }}
+{{ $inner = replace $inner $link "" 1 }}
+{{ $href := index (split $link `"`) 1 }}
+
 <section class="map" style="background-image: url({{ $imagesrc }});">
+    <div class="overlay" onclick="window.open('{{ $href }}');" style="cursor: pointer;"></div>
     <div class="container">
         <div>{{- markdownify $inner -}}</div>
     </div>
