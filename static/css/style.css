@@ -81,7 +81,7 @@ header .container div, footer .container > div {flex: 3; text-align: center;}
 header .container div:first-child, footer .container > div:first-child {flex: 1; text-align: left;}
 header .container div:last-child, footer .container > div:last-child {flex: 1; text-align: right;}
 footer .container > div:first-child:last-child {text-align: center;}
-footer {background: rgba(0,0,0,0.03);}
+footer {background: rgba(0,0,0,0.03); margin-top: 3.5rem;}
 footer, footer > div:last-child a {color: rgba(0,0,0,0.4); text-decoration: none;}
 footer .container {padding-top: 3rem; padding-bottom: 3rem;}
 footer > div:last-child {border-top: 1px solid rgba(0,0,0,0.075); font-size: 0.9rem;}
@@ -109,6 +109,7 @@ div.box {
     background: rgba(0,0,0,0.03); 
     padding: 3.5rem clamp(2rem, 5vw, 5rem);
     border-radius: 1rem;
+    margin-bottom: 3.5rem;
 }
 
 /*------------------------*/
@@ -161,7 +162,7 @@ section.intro img {margin: 4rem auto 0; max-width: 38rem;}
 /* brick cta
 /*------------------------*/
 
-section.cta {background: white;}
+section.cta {background: white; padding: 0;}
 section.cta div.text {flex: 2;}
 section.cta div.image {flex: 1;} 
 
