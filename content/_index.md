@@ -30,7 +30,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 {{< /brick_image2 >}}
 {{< brick_image >}}
 
-## What bricks do you offer?
+## What bricks are available?
 
 ![](/uploads/brick_image.png)
 
