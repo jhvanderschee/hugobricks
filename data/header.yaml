@@ -19,7 +19,7 @@ menuitems:
     link:
     items: 
       - title: Contact
-        link: /contac/
+        link: /contact/
       - title: Blog
         link: /blog/
       - title: Authors
