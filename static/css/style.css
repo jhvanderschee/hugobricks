@@ -93,7 +93,23 @@ footer ul.buttons {justify-content: flex-end;}
 /*------------------------*/
 
 section {padding: 3.5rem 0;}
+section .twocols > div {flex: 1;}
+section .twocols {
+    display: flex;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 5rem);
+}
+section .container.small > * {text-align: center; max-width: 40rem; margin-left: auto; margin-right: auto;}
 
+/*------------------------*/
+/* box
+/*------------------------*/
+
+div.box {
+    background: rgba(0,0,0,0.03); 
+    padding: 3.5rem clamp(2rem, 5vw, 5rem);
+    border-radius: 1rem;
+}
 
 /*------------------------*/
 /* buttons
@@ -131,7 +147,6 @@ p > a:first-child:last-child {margin-top: 0.5rem;}
 /*----------------- BRICKS -------------------*/
 
 section.about .container p img {display: inline-block; border-radius: 100%; overflow: hidden;}
-section.about .container > * {text-align: center; max-width: 45rem; margin-left: auto; margin-right: auto;}
 section.about .container h1 {position: relative; bottom: 1rem;}
 
 /*------------------------*/
@@ -139,7 +154,6 @@ section.about .container h1 {position: relative; bottom: 1rem;}
 /*------------------------*/
 
 section.intro {text-align: center; background: white;}
-section.intro .container > * {max-width: 45rem; margin-left: auto; margin-right: auto;}
 section.intro h1 {margin-bottom: 1.25rem;}
 section.intro img {margin: 4rem auto 0; max-width: 38rem;}
 
@@ -150,14 +164,6 @@ section.intro img {margin: 4rem auto 0; max-width: 38rem;}
 section.cta {background: white;}
 section.cta div.text {flex: 2;}
 section.cta div.image {flex: 1;} 
-section.cta .container > div {
-    background: rgba(0,0,0,0.03); 
-    padding: 3.5rem clamp(2rem, 5vw, 5rem);
-    display: flex;
-    align-items: center;
-    gap: clamp(2rem, 5vw, 5rem);
-    border-radius: 1rem;
-}
 
 /*------------------------*/
 /* brick image
@@ -173,10 +179,14 @@ section.image + section.image + section.image + section.image + section.image + 
 section.image + section.image + section.image + section.image .container,
 section.image + section.image .container {flex-direction: row-reverse;} 
 
-section.image .container > div.text {flex: 1;}
-section.image .container > div.image {flex: 1;} 
-section.image .container {
-    display: flex;
-    align-items: center;
-    gap: clamp(2rem, 5vw, 5rem);
-}
+/*------------------------*/
+/* brick contact
+/*------------------------*/
+
+section.contact .twocols {align-items: flex-start;}
+
+/*------------------------*/
+/* brick title
+/*------------------------*/
+
+section.title {padding-bottom: 0;}

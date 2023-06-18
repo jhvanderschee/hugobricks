@@ -26,3 +26,8 @@ menuitems:
         link:
       - title: 404 Page
         link:
+  - title: Contact
+    link: /contact/
+    items: 
+      - title:
+        link:
