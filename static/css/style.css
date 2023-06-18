@@ -58,6 +58,7 @@ header nav > ul > li > ul {
     border-radius: 0.4rem;
     text-align: left;
     padding: 0.75rem 0 1rem;
+    z-index: 99;
 }
 header nav > ul > li > ul li a {padding: 0.4rem 2rem 0.4rem 1rem;}
 header nav > ul > li:hover > ul {display: block;}
@@ -81,7 +82,7 @@ header .container div, footer .container > div {flex: 3; text-align: center;}
 header .container div:first-child, footer .container > div:first-child {flex: 1; text-align: left;}
 header .container div:last-child, footer .container > div:last-child {flex: 1; text-align: right;}
 footer .container > div:first-child:last-child {text-align: center;}
-footer {background: rgba(0,0,0,0.03); margin-top: 3.5rem;}
+footer {background: rgba(0,0,0,0.03);}
 footer, footer > div:last-child a {color: rgba(0,0,0,0.4); text-decoration: none;}
 footer .container {padding-top: 3rem; padding-bottom: 3rem;}
 footer > div:last-child {border-top: 1px solid rgba(0,0,0,0.075); font-size: 0.9rem;}
@@ -109,7 +110,6 @@ div.box {
     background: rgba(0,0,0,0.03); 
     padding: 3.5rem clamp(2rem, 5vw, 5rem);
     border-radius: 1rem;
-    margin-bottom: 3.5rem;
 }
 
 /*------------------------*/
@@ -147,8 +147,12 @@ p > a:first-child:last-child {margin-top: 0.5rem;}
 
 /*----------------- BRICKS -------------------*/
 
+/*------------------------*/
+/* brick about
+/*------------------------*/
+
 section.about .container p img {display: inline-block; border-radius: 100%; overflow: hidden;}
-section.about .container h1 {position: relative; bottom: 1rem;}
+section.about .container h1 {margin-top: -1rem; padding-bottom: 1rem;}
 
 /*------------------------*/
 /* brick intro
@@ -162,7 +166,7 @@ section.intro img {margin: 4rem auto 0; max-width: 38rem;}
 /* brick cta
 /*------------------------*/
 
-section.cta {background: white; padding: 0;}
+section.cta {background: white;}
 section.cta div.text {flex: 2;}
 section.cta div.image {flex: 1;} 
 
@@ -170,15 +174,8 @@ section.cta div.image {flex: 1;}
 /* brick image
 /*------------------------*/
 
-section.image + section.image + section.image + section.image + section.image,
-section.image + section.image + section.image,
-section.image {background: rgba(0,0,0,0.02);}
-section.image + section.image + section.image + section.image + section.image + section.image,
-section.image + section.image + section.image + section.image,
-section.image + section.image {background: white;}
-section.image + section.image + section.image + section.image + section.image + section.image .container,
-section.image + section.image + section.image + section.image .container,
-section.image + section.image .container {flex-direction: row-reverse;} 
+section.image.alt {background: rgba(0,0,0,0.02);}
+section.image.alt .container {flex-direction: row-reverse;} 
 
 /*------------------------*/
 /* brick contact
