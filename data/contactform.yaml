@@ -8,13 +8,13 @@ fields:
   input_type: email
   placeholder: Email address
   required: true
-- name: sex
+- name: options
   input_type: radio
-  placeholder: male
+  placeholder: option 1
   required: true
-- name: sex
+- name: options
   input_type: radio
-  placeholder: female
+  placeholder: option 2
   required: true
 - name: message
   input_type: textarea
