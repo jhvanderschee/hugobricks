@@ -1,12 +1,12 @@
 <!-- load reviews from data folder and display them in a ul -->
 <div class="reviews">
     <ul>
-	{{ range $.Site.Data.reviews }}
+	{{- range page.Site.Data.reviews -}}
 	<li>
             <h3>{{ .name }} - {{ .function }}</h3>
             <img src="{{ .image }}" alt="{{ .name }} image">
             <p>{{ .description }}</p>
 	</li>
-	{{ end }}
+	{{- end -}}
     </ul>	
 </div>
