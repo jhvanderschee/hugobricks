@@ -8,10 +8,9 @@ title: map
 
 ## Contact us
 
+Usecue BV  
 Soetendaal 7  
 1081BL Amsterdam  
-The Netherlands  
-+31 618 518 928  
-joost@vdschee.nl
+The Netherlands
 
-{{< socialbuttons >}}
+{{< contactbuttons >}}

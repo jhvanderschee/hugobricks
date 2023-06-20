@@ -33,6 +33,9 @@ Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cra
 
 Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cras id hendrerit eros.
 
+{{< contactbuttons >}}
+
+
 ---
 
 ## Unordered list 

@@ -48,6 +48,7 @@ p > img {border-radius: 1rem; overflow: hidden;}
 /*------------------------*/
 
 header {padding: 1.5rem 0; position: sticky; top: 0; background: white; z-index: 9;}
+header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);}
 header ul, footer ul {display: flex; justify-content: center; gap: 2rem; margin: 0;}
 header ul li, footer ul li {list-style: none;}
 header nav > ul > li a {font-weight: bold; color: black; padding: 0.75rem 0; display: block;}
@@ -187,8 +188,9 @@ input[type="checkbox"], input[type="radio"] {margin-right: 0.5rem;}
     height: calc(100% - 1.25em);
     filter: invert(1);
 }
+.button.ghost {background: none; color: black; box-shadow: inset 0 0 0 0.15rem black;}
+.button.smaller {padding: 0.4rem 1rem;}
 p > .button {margin: 0.5rem 0;}
-
 ul.buttons {gap: 1rem; margin-left: 0; display: flex; padding: 0.5rem 0;}
 ul.buttons li {list-style: none;}
 
