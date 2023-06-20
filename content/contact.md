@@ -31,3 +31,4 @@ joost@vdschee.nl
 
 {{< /brick_contact >}}
 {{< brick_map >}}{{< /brick_map >}}
+{{< brick_map >}}{{< /brick_map >}}

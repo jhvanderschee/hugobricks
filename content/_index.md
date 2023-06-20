@@ -26,7 +26,6 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 - Fully responsive on all devices
 - SEO-optimized for better search engine rankings
 
-
 {{< /brick_image2 >}}
 {{< brick_image >}}
 
@@ -40,4 +39,6 @@ Are you missing a brick? [Let us know](/contact/)! We will build it for you!
 
 {{< /brick_image >}}
 {{< brick_reviews >}}{{< /brick_reviews >}}
+{{< brick_reviews >}}{{< /brick_reviews >}}
+{{< brick_cta >}}{{< /brick_cta >}}
 {{< brick_cta >}}{{< /brick_cta >}}

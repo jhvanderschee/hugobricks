@@ -11,7 +11,7 @@
 {{ $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 }}
 {{ $inner = replace $inner $image "" 1 }}
 
-<section class="image alt">
+<section class="image alt hasbackgroundcolor">
     <div class="container twocols">
         <div class="text">
             {{ $inner | safeHTML }}

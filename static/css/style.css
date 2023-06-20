@@ -48,7 +48,6 @@ p > img {border-radius: 1rem; overflow: hidden;}
 /*------------------------*/
 
 header {padding: 1.5rem 0; position: sticky; top: 0; background: white; z-index: 9;}
-header + section {border-top: 1rem solid white;}
 header ul, footer ul {display: flex; justify-content: center; gap: 2rem; margin: 0;}
 header ul li, footer ul li {list-style: none;}
 header nav > ul > li a {font-weight: bold; color: black; padding: 0.75rem 0; display: block;}
@@ -85,7 +84,7 @@ header .container div, footer .container > div {flex: 3; text-align: center;}
 header .container div:first-child, footer .container > div:first-child {flex: 1; text-align: left;}
 header .container div:last-child, footer .container > div:last-child {flex: 1; text-align: right;}
 footer .container > div:first-child:last-child {text-align: center;}
-footer {background: rgba(0,0,0,0.03); border-top: 3.5rem solid white;}
+footer {background: rgba(0,0,0,0.03); border-top: 6rem solid white;}
 footer, footer > div:last-child a {color: rgba(0,0,0,0.4); text-decoration: none;}
 footer .container {padding-top: 3rem; padding-bottom: 3rem;}
 footer > div:last-child {border-top: 1px solid rgba(0,0,0,0.075); font-size: 0.9rem;}
@@ -96,7 +95,7 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
 /* sections general
 /*------------------------*/
 
-section {padding: 3.5rem 0;}
+section, section.image.alt {padding: 4.5rem 0 6rem;}
 section .twocols > div {flex: 1;}
 section .twocols {
     display: flex;
@@ -104,6 +103,10 @@ section .twocols {
     gap: clamp(2rem, 5vw, 5rem);
 }
 section .container.small > * {text-align: center; max-width: 40rem; margin-left: auto; margin-right: auto;}
+section.hasbackgroundcolor {padding: 0;}
+section.hasbackgroundcolor + section.hasbackgroundcolor {padding-top: 3.5rem;}
+section :last-child {margin-bottom: 0;}
+section:not(.hasbackgroundcolor) + section:not(.hasbackgroundcolor) {padding-top: 2rem;}
 
 /*------------------------*/
 /* box
@@ -111,14 +114,15 @@ section .container.small > * {text-align: center; max-width: 40rem; margin-left:
 
 div.box {background: rgba(0,0,0,0.03); padding: 3.5rem clamp(2rem, 5vw, 5rem); border-radius: 1rem;}
 div.box:not(:last-child) {margin-bottom: 1.7em;}
+div.box p img {border-radius: 0;}
 
 /*------------------------*/
 /* map
 /*------------------------*/
 
 div.box.map {aspect-ratio: 2.25; width: 100%;}
-.map {position: relative; background-position: center calc(50% + 2rem); background-repeat: repeat;}
-.map::after {
+div.map {position: relative; background-position: center calc(50% + 2rem); background-repeat: repeat;}
+div.map::after {
     content: ""; 
     width: 100%; 
     height: 100%; 
@@ -133,7 +137,8 @@ div.box.map {aspect-ratio: 2.25; width: 100%;}
 /* image
 /*------------------------*/
 
-div:not(.box) > .image {padding: 2rem;}
+div:not(.box) > .image {padding: 0 2rem;}
+div:not(.box) > .image img {border-radius: 0;}
 
 /*------------------------*/
 /* forms
@@ -202,7 +207,7 @@ section.about .container .buttons {justify-content: center;}
 /*------------------------*/
 
 section.intro {text-align: center; background: white;}
-section.intro img {margin: 4rem auto; max-width: 38rem;}
+section.intro img {margin: 3rem auto 0.5rem; max-width: 38rem;}
 
 /*------------------------*/
 /* brick cta
@@ -229,7 +234,7 @@ section.contact .twocols {align-items: flex-start;}
 /* brick title
 /*------------------------*/
 
-section.title {padding-bottom: 1.75rem;}
+section.title {padding-bottom: 3.25rem;}
 
 /*------------------------*/
 /* brick wide
@@ -240,12 +245,12 @@ section.wide {max-width: 60rem; margin-left: auto; margin-right: auto;}
 /*------------------------*/
 /* brick map
 /*------------------------*/
-
-section.map > .container {display: flex; justify-content: flex-end;}
-section.map > .container > div {background: white; padding: 2.5rem 3rem 1rem; border-radius: 1rem; position: relative; z-index: 2; min-width: 22rem;} 
-section.map .overlay {position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1;}
+section div.map {padding: 3rem;}
+section div.map > .container {display: flex; justify-content: flex-end;}
+section div.map > .container > div {background: white; padding: 2.5rem 3rem 2.5rem; border-radius: 1rem; position: relative; z-index: 2; min-width: 22rem;} 
+section div.map .overlay {position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1;}
 @media (max-width: 55rem) {
-    section.map > .container {justify-content: center;}
+    section div.map > .container {justify-content: center;}
 }
 
 /*------------------------*/
