@@ -116,7 +116,6 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
     #togglemenu {display: inline-block;}
     .menushown #togglemenu {background: transparent url(/img/close.svg) center center / 2rem auto no-repeat;}
     header .nav {display: none;}
-    .menushown header .nav {display: block;}
 }
 
 
