@@ -47,7 +47,7 @@ p > img {border-radius: 1rem; overflow: hidden;}
 /* header and footer
 /*------------------------*/
 
-header {padding: 1.5rem 0; position: sticky; top: 0; background: white; z-index: 9; transition: all 0.15s ease-in-out;}
+header {padding: 1.5rem 0; position: sticky; top: 0; background: white; z-index: 9; transition: all 0.25s ease-in-out;}
 header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); padding: 0.75rem 0; background: white;}
 header ul, footer ul {display: flex; justify-content: center; gap: 2rem; margin: 0;}
 header ul li, footer ul li {list-style: none;}
