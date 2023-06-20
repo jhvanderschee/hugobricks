@@ -107,6 +107,7 @@ section.hasbackgroundcolor {padding: 0;}
 section.hasbackgroundcolor + section.hasbackgroundcolor {padding-top: 3.5rem;}
 section :last-child {margin-bottom: 0;}
 section:not(.hasbackgroundcolor) + section:not(.hasbackgroundcolor) {padding-top: 2rem;}
+section.stickstofooter + footer {border-top: 0;}
 
 /*------------------------*/
 /* box
