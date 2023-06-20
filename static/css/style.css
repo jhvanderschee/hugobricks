@@ -45,7 +45,7 @@ hr {margin: 3.5rem 0; height: 1px; background: rgba(0,0,0,0.1); border: 0;}
 p > img {border-radius: 1rem; overflow: hidden;}
 
 /*------------------------*/
-/* header and footer
+/* header
 /*------------------------*/
 
 header {padding: 1.5rem 0; position: sticky; top: 0; background: white; z-index: 9; transition: all 0.25s ease-in-out;}
@@ -79,12 +79,16 @@ header nav > ul > li.haschildren > a::after {
     display: inline-block;
     transform: rotate(45deg);
 }
-header ul li a, footer ul li a {text-decoration: none;}
-footer ul li a {color: rgba(0,0,0,0.7)}
 header .container, footer .container {display: flex; align-items: center;}
 header .container div, footer .container > div {flex: 3; text-align: center;}
 header .container div:first-child, footer .container > div:first-child {flex: 1; text-align: left;}
 header .container div:last-child, footer .container > div:last-child {flex: 1; text-align: right;}
+
+/*------------------------*/
+/* footer
+/*------------------------*/
+
+footer ul li a {color: rgba(0,0,0,0.7)}
 footer .container > div:first-child:last-child {text-align: center;}
 footer {background: rgba(0,0,0,0.03); border-top: 2rem solid white;}
 footer, footer > div:last-child a {color: rgba(0,0,0,0.4); text-decoration: none;}
@@ -140,7 +144,6 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
 @media (max-width: 400px) {
     header .button {display: none;}
 }
-
 
 /*------------------------*/
 /* sections general
