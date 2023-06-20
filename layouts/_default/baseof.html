@@ -18,7 +18,7 @@
         <div>
           {{ partial "logo.html" . }}
         </div>
-        <div>
+        <div class="nav">
           <nav>
             <ul>
               {{ range .Site.Data.header.menuitems }}
@@ -37,6 +37,7 @@
         </div>
         <div>
           <a href="{{ .Site.Data.header.cta.link }}" class="button ghost smaller">{{ .Site.Data.header.cta.title }}</a>
+          <button id="togglemenu" onclick="document.body.classList.toggle('menushown');">Toggle menu</button>
         </div>
     </header>
 
