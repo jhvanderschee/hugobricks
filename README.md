@@ -20,16 +20,18 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 
 - [x] intro,
 - [x] cta,
-- [ ] IN_PROGRESS Image,
-- [ ] IN_PROGRESS About,
-- [ ] IN_PROGRESS Contact
+- [x] Image,
+- [x] About,
+- [x] Contact,
+- [x] 404 Page
+- [ ] Reviews, 
+- [ ] Carousel,
 - [ ] Video,
 - [ ] Testimonials,
 - [ ] Blog,
 - [ ] Post,
 - [ ] Related
 - [ ] Authors
-- [ ] 404 Page
 - [ ] Search
 - [ ] Title,
 - [ ] Team,
@@ -46,4 +48,6 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 
 ### Inspired by :
 
-- [Hugoplate](https://github.com/zeon-studio/hugoplate.git) 
+- [Hugoplate](https://github.com/zeon-studio/hugoplate.git)
+- [Stackable](https://wpstackable.com/)
+- [Gutenberg Block Plugins](https://wpastra.com/plugins/wordpress-gutenberg-block-plugins/)
