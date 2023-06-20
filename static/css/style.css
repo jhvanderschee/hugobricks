@@ -90,7 +90,7 @@ footer {background: rgba(0,0,0,0.03); border-top: 2rem solid white;}
 footer, footer > div:last-child a {color: rgba(0,0,0,0.4); text-decoration: none;}
 footer .container {padding-top: 3rem; padding-bottom: 3rem;}
 footer > div:last-child {border-top: 1px solid rgba(0,0,0,0.075); font-size: 0.9rem;}
-footer > div:last-child .container {justify-content: center; padding-top: 1.75rem; padding-bottom: 1.75rem;}
+footer > div:last-child .container {justify-content: center; padding-top: 1.7rem; padding-bottom: 1.75rem;}
 footer ul.buttons {justify-content: flex-end; padding: 0;}
 @media (max-width: 1000px) {
     footer .container {flex-direction: column; gap: 1rem; align-items: flex-start;}
