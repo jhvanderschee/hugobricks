@@ -39,4 +39,5 @@ We aim to provide the following bricks: intro, title, image, cta, contact, team,
 Are you missing a brick? [Let us know](/contact/)! We will build it for you!
 
 {{< /brick_image >}}
+{{< brick_reviews >}}{{< /brick_reviews >}}
 {{< brick_cta >}}{{< /brick_cta >}}
