@@ -188,7 +188,7 @@ input[type="checkbox"], input[type="radio"] {margin-right: 0.5rem;}
     height: calc(100% - 1.25em);
     filter: invert(1);
 }
-.button.ghost {background: none; color: black; box-shadow: inset 0 0 0 0.15rem black;}
+.button.ghost {background: none; color: black; box-shadow: inset 0 0 0 0.1rem black;}
 .button.smaller {padding: 0.4rem 1rem;}
 p > .button {margin: 0.5rem 0;}
 ul.buttons {gap: 1rem; margin-left: 0; display: flex; padding: 0.5rem 0;}
