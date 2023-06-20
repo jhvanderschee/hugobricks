@@ -28,7 +28,7 @@
 * {padding: 0; margin: 0; box-sizing: border-box;}
 html {font-size: clamp(14px, 2vw, 16px); line-height: 1.7; height: 100%; scroll-behavior: smooth;}
 body {font-family: 'Heebo', sans-serif; font-size: 1rem; color: rgba(0,0,0,0.7);}
-.container {margin: 0 auto; max-width: 82rem; padding: 0 clamp(1rem,4vw,3rem);}
+.container {margin: 0 auto; max-width: 84rem; padding: 0 clamp(1rem,4vw,3rem);}
 img {max-width: 100%; display: block;}
 a {color: rgba(0,0,0,0.7);}
 h1, h2, a.logo {font-family: 'Signika', sans-serif; line-height: 1.2; font-size: 2.4rem; color: black;}
@@ -85,7 +85,7 @@ header .container div, footer .container > div {flex: 3; text-align: center;}
 header .container div:first-child, footer .container > div:first-child {flex: 1; text-align: left;}
 header .container div:last-child, footer .container > div:last-child {flex: 1; text-align: right;}
 footer .container > div:first-child:last-child {text-align: center;}
-footer {background: rgba(0,0,0,0.03); border-top: 6rem solid white;}
+footer {background: rgba(0,0,0,0.03); border-top: 2rem solid white;}
 footer, footer > div:last-child a {color: rgba(0,0,0,0.4); text-decoration: none;}
 footer .container {padding-top: 3rem; padding-bottom: 3rem;}
 footer > div:last-child {border-top: 1px solid rgba(0,0,0,0.075); font-size: 0.9rem;}
@@ -96,7 +96,7 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
 /* sections general
 /*------------------------*/
 
-section, section.image.alt {padding: 4.5rem 0 6rem;}
+section, section.image.alt {padding: 4.5rem 0 6.5rem;}
 section .twocols {display: grid; grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); grid-gap: 5rem clamp(2rem, 5vw, 5rem);}
 section .twocols > div {display: flex; flex-direction: column; justify-content: center;}
 section .container.small > * {text-align: center; max-width: 40rem; margin-left: auto; margin-right: auto;}
@@ -104,6 +104,7 @@ section.hasbackgroundcolor {padding: 0;}
 section.hasbackgroundcolor + section.hasbackgroundcolor {padding-top: 3.5rem;}
 section :last-child {margin-bottom: 0;}
 section:not(.hasbackgroundcolor) + section:not(.hasbackgroundcolor) {padding-top: 2rem;}
+section.hasbackgroundcolor + footer {border-top: 6.5rem solid white;}
 section.stickstofooter + footer {border-top: 0;}
 
 /*------------------------*/
@@ -114,7 +115,7 @@ div.box {background: rgba(0,0,0,0.03); padding: 3.5rem clamp(2rem, 5vw, 5rem); b
 div.box:not(:last-child) {margin-bottom: 1.7em;}
 div.box p img {border-radius: 0;}
 @media (max-width: 600px) {
-    div.box {margin: 0 clamp(-3rem,-4vw,-1rem); border-radius: 0; padding: clamp(1rem,4vw,3rem);}
+    div.box {margin: 0 clamp(-3rem,-4vw,-1rem); border-radius: 0; padding: inherit clamp(1rem,4vw,3rem);}
 }
 
 /*------------------------*/
