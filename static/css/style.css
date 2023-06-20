@@ -30,7 +30,8 @@ html {font-size: clamp(14px, 2vw, 16px); line-height: 1.7; height: 100%; scroll-
 body {font-family: 'Heebo', sans-serif; font-size: 1rem; color: rgba(0,0,0,0.7);}
 .container {margin: 0 auto; max-width: 84rem; padding: 0 clamp(1rem,4vw,3rem);}
 img {max-width: 100%; display: block;}
-a {color: rgba(0,0,0,0.7);}
+a {color: rgba(0,0,0,0.7); text-decoration: none;}
+p a {text-decoration: underline;}
 h1, h2, a.logo {font-family: 'Signika', sans-serif; line-height: 1.2; font-size: 2.4rem; color: black;}
 h1 {font-size: 3rem; margin-bottom: 1.75rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
