@@ -16,7 +16,7 @@ menuitems:
       - title:
         link:
   - title: Pages
-    link:
+    link: /contact/
     items: 
       - title: Contact
         link: /contact/

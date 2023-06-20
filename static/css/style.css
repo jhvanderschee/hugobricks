@@ -110,12 +110,26 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
     width: 3rem; 
     height: 3rem; 
     vertical-align: middle; 
-    margin-left: 1rem;
+    margin-left: 0.8rem;
 }
 @media (max-width: 1000px) {
-    #togglemenu {display: inline-block;}
+    #togglemenu {display: inline-block; cursor: pointer;}
     .menushown #togglemenu {background: transparent url(/img/close.svg) center center / 2rem auto no-repeat;}
-    header .nav {display: none;}
+    header {margin-bottom: 2rem;}
+    header .nav {overflow: hidden; height: 0; transition: height 0.3s ease-in-out;}
+    .menushown header .nav {height: auto;}
+    header > div.container {display: grid; grid-template-areas: "logo cta" "menu menu";}
+    header > div.container > div:nth-child(1) {grid-area: logo;}
+    header > div.container > div:nth-child(2) {grid-area: menu;}
+    header > div.container > div:nth-child(3) {grid-area: cta;}
+    header {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); padding: 0.75rem 0;}
+    header nav > ul {flex-direction: column; gap: 0rem; margin-top: 1rem; text-align: center; margin-bottom: 1rem;}
+    header nav > ul > li a {padding: 0.5rem 1rem;}
+    header nav > ul > li > ul li a {padding: 0.5rem 1rem; font-weight: normal;}
+    header nav > ul > li > ul {position: relative; display: block; box-shadow: none; margin: 0; padding: 0; text-align: center;}
+}
+@media (max-width: 400px) {
+    header .button {display: none;}
 }
 
 
@@ -124,7 +138,7 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
 /*------------------------*/
 
 section, section.image.alt {padding: 4.5rem 0 6.5rem;}
-section .twocols {display: grid; grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); grid-gap: 5rem clamp(2rem, 5vw, 5rem);}
+section .twocols {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 4rem clamp(2rem, 5vw, 5rem);}
 section .twocols > div {display: flex; flex-direction: column; justify-content: center;}
 section .container.small > * {text-align: center; max-width: 40rem; margin-left: auto; margin-right: auto;}
 section.hasbackgroundcolor {padding: 0;}
@@ -142,7 +156,7 @@ div.box {background: rgba(0,0,0,0.03); padding: 3.5rem clamp(2rem, 5vw, 5rem); b
 div.box:not(:last-child) {margin-bottom: 1.7em;}
 div.box p img {border-radius: 0;}
 @media (max-width: 600px) {
-    div.box {margin: 0 clamp(-3rem,-4vw,-1rem); border-radius: 0; padding-left: clamp(1rem,4vw,3rem); padding-right: clamp(1rem,4vw,3rem);}
+    div.box {margin: 0 clamp(-3rem,-4vw,-1rem); border-radius: 0; padding: 5rem clamp(1rem,4vw,3rem);}
 }
 
 /*------------------------*/
@@ -238,7 +252,7 @@ section.about .container .buttons {justify-content: center;}
 /*------------------------*/
 
 section.intro {text-align: center; background: white;}
-section.intro img {margin: 3rem auto 0.5rem; max-width: 38rem;}
+section.intro img {margin: 3rem auto 0.5rem; width: 38rem;}
 
 /*------------------------*/
 /* brick cta
@@ -248,8 +262,9 @@ section.cta {background: white;}
 section.cta .twocols {display: flex;}
 section.cta .twocols .text {flex: 2;}
 section.cta .twocols .image {flex: 1;}
+section.cta .twocols .image img {display: inline-block; width: 20rem;}
 @media (max-width: 600px) {
-    section.cta .twocols {flex-direction: column;}
+    section.cta .twocols {flex-direction: column; text-align: center;}
 }
 
 /*------------------------*/
@@ -257,7 +272,10 @@ section.cta .twocols .image {flex: 1;}
 /*------------------------*/
 
 section.image.alt {background: rgba(0,0,0,0.02);}
-section.image.alt .container {flex-direction: row-reverse;} 
+section.image.alt .container {direction: rtl;}
+section.image.alt .container > div {direction: ltr;}
+section.image .twocols .image {text-align: center;}
+section.image .twocols .image img {width: auto; display: inline-block; width: 27rem}
 
 /*------------------------*/
 /* brick contact
