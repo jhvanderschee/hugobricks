@@ -22,14 +22,16 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 - [x] cta,
 - [x] Image,
 - [x] About,
-- [x] Contact
+- [x] Contact,
+- [x] 404 Page
+- [ ] Reviews, 
+- [ ] Carousel,
 - [ ] Video,
 - [ ] Testimonials,
 - [ ] Blog,
 - [ ] Post,
 - [ ] Related
 - [ ] Authors
-- [x] 404 Page
 - [ ] Search
 - [ ] Title,
 - [ ] Team,
