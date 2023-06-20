@@ -64,7 +64,7 @@ header nav > ul > li > ul {
     padding: 0.75rem 0 1rem;
     z-index: 99;
 }
-header nav > ul > li > ul li a {padding: 0.4rem 2rem 0.4rem 1rem;}
+header nav > ul > li > ul li a {padding: 0.4rem 2rem 0.4rem 1rem; font-weight: normal;}
 header nav > ul > li:hover > ul {display: block;}
 header nav > ul > li.haschildren > a::after {
     content:""; 
@@ -90,7 +90,7 @@ footer {background: rgba(0,0,0,0.03); border-top: 2rem solid white;}
 footer, footer > div:last-child a {color: rgba(0,0,0,0.4); text-decoration: none;}
 footer .container {padding-top: 3rem; padding-bottom: 3rem;}
 footer > div:last-child {border-top: 1px solid rgba(0,0,0,0.075); font-size: 0.9rem;}
-footer > div:last-child .container {justify-content: center; padding-top: 2rem; padding-bottom: 2rem;}
+footer > div:last-child .container {justify-content: center; padding-top: 1.75rem; padding-bottom: 1.75rem;}
 footer ul.buttons {justify-content: flex-end; padding: 0;}
 @media (max-width: 1000px) {
     footer .container {flex-direction: column; gap: 1rem; align-items: flex-start;}
@@ -126,7 +126,7 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
     header {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); padding: 0.75rem 0;}
     header nav > ul {flex-direction: column; gap: 0rem; margin-top: 1rem; text-align: left; margin-bottom: 1rem;}
     header nav > ul > li a {padding: 0.5rem 1rem;}
-    header nav > ul > li > ul li a {padding: 0.5rem 1rem; font-weight: normal;}
+    header nav > ul > li > ul li a {padding: 0.5rem 1rem;}
     header nav > ul > li > ul {position: relative; display: block; box-shadow: none; margin: 0 0 0 2rem; padding: 0; text-align: left;}
 }
 @media (max-width: 400px) {
