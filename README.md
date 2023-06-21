@@ -46,6 +46,12 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 - [ ] Brands,
 - [ ] Openinghours
 
+## Shortcodes that are available:
+- [x] Contact form
+- [x] Map
+- [x] Button
+- [x] Social buttons
+- [x] Contact buttons
 
 ### Inspired by :
 
