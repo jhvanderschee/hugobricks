@@ -21,6 +21,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 - [x] Intro,
 - [x] CTA,
 - [x] Image,
+- [x] Image2 (alt),
 - [x] About,
 - [x] Contact,
 - [x] 404 Page
