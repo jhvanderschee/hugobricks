@@ -62,7 +62,7 @@ p > img {border-radius: 1rem; overflow: hidden;}
     position: relative;
     bottom: 0.1em;
 }
-.preheader + header {padding: 1rem 0;}
+.preheader + header {padding: 1.25rem 0;}
 @media (max-width: 600px) {
     .preheader .container {justify-content: center;}
     .preheader .container a.icon {display: none;}
