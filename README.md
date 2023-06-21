@@ -14,7 +14,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 - Fully responsive on all devices
 - SEO-optimized for better search engine rankings
 
-##  Hugobricks you might want to re-use :
+##  Hugobricks that are available:
 
 - [x] Intro,
 - [x] CTA,
