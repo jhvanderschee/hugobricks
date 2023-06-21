@@ -134,7 +134,7 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
     header > div.container > div:nth-child(1) {grid-area: logo;}
     header > div.container > div:nth-child(2) {grid-area: menu;}
     header > div.container > div:nth-child(3) {grid-area: cta;}
-    header {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); padding: 0.75rem 0;}
+    header {padding: 0.75rem 0;}
     header nav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 1rem 0;}
     header nav > ul > li {break-inside: avoid-column;}
     header nav > ul > li a, header nav > ul > li > ul li a {padding: 0.5rem 1rem;}
