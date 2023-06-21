@@ -18,13 +18,20 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 
 ##  Hugobricks you might want to re-use :
 
-- [x] intro,
-- [x] cta,
+- [x] Intro,
+- [x] CTA,
 - [x] Image,
 - [x] About,
 - [x] Contact,
 - [x] 404 Page
+- [x] Title,
+- [ ] Team,
 - [ ] Reviews, 
+- [ ] Usps,
+- [ ] Faqs,
+- [ ] Quote,
+- [ ] Stats,
+- [ ] Pricing,
 - [ ] Carousel,
 - [ ] Video,
 - [ ] Testimonials,
@@ -33,17 +40,12 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 - [ ] Related
 - [ ] Authors
 - [ ] Search
-- [ ] Title,
-- [ ] Team,
-- [ ] Pricing,
 - [ ] Products,
 - [ ] Product,
-- [ ] Usps, 
 - [ ] Stats,
 - [ ] Gallery,
-- [ ] Quote,
-- [ ] Faqs,
 - [ ] Brands,
+- [ ] Openinghours
 
 
 ### Inspired by :
