@@ -1,4 +1,4 @@
-# hugobricks
+# Hugobricks
 
 ## Build your next Hugo website with stackable content bricks
 
