@@ -52,7 +52,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 - [x] Contact buttons
 
 
-### Why Hugobricks ?
+### Hugobricks workflow
 
 Hugobricks aims to enhance the Hugo web framework by providing customizable web components and a variety of pre-made bricks for straightforward website-building.
 
@@ -72,12 +72,7 @@ According to [Hugo's official documentation](https://gohugo.io/overview/introduc
 
  Hugobricks takes advantage of these features to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic.
 
-
-### Hugobricks Workflow
-
-Use Shortcodes for content re-use, Partials to pivot around content and layouts, and Layouts to call stylesheets and functional logic. Orchestrate your content, templates, and styling for a seamless workflow.
-
-### Get Started with Hugobricks
+### Get started with Hugobricks
 
 In order to get a working website feel free to 
 
