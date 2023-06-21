@@ -1,19 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 -2.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    
-    <title>email [#1573]</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
 
-</defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -922.000000)" fill="#000000">
-            <g id="icons" transform="translate(56.000000, 160.000000)">
-                <path d="M262,764.291 L254,771.318 L246,764.281 L246,764 L262,764 L262,764.291 Z M246,775 L246,766.945 L254,773.98 L262,766.953 L262,775 L246,775 Z M244,777 L264,777 L264,762 L244,762 L244,777 Z" id="email-[#1573]">
-
-</path>
-            </g>
-        </g>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="600"
+   viewBox="0 -2.5 20 15"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="email.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>email [#1573]</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="949"
+     inkscape:window-height="480"
+     id="namedview14"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.295"
+     inkscape:cx="400"
+     inkscape:cy="300"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg12" />
+  <title
+     id="title2">email [#1573]</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <defs
+     id="defs6" />
+  <g
+     id="Page-1"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1"
+     transform="translate(0,-2.5)">
+    <g
+       id="Dribbble-Light-Preview"
+       transform="translate(-300,-922)"
+       style="fill:#000000">
+      <g
+         id="icons"
+         transform="translate(56,160)">
+        <path
+           d="m 262,764.291 -8,7.027 -8,-7.037 V 764 h 16 z M 246,775 v -8.055 l 8,7.035 8,-7.027 V 775 Z m -2,2 h 20 v -15 h -20 z"
+           id="email-[#1573]"
+           inkscape:connector-curvature="0" />
+      </g>
     </g>
+  </g>
 </svg>

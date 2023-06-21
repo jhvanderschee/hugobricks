@@ -32,3 +32,5 @@ cta:
 contact:
   phone: +31 618 51 89 28
   email: joost@vdschee.nl
+has_preheader: true
+preheader_text: Open today from 9.00 am to 5.00 pm
