@@ -8,13 +8,11 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 Hugoplate is a comprehensive starter theme that includes everything you need to get started with your Hugo project. What’s Included in
 
--    10+ Pre-build pages
--    99+ Google Pagespeed Score
--    Build with Hugo and vanilla CSS for easy and customizable styling
--    Fully responsive on all devices
--    SEO-optimized for better search engine rankings
-
-
+- 10+ Pre-build pages
+- 99+ Google Pagespeed Score
+- Built with Hugo and CSS variables for easy styling
+- Fully responsive on all devices
+- SEO-optimized for better search engine rankings
 
 ##  Hugobricks you might want to re-use :
 
