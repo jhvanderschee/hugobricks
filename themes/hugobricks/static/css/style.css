@@ -36,7 +36,7 @@ h1 {font-size: 3rem; margin-bottom: 1.75rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
 h2:first-child {margin-top: 0;}
 h3 {color: black; font-size: 1.1rem;}
-a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: black; position: relative; bottom: 0.05em; display: flex; gap: 0.5rem;}
+a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: black; position: relative; bottom: 0.15em; display: flex; gap: 0.5rem;}
 a.logo img.inline {height: 2rem; position: relative; top: 0.1rem;}
 p, ul, ol, .box.map {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
