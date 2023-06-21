@@ -170,7 +170,7 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
 /*------------------------*/
 
 section, section.image.alt {padding: 4.5rem 0 6.5rem;}
-section .twocols {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 4rem clamp(2rem, 5vw, 5rem);}
+section .twocols {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 5.5rem clamp(2rem, 5vw, 5rem);}
 section .twocols > div {display: flex; flex-direction: column; justify-content: center;}
 section .container.small > * {text-align: center; max-width: 40rem; margin-left: auto; margin-right: auto;}
 section.hasbackgroundcolor {padding: 0;}
