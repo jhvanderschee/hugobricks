@@ -83,7 +83,7 @@ In order to get a working website feel free to
 
 ### Hugobricks Feedback 
 
-Make your wishlist. Missing a given [Hugobrick ?,let us know in this open conversation here.](https://github.com/jhvanderschee/hugobricks/issues/3)
+Make your wishlist. Missing a given [Hugobrick ?,let us know in this open conversation here.](https://github.com/jhvanderschee/hugobricks/issues/5)
 
 #### Let's talk about general Hugobricks approach 
 
