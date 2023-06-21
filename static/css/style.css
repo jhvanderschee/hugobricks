@@ -55,7 +55,8 @@ header ul, footer ul {display: flex; justify-content: center; gap: 2rem; margin:
 header ul li, footer ul li {list-style: none;}
 header nav > ul > li a {font-weight: bold; color: black; padding: 0.75rem 0; display: block;}
 header nav > ul > li > ul {
-    display: none;
+    opacity: 0;
+    transform: translateY(0.25rem);
     position: absolute;
     box-shadow: 0px 0px 1.5rem rgba(0,0,0,0.1);
     margin-left: -1rem;
@@ -64,14 +65,21 @@ header nav > ul > li > ul {
     text-align: left;
     padding: 0.75rem 0 1rem;
     z-index: 99;
+    transition: all 0.1s ease-in-out;
+    pointer-events: none;
+    display: block;
 }
 header nav > ul > li > ul li a {padding: 0.4rem 2rem 0.4rem 1rem; font-weight: normal;}
-header nav > ul > li:hover > ul {display: block;}
+header nav > ul > li:hover > ul {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
 header nav > ul > li.haschildren > a::after {
     content:""; 
     width: 0.3rem; 
     height: 0.3rem; 
-    border: 0.1rem solid black; 
+    border: 0.15rem solid black; 
     border-left: 0; 
     border-top: 0;
     margin-left: 0.4rem;
@@ -139,7 +147,16 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
     header nav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 1rem 0;}
     header nav > ul > li {break-inside: avoid-column;}
     header nav > ul > li a, header nav > ul > li > ul li a {padding: 0.5rem 1rem;}
-    header nav > ul > li > ul {position: relative; display: block; box-shadow: none; margin: 0 0 0 2rem; padding: 0; text-align: left;}
+    header nav > ul > li > ul {
+        position: relative; 
+        box-shadow: none; 
+        margin: 0 0 0 2rem; 
+        padding: 0; 
+        text-align: left;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
+    }
 }
 @media (max-width: 600px) {
     header nav > ul > li a, header nav > ul > li > ul li a {padding: 0.5rem 1rem;}
