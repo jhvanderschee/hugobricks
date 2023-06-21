@@ -36,7 +36,6 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 - [ ] Pricing,
 - [ ] Carousel,
 - [ ] Video,
-- [ ] Testimonials,
 - [ ] Blog,
 - [ ] Post,
 - [ ] Related
