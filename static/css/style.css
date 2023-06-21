@@ -128,6 +128,7 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
     header {margin-bottom: 2rem;}
     header .nav {display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease-in-out;}
     header .nav nav {overflow: hidden; display: flex; opacity: 0; transform: scaleY(0); transition: all 0.3s ease-in-out;}
+    .menushown header {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);}
     .menushown header .nav {grid-template-rows: 1fr;}
     .menushown header .nav nav {opacity: 1; transform: scaleY(1);}
     header > div.container {display: grid; grid-template-areas: "logo cta" "menu menu";}
