@@ -56,24 +56,21 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 
 Hugobricks aims to enhance the Hugo web framework by providing customizable web components and a variety of pre-made bricks for straightforward website-building.
 
-### Why Hugobricks?
-
 Our companion project, [hugocodex](https://hugocodex.org), guides beginners in starting a Hugo project from scratch. For those who already have experience with Hugo and want to use it for rapid prototyping and iterating, Hugobricks offers premade websites and customizable components powered by Hugo.
 
-Clone this repository and start building lightning-fast static sites with flexibility and ease.
+Cloning this repository allows you to start building lightning-fast static sites with flexibility and ease with and already working website.
 
-### Under the Hood
+### Hugobricks under the Hood
 
-According to [Hugo's documentation](https://gohugo.io/overview/introduction/), the framework offers : 
+According to [Hugo's official documentation](https://gohugo.io/overview/introduction/), the framework offers : 
 
-- Shortcodes, 
-- Partials, 
-- Layouts, and templating. 
--
-Hugobricks takes advantage of these features to allow content re-use, pivot around content and layouts, and call stylesheets and functional logic.
 - [Shortcodes](https://gohugo.io/content-management/shortcodes/#what-a-shortcode-is) 
 - [Partials](https://gohugo.io/templates/partials/)
 - [Layouts / templating](https://gohugo.io/templates/base/)
+
+...we focus on.
+
+ Hugobricks takes advantage of these features to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic.
 
 
 ### Hugobricks Workflow
