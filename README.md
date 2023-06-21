@@ -23,6 +23,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 - [x] 404 Page
 - [x] Title,
 - [x] Map,
+- [x] Preheader, 
 - [ ] Team,
 - [ ] Reviews, 
 - [ ] Usps,
