@@ -6,7 +6,7 @@
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
-<section class="reviews">
+<section class="reviews hasbackgroundcolor">
     <div class="container small">
         {{- markdownify $inner -}}
     </div>
@@ -14,3 +14,5 @@
         {{ partial "reviews.html" . }}
     </div>
 </section>
+
+
