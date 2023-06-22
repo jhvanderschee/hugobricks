@@ -40,3 +40,4 @@ Are you missing a brick? [Let us know](/contact/)! We will build it for you!
 {{< /brick_image >}}
 {{< brick_reviews >}}{{< /brick_reviews >}}
 {{< brick_cta >}}{{< /brick_cta >}}
+{{< brick_features >}}{{< /brick_features >}}
