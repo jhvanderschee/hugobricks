@@ -4,10 +4,16 @@
 	{{- range page.Site.Data.features -}}
 	<li>
 	    <img src="{{ .icon }}" alt="{{ .icon }} icon">
-	    <div><img src="/img/star-icon.svg" alt="star" loading="lazy" /></div>
+	    <!-- div><img src="/img/star-icon.svg" alt="star" loading="lazy" /></div -->
             <h2>{{ .title }}</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+		<path fill="currentColor" stroke="currentColor" stroke-width="5" d="M12 2.5l6 5.1962v8.6074l-6 5.1962-6-5.1962v-8.6074z"></path>
+            </svg>
+            {{ .title }}
             <p>{{ .description }}</p>
+	    
+
 	</li>
 	{{- end -}}
-    </ul>	
+    </ul>
 </div>
