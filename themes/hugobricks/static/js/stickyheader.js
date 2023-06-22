@@ -5,8 +5,6 @@ var timeout;
 const ev = new Event('scroll');
 window.addEventListener('scroll', function ( e ) {
 
-	//console.log( 'no debounce' );
-
 	// If there's a timer, cancel it
 	if (timeout) {
 		window.cancelAnimationFrame(timeout);
