@@ -49,15 +49,15 @@ p > img {border-radius: 1rem; overflow: hidden;}
 /* preheader
 /*------------------------*/
 
-.preheader {background: rgba(0,0,0,0.03); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid rgba(0,0,0,0.02);}
-.preheader, .preheader a {color: rgba(0,0,0,0.5);}
+.preheader {background: white; font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid rgba(0,0,0,0.07);}
+.preheader, .preheader a {color: rgba(0,0,0,0.7);}
 .preheader .container {display: flex; justify-content: space-between;}
 .preheader .container a.icon {text-decoration: none; margin-right: 2rem;}
 .preheader .container a.icon img {
     height: 0.7em; 
     display: inline-block; 
     vertical-align: middle; 
-    opacity: 0.5;
+    opacity: 0.6;
     margin-right: 0.35rem;
     position: relative;
     bottom: 0.1em;
@@ -88,13 +88,14 @@ header nav > ul > li > ul {
     background: white;
     border-radius: 0.4rem;
     text-align: left;
-    padding: 0.75rem 0 1rem;
+    padding: 0.75rem 0 0.85rem;
     z-index: 99;
     transition: all 0.1s ease-in-out;
     pointer-events: none;
     display: block;
+    font-size: 0.95rem;
 }
-header nav > ul > li > ul li a {padding: 0.4rem 2rem 0.4rem 1rem; font-weight: normal;}
+header nav > ul > li > ul li a {padding: 0.3rem 2rem 0.3rem 1rem; font-weight: normal;}
 header nav > ul > li:hover > ul {
     opacity: 1;
     transform: translateY(0);
