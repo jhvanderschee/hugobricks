@@ -1,0 +1,13 @@
+<!-- load features from data folder and display them ein a ul -->
+<div class="reviews">
+    <ul>
+	{{- range page.Site.Data.features -}}
+	<li>
+	    <img src="{{ .icon }}" alt="{{ .icon }} icon">
+	    <div><img src="/img/star-icon.svg" alt="star" loading="lazy" /></div>
+            <h2>{{ .title }}</h2>
+            <p>{{ .description }}</p>
+	</li>
+	{{- end -}}
+    </ul>	
+</div>
