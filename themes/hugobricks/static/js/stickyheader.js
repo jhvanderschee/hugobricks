@@ -2,7 +2,8 @@
 var timeout;
 
 // Listen for resize events
-window.addEventListener('scroll', function ( event ) {
+const ev = new Event('scroll');
+window.addEventListener('scroll', function ( e ) {
 
 	//console.log( 'no debounce' );
 
@@ -24,5 +25,4 @@ window.addEventListener('scroll', function ( event ) {
 	});
 
 }, false);
-
-
+window.dispatchEvent(ev);

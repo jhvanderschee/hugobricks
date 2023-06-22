@@ -1,13 +1,21 @@
 <!-- load reviews from data folder and display them ein a ul -->
-<div class="reviews">
-    <ul>
-	{{- range page.Site.Data.reviews -}}
-	<li>
-            <h3>{{ .name }} - {{ .function }}</h3>
-            <img src="{{ .image }}" alt="{{ .name }} image">
-	    <div><img src="/img/quote-icon.svg" alt="quote" loading="lazy" /></div>
-            <p>{{ .description }}</p>
-	</li>
-	{{- end -}}
-    </ul>	
-</div>
+<ul class="reviews">
+{{- range page.Site.Data.reviews -}}
+    <li>
+        <div class="box">
+            <div>
+                <img src="{{ .image }}" alt="{{ .name }} image" class="avatar">
+                <div>
+                    <h3>{{ .name }}</h3>
+                    <div class="function">{{ .function }}</div>
+                </div>
+            </div>
+            <div>
+                <img src="/img/quote-icon.svg" alt="quote" loading="lazy" class="quote" />
+                <p>{{ .description }}</p>
+            </div>
+        </div>
+    </li>
+{{- end -}}
+</ul>	
+

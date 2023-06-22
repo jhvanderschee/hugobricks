@@ -36,7 +36,7 @@ h1 {font-size: 3rem; margin-bottom: 1.75rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
 h2:first-child {margin-top: 0;}
 h3 {color: black; font-size: 1.1rem;}
-a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: black; position: relative; bottom: 0.15em; display: flex; gap: 0.5rem;}
+a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: black; display: flex; gap: 0.5rem;}
 a.logo img.inline {height: 2rem; position: relative; top: 0.1rem;}
 p, ul, ol, .box.map {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
@@ -49,23 +49,23 @@ p > img {border-radius: 1rem; overflow: hidden;}
 /* preheader
 /*------------------------*/
 
-.preheader {background: white; font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid rgba(0,0,0,0.07);}
-.preheader, .preheader a {color: rgba(0,0,0,0.7);}
+.preheader {background: black; font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid rgba(0,0,0,0.07); font-weight: 600;}
+.preheader, .preheader a {color: white;}
 .preheader .container {display: flex; justify-content: space-between;}
 .preheader .container a.icon {text-decoration: none; margin-right: 2rem;}
 .preheader .container a.icon img {
     height: 0.7em; 
     display: inline-block; 
-    vertical-align: middle; 
-    opacity: 0.6;
+    vertical-align: middle;
     margin-right: 0.35rem;
     position: relative;
     bottom: 0.1em;
+    filter: invert(1);
 }
 .preheader + header {padding: 1.35rem 0;}
 @media (max-width: 600px) {
     .preheader .container {justify-content: center;}
-    .preheader .container a.icon {display: none;}
+    .preheader .container .icons {display: none;}
 }
 
 
@@ -73,12 +73,14 @@ p > img {border-radius: 1rem; overflow: hidden;}
 /* header
 /*------------------------*/
 
-header {padding: 1.5rem 0; position: sticky; top: 0; background: white; z-index: 9; transition: all 0.25s ease-in-out;}
-header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); padding: 0.75rem 0; background: white;}
+header {position: sticky; top: 0; background: white; z-index: 9;}
+header > .container {padding-top: 1.5rem; padding-bottom: 1.5rem; transition: all 0.25s ease-in-out;}
+header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white;}
+header.sticky > .container {padding-top: 0.75rem; padding-bottom: 0.75rem;}
 header a {text-decoration: none;}
 header ul, footer ul {display: flex; justify-content: center; gap: 2rem; margin: 0;}
 header ul li, footer ul li {list-style: none;}
-header nav > ul > li a {font-weight: bold; color: black; padding: 0.75rem 0; display: block;}
+header nav > ul > li a {font-weight: bold; color: black; padding: 0.80rem 0 0.65rem 0; display: block;}
 header nav > ul > li > ul {
     opacity: 0;
     transform: translateY(0.25rem);
@@ -114,10 +116,10 @@ header nav > ul > li.haschildren > a::after {
     display: inline-block;
     transform: rotate(45deg);
 }
-header .container, footer .container {display: flex; align-items: center;}
-header .container div, footer .container > div {flex: 3; text-align: center;}
-header .container div:first-child, footer .container > div:first-child {flex: 1; text-align: left;}
-header .container div:last-child, footer .container > div:last-child {flex: 1; text-align: right;}
+header > .container, footer .container {display: flex; align-items: center;}
+header > .container div, footer .container > div {flex: 3; text-align: center;}
+header > .container div:first-child, footer .container > div:first-child {flex: 1; text-align: left;}
+header > .container div:last-child, footer .container > div:last-child {flex: 1; text-align: right;}
 
 /*------------------------*/
 /* footer
@@ -166,7 +168,6 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
     header > div.container > div:nth-child(1) {grid-area: logo;}
     header > div.container > div:nth-child(2) {grid-area: menu;}
     header > div.container > div:nth-child(3) {grid-area: cta;}
-    header {padding: 0.75rem 0;}
     header nav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 1rem 0;}
     header nav > ul > li {break-inside: avoid-column;}
     header nav > ul > li a, header nav > ul > li > ul li a {padding: 0.5rem 1rem;}
@@ -293,6 +294,21 @@ ul.buttons {gap: 1rem; margin-left: 0; display: flex; padding: 0.5rem 0;}
 ul.buttons li {list-style: none;}
 
 
+/*------------------------*/
+/* reviews
+/*------------------------*/
+
+ul.reviews {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 1.5rem; margin: 0;}
+ul.reviews li {list-style: none; position: relative;}
+ul.reviews li div.box {display: flex; flex-direction: column-reverse; padding: 2.25rem 2rem; height: 100%; justify-content: space-between;}
+ul.reviews li div.box .avatar {height: 3.25rem; width: 3.25rem; border-radius: 100%; object-fit: cover; filter: grayscale(100%);}
+ul.reviews li div.box h3 {margin: 0; line-height: 1.45; font-size: 1.25rem;}
+ul.reviews li div.box .function {color: black; line-height: 1.45;}
+ul.reviews li div.box .quote + p {margin-bottom: 2.5rem;}
+ul.reviews li div.box .quote {margin-bottom: 2rem; height: 1.25rem;}
+ul.reviews li div.box > div:nth-child(1) {display: flex; gap: 1rem; align-items: center;}
+
+
 /*----------------- BRICKS -------------------*/
 
 /*------------------------*/
@@ -372,3 +388,11 @@ section.map div.map .overlay {position: absolute; left: 0; top: 0; width: 100%; 
 
 section.error404 > .container p:first-child > img {margin-top: -1rem;}
 section.error404 > .container h1 {font-size: 2.4rem;}
+
+/*------------------------*/
+/* brick reviews
+/*------------------------*/
+
+section.reviews .container.small {margin-bottom: 5.25rem;}
+
+
