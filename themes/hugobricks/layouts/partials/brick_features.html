@@ -1,0 +1,18 @@
+
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/features.md' file." -}}
+    {{- with page.Site.GetPage "bricks/features.md" -}}
+        {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+<section class="reviews hasbackgroundcolor">
+    <div class="container small">
+        {{- markdownify $inner -}}
+    </div>
+    <div class="container">
+        {{ partial "features.html" . }}
+    </div>
+</section>
+
+
