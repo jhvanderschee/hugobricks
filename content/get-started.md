@@ -12,7 +12,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, nulla et 
 
 ## What’s Included in Hugoplate
 
-![](/uploads/brick_image.png)
+![](/uploads/illustrations/cuate/responsive.svg)
 
 Quisque aliquet orci quis massa scelerisque gravida. Cras maximus lacus et orci lacinia fermentum. Integer venenatis bibendum condimentum. Maecenas non rutrum magna. Sed varius metus sit amet augue condimentum, quis faucibus nulla tempor. Phasellus nec ipsum dolor. Aliquam non maximus orci. Integer sollicitudin dui quis nibh tincidunt, et pharetra nulla varius. Vestibulum malesuada quam dapibus lacus molestie, sed maximus nulla sagittis. Ut dui quam, convallis eu justo quis, posuere sodales dolor. Maecenas eu sem et purus finibus auctor in vel dolor. Fusce vitae diam pellentesque, suscipit nisl nec, varius erat. Curabitur condimentum mauris ut sapien rhoncus, quis venenatis purus pulvinar.
 
