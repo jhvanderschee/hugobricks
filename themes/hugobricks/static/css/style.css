@@ -444,7 +444,7 @@ section.wide {max-width: 60rem; margin-left: auto; margin-right: auto;}
 
 section.map div.map {padding: 3rem 0; aspect-ratio: auto; border-radius: 0;}
 section.map div.map > .container {display: flex; justify-content: flex-end;}
-section.map div.map > .container > div {background: white; padding: 2.5rem 3rem 2.5rem; border-radius: 1rem; position: relative; z-index: 2; min-width: 22rem; box-shadow: 0px 0px 1.5rem rgba(0,0,0,0.1);} 
+section.map div.map > .container > div {background: white; padding: 2.5rem 3rem 2.5rem; border-radius: 1rem; position: relative; z-index: 2; min-width: 22rem; box-shadow: 0px 0px 1.5rem rgba(0,0,0,0.05);} 
 section.map div.map .overlay {position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1;}
 @media (max-width: 55rem) {
     section.map div.map > .container {justify-content: center;}
