@@ -12,4 +12,5 @@ ul.features li.has_icon p.image img,
 ul.reviews li div.box .quote,
 div.map::after,
 a.logo > div img.inline {filter: contrast(0.7) sepia(1) hue-rotate(180deg);}
+.preheader.light .container a.icon img {filter: contrast(0.2) sepia(1) hue-rotate(180deg);}
 section.about .container p img {filter: brightness(0.99) sepia(0.14) hue-rotate(180deg);}

@@ -26,6 +26,7 @@
 :root {
     --textDark: black;
     --textMedium: rgba(0,0,0,0.7);
+    --textLight: rgba(0,0,0,0.5);
     --accent: black;
     --light: #f7f7f7;
 }
@@ -67,20 +68,23 @@ a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-se
 /* preheader
 /*------------------------*/
 
-.preheader {background: var(--textDark); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid rgba(0,0,0,0.07); font-weight: 600;}
+.preheader {background: var(--textDark); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid rgba(0,0,0,0.03); font-weight: 600;}
 .preheader, .preheader a {color: white;}
 .preheader .container {display: flex; justify-content: space-between;}
 .preheader .container a.icon {text-decoration: none; margin-right: 2rem;}
 .preheader .container a.icon img {
-    height: 0.7em; 
+    height: 0.75em; 
     display: inline-block; 
     vertical-align: middle;
-    margin-right: 0.35rem;
+    margin-right: 0.25rem;
     position: relative;
     bottom: 0.1em;
     filter: invert(1);
 }
 .preheader + header {padding: 1.35rem 0;}
+.preheader.light {background: var(--light); font-weight: normal;}
+.preheader.light, .preheader.light a {color: var(--textLight);}
+.preheader.light .container a.icon img {filter: invert(0);}
 @media (max-width: 600px) {
     .preheader .container {justify-content: center;}
     .preheader .container .icons {display: none;}
@@ -143,7 +147,7 @@ header > .container > div:last-child, footer .container > div:last-child {flex: 
 /* footer
 /*------------------------*/
 
-footer {background: var(--light); margin-top: 2rem; border-top: 0.1rem solid rgba(0,0,0,0.02);}
+footer {background: var(--light); margin-top: 2rem; border-top: 0.1rem solid rgba(0,0,0,0.03);}
 footer a {text-decoration: none;}
 footer .logo > div.has_subtitle {padding-bottom: 0.5rem;}
 footer ul li a {color: var(--textMedium)}
@@ -227,7 +231,7 @@ section.stickstofooter + footer {margin-top: 0;}
 /* box
 /*------------------------*/
 
-div.box {background: var(--light); border: 0.1rem solid rgba(0,0,0,0.02); padding: 3.5rem clamp(2rem, 5vw, 5rem); border-radius: 1rem; position: relative;}
+div.box {background: var(--light); border: 0.1rem solid rgba(0,0,0,0.03); padding: 3.5rem clamp(2rem, 5vw, 5rem); border-radius: 1rem; position: relative;}
 div.box:not(:last-child) {margin-bottom: 1.7em;}
 div.box p img {border-radius: 0;}
 
@@ -342,7 +346,7 @@ ul.features li {text-align: center;}
 ul.features li img {aspect-ratio: 1.5; object-fit: contain; width: 100%;}
 ul.features li p.image {margin-bottom: 1rem;}
 ul.features li p.image + h3 {padding-top: 0;}
-ul.features li.has_icon p.image {display: inline-block; background: var(--light); padding: 1.5rem; border-radius: 100%; border: 0.1rem solid rgba(0,0,0,0.02);}
+ul.features li.has_icon p.image {display: inline-block; background: var(--light); padding: 1.5rem; border-radius: 100%; border: 0.1rem solid rgba(0,0,0,0.03);}
 ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width: 3rem; margin: 0 auto; border-radius: 0;}
 
 /*----------------- BRICKS -------------------*/
@@ -381,7 +385,7 @@ section.cta .button {background: var(--textDark);}
 /* brick image
 /*------------------------*/
 
-section.image.alt {background: var(--light); border-top: 0.1rem solid rgba(0,0,0,0.02); border-bottom: 0.1rem solid rgba(0,0,0,0.02);}
+section.image.alt {background: var(--light); border-top: 0.1rem solid rgba(0,0,0,0.03); border-bottom: 0.1rem solid rgba(0,0,0,0.03);}
 section.image.alt .container {direction: rtl;}
 section.image.alt .container > div {direction: ltr;}
 section.image .twocols .image {text-align: center;}

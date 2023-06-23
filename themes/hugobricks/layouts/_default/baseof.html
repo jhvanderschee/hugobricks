@@ -15,7 +15,7 @@
   <body id="top">
     <header>
       {{- if .Site.Data.header.has_preheader -}}
-      <div class="preheader">
+      <div class="preheader{{ if .Site.Data.header.preheader_light }} light{{ end }}">
         <div class="container">
           <div class="icons">
             {{- if .Site.Data.header.contact.phone -}}<a href="tel:{{ replace .Site.Data.header.contact.phone " " "" }}" class="icon"><img src="/img/phone.svg" alt="{{ .Site.Data.header.contact.phone }}" /> {{ .Site.Data.header.contact.phone }}</a>{{- end -}}
