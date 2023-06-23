@@ -56,8 +56,8 @@ p > img {border-radius: 1rem; overflow: hidden;}
 /*------------------------*/
 
 a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: var(--textDark);}
-a.logo img.inline {height: 2rem; position: relative; top: 0.1rem;}
-a.logo > div {display: flex; gap: 0.5rem; align-items: center;}
+a.logo img.inline {height: 2rem;}
+a.logo > div {display: flex; gap: 0.6rem; align-items: center;}
 a.logo > div > div span {display: block;}
 a.logo > div.has_subtitle {gap: 0.9rem;}
 a.logo > div.has_subtitle > div span:nth-child(1) {line-height: 1.2;}
