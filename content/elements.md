@@ -64,7 +64,7 @@ Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cra
 
 ## Image
 
-![](/uploads/image-placeholder.png)
+![](/uploads/placeholders/image.png)
 
 ---
 
