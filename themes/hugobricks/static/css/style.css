@@ -23,19 +23,26 @@
     font-weight: 600;
     src: url('/fonts/heebo-v21-latin-600.woff2') format('woff2');
 }
-  
+:root {
+    --textDark: black;
+    --textMedium: rgba(0,0,0,0.7);
+    --accent: black;
+    --light: #f7f7f7;
+}
+img {filter: grayscale(100%);}
+
 
 * {padding: 0; margin: 0; box-sizing: border-box;}
-html {font-size: clamp(14px, 2vw, 16px); line-height: 1.7; height: 100%; scroll-behavior: smooth;}
-body {font-family: 'Heebo', sans-serif; font-size: 1rem; color: rgba(0,0,0,0.7);}
+html {font-size: clamp(14px, 2vw, 16px); line-height: 1.7; height: 100%; scroll-behavior: smooth; background: var(--light);}
+body {font-family: 'Heebo', sans-serif; font-size: 1rem; color: var(--textMedium); background: white;}
 .container {margin: 0 auto; max-width: 84rem; padding: 0 clamp(1rem,4vw,3rem);}
 img {max-width: 100%; display: block;}
-a {color: rgba(0,0,0,0.7);}
-h1, h2, a.logo {font-family: 'Signika', sans-serif; line-height: 1.2; font-size: 2.4rem; color: black;}
+a {color: var(--textMedium);}
+h1, h2, a.logo {font-family: 'Signika', sans-serif; line-height: 1.2; font-size: 2.4rem; color: var(--textDark);}
 h1 {font-size: 3rem; margin-bottom: 1.75rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
 h2:first-child {margin-top: 0;}
-h3 {color: black; line-height: 1.25; font-size: 1.25rem; margin-bottom: 0.4rem; padding-top: 1rem;}
+h3 {color: var(--textDark); line-height: 1.25; font-size: 1.25rem; margin-bottom: 0.4rem; padding-top: 1rem;}
 p, ul, ol, .box.map {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
@@ -47,7 +54,7 @@ p > img {border-radius: 1rem; overflow: hidden;}
 /* logo
 /*------------------------*/
 
-a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: black;}
+a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: var(--textDark);}
 a.logo img.inline {height: 2rem; position: relative; top: 0.1rem;}
 a.logo > div {display: flex; gap: 0.5rem; align-items: center;}
 a.logo > div > div span {display: block;}
@@ -60,7 +67,7 @@ a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-se
 /* preheader
 /*------------------------*/
 
-.preheader {background: black; font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid rgba(0,0,0,0.07); font-weight: 600;}
+.preheader {background: var(--textDark); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid rgba(0,0,0,0.07); font-weight: 600;}
 .preheader, .preheader a {color: white;}
 .preheader .container {display: flex; justify-content: space-between;}
 .preheader .container a.icon {text-decoration: none; margin-right: 2rem;}
@@ -91,7 +98,7 @@ header.sticky > .container {padding-top: 0.75rem; padding-bottom: 0.75rem;}
 header a {text-decoration: none;}
 header ul, footer ul {display: flex; justify-content: center; gap: 2rem; margin: 0;}
 header ul li, footer ul li {list-style: none;}
-header nav > ul > li a {font-weight: bold; color: black; padding: 0.80rem 0 0.65rem 0; display: block;}
+header nav > ul > li a {font-weight: bold; color: var(--textDark); padding: 0.80rem 0 0.65rem 0; display: block;}
 header nav > ul > li > ul {
     opacity: 0;
     transform: translateY(0.25rem);
@@ -118,7 +125,7 @@ header nav > ul > li.haschildren > a::after {
     content:""; 
     width: 0.3rem; 
     height: 0.3rem; 
-    border: 0.15rem solid black; 
+    border: 0.15rem solid var(--textDark); 
     border-left: 0; 
     border-top: 0;
     margin-left: 0.4rem;
@@ -136,12 +143,12 @@ header > .container > div:last-child, footer .container > div:last-child {flex: 
 /* footer
 /*------------------------*/
 
-footer {background: rgba(0,0,0,0.03); margin-top: 2rem; border-top: 0.1rem solid rgba(0,0,0,0.02);}
+footer {background: var(--light); margin-top: 2rem; border-top: 0.1rem solid rgba(0,0,0,0.02);}
 footer a {text-decoration: none;}
 footer .logo > div.has_subtitle {padding-bottom: 0.5rem;}
-footer ul li a {color: rgba(0,0,0,0.7)}
+footer ul li a {color: var(--textMedium)}
 footer .container > div:first-child:last-child {text-align: center;}
-footer, footer > div:last-child a {color: rgba(0,0,0,0.4); text-decoration: none;}
+footer, footer > div:last-child a {color: var(--textLight); text-decoration: none;}
 footer .container {padding-top: 3rem; padding-bottom: 3rem;}
 footer > div:last-child {border-top: 1px solid rgba(0,0,0,0.075); font-size: 0.9rem;}
 footer > div:last-child .container {justify-content: center; padding-top: 1.7rem; padding-bottom: 1.75rem;}
@@ -220,7 +227,7 @@ section.stickstofooter + footer {margin-top: 0;}
 /* box
 /*------------------------*/
 
-div.box {background: rgba(0,0,0,0.03); border: 0.1rem solid rgba(0,0,0,0.02); padding: 3.5rem clamp(2rem, 5vw, 5rem); border-radius: 1rem; position: relative;}
+div.box {background: var(--light); border: 0.1rem solid rgba(0,0,0,0.02); padding: 3.5rem clamp(2rem, 5vw, 5rem); border-radius: 1rem; position: relative;}
 div.box:not(:last-child) {margin-bottom: 1.7em;}
 div.box p img {border-radius: 0;}
 
@@ -263,7 +270,7 @@ input, textarea, select {
     font-size: 1rem;
     padding: 0.5em 0.5em;
     border: 1px solid rgba(0,0,0,0.2);
-    color: black;
+    color: var(--textDark);
     border-radius: 0.25rem;
 }
 textarea {resize: vertical; height: 9rem;}
@@ -275,7 +282,7 @@ form > div.submit {padding-top: 0.5rem;}
 /*------------------------*/
 
 .button, button {
-    background: black; 
+    background: var(--accent); 
     color: white;
     text-decoration: none;
     padding: 0.7em 1.25em;
@@ -299,12 +306,12 @@ form > div.submit {padding-top: 0.5rem;}
     height: calc(100% - 1.25em);
     filter: invert(1);
 }
-.button.ghost {background: none; color: black; box-shadow: inset 0 0 0 0.1rem black;}
+.button.ghost {background: none; color: var(--accent); box-shadow: inset 0 0 0 0.1rem var(--accent);}
 .button.smaller {padding: 0.4rem 1rem;}
 p > .button {margin: 0.5rem 0;}
 ul.buttons {gap: 1rem; margin-left: 0; display: flex; padding: 0.5rem 0;}
 ul.buttons li {list-style: none;}
-
+ul.buttons.social .button {background: var(--textDark);}
 
 /*------------------------*/
 /* grid
@@ -321,7 +328,7 @@ ul.reviews {padding-bottom: 1rem;}
 ul.reviews li div.box {display: flex; flex-direction: column-reverse; padding: 2.25rem 2rem; height: 100%; justify-content: space-between;}
 ul.reviews li div.box .avatar {height: 3.25rem; width: 3.25rem; border-radius: 100%; object-fit: cover; filter: grayscale(100%);}
 ul.reviews li div.box h3 {margin: 0; line-height: 1.45; font-size: 1.25rem; padding: 0;}
-ul.reviews li div.box .function {color: black; line-height: 1.45;}
+ul.reviews li div.box .function {color: var(--textDark); line-height: 1.45;}
 ul.reviews li div.box .quote + p {margin-bottom: 2.5rem;}
 ul.reviews li div.box .quote {margin-bottom: 2rem; height: 1.25rem;}
 ul.reviews li div.box > div:nth-child(1) {display: flex; gap: 1rem; align-items: center;}
@@ -335,7 +342,7 @@ ul.features li {text-align: center;}
 ul.features li img {aspect-ratio: 1.5; object-fit: contain; width: 100%;}
 ul.features li p.image {margin-bottom: 1rem;}
 ul.features li p.image + h3 {padding-top: 0;}
-ul.features li.has_icon p.image {display: inline-block; background: rgba(0,0,0,0.03); padding: 1.5rem; border-radius: 100%; border: 0.1rem solid rgba(0,0,0,0.02);}
+ul.features li.has_icon p.image {display: inline-block; background: var(--light); padding: 1.5rem; border-radius: 100%; border: 0.1rem solid rgba(0,0,0,0.02);}
 ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width: 3rem; margin: 0 auto; border-radius: 0;}
 
 /*----------------- BRICKS -------------------*/
@@ -364,6 +371,7 @@ section.cta .twocols {display: flex;}
 section.cta .twocols .text {flex: 2;}
 section.cta .twocols .image {flex: 1;}
 section.cta .twocols .image img {display: inline-block; width: 20rem;}
+section.cta .button {background: var(--textDark);}
 @media (max-width: 600px) {
     section.cta .twocols {flex-direction: column;}
     section.cta .twocols .image {text-align: left; display: none;}
@@ -373,7 +381,7 @@ section.cta .twocols .image img {display: inline-block; width: 20rem;}
 /* brick image
 /*------------------------*/
 
-section.image.alt {background: rgba(0,0,0,0.03); border-top: 0.1rem solid rgba(0,0,0,0.02); border-bottom: 0.1rem solid rgba(0,0,0,0.02);}
+section.image.alt {background: var(--light); border-top: 0.1rem solid rgba(0,0,0,0.02); border-bottom: 0.1rem solid rgba(0,0,0,0.02);}
 section.image.alt .container {direction: rtl;}
 section.image.alt .container > div {direction: ltr;}
 section.image .twocols .image {text-align: center;}
