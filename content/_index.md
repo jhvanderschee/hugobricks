@@ -9,14 +9,14 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 {{< button "Get started for free" "/get-started/" >}}
 
-![](/uploads/brick_intro.png)
+![](/uploads/illustrations/cuate/assets.svg)
 
 {{< /brick_intro >}}
 {{< brick_image2 >}}
 
 ## What’s included in Hugobricks?
 
-![](/uploads/brick_image.png)
+![](/uploads/illustrations/cuate/responsive.svg)
 
 Hugoplate is a comprehensive starter theme that includes everything you need to get started with your Hugo project. What’s Included in 
 
@@ -31,7 +31,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 
 ## What bricks are available?
 
-![](/uploads/brick_image.png)
+![](/uploads/illustrations/cuate/responsive.svg)
 
 We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
 
@@ -39,8 +39,6 @@ Are you missing a brick? [Let us know](/contact/)! We will build it for you!
 
 {{< /brick_image >}}
 {{< brick_reviews >}}{{< /brick_reviews >}}
-{{< brick_cta >}}{{< /brick_cta >}}
-{{< brick_features >}}{{< /brick_features >}}
 {{< brick_features >}}
 ## Features
 
@@ -48,22 +46,47 @@ Hugobricks covers all components you would like to have at hand. It is a power e
 
 ---
 
-![](/uploads/icons/)
+![](/uploads/icons/material-symbols/200/rounded/auto_awesome_mosaic.svg)
 ### Covers all components
 
 We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
 
 ---
 
-![](/uploads/icons/)
+![](/uploads/icons/material-symbols/200/rounded/performance_max.svg)
 ### 99+ Google Lighthouse score
 
 Lightning fast website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
 
 ---
 
-![](/uploads/icons/)
+![](/uploads/icons/material-symbols/200/rounded/design_services.svg)
 ### Themeable through CSS variables
 
 Easily themeable. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+
+---
+
+![](/uploads/icons/material-symbols/200/rounded/devices.svg)
+### Fully resonsive on all devices
+
+Works on every screen. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+
+---
+
+![](/uploads/icons/material-symbols/200/rounded/timer.svg)
+### Built with Hugo
+
+Superlow build times. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+
+---
+
+![](/uploads/icons/material-symbols/200/rounded/auto_fix.svg)
+### 10+ pre-build pages
+
+Start with the end result. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+
+
+
 {{< /brick_features >}}
+{{< brick_cta >}}{{< /brick_cta >}}

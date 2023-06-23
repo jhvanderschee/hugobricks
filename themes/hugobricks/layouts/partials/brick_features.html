@@ -17,8 +17,9 @@
                 {{- $imageurl := index (split (index (findRE `(?s)src=".*?"` (markdownify .) 1) 0) `"`) 1 -}}
                 {{- $type := "" -}}
                 {{- if in $imageurl "/icons/" -}}{{- $type = "has_icon" -}}{{- end -}}
+                {{- if in $imageurl "/illustrations/" -}}{{- $type = "has_illustration" -}}{{- end -}}
                 <li class="{{ $type }}">
-                {{ markdownify . }}
+                {{ replace (markdownify .) `<p><img` `<p class="image"><img` | safeHTML }}
                 </li>
             {{ end }}
         </ul>

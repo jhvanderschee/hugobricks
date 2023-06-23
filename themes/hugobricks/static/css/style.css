@@ -35,7 +35,7 @@ h1, h2, a.logo {font-family: 'Signika', sans-serif; line-height: 1.2; font-size:
 h1 {font-size: 3rem; margin-bottom: 1.75rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
 h2:first-child {margin-top: 0;}
-h3 {color: black; font-size: 1.1rem;}
+h3 {color: black; line-height: 1.25; font-size: 1.25rem; margin-bottom: 0.4rem; padding-top: 1rem;}
 p, ul, ol, .box.map {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
@@ -205,15 +205,15 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
 /* sections general
 /*------------------------*/
 
-section, section.image.alt {padding: 4.5rem 0 6.5rem;}
+section, section.image.alt {padding: 4.5rem 0 5.5rem;}
 section .twocols {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 5.5rem clamp(2rem, 5vw, 5rem);}
 section .twocols > div {display: flex; flex-direction: column; justify-content: center;}
 section .container.small > * {text-align: center; max-width: 40rem; margin-left: auto; margin-right: auto;}
-section.hasbackgroundcolor {padding: 0;}
+section.hasbackgroundcolor {padding: 0; margin-top: 2rem;}
 section.hasbackgroundcolor + section.hasbackgroundcolor {padding-top: 3.5rem;}
 section :last-child {margin-bottom: 0;}
 section:not(.hasbackgroundcolor) + section:not(.hasbackgroundcolor) {padding-top: 2rem;}
-section.hasbackgroundcolor + footer {margin-top: 6.5rem;}
+section.hasbackgroundcolor + footer {margin-top: 7.5rem;}
 section.stickstofooter + footer {margin-top: 0;}
 
 /*------------------------*/
@@ -329,10 +329,13 @@ ul.reviews li div.box > div:nth-child(1) {display: flex; gap: 1rem; align-items:
 /* features
 /*------------------------*/
 
-ul.features {gap: 5rem 3rem;}
+ul.features {gap: 4rem 3rem;}
 ul.features li {text-align: center;}
 ul.features li img {aspect-ratio: 1.5; object-fit: contain; width: 100%;}
-ul.features li.has_icon img {aspect-ratio: 1; object-fit: contain; width: 3rem; margin: 0 auto; border-radius: 0;}
+ul.features li p.image {margin-bottom: 1rem;}
+ul.features li p.image + h3 {padding-top: 0;}
+ul.features li.has_icon p.image {display: inline-block; background: rgba(0,0,0,0.03); padding: 1.5rem; border-radius: 100%; border: 0.1rem solid rgba(0,0,0,0.02);}
+ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width: 3rem; margin: 0 auto; border-radius: 0;}
 
 /*----------------- BRICKS -------------------*/
 
@@ -425,5 +428,4 @@ section.reviews .container.small {margin-bottom: 5.25rem;}
 /* brick features
 /*------------------------*/
 
-section.features .container.small {margin-bottom: 5.25rem;}
-section.features img {filter: grayscale(100%);}
+section.features .container.small {margin-bottom: 4.75rem;}
