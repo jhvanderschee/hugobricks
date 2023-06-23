@@ -36,14 +36,25 @@ h1 {font-size: 3rem; margin-bottom: 1.75rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
 h2:first-child {margin-top: 0;}
 h3 {color: black; font-size: 1.1rem;}
-a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: black; display: flex; gap: 0.5rem;}
-a.logo img.inline {height: 2rem; position: relative; top: 0.1rem;}
 p, ul, ol, .box.map {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
 hr {margin: 3.5rem 0; height: 1px; background: rgba(0,0,0,0.1); border: 0;}
 p > img {border-radius: 1rem; overflow: hidden;}
 
+
+/*------------------------*/
+/* logo
+/*------------------------*/
+
+a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: black;}
+a.logo img.inline {height: 2rem; position: relative; top: 0.1rem;}
+a.logo > div {display: flex; gap: 0.5rem; align-items: center;}
+a.logo > div > div span {display: block;}
+a.logo > div.has_subtitle {gap: 0.9rem;}
+a.logo > div.has_subtitle img.inline {height: 2.6rem;}
+a.logo > div.has_subtitle > div span:nth-child(1) {line-height: 1.2;}
+a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-serif; font-size: 0.75rem; font-weight: normal;}
 
 /*------------------------*/
 /* preheader
@@ -117,9 +128,9 @@ header nav > ul > li.haschildren > a::after {
     transform: rotate(45deg);
 }
 header > .container, footer .container {display: flex; align-items: center;}
-header > .container div, footer .container > div {flex: 3; text-align: center;}
-header > .container div:first-child, footer .container > div:first-child {flex: 1; text-align: left;}
-header > .container div:last-child, footer .container > div:last-child {flex: 1; text-align: right;}
+header > .container > div, footer .container > div {flex: 3; text-align: center;}
+header > .container > div:first-child, footer .container > div:first-child {flex: 1; text-align: left;}
+header > .container > div:last-child, footer .container > div:last-child {flex: 1; text-align: right;}
 
 /*------------------------*/
 /* footer
@@ -127,6 +138,7 @@ header > .container div:last-child, footer .container > div:last-child {flex: 1;
 
 footer {background: rgba(0,0,0,0.03); margin-top: 2rem; border-top: 0.1rem solid rgba(0,0,0,0.02);}
 footer a {text-decoration: none;}
+footer .logo > div.has_subtitle {padding-bottom: 0.5rem;}
 footer ul li a {color: rgba(0,0,0,0.7)}
 footer .container > div:first-child:last-child {text-align: center;}
 footer, footer > div:last-child a {color: rgba(0,0,0,0.4); text-decoration: none;}

@@ -1,1 +1,13 @@
-<a href="/#top" class="logo">{{ if .Site.Data.header.logo_image }}<img src="{{ .Site.Data.header.logo_image }}" alt="{{ .Site.Data.general.title }} logo" />{{ else }}<img src="{{ .Site.Data.general.favicon_image }}" alt="{{ .Site.Data.general.title }} logo" class="inline" /><span>{{ .Site.Data.general.title }}</span>{{ end }}</a>
+<a href="/#top" class="logo">
+    {{ if .Site.Data.header.logo_image }}
+        <img src="{{ .Site.Data.header.logo_image }}" alt="{{ .Site.Data.general.title }} logo" />
+    {{ else }}
+        <div class="{{ if .Site.Data.header.logo_subtitle }}has_subtitle{{ end}}">
+            <img src="{{ .Site.Data.general.favicon_image }}" alt="{{ .Site.Data.general.title }} logo" class="inline" />
+            <div>
+                <span>{{ .Site.Data.general.title }}</span>
+                {{ if .Site.Data.header.logo_subtitle }}<span>{{ .Site.Data.header.logo_subtitle }}</span>{{ end }}
+            </div>
+        </div>
+    {{ end }}
+</a>
