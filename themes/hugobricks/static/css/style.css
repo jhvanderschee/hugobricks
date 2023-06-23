@@ -26,7 +26,6 @@
 :root {
     --textDark: black;
     --textMedium: rgba(0,0,0,0.7);
-    --textLight: rgba(0,0,0,0.5);
     --borderMedium: rgba(0,0,0,0.2);
     --borderLight: rgba(0,0,0,0.075);
     --accent: black;
@@ -166,7 +165,7 @@ footer a {text-decoration: none;}
 footer .logo > div.has_subtitle {padding-bottom: 0.5rem;}
 footer ul li a {color: var(--textMedium)}
 footer .container > div:first-child:last-child {text-align: center;}
-footer, footer > div:last-child a {color: var(--textLight); text-decoration: none;}
+footer, footer > div:last-child a {color: var(--textMedium); text-decoration: none;}
 footer .container {padding-top: 3rem; padding-bottom: 3rem;}
 footer > div:last-child {border-top: 1px solid var(--borderLight); font-size: 0.9rem;}
 footer > div:last-child .container {justify-content: center; padding-top: 1.7rem; padding-bottom: 1.75rem;}

@@ -2,7 +2,6 @@
 :root {
     --textDark: rgba(38, 50, 56, 1);
     --textMedium: rgba(38, 50, 56, 0.7);
-    --textLight: rgba(38, 50, 56, 0.4);
     --borderMedium: rgba(38, 50, 56, 0.2); 
     --borderLight: rgba(38, 50, 56, 0.075);
     --accent: #f4b500;
