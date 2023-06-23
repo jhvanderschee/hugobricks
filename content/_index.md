@@ -40,7 +40,7 @@ Are you missing a brick? [Let us know](/contact/)! We will build it for you!
 {{< /brick_image >}}
 {{< brick_reviews >}}{{< /brick_reviews >}}
 {{< brick_features >}}
-## The Ultimate Hugo Theme
+## The ultimate Hugo theme
 
 Hugobricks covers all components you would like to have at hand. It is a power engine for your web oriented projects. It has excellent performance in all categories.
 
