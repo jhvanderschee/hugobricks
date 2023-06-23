@@ -346,7 +346,7 @@ ul.features li img {aspect-ratio: 1.5; object-fit: contain; width: 100%;}
 ul.features li p.image {margin-bottom: 1rem;}
 ul.features li p.image + h3 {padding-top: 0;}
 ul.features li.has_icon p.image {display: inline-block; background: var(--light); padding: 1.5rem; border-radius: 100%; border: 0.1rem solid rgba(0,0,0,0.03);}
-ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width: 4rem; margin: 0 auto; border-radius: 0;}
+ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width: 3rem; margin: 0 auto; border-radius: 0;}
 
 /*----------------- BRICKS -------------------*/
 
