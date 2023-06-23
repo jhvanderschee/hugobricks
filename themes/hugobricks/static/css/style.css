@@ -30,6 +30,7 @@
     --borderMedium: rgba(0,0,0,0.2);
     --borderLight: rgba(0,0,0,0.075);
     --accent: black;
+    --textAccent: black;
     --light: rgba(0,0,0,0.03);
 }
 img {filter: grayscale(100%);}
@@ -333,7 +334,7 @@ form > div.submit {padding-top: 0.5rem;}
 }
 .button.icon:hover {background: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
 .button:hover, button:hover,
-.button.ghost {background: transparent; color: var(--accent); box-shadow: inset 0 0 0 0.1rem var(--accent);}
+.button.ghost {background: transparent; color: var(--textAccent); box-shadow: inset 0 0 0 0.1rem var(--accent);}
 .button.ghost:hover {color: white; background: var(--accent);}
 .button.smaller {padding: 0.4rem 1rem;}
 p > .button {margin: 0.5rem 0;}
