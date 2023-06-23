@@ -205,7 +205,7 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
 /* sections general
 /*------------------------*/
 
-section, section.image.alt {padding: 4.5rem 0 5.5rem;}
+section, section.image.alt {padding: 4.5rem 0 6rem;}
 section .twocols {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 5.5rem clamp(2rem, 5vw, 5rem);}
 section .twocols > div {display: flex; flex-direction: column; justify-content: center;}
 section .container.small > * {text-align: center; max-width: 40rem; margin-left: auto; margin-right: auto;}
@@ -317,6 +317,7 @@ ul.grid li {list-style: none; position: relative;}
 /* reviews
 /*------------------------*/
 
+ul.reviews {padding-bottom: 1rem;}
 ul.reviews li div.box {display: flex; flex-direction: column-reverse; padding: 2.25rem 2rem; height: 100%; justify-content: space-between;}
 ul.reviews li div.box .avatar {height: 3.25rem; width: 3.25rem; border-radius: 100%; object-fit: cover; filter: grayscale(100%);}
 ul.reviews li div.box h3 {margin: 0; line-height: 1.45; font-size: 1.25rem; padding: 0;}
@@ -329,7 +330,7 @@ ul.reviews li div.box > div:nth-child(1) {display: flex; gap: 1rem; align-items:
 /* features
 /*------------------------*/
 
-ul.features {gap: 4rem 3rem;}
+ul.features {gap: 4rem 3rem; padding-bottom: 1rem;}
 ul.features li {text-align: center;}
 ul.features li img {aspect-ratio: 1.5; object-fit: contain; width: 100%;}
 ul.features li p.image {margin-bottom: 1rem;}
@@ -352,7 +353,7 @@ section.about .container .buttons {justify-content: center;}
 /*------------------------*/
 
 section.intro {text-align: center; background: white;}
-section.intro img {margin: 3rem auto 0.5rem; width: 38rem;}
+section.intro img {margin: 3rem auto 0; width: 38rem;}
 
 /*------------------------*/
 /* brick cta
@@ -402,6 +403,7 @@ section.wide {max-width: 60rem; margin-left: auto; margin-right: auto;}
 /*------------------------*/
 /* brick map
 /*------------------------*/
+
 section.map div.map {padding: 3rem 0; aspect-ratio: auto;}
 section.map div.map > .container {display: flex; justify-content: flex-end;}
 section.map div.map > .container > div {background: white; padding: 2.5rem 3rem 2.5rem; border-radius: 1rem; position: relative; z-index: 2; min-width: 22rem;} 
@@ -421,8 +423,7 @@ section.error404 > .container h1 {font-size: 2.4rem;}
 /* brick reviews
 /*------------------------*/
 
-section.reviews .container.small {margin-bottom: 5.25rem;}
-
+section.reviews .container.small {margin-bottom: 4.25rem;}
 
 /*------------------------*/
 /* brick features
