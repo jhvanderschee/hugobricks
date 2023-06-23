@@ -38,7 +38,7 @@ We aim to provide the following bricks: intro, title, image, cta, contact, team,
 {{< /brick_image >}}
 {{< brick_reviews >}}{{< /brick_reviews >}}
 {{< brick_features >}}
-## The ultimate Hugo theme
+## The Ultimate Hugo theme
 
 Hugobricks covers all components you would like to have at hand. It is a power engine for your web oriented projects. It has excellent performance in all categories.
 
