@@ -60,7 +60,6 @@ a.logo img.inline {height: 2rem; position: relative; top: 0.1rem;}
 a.logo > div {display: flex; gap: 0.5rem; align-items: center;}
 a.logo > div > div span {display: block;}
 a.logo > div.has_subtitle {gap: 0.9rem;}
-a.logo > div.has_subtitle img.inline {height: 2.6rem;}
 a.logo > div.has_subtitle > div span:nth-child(1) {line-height: 1.2;}
 a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-serif; font-size: 0.75rem; font-weight: normal;}
 
@@ -347,7 +346,7 @@ ul.features li img {aspect-ratio: 1.5; object-fit: contain; width: 100%;}
 ul.features li p.image {margin-bottom: 1rem;}
 ul.features li p.image + h3 {padding-top: 0;}
 ul.features li.has_icon p.image {display: inline-block; background: var(--light); padding: 1.5rem; border-radius: 100%; border: 0.1rem solid rgba(0,0,0,0.03);}
-ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width: 3rem; margin: 0 auto; border-radius: 0;}
+ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width: 4rem; margin: 0 auto; border-radius: 0;}
 
 /*----------------- BRICKS -------------------*/
 
