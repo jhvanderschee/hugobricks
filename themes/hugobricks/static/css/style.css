@@ -319,7 +319,7 @@ ul.grid li {list-style: none; position: relative;}
 
 ul.reviews li div.box {display: flex; flex-direction: column-reverse; padding: 2.25rem 2rem; height: 100%; justify-content: space-between;}
 ul.reviews li div.box .avatar {height: 3.25rem; width: 3.25rem; border-radius: 100%; object-fit: cover; filter: grayscale(100%);}
-ul.reviews li div.box h3 {margin: 0; line-height: 1.45; font-size: 1.25rem;}
+ul.reviews li div.box h3 {margin: 0; line-height: 1.45; font-size: 1.25rem; padding: 0;}
 ul.reviews li div.box .function {color: black; line-height: 1.45;}
 ul.reviews li div.box .quote + p {margin-bottom: 2.5rem;}
 ul.reviews li div.box .quote {margin-bottom: 2rem; height: 1.25rem;}
