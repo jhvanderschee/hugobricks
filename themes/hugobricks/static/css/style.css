@@ -83,7 +83,7 @@ a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-se
     filter: invert(1);
 }
 .preheader.light {background: var(--light); font-weight: normal;}
-.preheader.light, .preheader.light a {color: var(--textLight);}
+.preheader.light, .preheader.light a {color: var(--textMedium);}
 .preheader.light .container a.icon img {filter: invert(0);}
 @media (max-width: 600px) {
     .preheader .container {justify-content: center;}
