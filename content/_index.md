@@ -40,7 +40,7 @@ Are you missing a brick? [Let us know](/contact/)! We will build it for you!
 {{< /brick_image >}}
 {{< brick_reviews >}}{{< /brick_reviews >}}
 {{< brick_features >}}
-## The best Hugo theme ever
+## The ultimate Hugo theme
 
 Hugobricks covers all components you would like to have at hand. It is a power engine for your web oriented projects. It has excellent performance in all categories.
 
@@ -75,9 +75,9 @@ Works on every screen. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 ---
 
 ![](/uploads/icons/material-symbols/200/rounded/timer.svg)
-### Built with Hugo
+### Super fast builds and deploys
 
-Superlow build times. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+Extremely fast. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
 
 ---
 
