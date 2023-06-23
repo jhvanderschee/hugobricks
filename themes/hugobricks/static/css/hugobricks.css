@@ -1,17 +1,20 @@
 
 :root {
-    --textDark: #263238;
-    --textMedium: #52646d;
-    --textLight: #7a9099;
+    --textDark: rgb(38, 50, 56);
+    --textMedium: rgba(38, 50, 56, 0.7);
+    --textLight: rgba(38, 50, 56, 0.4);
+    --borderMedium: rgba(38, 50, 56, 0.2); 
+    --borderLight: rgba(38, 50, 56, 0.075);
+    --borderLighter: rgba(38, 50, 56, 0.03);
     --accent: #f4b500;
-    --light: #f9fafb;
+    --light: rgba(38, 50, 56, 0.03);;
 }
 img {filter: grayscale(0);}
-ul.reviews li div.box .avatar {filter: contrast(1) sepia(1) hue-rotate(170deg) grayscale(0.7);}
+ul.reviews li div.box .avatar {filter: contrast(1) sepia(1) hue-rotate(160deg) grayscale(0.75);}
 ul.features li.has_icon p.image img,
 ul.reviews li div.box .quote,
 div.map::after,
-a.logo > div img.inline {filter: contrast(0.7) sepia(1) hue-rotate(170deg);}
-.preheader.light .container a.icon img {filter: contrast(0.2) sepia(1) hue-rotate(170deg);}
-section.about .container p img {filter: brightness(0.88) sepia(1) hue-rotate(170deg) grayscale(0.8);}
-ul.reviews li div.box .stars img {filter: contrast(0.05) sepia(1) hue-rotate(350deg) contrast(4.35);}
+a.logo > div img.inline {filter: contrast(0.7) sepia(1) hue-rotate(160deg);}
+.preheader.light .container a.icon img {filter: contrast(0.3) sepia(0.3) hue-rotate(160deg) brightness(1.8);}
+section.about .container p img {filter: brightness(0.88) sepia(1) hue-rotate(160deg) grayscale(0.9);}
+ul.reviews li div.box .stars img {filter: contrast(0.1) sepia(1) hue-rotate(340deg) contrast(10);}

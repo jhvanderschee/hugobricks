@@ -13,20 +13,20 @@
     <link href="/css/hugobricks.css?version={{ now }}" rel="stylesheet">
   </head>
   <body id="top">
+    {{- if .Site.Data.header.has_preheader -}}
+    <div class="preheader{{ if .Site.Data.header.preheader_light }} light{{- end -}}">
+      <div class="container">
+        <div class="icons">
+          {{- if .Site.Data.header.contact.phone -}}<a href="tel:{{ replace .Site.Data.header.contact.phone " " "" }}" class="icon"><img src="/img/phone.svg" alt="{{ .Site.Data.header.contact.phone }}" /> {{ .Site.Data.header.contact.phone }}</a>{{- end -}}
+          {{- if .Site.Data.header.contact.email -}}<a href="mailto:{{ .Site.Data.header.contact.email }}" class="icon"><img src="/img/email.svg" alt="{{ .Site.Data.header.contact.email }}" /> {{ .Site.Data.header.contact.email }}</a>{{- end -}}
+        </div>
+        <div>
+          {{- if .Site.Data.header.preheader_text -}}{{ .Site.Data.header.preheader_text }}{{- end -}}
+        </div>
+      </div>  
+    </div>
+    {{- end -}}
     <header>
-      {{- if .Site.Data.header.has_preheader -}}
-      <div class="preheader{{ if .Site.Data.header.preheader_light }} light{{ end }}">
-        <div class="container">
-          <div class="icons">
-            {{- if .Site.Data.header.contact.phone -}}<a href="tel:{{ replace .Site.Data.header.contact.phone " " "" }}" class="icon"><img src="/img/phone.svg" alt="{{ .Site.Data.header.contact.phone }}" /> {{ .Site.Data.header.contact.phone }}</a>{{- end -}}
-            {{- if .Site.Data.header.contact.email -}}<a href="mailto:{{ .Site.Data.header.contact.email }}" class="icon"><img src="/img/email.svg" alt="{{ .Site.Data.header.contact.email }}" /> {{ .Site.Data.header.contact.email }}</a>{{- end -}}
-          </div>
-          <div>
-            {{- if .Site.Data.header.preheader_text -}}{{ .Site.Data.header.preheader_text }}{{- end -}}
-          </div>
-        </div>  
-      </div>
-      {{- end -}}
       <div class="container">
         <div>
           {{ partial "logo.html" . }}
