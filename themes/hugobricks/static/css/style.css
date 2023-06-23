@@ -57,9 +57,9 @@ p > img {border-radius: 1rem; overflow: hidden;}
 
 a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: var(--textDark);}
 a.logo img.inline {height: 2rem;}
-a.logo > div {display: flex; gap: 0.6rem; align-items: center;}
+a.logo > div {display: flex; gap: 0.8rem; align-items: center;}
 a.logo > div > div span {display: block;}
-a.logo > div.has_subtitle {gap: 0.9rem;}
+a.logo > div.has_subtitle {gap: 1rem;}
 a.logo > div.has_subtitle > div span:nth-child(1) {line-height: 1.2;}
 a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-serif; font-size: 0.75rem; font-weight: normal;}
 
@@ -75,7 +75,7 @@ a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-se
     height: 0.75em; 
     display: inline-block; 
     vertical-align: middle;
-    margin-right: 0.25rem;
+    margin-right: 0.2rem;
     position: relative;
     bottom: 0.1em;
     filter: invert(1);
@@ -334,6 +334,8 @@ ul.reviews li div.box h3 {margin: 0; line-height: 1.45; font-size: 1.25rem; padd
 ul.reviews li div.box .function {color: var(--textDark); line-height: 1.45;}
 ul.reviews li div.box .quote + p {margin-bottom: 2.5rem;}
 ul.reviews li div.box .quote {margin-bottom: 2rem; height: 1.25rem;}
+ul.reviews li div.box .stars {display: flex; position: absolute; right: 2rem; top: 2.1rem;}
+ul.reviews li div.box .stars img {height: 1.5rem;}
 ul.reviews li div.box > div:nth-child(1) {display: flex; gap: 1rem; align-items: center;}
 
 /*------------------------*/

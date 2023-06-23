@@ -1,5 +1,5 @@
 logo_image:
-logo_subtitle:
+logo_subtitle: The Ultimate Hugo theme
 menuitems:
   - title: Home
     link: /
@@ -35,4 +35,4 @@ contact:
   email: joost@vdschee.nl
 has_preheader: true
 preheader_light: true
-preheader_text: Open today from 9.00 am to 5.00 pm
+preheader_text: Open Mon-Fri from 9.00-5.00
