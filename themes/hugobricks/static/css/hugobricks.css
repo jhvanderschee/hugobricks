@@ -10,5 +10,6 @@ img {filter: grayscale(0);}
 ul.reviews li div.box .avatar {filter: contrast(1) sepia(1) hue-rotate(180deg) grayscale(0.7);}
 ul.features li.has_icon p.image img,
 ul.reviews li div.box .quote,
+div.map::after,
 a.logo > div img.inline {filter: contrast(0.71) sepia(1) hue-rotate(180deg);}
 section.about .container p img {filter: brightness(0.99) sepia(0.14) hue-rotate(180deg);}
