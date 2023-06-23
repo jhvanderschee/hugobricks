@@ -64,7 +64,7 @@ Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cra
 
 ## Image
 
-![](/uploads/placeholders/image.png)
+![Unsplash - Ryan Quintal](/uploads/photos/lego.jpg)
 
 ---
 

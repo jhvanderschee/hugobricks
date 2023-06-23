@@ -35,7 +35,7 @@
           <nav>
             <ul>
               {{ range .Site.Data.header.menuitems }}
-                <li class="{{ if (index .items 0).title }}haschildren{{ end }}"><a href="{{ .link }}">{{ .title }}</a>
+                <li class="{{ if eq .link `/` }}{{ if eq $.RelPermalink `/` }}active{{ end }}{{ else }}{{ if in $.RelPermalink .link }}active{{ end }}{{ end }}{{ if (index .items 0).title }} haschildren{{ end }}"><a href="{{ .link }}">{{ .title }}</a>
                   {{ if (index .items 0).title }}
                   <ul>
                     {{ range .items }}

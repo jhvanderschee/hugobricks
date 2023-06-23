@@ -5,6 +5,6 @@ title: cta
 
 Experience the future of web development with Hugo and stackable content bricks. Build lightning-fast static sites with ease and flexibility.
 
-{{< button "Get started for free" "/get-started/" >}}
+{{< button2 "Get started for free" "/get-started/" >}}
 
 ![](/uploads/illustrations/cuate/server.svg)

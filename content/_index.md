@@ -31,11 +31,9 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 
 ## What bricks are available?
 
-![](/uploads/illustrations/cuate/responsive.svg)
+![](/uploads/illustrations/cuate/version-control.svg)
 
-We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
-
-Are you missing a brick? [Let us know](/contact/)! We will build it for you!
+We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related. Are you missing some bricks? [Let us know](/contact/)! We will build them for you!
 
 {{< /brick_image >}}
 {{< brick_reviews >}}{{< /brick_reviews >}}
