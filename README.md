@@ -90,8 +90,6 @@ Make your wishlist. Missing a given [Hugobrick ?,let us know in this open conver
 
 [Feel free to give feedback, comment](https://github.com/jhvanderschee/hugobricks/issues/4), issue, submit your wishlist or fork. Hugobricks is here to make your Hugo experience even better.
 
-### Inspired by :
+### Credits
 
-- [Hugoplate](https://github.com/zeon-studio/hugoplate.git)
-- [Stackable](https://wpstackable.com/)
-- [Gutenberg Block Plugins](https://wpastra.com/plugins/wordpress-gutenberg-block-plugins/)
+The functionality is inspired by the many [Gutenberg Block Plugins](https://wpastra.com/plugins/wordpress-gutenberg-block-plugins/) that are available online. The design is based on the MIT licensed [Hugoplate from Zeon Studio](https://github.com/zeon-studio/hugoplate.git). The icons come from [Google Material Symbols](https://fonts.google.com/icons). The illustrations come from [StorySet](https://storyset.com). The avatars come from [Pravatar](https://www.pravatar.cc/images).
