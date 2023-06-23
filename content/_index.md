@@ -41,3 +41,29 @@ Are you missing a brick? [Let us know](/contact/)! We will build it for you!
 {{< brick_reviews >}}{{< /brick_reviews >}}
 {{< brick_cta >}}{{< /brick_cta >}}
 {{< brick_features >}}{{< /brick_features >}}
+{{< brick_features >}}
+## Features
+
+Hugobricks covers all components you would like to have at hand. It is a power engine for your web oriented projects.
+
+---
+
+![](/uploads/icons/)
+### Covers all components
+
+We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
+
+---
+
+![](/uploads/icons/)
+### 99+ Google Lighthouse score
+
+Lightning fast website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+
+---
+
+![](/uploads/icons/)
+### Themeable through CSS variables
+
+Easily themeable. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+{{< /brick_features >}}

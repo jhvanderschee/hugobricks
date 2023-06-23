@@ -6,12 +6,22 @@
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
-<section class="reviews hasbackgroundcolor">
+{{- $parts := split $inner "---" -}}
+<section class="features">
     <div class="container small">
-        {{- markdownify $inner -}}
+        {{- markdownify (index $parts 0) -}}
     </div>
     <div class="container">
-        {{ partial "features.html" . }}
+        <ul class="grid features">
+            {{ range after 1 $parts }}
+                {{- $imageurl := index (split (index (findRE `(?s)src=".*?"` (markdownify .) 1) 0) `"`) 1 -}}
+                {{- $type := "" -}}
+                {{- if in $imageurl "/icons/" -}}{{- $type = "has_icon" -}}{{- end -}}
+                <li class="{{ $type }}">
+                {{ markdownify . }}
+                </li>
+            {{ end }}
+        </ul>
     </div>
 </section>
 
