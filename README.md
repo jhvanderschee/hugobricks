@@ -50,7 +50,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 ## Shortcodes that are available:
 - [x] Contact form
 - [x] Map
-- [x] Button
+- [x] Button (primary and secondary)
 - [x] Social buttons
 - [x] Contact buttons
 
