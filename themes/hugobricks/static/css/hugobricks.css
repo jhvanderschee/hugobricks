@@ -1,4 +1,6 @@
-
+/*------------------------*/
+/* theme colors
+/*------------------------*/
 :root {
     --textDark: rgba(38, 50, 56, 1);
     --textMedium: rgba(38, 50, 56, 0.7);
@@ -8,13 +10,36 @@
     --textAccent: #F0B400;
     --light: rgba(38, 50, 56, 0.035);
 }
+/*------------------------*/
+/* turn grayscale off
+/*------------------------*/
 img {filter: grayscale(0);}
+
+/*------------------------*/
+/* pictures > blue/grayscale
+/*------------------------*/
 ul.reviews li div.box .avatar {filter: contrast(1) sepia(1) hue-rotate(160deg) grayscale(0.75);}
+
+/*------------------------*/
+/* black > --textDark
+/*------------------------*/
 ul.features li.has_icon p.image img,
 ul.reviews li div.box .quote,
 div.map::after,
 a.logo > div img.inline {filter: contrast(0.7) sepia(1) hue-rotate(160deg);}
+
+/*------------------------*/
+/* black > --textMedium
+/*------------------------*/
 .preheader.light .container a.icon img {filter: contrast(0.3) sepia(0.3) hue-rotate(160deg) brightness(1.4);}
+
+/*------------------------*/
+/* placeholder > --light 
+/*------------------------*/
 section.about .container p img {filter: brightness(0.88) sepia(1) hue-rotate(160deg) grayscale(0.9);}
+
+/*------------------------*/
+/* black > --accent
+/*------------------------*/
 ul.features li.has_icon p.image img,
 ul.reviews li div.box .stars img {filter: contrast(0.11) sepia(1) hue-rotate(340deg) contrast(13);}

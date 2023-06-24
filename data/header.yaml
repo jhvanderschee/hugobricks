@@ -33,6 +33,7 @@ cta:
 contact:
   phone: +31 618 51 89 28
   email: joost@vdschee.nl
-has_preheader: true
-preheader_light: true
-preheader_text: Open Mon-Fri from 9.00-5.00
+preheader: 
+  active: true
+  is_light: true
+  text: Open Mon-Fri from 9.00-5.00

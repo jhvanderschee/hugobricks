@@ -96,7 +96,7 @@ a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-se
 /*------------------------*/
 
 header {position: sticky; top: 0; background: white; z-index: 9;}
-header > .container {padding-top: 1.5rem; padding-bottom: 1.5rem; transition: all 0.25s ease-in-out;}
+header > .container {padding-top: 1.5rem; padding-bottom: 1.5rem;}
 header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white;}
 header.sticky > .container {padding-top: 0.75rem; padding-bottom: 0.75rem;}
 header a {text-decoration: none;}
