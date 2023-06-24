@@ -297,6 +297,7 @@ input, textarea, select {
 textarea {resize: vertical; height: 9rem;}
 input[type="checkbox"], input[type="radio"] {margin-right: 0.5rem;} 
 form > div.submit {padding-top: 0.5rem;}
+form h3 {padding-top: 0; padding-bottom: 1rem;}
 
 /*------------------------*/
 /* buttons
