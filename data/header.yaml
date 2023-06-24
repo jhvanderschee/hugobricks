@@ -19,6 +19,8 @@ menuitems:
   - title: Pages
     link: /contact/
     items: 
+      - title: Bricks page
+        link: /bricks-page/
       - title: Contact
         link: /contact/
       - title: Blog
@@ -28,11 +30,9 @@ menuitems:
       - title: 404 Page
         link: /404.html
 cta:
+  active: true
   title: Get started
   link: /get-started/
-contact:
-  phone: +31 618 51 89 28
-  email: joost@vdschee.nl
 preheader: 
   active: true
   is_light: true

@@ -13,12 +13,20 @@
     <link href="/css/hugobricks.css?version={{ now }}" rel="stylesheet">
   </head>
   <body id="top">
+    <script>      
+      function updateSize() {
+        if(window.innerWidth<1000) document.body.classList.add('mobilemenu');
+        else document.body.classList.remove('mobilemenu');
+      }
+      updateSize();
+      window.addEventListener("resize", updateSize);
+    </script>
     {{- if .Site.Data.header.preheader.active -}}
     <div class="preheader{{ if .Site.Data.header.preheader.is_light }} light{{- end -}}">
       <div class="container">
         <div class="icons">
-          {{- if .Site.Data.header.contact.phone -}}<a href="tel:{{ replace .Site.Data.header.contact.phone " " "" }}" class="icon"><img src="/img/phone.svg" alt="{{ .Site.Data.header.contact.phone }}" /> {{ .Site.Data.header.contact.phone }}</a>{{- end -}}
-          {{- if .Site.Data.header.contact.email -}}<a href="mailto:{{ .Site.Data.header.contact.email }}" class="icon"><img src="/img/email.svg" alt="{{ .Site.Data.header.contact.email }}" /> {{ .Site.Data.header.contact.email }}</a>{{- end -}}
+          {{- if .Site.Data.general.contact.phone -}}<a href="tel:{{ replace .Site.Data.general.contact.phone " " "" }}" class="icon"><img src="/img/phone.svg" alt="{{ .Site.Data.general.contact.phone }}" /> {{ .Site.Data.general.contact.phone }}</a>{{- end -}}
+          {{- if .Site.Data.general.contact.email -}}<a href="mailto:{{ .Site.Data.general.contact.email }}" class="icon"><img src="/img/email.svg" alt="{{ .Site.Data.general.contact.email }}" /> {{ .Site.Data.general.contact.email }}</a>{{- end -}}
         </div>
         <div>
           {{- if .Site.Data.header.preheader.text -}}{{ .Site.Data.header.preheader.text }}{{- end -}}
@@ -27,7 +35,7 @@
     </div>
     {{- end -}}
     <header>
-      <div class="container">
+      <div class="container {{ if .Site.Data.header.cta.active }}has_cta{{ end }}">
         <div>
           {{ partial "logo.html" . }}
         </div>
@@ -48,10 +56,12 @@
             </ul>
           </nav>
         </div>
+        {{ if .Site.Data.header.cta.active }}
         <div>
           <a href="{{ .Site.Data.header.cta.link }}" class="button ghost smaller">{{ .Site.Data.header.cta.title }}</a>
-          <button id="togglemenu" onclick="document.body.classList.toggle('menushown');">Toggle menu</button>
         </div>
+        {{ end }}
+        <button id="togglemenu" onclick="document.body.classList.toggle('menushown');">Toggle menu</button>
     </header>
 
     {{- block "content" . -}}{{- end -}}

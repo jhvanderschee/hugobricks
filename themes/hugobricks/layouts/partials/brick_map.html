@@ -6,17 +6,14 @@
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
-
-{{ $inner = markdownify $inner }}
-{{ $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 }}
-{{ $link := index (findRE `(?s)<a.*?>` $inner 1) 0 }}
-{{ $inner = replace $inner $image "" 1 }}
-{{ $imagesrc := index (split $image `"`) 1 }}
-
-{{ $link := index (findRE `(?s)<p><a.*?p>` $inner 1) 0 }}
-{{ $inner = replace $inner $link "" 1 }}
-{{ $href := index (split $link `"`) 1 }}
-
+{{- $inner = markdownify $inner -}}
+{{- $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 -}}
+{{- $link := index (findRE `(?s)<a.*?>` $inner 1) 0 -}}
+{{- $inner = replace $inner $image "" 1 -}}
+{{- $imagesrc := index (split $image `"`) 1 -}}
+{{- $link := index (findRE `(?s)<p><a.*?p>` $inner 1) 0 -}}
+{{- $inner = replace $inner $link "" 1 -}}
+{{- $href := index (split $link `"`) 1 -}}
 <section class="map hasbackgroundcolor stickstofooter">
     <div class="map" style="background-image: url({{ $imagesrc }});">
         <div class="overlay" onclick="window.open('{{ $href }}');" style="cursor: pointer;"></div>

@@ -84,7 +84,5 @@ Extremely fast. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corpori
 
 Start with the end result. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
 
-
-
 {{< /brick_features >}}
 {{< brick_cta >}}{{< /brick_cta >}}
