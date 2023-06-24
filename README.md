@@ -1,6 +1,6 @@
 # Hugobricks
 
-[DEMO](https://www.hugobricks.preview.usecue.com/)
+[View DEMO website](https://www.hugobricks.preview.usecue.com/)
 
 Hugobricks is a free website theme for Hugo. It makes building Hugo websites child’s play due to its stackable (LEGO-like) content bricks. Stack an intro brick on top of some image bricks and a pricing table and build a complete website in seconds!
 
