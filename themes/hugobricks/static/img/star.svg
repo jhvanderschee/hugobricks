@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -7,15 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="543.35938"
-   height="800"
-   viewBox="0 0 347.75 512"
+   width="674.8902"
+   height="644.30774"
+   viewBox="0 0 20.246706 19.329232"
    version="1.1"
-   id="svg6"
-   sodipodi:docname="marker.svg"
+   id="svg4"
+   sodipodi:docname="star.svg"
+   style="fill:none"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
   <metadata
-     id="metadata12">
+     id="metadata10">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -27,7 +30,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs10" />
+     id="defs8" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -37,19 +40,24 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2560"
-     inkscape:window-height="1391"
-     id="namedview8"
+     inkscape:window-width="949"
+     inkscape:window-height="480"
+     id="namedview6"
      showgrid="false"
-     inkscape:zoom="1.4150781"
-     inkscape:cx="273.09304"
-     inkscape:cy="400"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.295"
+     inkscape:cx="337.46032"
+     inkscape:cy="290.78102"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg6" />
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
   <path
-     class="st0"
-     d="M 173.875,0 C 77.844,0 0,77.859 0,173.906 0,269.938 154.672,512 173.875,512 193.094,512 347.75,269.937 347.75,173.906 347.75,77.859 269.906,0 173.875,0 Z m 0,240.406 c -36.719,0 -66.5,-29.781 -66.5,-66.5 0,-36.75 29.781,-66.531 66.5,-66.531 36.719,0 66.516,29.781 66.516,66.531 0,36.719 -29.797,66.5 -66.516,66.5 z"
-     id="path4" />
+     d="m 10.123809,15.933801 -5.4029995,3.286 a 0.75,0.75 0 0 1 -1.12,-0.813 l 1.456,-6.155 -4.796,-4.1229999 a 0.75,0.75 0 0 1 0.428,-1.316 l 6.303,-0.517 2.44,-5.83499999 a 0.75,0.75 0 0 1 1.3839995,0 l 2.44,5.83499999 6.303,0.517 a 0.75,0.75 0 0 1 0.427,1.316 l -4.795,4.1229999 1.456,6.155 a 0.75,0.75 0 0 1 -1.12,0.813 z"
+     id="path2"
+     inkscape:connector-curvature="0"
+     style="fill:#000000" />
 </svg>

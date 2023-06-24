@@ -13,20 +13,20 @@
     <link href="/css/hugobricks.css?version={{ now }}" rel="stylesheet">
   </head>
   <body id="top">
+    {{- if .Site.Data.header.preheader.active -}}
+    <div class="preheader{{ if .Site.Data.header.preheader.is_light }} light{{- end -}}">
+      <div class="container">
+        <div class="icons">
+          {{- if .Site.Data.header.contact.phone -}}<a href="tel:{{ replace .Site.Data.header.contact.phone " " "" }}" class="icon"><img src="/img/phone.svg" alt="{{ .Site.Data.header.contact.phone }}" /> {{ .Site.Data.header.contact.phone }}</a>{{- end -}}
+          {{- if .Site.Data.header.contact.email -}}<a href="mailto:{{ .Site.Data.header.contact.email }}" class="icon"><img src="/img/email.svg" alt="{{ .Site.Data.header.contact.email }}" /> {{ .Site.Data.header.contact.email }}</a>{{- end -}}
+        </div>
+        <div>
+          {{- if .Site.Data.header.preheader.text -}}{{ .Site.Data.header.preheader.text }}{{- end -}}
+        </div>
+      </div>  
+    </div>
+    {{- end -}}
     <header>
-      {{- if .Site.Data.header.has_preheader -}}
-      <div class="preheader">
-        <div class="container">
-          <div class="icons">
-            {{- if .Site.Data.header.contact.phone -}}<a href="tel:{{ replace .Site.Data.header.contact.phone " " "" }}" class="icon"><img src="/img/phone.svg" alt="{{ .Site.Data.header.contact.phone }}" /> {{ .Site.Data.header.contact.phone }}</a>{{- end -}}
-            {{- if .Site.Data.header.contact.email -}}<a href="mailto:{{ .Site.Data.header.contact.email }}" class="icon"><img src="/img/email.svg" alt="{{ .Site.Data.header.contact.email }}" /> {{ .Site.Data.header.contact.email }}</a>{{- end -}}
-          </div>
-          <div>
-            {{- if .Site.Data.header.preheader_text -}}{{ .Site.Data.header.preheader_text }}{{- end -}}
-          </div>
-        </div>  
-      </div>
-      {{- end -}}
       <div class="container">
         <div>
           {{ partial "logo.html" . }}
@@ -35,7 +35,7 @@
           <nav>
             <ul>
               {{ range .Site.Data.header.menuitems }}
-                <li class="{{ if (index .items 0).title }}haschildren{{ end }}"><a href="{{ .link }}">{{ .title }}</a>
+                <li class="{{ if eq .link `/` }}{{ if eq $.RelPermalink `/` }}active{{ end }}{{ else }}{{ if in $.RelPermalink .link }}active{{ end }}{{ end }}{{ if (index .items 0).title }} haschildren{{ end }}"><a href="{{ .link }}">{{ .title }}</a>
                   {{ if (index .items 0).title }}
                   <ul>
                     {{ range .items }}

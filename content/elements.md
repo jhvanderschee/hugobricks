@@ -64,13 +64,13 @@ Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cra
 
 ## Image
 
-![](/uploads/placeholders/image.png)
+![Unsplash - Ryan Quintal](/uploads/photos/lego.jpg)
 
 ---
 
 ## Map
 
-{{< map "/uploads/map.png" "https://www.google.com/maps" >}}
+{{< map "/uploads/map2.png" "https://www.google.com/maps" >}}
 
 ---
 

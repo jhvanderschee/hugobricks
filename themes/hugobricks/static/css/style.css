@@ -26,8 +26,11 @@
 :root {
     --textDark: black;
     --textMedium: rgba(0,0,0,0.7);
+    --borderMedium: rgba(0,0,0,0.2);
+    --borderLight: rgba(0,0,0,0.075);
     --accent: black;
-    --light: #f7f7f7;
+    --textAccent: black;
+    --light: rgba(0,0,0,0.03);
 }
 img {filter: grayscale(100%);}
 
@@ -55,11 +58,10 @@ p > img {border-radius: 1rem; overflow: hidden;}
 /*------------------------*/
 
 a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: var(--textDark);}
-a.logo img.inline {height: 2rem; position: relative; top: 0.1rem;}
-a.logo > div {display: flex; gap: 0.5rem; align-items: center;}
+a.logo img.inline {height: 2rem;}
+a.logo > div {display: flex; gap: 0.8rem; align-items: center;}
 a.logo > div > div span {display: block;}
-a.logo > div.has_subtitle {gap: 0.9rem;}
-a.logo > div.has_subtitle img.inline {height: 2.6rem;}
+a.logo > div.has_subtitle {gap: 1rem;}
 a.logo > div.has_subtitle > div span:nth-child(1) {line-height: 1.2;}
 a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-serif; font-size: 0.75rem; font-weight: normal;}
 
@@ -67,20 +69,22 @@ a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-se
 /* preheader
 /*------------------------*/
 
-.preheader {background: var(--textDark); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid rgba(0,0,0,0.07); font-weight: 600;}
+.preheader {background: var(--textDark); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid var(--light); font-weight: 600;}
 .preheader, .preheader a {color: white;}
 .preheader .container {display: flex; justify-content: space-between;}
 .preheader .container a.icon {text-decoration: none; margin-right: 2rem;}
 .preheader .container a.icon img {
-    height: 0.7em; 
+    height: 0.8em; 
     display: inline-block; 
     vertical-align: middle;
-    margin-right: 0.35rem;
+    margin-right: 0.2rem;
     position: relative;
     bottom: 0.1em;
     filter: invert(1);
 }
-.preheader + header {padding: 1.35rem 0;}
+.preheader.light {background: var(--light); font-weight: normal;}
+.preheader.light, .preheader.light a {color: var(--textMedium);}
+.preheader.light .container a.icon img {filter: invert(0);}
 @media (max-width: 600px) {
     .preheader .container {justify-content: center;}
     .preheader .container .icons {display: none;}
@@ -92,13 +96,26 @@ a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-se
 /*------------------------*/
 
 header {position: sticky; top: 0; background: white; z-index: 9;}
-header > .container {padding-top: 1.5rem; padding-bottom: 1.5rem; transition: all 0.25s ease-in-out;}
+header > .container {padding-top: 1.5rem; padding-bottom: 1.5rem;}
 header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white;}
 header.sticky > .container {padding-top: 0.75rem; padding-bottom: 0.75rem;}
 header a {text-decoration: none;}
 header ul, footer ul {display: flex; justify-content: center; gap: 2rem; margin: 0;}
-header ul li, footer ul li {list-style: none;}
-header nav > ul > li a {font-weight: bold; color: var(--textDark); padding: 0.80rem 0 0.65rem 0; display: block;}
+header ul li, footer ul li {list-style: none; position: relative;}
+header nav > ul > li a {font-weight: bold; color: var(--textDark); padding: 0.80rem 0 0.65rem 0; display: block; white-space: nowrap;}
+header nav > ul > li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0.6rem;
+    width: 100%;
+    height: 0.05rem;
+    background-color: var(--textDark);
+    transform: scaleX(0);
+    transition: transform 0.15s ease-in-out;
+}
+header nav > ul > li:hover::after,
+header nav > ul > li.active::after {transform: scaleX(1);}
 header nav > ul > li > ul {
     opacity: 0;
     transform: translateY(0.25rem);
@@ -143,14 +160,14 @@ header > .container > div:last-child, footer .container > div:last-child {flex: 
 /* footer
 /*------------------------*/
 
-footer {background: var(--light); margin-top: 2rem; border-top: 0.1rem solid rgba(0,0,0,0.02);}
+footer {background: var(--light); margin-top: 2rem; border-top: 0.1rem solid var(--light);}
 footer a {text-decoration: none;}
 footer .logo > div.has_subtitle {padding-bottom: 0.5rem;}
 footer ul li a {color: var(--textMedium)}
 footer .container > div:first-child:last-child {text-align: center;}
-footer, footer > div:last-child a {color: var(--textLight); text-decoration: none;}
+footer, footer > div:last-child a {color: var(--textMedium); text-decoration: none;}
 footer .container {padding-top: 3rem; padding-bottom: 3rem;}
-footer > div:last-child {border-top: 1px solid rgba(0,0,0,0.075); font-size: 0.9rem;}
+footer > div:last-child {border-top: 1px solid var(--borderLight); font-size: 0.9rem;}
 footer > div:last-child .container {justify-content: center; padding-top: 1.7rem; padding-bottom: 1.75rem;}
 footer ul.buttons {justify-content: flex-end; padding: 0;}
 @media (max-width: 1000px) {
@@ -173,6 +190,7 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
     vertical-align: middle; 
     margin-left: 0.75rem;
     margin-right: -0.75rem;
+    box-shadow: none!important;
 }
 @media (max-width: 1000px) {
     #togglemenu {display: inline-block; cursor: pointer;}
@@ -189,6 +207,9 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
     header > div.container > div:nth-child(3) {grid-area: cta;}
     header nav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 1rem 0;}
     header nav > ul > li {break-inside: avoid-column;}
+    header nav > ul > li::after {left: 0; width: 0.35rem; height: 0.35rem; border-radius: 100%; bottom: auto; top: 1.1rem; transform: scale(0);}
+    header nav > ul > li:hover::after,
+    header nav > ul > li.active::after {transform: scale(1);}
     header nav > ul > li a, header nav > ul > li > ul li a {padding: 0.5rem 1rem;}
     header nav > ul > li > ul {
         position: relative; 
@@ -221,13 +242,13 @@ section.hasbackgroundcolor + section.hasbackgroundcolor {padding-top: 3.5rem;}
 section :last-child {margin-bottom: 0;}
 section:not(.hasbackgroundcolor) + section:not(.hasbackgroundcolor) {padding-top: 2rem;}
 section.hasbackgroundcolor + footer {margin-top: 7.5rem;}
-section.stickstofooter + footer {margin-top: 0;}
+section.stickstofooter + footer {margin-top: 0; border-top: 0;}
 
 /*------------------------*/
 /* box
 /*------------------------*/
 
-div.box {background: var(--light); border: 0.1rem solid rgba(0,0,0,0.02); padding: 3.5rem clamp(2rem, 5vw, 5rem); border-radius: 1rem; position: relative;}
+div.box {background: var(--light); border: 0.1rem solid var(--light); padding: 3.5rem clamp(2rem, 5vw, 5rem); border-radius: 1rem; position: relative;}
 div.box:not(:last-child) {margin-bottom: 1.7em;}
 div.box p img {border-radius: 0;}
 
@@ -269,13 +290,14 @@ input, textarea, select {
     font-family: 'Heebo', sans-serif;
     font-size: 1rem;
     padding: 0.5em 0.5em;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid var(--borderMedium);
     color: var(--textDark);
     border-radius: 0.25rem;
 }
 textarea {resize: vertical; height: 9rem;}
 input[type="checkbox"], input[type="radio"] {margin-right: 0.5rem;} 
 form > div.submit {padding-top: 0.5rem;}
+form h3 {padding-top: 0; padding-bottom: 1rem;}
 
 /*------------------------*/
 /* buttons
@@ -291,7 +313,11 @@ form > div.submit {padding-top: 0.5rem;}
     font-size: 1rem;
     border-radius: 0.4rem;
     border: 0;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
 }
+.button.secondary {background: var(--textDark);}
+.button.secondary:hover {background: transparent; color: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
 .button.icon {
     padding: 0; 
     position: relative; 
@@ -306,18 +332,22 @@ form > div.submit {padding-top: 0.5rem;}
     height: calc(100% - 1.25em);
     filter: invert(1);
 }
-.button.ghost {background: none; color: var(--accent); box-shadow: inset 0 0 0 0.1rem var(--accent);}
+.button.icon:hover {background: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
+.button:hover, button:hover,
+.button.ghost {background: transparent; color: var(--textAccent); box-shadow: inset 0 0 0 0.1rem var(--accent);}
+.button.ghost:hover {color: white; background: var(--accent);}
 .button.smaller {padding: 0.4rem 1rem;}
 p > .button {margin: 0.5rem 0;}
 ul.buttons {gap: 1rem; margin-left: 0; display: flex; padding: 0.5rem 0;}
 ul.buttons li {list-style: none;}
 ul.buttons.social .button {background: var(--textDark);}
+ul.buttons.social .button:hover {background: var(--accent); box-shadow: inset 0 0 0 0.1rem var(--accent);}
 
 /*------------------------*/
 /* grid
 /*------------------------*/
 
-ul.grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 1.5rem; margin: 0;}
+ul.grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 1.55rem 1.5rem; margin: 0;}
 ul.grid li {list-style: none; position: relative;}
 
 /*------------------------*/
@@ -325,12 +355,14 @@ ul.grid li {list-style: none; position: relative;}
 /*------------------------*/
 
 ul.reviews {padding-bottom: 1rem;}
-ul.reviews li div.box {display: flex; flex-direction: column-reverse; padding: 2.25rem 2rem; height: 100%; justify-content: space-between;}
+ul.reviews li div.box {display: flex; flex-direction: column-reverse; padding: 2.25rem 2rem; height: 100%; justify-content: space-between; gap: 2rem;}
 ul.reviews li div.box .avatar {height: 3.25rem; width: 3.25rem; border-radius: 100%; object-fit: cover; filter: grayscale(100%);}
-ul.reviews li div.box h3 {margin: 0; line-height: 1.45; font-size: 1.25rem; padding: 0;}
+ul.reviews li div.box h3 {margin: 0; line-height: 1.45; font-size: 1.1rem; padding: 0;}
 ul.reviews li div.box .function {color: var(--textDark); line-height: 1.45;}
 ul.reviews li div.box .quote + p {margin-bottom: 2.5rem;}
-ul.reviews li div.box .quote {margin-bottom: 2rem; height: 1.25rem;}
+ul.reviews li div.box .quote {margin-bottom: 2rem; height: 1.25rem; display: none;}
+ul.reviews li div.box .stars {display: flex; gap: 0.25rem; margin: 0 0 1.5rem;}
+ul.reviews li div.box .stars img {height: 1rem;}
 ul.reviews li div.box > div:nth-child(1) {display: flex; gap: 1rem; align-items: center;}
 
 /*------------------------*/
@@ -342,7 +374,7 @@ ul.features li {text-align: center;}
 ul.features li img {aspect-ratio: 1.5; object-fit: contain; width: 100%;}
 ul.features li p.image {margin-bottom: 1rem;}
 ul.features li p.image + h3 {padding-top: 0;}
-ul.features li.has_icon p.image {display: inline-block; background: var(--light); padding: 1.5rem; border-radius: 100%; border: 0.1rem solid rgba(0,0,0,0.02);}
+ul.features li.has_icon p.image {display: inline-block; padding: 1.5rem; border-radius: 100%; border: 0.1rem solid var(--accent);}
 ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width: 3rem; margin: 0 auto; border-radius: 0;}
 
 /*----------------- BRICKS -------------------*/
@@ -371,7 +403,6 @@ section.cta .twocols {display: flex;}
 section.cta .twocols .text {flex: 2;}
 section.cta .twocols .image {flex: 1;}
 section.cta .twocols .image img {display: inline-block; width: 20rem;}
-section.cta .button {background: var(--textDark);}
 @media (max-width: 600px) {
     section.cta .twocols {flex-direction: column;}
     section.cta .twocols .image {text-align: left; display: none;}
@@ -381,7 +412,7 @@ section.cta .button {background: var(--textDark);}
 /* brick image
 /*------------------------*/
 
-section.image.alt {background: var(--light); border-top: 0.1rem solid rgba(0,0,0,0.02); border-bottom: 0.1rem solid rgba(0,0,0,0.02);}
+section.image.alt {background: var(--light); border-top: 0.1rem solid var(--light); border-bottom: 0.1rem solid var(--light);}
 section.image.alt .container {direction: rtl;}
 section.image.alt .container > div {direction: ltr;}
 section.image .twocols .image {text-align: center;}
@@ -412,9 +443,9 @@ section.wide {max-width: 60rem; margin-left: auto; margin-right: auto;}
 /* brick map
 /*------------------------*/
 
-section.map div.map {padding: 3rem 0; aspect-ratio: auto;}
+section.map div.map {padding: 3rem 0; aspect-ratio: auto; border-radius: 0;}
 section.map div.map > .container {display: flex; justify-content: flex-end;}
-section.map div.map > .container > div {background: white; padding: 2.5rem 3rem 2.5rem; border-radius: 1rem; position: relative; z-index: 2; min-width: 22rem;} 
+section.map div.map > .container > div {background: white; padding: 2.5rem 3rem 2.5rem; border-radius: 1rem; position: relative; z-index: 2; min-width: 22rem; box-shadow: 0px 0px 1.5rem rgba(0,0,0,0.05);} 
 section.map div.map .overlay {position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1;}
 @media (max-width: 55rem) {
     section.map div.map > .container {justify-content: center;}

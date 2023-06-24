@@ -1,6 +1,8 @@
 # Hugobricks
 
-Hugobricks is a free website theme for Hugo. It makes building Hugo websites child’s play due to its stackable (LEGO-like) content bricks. How about this ‘intro brick’ with a clear call-to-action? Stack it on top of some image bricks and a pricing table and build a complete website in seconds!
+[View DEMO website](https://www.hugobricks.preview.usecue.com/)
+
+Hugobricks is a free website theme for Hugo. It makes building Hugo websites child’s play due to its stackable (LEGO-like) content bricks. Stack an intro brick on top of some image bricks and a pricing table and build a complete website in seconds!
 
 ## What’s included in Hugobricks?
 
@@ -48,14 +50,14 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 ## Shortcodes that are available:
 - [x] Contact form
 - [x] Map
-- [x] Button
+- [x] Button (primary and secondary)
 - [x] Social buttons
 - [x] Contact buttons
 
 
 ### Hugobricks workflow
 
-Hugobricks aims to enhance the Hugo web framework by providing customizable web components and a variety of pre-made bricks for straightforward website-building.
+Hugobricks aims to enhance the Hugo web framework by providing a variety of pre-made bricks for straightforward website-building.
 
 Our companion project, [hugocodex](https://hugocodex.org), guides beginners in starting a Hugo project from scratch. For those who already have experience with Hugo and want to use it for rapid prototyping and iterating, Hugobricks offers premade websites and customizable components powered by Hugo.
 

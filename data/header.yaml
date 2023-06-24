@@ -1,5 +1,5 @@
 logo_image:
-logo_subtitle: The ultimate Hugo theme
+logo_subtitle: The Ultimate Hugo theme
 menuitems:
   - title: Home
     link: /
@@ -33,5 +33,7 @@ cta:
 contact:
   phone: +31 618 51 89 28
   email: joost@vdschee.nl
-has_preheader: true
-preheader_text: Open today from 9.00 am to 5.00 pm
+preheader: 
+  active: true
+  is_light: true
+  text: Open Mon-Fri from 9.00-5.00

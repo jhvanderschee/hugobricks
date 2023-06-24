@@ -1,5 +1,9 @@
 placeholders: false
 fields: 
+- name: title
+  input_type: html
+  placeholder: <h3>Tell us a bit about yourself</h3>
+  required: true
 - name: name
   input_type: text
   placeholder: Name
