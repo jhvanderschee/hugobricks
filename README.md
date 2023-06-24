@@ -55,7 +55,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 
 ### Hugobricks workflow
 
-Hugobricks aims to enhance the Hugo web framework by providing customizable web components and a variety of pre-made bricks for straightforward website-building.
+Hugobricks aims to enhance the Hugo web framework by providing a variety of pre-made bricks for straightforward website-building.
 
 Our companion project, [hugocodex](https://hugocodex.org), guides beginners in starting a Hugo project from scratch. For those who already have experience with Hugo and want to use it for rapid prototyping and iterating, Hugobricks offers premade websites and customizable components powered by Hugo.
 
