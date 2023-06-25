@@ -26,10 +26,9 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 - [x] Title,
 - [x] Map,
 - [x] Preheader, 
+- [x] Reviews, 
 - [ ] Team,
-- [ ] Reviews, 
 - [ ] Usps,
-- [ ] Faqs,
 - [ ] Quote,
 - [ ] Stats,
 - [ ] Pricing,
@@ -54,6 +53,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 - [x] Social buttons
 - [x] Contact buttons
 - [x] Breadcrumbs
+- [x] FAQ's
 
 ### Hugobricks workflow
 
