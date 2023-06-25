@@ -95,9 +95,8 @@ a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-se
 /* header
 /*------------------------*/
 
-header {position: relative; background: white; z-index: 9;}
+header {position: absolute; background: white; z-index: 9; width: 100%;}
 header > .container {padding-top: 1.5rem; padding-bottom: 1.5rem;}
-header.transparent {background: transparent; position: absolute; width: 100%;}
 header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white; position: fixed; top: 0;}
 header.sticky > .container {padding-top: 0.75rem; padding-bottom: 0.75rem;}
 header a {text-decoration: none;}
@@ -159,10 +158,11 @@ header > .container > div:first-child {flex: 1; text-align: left;}
 header > .container.has_cta > div:nth-child(3) {flex: 1; text-align: right;}
 header > .container.has_cta ul {justify-content: center;}
 header + section.hasbackgroundcolor {margin-top: 0;}
-header + section, 
-header + section.bgimage .container,
-header + section.image.alt {padding-top: 11rem!important;}
+header + section:not(.bgimage),
+body.transparent_header header + section.bgimage .container {padding-top: 11rem!important;}
+body:not(.transparent_header) header + section.bgimage .container {padding-top: 13.5rem!important;}
 
+body.transparent_header header:not(.sticky) {background: transparent;}
 body.transparent_header header:not(.sticky) a.logo,
 body.transparent_header header:not(.sticky) nav > ul > li > a {color: white;}
 body.transparent_header header:not(.sticky) nav > ul > li::after {background: white;}
@@ -262,7 +262,7 @@ body.mobilemenu.menushown #togglemenu {
     background: transparent url(/img/close.svg) center center / 2rem auto no-repeat; 
     z-index: 10; 
     position: fixed; 
-    top: 1rem; 
+    top: 0.75rem; 
     filter: invert(1);
 }
 body.mobilemenu.menushown header > div.container > div:nth-child(2) {transform: translateX(0%);}
@@ -527,14 +527,14 @@ section.map div.map > .container > div {background: white; padding: 2.5rem 3rem 
 /* brick 404
 /*------------------------*/
 
-section.error404 > .container p:first-child > img {margin-top: -1rem;}
-section.error404 > .container h1 {font-size: 2.4rem;}
+section.error404 > .container.small {text-align: center;}
+section.error404 > .container.small h1 {font-size: 2.4rem;}
 
 /*------------------------*/
 /* brick reviews
 /*------------------------*/
 
-section.reviews .container.small {margin-bottom: 4.25rem;}
+section.reviews .container.small {margin-bottom: 4.25rem; text-align: center;}
 
 /*------------------------*/
 /* brick features

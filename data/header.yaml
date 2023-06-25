@@ -19,10 +19,12 @@ menuitems:
   - title: Pages
     link: /contact/
     items: 
-      - title: Header image
-        link: /bgimage/
+      - title: Header image 1
+        link: /bgimage3/
       - title: Header image 2
         link: /bgimage2/
+      - title: Header image 3
+        link: /bgimage/
       - title: Basic
         link: /basic/
       - title: Contact

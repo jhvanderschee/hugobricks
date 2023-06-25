@@ -12,7 +12,7 @@
     <link href="/css/style.css?version={{ now }}" rel="stylesheet">
     <link href="/css/hugobricks.css?version={{ now }}" rel="stylesheet">
   </head>
-  <body id="top" class="{{ if in (substr .Content  0 100) `bgimage` }}transparent_header{{ end }}">
+  <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }}">
     <script>      
       function updateSize() {
         if(window.innerWidth<1000) document.body.classList.add('mobilemenu');
@@ -34,7 +34,7 @@
       </div>  
     </div>
     {{- end -}}
-    <header class="transparent">
+    <header>
       <div class="container {{ if .Site.Data.header.cta.active }}has_cta{{ end }}">
         <div>
           {{ partial "logo.html" . }}
