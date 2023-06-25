@@ -19,9 +19,9 @@ menuitems:
   - title: Pages
     link: /contact/
     items: 
-      - title: BG image
+      - title: Header image
         link: /bgimage/
-      - title: BG image 2
+      - title: Header image 2
         link: /bgimage2/
       - title: Basic
         link: /basic/
@@ -29,6 +29,8 @@ menuitems:
         link: /contact/
       - title: Blog
         link: /blog/
+      - title: F.A.Q.
+        link: /faq/
       - title: Authors
         link: /authors/
       - title: 404 Page

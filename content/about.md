@@ -3,7 +3,7 @@ title: About
 ---
 {{< brick_about >}}
 
-![](/uploads/placeholders/avatar.png)
+![](/uploads/photos/avatars/2.jpeg)
 
 # Hey, I am John Doe
 

@@ -121,7 +121,7 @@ header nav > ul > li > ul {
     opacity: 0;
     transform: translateY(0.25rem);
     position: absolute;
-    box-shadow: 0px 0px 1.5rem rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 1.5rem rgba(0,0,0,0.15);
     margin-left: -1rem;
     background: white;
     border-radius: 0.4rem;
@@ -279,7 +279,7 @@ body.mobilemenu.menushown header nav > ul > li a {color: white;}
 section, section.image.alt {padding: 4.5rem 0 6rem;}
 section .twocols {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 5.5rem clamp(2rem, 5vw, 5rem);}
 section .twocols > div {display: flex; flex-direction: column; justify-content: center;}
-section .container.small > * {text-align: center; max-width: 40rem; margin-left: auto; margin-right: auto;}
+section .container.small > * {max-width: 40rem; margin-left: auto; margin-right: auto;}
 section.hasbackgroundcolor {padding: 0; margin-top: 2rem;}
 section.hasbackgroundcolor + section.hasbackgroundcolor {padding-top: 3.5rem;}
 section.bgimage.hasbackgroundcolor + section:not(.hasbackgroundcolor) {margin-top: 1.5rem;}
@@ -390,9 +390,8 @@ ul.buttons.social .button:hover {background: var(--accent); box-shadow: inset 0 
 /* bgimage
 /*------------------------*/
 
-section.bgimage .overlay {position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1;}
+section.bgimage .overlay {position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1; background: rgba(0,0,0,0.32);}
 section.bgimage .bgimage {position: relative;}
-section.bgimage .overlay {background: rgba(0,0,0,0.3);}
 section.bgimage .container {position: relative; z-index: 2; color: white; padding-top: 5.5rem; padding-bottom: 6rem;} 
 section.bgimage .container h1,
 section.bgimage .container h2 {color: white;}
@@ -401,15 +400,15 @@ section.bgimage .container h2 {color: white;}
 /* breadcrumbs
 /*------------------------*/
 
-ul.breadcrumbs {display: block; margin: -2.2rem 0 0.5rem;}
+ul.breadcrumbs {display: block; margin: -2.2rem 0 0.5rem; font-size: 0.9rem;}
 h1 + ul.breadcrumbs {margin: -1rem 0 2.5rem;}
 h1 + ul.breadcrumbs:last-child {margin-bottom: 0;}
 ul.breadcrumbs li {list-style: none; display: inline-block;}
 ul.breadcrumbs li::before {content: "/"; display: inline-block; padding: 0 0.25rem;}
 ul.breadcrumbs li:first-child::before {content: none;}
 ul.breadcrumbs li a {text-decoration: none;}
-section.bgimage ul.breadcrumbs li::before,
-section.bgimage ul.breadcrumbs li a {color: white;}
+ul.breadcrumbs li::before,
+ul.breadcrumbs li a {color: var(--textAccent);}
 
 /*------------------------*/
 /* grid
@@ -451,8 +450,9 @@ ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width
 /* brick about
 /*------------------------*/
 
-section.about .container p img {display: inline-block; border-radius: 100%; overflow: hidden;}
-section.about .container h1 {margin-top: -1rem; font-size: 2.4rem;}
+section.about .container.small {text-align: center;}
+section.about .container p img {display: inline-block; border-radius: 100%; overflow: hidden; aspect-ratio: 1; width: 20rem; object-fit: cover;}
+section.about .container h1 {margin: -0.75rem auto 1.5rem; font-size: 2.4rem;}
 section.about .container .buttons {justify-content: center;}
 
 /*------------------------*/
@@ -500,6 +500,7 @@ section.contact .twocols {align-items: flex-start;}
 /* brick title
 /*------------------------*/
 
+section.title .container.small {text-align: center;}
 section.title:not(.bgimage) {padding-bottom: 3.25rem;}
 
 /*------------------------*/
@@ -508,6 +509,7 @@ section.title:not(.bgimage) {padding-bottom: 3.25rem;}
 
 section.wide {max-width: 60rem; margin-left: auto; margin-right: auto;}
 section.wide h1 {text-align: center;}
+section.wide h1 + p {padding-top: 1.5rem;}
 section.wide ul.breadcrumbs {text-align: center;}
 
 /*------------------------*/

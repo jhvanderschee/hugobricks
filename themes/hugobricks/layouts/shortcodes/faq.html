@@ -1,20 +1,13 @@
-<div class="container">
-{{ range page.Site.Data.faqs }}
-    {{ if .title }}
-    <h2 class="">{{ .title }}</h2>
-    <div>
-	{{ range .faqs }}
-	<details class="">
-	    <summary>{{ .question }}</summary>
-	    <div><div>{{ .answer | markdownify }}</div></div>
-	</details>
-	{{ end }}
-    </div>
-    {{ else }}
-    <details>
-	<summary>{{ .question }}</summary>
-	<div><div>{{ .answer | markdownify }}</div></div>
-    </details>
-    {{ end }}    
-{{ end }}
-</div>
+{{- range page.Site.Data.faqs -}}
+    {{- if .title -}}
+        <h2>{{- .title -}}</h2>
+        <div>
+	        {{- range .faqs -}}
+	            <details>
+	                <summary>{{- .question -}}</summary>
+	                <div><div>{{- .answer | markdownify -}}</div></div>
+	            </details>
+	        {{- end -}}
+        </div>
+    {{- end -}}    
+{{- end -}}

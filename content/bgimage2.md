@@ -1,5 +1,5 @@
 ---
-title: BG image 2
+title: Photo header 2
 ---
 {{< brick_title >}}
 
