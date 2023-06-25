@@ -19,8 +19,12 @@ menuitems:
   - title: Pages
     link: /contact/
     items: 
-      - title: Bricks page
-        link: /bricks-page/
+      - title: BG image
+        link: /bgimage/
+      - title: BG image 2
+        link: /bgimage2/
+      - title: Basic
+        link: /basic/
       - title: Contact
         link: /contact/
       - title: Blog

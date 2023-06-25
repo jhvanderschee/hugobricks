@@ -1,7 +1,7 @@
 ---
-title: Bricks page
+title: BG image
 ---
-{{< brick_intro2 >}}
+{{< brick_title >}}
 # Build your next Hugo website with stackable content bricks
 
 Hugobricks is a free website theme for Hugo. It makes building Hugo websites child's play due to its stackable (LEGO-like) content bricks. How about this 'intro brick' with a clear call-to-action? Stack it on top of some image bricks and a pricing table and build a complete website in seconds!
@@ -10,5 +10,5 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 ![](/uploads/photos/bricks.jpg)
 
-{{< /brick_intro2 >}}
+{{< /brick_title >}}
 {{< brick_features >}}{{< /brick_features >}}

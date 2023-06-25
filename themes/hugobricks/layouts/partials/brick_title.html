@@ -5,8 +5,23 @@
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
+{{- $inner = markdownify $inner -}}
+{{- $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 -}}
+{{- $inner = replace $inner $image "" 1 -}}
+{{- $imagesrc := index (split $image `"`) 1 -}}
+{{- if $imagesrc -}}
+<section class="title bgimage hasbackgroundcolor">
+    <div class="bgimage" style="background: url('{{ $imagesrc }}') center center / cover no-repeat;">
+        <div class="overlay"></div>
+        <div class="container small">
+            {{ $inner | safeHTML }}
+        </div>
+    </div>
+</section>
+{{- else -}}
 <section class="title">
     <div class="container small">
         {{- markdownify $inner -}}
     </div>
 </section>
+{{- end -}}
