@@ -167,6 +167,7 @@ body.transparent_header header:not(.sticky) a.logo,
 body.transparent_header header:not(.sticky) nav > ul > li > a {color: white;}
 body.transparent_header header:not(.sticky) nav > ul > li::after {background: white;}
 body.transparent_header header:not(.sticky) nav > ul > li.haschildren > a::after {border-color: white;}
+body.transparent_header header:not(.sticky) #togglemenu,
 body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: invert(1);}
 body.transparent_header header + section.bgimage {padding-top: 0!important;}
 
@@ -216,8 +217,6 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
 }
 body.mobilemenu #togglemenu {display: block;}
 body.mobilemenu header.sticky + #togglemenu {position: fixed; top: 0.75rem; margin-top: 0;}
-body.mobilemenu header {margin-bottom: 2rem;}
-body.mobilemenu header + section.hasbackgroundcolor {margin-top: -2rem;}
 body.mobilemenu header .nav {display: grid; transition: grid-template-rows 0.3s ease-in-out;}
 body.mobilemenu header > div.container {display: grid; grid-template-areas: "logo cta" "menu menu";}
 body.mobilemenu header > div.container > div:nth-child(1) {grid-area: logo;}
