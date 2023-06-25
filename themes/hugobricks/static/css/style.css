@@ -153,7 +153,6 @@ header nav > ul > li.haschildren > a::after {
     transform: rotate(45deg);
 }
 
-
 header > .container {display: flex; align-items: center;}
 header > .container > div {flex: 3; text-align: center;}
 header > .container > div:first-child {flex: 1; text-align: left;}
