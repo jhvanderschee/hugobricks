@@ -53,7 +53,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 - [x] Button (primary and secondary)
 - [x] Social buttons
 - [x] Contact buttons
-
+- [x] Breadcrumbs
 
 ### Hugobricks workflow
 
