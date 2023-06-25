@@ -161,7 +161,7 @@ header > .container.has_cta ul {justify-content: center;}
 header + section.hasbackgroundcolor {margin-top: 0;}
 header + section, 
 header + section.bgimage .container,
-header + section.image.alt {padding-top: 12rem!important;}
+header + section.image.alt {padding-top: 11rem!important;}
 
 body.transparent_header header:not(.sticky) a.logo,
 body.transparent_header header:not(.sticky) nav > ul > li > a {color: white;}
@@ -170,6 +170,7 @@ body.transparent_header header:not(.sticky) nav > ul > li.haschildren > a::after
 body.transparent_header header:not(.sticky) #togglemenu,
 body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: invert(1);}
 body.transparent_header header + section.bgimage {padding-top: 0!important;}
+body.transparent_header header:not(.sticky) .button {background: var(--accent); color: white;}
 
 /*------------------------*/
 /* footer
@@ -376,7 +377,6 @@ form h3 {padding-top: 0; padding-bottom: 1rem;}
     filter: invert(1);
 }
 .button.icon:hover {background: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
-.button:hover, button:hover,
 .button.ghost {background: transparent; color: var(--textAccent); box-shadow: inset 0 0 0 0.1rem var(--accent);}
 .button.ghost:hover {color: white; background: var(--accent);}
 .button.smaller {padding: 0.4rem 1rem;}
@@ -443,7 +443,7 @@ section.about .container .buttons {justify-content: center;}
 section.intro {text-align: center; background: white; position: relative;}
 section.intro img {margin: 3rem auto 0; width: 38rem;}
 section.intro.bgimage .overlay {background: rgba(0,0,0,0.3);}
-section.intro.bgimage .container {position: relative; z-index: 2; color: white; padding-top: 5.5rem; padding-bottom: 5.5rem;} 
+section.intro.bgimage .container {position: relative; z-index: 2; color: white; padding-top: 5.5rem; padding-bottom: 6rem;} 
 section.intro.bgimage .container h1,
 section.intro.bgimage .container h2 {color: white;}
 
