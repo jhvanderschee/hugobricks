@@ -12,7 +12,7 @@
     <link href="/css/style.css?version={{ now }}" rel="stylesheet">
     <link href="/css/hugobricks.css?version={{ now }}" rel="stylesheet">
   </head>
-  <body id="top">
+  <body id="top" class="{{ if in (substr .Content  0 100) "bgimage" }}transparent_header{{ end }}">
     <script>      
       function updateSize() {
         if(window.innerWidth<1000) document.body.classList.add('mobilemenu');
@@ -20,6 +20,8 @@
       }
       updateSize();
       window.addEventListener("resize", updateSize);
+
+      
     </script>
     {{- if .Site.Data.header.preheader.active -}}
     <div class="preheader{{ if .Site.Data.header.preheader.is_light }} light{{- end -}}">
@@ -34,7 +36,7 @@
       </div>  
     </div>
     {{- end -}}
-    <header>
+    <header class="transparent">
       <div class="container {{ if .Site.Data.header.cta.active }}has_cta{{ end }}">
         <div>
           {{ partial "logo.html" . }}

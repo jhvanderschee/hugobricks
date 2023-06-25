@@ -95,9 +95,10 @@ a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-se
 /* header
 /*------------------------*/
 
-header {position: relative; top: 0; background: white; z-index: 9;}
+header {position: relative; background: white; z-index: 9;}
 header > .container {padding-top: 1.5rem; padding-bottom: 1.5rem;}
-header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white; position: sticky}
+header.transparent {background: transparent; position: absolute; width: 100%;}
+header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white; position: fixed; top: 0;}
 header.sticky > .container {padding-top: 0.75rem; padding-bottom: 0.75rem;}
 header a {text-decoration: none;}
 header ul {display: flex; justify-content: flex-end; gap: 2rem; margin: 0;}
@@ -159,6 +160,16 @@ header > .container > div:first-child {flex: 1; text-align: left;}
 header > .container.has_cta > div:nth-child(3) {flex: 1; text-align: right;}
 header > .container.has_cta ul {justify-content: center;}
 header + section.hasbackgroundcolor {margin-top: 0;}
+header + section, 
+header + section.bgimage .container,
+header + section.image.alt {padding-top: 11rem!important;}
+
+body.transparent_header header:not(.sticky) a.logo,
+body.transparent_header header:not(.sticky) nav > ul > li > a {color: white;}
+body.transparent_header header:not(.sticky) nav > ul > li::after {background: white;}
+body.transparent_header header:not(.sticky) nav > ul > li.haschildren > a::after {border-color: white;}
+body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: invert(1);}
+body.transparent_header header + section.bgimage {padding-top: 0!important;}
 
 /*------------------------*/
 /* footer
@@ -227,14 +238,12 @@ body.mobilemenu header > div.container > div:nth-child(2) {
 }
 body.mobilemenu header > div.container > div:nth-child(3) {grid-area: cta;}
 body.mobilemenu header > .container.has_cta > div:nth-child(3) .button {margin-right: 3rem;}
-body.mobilemenu header nav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 4rem 0;}
+body.mobilemenu header nav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 4.5rem 0;}
 body.mobilemenu header nav > ul > li::after {content: none;}
-body.mobilemenu header nav > ul > li a, 
-body.mobilemenu header nav > ul > li > ul li a {padding: 0.5rem 2.25rem;}
 body.mobilemenu header nav > ul > li > ul {
     position: relative; 
     box-shadow: none; 
-    margin: 0 0 0 2rem; 
+    margin: 0; 
     padding: 0; 
     text-align: left;
     opacity: 1;
@@ -243,6 +252,8 @@ body.mobilemenu header nav > ul > li > ul {
     background: transparent;
     border-radius: 0;
 }
+body.mobilemenu header nav > ul > li a {padding: 0.5rem 2.5rem; font-size: 1.15rem;}
+body.mobilemenu header nav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 4rem;}
 
 /*------------------------*/
 /* menu shown
@@ -449,6 +460,7 @@ section.cta .twocols .image {flex: 1;}
 section.cta .twocols .image img {display: inline-block; width: 20rem;}
 @media (max-width: 600px) {
     section.cta .twocols {flex-direction: column;}
+    section.cta .twocols .text {text-align: center;}
     section.cta .twocols .image {text-align: left; display: none;}
 }
 
