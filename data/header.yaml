@@ -27,12 +27,8 @@ menuitems:
         link: /basic/
       - title: Contact
         link: /contact/
-      - title: Blog
-        link: /blog/
       - title: F.A.Q.
         link: /faq/
-      - title: Authors
-        link: /authors/
       - title: 404 Page
         link: /404.html
 cta:
