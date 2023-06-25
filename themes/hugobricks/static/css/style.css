@@ -161,7 +161,7 @@ header > .container.has_cta ul {justify-content: center;}
 header + section.hasbackgroundcolor {margin-top: 0;}
 header + section, 
 header + section.bgimage .container,
-header + section.image.alt {padding-top: 11rem!important;}
+header + section.image.alt {padding-top: 12rem!important;}
 
 body.transparent_header header:not(.sticky) a.logo,
 body.transparent_header header:not(.sticky) nav > ul > li > a {color: white;}
