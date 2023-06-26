@@ -1,0 +1,13 @@
+{{- $inner := .Inner -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty shortcode found." -}}
+{{- end -}}
+{{- $tabs := split $inner "---" -}}
+{{- range $tabs -}}
+{{- end -}}
+{{- range $tabs -}}
+    {{- $title := findRE `(?s)<h2.*?>.*?</h2>` . 1 -}}
+    <div>
+        {{- $title -}}
+    </div>
+{{- end -}}

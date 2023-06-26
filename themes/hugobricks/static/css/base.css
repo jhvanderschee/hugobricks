@@ -168,7 +168,7 @@ section.bgimage h1 + p {padding-top: 0;}
 /* breadcrumbs
 /*------------------------*/
 
-ul.breadcrumbs {display: block; margin: -2rem 0 0.25rem; font-size: 0.9rem; text-align: center;}
+ul.breadcrumbs {display: block; margin: -1rem 0 0.25rem; font-size: 0.9rem; text-align: center;}
 h1 + ul.breadcrumbs {margin: -1rem 0 2rem;}
 h1 + ul.breadcrumbs:last-child {margin-bottom: 0;}
 ul.breadcrumbs li {list-style: none; display: inline-block;}
@@ -218,10 +218,10 @@ ul.reviews li div.box > div:nth-child(1) {display: flex; gap: 1rem; align-items:
 /* features
 /*------------------------*/
 
-ul.features {gap: 4rem 3rem; padding-bottom: 1rem;}
+ul.features {gap: 3rem 3rem; padding-bottom: 1rem;}
 ul.features li {text-align: center;}
 ul.features li img {aspect-ratio: 1.5; object-fit: contain; width: 100%;}
-ul.features li p.image {margin-bottom: 1rem;}
+ul.features li p.image {margin-bottom: 0.85rem;}
 ul.features li p.image + h3 {padding-top: 0;}
 ul.features li.has_icon p.image {display: inline-block; padding: 1.5rem; border-radius: 100%; border: 0.1rem solid var(--accent);}
 ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width: 3rem; margin: 0 auto; border-radius: 0;}
