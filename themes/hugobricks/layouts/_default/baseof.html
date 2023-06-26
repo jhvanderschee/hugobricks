@@ -20,6 +20,7 @@
       updateSize();
       window.addEventListener("resize", updateSize);
     </script>
+    <div class="innerbody">
     {{- if .Site.Data.header.preheader.active -}}
     <div class="preheader{{ if .Site.Data.header.preheader.is_light }} light{{- end -}}">
       <div class="container">
@@ -94,5 +95,6 @@
       </div>
     </footer>
     {{ if .Site.Data.header.sticky_header }}<script type="text/javascript" src="/js/stickyheader.js"></script>{{ end }}
+    </div>
   </body>
 </html>
