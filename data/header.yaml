@@ -1,6 +1,7 @@
 logo_image:
 logo_subtitle: The Ultimate Hugo theme
 mobile_view_at: 1000
+sticky_header: true
 menuitems:
   - title: Home
     link: /

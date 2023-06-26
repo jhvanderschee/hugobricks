@@ -1,4 +1,5 @@
 baseURL: https://www.hugobricks.preview.usecue.com
+title: Hugobricks
 theme: hugobricks
 
 params:

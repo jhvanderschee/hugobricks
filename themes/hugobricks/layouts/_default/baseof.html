@@ -93,6 +93,6 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="/js/stickyheader.js"></script>
+    {{ if .Site.Data.header.sticky_header }}<script type="text/javascript" src="/js/stickyheader.js"></script>{{ end }}
   </body>
 </html>
