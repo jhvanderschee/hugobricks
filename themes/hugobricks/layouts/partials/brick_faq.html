@@ -13,7 +13,7 @@
             {{- $title := index (findRE `(?s)<h2.*?>.*?</h2>` (markdownify .) 1) 0 -}}
             {{- $titleplain := replace (index (split $title ">") 1) `</h2` `` -}}
             <details>
-                <summary>{{- .titleplain -}}</summary>
+                <summary>{{- $titleplain -}}</summary>
                 <div><div>{{- (replace (markdownify .) $title "") -}}</div></div>
             </details>
         {{- end -}}
