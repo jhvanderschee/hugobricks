@@ -2,6 +2,9 @@
 title: Elements
 ---
 {{< brick_title >}}
+
+{{< breadcrumbs >}}
+
 # Elements
 
 Lorem dolor sit amet, consectetur adipiscing elit. Nam non laoreet nisi, ac hendrerit lacus. Sed eget dapibus dui. Phasellus non ante sollicitudin, ultrices ex et, convallis orci. 
