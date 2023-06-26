@@ -1,4 +1,3 @@
-is_light: false
 menuitems:
   - title: About
     link:  /about/
@@ -19,5 +18,4 @@ socials:
   - title: Instagram
     link: https://instagram.com
     logo_image: /img/instagram.svg
-whatsapp_phone: 
 footer_text: A theme by [Usecue B.V.](https://www.usecue.com/)
