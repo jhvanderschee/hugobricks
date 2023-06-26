@@ -196,7 +196,7 @@ ul.grid li {list-style: none; position: relative;}
 /*------------------------*/
 
 ul.team li {text-align: center;}
-ul.team li .box {height: 100%; padding: 2.5rem clamp(2rem, 4vw, 3.5rem);}
+ul.team li .box {height: 100%; padding: 2.25rem clamp(2rem, 4vw, 3.5rem);}
 ul.team li .avatar {height: 8rem; width: 8rem; margin: 0.5rem auto 0.15rem;}
 ul.team li .function {color: var(--textDark); margin: -0.25rem 0 1.5rem;}
 ul.team ul.buttons {justify-content: center;}
