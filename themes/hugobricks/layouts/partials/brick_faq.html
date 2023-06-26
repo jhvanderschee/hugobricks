@@ -7,7 +7,7 @@
     {{- end -}}
 {{- end -}}
 {{- $parts := split $inner "---" -}}
-<section class="wide">
+<section class="wide faq">
     <div class="container">
         {{- range $parts -}}
             {{- $title := index (findRE `(?s)<h2.*?>.*?</h2>` (markdownify .) 1) 0 -}}
