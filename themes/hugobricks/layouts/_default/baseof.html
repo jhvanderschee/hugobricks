@@ -14,7 +14,7 @@
   <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }}">
     <script>      
       function updateSize() {
-        if(window.innerWidth<1000) document.body.classList.add('mobilemenu');
+        if(window.innerWidth<{{ .Site.Data.header.mobile_view_at }}) document.body.classList.add('mobilemenu');
         else document.body.classList.remove('mobilemenu');
       }
       updateSize();
