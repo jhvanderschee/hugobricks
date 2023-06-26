@@ -1,0 +1,101 @@
+/*------------------------*/
+/* brick about
+/*------------------------*/
+
+section.about .container.small {text-align: center;}
+section.about .container p img {display: inline-block; border-radius: 100%; overflow: hidden; aspect-ratio: 1; width: 20rem; object-fit: cover;}
+section.about .container h1 {margin: -0.75rem auto 1.5rem; font-size: 2.4rem;}
+section.about .container h1 + p {padding-top: 0;}
+section.about .container .buttons {justify-content: center;}
+
+/*------------------------*/
+/* brick intro
+/*------------------------*/
+
+section.intro {text-align: center; background: white; position: relative;}
+section.intro img {margin: 3rem auto 0; width: 38rem;}
+section.intro h1 + p {padding-top: 0;}
+
+/*------------------------*/
+/* brick cta
+/*------------------------*/
+
+section.cta {background: white;}
+section.cta .twocols {display: flex;}
+section.cta .twocols .text {flex: 2;}
+section.cta .twocols .image {flex: 1;}
+section.cta .twocols .image img {display: inline-block; width: 20rem;}
+@media (max-width: 600px) {
+    section.cta .twocols {flex-direction: column;}
+    section.cta .twocols .text {text-align: center;}
+    section.cta .twocols .image {text-align: left; display: none;}
+}
+
+/*------------------------*/
+/* brick image
+/*------------------------*/
+
+section.image.alt {background: var(--light); border-top: 0.1rem solid var(--light); border-bottom: 0.1rem solid var(--light);}
+section.image.alt .container {direction: rtl;}
+section.image.alt .container > div {direction: ltr;}
+section.image .twocols .image {text-align: center;}
+section.image .twocols .image img {width: auto; display: inline-block; width: 29rem}
+@media (max-width: 600px) {
+    section.image .twocols .image {text-align: left;}
+}
+
+/*------------------------*/
+/* brick contact
+/*------------------------*/
+
+section.contact .twocols {align-items: flex-start;}
+
+/*------------------------*/
+/* brick title
+/*------------------------*/
+
+section.title .container.small {text-align: center;}
+section.title:not(.bgimage) {padding-bottom: 3.25rem;}
+
+/*------------------------*/
+/* brick wide
+/*------------------------*/
+
+section.wide {max-width: 60rem; margin-left: auto; margin-right: auto;}
+section.wide h1 {text-align: center;}
+
+/*------------------------*/
+/* brick map
+/*------------------------*/
+
+section.map div.map {padding: 3rem 0; aspect-ratio: auto; border-radius: 0;}
+section.map div.map > .container {display: flex; justify-content: flex-end;}
+section.map div.map > .container > div {background: white; padding: 2.5rem 3rem 2.5rem; border-radius: 1rem; position: relative; z-index: 2; min-width: 22rem; box-shadow: 0px 0px 1.5rem rgba(0,0,0,0.05);} 
+@media (max-width: 55rem) {
+    section.map div.map > .container {justify-content: center;}
+}
+
+/*------------------------*/
+/* brick 404
+/*------------------------*/
+
+section.error404 > .container.small {text-align: center;}
+section.error404 > .container.small h1 {font-size: 2.4rem;}
+
+/*------------------------*/
+/* brick reviews
+/*------------------------*/
+
+section.reviews .container.small {margin-bottom: 4.25rem; text-align: center;}
+
+/*------------------------*/
+/* brick features
+/*------------------------*/
+
+section.features .container.small {margin-bottom: 4.75rem; text-align: center;}
+
+/*------------------------*/
+/* brick small
+/*------------------------*/
+
+section.small h1 {text-align: center;}

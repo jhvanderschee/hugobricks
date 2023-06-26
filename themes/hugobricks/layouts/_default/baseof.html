@@ -10,7 +10,6 @@
     <link rel="shortcut icon" href="{{ .Site.Data.general.favicon_image }}">
     
     <link href="/css/style.css?version={{ now }}" rel="stylesheet">
-    <link href="/css/hugobricks.css?version={{ now }}" rel="stylesheet">
   </head>
   <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }}">
     <script>      
@@ -25,8 +24,12 @@
     <div class="preheader{{ if .Site.Data.header.preheader.is_light }} light{{- end -}}">
       <div class="container">
         <div class="icons">
-          {{- if .Site.Data.general.contact.phone -}}<a href="tel:{{ replace .Site.Data.general.contact.phone " " "" }}" class="icon"><img src="/img/phone.svg" alt="{{ .Site.Data.general.contact.phone }}" /> {{ .Site.Data.general.contact.phone }}</a>{{- end -}}
-          {{- if .Site.Data.general.contact.email -}}<a href="mailto:{{ .Site.Data.general.contact.email }}" class="icon"><img src="/img/email.svg" alt="{{ .Site.Data.general.contact.email }}" /> {{ .Site.Data.general.contact.email }}</a>{{- end -}}
+          {{- if .Site.Data.general.contact.phone -}}
+            <a href="tel:{{ replace .Site.Data.general.contact.phone ` ` `` }}" class="icon"><img src="/img/phone.svg" alt="{{ .Site.Data.general.contact.phone }}" class="black_2_textMedium" /> {{ .Site.Data.general.contact.phone }}</a>
+          {{- end -}}
+          {{- if .Site.Data.general.contact.email -}}
+            <a href="mailto:{{ .Site.Data.general.contact.email }}" class="icon"><img src="/img/email.svg" alt="{{ .Site.Data.general.contact.email }}" class="black_2_textMedium" /> {{ .Site.Data.general.contact.email }}</a>
+          {{- end -}}
         </div>
         <div>
           {{- if .Site.Data.header.preheader.text -}}{{ .Site.Data.header.preheader.text }}{{- end -}}

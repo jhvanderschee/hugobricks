@@ -1,4 +1,4 @@
-logo_image:
+is_light: false
 menuitems:
   - title: About
     link:  /about/

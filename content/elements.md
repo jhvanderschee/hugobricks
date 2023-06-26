@@ -64,7 +64,13 @@ Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cra
 
 ## Image
 
+A normal image:
+
 ![Unsplash - Ryan Quintal](/uploads/photos/lego.jpg)
+
+A grayscale (colorized) image:
+
+{{< colorize_image "Photo by S. Tsuchiya on Unsplash" "/uploads/photos/bricks2.jpg" >}}
 
 ---
 

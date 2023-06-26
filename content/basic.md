@@ -1,9 +1,9 @@
 ---
-title: Basic
+title: Basic page 1
 ---
 {{< brick_wide >}}
 
-# Basic page
+# Basic page 1 
 
 {{< breadcrumbs >}}
 

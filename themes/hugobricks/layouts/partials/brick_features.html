@@ -19,7 +19,7 @@
                 {{- if in $imageurl "/icons/" -}}{{- $type = "has_icon" -}}{{- end -}}
                 {{- if in $imageurl "/illustrations/" -}}{{- $type = "has_illustration" -}}{{- end -}}
                 <li class="{{ $type }}">
-                {{ replace (markdownify .) `<p><img` `<p class="image"><img` | safeHTML }}
+                {{- replace (markdownify .) `<p><img` `<p class="image"><img class="black_2_accent"` | safeHTML -}}
                 </li>
             {{ end }}
         </ul>

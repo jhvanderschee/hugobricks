@@ -1,11 +1,11 @@
 ---
-title: Photo header 2
+title: Header image 2
 ---
 {{< brick_title >}}
 
 ![](/uploads/photos/bricks.jpg)
 
-# Background image 2
+# Header image 2
 
 {{< breadcrumbs >}}
 

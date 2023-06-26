@@ -25,9 +25,13 @@ menuitems:
         link: /bgimage2/
       - title: Header image 3
         link: /bgimage/
-      - title: Basic
+      - title: Basic page 1
         link: /basic/
-      - title: Contact
+      - title: Basic page 2
+        link: /basic2/
+      - title: Our team
+        link: /team/
+      - title: Contact us
         link: /contact/
       - title: F.A.Q.
         link: /faq/
