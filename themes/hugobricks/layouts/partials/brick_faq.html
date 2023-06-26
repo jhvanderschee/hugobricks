@@ -1,5 +1,5 @@
 
-{{- $inner := . -}}
+{{- $inner := .Inner -}}
 {{- if or (eq $inner "") (eq $inner nil) -}}
     {{- $inner = "Empty brick found. Consider creating a 'content/bricks/faq.md' file." -}}
     {{- with page.Site.GetPage "bricks/faq.md" -}}
