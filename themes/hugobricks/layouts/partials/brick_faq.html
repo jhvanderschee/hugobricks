@@ -14,7 +14,7 @@
             {{- $titleplain := replace (index (split $title ">") 1) `</h2` `` -}}
             <details>
                 <summary>{{- $titleplain -}}</summary>
-                <div><div>{{- (replace (markdownify .) $title "") -}}</div></div>
+                <div><div>{{- (replace (markdownify .) $title "") | safeHTML -}}</div></div>
             </details>
         {{- end -}}
     </div>
