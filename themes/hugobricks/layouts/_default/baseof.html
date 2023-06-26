@@ -73,7 +73,7 @@
       <div>
         <div class="container">
           <div>
-            {{ partial "logo.html" . }}
+            {{ if .Site.Data.footer.show_logo }}{{ partial "logo.html" . }}{{ else }}&copy; {{ .Site.Data.general.title }} {{ now.Year }}{{ end }}
           </div>
           <div>
             <ul>
