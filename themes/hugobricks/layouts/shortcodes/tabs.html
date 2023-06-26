@@ -22,6 +22,10 @@
 </div>
 <script>
     function toggleTab(el) {
+        var els = el.parentElement.parentElement.querySelectorAll('li');
+        els.forEach(function(el) {
+            el.classList.remove('selected');
+        });
         var els = el.parentElement.parentElement.nextElementSibling.querySelectorAll('.tab');
         els.forEach(function(tab) {
             tab.style.display = 'none';
