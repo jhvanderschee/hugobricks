@@ -208,10 +208,10 @@ ul.team ul.buttons {justify-content: center;}
 ul.tabs {
     display: flex; 
     align-items: flex-end;
-    margin: 0 0 0.9rem; 
+    margin: 0 0 1.5rem; 
     gap: 2rem; 
     border-bottom: 0.04rem solid rgba(0,0,0,0.15); 
-    padding-top: 1.1rem;
+    padding-top: 2rem;
 }
 ul.tabs li {list-style: none; line-height: 1.3;}
 ul.tabs li a {
@@ -222,7 +222,7 @@ ul.tabs li a {
     position: relative;
     display: block;
     font-weight: bold;
-    padding-bottom: 0.2rem;
+    padding-bottom: 0.5rem;
 }
 ul.tabs li a::after {
     content: "";
