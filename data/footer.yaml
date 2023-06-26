@@ -1,3 +1,4 @@
+show_logo: true
 menuitems:
   - title: About
     link:  /about/
