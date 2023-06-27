@@ -108,7 +108,7 @@ section.small h1 {text-align: center;}
 
 section.docs {padding-top: 0!important;}
 section.docs .container {display: grid; grid-template-columns: 15rem auto 11rem;}
-section.docs .container .menu ul.nestedmenu {margin-left: 0; position: sticky; top: 8rem; margin-right: 2rem;}
+section.docs .container .menu ul.nestedmenu {margin-left: 0; position: sticky; top: 8rem; margin-right: 3rem;}
 section.docs .container .menu ul.nestedmenu li {list-style: none;}
 section.docs .container .menu ul.nestedmenu li > ul {display: none;}
 section.docs .container .menu ul.nestedmenu li > a::before {content: "•"; display: inline-block; margin-right: 0.25rem; width: 0.5rem; text-align: center;}
