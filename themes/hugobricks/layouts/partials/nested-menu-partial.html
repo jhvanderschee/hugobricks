@@ -1,0 +1,18 @@
+{{ range .regularpages }}
+
+    {{ $filepath := replace (print .File.Dir (replace .File.BaseFileName "_index" "") "/") "//" "/" }}
+    {{ $contextfilepath := replace (print $.context.File.Dir (replace $.context.File.BaseFileName "_index" "") "/") "//" "/" }}
+    {{ $pagecontextfilepath := replace (print $.pagecontext.File.Dir (replace $.pagecontext.File.BaseFileName "_index" "") "/") "//" "/" }}
+
+    {{ if eq (len (split $filepath "/")) (add (len (split $contextfilepath "/")) 1) }}
+      
+        {{ if and (in $filepath $contextfilepath) (ne $contextfilepath $filepath) }}
+            <li class="{{ if in $pagecontextfilepath $filepath }}active{{ end }} {{ if in ($.pagecontext.Scratch.Get `haschildren`) $filepath }}haschildren{{ end }}">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <ul>
+                    {{ partial "nested-menu-partial.html" (dict "context" . "pagecontext" $.pagecontext "regularpages" $.regularpages) }}
+                </ul>
+            </li>
+        {{ end }}
+    {{ end }}
+{{ end }}
