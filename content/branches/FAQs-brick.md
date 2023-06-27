@@ -39,30 +39,25 @@ Fine. Say you want to achieve this neat FAQ 'component' markup (in a series of Q
 </section>
 ```
 
-Say you sculpt your brick style like this, by means of :
+Say you sculpt your brick style like this, by means of the following css rules :
 
 
 ```
 /*------------------------*/
-/* brick title
+/* brick features
 /*------------------------*/
 
-section.title .container.small {text-align: center;}
-section.title:not(.bgimage) {padding-bottom: 3.25rem;}
-
-/*------------------------*/
-/* brick wide
-/*------------------------*/
-
-section.wide {max-width: 60rem; margin-left: auto; margin-right: auto;}
-section.wide h1 {text-align: center;}
-section.wide h1 + p {padding-top: 1.25rem;}
+section.features .container.small {margin-bottom: 4.75rem; text-align: center;}
+section.features + section.title {padding-top: 0;}
 ```
 
-Note that in this case, you may see an extra 'container' class: this one is given by the base.css sytlesheet.
-Like this, there is base/essential style, which then goes sculpted across the several bricks. Of course, both can be easily customised at whish. Just iterate over them.
+Sweet.
+That's it. We benefit from the native < summary > and < details > elements combination for the rest of the styling.
 
-About the glueing it all together process... What's under the hood ?
+Note that 'wide' and 'container' styling classes are provided by the base.css sytlesheet directly.
+We provide base/essential style, which then goes sculpted across the several bricks. Of course, both can be easily customised at whish. Just iterate over them ! Rinse and repeat.
+
+About the glueing it the pieces of the puzzle together... What's under the hood ?
 Have a look at the relevant layouts/partials.
 
 < enjoy / >
