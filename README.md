@@ -6,7 +6,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 ## What’s included in Hugobricks?
 
-Hugoplate is a comprehensive starter theme that includes everything you need to get started with your Hugo project. What’s Included in
+Hugobricks is a comprehensive starter theme that includes everything you need to get started with your Hugo project. What’s Included in
 
 - 10+ Pre-build pages
 - 99+ Google Pagespeed Score
