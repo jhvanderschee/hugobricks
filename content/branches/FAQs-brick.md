@@ -2,7 +2,7 @@
 title: FAQs Brick
 ---
 
-Want to add an informative most frequently asked questions ?
+Want to add an informative most frequently asked questions?
 Fine. Say you want to achieve this neat FAQ 'component' markup (in a series of Q & A, prefixed with short text, and maybe different sections of) :
 
 ```
