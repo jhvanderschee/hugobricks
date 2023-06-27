@@ -1,0 +1,14 @@
+{{- define "content" -}}
+    <div class="container">
+            
+        {{/* ToDo partial "breadcrumbs.html" . \!/  */}}  
+        
+        <h1>{{ .Title }}</h1>
+        <div class="info">{{ .Date | time.Format ":date_long" }}</div>
+
+        {{/* ToDo partial/brick "image.html" . */}}
+        
+        {{ .Content }}
+
+    </div>
+{{- end -}}
