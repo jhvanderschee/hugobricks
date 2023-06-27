@@ -13,3 +13,11 @@ Together with my friend 'Fenix' I have built Hugobricks, a theme that allows you
 
 {{< /brick_about >}}
 {{< brick_cta >}}{{< /brick_cta >}}
+
+
+
+
+## And...yes: there is project documentation available
+
+{{ partial "nested-menu.html" . }}
+
