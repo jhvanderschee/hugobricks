@@ -1,6 +1,6 @@
 <ul class="breadcrumbs">
     {{- range page.Ancestors.Reverse }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title | truncate 25 }}</a></li>
+        <li><a href="{{ .RelPermalink }}">{{ .Title | truncate 27 }}</a></li>
     {{- end }}
-    <li><a href="{{ page.RelPermalink }}">{{ page.Title | truncate 25 }}</a></li>
+    <li><a href="{{ page.RelPermalink }}">{{ page.Title | truncate 27 }}</a></li>
 </ul>
