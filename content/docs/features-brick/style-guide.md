@@ -1,6 +1,5 @@
 ---
 title: Features brick
-parent_branch: ""
 ---
 
 Want to show the selling points of your service or product?

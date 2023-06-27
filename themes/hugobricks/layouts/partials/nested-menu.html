@@ -1,28 +1,8 @@
-<style>
-ul.nestedmenu {margin-left: 0;}
-ul.nestedmenu li {list-style: none;}
-ul.nestedmenu li > ul {display: none;}
-ul.nestedmenu li > a::before {content: "•"; display: inline-block; margin-right: 0.25rem; width: 0.5rem; text-align: center;}
-ul.nestedmenu li.haschildren > a::before {content: "›";}
-ul.nestedmenu li.haschildren.active > a::before {transform: rotate(90deg);}
-ul.nestedmenu li.active > ul {display: block;}
-ul.nestedmenu li > a {color: #444444!important;}
-ul.nestedmenu li.active > a {color: rgb(247, 44, 114)!important;}
-</style>
+{{ page.Scratch.Set "ancestors" page.Ancestors }}
+{{ page.Scratch.Set "curRelPermalink" page.RelPermalink }}
 
-{{ with .Site.GetPage (print "/" .Section "/_index.md") }}
-
-    {{ $.Scratch.Set "haschildren" "" }}
-    {{ range .RegularPages }}
-        {{ $urlparts := split (print .File.Dir .File.BaseFileName) "/" }}
-        {{ range $index, $value := (first (len $urlparts) $urlparts) }}
-            {{ $.Scratch.Add "haschildren" (print " " (delimit (first $index $urlparts) "/") "/") }}
-        {{ end }}
-    {{ end }}
-    {{ $.Scratch.Set "haschildren" (uniq (split ($.Scratch.Get "haschildren") " ")) }}
-
+{{ with page.Site.GetPage (print "/" page.Section "/_index.md") }}
     <ul class="nestedmenu">
-        {{ partial "nested-menu-partial.html" (dict "context" . "pagecontext" $.Page "regularpages" .RegularPages) }}
+        {{ partial "nested-menu-partial.html" (dict "curRelPermalink" (page.Scratch.Get "curRelPermalink") "ancestors" (page.Scratch.Get "ancestors") "context" . ) }}
     </ul>
-
 {{ end }}

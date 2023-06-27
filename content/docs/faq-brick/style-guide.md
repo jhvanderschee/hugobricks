@@ -1,6 +1,5 @@
 ---
-title: CTA brick
-parent_branch: ""
+title: FAQ brick 2
 ---
 
 Say you want to achieve this neat CTA 'component' markup (as the source code of a short text, leading to a button + aside related image) :
@@ -44,7 +43,7 @@ section.cta .twocols .image img {display: inline-block; width: 20rem;}
 }
 ``` 
 
-Basically, the hugobricks way, the Call To Action brick (CTA) is made of text+image '(sub)components'. Add some simple but ellegant styling, and voilà.
+Basically, the hugobricks way, the Call To Action brick (CTA) is made of text+image '(sub)components'. Add some simple but ellegant styling, and voilï¿½.
 
 (as a reminder, as long as the following is re-used across several bricks in the project :)
 
