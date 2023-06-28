@@ -132,5 +132,5 @@ section.docs .container .menu ul.nestedmenu li.current > a {color: var(--textAcc
     section.docs .container .menu h3 {display: block;}
     section.docs .container .content {padding-bottom: 0;}
     section.docs .container .content .breadcrumbs {display: block;}
-    section.docs .container .menu ul.nestedmenu {margin-top: 0.5rem;}
+    section.docs .container .menu ul.nestedmenu {margin-top: 0.75rem;}
 }
