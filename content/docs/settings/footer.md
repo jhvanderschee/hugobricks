@@ -2,45 +2,13 @@
 title: Footer
 ---
 
-```
-show_logo: true
-menuitems:
-  - title: About
-    link:  /about/
-  - title: Elements
-    link:  /elements/
-  - title: Privacy policy
-    link:  /privacy-policy/
-socials:
-  - title: Facebook
-    link: https://facebook.com
-    logo_image: /img/facebook.svg
-  - title: Twitter
-    link: https://twitter.com
-    logo_image: /img/twitter.svg      
-  - title: Mastodon
-    link: https://joinmastodon.org
-    logo_image: /img/mastodon.svg      
-  - title: Instagram
-    link: https://instagram.com
-    logo_image: /img/instagram.svg
-footer_text: This theme is open source.
-```
-
 ### Show logo
 
 True or false: this...
 
 ### Menu items
 
-This array is the footer menu. Below you see the structure of the items in this menu.
-
-```
-- title: About
-  link:  /about/
-- title: Elements
-  link:  /elements/
-```
+This array is the footer menu. The items in this menu consist of a `title` and a `link` field. In the title you put the page title and in link you put the relative url of that page.
 
 ### Socials
 
