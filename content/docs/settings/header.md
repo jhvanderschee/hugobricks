@@ -33,4 +33,4 @@ When you choose to omit the value for `logo_image` the 'text logo' will appear. 
 
 ### Mobile view at
 
-This numeric value determines at which width the class 'mobilemenu' is added to the body. This class acts as a adjustable media query. In the example the limit is set to 1000 pixels wide.
+This numeric value determines at which width the class 'mobilemenu' is added to the body. This class acts as a adjustable media query. In the example it is set to 1000 pixels.
