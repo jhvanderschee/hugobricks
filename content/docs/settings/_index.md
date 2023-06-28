@@ -3,6 +3,37 @@ title: Settings
 weight: 4
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, nulla et scelerisque volutpat, elit felis condimentum odio, et bibendum lacus sem sed turpis. Quisque aliquet orci quis massa scelerisque gravida. Cras maximus lacus et orci lacinia fermentum. Integer venenatis bibendum condimentum. Maecenas non rutrum magna. Sed varius metus sit amet augue condimentum, quis faucibus nulla tempor. Phasellus nec ipsum dolor. 
+ Feel free to iterate over the following Theme configuration ( color palette, fonts,..) self explanatory parameters
+ (excerpt from config.yaml file) :
+ 
 
-Maecenas non rutrum magna. Sed varius metus sit amet augue condimentum, quis faucibus nulla tempor. Phasellus nec ipsum dolor. 
+```
+    intro_image_positions: 
+    - below
+    - behind
+    - above
+    - left
+    - right
+  intro_backgrounds:
+    - horizontal gradient
+    - none
+    - vertical gradient
+    - image with overlay
+  test_image_positions:
+    - left
+    - right
+  image_styles:
+    - blob behind
+  header_styles:
+    - logo left cta right
+    - logo left cta top
+    - logo centered cta top
+  footer_styles:
+    - simple
+    - large footer
+  font_families: 
+    - Arial
+    - Signika
+```
+
+With Hugobricks you get (with css) crafted bricks to start with.

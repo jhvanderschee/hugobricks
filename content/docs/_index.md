@@ -13,13 +13,13 @@ weight: 1
 
 - Is it a Hugo content concept / approach ? Not really.
 - Is it a Hugo boilerplate? Mmh, not really.
-- Is it a configurable Theme ? Yess, it is.
+- Is it a configurable Theme ? Yes,that's it.
  
 
  We aim to provide frictionless/iterative site building workflow with minimal effort when developing a Hugo website workflow  keeping high standards of quality, style (crafted  -
  HTML5+CSS3). Of course, with the well-known easy to deploy and low sysops effort and cost for self-hosting. (we'll be more than happy to offer support on that, if you really need it!)
 
-### What’s included in Hugobricks?
+## What’s included in Hugobricks?
 
 Hugobricks is a comprehensive starter theme that includes everything you need to get started with your Hugo project. What’s Included in
 
@@ -29,7 +29,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - Fully responsive on all devices
 - SEO-optimized for better search engine rankings
 
-###  Hugobricks that are available:
+##  Hugobricks that are available:
 
 - [x] Intro,
 - [x] CTA,
@@ -61,7 +61,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [ ] Brands,
 - [ ] Openinghours
 
-### Shortcodes that are available:
+## Shortcodes that are available:
 - [x] Contact form
 - [x] Map
 - [x] Button (primary and secondary)
@@ -70,15 +70,16 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] Breadcrumbs
 - [x] FAQ's
 
-#### Hugobricks workflow
+## Hugobricks workflow
 
 Hugobricks aims to enhance the Hugo web framework by providing a variety of pre-made bricks for straightforward website-building.
 
 Our companion project, [hugocodex](https://hugocodex.org), guides beginners in starting a Hugo project from scratch. For those who already have experience with Hugo and want to use it for rapid prototyping and iterating, Hugobricks offers premade websites and customizable components powered by Hugo.
 
 Cloning this repository allows you to start building lightning-fast static sites with flexibility and ease with and already working website.
+Have a look a the 'Getting started' section.
 
-#### Hugobricks under the Hood
+## Hugobricks under the Hood
 
 According to [Hugo's official documentation](https://gohugo.io/overview/introduction/), the framework offers : 
 
@@ -90,79 +91,28 @@ According to [Hugo's official documentation](https://gohugo.io/overview/introduc
 
  Hugobricks takes advantage of these features to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic.
 
-#### Get started with Hugobricks
-
-In order to get a working website feel free to 
-
-- clone our repository and start building with stackable content bricks.
-- enjoy your already working hugo website, plan your changes/iterations
-- re-use default hugobricks
-- and/or customise them !
-
-#### Hugobricks Feedback 
+### Hugobricks Feedback 
 
 Make your wishlist. Missing a given [Hugobrick ?,let us know in this open conversation here.](https://github.com/jhvanderschee/hugobricks/issues/5)
 
-##### Let's talk about general Hugobricks approach 
+### Let's talk about general Hugobricks approach 
 
 [Feel free to give feedback, comment](https://github.com/jhvanderschee/hugobricks/issues/4), issue, submit your wishlist or fork. Hugobricks is here to make your Hugo experience even better.
 
-#### What's the problem that Hugobricks solves ? (Roots of the project)
+### What's the problem that Hugobricks solves ? (Roots of the project)
 
 Once upon a time (around 2013), you may find yourself making the choice of a Drupal or its  Wordpress theme counterpart, make some particular choices (color, palette, fonts,...)
   voilà. Basically, you had a look&feel variant of a (say)
-  'Bootstrap Drupal' or alike  Wordpress theme. Overriding the basic premade styles. The site structure and basic layout remained almost intact. In 2023 you can enjoy a similar Hugo ease-
--to-use theming and  site building workflow thanks to Hugobricks.
+  'Bootstrap Drupal' or alike  Wordpress theme. Overriding the basic premade styles. The site structure and basic layout remained almost intact. In 2023 you can enjoy a similar Hugo ease-to-use theming and  site building workflow thanks to Hugobricks.
   
 
-#### Credits and licenses
+### Credits and licenses
 
 The functionality is inspired by the many [Gutenberg Block Plugins](https://wpastra.com/plugins/wordpress-gutenberg-block-plugins/) that are available online. The design has been inspired by the MIT licensed [Hugoplate from Zeon Studio](https://github.com/zeon-studio/hugoplate.git). The fonts and icons are Apache Licensed and come from [Google Fonts](https://fonts.google.com) and [Google Material Symbols](https://fonts.google.com/icons). The illustrations are free to use but require [an attribution to Storyset](https://storyset.com/terms). The avatars are CC0 licensed and come from [Pravatar](https://www.pravatar.cc/images). The social media icons (Facebook, Instagram, etc) belong to the respective social networks/their owners.
-  
-## How to use it? What'sthe suggested (Hugobricks based) site building workflow:
-
-1.- Identify the patterns of repeatable/reused along the website content pieces.
-2.- Start using the offered bricks ('components')
-3.- Want to go beyond? Maybe by changing some styles, color palette, fonts, etc... (see Annex A - configuration parameters - docs. section)
-4.- Go iterating and hugobricking... enjoy it!
-
-
-## Annex A - configuration parameters
-
- Feel free to use the following Theme configuration ( color palette, fonts,..) self explanatory parameters
- (excerpt from config.yaml file) :
  
 
-```
-    intro_image_positions: 
-    - below
-    - behind
-    - above
-    - left
-    - right
-  intro_backgrounds:
-    - horizontal gradient
-    - none
-    - vertical gradient
-    - image with overlay
-  test_image_positions:
-    - left
-    - right
-  image_styles:
-    - blob behind
-  header_styles:
-    - logo left cta right
-    - logo left cta top
-    - logo centered cta top
-  footer_styles:
-    - simple
-    - large footer
-  font_families: 
-    - Arial
-    - Signika
-```
+## Annex A - configuration parameters >> { Goes to new Settings section! }
 
-With Hugobricks you get (with css) crafted bricks to start with.
 
 ## Annex B - CTA Brick 
 ### and its style guide explained
