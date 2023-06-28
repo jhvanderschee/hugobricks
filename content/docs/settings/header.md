@@ -20,7 +20,7 @@ preheader:
   text: Open Mon-Fri from 9.00-5.00
 ```
 
-## Variables
+## Settings
 
 
 ### Logo image
