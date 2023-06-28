@@ -119,6 +119,7 @@ section.docs .container .menu ul.nestedmenu {margin-left: 0; position: sticky; t
 section.docs .container .menu ul.nestedmenu li {list-style: none; padding: 0.15rem 0;}
 section.docs .container .menu ul.nestedmenu li > ul {display: none;}
 section.docs .container .menu ul.nestedmenu li > a::before {content: " "; display: inline-block; margin-right: 0.75rem; width: 0.5rem; text-align: center; opacity: 0.5;}
+section.docs .container .menu ul.nestedmenu > li > a::before {content: "•";}
 section.docs .container .menu ul.nestedmenu li.haschildren > a::before {content: "›";}
 section.docs .container .menu ul.nestedmenu li.haschildren.active > a::before {transform: rotate(90deg);}
 section.docs .container .menu ul.nestedmenu li.active > ul {display: block;}
