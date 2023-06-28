@@ -1,5 +1,5 @@
 ---
-title: Features documentation
+title: Features
 ---
 
 Want to show the selling points of your service or product?
