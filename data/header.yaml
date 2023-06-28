@@ -37,10 +37,10 @@ menuitems:
         link: /contact/
       - title: F.A.Q.
         link: /faq/
-      - title: Documentation
-        link: /docs/
       - title: 404 Page
         link: /404.html
+  - title: Documentation
+    link: /docs/
 cta:
   active: true
   title: Get started
