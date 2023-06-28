@@ -123,7 +123,7 @@ section.docs .container .menu ul.nestedmenu li.haschildren > a::before {content:
 section.docs .container .menu ul.nestedmenu li.haschildren.active > a::before {transform: rotate(90deg);}
 section.docs .container .menu ul.nestedmenu li.active > ul {display: block;}
 section.docs .container .menu ul.nestedmenu li > a {color: #444444; text-decoration: none; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block;}
-section.docs .container .menu ul.nestedmenu li.active > a {color: var(--textAccent); text-decoration: none;}
+section.docs .container .menu ul.nestedmenu li.current > a {color: var(--textAccent);}
 
 @media (max-width: 65rem) {
     section.docs {margin-top: -2rem;}
