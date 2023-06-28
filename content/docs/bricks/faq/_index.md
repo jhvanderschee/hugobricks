@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: F.A.Q.
 ---
 
 Want to add an informative most frequently asked questions?
