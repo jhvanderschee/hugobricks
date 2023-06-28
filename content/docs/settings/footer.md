@@ -30,3 +30,15 @@ footer_text: This theme is open source.
 ### Show logo
 
 True or false: this...
+
+### Menu items
+
+...
+
+### Socials
+
+...
+
+### Footer text
+
+...
