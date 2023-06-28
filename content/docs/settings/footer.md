@@ -33,11 +33,13 @@ True or false: this...
 
 ### Menu items
 
-...
+This array is the footer menu. Below you see the structure of the items in this menu.
 
 ```
 - title: About
   link:  /about/
+- title: Elements
+  link:  /elements/
 ```
 
 ### Socials
