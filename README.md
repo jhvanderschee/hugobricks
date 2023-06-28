@@ -1,6 +1,13 @@
-# Hugobricks
+# What is Hugobricks?
 
 [View DEMO website](https://www.hugobricks.preview.usecue.com/)
+[and get the source code here...](https://github.com/jhvanderschee/hugobricks)
+Hugobricks is a free website theme for Hugo. It makes building Hugo websites child’s play due to its stackable (LEGO-like) content bricks. Stack an intro brick on top of some image bricks and a pricing table and build a complete website in seconds!
+
+
+- Is it a Hugo content concept / approach ? Not really.
+- Is it a Hugo boilerplate? Mmh, not really.
+- Is it a configurable Theme ? Yes, that's it.
 
 Hugobricks is a free website theme for Hugo. It makes building Hugo websites child’s play due to its stackable (LEGO-like) content bricks. Stack an intro brick on top of some image bricks and a pricing table and build a complete website in seconds!
 
