@@ -1,5 +1,5 @@
 ---
-title: Concept
+title: Styling
 weight: 2
 ---
 
