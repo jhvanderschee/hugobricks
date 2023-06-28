@@ -13,14 +13,11 @@ menuitems:
     items: 
       - title:
         link:
-  - title: Elements
-    link: /elements/
-    items: 
-      - title:
-        link:
   - title: Pages
     link: /contact/
     items: 
+      - title: Elements
+        link: /elements/
       - title: Header image 1
         link: /bgimage3/
       - title: Header image 2
