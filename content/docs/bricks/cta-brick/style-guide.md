@@ -1,5 +1,5 @@
 ---
-title: CTA brick 2
+title: Call to action documentation
 ---
 
 Say you want to achieve this neat CTA 'component' markup (as the source code of a short text, leading to a button + aside related image) :
