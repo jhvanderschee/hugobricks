@@ -104,29 +104,4 @@ Make your wishlist. Missing a given [Hugobrick ?,let us know in this open conver
 
 The functionality is inspired by the many [Gutenberg Block Plugins](https://wpastra.com/plugins/wordpress-gutenberg-block-plugins/) that are available online. The design has been inspired by the MIT licensed [Hugoplate from Zeon Studio](https://github.com/zeon-studio/hugoplate.git). The fonts and icons are Apache Licensed and come from [Google Fonts](https://fonts.google.com) and [Google Material Symbols](https://fonts.google.com/icons). The illustrations are free to use but require [an attribution to Storyset](https://storyset.com/terms). The avatars are CC0 licensed and come from [Pravatar](https://www.pravatar.cc/images). The social media icons (Facebook, Instagram, etc) belong to the respective social networks/their owners.
  
-
-## Annex A - configuration parameters >> { Goes to new Settings section! }
-
-
-## Annex B - CTA Brick 
-### and its style guide explained
-
-## Annex C - FAQ Brick 
-### and its style guide explained
-
-## Annex C - Features Brick 
-### and its style guide explained
-'Making of': (to be reworded) take fine title layoutting + 'wide' css snippet and pivot around the FAQ list?
-
-  
-[..]  
-{
- NOTE: Annexes will go like 'spilling-over' the nested menus,FYI
- 
-- [ ] TODO :
-  - [ ] faq 'wide' optional class ? <- doc.
-  - [ ] ShortcodeANDfaqBrick? uh  <- doc.
-}
-
-
-![](/uploads/illustrations/cuate/static-website.svg)
+[](/uploads/illustrations/cuate/static-website.svg)
