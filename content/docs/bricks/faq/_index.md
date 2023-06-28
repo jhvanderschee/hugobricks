@@ -1,5 +1,5 @@
 ---
-title: FAQ brick 1
+title: FAQ
 ---
 
 Want to add an informative most frequently asked questions?
