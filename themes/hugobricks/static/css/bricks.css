@@ -111,7 +111,9 @@ section.docs .container {display: flex; gap: 5rem;}
 section.docs .container .menu {border-right: 1px solid rgba(0,0,0,0.1); width: 20rem; max-width: 20rem; padding: 3rem 0;}
 section.docs .container .content {min-width: 0; min-height: 0; padding: 2.2rem 0 4rem 0;}
 section.docs .container .content > * {max-width: 45rem;}
+section.docs .container .content .breadcrumbs {text-align: left; display: none;}
 
+section.docs .container .menu h3 {display: none;}
 section.docs .container .menu ul.nestedmenu {margin-left: 0; position: sticky; top: 8rem; margin-right: 5rem;}
 section.docs .container .menu ul.nestedmenu li {list-style: none;}
 section.docs .container .menu ul.nestedmenu li > ul {display: none;}
@@ -123,5 +125,10 @@ section.docs .container .menu ul.nestedmenu li > a {color: #444444; text-decorat
 section.docs .container .menu ul.nestedmenu li.active > a {color: var(--textAccent); text-decoration: none;}
 
 @media (max-width: 65rem) {
-    section.docs .container {display: flex; flex-direction: column-reverse; gap: 5rem;}
+    section.docs {margin-top: -2rem;}
+    section.docs .container {flex-direction: column-reverse; gap: 1rem;}
+    section.docs .container .menu {width: 100%; max-width: 100%; padding-bottom: 0; border: 0;}
+    section.docs .container .menu h3 {display: block;}
+    section.docs .container .content {padding-bottom: 0;}
+    section.docs .container .content .breadcrumbs {display: block;}
 }

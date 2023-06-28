@@ -9,9 +9,11 @@
 <section class="docs">
     <div class="container">
         <div class="menu">
+            <h3>Documentation</h3>
             {{ partial "nested-menu.html" }}
         </div>
         <div class="content">
+            {{ partial "breadcrumbs.html" }}
             <h1>{{ page.Title }}</h1>
             {{- markdownify $inner -}}
         </div>
