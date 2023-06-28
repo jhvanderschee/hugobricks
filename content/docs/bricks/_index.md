@@ -1,5 +1,5 @@
 ---
-title: Bricks
+title: Bricks overview
 weight: 2
 ---
 

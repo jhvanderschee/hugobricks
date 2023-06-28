@@ -1,5 +1,5 @@
 ---
-title: Shortcodes
+title: Shortcodes overview
 weight: 1
 ---
 
