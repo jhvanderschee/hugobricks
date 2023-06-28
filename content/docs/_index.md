@@ -99,12 +99,6 @@ Make your wishlist. Missing a given [Hugobrick ?,let us know in this open conver
 
 [Feel free to give feedback, comment](https://github.com/jhvanderschee/hugobricks/issues/4), issue, submit your wishlist or fork. Hugobricks is here to make your Hugo experience even better.
 
-### What's the problem that Hugobricks solves ? (Roots of the project)
-
-Once upon a time (around 2013), you may find yourself making the choice of a Drupal or its  Wordpress theme counterpart, make some particular choices (color, palette, fonts,...)
-  voilà. Basically, you had a look&feel variant of a (say)
-  'Bootstrap Drupal' or alike  Wordpress theme. Overriding the basic premade styles. The site structure and basic layout remained almost intact. In 2023 you can enjoy a similar Hugo ease-to-use theming and  site building workflow thanks to Hugobricks.
-  
 
 ### Credits and licenses
 
