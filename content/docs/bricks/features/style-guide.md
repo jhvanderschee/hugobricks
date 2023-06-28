@@ -1,5 +1,5 @@
 ---
-title: Features brick
+title: Features documentation
 ---
 
 Want to show the selling points of your service or product?
