@@ -35,6 +35,11 @@ True or false: this...
 
 ...
 
+```
+- title: About
+  link:  /about/
+```
+
 ### Socials
 
 ...
