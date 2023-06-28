@@ -106,18 +106,22 @@ section.small h1 {text-align: center;}
 /* brick docs
 /*------------------------*/
 
-section.docs {padding-top: 0!important;}
-section.docs .container {display: grid; grid-template-columns: 16rem auto 15rem; max-width: 80rem;}
-section.docs .container .menu ul.nestedmenu {margin-left: 0; position: sticky; top: 8rem; margin-right: 4rem;}
+section.docs {padding-top: 0!important; margin-top: -3rem;}
+section.docs .container {display: flex; gap: 5rem;}
+section.docs .container .menu {border-right: 1px solid rgba(0,0,0,0.1); width: 20rem; max-width: 20rem; padding: 3rem 0;}
+section.docs .container .content {min-width: 0; min-height: 0; padding: 2.2rem 0 4rem 0;}
+section.docs .container .content > * {max-width: 45rem;}
+
+section.docs .container .menu ul.nestedmenu {margin-left: 0; position: sticky; top: 8rem; margin-right: 5rem;}
 section.docs .container .menu ul.nestedmenu li {list-style: none;}
 section.docs .container .menu ul.nestedmenu li > ul {display: none;}
-section.docs .container .menu ul.nestedmenu li > a::before {content: "•"; display: inline-block; margin-right: 0.25rem; width: 0.5rem; text-align: center;}
+section.docs .container .menu ul.nestedmenu li > a::before {content: " "; display: inline-block; margin-right: 0.75rem; width: 0.5rem; text-align: center;}
 section.docs .container .menu ul.nestedmenu li.haschildren > a::before {content: "›";}
 section.docs .container .menu ul.nestedmenu li.haschildren.active > a::before {transform: rotate(90deg);}
 section.docs .container .menu ul.nestedmenu li.active > ul {display: block;}
 section.docs .container .menu ul.nestedmenu li > a {color: #444444; text-decoration: none; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block;}
 section.docs .container .menu ul.nestedmenu li.active > a {color: var(--textAccent); text-decoration: none;}
-section.docs .container .content {min-width: 0; min-height: 0;}
+
 @media (max-width: 65rem) {
     section.docs .container {display: flex; flex-direction: column-reverse; gap: 5rem;}
 }
