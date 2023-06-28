@@ -7,11 +7,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, nulla et 
 
 Integer sollicitudin dui quis nibh tincidunt, et pharetra nulla varius. Vestibulum malesuada quam dapibus lacus molestie, sed maximus nulla sagittis. Ut dui quam, convallis eu justo quis, posuere sodales dolor. Maecenas eu sem et purus finibus auctor in vel dolor. Fusce vitae diam pellentesque, suscipit nisl nec, varius erat. Curabitur condimentum mauris ut sapien rhoncus, quis venenatis purus pulvinar. Ut in imperdiet augue, et porttitor magna. Praesent euismod urna ut lectus pretium suscipit. Sed nec mauris in nunc condimentum viverra. Praesent vitae hendrerit sem, eu suscipit arcu. Ut sollicitudin dolor lacus, nec interdum purus volutpat in. Phasellus aliquet quis nunc vitae maximus.
 
-&nbsp;
-
 ![](/uploads/illustrations/cuate/static-website.svg)
-
-&nbsp;
 
 Integer sollicitudin dui quis nibh tincidunt, et pharetra nulla varius. Vestibulum malesuada quam dapibus lacus molestie, sed maximus nulla sagittis. Ut dui quam, convallis eu justo quis, posuere sodales dolor. Maecenas eu sem et purus finibus auctor in vel dolor. Fusce vitae diam pellentesque, suscipit nisl nec, varius erat. Curabitur condimentum mauris ut sapien rhoncus, quis venenatis purus pulvinar. Ut in imperdiet augue, et porttitor magna. Praesent euismod urna ut lectus pretium suscipit. Sed nec mauris in nunc condimentum viverra. Praesent vitae hendrerit sem, eu suscipit arcu. Ut sollicitudin dolor lacus, nec interdum purus volutpat in. Phasellus aliquet quis nunc vitae maximus.
 
