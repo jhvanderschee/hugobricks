@@ -22,7 +22,7 @@ When you choose CSS 'sticky' header refers to a type of header element that main
 
 ### Menuitems:
 
-Here you define the structure of your menu. For instance, have a lool at hugobricks menu in this website. The coresponding YAML file shows its barebones, in a quite selfexplanatory way :
+Here you define the structure of your menu. For instance, have a look at hugobricks menu in this website. The coresponding YAML file shows its barebones, in a quite selfexplanatory way :
 
 ```
   - title: Home
@@ -58,8 +58,8 @@ Here you define the structure of your menu. For instance, have a lool at hugobri
         link: /faq/
       - title: 404 Page
         link: /404.html
-  - title: Documentation
-    link: /docs/
+	  - title: Documentation
+		link: /docs/
 
 
 Feel free to extend it to define the footer menu by following the same pattern \!/ too (doublecheck!).
@@ -69,12 +69,18 @@ Feel free to extend it to define the footer menu by following the same pattern \
 
 In terms of UX/UI a so called Call To Action (CTA)  prompts users to take a specific action on a website or application. CTAs are typically designed in a way that grabs the user's attention.
 
+
 ```
 cta:
+
   active: true
+  
   title: Get started
+  
   link: /get-started/
+  
 ```
+
 Active it (or not), then define the internal/relative hyperlink it by giving the given page the button clik leads to.
 
 
@@ -93,3 +99,6 @@ preheader:
 
 as you can see in the data/header.yaml hugobricks relevant code snippet.
 
+
+
+> NOTE: And that's it! Feel free to have a look companion 'footer' section in the documentation.
