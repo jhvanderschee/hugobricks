@@ -17,7 +17,7 @@ invoking the form.
 
 In this sample website, you can see it in action in the 'Pages' menu related 'Contact us' page.
 
-> NOTE: ...
+> NOTE: use de relevant data YAML file in order to sculpt it.
 
 issue#13
 
