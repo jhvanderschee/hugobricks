@@ -2,8 +2,10 @@
 title: Footer styles
 ---
 
-Offering the following styling options :
+It is offering the following styling options :
 
 - simple 
 - large footer
 
+
+NOTE> See the companion 'footer' documentation section 

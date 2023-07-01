@@ -12,12 +12,12 @@ weight: 1
 
 
 - Is it a Hugo content concept / approach ? Not really.
-- Is it a Hugo boilerplate? Mmh, not really.
+- Is it a Hugo boilerplate? Mmh, not really !
 - Is it a configurable Theme ? Yes,that's it.
  
+Our goal is to offer a hassle-free and efficient workflow for building Hugo websites with minimal effort. We strive to maintain high standards of quality and style. Additionally, our solution is easy to deploy and requires minimal sysops effort and cost for self-hosting. If you need any assistance with this, we would be more than happy to provide support.
 
- We aim to provide frictionless/iterative site building workflow with minimal effort when developing a Hugo website workflow  keeping high standards of quality, style (crafted  -
- HTML5+CSS3). Of course, with the well-known easy to deploy and low sysops effort and cost for self-hosting. (we'll be more than happy to offer support on that, if you really need it!)
+
 
 ## What’s included in Hugobricks?
 
@@ -89,7 +89,20 @@ According to [Hugo's official documentation](https://gohugo.io/overview/introduc
 
 ...we focus on.
 
- Hugobricks takes advantage of these features to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic.
+ Hugobricks takes advantage of these features to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic. Let's see how it works!
+ 
+## How does hugobricks work ?
+
+By extending Hugo's capabilites ("standing in giants shoulders") we aim at providing a smooth and efficient workflow for building Hugo websites with minimal effort. Our focus is on maintaining high-quality designs using expertly crafted HTML5 and CSS3. Our solution is easy to deploy and requires minimal sysops effort and cost for self-hosting. If you need any assistance, we are happy to help.
+
+
+In order of increasing complexity, Hugobricks allows you to creatively use:
+
+- Shortcodes, which you can start with for your content.
+- Bricks.
+- Various settings in the 'data' folder and the main config file.
+
+Please refer to the relevant sections in the Documentation for more information.
 
 ### Hugobricks Feedback 
 
