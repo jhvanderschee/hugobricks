@@ -2,8 +2,18 @@
 title: Button
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, nulla et scelerisque volutpat, elit felis condimentum odio, et bibendum lacus sem sed turpis. Quisque aliquet orci quis massa scelerisque gravida. Cras maximus lacus et orci lacinia fermentum. Integer venenatis bibendum condimentum. Maecenas non rutrum magna. Sed varius metus sit amet augue condimentum, quis faucibus nulla tempor. Phasellus nec ipsum dolor. Aliquam non maximus orci.
+![Button](/uploads/shortcodes/button.png "Button")
 
-sdfdf
+Self explanatory: provides a nice button.
+Just style (if needed) it and place it at wish in you website, by means of the following 
 
+
+```
 {{</* button "" "" */>}}
+```
+
+invoking the shortcode.
+
+> NOTE: the two parameters in quotes relate to 'href' and text in the button
+
+
