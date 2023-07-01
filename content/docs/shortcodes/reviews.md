@@ -4,7 +4,7 @@ title: Reviews
 
 ![Button](/uploads/shortcodes/reviews.png "Reviews")
 
-Self explanatory: provides a nice  map.
+Self explanatory: provides a set of reviews - testimonials.
 Just style (if needed) it and place it at wish in you website, by means of the following 
 
 
