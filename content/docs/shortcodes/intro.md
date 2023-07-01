@@ -2,6 +2,22 @@
 title: Intro 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, nulla et scelerisque volutpat, elit felis condimentum odio, et bibendum lacus sem sed turpis. Quisque aliquet orci quis massa scelerisque gravida. Cras maximus lacus et orci lacinia fermentum. Integer venenatis bibendum condimentum. Maecenas non rutrum magna. Sed varius metus sit amet augue condimentum, quis faucibus nulla tempor. Phasellus nec ipsum dolor. Aliquam non maximus orci.
 
-sdfdf
+![Button](/uploads/shortcodes/intro.png "Intro")
+
+Self explanatory: provides a nice basic Intro section.
+Just style (if needed) it and place it at wish in you website, by means of the following 
+
+
+```
+{{</* intro "" "" */>}}
+```
+
+invoking the 'intro' message.
+
+
+In this sample website, you can see it in action in the 'Home' page, underneath the navigation bar.
+
+
+issue#15
+

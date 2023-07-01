@@ -2,6 +2,20 @@
 title: Map
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, nulla et scelerisque volutpat, elit felis condimentum odio, et bibendum lacus sem sed turpis. Quisque aliquet orci quis massa scelerisque gravida. Cras maximus lacus et orci lacinia fermentum. Integer venenatis bibendum condimentum. Maecenas non rutrum magna. Sed varius metus sit amet augue condimentum, quis faucibus nulla tempor. Phasellus nec ipsum dolor. Aliquam non maximus orci.
+![Button](/uploads/shortcodes/map.png "Map")
 
-sdfdf
+Self explanatory: provides a nice  map.
+Just style (if needed) it and place it at wish in you website, by means of the following 
+
+
+```
+{{</* map "" "" */>}}
+```
+
+invoking the map.
+
+In this sample website, you can see it in action in the 'Pages' menu related 'Contact us' page.
+
+> NOTE: ...
+
+issue#16
