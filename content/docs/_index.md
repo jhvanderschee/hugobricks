@@ -102,6 +102,10 @@ In order of increasing complexity, Hugobricks allows you to creatively use:
 - Bricks.
 - Various settings in the 'data' folder and the main config file.
 
+As you delve into the different settings options, you can easily customize various parts and the basic layout of your existing website. This includes the header, footer, styles, font families, color palette, and overall appearance.
+
+> NOTE: the core idea is based upon 'shortcodes' calling 'partials' : those behing highly reusable.
+
 Please refer to the relevant sections in the Documentation for more information.
 
 ### Hugobricks Feedback 
