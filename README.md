@@ -58,8 +58,9 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] Breadcrumbs
 - [x] FAQ's
 - [x] Tabs
-- [x] Ordered list,
-- [x] Unordered lists,
+- [x] Ordered list
+- [x] Unordered lists
+- [x] Subpages
 
 ### Hugobricks workflow
 
