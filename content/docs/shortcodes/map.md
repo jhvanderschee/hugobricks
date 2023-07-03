@@ -2,7 +2,7 @@
 title: Map
 ---
 
-![Button](/uploads/shortcodes/map.png "Map")
+![Button](/uploads/map2.png "Map")
 
 Self explanatory: provides a nice  map.
 Just style (if needed) it and place it at wish in you website, by means of the following 
