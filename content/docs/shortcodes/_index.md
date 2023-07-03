@@ -3,12 +3,6 @@ title: Shortcodes
 weight: 1
 ---
 
-![Shortcodes](/uploads/shortcodes/shortcodes.png "Shortcodes")
+You might wonder what the difference is between a Hugo 'shortcode' and a Hugo 'brick'. Shortcodes are placing reusable content in a kind of 'inline' way (say in between two paragraphs). An example of a shortcode is a video. Bricks are complete sets of content. An example of a shortcode is a call-to-action block/brick.
 
-# What's the difference in between a hugo 'shortcode' and a  hugo 'brick' ?
-
-Shortcodes are aiming at placing reusable content in a kind of 'inline' way (say in between two paragraphs).
-Bricks are complete sets of content.
-
-> NOTE: Take the FAQ's case: it could either a just list of 'frequently asked questions' that goes in between paragraphs or it could be a more complete content part that you stack onto
-other content parts. It can be used as both.
+{{< subpages >}}
