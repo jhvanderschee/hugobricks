@@ -4,8 +4,6 @@
 
 Hugobricks is a free website theme for Hugo. It makes building Hugo websites child’s play due to its stackable (LEGO-like) content bricks. Stack an intro brick on top of some image bricks and a pricing table and build a complete website in seconds!
 
-### Hugobricks leitmotiv
-
 In the past you may have chosen a Wordpress theme and adjusted the images, colors and fonts to the needs of your client. In combination with tools like Gutenberg blocks and page builders like Elementor there was little that could compete with the development speed and flexibility that Wordpress offered. With Hugobricks we bring these advantages to the Jamstack eco-system. If you choose for the Hugobricks theme you get not just a head start, tremendous flexibility and lots of ready to use and reusable components, but also a lightning fast and unbreakable architecture. What are you waiting for? The future is here!
 
 ## What’s included in Hugobricks?
