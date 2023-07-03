@@ -6,7 +6,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 ### Hugobricks leitmotiv
 
-In the past you may have chosen a Wordpress theme and adjusted the images, colors and fonts to the needs of your client. In combination with tools like Gutenberg blocks and page builders like Elementor there was little that could compete with the development speed and flexibility that Wordpress offered, which is reflected by the amount of Wordpress installs. Wordpress has since been overtaken by the Jamstack as the preferred way of building for the web. With Hugobricks we bring all the advantages of Wordpress to the Jamstack eco-system. When you choose for the Hugobricks theme you get not just a head start, tremendous flexibility and lots of ready to use and reusable components, but also a lightning fast and unbreakable architecture. What are you waiting for? The future is here!
+In the past you may have chosen a Wordpress theme and adjusted the images, colors and fonts to the needs of your client. In combination with tools like Gutenberg blocks and page builders like Elementor there was little that could compete with the development speed and flexibility that Wordpress offered, which is reflected by the amount of Wordpress installs. Wordpress has since been overtaken by the Jamstack as the preferred way of building for the web. With Hugobricks we bring all the advantages of Wordpress to the Jamstack eco-system. If you choose for the Hugobricks theme you get not just a head start, tremendous flexibility and lots of ready to use and reusable components, but also a lightning fast and unbreakable architecture. What are you waiting for? The future is here!
 
 ## What’s included in Hugobricks?
 
