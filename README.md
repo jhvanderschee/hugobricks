@@ -61,6 +61,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] Contact buttons
 - [x] Breadcrumbs
 - [x] FAQ's
+- [x] Tabs
 
 ### Hugobricks workflow
 

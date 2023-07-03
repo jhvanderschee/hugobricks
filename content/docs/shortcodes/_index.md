@@ -3,6 +3,12 @@ title: Shortcodes
 weight: 1
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, nulla et scelerisque volutpat, elit felis condimentum odio, et bibendum lacus sem sed turpis. Quisque aliquet orci quis massa scelerisque gravida. Cras maximus lacus et orci lacinia fermentum. Integer venenatis bibendum condimentum. Maecenas non rutrum magna. Sed varius metus sit amet augue condimentum, quis faucibus nulla tempor. 
+![Shortcodes](/uploads/shortcodes/shortcodes.png "Shortcodes")
 
-Phasellus nec ipsum dolor. Aliquam non maximus orci.
+# What's the difference in between a hugo 'shortcode' and a  hugo 'brick' ?
+
+Shortcodes are aiming at placing reusable content in a kind of 'inline' way (say in between two paragraphs).
+Bricks are complete sets of content.
+
+> NOTE: Take the FAQ's case: it could either a just list of 'frequently asked questions' that goes in between paragraphs or it could be a more complete content part that you stack onto
+other content parts. It can be used as both.
