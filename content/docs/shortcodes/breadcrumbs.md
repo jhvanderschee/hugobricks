@@ -2,7 +2,7 @@
 title: Breadcrumbs
 ---
 
-Self explanatory: provides a nice  'breadcrumbs' functionality 'Home/Elements'.
+Self explanatory: provides a nice  'breadcrumbs' functionality.
 
 ![Button](/uploads/shortcodes/breadcrumbs.png "Breadcrumbs")
 
