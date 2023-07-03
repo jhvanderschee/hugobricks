@@ -30,7 +30,7 @@ Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cra
 
 ## Buttons
 
-Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cras id hendrerit eros.
+Buttons are a great way to drive conversion. They are actually links with the class 'button'. Read the [documentation](/docs/shortcodes/button/) for more info.
 
 {{< button "Get started for free" "/get-started/" >}}
 
