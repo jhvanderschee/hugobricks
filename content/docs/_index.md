@@ -14,4 +14,3 @@ Please refer to the relevant sections in the Documentation for more information.
 
 - [View DEMO website](https://www.hugobricks.preview.usecue.com/)
 - [and get the complete README file from the repository  here...](https://github.com/jhvanderschee/hugobricks#readme)
-
