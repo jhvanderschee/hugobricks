@@ -6,11 +6,11 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 ### Hugobricks leitmotiv
 
-In the past you may have chosen a Wordpress theme and adjusted the images, colors and fonts to the needs of your client. In combination with tools like Gutenberg blocks and page builders like Elementor you would get not just a head start, but also tremendous flexibility and lots of ready to use and reusable components. There was little that could compete with such power, which is reflected by the amount of Wordpress installs. Wordpress has since been replaced by the Jamstack as the preferred way of building for the web, resulting in faster and more robust websites. However, it has not been able to compete with Wordpress when it comes to themes, flexibility and components... until now. Hugobricks brings all the advantages of old-skool Wordpress websites to the Jamstack eco-system. When you choose for Hugobricks you get a head start, tremendous flexibility and lots of ready to use and reusable components.
+In the past you may have chosen a Wordpress theme and adjusted the images, colors and fonts to the needs of your client. In combination with tools like Gutenberg blocks and page builders like Elementor there was little that could compete with the development speed and flexibility that Wordpress offered, which is reflected by the amount of Wordpress installs. Wordpress has since been overtaken by the Jamstack as the preferred way of building for the web. With Hugobricks we bring all the advantages of Wordpress to the Jamstack eco-system. When you choose for the Hugobricks theme you get not just a head start, tremendous flexibility and lots of ready to use and reusable components, but also a lightning fast and unbreakable architecture. What are you waiting for? The future is here!
 
 ## What’s included in Hugobricks?
 
-Hugobricks is a comprehensive starter theme that includes everything you need to get started with your Hugo project. What’s Included in
+Hugobricks is a comprehensive starter theme that includes everything you need to get started with your Hugo project.
 
 - 10+ Pre-build pages
 - 99+ Google Pagespeed Score
