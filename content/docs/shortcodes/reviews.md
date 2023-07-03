@@ -16,6 +16,11 @@ invoking the reviews.
 
 In this sample website, you can see it in action in the 'Home' page.
 
-> NOTE: ...
+> NOTE: use de relevant data YAML file in order to sculpt it.
 
-issue#17 - review how the shortcode is invoked ?  doc details issue !
+</br>
+
+In this sample website, you can see it in action in the 'Home' page. 
+
+
+
