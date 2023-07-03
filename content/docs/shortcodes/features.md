@@ -3,7 +3,7 @@ title: Features
 ---
 
 
-![Button](/uploads/shortcodes/contact-form.png "Form")
+![Button](/uploads/shortcodes/features.png "Form")
 
 Self explanatory: provides a 'Features' list (following a 'icon + title and text pattern')
 Just style (if needed) it and place it at wish in you website, by means of the following 

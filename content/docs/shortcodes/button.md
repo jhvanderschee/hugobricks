@@ -25,3 +25,30 @@ In the above screenshot case:
 
 
 > NOTE2: (for the curious), note how the the 'Intro' is 'calling it' ! (in the same way we have just described)
+
+## Other buttons
+### 'Social buttons'
+
+Which might link to the proper social media :
+
+{{< socialbuttons >}}
+
+Feel free to 'call them' the usual way :
+
+```
+{{</* socialbuttons */>}}
+```
+
+
+### 'Contact buttons'
+
+Feel free to re-use them in order to offer a quick and visual way to contact the site owners :
+
+{{< contactbuttons >}}
+
+Feel free to 'call them' the usual way :
+
+```
+{{< contactbuttons >}}
+```
+
