@@ -6,7 +6,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 ### Hugobricks leitmotiv
 
-In the past you may have chosen a Wordpress theme and adjusted the images, colors and fonts to the needs of your client. With tools like Gutenberg blocks and page builders like Elementor you would get tremendous flexibility and ready to use components. However, in 2023, Wordpress has been replaced by the Jamstack. With Hugobricks you get the same flexibility and easy to use components as you would with Wordpress. However, under the hood Hugobricks uses Hugo: one of the fastest and most versatile static site generators in the Jamstack eco-system.
+In the past you may have chosen a Wordpress theme and adjusted the images, colors and fonts to the needs of your client. In combination with tools like Gutenberg blocks and page builders like Elementor you would get not just a head start, but also tremendous flexibility and lots of ready to use and reusable components. There was little that could compete with such power, which is reflected by the amount of Wordpress installs. Wordpress has since been replaced by the Jamstack as the preferred way of building for the web, resulting in faster and more robust websites. However, it has not been able to compete with Wordpress when it comes to themes, flexibility and components... until now. Hugobricks brings all the advantages of old-skool Wordpress websites to the Jamstack eco-system. When you choose for Hugobricks you get a head start, tremendous flexibility and lots of ready to use and reusable components.
 
 ## What’s included in Hugobricks?
 
