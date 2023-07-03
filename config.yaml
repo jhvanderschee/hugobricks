@@ -35,7 +35,3 @@ markup:
   goldmark:
     renderer:
       unsafe: true # Allow HTML in md files
-    parser:
-      attribute:
-        block: true
-        title: true
