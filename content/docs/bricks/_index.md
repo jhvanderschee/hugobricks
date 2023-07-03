@@ -3,6 +3,6 @@ title: Bricks
 weight: 2
 ---
 
-You might wonder what the difference is between a Hugo 'shortcode' and a Hugo 'brick'. Shortcodes are placing reusable content in a kind of 'inline' way (say in between two paragraphs). An example of a shortcode is a video. Bricks are complete sets of content. An example of a shortcode is a call-to-action block/brick.
+You might wonder what the difference is between a Hugo 'shortcode' and a Hugo 'brick'. Shortcodes are placing reusable content in a kind of 'inline' way (say in between two paragraphs). An example of a shortcode is a video. Bricks are complete sets of content. An example of a shortcode is a call-to-action block/brick. Below you find a list of available bricks.
 
 {{< subpages >}}
