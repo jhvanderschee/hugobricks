@@ -1,5 +1,5 @@
 ---
-title: F.A.Q.
+title: F.A.Q. brick
 ---
 
 Want to add an informative most frequently asked questions?

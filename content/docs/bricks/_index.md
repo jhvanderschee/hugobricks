@@ -1,5 +1,5 @@
 ---
-title: Bricks
+title: Bricks (being documented)
 weight: 2
 ---
 

@@ -1,9 +1,70 @@
 ---
-title: Call to action
+title: Call to action brick
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, nulla et scelerisque volutpat, elit felis condimentum odio, et bibendum lacus sem sed turpis. Quisque aliquet orci quis massa scelerisque gravida. Cras maximus lacus et orci lacinia fermentum. Integer venenatis bibendum condimentum. Maecenas non rutrum magna. Sed varius metus sit amet augue condimentum, quis faucibus nulla tempor. Phasellus nec ipsum dolor. Aliquam non maximus orci.
+Say you want to achieve this neat CTA 'component' markup (as the source code of a short text, leading to a button + aside related image) :
 
-Integer sollicitudin dui quis nibh tincidunt, et pharetra nulla varius. Vestibulum malesuada quam dapibus lacus molestie, sed maximus nulla sagittis. Ut dui quam, convallis eu justo quis, posuere sodales dolor. Maecenas eu sem et purus finibus auctor in vel dolor. Fusce vitae diam pellentesque, suscipit nisl nec, varius erat. Curabitur condimentum mauris ut sapien rhoncus, quis venenatis purus pulvinar. Ut in imperdiet augue, et porttitor magna. Praesent euismod urna ut lectus pretium suscipit. Sed nec mauris in nunc condimentum viverra. Praesent vitae hendrerit sem, eu suscipit arcu. Ut sollicitudin dolor lacus, nec interdum purus volutpat in. Phasellus aliquet quis nunc vitae maximus.
+```
+<section class="cta hasbackgroundcolor">
+    <div class="container">
+        <div class="twocols box">
+            <div class="text">
+                <div><h2 id="get-started-with-hugobricks-today">Get started with Hugobricks today!</h2>
+<p>Experience the future of web development with Hugo and stackable content bricks. Build lightning-fast static sites with ease and flexibility.</p>
+<a href="/get-started/" class="button secondary">Get started now</a>
 
-Integer sollicitudin dui quis nibh tincidunt, et pharetra nulla varius. Vestibulum malesuada quam dapibus lacus molestie, sed maximus nulla sagittis. Ut dui quam, convallis eu justo quis, posuere sodales dolor. Maecenas eu sem et purus finibus auctor in vel dolor. Fusce vitae diam pellentesque, suscipit nisl nec, varius erat. Curabitur condimentum mauris ut sapien rhoncus, quis venenatis purus pulvinar. Ut in imperdiet augue, et porttitor magna. Praesent euismod urna ut lectus pretium suscipit. Sed nec mauris in nunc condimentum viverra. Praesent vitae hendrerit sem, eu suscipit arcu. Ut sollicitudin dolor lacus, nec interdum purus volutpat in. Phasellus aliquet quis nunc vitae maximus.
+</div>
+            </div>
+            <div class="image">
+                <div><p><img src="/uploads/illustrations/cuate/server.svg" alt=""></p></div>
+            </div>
+        </div>
+    </div>
+</section>
+```
+
+
+
+Say you sculpt your brick style like this, by means of :
+
+```
+/*------------------------*/
+/* brick cta
+/*------------------------*/
+
+section.cta {background: white;}
+section.cta .twocols {display: flex;}
+section.cta .twocols .text {flex: 2;}
+section.cta .twocols .image {flex: 1;}
+section.cta .twocols .image img {display: inline-block; width: 20rem;}
+@media (max-width: 600px) {
+    section.cta .twocols {flex-direction: column;}
+    section.cta .twocols .image {text-align: left; display: none;}
+}
+``` 
+
+Basically, the hugobricks way, the Call To Action brick (CTA) is made of text+image '(sub)components'. Add some simple but ellegant styling, and voil�.
+
+(as a reminder, as long as the following is re-used across several bricks in the project :)
+
+```
+/*------------------------*/
+/* brick image
+/*------------------------*/
+
+section.image.alt {background: var(--light); border-top: 0.1rem solid var(--light); border-bottom: 0.1rem solid var(--light);}
+section.image.alt .container {direction: rtl;}
+section.image.alt .container > div {direction: ltr;}
+section.image .twocols .image {text-align: center;}
+section.image .twocols .image img {width: auto; display: inline-block; width: 29rem}
+@media (max-width: 600px) {
+    section.image .twocols .image {text-align: left;}
+}
+```
+
+What's under the hood ? Have a look at the relevant layout/partials.
+
+
+>  NOTE: We try to keep media queries for responsive design minimal, yet fully functional, as you might notice.
+
+< Enjoy /> .
