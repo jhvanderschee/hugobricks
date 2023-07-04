@@ -108,20 +108,18 @@ section.small h1 {text-align: center;}
 
 section.docs {padding-top: 0!important; margin-top: -3rem;}
 section.docs .container {display: flex; gap: 5rem;}
-section.docs .container .menu {border-right: 1px solid rgba(0,0,0,0.1); width: 20rem; max-width: 20rem; padding: 3rem 0;}
-section.docs .container .content {min-width: 0; min-height: 0; padding: 2.2rem 0 4rem 0; flex-grow: 1;}
+section.docs .container .menu {border-right: 1px solid rgba(0,0,0,0.1); width: 20rem; max-width: 20rem; padding: 2rem 0 3.2rem;}
+section.docs .container .content {min-width: 0; min-height: 0; padding: 3.2rem 0; flex-grow: 1;}
 section.docs .container .content > * {max-width: 45rem;}
 section.docs .container .content > p img[src$=".svg"] {width: 100%; max-width: 30rem; margin: 3rem 0;}
 section.docs .container .content .breadcrumbs {text-align: left;}
-section.docs .container .content .breadcrumbs:first-child {display: none;}
-
 
 section.docs .container .menu h3 {display: none;}
 section.docs .container .menu ul.nestedmenu {margin-left: 0; position: sticky; top: 8rem; margin-right: 5rem;}
 section.docs .container .menu ul.nestedmenu li {list-style: none; padding: 0.15rem 0;}
 section.docs .container .menu ul.nestedmenu li > ul {display: none;}
 section.docs .container .menu ul.nestedmenu li > a::before {content: " "; display: inline-block; margin-right: 0.75rem; width: 0.5rem; text-align: center;}
-section.docs .container .menu ul.nestedmenu > li > a::before {content: "•";}
+section.docs .container .menu ul.nestedmenu > li > a::before {content: "-";}
 section.docs .container .menu ul.nestedmenu li.haschildren > a::before {content: "›";}
 section.docs .container .menu ul.nestedmenu li.haschildren.active > a::before {transform: rotate(90deg);}
 section.docs .container .menu ul.nestedmenu li.active > ul {display: block;}
@@ -131,10 +129,9 @@ section.docs .container .menu ul.nestedmenu li.current > a {color: var(--textAcc
 
 @media (max-width: 65rem) {
     section.docs {margin-top: -2rem;}
-    section.docs .container {flex-direction: column-reverse; gap: 1rem;}
+    section.docs .container {flex-direction: column-reverse; gap: 3rem;}
     section.docs .container .menu {width: 100%; max-width: 100%; padding-bottom: 0; border: 0;}
     section.docs .container .menu h3 {display: block;}
     section.docs .container .content {padding-bottom: 0;}
-    section.docs .container .content .breadcrumbs {display: block;}
     section.docs .container .menu ul.nestedmenu {margin-top: 0.75rem;}
 }
