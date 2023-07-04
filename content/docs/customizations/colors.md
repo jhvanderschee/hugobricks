@@ -17,7 +17,7 @@ The color definitions can be found in 'style.css' in '/static/css/style.css'. Th
 }
 ```
 
-## Colorize icons and images
+## Colorizing
 
 The icons in this theme (and some of the images) are actually black/grayscale. The theme colorizes them, using the CSS filter trick. The definition of this trick can also be found in the 'style.css' file. To illustrate this: the code below transforms a black icon into an icon in the (yellow) accent color:
 
