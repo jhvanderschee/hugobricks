@@ -74,7 +74,7 @@
       <div>
         <div class="container">
           <div>
-            {{ if .Site.Data.footer.show_logo }}{{ partial "logo.html" . }}{{ else }}&copy; {{ .Site.Title }} {{ now.Year }}{{ end }}
+            {{ if .Site.Data.footer.show_logo }}{{ partial "logo.html" . }}{{ else }}<a href="/">&copy; {{ .Site.Title }} {{ now.Year }}</a>{{ end }}
           </div>
           <div>
             <ul>
