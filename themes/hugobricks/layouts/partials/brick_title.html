@@ -10,7 +10,7 @@
 {{- if or $block (not $raw) -}}{{- $inner = $raw -}}{{- else -}}{{- $inner = print `<p>` $raw `</p>` -}}{{- end -}}
 {{- $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 -}}
 {{- $inner = replace $inner $image "" 1 -}}
-{{- if lt (len $inner) 3 }}{{ $empty := true -}}{{ else }}{{ $empty := false -}}{{ end }}
+{{- if lt (len $inner) 3 }}{{ $empty := true }}{{ else }}{{ $empty := false }}{{ end }}
 {{- $imagesrc := index (split $image `"`) 1 -}}
 {{- if $imagesrc -}}
 <section class="title bgimage hasbackgroundcolor">
