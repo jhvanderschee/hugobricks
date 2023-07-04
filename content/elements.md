@@ -89,6 +89,12 @@ A grayscale (colorized) image:
 
 ---
 
+## Newsletter form
+
+{{< newsletterform >}}
+
+---
+
 ## Tabs
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
