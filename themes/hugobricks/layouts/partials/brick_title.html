@@ -15,7 +15,7 @@
 {{- if $imagesrc -}}
 <section class="title bgimage hasbackgroundcolor">
     <div class="bgimage" style="background: url('{{ $imagesrc }}') center center / cover no-repeat;">
-        {{ if $$empty }}{{ else }}<div class="overlay"></div>{{ end }}
+        {{ if $empty }}{{ else }}<div class="overlay"></div>{{ end }}
         <div class="container small">
             {{ $inner | safeHTML }}
         </div>
