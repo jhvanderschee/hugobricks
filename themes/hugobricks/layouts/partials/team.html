@@ -1,5 +1,5 @@
 <ul class="grid team">
-    {{- range page.Site.Data.team -}}
+    {{- range (index page.Site.Data page.Site.Language.Lang).team -}}
         <li>
             <div class="box">
             <img src="{{ .image }}" alt="{{ .name }}" class="avatar colorize_image" />

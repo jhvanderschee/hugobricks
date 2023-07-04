@@ -1,37 +1,16 @@
 baseURL: https://www.hugobricks.preview.usecue.com
-title: Hugobricks
 theme: hugobricks
-
-params:
-  hugobrick_theme: aqua
-  intro_image_positions: 
-    - below
-    - behind
-    - above
-    - left
-    - right
-  intro_backgrounds:
-    - horizontal gradient
-    - none
-    - vertical gradient
-    - image with overlay
-  test_image_positions:
-    - left
-    - right
-  image_styles:
-    - blob behind
-  header_styles:
-    - logo left cta right
-    - logo left cta top
-    - logo centered cta top
-  footer_styles:
-    - simple
-    - large footer
-  font_families: 
-    - Arial
-    - Signika
+defaultContentLanguage: en
+languageCode: "en-us"
     
 markup:
   goldmark:
     renderer:
       unsafe: true # Allow HTML in md files
+
+languages:
+  en:
+    languageName: English
+    title: Hugobricks
+    contentDir: content/en
+    weight: 1

@@ -1,12 +1,12 @@
 {{- if .Get 0 -}}
-	{{- range (index page.Site.Data.faqs (sub (.Get 0) 1)).faqs -}}
+	{{- range (index (index page.Site.Data page.Site.Language.Lang).faqs (sub (.Get 0) 1)).faqs -}}
 		<details>
 			<summary>{{- .question -}}</summary>
 			<div><div>{{- .answer | markdownify -}}</div></div>
 		</details>
 	{{- end -}}
 {{- else -}}
-	{{- range page.Site.Data.faqs -}}
+	{{- range (index page.Site.Data page.Site.Language.Lang).faqs -}}
 		{{- if .title -}}
 			<h3>{{- .title -}}</h3>
 			<div>
