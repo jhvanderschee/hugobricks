@@ -111,9 +111,9 @@ body.transparent_header header:not(.sticky) .button {background: var(--accent); 
 footer {background: var(--light); margin-top: 2rem; border-top: 0.1rem solid var(--light);}
 footer a {text-decoration: none;}
 footer .logo > div.has_subtitle {padding-bottom: 0.5rem;}
-footer ul {display: flex; justify-content: center; gap: 1rem 2rem; margin: 0; flex-wrap: wrap;}
+footer ul {display: flex; justify-content: center; gap: 0 2rem; margin: 0; flex-wrap: wrap;}
 footer ul li {list-style: none; position: relative;}
-footer ul li a {color: var(--textMedium);}
+footer ul li a {color: var(--textMedium); padding: 0.5rem 0; display: block;}
 footer .container {display: flex; align-items: center;}
 footer .container > div {flex: 3; text-align: center;}
 footer .container > div:first-child {flex: 1; text-align: left;}
