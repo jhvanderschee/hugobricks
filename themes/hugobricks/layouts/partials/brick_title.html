@@ -10,11 +10,12 @@
 {{- if or $block (not $raw) -}}{{- $inner = $raw -}}{{- else -}}{{- $inner = print `<p>` $raw `</p>` -}}{{- end -}}
 {{- $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 -}}
 {{- $inner = replace $inner $image "" 1 -}}
+{{- $empty := if lt (len $inner) 3 -}}
 {{- $imagesrc := index (split $image `"`) 1 -}}
 {{- if $imagesrc -}}
 <section class="title bgimage hasbackgroundcolor">
     <div class="bgimage" style="background: url('{{ $imagesrc }}') center center / cover no-repeat;">
-        <div class="overlay"></div>
+        {{ if $$empty }}{{ else }}<div class="overlay"></div>{{ end }}
         <div class="container small">
             {{ $inner | safeHTML }}
         </div>
