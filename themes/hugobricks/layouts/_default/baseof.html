@@ -11,7 +11,7 @@
     
     <link href="/css/style.css?version={{ now }}" rel="stylesheet">
   </head>
-  <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }}">
+  <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }} filename_{{ .File.BaseFileName }}">
     <script>      
       function updateSize() {
         if(window.innerWidth<{{ .Site.Data.header.mobile_view_at }}) document.body.classList.add('mobilemenu');
