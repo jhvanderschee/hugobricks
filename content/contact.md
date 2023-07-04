@@ -16,20 +16,14 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
 
-### Visit us
-
 Soetendaal 7  
 1081BL Amsterdam  
 The Netherlands
 
-### Email us
-
-joost@vdschee.nl
-
-### Call us
-
+joost@vdschee.nl  
 +31 618 518 928
 
+{{< socialbuttons >}}
 
 {{< /brick_contact >}}
 {{< brick_map >}}{{< /brick_map >}}

@@ -3,8 +3,27 @@ title: Colors
 weight: 1
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, nulla et scelerisque volutpat, elit felis condimentum odio, et bibendum lacus sem sed turpis. Quisque aliquet orci quis massa scelerisque gravida. Cras maximus lacus et orci lacinia fermentum. Integer venenatis bibendum condimentum. Maecenas non rutrum magna. Sed varius metus sit amet augue condimentum, quis faucibus nulla tempor. Phasellus nec ipsum dolor. Aliquam non maximus orci.
+The color definitions can be found in 'style.css' in '/static/css/style.css'. The definitions are stored in CSS variables. Changing these variables will change the colors in your whole website. The default settings (from this website) look like this:
 
-Integer sollicitudin dui quis nibh tincidunt, et pharetra nulla varius. Vestibulum malesuada quam dapibus lacus molestie, sed maximus nulla sagittis. Ut dui quam, convallis eu justo quis, posuere sodales dolor. Maecenas eu sem et purus finibus auctor in vel dolor. Fusce vitae diam pellentesque, suscipit nisl nec, varius erat. Curabitur condimentum mauris ut sapien rhoncus, quis venenatis purus pulvinar. Ut in imperdiet augue, et porttitor magna. Praesent euismod urna ut lectus pretium suscipit. Sed nec mauris in nunc condimentum viverra. Praesent vitae hendrerit sem, eu suscipit arcu. Ut sollicitudin dolor lacus, nec interdum purus volutpat in. Phasellus aliquet quis nunc vitae maximus.
+```
+:root {
+    --textDark: rgba(38, 50, 56, 1);
+    --textMedium: rgba(38, 50, 56, 0.7);
+    --borderMedium: rgba(38, 50, 56, 0.2); 
+    --borderLight: rgba(38, 50, 56, 0.075);
+    --accent: #f4b500;
+    --textAccent: #e6ac00;
+    --light: rgba(38, 50, 56, 0.035);
+}
+```
 
-Integer sollicitudin dui quis nibh tincidunt, et pharetra nulla varius. Vestibulum malesuada quam dapibus lacus molestie, sed maximus nulla sagittis. Ut dui quam, convallis eu justo quis, posuere sodales dolor. Maecenas eu sem et purus finibus auctor in vel dolor. Fusce vitae diam pellentesque, suscipit nisl nec, varius erat. Curabitur condimentum mauris ut sapien rhoncus, quis venenatis purus pulvinar. Ut in imperdiet augue, et porttitor magna. Praesent euismod urna ut lectus pretium suscipit. Sed nec mauris in nunc condimentum viverra. Praesent vitae hendrerit sem, eu suscipit arcu. Ut sollicitudin dolor lacus, nec interdum purus volutpat in. Phasellus aliquet quis nunc vitae maximus.
+## Colorize icons and images
+
+The icons in this theme (and some of the images) are actually black/grayscale. The theme colorizes them, using the CSS filter trick. The definition of this trick can also be found in the 'style.css' file. To illustrate this: the code below transforms a black icon into an icon in the (yellow) accent color:
+
+```
+contrast(0.11) sepia(1) hue-rotate(340deg) contrast(13)
+
+```
+
+Here is a step-by-step explanation of what this does: it lowers the contrast of the icon (to make it gray), adds sepia (to make it yellow), rotates the hue (to make it a little bit more orange) and then adds contrast (to make it more saturated). By playing with these instructions/values you can turn icons and images into any color you want.
