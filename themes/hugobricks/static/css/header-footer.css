@@ -126,7 +126,7 @@ footer > div:last-child .container {justify-content: center; padding-top: 1.7rem
 footer ul.buttons {justify-content: flex-end; padding: 0;}
 @media (max-width: 1000px) {
     footer .container {flex-direction: column; gap: 1rem; align-items: center;}
-    footer ul {margin: 0.25rem 0 0.5rem;}
+    footer ul {margin: 0.25rem 0 0.5rem; justify-content: center;}
 }
 
 /*------------------------*/
