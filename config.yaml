@@ -2,7 +2,8 @@ baseURL: https://www.hugobricks.preview.usecue.com
 theme: hugobricks
 defaultContentLanguage: en
 languageCode: "en-us"
-    
+assetDir: static
+
 markup:
   goldmark:
     renderer:
