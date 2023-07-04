@@ -247,11 +247,10 @@ ul.tabs li.selected a::after {transform: scaleX(1) translateY(50%);}
 /* gallery
 /*------------------------*/
 
-.image-gallery {overflow: auto; margin-left: -1%!important;}
-.image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 19%;}
-.image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}
-.image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
-.image-gallery li a img {width: 100%; display: block;}
+.image-gallery {display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; margin-left: 0;}
+.image-gallery li {list-style: none;}
+.image-gallery li a {display: block;}
+.image-gallery li a img {width: 100%; display: block; border-radius: 0.5rem;}
 
 /*------------------------*/
 /* reviews
