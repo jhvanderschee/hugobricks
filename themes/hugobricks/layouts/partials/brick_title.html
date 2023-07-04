@@ -5,7 +5,7 @@
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
-{{- $inner = markdownify $inner -}}
+{{ if eq (substr (markdownify $inner) 0 1) "<" }}{{- $inner = markdownify $inner -}}{{ else }}{{- $inner = print `<p>` (markdownify $inner) `</p>` -}}{{ end }}
 {{- $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 -}}
 {{- $inner = replace $inner $image "" 1 -}}
 {{- $imagesrc := index (split $image `"`) 1 -}}
