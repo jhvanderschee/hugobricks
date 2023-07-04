@@ -11,6 +11,5 @@ markup:
 languages:
   en:
     languageName: English
-    title: Hugobricks
     contentDir: content/en
     weight: 1
