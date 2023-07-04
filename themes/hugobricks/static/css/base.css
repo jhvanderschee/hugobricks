@@ -17,7 +17,7 @@ body {font-size: 1rem; color: var(--textMedium); background: var(--light);}
 .container {margin: 0 auto; max-width: 84rem; padding: 0 clamp(1rem,4vw,3rem);}
 img {max-width: 100%; display: block;}
 a {color: var(--textMedium);}
-h1, h2, a.logo {line-height: 1.2; font-size: 2.4rem; color: var(--textDark);}
+h1, h2, a.logo {line-height: 1.15; font-size: 2.4rem; color: var(--textDark);}
 h1 {font-size: 3rem; margin-bottom: 1.75rem;}
 h1 + p {padding-top: 0.5rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
