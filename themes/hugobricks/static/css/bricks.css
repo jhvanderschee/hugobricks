@@ -109,10 +109,12 @@ section.small h1 {text-align: center;}
 section.docs {padding-top: 0!important; margin-top: -3rem;}
 section.docs .container {display: flex; gap: 5rem;}
 section.docs .container .menu {border-right: 1px solid rgba(0,0,0,0.1); width: 20rem; max-width: 20rem; padding: 3rem 0;}
-section.docs .container .content {min-width: 0; min-height: 0; padding: 2.2rem 0 4rem 0;}
+section.docs .container .content {min-width: 0; min-height: 0; padding: 2.2rem 0 4rem 0; flex-grow: 1;}
 section.docs .container .content > * {max-width: 45rem;}
 section.docs .container .content > p img[src$=".svg"] {width: 100%; max-width: 30rem; margin: 3rem 0;}
-section.docs .container .content .breadcrumbs {text-align: left; display: none;}
+section.docs .container .content .breadcrumbs {text-align: left;}
+section.docs .container .content .breadcrumbs:first-child {display: none;}
+
 
 section.docs .container .menu h3 {display: none;}
 section.docs .container .menu ul.nestedmenu {margin-left: 0; position: sticky; top: 8rem; margin-right: 5rem;}

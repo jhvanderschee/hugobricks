@@ -2,22 +2,10 @@
 title: Contact form
 ---
 
-
-![Button](/uploads/shortcodes/contact-form.png "Form")
-
-Self explanatory: provides a nice basic contact form.
-Just style (if needed) it and place it at wish in you website, by means of the following 
-
+The contact form is an essential part for your websites conversion. The settings for this form can be found in the 'contactform.yaml' file in the data directory. You can see the form in action on the [Elements page](/elements/). To show the contact form in your content, write the following shortcode:
 
 ```
-{{</* form "" "" */>}}
+{{</* contactform */>}}
 ```
 
-invoking the form.
-
-In this sample website, you can see it in action in the 'Pages' menu related 'Contact us' page.
-
-> NOTE: use de relevant data YAML file in order to sculpt it.
-
-issue#13
-
+<!--{{< contactform >}}-->

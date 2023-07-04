@@ -2,19 +2,22 @@
 title: Tabs
 ---
 
-Self explanatory: provides a nice  'tabs' functionality.
-
-![Button](/uploads/shortcodes/tabs.png "Tabs")
-
-
-</br>
-
-Just style (if needed) it and place it at wish in you website, by means of the following 
+You can see the form in action on the [Elements page](/elements/).
 
 ```
 {{</* tabs */>}}
+
+## Tab1
+
+Aliquam et dictum sem.
+
+---
+
+## Tab2
+
+Aliquam et dictum sem.
+
+{{</* /tabs */>}}
 ```
 
-invoking the tabs. 
-
-See in action via the Pages/Elements menu.
+<!--{{< tabs >}}{{< /tabs >}}-->

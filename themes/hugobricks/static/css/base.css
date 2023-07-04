@@ -28,7 +28,7 @@ ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
 hr {margin: 3.5rem 0; height: 1px; background: rgba(0,0,0,0.1); border: 0;}
 p > img {border-radius: 1rem; overflow: hidden;}
-pre {overflow: auto; background: var(--light); padding: 0.5rem;}
+pre {overflow: auto; background: var(--light); padding: 0.75rem 1rem; border: 0.1rem solid var(--light); border-radius: 0.25rem;}
 blockquote {font-style: italic; border-left: 0.25rem solid var(--borderMedium); padding-left: 1.25rem;}
 
 /*------------------------*/
