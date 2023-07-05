@@ -88,8 +88,7 @@ div.map::after {
 /* image
 /*------------------------*/
 
-div:not(.box) > div.image {padding: 0 2rem;}
-div:not(.box) > div.image img {border-radius: 0; max-width: calc(100% - 2rem);}
+div:not(.box) > div.image img {border-radius: 0;}
 @media (max-width: 600px) {
     div:not(.box) > div.image {padding: 0;}
     div:not(.box) > div.image img {max-width: 100%;}

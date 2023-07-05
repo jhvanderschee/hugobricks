@@ -38,8 +38,8 @@ section.cta .twocols .image img {display: inline-block; width: 20rem;}
 section.image.alt {background: var(--light); border-top: 0.1rem solid var(--light); border-bottom: 0.1rem solid var(--light);}
 section.image.alt .container {direction: rtl;}
 section.image.alt .container > div {direction: ltr;}
-section.image .twocols .image {text-align: center;}
-section.image .twocols .image img {width: auto; display: inline-block; width: 29rem}
+section.image .twocols .image {text-align: center; position: relative;}
+section.image .twocols .image img {width: auto; display: inline-block; max-width: 85%; width: 100%;}
 @media (max-width: 600px) {
     section.image .twocols .image {text-align: left;}
 }
