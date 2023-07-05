@@ -200,6 +200,6 @@ body.mobilemenu.menushown #togglemenu {
 body.mobilemenu.menushown header > div.container > div:nth-child(2) {transform: translateX(0%);}
 body.mobilemenu.menushown header nav > ul > li a {color: white;}
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     header .button {display: none;}
 }
