@@ -90,11 +90,16 @@
       </div>
       <div>
         <div class="container">
-          <div>{{ markdownify (index .Site.Data .Language.Lang).footer.footer_text }}</div>
-        </div>
+		<div>{{ markdownify (index .Site.Data .Language.Lang).footer.footer_text }}</div>
+		</div>
+		</div>
+		</footer>
+		{{ if (index .Site.Data .Language.Lang).header.sticky_header }}
+		<script type="text/javascript" src="/js/stickyheader.js"></script>{{ end }}				
+		<script type="text/javascript" src="/js/lightbox.js"></script>
+		<link rel="stylesheet" href="/css/lightbox.css">
       </div>
-    </footer>
-    {{ if (index .Site.Data .Language.Lang).header.sticky_header }}<script type="text/javascript" src="/js/stickyheader.js"></script>{{ end }}
-    </div>
   </body>
 </html>
+
+
