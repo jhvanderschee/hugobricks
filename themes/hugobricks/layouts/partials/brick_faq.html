@@ -16,13 +16,6 @@
                 <summary>{{- $titleplain -}}</summary>
                 <div><div>{{- (replace (markdownify .) $title "") | safeHTML -}}</div></div>
             </details>
-            {{- end -}}
-	    <p>N1h1l</p>
+        {{- end -}}
     </div>
-    
-    <div class="container">
-	<h2>Is there documentation available ?</h2>
-	{{- partial "nested-menu.html" . -}}
-    </div>
-
 </section>

@@ -1,52 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Language.Lang }}">
   <head>
-    <title>{{ .Title }} | {{ .Site.Data.general.title }}</title>
+    <title>{{ .Title }} | {{ (index .Site.Data .Language.Lang).general.title }}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ .Summary }}">
 
     <link rel="canonical" href="{{ .Permalink }}" />
-    <link rel="shortcut icon" href="{{ .Site.Data.general.favicon_image }}">
+    <link rel="shortcut icon" href="{{ (index .Site.Data .Language.Lang).general.favicon_image }}">
     
     <link href="/css/style.css?version={{ now }}" rel="stylesheet">
   </head>
-  <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }}">
+  <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }} filename_{{ with .File }}{{ .BaseFileName }}{{ end }}">
     <script>      
       function updateSize() {
-        if(window.innerWidth<{{ .Site.Data.header.mobile_view_at }}) document.body.classList.add('mobilemenu');
+        if(window.innerWidth<{{ (index .Site.Data .Language.Lang).header.mobile_view_at }}) document.body.classList.add('mobilemenu');
         else document.body.classList.remove('mobilemenu');
       }
       updateSize();
       window.addEventListener("resize", updateSize);
     </script>
     <div class="innerbody">
-    {{- if .Site.Data.header.preheader.active -}}
-    <div class="preheader{{ if .Site.Data.header.preheader.is_light }} light{{- end -}}">
+    {{- if (index .Site.Data .Language.Lang).header.preheader.active -}}
+    <div class="preheader{{ if (index .Site.Data .Language.Lang).header.preheader.is_light }} light{{- end -}}">
       <div class="container">
         <div class="icons">
-          {{- if .Site.Data.general.contact.phone -}}
-            <a href="tel:{{ replace .Site.Data.general.contact.phone ` ` `` }}" class="icon"><img src="/img/phone.svg" alt="{{ .Site.Data.general.contact.phone }}" class="black_2_textMedium" /> {{ .Site.Data.general.contact.phone }}</a>
+          {{- if (index .Site.Data .Language.Lang).general.contact.phone -}}
+            <a href="tel:{{ replace (index .Site.Data .Language.Lang).general.contact.phone ` ` `` }}" class="icon"><img src="/img/phone.svg" alt="{{ (index .Site.Data .Language.Lang).general.contact.phone }}" class="black_2_textMedium" /> {{ (index .Site.Data .Language.Lang).general.contact.phone }}</a>
           {{- end -}}
-          {{- if .Site.Data.general.contact.email -}}
-            <a href="mailto:{{ .Site.Data.general.contact.email }}" class="icon"><img src="/img/email.svg" alt="{{ .Site.Data.general.contact.email }}" class="black_2_textMedium" /> {{ .Site.Data.general.contact.email }}</a>
+          {{- if (index .Site.Data .Language.Lang).general.contact.email -}}
+            <a href="mailto:{{ (index .Site.Data .Language.Lang).general.contact.email }}" class="icon"><img src="/img/email.svg" alt="{{ (index .Site.Data .Language.Lang).general.contact.email }}" class="black_2_textMedium" /> {{ (index .Site.Data .Language.Lang).general.contact.email }}</a>
           {{- end -}}
         </div>
         <div>
-          {{- if .Site.Data.header.preheader.text -}}{{ .Site.Data.header.preheader.text }}{{- end -}}
+          {{- if (index .Site.Data .Language.Lang).header.preheader.text -}}{{ (index .Site.Data .Language.Lang).header.preheader.text }}{{- end -}}
         </div>
       </div>  
     </div>
     {{- end -}}
     <header>
-      <div class="container {{ if .Site.Data.header.cta.active }}has_cta{{ end }}">
+      <div class="container {{ if (index .Site.Data .Language.Lang).header.cta.active }}has_cta{{ end }}">
         <div>
           {{ partial "logo.html" . }}
         </div>
         <div class="nav">
           <nav>
             <ul>
-              {{ range .Site.Data.header.menuitems }}
+              {{ range (index .Site.Data .Language.Lang).header.menuitems }}
                 <li class="{{ if eq .link `/` }}{{ if eq $.RelPermalink `/` }}active{{ end }}{{ else }}{{ if in $.RelPermalink .link }}active{{ end }}{{ end }}{{ if (index .items 0).title }} haschildren{{ end }}"><a href="{{ .link }}">{{ .title }}</a>
                   {{ if (index .items 0).title }}
                   <ul>
@@ -60,9 +60,9 @@
             </ul>
           </nav>
         </div>
-        {{ if .Site.Data.header.cta.active }}
+        {{ if (index .Site.Data .Language.Lang).header.cta.active }}
         <div>
-          <a href="{{ .Site.Data.header.cta.link }}" class="button ghost smaller">{{ .Site.Data.header.cta.title }}</a>
+          <a href="{{ (index .Site.Data .Language.Lang).header.cta.link }}" class="button ghost smaller">{{ (index .Site.Data .Language.Lang).header.cta.title }}</a>
         </div>
         {{ end }}
         <button id="togglemenu" onclick="document.body.classList.toggle('menushown');">Toggle menu</button>
@@ -74,11 +74,11 @@
       <div>
         <div class="container">
           <div>
-            {{ if .Site.Data.footer.show_logo }}{{ partial "logo.html" . }}{{ else }}&copy; {{ .Site.Title }} {{ now.Year }}{{ end }}
+            {{ if (index .Site.Data .Language.Lang).footer.show_logo }}{{ partial "logo.html" . }}{{ else }}<a href="/">&copy; {{ .Site.Title }} {{ now.Year }}</a>{{ end }}
           </div>
           <div>
             <ul>
-              {{ range .Site.Data.footer.menuitems }}
+              {{ range (index .Site.Data .Language.Lang).footer.menuitems }}
                 <li><a href="{{ .link }}">{{ .title }}</a></li>
               {{ end }}
             </ul>  
@@ -90,11 +90,16 @@
       </div>
       <div>
         <div class="container">
-          <div>{{ markdownify .Site.Data.footer.footer_text }}</div>
-        </div>
+		<div>{{ markdownify (index .Site.Data .Language.Lang).footer.footer_text }}</div>
+		</div>
+		</div>
+		</footer>
+		{{ if (index .Site.Data .Language.Lang).header.sticky_header }}
+		<script type="text/javascript" src="/js/stickyheader.js"></script>{{ end }}				
+		<script type="text/javascript" src="/js/lightbox.js"></script>
+		<link rel="stylesheet" href="/css/lightbox.css">
       </div>
-    </footer>
-    {{ if .Site.Data.header.sticky_header }}<script type="text/javascript" src="/js/stickyheader.js"></script>{{ end }}
-    </div>
   </body>
 </html>
+
+

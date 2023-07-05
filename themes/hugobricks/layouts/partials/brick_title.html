@@ -5,14 +5,18 @@
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
-{{- $inner = markdownify $inner -}}
+{{- $raw := (markdownify . | chomp) -}}
+{{- $block := findRE "(?is)^<(?:address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h(?:1|2|3|4|5|6)|header|hgroup|hr|li|main|nav|noscript|ol|output|p|pre|section|table|tfoot|ul|video)\\b" $raw 1 -}}
+{{- if or $block (not $raw) -}}{{- $inner = $raw -}}{{- else -}}{{- $inner = print `<p>` $raw `</p>` -}}{{- end -}}
 {{- $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 -}}
 {{- $inner = replace $inner $image "" 1 -}}
+{{ $empty := false }}
+{{- if lt (len $inner) 3 }}{{ $empty = true }}{{ end }}
 {{- $imagesrc := index (split $image `"`) 1 -}}
 {{- if $imagesrc -}}
 <section class="title bgimage hasbackgroundcolor">
     <div class="bgimage" style="background: url('{{ $imagesrc }}') center center / cover no-repeat;">
-        <div class="overlay"></div>
+        {{ if $empty }}{{ else }}<div class="overlay"></div>{{ end }}
         <div class="container small">
             {{ $inner | safeHTML }}
         </div>

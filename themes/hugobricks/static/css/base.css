@@ -11,13 +11,13 @@ img {filter: grayscale(100%);}
 
 * {padding: 0; margin: 0; box-sizing: border-box;}
 html {font-size: clamp(14px, 2vw, 16px); line-height: 1.7; height: 100%; scroll-behavior: smooth; background: var(--light);}
-body {font-family: 'Heebo', sans-serif; font-size: 1rem; color: var(--textMedium); background: var(--light);}
+body {font-size: 1rem; color: var(--textMedium); background: var(--light);}
 .innerbody {margin: 0 auto; background: white;}
 .innerbody, .innerbody header {max-width: 100%;}
 .container {margin: 0 auto; max-width: 84rem; padding: 0 clamp(1rem,4vw,3rem);}
 img {max-width: 100%; display: block;}
 a {color: var(--textMedium);}
-h1, h2, a.logo {font-family: 'Signika', sans-serif; line-height: 1.2; font-size: 2.4rem; color: var(--textDark);}
+h1, h2, a.logo {line-height: 1.15; font-size: 2.4rem; color: var(--textDark);}
 h1 {font-size: 3rem; margin-bottom: 1.75rem;}
 h1 + p {padding-top: 0.5rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
@@ -28,7 +28,7 @@ ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
 hr {margin: 3.5rem 0; height: 1px; background: rgba(0,0,0,0.1); border: 0;}
 p > img {border-radius: 1rem; overflow: hidden;}
-pre {overflow: auto; background: var(--light); padding: 0.5rem;}
+pre {overflow: auto; background: var(--light); padding: 0.75rem 1rem; border: 0.1rem solid var(--light); border-radius: 0.25rem; font-size: 0.95rem;}
 blockquote {font-style: italic; border-left: 0.25rem solid var(--borderMedium); padding-left: 1.25rem;}
 
 /*------------------------*/
@@ -41,7 +41,7 @@ a.logo > div {display: flex; gap: 0.8rem; align-items: center;}
 a.logo > div > div span {display: block;}
 a.logo > div.has_subtitle {gap: 1rem;}
 a.logo > div.has_subtitle > div span:nth-child(1) {line-height: 1.2;}
-a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-serif; font-size: 0.75rem; font-weight: normal;}
+a.logo > div.has_subtitle > div span:nth-child(2) {font-size: 0.75rem; font-weight: normal;}
 
 /*------------------------*/
 /* sections general
@@ -88,8 +88,7 @@ div.map::after {
 /* image
 /*------------------------*/
 
-div:not(.box) > div.image {padding: 0 2rem;}
-div:not(.box) > div.image img {border-radius: 0; max-width: calc(100% - 2rem);}
+div:not(.box) > div.image img {border-radius: 0;}
 @media (max-width: 600px) {
     div:not(.box) > div.image {padding: 0;}
     div:not(.box) > div.image img {max-width: 100%;}
@@ -102,7 +101,6 @@ div:not(.box) > div.image img {border-radius: 0; max-width: calc(100% - 2rem);}
 form > div {display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 1rem;}
 form > div.radio + div.radio {margin-top: -1rem;}
 input, textarea, select {
-    font-family: 'Heebo', sans-serif;
     font-size: 1rem;
     padding: 0.5em 0.5em;
     border: 1px solid var(--borderMedium);
@@ -242,6 +240,16 @@ ul.tabs li a::after {
 ul.tabs li a:hover::after,
 ul.tabs li.selected a::after {transform: scaleX(1) translateY(50%);}
 .tabs_container .tab h2 {display: none;}
+
+
+/*------------------------*/
+/* gallery
+/*------------------------*/
+
+.image-gallery {display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; margin-left: 0;}
+.image-gallery li {list-style: none;}
+.image-gallery li a {display: block;}
+.image-gallery li a img {width: 100%; display: block; border-radius: 0.5rem;}
 
 /*------------------------*/
 /* reviews

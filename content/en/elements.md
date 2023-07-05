@@ -89,6 +89,12 @@ A grayscale (colorized) image:
 
 ---
 
+## Newsletter form
+
+{{< newsletterform >}}
+
+---
+
 ## Tabs
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -112,3 +118,12 @@ Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 
 {{< /brick_wide >}}
+
+---
+## Youtube video
+
+Lorem Videoispum
+
+{{< youtube id="qtIqKaDlqXo" image="/uploads/youtubeposter.jpg" >}}
+
+![Youtube](/uploads/youtubeposter.jpg "Youtube")

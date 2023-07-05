@@ -1,3 +1,11 @@
+---
+title: Fonts
+weight: 2
+---
+
+The font files are stored in the '/static/fonts/' directory of the theme. The font definitions can be found in 'fonts.css' in '/static/css/fonts.css'. Changing this file will change the fonts in your whole website. This file looks like this:
+
+```
 @font-face {
     font-display: swap;
     font-family: 'Signika';
@@ -20,5 +28,9 @@
     src: url('/fonts/heebo-v21-latin-600.woff2') format('woff2');
 }
 
-body, input, textarea, select, a.logo > div.has_subtitle > div span:nth-child(2) {font-family: 'Heebo', sans-serif;}
+body, input, textarea, select, 
+a.logo > div.has_subtitle > div span:nth-child(2) {
+    font-family: 'Heebo', sans-serif;
+}
 h1, h2, a.logo {font-family: 'Signika', sans-serif;}
+```

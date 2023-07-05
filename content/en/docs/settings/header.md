@@ -14,56 +14,13 @@ When you choose to omit the value for `logo_image` the 'text logo' will appear. 
 
 This numeric value determines at which width the class 'mobilemenu' is added to the body. This class acts as a adjustable media query. In the example it   is set to 1000, which means a width of 1000 pixels.
 
-
-
-### Sticky_header: 
+### Sticky_header
 
 When you choose CSS 'sticky' header refers to a type of header element that maintains its position on the screen while scrolling, up until a specified point where it becomes fixed. Unlike a regular static header, a sticky header will stay visible to the user, even as they scroll through the content on the webpage. A 'sticky' header is achieved by applying the CSS position property with a value of 'sticky' to the header element.
 
 ### Menuitems:
 
-Here you define the structure of your menu. For instance, have a look at hugobricks menu in this website. The coresponding YAML file shows its barebones, in a quite selfexplanatory way :
-
-```
-  - title: Home
-    link: /
-    items: 
-      - title:
-        link:
-  - title: About
-    link: /about/
-    items: 
-      - title:
-        link:
-  - title: Pages
-    link: /contact/
-    items: 
-      - title: Elements
-        link: /elements/
-      - title: Header image 1
-        link: /bgimage3/
-      - title: Header image 2
-        link: /bgimage2/
-      - title: Header image 3
-        link: /bgimage/
-      - title: Basic page 1
-        link: /basic/
-      - title: Basic page 2
-        link: /basic2/
-      - title: Our team
-        link: /team/
-      - title: Contact us
-        link: /contact/
-      - title: F.A.Q.
-        link: /faq/
-      - title: 404 Page
-        link: /404.html
-	  - title: Documentation
-		link: /docs/
-
-
-Feel free to extend it to define the footer menu by following the same pattern \!/ too (doublecheck!).
-
+This is an array that holds the footer menu. The items in this array consist of a `title` and a `link` field. In the title you put the page title and in link you put the relative url of that page.
 
 ### Call To Action (CTA)
 

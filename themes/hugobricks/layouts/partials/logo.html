@@ -1,12 +1,12 @@
-<a href="/#top" class="logo">
-    {{ if .Site.Data.header.logo_image }}
-        <img src="{{ .Site.Data.header.logo_image }}" alt="{{ .Site.Data.general.title }} logo" />
+<a href="{{ relLangURL "/" }}#top" class="logo">
+    {{ if (index .Site.Data .Language.Lang).header.logo_image }}
+        <img src="{{ (index .Site.Data .Language.Lang).header.logo_image }}" alt="{{ (index .Site.Data .Language.Lang).general.title }} logo" />
     {{ else }}
-        <div class="{{ if .Site.Data.header.logo_subtitle }}has_subtitle{{ end}}">
-            <img src="{{ .Site.Data.general.favicon_image }}" alt="{{ .Site.Data.general.title }} logo" class="inline black_2_textDark" />
+        <div class="{{ if (index .Site.Data .Language.Lang).header.logo_subtitle }}has_subtitle{{ end}}">
+            <img src="{{ (index .Site.Data .Language.Lang).general.favicon_image }}" alt="{{ (index .Site.Data .Language.Lang).general.title }} logo" class="inline black_2_textDark" />
             <div>
-                <span>{{ .Site.Data.general.title }}</span>
-                {{ if .Site.Data.header.logo_subtitle }}<span>{{ .Site.Data.header.logo_subtitle }}</span>{{ end }}
+                <span>{{ (index .Site.Data .Language.Lang).general.title }}</span>
+                {{ if (index .Site.Data .Language.Lang).header.logo_subtitle }}<span>{{ (index .Site.Data .Language.Lang).header.logo_subtitle }}</span>{{ end }}
             </div>
         </div>
     {{ end }}
