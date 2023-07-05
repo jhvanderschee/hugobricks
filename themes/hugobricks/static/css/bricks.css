@@ -35,6 +35,7 @@ section.cta .twocols .image img {display: inline-block; width: 20rem;}
 /* brick image
 /*------------------------*/
 
+section.image + section.image.alt {margin-top: 0!important;}
 section.image.alt {background: var(--light); border-top: 0.1rem solid var(--light); border-bottom: 0.1rem solid var(--light);}
 section.image.alt .container {direction: rtl;}
 section.image.alt .container > div {direction: ltr;}
