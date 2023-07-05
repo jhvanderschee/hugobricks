@@ -255,7 +255,7 @@ ul.tabs li.selected a::after {transform: scaleX(1) translateY(50%);}
 /* youtube shortcode
 /*------------------------*/
 
-.shortcode-youtube {position: relative; display: block;}
+.shortcode-youtube {position: relative; display: block; overflow: hidden; border-radius: 1rem;}
 .shortcode-youtube::before, .shortcode-youtube::after {
     content: "";
     width: 100%;
