@@ -1,4 +1,4 @@
-<a href="/{{ if ne .Language.Lang .defaultContentLanguage }}{{ .Language.Lang }}/{{ end }}#top" class="logo">
+<a href="/{{ .LanguagePrefix }}#top" class="logo">
     {{ if (index .Site.Data .Language.Lang).header.logo_image }}
         <img src="{{ (index .Site.Data .Language.Lang).header.logo_image }}" alt="{{ (index .Site.Data .Language.Lang).general.title }} logo" />
     {{ else }}
