@@ -40,7 +40,7 @@ section.image.alt {background: var(--light); border-top: 0.1rem solid var(--ligh
 section.image.alt .container {direction: rtl;}
 section.image.alt .container > div {direction: ltr;}
 section.image .twocols .image {text-align: center; position: relative; height: 100%; transform: scaleX(-1);}
-section.image .twocols .image img {width: auto; display: block; max-width: 85%; width: 100%; margin: auto;  transform: scaleX(-1);}
+section.image .twocols .image img {width: auto; display: block; max-width: 85%; width: 100%; margin: auto; transform: scaleX(-1);}
 @media (max-width: 600px) {
     section.image .twocols .image {text-align: left;}
 }
