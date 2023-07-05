@@ -6,11 +6,7 @@
     
 */}}
 -->
-
-<a class="shortcode-youtube" href="https://www.youtube.com/watch?v={{ .Get `id` }}" title="Play Youtube video" target="_blank">
-    <img src="{{ if (resources.GetMatch (.Get `image`)) }}{{ ((resources.GetMatch (.Get `image`)).Fill `1200x675 jpg Smart q50`).RelPermalink | safeURL }}{{ end }}" alt="Youtube video {{ .Get `id` }}" />
-</a>
-
+<p><a class="shortcode-youtube" href="https://www.youtube.com/watch?v={{ .Get `id` }}" title="Play Youtube video" target="_blank"><img src="{{ if (resources.GetMatch (.Get `image`)) }}{{ ((resources.GetMatch (.Get `image`)).Fill `1200x675 jpg Smart q50`).RelPermalink | safeURL }}{{ end }}" alt="Youtube video {{ .Get `id` }}" /></a></p>
 <style>
 .shortcode-youtube {
     position: relative; display: inline-block;
