@@ -263,6 +263,7 @@ ul.tabs li.selected a::after {transform: scaleX(1) translateY(50%);}
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 .shortcode-youtube::before {background: url('/img/youtube_button.svg') center center / auto 4rem no-repeat;}
 .shortcode-youtube:hover::before {background-image: url('/img/youtube_button_hover.svg');}
