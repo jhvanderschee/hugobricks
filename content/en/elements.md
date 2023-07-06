@@ -117,13 +117,11 @@ Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 {{< /tabs >}}
 
 
-{{< /brick_wide >}}
-
 ---
 ## Youtube video
 
-Lorem Videoispum
+Phasellus ornare, purus in dapibus gravida, diam odio feugiat lectus, in efficitur dolor ante ut odio. Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris.
 
 {{< youtube id="qtIqKaDlqXo" image="/uploads/youtubeposter.jpg" >}}
 
-![Youtube](/uploads/youtubeposter.jpg "Youtube")
+{{< /brick_wide >}}
