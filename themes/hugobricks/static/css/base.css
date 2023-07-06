@@ -22,7 +22,7 @@ h1 {font-size: 3rem; margin-bottom: 1.75rem;}
 h1 + p {padding-top: 0.5rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
 h2:first-child {margin-top: 0;}
-h3 {color: var(--textDark); line-height: 1.25; font-size: 1.25rem; margin-bottom: 0.4rem; padding-top: 1rem;}
+h3 {color: var(--textDark); line-height: 1.4; font-size: 1.25rem; margin-bottom: 0.4rem; padding-top: 1rem;}
 p, ul, ol, blockquote, pre, .box.map {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
@@ -71,9 +71,9 @@ div.box p img {border-radius: 0;}
 /* map
 /*------------------------*/
 
-div.map {aspect-ratio: 2.25; width: 100%; border-radius: 1rem;}
-div.map {position: relative; background-position: center calc(50% + 2rem); background-repeat: repeat;}
-div.map::after {
+p.map {aspect-ratio: 2.25; width: 100%; border-radius: 1rem;}
+p.map {position: relative; background-position: center calc(50% + 2rem); background-repeat: repeat;}
+p.map::after {
     content: ""; 
     width: 100%; 
     height: 100%; 
@@ -250,6 +250,29 @@ ul.tabs li.selected a::after {transform: scaleX(1) translateY(50%);}
 .image-gallery li {list-style: none;}
 .image-gallery li a {display: block;}
 .image-gallery li a img {width: 100%; display: block; border-radius: 0.5rem;}
+
+/*------------------------*/
+/* youtube shortcode
+/*------------------------*/
+
+.shortcode-youtube {position: relative; display: block; overflow: hidden; border-radius: 1rem;}
+.shortcode-youtube::before, .shortcode-youtube::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.shortcode-youtube::before {background: url('/img/youtube_button.svg') center center / auto 4rem no-repeat;}
+.shortcode-youtube:hover::before {background-image: url('/img/youtube_button_hover.svg');}
+.shortcode-youtube::after {background: url('/img/youtube_text.svg') calc(100% - 1rem) calc(100% - 1rem) / auto 2rem no-repeat;}
+.shortcode-youtube img {display: block;}
+@media (max-width: 45rem) {
+    .shortcode-youtube::before {background-size: auto 12vw;}
+    .shortcode-youtube::after {background-position: calc(100% - 3vw) calc(100% - 3vw); background-size: auto 6vw;}
+}
 
 /*------------------------*/
 /* reviews
