@@ -120,7 +120,7 @@ Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 ---
 ## Youtube video
 
-Phasellus ornare, purus in dapibus gravida, diam odio feugiat lectus, in efficitur dolor ante ut odio. Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris.
+Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 {{< youtube id="qtIqKaDlqXo" image="/uploads/youtubeposter.jpg" >}}
 
