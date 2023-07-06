@@ -94,7 +94,7 @@ section.reviews .container.small {margin-bottom: 4.25rem; text-align: center;}
 /* brick features
 /*------------------------*/
 
-section.features .container.small {margin-bottom: 4.75rem; text-align: center;}
+section.features .container.small {margin-bottom: 4rem; text-align: center;}
 section.features + section.title {padding-top: 0;}
 
 /*------------------------*/
