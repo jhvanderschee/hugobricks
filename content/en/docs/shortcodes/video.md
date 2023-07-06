@@ -2,7 +2,7 @@
 title: Video
 ---
 
-The video shortcode enables you to put an HTML5 video in your project. You can see it in action on the [Elements page](/elements/). To show a youtube embed, write the following 'code':
+The video shortcode enables you to put an HTML5 video in your project. You can see it in action on the [Elements page](/elements/). To show a HTML5 video, write the following 'code':
 
 
 ```
