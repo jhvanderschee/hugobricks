@@ -15,7 +15,7 @@ body {font-size: 1rem; color: var(--textMedium); background: var(--light);}
 .innerbody {margin: 0 auto; background: white;}
 .innerbody, .innerbody header {max-width: 100%;}
 .container {margin: 0 auto; max-width: 84rem; padding: 0 clamp(1rem,4vw,3rem);}
-img {max-width: 100%; display: block;}
+img, figure, video, audio {max-width: 100%; display: block;}
 a {color: var(--textMedium);}
 h1, h2, a.logo {line-height: 1.15; font-size: 2.4rem; color: var(--textDark);}
 h1 {font-size: 3rem; margin-bottom: 1.75rem;}
@@ -23,13 +23,14 @@ h1 + p {padding-top: 0.5rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
 h2:first-child {margin-top: 0;}
 h3 {color: var(--textDark); line-height: 1.4; font-size: 1.25rem; margin-bottom: 0.4rem; padding-top: 1rem;}
-p, ul, ol, blockquote, pre, .box.map {margin-bottom: 1.7em;}
+p, ul, ol, blockquote, pre, .box.map, figure {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
 hr {margin: 3.5rem 0; height: 1px; background: rgba(0,0,0,0.1); border: 0;}
 p > img {border-radius: 1rem; overflow: hidden;}
 pre {overflow: auto; background: var(--light); padding: 0.75rem 1rem; border: 0.1rem solid var(--light); border-radius: 0.25rem; font-size: 0.95rem;}
 blockquote {font-style: italic; border-left: 0.25rem solid var(--borderMedium); padding-left: 1.25rem;}
+video, audio {width: 100%;}
 
 /*------------------------*/
 /* logo
@@ -88,6 +89,7 @@ p.map::after {
 /* image
 /*------------------------*/
 
+figure {border-radius: 1rem; overflow: hidden;}
 div:not(.box) > div.image img {border-radius: 0;}
 @media (max-width: 600px) {
     div:not(.box) > div.image {padding: 0;}

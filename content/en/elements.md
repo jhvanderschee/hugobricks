@@ -120,8 +120,16 @@ Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 ---
 ## Youtube video
 
-Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+{{< youtube "qtIqKaDlqXo" "/uploads/youtubeposter.jpg" >}}
 
-{{< youtube id="qtIqKaDlqXo" image="/uploads/youtubeposter.jpg" >}}
+---
+## Video
+
+{{< video "/uploads/video/flowers.mp4" >}}
+
+---
+## Audio
+
+{{< audio "/uploads/audio/jamming.mp3" >}}
 
 {{< /brick_wide >}}
