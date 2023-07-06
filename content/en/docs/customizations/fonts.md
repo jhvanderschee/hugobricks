@@ -28,9 +28,8 @@ The font files are stored in the '/static/fonts/' directory of the theme. The fo
     src: url('/fonts/heebo-v21-latin-600.woff2') format('woff2');
 }
 
-body, input, textarea, select, 
-a.logo > div.has_subtitle > div span:nth-child(2) {
-    font-family: 'Heebo', sans-serif;
+:root {
+    --fontTitles: 'Signika', sans-serif;
+    --fontBody: 'Heebo', sans-serif;
 }
-h1, h2, a.logo {font-family: 'Signika', sans-serif;}
 ```
