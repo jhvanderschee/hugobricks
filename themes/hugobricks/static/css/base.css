@@ -33,6 +33,13 @@ blockquote {font-style: italic; border-left: 0.25rem solid var(--borderMedium); 
 video, audio {width: 100%;}
 
 /*------------------------*/
+/* fonts
+/*------------------------*/
+
+body, input, textarea, select, a.logo > div.has_subtitle > div span:nth-child(2) {font-family: var(--fontBody);}
+h1, h2, a.logo {font-family: var(--fontTitles);}
+
+/*------------------------*/
 /* logo
 /*------------------------*/
 
