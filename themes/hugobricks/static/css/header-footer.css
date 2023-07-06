@@ -148,7 +148,7 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
     transition: none;
     position: absolute;
 }
-body.mobilemenu #togglemenu {display: block;}
+body.mobilemenu #togglemenu {display: block; transition: top 0.15s ease-in-out;}
 body.mobilemenu header.sticky + #togglemenu {position: fixed; top: 0.75rem; margin-top: 0;}
 body.mobilemenu header .nav {display: grid; transition: grid-template-rows 0.3s ease-in-out;}
 body.mobilemenu header > div.container {display: grid; grid-template-areas: "logo cta" "menu menu";}
@@ -166,10 +166,11 @@ body.mobilemenu header > div.container > div:nth-child(2) {
     z-index: 2;
     top: 0;
     height: 100vh;
+    overflow-y: auto;
 }
 body.mobilemenu header > div.container > div:nth-child(3) {grid-area: cta;}
 body.mobilemenu header > .container.has_cta > div:nth-child(3) .button {margin-right: 3rem;}
-body.mobilemenu header nav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 4.5rem 0;}
+body.mobilemenu header nav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 3.85rem 0 4.5rem 0;}
 body.mobilemenu header nav > ul > li::after {content: none;}
 body.mobilemenu header nav > ul > li > ul {
     position: relative; 
@@ -194,9 +195,10 @@ body.mobilemenu.menushown #togglemenu {
     background: transparent url(/img/close.svg) center center / 2rem auto no-repeat; 
     z-index: 10; 
     position: fixed; 
-    top: 0.75rem; 
+    top: 3.75rem;
     filter: invert(1);
 }
+body.mobilemenu.menushown header.sticky #togglemenu {top: 0.75rem;}
 body.mobilemenu.menushown header > div.container > div:nth-child(2) {transform: translateX(0%);}
 body.mobilemenu.menushown header nav > ul > li a {color: white;}
 
