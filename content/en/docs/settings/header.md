@@ -18,7 +18,7 @@ This numeric value determines at which width the class 'mobilemenu' is added to 
 
 When you choose CSS 'sticky' header refers to a type of header element that maintains its position on the screen while scrolling, up until a specified point where it becomes fixed. Unlike a regular static header, a sticky header will stay visible to the user, even as they scroll through the content on the webpage. A 'sticky' header is achieved by applying the CSS position property with a value of 'sticky' to the header element.
 
-### Menuitems:
+### Menuitems
 
 This is an array that holds the footer menu. The items in this array consist of a `title` and a `link` field. In the title you put the page title and in link you put the relative url of that page.
 
