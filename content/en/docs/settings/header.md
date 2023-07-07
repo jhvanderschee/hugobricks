@@ -24,22 +24,15 @@ This is an array that holds the footer menu. The items in this array consist of 
 
 ### Call To Action (CTA)
 
-In terms of UX/UI a so called Call To Action (CTA)  prompts users to take a specific action on a website or application. CTAs are typically designed in a way that grabs the user's attention.
+In terms of UX/UI a so called Call To Action (CTA) prompts users to take a specific action on a website or application. It is the button in the top right corner of each page. You can turn the CTA 'on' or 'off' by setting the 'active' variable to true or false. The title and the link speak define the text and link of the button.
 
 
 ```
 cta:
-
   active: true
-  
   title: Get started
-  
   link: /get-started/
-  
 ```
-
-Active it (or not), then define the internal/relative hyperlink it by giving the given page the button clik leads to.
-
 
 ### Preheader
 
@@ -55,7 +48,3 @@ preheader:
 ```
 
 as you can see in the data/header.yaml hugobricks relevant code snippet.
-
-
-
-> NOTE: And that's it! Feel free to have a look companion 'footer' section in the documentation.
