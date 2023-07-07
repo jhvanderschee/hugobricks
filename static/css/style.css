@@ -32,7 +32,7 @@ img {filter: grayscale(0);}
 /* black_2_textDark
 /*------------------------*/
 
-div.map::after, .black_2_textDark {filter: contrast(0.7) sepia(1) hue-rotate(160deg)!important;}
+.map::after, .black_2_textDark {filter: contrast(0.7) sepia(1) hue-rotate(160deg)!important;}
 
 /*------------------------*/
 /* black_2_textMedium
