@@ -24,7 +24,7 @@ This is an array that holds the footer menu. The items in this array consist of 
 
 ### Call To Action (CTA)
 
-The header CTA is the button in the top right corner of each page. You can turn the CTA 'on' or 'off' by setting the 'active' variable to true or false. The title and the link speak define the text and link of the button.
+The header CTA is the button in the top right corner of each page. You can turn the CTA 'on' or 'off' by setting the 'active' variable to true or false. The title and the link define the text and link of the button.
 
 
 ```
