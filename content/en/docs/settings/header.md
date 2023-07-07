@@ -36,9 +36,7 @@ cta:
 
 ### Preheader
 
-Preheader is defined as the first 'section', at the top of the page body.
-
-If you activate it, feel free to choose dark or light style (playing with the text color and background color). Then show the relevant text to show.
+Preheader is defined as the first 'section', at the top of the page body. You can activate it, choose a dark or light style and define which text to show.
 
 ```
 preheader: 
@@ -46,5 +44,3 @@ preheader:
   is_light: true
   text: Open Mon-Fri from 9.00-5.00
 ```
-
-as you can see in the data/header.yaml hugobricks relevant code snippet.
