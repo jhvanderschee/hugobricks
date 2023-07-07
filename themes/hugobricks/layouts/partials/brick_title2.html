@@ -5,10 +5,10 @@
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
+{{- $imagesrc := substr (index (split (index (findRE `!\[[^\]]*?]\(([^\)]*?)\)` $inner 1) 0) "](") 1) 0 -1 -}}
 {{- $inner = markdownify $inner -}}
 {{- $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 -}}
 {{- $inner = replace $inner $image "" 1 -}}
-{{- $imagesrc := index (split $image `"`) 1 -}}
 {{- if $imagesrc -}}
 <section class="title bgimage transparent_header hasbackgroundcolor">
     <div class="bgimage" style="background: url('{{ $imagesrc }}') center center / cover no-repeat;">
