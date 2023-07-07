@@ -195,9 +195,10 @@ body.mobilemenu.menushown #togglemenu {
     background: transparent url(/img/close.svg) center center / 2rem auto no-repeat; 
     z-index: 10; 
     position: fixed; 
-    top: 3.75rem;
+    top: 1.5rem;
     filter: invert(1);
 }
+body.mobilemenu.menushown .preheader + header #togglemenu {top: 3.75rem;}
 body.mobilemenu.menushown header.sticky #togglemenu {top: 0.75rem;}
 body.mobilemenu.menushown header > div.container > div:nth-child(2) {transform: translateX(0%);}
 body.mobilemenu.menushown header nav > ul > li a {color: white;}
