@@ -272,13 +272,12 @@ details {
     border: 0.1rem solid var(--borderMedium);
     border-left: 0;
     border-right: 0;
-    padding: 0.35rem 0;
 }
 details summary {
     position: relative;
     display: block;
-    cursor: pointer;  
-    padding-right: 2rem; 
+    cursor: pointer;
+    padding: 0.35rem 2rem 0.25rem 0; 
 }
 details summary::after {
     content: "";
