@@ -23,6 +23,7 @@ h1 + p {padding-top: 0.5rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
 h2:first-child {margin-top: 0;}
 h3 {color: var(--textDark); line-height: 1.4; font-size: 1.25rem; margin-bottom: 0.4rem; padding-top: 1rem;}
+div + h3 {padding-top: 3rem;}
 p, ul, ol, blockquote, pre, .box.map, figure, details {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
@@ -203,14 +204,14 @@ ul.grid li {list-style: none; position: relative;}
 .avatar {border-radius: 100%; object-fit: cover; filter: grayscale(100%);}
 
 /*------------------------*/
-/* team
+/* people
 /*------------------------*/
 
-ul.team li {text-align: center;}
-ul.team li .box {height: 100%; padding: 2.25rem clamp(2rem, 4vw, 3.5rem);}
-ul.team li .avatar {height: 8rem; width: 8rem; margin: 0.5rem auto 0.15rem;}
-ul.team li .function {color: var(--textDark); margin: -0.25rem 0 1.5rem;}
-ul.team ul.buttons {justify-content: center;}
+ul.people li {text-align: center;}
+ul.people li .box {height: 100%; padding: 2.25rem clamp(2rem, 4vw, 3.5rem);}
+ul.people li .avatar {height: 8rem; width: 8rem; margin: 0.5rem auto 0.15rem;}
+ul.people li .function {color: var(--textDark); margin: -0.25rem 0 1.5rem;}
+ul.people ul.buttons {justify-content: center;}
 
 /*------------------------*/
 /* tabs
