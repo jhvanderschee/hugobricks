@@ -282,7 +282,7 @@ details summary {
 details summary::after {
     content: "";
     border: 0.1rem solid var(--textMedium);
-    transform: rotate(45deg) translateY(-50%);
+    transform: translateY(-50%) rotate(45deg);
     display: block;
     position: absolute;
     width: 0.75rem;
@@ -290,7 +290,7 @@ details summary::after {
     top: 50%;
     border-left: 0;
     border-bottom: 0;
-    right: 1rem;
+    right: 0.5rem;
 }
 details summary::-webkit-details-marker,
 details summary::marker {
@@ -307,7 +307,7 @@ details > div > div {overflow: hidden;}
 details[open] > div {animation: animate 0.15s 0s 1 normal forwards;}
 details[open] summary {color: var(--textDark); font-weight: 600;}
 details[open] summary::after {
-    transform: rotate(-45deg) translateY(calc(-50% + 0.1rem));
+    transform: translateY(calc(-50% + 0.1rem)) rotate(-45deg);
     right: 0.25rem;
     transition: all 0.15s ease-in-out;
 }
