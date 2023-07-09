@@ -80,9 +80,9 @@ div.box p img {border-radius: 0;}
 /* map
 /*------------------------*/
 
-p.map {aspect-ratio: 2.25; width: 100%; border-radius: 1rem;}
-p.map {position: relative; background-position: center calc(50% + 2rem); background-repeat: repeat;}
-p.map::after {
+.map {aspect-ratio: 2.25; width: 100%; border-radius: 1rem;}
+.map {position: relative; background-position: center calc(50% + 2rem); background-repeat: repeat;}
+.map::after {
     content: ""; 
     width: 100%; 
     height: 100%; 
