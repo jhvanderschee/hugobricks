@@ -158,7 +158,7 @@ Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et 
 
 Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris.
 
-{{< gallery "/uploads/gallery/" >}}
+{{< gallery dir="/uploads/gallery/" >}}
 
 Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris.
 
