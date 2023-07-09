@@ -277,7 +277,8 @@ details {
 details summary {
     position: relative;
     display: block;
-    cursor: pointer;   
+    cursor: pointer;  
+    padding-right: 2rem; 
 }
 details summary::after {
     content: "";
@@ -307,8 +308,8 @@ details > div > div {overflow: hidden;}
 details[open] > div {animation: animate 0.15s 0s 1 normal forwards;}
 details[open] summary {color: var(--textDark); font-weight: 600;}
 details[open] summary::after {
-    transform: rotate(-45deg) translateY(-50%);
-    right: 0.2rem;
+    transform: rotate(-45deg) translateY(calc(-50% + 0.1rem));
+    right: 0.25rem;
     transition: all 0.15s ease-in-out;
 }
 
