@@ -260,6 +260,58 @@ ul.tabs li.selected a::after {transform: scaleX(1) translateY(50%);}
 .image-gallery li a {display: block;}
 .image-gallery li a img {width: 100%; display: block; border-radius: 0.5rem;}
 
+
+/*------------------------*/
+/* faq
+/*------------------------*/
+@keyframes animate {
+    from {grid-template-rows: 0fr;}
+    to {grid-template-rows: 1fr;}
+}
+details {
+    border: 0.1rem solid var(--borderMedium);
+    border-left: 0;
+    border-right: 0;
+    padding: 0.35rem 0;
+}
+details summary {
+    position: relative;
+    display: block;
+    cursor: pointer;   
+}
+details summary::after {
+    content: "";
+    border: 0.1rem solid var(--textMedium);
+    transform: rotate(45deg) translateY(-50%);
+    display: block;
+    position: absolute;
+    width: 0.75rem;
+    height: 0.75rem;
+    top: 50%;
+    border-left: 0;
+    border-bottom: 0;
+    right: 1rem;
+}
+details summary::-webkit-details-marker,
+details summary::marker {
+ display: none; 
+ content: "";
+}
+details + details {border-top: 0;}
+details > div {
+    display: grid;
+    grid-template-rows: 0fr;
+    padding: 1rem 0 1.5rem 0;
+}
+details > div > div {overflow: hidden;}
+details[open] > div {animation: animate 0.15s 0s 1 normal forwards;}
+details[open] summary {color: var(--textDark); font-weight: 600;}
+details[open] summary::after {
+    transform: rotate(-45deg) translateY(-50%);
+    right: 0.2rem;
+    transition: all 0.15s ease-in-out;
+}
+
 /*------------------------*/
 /* youtube shortcode
 /*------------------------*/

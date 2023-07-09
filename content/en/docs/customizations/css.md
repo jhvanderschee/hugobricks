@@ -9,6 +9,10 @@ Want to go all the way with customization? No problem! With CSS overrides you ca
 /*------------ CSS overrides below --------------*/
 ```
 
+&nbsp;
+
+### Customization examples
+
 Some examples of website that use Hugobricks:
 
 - https://www.aadprins.preview.usecue.com
