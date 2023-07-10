@@ -31,7 +31,7 @@ menuitems:
         link: /faq/
       - title: 404 Page
         link: /404.html
-  - title: Documentation
+  - title: Docs
     link: /docs/
   - title: Blog
     link: /blog/
