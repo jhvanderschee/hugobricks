@@ -38,6 +38,8 @@ menuitems:
         link: /404.html
   - title: Documentation
     link: /docs/
+  - title: Blog
+    link: /blog/
 cta:
   active: true
   title: Get started
