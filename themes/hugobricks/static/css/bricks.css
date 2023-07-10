@@ -118,7 +118,7 @@ section.posts .filter {display: flex; justify-content: flex-end; align-items: ce
 section.posts .filter .tags {display: flex; margin: 0; gap: 0.75rem;}
 section.posts .filter .tags li {list-style: none;}
 section.posts .filter .tags.nofilter li {display: none;}
-section.posts #loadmoreposts {position: relative; left: 50%; transform: translateX(-50%); padding-left: 1.75rem; padding-right: 1.75rem;}
+section.posts #loadmoreposts {position: relative; left: 50%; transform: translateX(-50%); padding-left: 1.5rem; padding-right: 1.5rem;}
 section.posts .filter .tags li {
     list-style: none; 
     background: var(--textDark);
