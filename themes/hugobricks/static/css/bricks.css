@@ -123,7 +123,7 @@ section.posts .filter .tags li {
     list-style: none; 
     background: var(--textDark);
     color: white;
-    padding: 0 0.5rem 0 1.1rem;
+    padding: 0 0.6rem 0 1rem;
     font-size: 0.9rem;
     border-radius: 1.15rem;
     display: flex;
