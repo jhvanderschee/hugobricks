@@ -1,5 +1,6 @@
 ---
 title: The Stackless Way
+image: /uploads/gallery/05.jpg
 date: 2021-09-14
 tags:
   - jamstack

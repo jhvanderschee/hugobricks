@@ -1,5 +1,6 @@
 ---
 title: 'Artisanal web development'
+image: /uploads/gallery/02.jpg
 date: 2022-09-30
 tags:
   -

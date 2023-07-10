@@ -1,5 +1,6 @@
 ---
 title: Has WebP landed yet?
+image: /uploads/gallery/03.jpg
 date: 2022-09-11
 tags:
   - code
