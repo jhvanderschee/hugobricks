@@ -1,5 +1,5 @@
 ---
-title: Blog posts
+title: Blog
 url: /blog/
 ---
 {{< brick_posts >}}
