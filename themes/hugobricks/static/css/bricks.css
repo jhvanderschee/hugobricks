@@ -106,7 +106,7 @@ section.posts .container.small {margin-bottom: 4rem; text-align: center;}
 section.posts .grid {grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));}
 section.posts .grid img {aspect-ratio: 2; width: 100%; object-fit: cover; border-radius: 1rem; margin-bottom: 0.251rem;}
 section.posts .grid .meta, section.posts .grid .meta > div {display: flex; align-items: center; gap: 0.5rem;}
-section.posts .grid .meta {color: var(--textDark); position: relative; margin: 0 0 0.75rem; gap: 1rem; font-size: 0.9rem;}
+section.posts .grid .meta {color: var(--textDark); position: relative; margin: 0 0 0.85rem; gap: 1rem; font-size: 0.9rem;}
 section.posts .grid .meta img {height: 1rem; width: 1rem; position: relative; border-radius: 0;}
 section.posts .grid .meta ul {margin: 0; display: inline;}
 section.posts .grid .meta ul li {display: inline;}
