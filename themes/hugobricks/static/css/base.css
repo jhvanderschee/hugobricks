@@ -22,7 +22,8 @@ h1 {font-size: 3rem; margin-bottom: 1.75rem;}
 h1 + p {padding-top: 0.5rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
 h2:first-child {margin-top: 0;}
-h3 {color: var(--textDark); line-height: 1.4; font-size: 1.25rem; margin-bottom: 0.4rem; padding-top: 1rem;}
+.container.post h2,
+h3 {color: var(--textDark); line-height: 1.4; font-size: 1.25rem; margin-top: 0; margin-bottom: 0.4rem; padding-top: 1rem; font-weight: bold;}
 div + h3 {padding-top: 3rem;}
 p, ul, ol, blockquote, pre, .box.map, figure, details {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
@@ -39,6 +40,7 @@ video, audio {width: 100%;}
 /* fonts
 /*------------------------*/
 
+.container.post h2,
 body, input, textarea, select, a.logo > div.has_subtitle > div span:nth-child(2) {font-family: var(--fontBody);}
 h1, h2, a.logo {font-family: var(--fontTitles);}
 
@@ -70,7 +72,13 @@ section:not(.hasbackgroundcolor) + section:not(.hasbackgroundcolor) {padding-top
 section.hasbackgroundcolor + footer {margin-top: 7.5rem;}
 section.stickstofooter + footer {margin-top: 0; border-top: 0;}
 section .container.post {max-width: 50rem;}
-section .container.post:not(.small) {margin-top: 1rem;}
+section .container.post:not(.small) {margin-top: 1.5rem;}
+section .container.post:not(.small) p:first-child,
+section .container.post:not(.small) p:first-child a {
+    color: var(--textDark);
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
 
 /*------------------------*/
 /* box
