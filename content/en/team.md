@@ -9,8 +9,6 @@ title: Our team
 
 Lorem dolor sit amet, consectetur adipiscing elit. Nam non laoreet nisi, ac hendrerit lacus. Sed eget dapibus dui. Phasellus non ante sollicitudin, ultrices ex et, convallis orci. Etiam laoreet justo neque. Aenean nec porta mauris, ut luctus nibh.
 
-{{< people >}}
-
 {{< /brick_team >}}
 {{< brick_title >}}
 
