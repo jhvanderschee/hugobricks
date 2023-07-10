@@ -2,7 +2,7 @@
 title: 'Artisanal web development'
 date: 2022-09-30
 tags:
-  - code
+  -
 ---
 
 Yesterday [David Large](https://www.linkedin.com/in/david-large-4875b81b2/?originalSubdomain=nz) invited me to his [Static Feedback](https://www.youtube.com/watch?v=MuAe7aZu0Nw) show. It was a big honor to be featured there. The interview went by in a flash... and I want this post to summarize it and add some points that we may have missed.
