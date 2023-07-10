@@ -1,5 +1,8 @@
 ---
 title: Code is poetry
+date: 2022-09-24
+tags:
+  - code
 ---
 
 I found the words 'code is poetry' in the footer of [the new Wordpress frontpage](https://wordpress.org/), that has been launched recently. 

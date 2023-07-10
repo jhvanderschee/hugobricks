@@ -1,5 +1,8 @@
 ---
 title: The Stackless Way
+date: 2021-09-14
+tags:
+  - code
 ---
 
 The Stackless Way wants to give beginners a gradual path from simple HTML into more power without encountering frameworks or build tools as a barrier. It shares my conviction that 'there are no shortcuts' and '[you need to master your sword](/blog/code-warriors)'.

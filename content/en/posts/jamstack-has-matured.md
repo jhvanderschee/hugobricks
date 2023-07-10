@@ -1,5 +1,9 @@
 ---
 title: Jamstack has matured
+date: 2022-10-19
+tags:
+  - code
+  - jamstack
 ---
 
 In the beginning Jamstack was fun. The main SSG was Jekyll, which was simple and open-source. It was not only free to use, but also free to host (on Github). Jamstack websites were blazing fast and scored high in Google Lighthouse. There were plenty of free CMS options to choose from. The Jamstack looked very promising! But times have changed...

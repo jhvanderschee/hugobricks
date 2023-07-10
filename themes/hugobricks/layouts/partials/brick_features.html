@@ -14,12 +14,8 @@
     <div class="container">
         <ul class="grid features">
             {{ range after 1 $parts }}
-                {{- $imageurl := index (split (index (findRE `(?s)src=".*?"` (markdownify .) 1) 0) `"`) 1 -}}
-                {{- $type := "" -}}
-                {{- if in $imageurl "/icons/" -}}{{- $type = "has_icon" -}}{{- end -}}
-                {{- if in $imageurl "/illustrations/" -}}{{- $type = "has_illustration" -}}{{- end -}}
-                <li class="{{ $type }}">
-                {{- replace (markdownify .) `<p><img` `<p class="image"><img class="black_2_accent"` | safeHTML -}}
+                <li class="has_icon">
+                    {{- replace (markdownify .) `<p><img` `<p class="image"><img class="black_2_accent"` | safeHTML -}}
                 </li>
             {{ end }}
         </ul>

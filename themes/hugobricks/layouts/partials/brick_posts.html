@@ -1,0 +1,47 @@
+
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/posts.md' file." -}}
+    {{- with page.Site.GetPage "bricks/posts.md" -}}
+        {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+{{- $posts := where page.Site.RegularPages "Section" "posts" -}}
+<section class="posts">
+    <div class="container small">
+        {{- markdownify $inner -}}
+    </div>
+    <div class="container">
+        <div class="filter">
+            <select id="filter" class="multiselecttags" multiple autocomplete="off">
+                {{ range $name, $taxonomy := page.Site.Taxonomies.tags }}
+                    <option value="{{ $name | urlize }}">{{ $name }}</option>
+                {{ end }}
+            </select>
+        </div>
+        <ul class="contentitems grid posts">
+            {{ range $index,$post := $posts }}
+                <li class="item{{ range .Params.tags }} tag_{{ . }}{{ end }}">
+                        <img data-src="{{ if .Params.image }}{{ .Params.image }}{{ else }}/uploads/gallery/0{{ add (mod $index 5) 1 }}.jpg{{ end }}" alt="{{ .Title }}" style="cursor: pointer;" onclick="document.location.href='{{ .RelPermalink }}';" />
+                        <h3>{{ .Title }}</h3>
+                        <div class="meta">
+                            <div>
+                                <img src="/uploads/icons/material-symbols/200/rounded/calendar_month-fill.svg"class="black_2_textDark" alt="" />
+                                {{ .Date | time.Format ":date_medium"}}
+                            </div>
+                        </div>
+                        <div class="summary">
+                            <p>{{ substr .Summary 0 190 | safeHTML }}...</p>
+                            <p><a href="{{ .RelPermalink }}" class="button ghost smaller">Read more</a></p>
+                        </div>
+                </li>
+            {{ end }}
+            <li class="placeholder"></li>
+            <li class="placeholder"></li>
+        </ul>
+        <a class="button" id="loadmoreposts" onclick="loadMorePosts();">Load more posts</a>
+        <script src="/js/filter.js" charset="utf-8"></script>
+    </div>
+</section>
+
+

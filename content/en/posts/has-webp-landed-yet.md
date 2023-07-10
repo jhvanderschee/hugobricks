@@ -1,6 +1,10 @@
 ---
 title: Has WebP landed yet?
+date: 2022-09-11
+tags:
+  - code
 ---
+
 Those who know me, know I care about DX just as much as UX. I will not use a feature that requires prefixes, polyfills or other wizardry. I can wait for a feature to land in your browser. The question I asked myself today (from this perspective) was: Has WebP landed yet?
 
 Although it is supported in almost any browser, it is not fully supported in [Safari on macOS](https://caniuse.com/webp). Safari supports WebP, but it is not working on macOS versions below Big Sur (macOS 11). The question is... [how many people are using Big Sur](https://apple.stackexchange.com/questions/417757/any-data-on-big-sur-market-share)? Well, since Big Sur was introduced in june 2020 you cannot expect its market share to be very big by now. We could ignore those outdated Safari lovers on Mac, but that is not my style. 
