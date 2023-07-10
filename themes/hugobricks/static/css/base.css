@@ -70,7 +70,7 @@ section:not(.hasbackgroundcolor) + section:not(.hasbackgroundcolor) {padding-top
 section.hasbackgroundcolor + footer {margin-top: 7.5rem;}
 section.stickstofooter + footer {margin-top: 0; border-top: 0;}
 section .container.post {max-width: 50rem;}
-section .container.post:not(.small) {margin-top: 2rem;}
+section .container.post:not(.small) {margin-top: 1rem;}
 
 /*------------------------*/
 /* box
