@@ -2,8 +2,8 @@
     {{- range .fields -}}
         {{- if eq .input_type `textarea` -}}
             <div>
-                <label {{ if eq .placeholder true }}class="sr-only"{{ end }} for="{{ .name }}">{{ .placeholder }}</label>
-                <textarea name="{{ .name }}" name="{{ .name }}" id="{{ .name }}" cols="30" rows="10" class="form-control" {{ if eq .placeholder true }}placeholder="{{ .placeholder }}"{{ end }} required></textarea>
+                <label {{ if eq $.placeholder true }}class="sr-only"{{ end }} for="{{ .name }}">{{ .placeholder }}</label>
+                <textarea name="{{ .name }}" name="{{ .name }}" id="{{ .name }}" cols="30" rows="10" class="form-control" {{ if eq $.placeholder true }}placeholder="{{ .placeholder }}"{{ end }} required></textarea>
             </div>
         {{- else if eq .input_type `radio` -}}
             <div class="radio">
@@ -21,7 +21,7 @@
             </div>
         {{- else -}}
             <div>
-                <label {{ if eq .placeholder true }}class="sr-only"{{ end }} for="{{ .name }}">{{ .placeholder }}</label>
+                <label {{ if eq $.placeholder true }}class="sr-only"{{ end }} for="{{ .name }}">{{ .placeholder }}</label>
                 <input type="{{ .input_type }}" name="{{ .name }}" id="{{ .name }}" class="form-control" {{ if eq .placeholder true }}placeholder="{{ .placeholder }}"{{ end }} required>
             </div>
         {{- end -}}
