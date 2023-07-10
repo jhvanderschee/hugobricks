@@ -21,8 +21,15 @@
         </div>
         <ul class="contentitems grid posts">
             {{ range $index,$post := $posts }}
+                {{- $postimage := (print `/uploads/gallery/0` (string (add (mod $index 5) 1)) `.jpg`) -}}
+                {{- if .Params.image -}}
+                    {{- $postimage = .Params.image -}}
+                {{- end -}}
+                {{- if (resources.GetMatch $postimage) -}}
+                    {{- $postimage = ((resources.GetMatch $postimage).Fill `1200x600 jpg Smart q50`).RelPermalink -}}
+                {{- end -}}
                 <li class="item{{ range .Params.tags }} tag_{{ . }}{{ end }}">
-                        <img data-src="{{ if .Params.image }}{{ .Params.image }}{{ else }}/uploads/gallery/0{{ add (mod $index 5) 1 }}.jpg{{ end }}" alt="{{ .Title }}" style="cursor: pointer;" onclick="document.location.href='{{ .RelPermalink }}';" />
+                        <img data-src="{{ $postimage }}" alt="{{ .Title }}" style="cursor: pointer;" onclick="document.location.href='{{ .RelPermalink }}';" />
                         <h3>{{ .Title }}</h3>
                         <div class="meta">
                             <div>
@@ -39,7 +46,7 @@
             <li class="placeholder"></li>
             <li class="placeholder"></li>
         </ul>
-        <a class="button" id="loadmoreposts" onclick="loadMorePosts();">Load more posts</a>
+        <a class="button" id="loadmoreposts" onclick="loadMorePosts();">Load more posts...</a>
         <script src="/js/filter.js" charset="utf-8"></script>
     </div>
 </section>
