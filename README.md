@@ -61,6 +61,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] Ordered list
 - [x] Unordered lists
 - [x] Subpages
+- [x] Gallery
 
 ### Hugobricks workflow
 
