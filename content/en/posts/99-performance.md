@@ -4,7 +4,7 @@ image: /uploads/gallery/02.jpg
 date: 2023-07-11
 ---
 
-This template scores a (near) [perfect Google Lighthouse score](https://pagespeed.web.dev/analysis/https-www-hugobricks-preview-usecue-com/je4uqrt6nj?form_factor=mobile). Some people like fast cars. I like fast websites. How i did that? Let me explain.
+This template scores a (near) [perfect Google Lighthouse score](https://pagespeed.web.dev/analysis/https-www-hugobricks-preview-usecue-com/je4uqrt6nj?form_factor=mobile). Some people like fast cars. I like fast websites. But how to get to a perfect Google Lighthouse score? Let me explain.
 
 You might feel that it is nearly impossible to get to a perfect 100% score. You minified your Javascript, properly scaled your images and even combined some requests, but that did not help nearly enough. The problem is: you might be looking at it from the wrong angle. I build 100% scoring websites on a daily basis, so obviously it is very well possible to get a perfect score on all your websites with little effort. I will try to explain what we want to achieve and how we can achieve that.
 
