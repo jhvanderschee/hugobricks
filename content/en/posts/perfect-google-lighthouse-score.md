@@ -1,5 +1,5 @@
 ---
-title: Perfect Google Lighthouse score
+title: A perfect Google Lighthouse score
 image: /uploads/gallery/02.jpg
 date: 2023-07-11
 ---
