@@ -2,6 +2,8 @@
 title: A perfect Google Lighthouse score
 image: /uploads/gallery/02.jpg
 date: 2023-07-11
+tags:
+  - performance
 ---
 
 This template scores a (near) [perfect Google Lighthouse score](https://pagespeed.web.dev/analysis/https-www-hugobricks-preview-usecue-com/je4uqrt6nj?form_factor=mobile). Some people like fast cars. I like fast websites. But how to get to a perfect Google Lighthouse score? Let me explain.
