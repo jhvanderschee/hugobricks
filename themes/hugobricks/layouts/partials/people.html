@@ -5,7 +5,7 @@
             <img src="{{ .image }}" alt="{{ .name }}" class="avatar colorize_image" />
             <h3>{{- .name -}}</h3>
             <div class="function">{{- .function | safeHTML -}}</div>
-            <p>{{- .description -}}</p>
+            <p>{{- .description | safeHTML -}}</p>
             <ul class="buttons">
                 {{- if .phone -}}
                     <li><a href="tel:{{ replace .phone ` ` `` }}" class="button icon"><img src="/img/phone.svg" alt="{{ .phone }}" /></a></li>
