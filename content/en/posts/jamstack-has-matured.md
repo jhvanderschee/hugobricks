@@ -15,7 +15,7 @@ Sure... you can still use Jekyll. But Jekyll lost its most important developer a
 
 ## Hosting is no longer free
 
-A lot of VC driven companies jumped on the Jamstack bandwagon (including Netlify). We have currently arrived at the point in time where these companies want to get their investments back. Sure, you can still use Jekyll on Github for free, but without new features and Microsoft now owning Github, that solution is not very future-proof. Other hosting options are rapidly increasing in price. Where you initially could buy cheap 'all-you-can-eat' packages and even 'free static hosting', you now have to pay for literally everything. The popular virtualization strategy also guarantees insanely slow builds. Having to wait more than 2 minutes for your site to deploy is no exception, while this is [not needed](/blog/oh-jamstack-grow-up/) [at all](/blog/gatsby-has-grown-up/).
+A lot of VC driven companies jumped on the Jamstack bandwagon (including Netlify). We have currently arrived at the point in time where these companies want to get their investments back. Sure, you can still use Jekyll on Github for free, but without new features and Microsoft now owning Github, that solution is not very future-proof. Other hosting options are rapidly increasing in price. Where you initially could buy cheap 'all-you-can-eat' packages and even 'free static hosting', you now have to pay for literally everything. The popular virtualization strategy also guarantees insanely slow builds. Having to wait more than 2 minutes for your site to deploy is no exception, while this is [not needed](https://www.usecue.com/blog/oh-jamstack-grow-up/) [at all](https://www.usecue.com/blog/gatsby-has-grown-up/).
 
 ## CMS systems have become expensive
 
@@ -25,7 +25,7 @@ Unfortunately, the latest release of Prose is from 2014. They never got much fur
 
 ## Websites have become slow
 
-The primary advantage of Jamstack websites has even faded away. Jamstack websites used to guarantee fireworks in your Google Lighthouse... no... literally fireworks. Today, however, Jamstack websites score on average [below](/blog/jamstack-means-performance-right/) regular websites in Google Lighthouse. This is caused by the arrival of popular new SSG's that serve crazy amounts of Javascript. That is caused by the hype of SPA's (Single Page Applications). SPA's were a requirement in the beginning of PWA's (Progressive Web Apps), which boosted their popularity. Currently, SPA's are often used in the wrong cases.
+The primary advantage of Jamstack websites has even faded away. Jamstack websites used to guarantee fireworks in your Google Lighthouse... no... literally fireworks. Today, however, Jamstack websites score on average [below](https://www.usecue.com/blog/jamstack-means-performance-right/) regular websites in Google Lighthouse. This is caused by the arrival of popular new SSG's that serve crazy amounts of Javascript. That is caused by the hype of SPA's (Single Page Applications). SPA's were a requirement in the beginning of PWA's (Progressive Web Apps), which boosted their popularity. Currently, SPA's are often used in the wrong cases.
 
 ## Conclusion
 

@@ -6,7 +6,7 @@ tags:
   - jamstack
 ---
 
-The Stackless Way wants to give beginners a gradual path from simple HTML into more power without encountering frameworks or build tools as a barrier. It shares my conviction that 'there are no shortcuts' and '[you need to master your sword](/blog/code-warriors)'.
+The Stackless Way wants to give beginners a gradual path from simple HTML into more power without encountering frameworks or build tools as a barrier. It shares my conviction that 'there are no shortcuts' and '[you need to master your sword](https://www.usecue.com/blog/code-warriors)'.
 
 ## Good old HTML
 
