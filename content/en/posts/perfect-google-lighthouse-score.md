@@ -31,4 +31,4 @@ The solution is simple. The most effective strategy for getting a perfect Google
 
 A final piece of advice: if you feel insecure about programming [Vanilla Javascript](https://gomakethings.com/), please let [Chris Ferdinandy](https://gomakethings.com/) help you. He is an advocate for a simpler World Wide Web and loves to teach. Go make simpler things!
 
-*Note that the template Hugobricks is based on the MIT licensed [Hugoplate}(https://hugoplate.netlify.app) from Zeon studio that scores 20 points lower on Perforance (not 99, but around 80) in Google Lighthouse. This article explains why.*
+*Note that the template Hugobricks is based on the MIT licensed [Hugoplate}(https://hugoplate.netlify.app) from Zeon studio. Hugoplate scores 20 points lower on Perforance in Google Lighthouse (not 99, but around 80). This article explains why.*
