@@ -74,11 +74,7 @@ section.stickstofooter + footer {margin-top: 0; border-top: 0;}
 section .container.post {max-width: 50rem;}
 section .container.post:not(.small) {margin-top: 1.5rem;}
 section .container.post:not(.small) p:first-child,
-section .container.post:not(.small) p:first-child a {
-    color: var(--textDark);
-    font-size: 1.6rem;
-    line-height: 1.4;
-}
+section .container.post:not(.small) p:first-child a {color: var(--textDark); font-size: 1.52rem; line-height: 1.4;}
 
 /*------------------------*/
 /* box
