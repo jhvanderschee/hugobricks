@@ -74,7 +74,7 @@
       <div>
         <div class="container">
           <div>
-            {{ if (index .Site.Data .Language.Lang).footer.show_logo }}{{ partial "logo.html" . }}{{ else }}<a href="/">&copy; {{ (index .Site.Data .Language.Lang).general.title }}{{ if (index .Site.Data .Language.Lang).header.logo_subtitle }} {{ (index .Site.Data .Language.Lang).header.logo_subtitle }}{{ end }} {{ now.Year }}</a>{{ end }}
+            {{ if (index .Site.Data .Language.Lang).footer.show_logo }}{{ partial "logo.html" . }}{{ else }}<a href="/">&copy; {{ now.Year }} {{ (index .Site.Data .Language.Lang).general.title }}{{ if (index .Site.Data .Language.Lang).header.logo_subtitle }} {{ (index .Site.Data .Language.Lang).header.logo_subtitle }}{{ end }}</a>{{ end }}
           </div>
           <div>
             <ul>
