@@ -1,8 +1,24 @@
 {{- define "content" -}}
         <section class="title">
             <div class="container small post">
-                {{ partial "date.html" . }}
-                <h1>{{ .Title }}</h1>
+                {{ partial "breadcrumbs.html" . }}
+                <h1>{{ .Title | safeHTML }}</h1>
+                <div class="meta">
+                    <div>
+                        <img src="/uploads/icons/material-symbols/200/rounded/calendar_month-fill.svg"class="black_2_textDark" alt="" />
+                        {{ .Date | time.Format ":date_medium"}}
+                    </div>
+                    {{ if index .Params.tags 0 }}
+                    <div>
+                        <img src="/uploads/icons/material-symbols/200/rounded/label-fill.svg"class="black_2_textDark" alt="" />
+                        <ul>
+                            {{ range .Params.tags }}
+                            <li><a href="/blog/?tag={{ . }}">{{ . }}</a>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    {{ end }}
+                </div>
             </div>
         </section>
         <section class="wide">

@@ -1,3 +1,16 @@
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    location.search
+        .substr(1)
+        .split("&")
+        .forEach(function (item) {
+          tmp = item.split("=");
+          if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+        });
+    return result;
+}
+
 const pagesize = 3;
 var multiselecttags_update = function(selectelement, selectEl, pillsEl) {
     
@@ -60,8 +73,19 @@ selectelements.forEach(function(selectelement) {
     pillsEl.classList.add('tags');
     selectelement.parentElement.insertBefore(pillsEl,selectelement);
 
+    var v = findGetParameter('tag');
+    if(v) {
+        for ( var i = 0; i < selectelement.options.length; i++ ) {
+            if ( selectelement.options[i].value == v ) {
+                selectelement.options[i].setAttribute('selected','');
+            }
+        }
+    }
+    
     multiselecttags_update(selectelement, selectEl, pillsEl);
 });
+
+
 updatePostFilter();
 
 function updatePostFilter() {
