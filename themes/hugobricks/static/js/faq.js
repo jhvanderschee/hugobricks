@@ -1,5 +1,5 @@
-const els = document.querySelectorAll("details summary");
-els.forEach( function(el) {
+const detailssummaryels = document.querySelectorAll("details summary");
+detailssummaryels.forEach( function(el) {
   el.addEventListener("click", (e) => {
     if (el.parentElement.hasAttribute("open")) { // since it's not closed yet, it's open!
       e.preventDefault(); // stop the default behavior, meaning - the hiding
