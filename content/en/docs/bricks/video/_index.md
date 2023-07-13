@@ -26,7 +26,7 @@ Place your youtube video brick at wish...
 <!--{{</* youtube "qtIqKaDlqXo" "/uploads/youtubeposter.jpg"  */>}}
 -->
 
-Feel free to see it in action in the 'Elements' page, in this website menu.
+Feel free to see it in action in [the 'Elements' page, in this website](/elements/#video) menu.
 
 > NOTE: tiny 'lightbox' drops of javascript are transparently used here for the nice 'video modal-window-box'
 
