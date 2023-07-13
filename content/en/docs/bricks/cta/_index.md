@@ -34,3 +34,5 @@ Experience the future of web development with Hugo and stackable content bricks.
 ![](/uploads/illustrations/cuate/server.svg)
 
 {{< /brick_cta >}}-->
+
+See the [ brick -  'component'](/elements/#cta) here.
