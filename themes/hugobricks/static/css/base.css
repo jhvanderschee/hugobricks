@@ -317,12 +317,13 @@ details + details {border-top: 0; margin-top: -1.7rem;}
 details > div {
     display: grid;
     grid-template-rows: 0fr;
-    padding: 1rem 0 1.5rem 0;
 }
 details > div > div {overflow: hidden;}
-details[open] > div {animation: opendetails 0.15s 0s 1 normal forwards;}
-details[open].closing > div {animation: closedetails 0.15s 0s 1 normal forwards;}
-details[open] summary {color: var(--textDark);}
+details > div > div::before {content: ""; display: block; height: 1rem;}
+details > div > div::after {content: ""; display: block; height: 1.5rem;}
+details[open] > div {animation: opendetails .15s 0s 1 normal forwards;}
+details[open].closing > div {animation: closedetails .15s 0s 1 normal forwards;}
+details[open] summary {color: var(--textDark); font-weight: 600;}
 details summary::after {transition: all 0.15s ease-in-out;}
 details[open]:not(.closing) summary::after {
     transform: translateY(calc(-50% + 0.1rem)) rotate(-45deg);
