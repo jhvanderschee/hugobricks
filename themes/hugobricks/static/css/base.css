@@ -323,7 +323,7 @@ details > div > div::before {content: ""; display: block; height: 1rem;}
 details > div > div::after {content: ""; display: block; height: 1.5rem;}
 details[open] > div {animation: opendetails .15s 0s 1 normal forwards;}
 details[open].closing > div {animation: closedetails .15s 0s 1 normal forwards;}
-details[open] summary {color: var(--textDark);}
+details[open] summary {color: var(--textDark); font-weight: 600;}
 details summary::after {transition: all 0.15s ease-in-out;}
 details[open]:not(.closing) summary::after {
     transform: translateY(calc(-50% + 0.1rem)) rotate(-45deg);
