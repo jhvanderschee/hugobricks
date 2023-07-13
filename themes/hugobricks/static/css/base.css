@@ -319,7 +319,7 @@ details > div {
     grid-template-rows: 0fr;
 }
 details > div > div {overflow: hidden;}
-details > div > div::before {content: ""; display: block; height: 1rem;}
+details > div > div::before {content: ""; display: block; height: 0.75rem;}
 details > div > div::after {content: ""; display: block; height: 1.5rem;}
 details[open] > div {animation: opendetails .15s 0s 1 normal forwards;}
 details[open].closing > div {animation: closedetails .15s 0s 1 normal forwards;}
