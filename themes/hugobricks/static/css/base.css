@@ -293,6 +293,7 @@ details summary {
     display: block;
     cursor: pointer;
     padding: 0.35rem 2rem 0.25rem 0; 
+    transition: all 0.15s ease-in-out;
 }
 details summary::after {
     content: "";
@@ -321,7 +322,7 @@ details > div {
 details > div > div {overflow: hidden;}
 details[open] > div {animation: opendetails 0.15s 0s 1 normal forwards;}
 details[open].closing > div {animation: closedetails 0.15s 0s 1 normal forwards;}
-details[open] summary {color: var(--textDark); font-weight: 600;}
+details[open] summary {color: var(--textDark);}
 details summary::after {transition: all 0.15s ease-in-out;}
 details[open]:not(.closing) summary::after {
     transform: translateY(calc(-50% + 0.1rem)) rotate(-45deg);
