@@ -7,8 +7,8 @@ body:not(.hidecursor):before {
     left:var(--x);
     right:0;
     bottom:0; 
-    width:1.5rem;
-    height:1.5rem;
+    width:1.4rem;
+    height:1.4rem;
     border-radius:50%;
     transform:translate(-50%,-50%);
     background:#fff;
