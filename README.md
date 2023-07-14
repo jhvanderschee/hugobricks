@@ -35,7 +35,6 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [ ] Stats,
 - [ ] Pricing,
 - [ ] Carousel,
-- [ ] Video,
 - [ ] Blog,
 - [ ] Post,
 - [ ] Related
@@ -62,6 +61,10 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] Unordered lists
 - [x] Subpages
 - [x] Gallery
+- [x] Video (native html5),
+- [ ] Youtube video,
+- [ ] Vimeo video,
+- [ ] more to come ...
 
 ### Hugobricks workflow
 
