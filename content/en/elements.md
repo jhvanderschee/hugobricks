@@ -45,29 +45,6 @@ Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cra
 
 ---
 
-## Call to action 'brick'
-
-'Call to actions' are great way to drive conversion. Read the [documentation](/docs/bricks/cta/) for more info.
-
-
-{{< brick_cta >}}
-
-## Get started with Hugobricks today!
-
-Experience the future of web development with Hugo 
-and stackable content bricks. Build lightning-fast 
-static sites with ease and flexibility.
-
-{{< button2 "Get started now" "/get-started/" >}}
-
-![](/uploads/illustrations/cuate/server.svg)
-
-{{< /brick_cta >}}
-
----
-
-
-
 ## Unordered list 
 
 - Ut lacinia felis [luctus tincidunt](https://www.google.com) vehicula. 
@@ -177,7 +154,7 @@ Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et 
 Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris.
 
 ---
-## Gallery 'brick'
+## Gallery
 
 Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris.
 

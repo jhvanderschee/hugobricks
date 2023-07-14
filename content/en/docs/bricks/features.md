@@ -2,12 +2,10 @@
 title: Features brick
 ---
 
-Want to show the selling points of your service or product?
-
-Say you want to achieve a neat Features 'component' (see it in action at the  home page of this sample website).
-Just re-use (as a reference) the following markup  :
+Want to show the selling points of your service or product? Say you want to achieve a neat Features 'component' (see it in action at the [home page](/) of this sample website). Just re-use (as a reference) the markup below.
 
 ```
+{{</* brick_features */>}}
 ## The Ultimate Hugo theme
 
 Hugobricks covers all components you would like to have at hand. It is a power engine for your web oriented projects. It has excellent performance in all categories.
@@ -28,8 +26,18 @@ Lightning fast website. Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 ---
 
+![](/uploads/icons/material-symbols/200/rounded/design_services.svg)
+### Themeable through CSS variables
+
+Easily themeable. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+
+{{</* /brick_features */>}}
+
 ```
+<!--{{< brick_features >}}{{< /brick_features >}}-->
 
-> NOTE1: see the '- - -' as a splitter the content/features list items 
+### Basic instructions
 
-> NOTE2: feel free to add any number of 'Features'. Design and layout will follow it responsively.
+- use an h2 (two hashes) for the title of the brick
+- use an h3 (three hashes) for the title of the feature
+- use a hr (three dashes) for splitting the features
