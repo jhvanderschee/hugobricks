@@ -27,17 +27,16 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] 404 Page
 - [x] Title,
 - [x] Map,
-- [x] Preheader, 
-- [x] Reviews, 
-- [x] Team,
 - [x] Features,
+- [x] Preheader, > 
+- [x] Reviews, >
+- [x] Team, >
+- [ ] Blog, >
+- [ ] Post, >
 - [ ] Quote,
 - [ ] Stats,
 - [ ] Pricing,
 - [ ] Carousel,
-- [ ] Video,
-- [ ] Blog,
-- [ ] Post,
 - [ ] Related
 - [ ] Authors
 - [ ] Search
@@ -62,6 +61,10 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] Unordered lists
 - [x] Subpages
 - [x] Gallery
+- [x] Video (native html5),
+- [ ] Youtube video,
+- [ ] Vimeo video,
+- [ ] more to come ...
 
 ### Hugobricks workflow
 
