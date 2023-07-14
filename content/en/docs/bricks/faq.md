@@ -17,7 +17,7 @@ The data for the FAQ's is stored in the faqs.yaml in the data folder and looks l
   faqs:
     - question: Why choose Hugobricks for my next project?
       answer: Hugo allows you to build a fast, efficient, ...
-    - question: I need to develop a performant website. Does Hugobricks offer a good performance?
+    - question: Does Hugobricks offer a good performance?
       answer:  Hugobricks is renowned for its exceptional ...
 - title: Scalability, ease of use and flexibility?
   faqs:
