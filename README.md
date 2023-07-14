@@ -27,16 +27,16 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] 404 Page
 - [x] Title,
 - [x] Map,
-- [x] Preheader, 
-- [x] Reviews, 
-- [x] Team,
 - [x] Features,
+- [x] Preheader, > 
+- [x] Reviews, >
+- [x] Team, >
+- [ ] Blog, >
+- [ ] Post, >
 - [ ] Quote,
 - [ ] Stats,
 - [ ] Pricing,
 - [ ] Carousel,
-- [ ] Blog,
-- [ ] Post,
 - [ ] Related
 - [ ] Authors
 - [ ] Search
