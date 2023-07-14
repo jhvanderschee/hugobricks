@@ -2,21 +2,19 @@
 title: Title brick
 ---
 
-Say you want to achieve a neat Title 'component': see the [first lines at the Elements page](/elements) of this sample website).
-As an example, this is achieved by the follwoing markup  :
+The title brick creates a narrow h1 title with an introduction paragraph below it. You can see it in action [on the top of the Elements page](/elements). This is achieved by the following markup:
 
 
 ```
-{{/* < brick_title > */}}
+{{</* brick_title */>}}
 
-{{/* < breadcrumbs > */}}
+{{</* breadcrumbs */>}}
 
 # Elements
 
 Lorem dolor sit amet, consectetur adipiscing elit. Nam non laoreet nisi, ac hendrerit lacus. Sed eget dapibus dui. Phasellus non ante sollicitudin, ultrices ex et, convallis orci. 
 
-{{/* < /brick_title > */}}
+{{</* /brick_title */>}}
 ```
 
-
-> NOTE: see that there is an extra 'component' here, [refering to the 'breadcrumbs' shortcode](/docs/shortcodes/breadcrumbs/)
+<!--{{< brick_title >}}{{< /brick_title >}}-->
