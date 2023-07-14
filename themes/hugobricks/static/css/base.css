@@ -34,7 +34,7 @@ pre {overflow: auto; background: var(--light); padding: 0.75rem 1rem; border: 0.
 blockquote {font-style: italic; border-left: 0.25rem solid var(--borderMedium); padding-left: 1.25rem;}
 video, audio {width: 100%;}
 .sr-only {display: none;}
-.featuredimage {position: relative; bottom: 1.7rem; border-radius: 1rem;}
+
 
 /*------------------------*/
 /* fonts
@@ -71,10 +71,6 @@ section :last-child {margin-bottom: 0;}
 section:not(.hasbackgroundcolor) + section:not(.hasbackgroundcolor) {padding-top: 2rem;}
 section.hasbackgroundcolor + footer {margin-top: 7.5rem;}
 section.stickstofooter + footer {margin-top: 0; border-top: 0;}
-section .container.post {max-width: 50rem;}
-section .container.post:not(.small) {margin-top: 1.5rem;}
-section .container.post:not(.small) p:first-child,
-section .container.post:not(.small) p:first-child a {color: var(--textDark); font-size: 1.52rem; line-height: 1.4;}
 
 /*------------------------*/
 /* box
@@ -358,7 +354,6 @@ details[open]:not(.closing) summary::after {
 /*------------------------*/
 
 .meta {color: var(--textDark); position: relative; margin: 0.5rem 0 1rem; gap: 1rem; font-size: 0.9rem; display: flex; align-items: center; gap: 1rem;}
-h1 + .meta {justify-content: center; margin-bottom: -0.75rem; margin-top: -0.75rem;}
 .meta > div {display: flex; align-items: center; gap: 0.4rem;}
 .meta img {height: 1rem; width: 1rem; position: relative; border-radius: 0; display: block; bottom: 0.1rem;}
 .meta a {color: var(--textDark); text-decoration: none;}
