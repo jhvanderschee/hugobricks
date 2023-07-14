@@ -22,7 +22,7 @@ section.intro h1 + p {padding-top: 0;}
 
 section.post .container {max-width: 50rem;}
 section.post .container h1 {text-align: center;}
-section.post .container .featuredimage {border-radius: 1rem; margin-bottom: 3rem;}
+section.post .container .featuredimage {border-radius: 1rem; margin-bottom: 2.5rem;}
 section.post .container.wide {max-width: 60rem;}
 section.post .container.post p:first-child,
 section.post .container.post p:first-child a {color: var(--textDark); font-size: 1.52rem; line-height: 1.4;}
