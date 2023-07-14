@@ -21,8 +21,8 @@
     </div>
     <div class="container wide">
         {{- $postimage := `/uploads/gallery/01.jpg` -}}
-        {{- if .Params.image -}}
-            {{- $postimage = .Params.image -}}
+        {{- if page.Params.image -}}
+            {{- $postimage = page.Params.image -}}
         {{- end -}}
         {{- if (resources.GetMatch $postimage) -}}
             {{- $postimage = ((resources.GetMatch $postimage).Fill `1600x800 jpg Smart q50`).RelPermalink -}}
