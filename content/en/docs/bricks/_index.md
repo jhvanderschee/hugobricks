@@ -39,3 +39,15 @@ Hugobricks is a free website theme built with Hugo and vanilla CSS, providing ev
 
 ![](/uploads/brick_intro.png)
 ```
+
+### Page-specific content
+
+If you want your content to be different on a specific page, you can override it by placing your custom content in between the opening and closing tag of the brick, like this:
+
+```
+{{</* brick_cta */>}}
+
+... page specific content here...
+
+{{</* /brick_cta */>}}
+```
