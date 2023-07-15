@@ -5,6 +5,9 @@ title: Posts brick
 If you want to show the latest (blog) posts on your website, you can use the posts brick. This requires you to use the following markup:
 
 ```
+---
+title: Page title
+---
 {{</* brick_posts */>}}
 
 {{</* breadcrumbs */>}}

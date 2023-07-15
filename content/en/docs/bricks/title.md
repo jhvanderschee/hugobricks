@@ -6,6 +6,9 @@ The title brick creates a narrow h1 title with an introduction paragraph below i
 
 
 ```
+---
+title: Page title
+---
 {{</* brick_title */>}}
 
 {{</* breadcrumbs */>}}

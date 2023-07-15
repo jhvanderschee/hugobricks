@@ -5,6 +5,9 @@ title: Reviews brick
 Say you want to achieve a neat Reviews 'component', with some feedback. See the [relevant section](/) at the home page of this sample website. Just use the following markup:
 
 ```
+---
+title: Page title
+---
 {{</* brick_reviews */>}}
 
 ## What Users Are Saying About Hugobricks

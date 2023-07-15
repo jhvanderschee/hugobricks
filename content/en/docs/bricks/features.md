@@ -2,9 +2,12 @@
 title: Features brick
 ---
 
-Want to show the selling points of your service or product? Say you want to achieve a neat Features 'component' (see it in action at the [home page](/) of this sample website). Just re-use (as a reference) the markup below.
+Want to show the selling points of your service or product? Say you want to achieve a neat Features 'component'. You can see it in action at the [home page](/) of this website. To make it appear on your page, you can use the markup below.
 
 ```
+---
+title: Page title
+---
 {{</* brick_features */>}}
 ## The Ultimate Hugo theme
 

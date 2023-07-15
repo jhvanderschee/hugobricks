@@ -3,12 +3,13 @@ title: Map brick
 ---
 
 Say you want to achieve a neat Map 'component' (see the first content section at the  home page of this sample website).
-In order to get [such a 'component'](/elements/#map) just re-use the following markup  :
+In order to get such a component, just use the markup below. The content in the brick starts with a screenshot of the given map area and the URL of the mapping service provider (Google, OpenstreetMaps, etc). They will automatically be converted into a clickable map. If you want to see this brick in action, take a look at the footer of the [contact page](/contact/).
 
 ```
 ---
-title: map
+title: Page title
 ---
+{{</* brick_map */>}}
 
 ![](/uploads/map2.png)
 
@@ -21,7 +22,9 @@ Soetendaal 7
 1081BL Amsterdam  
 The Netherlands
 
-{{*/ < contactbuttons > */}}
-```
+{{</* contactbuttons */>}}
 
-> NOTE: Two parameters are called, as you can see : a screenshot of the given map area and the URL of the mapping service provider ( Google, OpenstreetMaps, others ... )
+{{</* /brick_map */>}}
+```
+<!--{{< brick_map >}}{{< /brick_map >}}-->
+
