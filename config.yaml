@@ -1,7 +1,6 @@
 baseURL: https://www.hugobricks.preview.usecue.com
 theme: hugobricks
 defaultContentLanguage: en
-languageCode: "en-us"
 assetDir: static
 
 markup:
@@ -14,3 +13,9 @@ languages:
     languageName: English
     contentDir: content/en
     weight: 1
+    disabled: false
+  nl:
+    languageName: Nederlands
+    contentDir: content/nl
+    weight: 2
+    disabled: true

@@ -6,7 +6,7 @@ It is always nice (and good for conversion) to show a 'Call to action' on your p
 
 ### Invoke the brick
 
-You probably want the CTA brick to be the same on every page. In that case you can invoke the brick by writing this:
+You probably want the CTA brick to be the same on every page. You can stack the brick on top of other bricks, which is explained in the [Bricks page](/docs/bricks/). If you want the brick to be the same on every page you can invoke the brick by writing this:
 
 ```
 ---
