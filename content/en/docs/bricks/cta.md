@@ -4,9 +4,9 @@ title: Call to action
 
 It is always nice (and good for conversion) to show a 'Call to action' on your page (a short text, leading to a button and a related image). An example of such a 'Call to action brick' can be found in the footer of this page. It is the block titled 'Get started with Hugobricks today!'.
 
-### Invoke the brick
+### Use this brick
 
-You probably want the CTA brick to be the same on every page. You can stack the brick on top of other bricks, which is explained in the [Bricks page](/docs/bricks/). If you want the brick to be the same on every page you can invoke the brick by writing this:
+You probably want the CTA brick to be the same on every page. You can stack the brick on top of other bricks, which is explained in the [Bricks page](/docs/bricks/). If you want the brick to be the same on every page you can Use this brick by writing this:
 
 ```
 {{</* brick_cta */>}}{{</* /brick_cta */>}}
