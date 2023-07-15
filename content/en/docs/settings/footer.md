@@ -4,7 +4,7 @@ title: Footer
 
 ### Show logo
 
-True or false: this...
+With this boolean variable you can choose between showing the logo in the footer, or just the name of the website.
 
 ### Menu items
 
