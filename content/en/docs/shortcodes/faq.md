@@ -1,13 +1,10 @@
 ---
-title: F.A.Q. brick
+title: F.A.Q.
 ---
 
 Want to add a block with the most frequently asked questions? Then use the code below. Do you want to see it in action? Have a look at the [FAQ page](/faq).
 
 ```
----
-title: Page title
----
 {{</* faq */>}}
 ```
 
@@ -38,4 +35,11 @@ The data for the FAQ's is stored in the faqs.yaml in the data folder and looks l
       answer:  Hugobricks is designed with search engine ...
     - question: What about hugobricks security?
       answer: Additionally, Hugobricks’s static nature ...
+```
+
+You can load a subset of the FAQ's by adding an index number. It will then show only one list of faqs (in the example below only the first 'faqs' array). This looks like this:
+
+
+```
+{{</* faq 0 */>}}
 ```
