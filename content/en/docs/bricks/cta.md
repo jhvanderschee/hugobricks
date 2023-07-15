@@ -38,13 +38,7 @@ If you want your content to be different on a specific page, you can override it
 ```
 {{</* brick_cta */>}}
 
-## Get started with Hugobricks today!
-
-Experience the future of web development with Hugo and stackable content bricks. Build lightning-fast static sites with ease and flexibility.
-
-{{</* button2 "Get started now" "/get-started/" */>}}
-
-![](/uploads/illustrations/cuate/server.svg)
+... page specific content here...
 
 {{</* /brick_cta */>}}
 ```
