@@ -2,7 +2,7 @@
 title: F.A.Q.
 ---
 
-Want to add a block with the most frequently asked questions? Then use the code below. Do you want to see it in action? Have a look at the [FAQ page](/faq).
+Want to add a block with the most frequently asked questions? Then use the code below. Do you want to see it in action? Have a look at the [FAQ page](/faq) or the [Elements page](/elements/).
 
 ```
 {{</* faq */>}}
