@@ -1,5 +1,5 @@
 ---
-title: Features brick
+title: Features
 ---
 
 Want to show the selling points of your service or product? Say you want to achieve a neat Features 'component'. You can see it in action at the [home page](/) of this website. To make it appear on your page, you can use the markup below.

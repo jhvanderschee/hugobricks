@@ -1,5 +1,5 @@
 ---
-title: Title brick
+title: Title
 ---
 
 The title brick creates a narrow h1 title with an introduction paragraph below it. You can see it in action [on the top of the Elements page](/elements). This is achieved by the following markup:

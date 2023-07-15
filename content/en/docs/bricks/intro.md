@@ -1,5 +1,5 @@
 ---
-title: Intro brick
+title: Intro
 ---
 
 Say you want to achieve a neat Intro 'component' (see the first content section at the  home page of this sample website).

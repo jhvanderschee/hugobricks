@@ -1,5 +1,5 @@
 ---
-title: Call to action brick
+title: Call to action
 ---
 
 It is always nice (and good for conversion) to show a 'Call to action' on your page (a short text, leading to a button and a related image). An example of such a 'Call to action brick' can be found in the footer of this page. It is the block titled 'Get started with Hugobricks today!'.

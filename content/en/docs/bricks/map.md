@@ -1,5 +1,5 @@
 ---
-title: Map brick
+title: Map
 ---
 
 Say you want to achieve a neat Map 'component' (see the first content section at the  home page of this sample website).
