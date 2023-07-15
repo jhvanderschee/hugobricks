@@ -1,7 +1,7 @@
 <?php
 // config
 $formname = 'New website submission for Usecue CMS';
-$redirect = 'https://cms.usecue.com/p/';
+$redirect = 'https://www.hugobricks.preview.usecue.com/';
 $url = 'https://cms.usecue.com/form.php';
 
 // code
