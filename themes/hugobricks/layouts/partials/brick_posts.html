@@ -30,7 +30,7 @@
                 {{- end -}}
                 <li class="item{{ range .Params.tags }} tag_{{ . }}{{ end }}">
                         <img data-src="{{ $postimage }}" alt="{{ .Title }}" style="cursor: pointer;" onclick="document.location.href='{{ .RelPermalink }}';" />
-                        <h3>{{ .Title }}</h3>
+                        <h3>{{ .Title | safeHTML }}</h3>
                         <div class="meta">
                             <div>
                                 <img src="/uploads/icons/material-symbols/200/rounded/calendar_month-fill.svg"class="black_2_textDark" alt="" />
@@ -39,14 +39,14 @@
                         </div>
                         <div class="summary">
                             <p>{{ substr .Summary 0 190 | safeHTML }}...</p>
-                            <p><a href="{{ .RelPermalink }}" class="button ghost smaller">Read more</a></p>
+                            <p><a href="{{ .RelPermalink }}" class="button ghost smaller">{{ i18n "Read more" }}</a></p>
                         </div>
                 </li>
             {{ end }}
             <li class="placeholder"></li>
             <li class="placeholder"></li>
         </ul>
-        <a class="button secondary ghost smaller" id="loadmoreposts" onclick="loadMorePosts();">Load more posts...</a>
+        <a class="button secondary ghost smaller" id="loadmoreposts" onclick="loadMorePosts();">{{ i18n "Load more posts" }}...</a>
         <script src="/js/filter.js" charset="utf-8"></script>
     </div>
 </section>

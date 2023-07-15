@@ -30,7 +30,7 @@ When you build software/websites in a large team I would not use this artisanal 
 
 ## The take-away
 
-Try artisanal web development. It may be challenging, but it is really fun! Find a small project to try it on. Davids analogy with a car mechanic having a 'project car' is a perfect one! To me, that powerful feeling of [complete understanding of every bit of code](/blog/code-warriors/) is addictive. It might resonate with you as well and it will make you a better programmer for sure! 
+Try artisanal web development. It may be challenging, but it is really fun! Find a small project to try it on. Davids analogy with a car mechanic having a 'project car' is a perfect one! To me, that powerful feeling of [complete understanding of every bit of code](https://www.usecue.com/blog/code-warriors/) is addictive. It might resonate with you as well and it will make you a better programmer for sure! 
 
 I think that Jake Albaugh formulated it perfectly: “If you can justify the effort of writing your own code, you become more familiar with web specifications and learn just how robust they are on their own. You also end up with something that can be easier to maintain long-term because it is closest to the core evolutionary path of the web.”
 
@@ -47,4 +47,4 @@ I did not come up with this term/approach/philosophy by myself. I was inspired b
 - [You might not need jQuery](https://youmightnotneedjquery.com/), Hubspot
 - [VanillaJS](http://vanilla-js.com/), Eric Wastl
 
-PS. I mentioned Kev Quirk in the interview. He pointed me at my missing [RSS feed](https://kevquirk.com/why-having-a-full-post-rss-feed-is-a-good-idea/). I joked about him being agressive. I should have said 'persuasive'. [Thanks again Kev!](/blog/thanks-to-kev-quirk/)
+PS. I mentioned Kev Quirk in the interview. He pointed me at my missing [RSS feed](https://kevquirk.com/why-having-a-full-post-rss-feed-is-a-good-idea/). I joked about him being agressive. I should have said 'persuasive'. [Thanks again Kev!](https://www.usecue.com/blog/thanks-to-kev-quirk/)

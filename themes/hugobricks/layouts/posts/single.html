@@ -1,23 +1,4 @@
 {{- define "content" -}}
-        <section class="title">
-            <div class="container small post">
-                {{ partial "date.html" . }}
-                <h1>{{ .Title }}</h1>
-            </div>
-        </section>
-        <section class="wide">
-            <div class="container">
-                {{- $postimage := `/uploads/gallery/01.jpg` -}}
-                {{- if .Params.image -}}
-                    {{- $postimage = .Params.image -}}
-                {{- end -}}
-                {{- if (resources.GetMatch $postimage) -}}
-                    {{- $postimage = ((resources.GetMatch $postimage).Fill `1600x800 jpg Smart q50`).RelPermalink -}}
-                {{- end -}}
-                <img src="{{ $postimage }}" alt="{{ .Title }}" class="featuredimage" />
-            </div>
-            <div class="container post">
-                {{ .Content }}
-            </div>
-        </section>
+    {{ partial "brick_post.html" }}
+    {{ partial "brick_cta.html" }}
 {{- end -}}

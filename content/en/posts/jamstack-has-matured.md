@@ -33,6 +33,4 @@ With the Jamstack 'avant la lettre' you would get a very fast website, including
 
 Jamstack has [matured](https://jamstack.wtf/), that is for sure. But, like with grown-ups, the fun is gone and it is all about the money now.
 
-&nbsp;
-
-*PS. Do you want a Jamstack website with a [perfect Google Lighthouse score](/blog/how-to-get-a-100-google-lighthouse-score/) and [instant deploys](/blog/oh-jamstack-grow-up/)? I can help! [Contact me](/contact/).*
+*PS. Do you want a Jamstack website with a [perfect Google Lighthouse score](https://www.usecue.com/blog/how-to-get-a-100-google-lighthouse-score/) and [instant deploys](https://www.usecue.com/blog/oh-jamstack-grow-up/)? I can help! [Contact me](https://www.usecue.com/contact/).*

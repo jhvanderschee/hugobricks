@@ -1,0 +1,17 @@
+body:not(.hidecursor),body:not(.hidecursor) *{cursor: none!important;}
+body:not(.hidecursor):before {
+    content:"";
+    position:absolute;
+    z-index:999;
+    top:var(--y);
+    left:var(--x);
+    right:0;
+    bottom:0; 
+    width:1.4rem;
+    height:1.4rem;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    background:#fff;
+    mix-blend-mode:difference;
+    pointer-events: none;
+}

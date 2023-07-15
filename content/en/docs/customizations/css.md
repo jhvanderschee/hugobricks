@@ -17,3 +17,4 @@ Some examples of website that use Hugobricks:
 
 - https://www.aadprins.preview.usecue.com
 - https://www.postgrowthcities.com
+- https://www.klachtencommissievj.preview.usecue.com/
