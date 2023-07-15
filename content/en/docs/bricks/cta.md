@@ -2,7 +2,7 @@
 title: Call to action brick
 ---
 
-Say you want to achieve this neat CTA 'component' markup (as the source code of a short text, leading to a button + aside related image). If you want to see the 'Call to action brick' in action, look at the footer of this page.
+Say you want to achieve this neat CTA 'component' markup (as the source code of a short text, leading to a button + aside related image). If you want to see the 'Call to action brick' in action, look at the footer of this page. It is the block titled 'Get started with Hugobricks today!'.
 
 ```
 ---
