@@ -20,7 +20,7 @@ title: Page title
 <!--{{< brick_intro >}}{{< /brick_intro >}}-->
 <!--{{< brick_features >}}{{< /brick_features >}}-->
 
-Note that you can choose to write your content inside the brick (between the open and the close tag of the brick) to make the brick page-specific. In the example above the brick will be filled with the content stored in 'content/en/bricks/intro.md'. This file should look similar to this:
+Note that you can choose to write your content inside the brick (between the open and the close tag of the brick) to make the brick page-specific. In the example above the first brick will be filled with the content stored in 'content/en/bricks/intro.md'. This file should look similar to this:
 
 ```
 ---
