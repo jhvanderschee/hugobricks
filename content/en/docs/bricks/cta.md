@@ -9,9 +9,6 @@ It is always nice (and good for conversion) to show a 'Call to action' on your p
 You probably want the CTA brick to be the same on every page. You can stack the brick on top of other bricks, which is explained in the [Bricks page](/docs/bricks/). If you want the brick to be the same on every page you can invoke the brick by writing this:
 
 ```
----
-title: Page title
----
 {{</* brick_cta */>}}{{</* /brick_cta */>}}
 ```
 
@@ -39,30 +36,11 @@ If you want your content to be different on a specific page, you can override it
 
 
 ```
----
-title: Page title
----
 {{</* brick_cta */>}}
 
-## Get started with Hugobricks today!
-
-Experience the future of web development with Hugo and stackable content bricks. Build lightning-fast static sites with ease and flexibility.
-
-{{</* button2 "Get started now" "/get-started/" */>}}
-
-![](/uploads/illustrations/cuate/server.svg)
+... page specific content here...
 
 {{</* /brick_cta */>}}
 ```
 
-<!--{{< brick_cta >}}
-
-## Get started with Hugobricks today!
-
-Experience the future of web development with Hugo and stackable content bricks. Build lightning-fast static sites with ease and flexibility.
-
-{{< button2 "Get started now" "/get-started/" >}}
-
-![](/uploads/illustrations/cuate/server.svg)
-
-{{< /brick_cta >}}-->
+<!--{{< brick_cta >}}{{< /brick_cta >}}-->
