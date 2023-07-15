@@ -28,11 +28,9 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] Title,
 - [x] Map,
 - [x] Features,
-- [x] Preheader, > 
-- [x] Reviews, >
-- [x] Team, >
-- [ ] Blog, >
-- [ ] Post, >
+- [x] Reviews,
+- [x] Team,
+- [x] Blog/posts,
 - [ ] Quote,
 - [ ] Stats,
 - [ ] Pricing,
@@ -62,7 +60,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] Subpages
 - [x] Gallery
 - [x] Video (native html5),
-- [ ] Youtube video,
+- [x] Youtube video,
 - [ ] Vimeo video,
 - [ ] more to come ...
 
