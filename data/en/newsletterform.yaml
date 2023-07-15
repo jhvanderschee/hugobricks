@@ -1,3 +1,4 @@
+action: /form.php
 placeholders: false
 fields: 
 - name: name

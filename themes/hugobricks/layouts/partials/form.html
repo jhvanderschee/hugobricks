@@ -1,4 +1,4 @@
-<form id="contactform" class="form" method="POST" action="/form.php">
+<form id="contactform" class="form" method="POST" action="{{ .action }}">
     {{- range .fields -}}
         {{- if eq .input_type `textarea` -}}
             <div>
