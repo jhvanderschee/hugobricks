@@ -60,7 +60,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] Subpages
 - [x] Gallery
 - [x] Video (native html5),
-- [ ] Youtube video,
+- [x] Youtube video,
 - [ ] Vimeo video,
 - [ ] more to come ...
 
