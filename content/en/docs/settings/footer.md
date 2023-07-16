@@ -12,7 +12,7 @@ This is an array that holds the footer menu. The items in this array consist of 
 
 ### Socials
 
-Socials is a list of titles, links and logos that represent social media platforms of your choice.
+This is an array that holds the social links. The items in this array consist of a `title`, a `link` and a `logo` field. These links represent the social media platforms of your choice. The logo images should be black SVG's an a transparent background.
 
 ### Footer text
 
