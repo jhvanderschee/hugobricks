@@ -1,5 +1,4 @@
-body:not(.hidecursor),body:not(.hidecursor) *{cursor: none!important;}
-body:not(.hidecursor):before {
+body:before {
     content:"";
     position:absolute;
     z-index:999;
@@ -7,11 +6,29 @@ body:not(.hidecursor):before {
     left:var(--x);
     right:0;
     bottom:0; 
-    width:1.4rem;
-    height:1.4rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 0.15rem solid white;
     border-radius:50%;
     transform:translate(-50%,-50%);
     background:#fff;
     mix-blend-mode:difference;
     pointer-events: none;
+    opacity: 1;
+    transition: 
+        opacity 0.5s ease-in-out,
+        width 0.25s ease-in-out,
+        height 0.25s ease-in-out,
+        background 0.25s ease-in-out,
+        border 0.25s ease-in-out;
+        
+
+}
+body.hidecursor:before {
+    opacity: 0;
+}
+body.cursorpointer:before {
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
 }
