@@ -3,7 +3,7 @@ window.addEventListener('scroll', function(){
 });
 
 var timer;
-var mouseX = 0, mouseY = 0;
+var mouseX = window.innerWidth/2, mouseY = window.innerHeight/2;
 var xp = 0, yp =0;
 
 // set the momentum with setInterval function
