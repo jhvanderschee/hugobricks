@@ -49,7 +49,7 @@ video, audio {width: 100%;}
     border-radius: 0.25rem;
 }
 
-footer > *, section > * {opacity: 1; transition: opacity 2s ease-in-out;}
+footer > *, section > * {opacity: 1; transition: opacity 1s ease-in-out; transition-delay: 0.5s;}
 footer.opaque > *,
 section.opaque > * {opacity: 0;}
 
