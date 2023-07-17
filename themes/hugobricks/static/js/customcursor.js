@@ -4,9 +4,9 @@ window.addEventListener('scroll', function(){
 
 var timer;
 var startx = window.innerWidth/2;
-var starty = window.innerHeight/4;
+var starty = window.innerHeight/2;
 var mouseX = startx, mouseY = starty;
-var xp = startx/2, yp = starty;
+var xp = startx, yp = starty;
 
 // set the momentum with setInterval function
 var loop = setInterval(function(){
