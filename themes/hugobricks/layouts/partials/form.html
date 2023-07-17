@@ -1,4 +1,5 @@
-<form id="contactform" class="form" method="POST" action="/form.php">
+<img src="/form.php" style="position: absolute; opacity: 0; pointer-events: none;" />
+<form id="contactform" class="form" method="POST" action="{{ .action }}">
     {{- range .fields -}}
         {{- if eq .input_type `textarea` -}}
             <div>

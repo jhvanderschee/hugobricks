@@ -6,11 +6,11 @@
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
+{{- $imagesrc := substr (index (split (index (findRE `!\[[^\]]*?]\(([^\)]*?)\)` $inner 1) 0) "](") 1) 0 -1 -}}
 {{- $inner = markdownify $inner -}}
 {{- $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 -}}
 {{- $link := index (findRE `(?s)<a.*?>` $inner 1) 0 -}}
 {{- $inner = replace $inner $image "" 1 -}}
-{{- $imagesrc := index (split $image `"`) 1 -}}
 {{- $link := index (findRE `(?s)<p><a.*?p>` $inner 1) 0 -}}
 {{- $inner = replace $inner $link "" 1 -}}
 {{- $href := index (split $link `"`) 1 -}}

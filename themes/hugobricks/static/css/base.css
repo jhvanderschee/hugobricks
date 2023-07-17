@@ -42,7 +42,12 @@ pre {
 blockquote {font-style: italic; border-left: 0.25rem solid var(--borderMedium); padding-left: 1.25rem;}
 video, audio {width: 100%;}
 .sr-only {display: none;}
-
+:not(pre) > code {
+    background: var(--light);
+    padding: 0.15rem 0.3rem;
+    border: 0.1rem solid var(--light);
+    border-radius: 0.25rem;
+}
 
 /*------------------------*/
 /* fonts

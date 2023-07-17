@@ -1,13 +1,13 @@
 ---
-title: Features brick
+title: Features
 ---
 
 Want to show the selling points of your service or product? Say you want to achieve a neat Features 'component'. You can see it in action at the [home page](/) of this website. To make it appear on your page, you can use the markup below.
 
 
-### Invoke the brick
+### Use this brick
 
-You probably want the Features brick to be the same on every page. You can stack the brick on top of other bricks, which is explained in the [Bricks page](/docs/bricks/). If you want the brick to be the same on every page you can invoke the brick by writing this:
+You probably want the Features brick to be the same on every page. You can stack the brick on top of other bricks, which is explained in the [Bricks page](/docs/bricks/). If you want the brick to be the same on every page you can Use this brick by writing this:
 
 ```
 {{</* brick_features */>}}{{</* /brick_features */>}}

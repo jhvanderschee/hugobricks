@@ -1,5 +1,5 @@
 ---
-title: Reviews brick
+title: Reviews
 ---
 
 Say you want to achieve a neat Reviews 'component', with some feedback. See the [relevant section](/) at the home page of this sample website. Just use the following markup:
