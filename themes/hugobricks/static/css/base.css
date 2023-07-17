@@ -49,6 +49,10 @@ video, audio {width: 100%;}
     border-radius: 0.25rem;
 }
 
+footer > *, section > * {opacity: 1; transition: opacity 2s ease-in-out;}
+footer.opaque > *,
+section.opaque > * {opacity: 0;}
+
 /*------------------------*/
 /* fonts
 /*------------------------*/
