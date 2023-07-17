@@ -8,13 +8,12 @@ body:before {
     bottom:0; 
     width: 0.8rem;
     height: 0.8rem;
-    border: 0.12rem solid white;
+    border: 0.12rem solid #eee;
     border-radius:50%;
     transform:translate(-50%,-50%);
-    background:#fff;
-    mix-blend-mode:difference;
+    background:#eee;
+    mix-blend-mode: difference;
     pointer-events: none;
-    opacity: 0.5;
     transition: 
         opacity 0.5s ease-in-out,
         width 0.25s ease-in-out,
