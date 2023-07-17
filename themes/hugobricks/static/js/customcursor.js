@@ -22,9 +22,11 @@ document.onmousemove = function(e) {
     clearTimeout(timer);
     timer=setTimeout(mouseStopped,3000);   
 }
+
 function mouseStopped(){    
     document.body.classList.add('hidecursor');
 }
+
 const onMouseOver = function (e) {
     var cursor = getComputedStyle(e.target).cursor;
     if(cursor=='pointer') {
@@ -32,5 +34,6 @@ const onMouseOver = function (e) {
     } else {
         document.body.classList.remove('cursorpointer');
     }
-  };
+};
+
 document.addEventListener("mouseover", onMouseOver, false);
