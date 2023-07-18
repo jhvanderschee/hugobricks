@@ -1,5 +1,5 @@
 document.querySelectorAll('section, footer').forEach(function(section,index) {
-    if(index>1) {
+    if(index>0) {
 		section.classList.add('opaque');
 	}
 });
@@ -15,6 +15,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	let observer = new IntersectionObserver(handler);
 	document.querySelectorAll('section, footer').forEach(function(section,index) {
-		if(index>1) observer.observe(section);
+		if(index>0) observer.observe(section);
 	});
 });
