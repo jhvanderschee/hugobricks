@@ -41,13 +41,19 @@
      inkscape:window-height="1391"
      id="namedview8"
      showgrid="false"
-     inkscape:zoom="1.4150781"
-     inkscape:cx="273.09304"
-     inkscape:cy="400"
+     inkscape:zoom="0.58179484"
+     inkscape:cx="425.77306"
+     inkscape:cy="-257.87332"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg6" />
+  <circle
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.064;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path814"
+     cx="178.20715"
+     cy="170.98633"
+     r="83.603348" />
   <path
      class="st0"
      d="M 173.875,0 C 77.844,0 0,77.859 0,173.906 0,269.938 154.672,512 173.875,512 193.094,512 347.75,269.937 347.75,173.906 347.75,77.859 269.906,0 173.875,0 Z m 0,240.406 c -36.719,0 -66.5,-29.781 -66.5,-66.5 0,-36.75 29.781,-66.531 66.5,-66.531 36.719,0 66.516,29.781 66.516,66.531 0,36.719 -29.797,66.5 -66.516,66.5 z"
