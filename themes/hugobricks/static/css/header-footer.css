@@ -134,6 +134,7 @@ footer.dark a.logo {color: white;}
 footer.dark > div:last-child {border-top: 1px solid rgba(255,255,255,0.1);}
 footer.dark, footer.dark > div:last-child a, footer.dark ul li a {color: rgba(255,255,255,0.5);}
 footer.dark ul.buttons.social .button {background: var(--accent);}
+footer.dark a.logo img.inline {filter: invert(1)!important;}
 
 /*------------------------*/
 /* mobile menu

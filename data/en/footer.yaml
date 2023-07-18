@@ -1,4 +1,5 @@
 show_logo: true
+logo_image:
 dark_footer: true
 menuitems:
   - title: About

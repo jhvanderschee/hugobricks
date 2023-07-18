@@ -74,7 +74,7 @@
       <div>
         <div class="container">
           <div>
-            {{ if (index .Site.Data .Language.Lang).footer.show_logo }}{{ partial "logo.html" . }}{{ else }}<a href="/">&copy; {{ now.Year }} {{ (index .Site.Data .Language.Lang).general.title }}{{ if (index .Site.Data .Language.Lang).header.logo_subtitle }} {{ (index .Site.Data .Language.Lang).header.logo_subtitle }}{{ end }}</a>{{ end }}
+            {{ partial "logo.html" . }}
           </div>
           <div>
             <ul>
@@ -90,10 +90,11 @@
       </div>
       <div>
         <div class="container">
-		<div>{{ markdownify (index .Site.Data .Language.Lang).footer.footer_text }}</div>
-		</div>
-		</div>
+		      <div>{{ markdownify (index .Site.Data .Language.Lang).footer.footer_text }}</div>
+		    </div>
+  		</div>
 		</footer>
+
 		{{ if (index .Site.Data .Language.Lang).header.sticky_header }}
       <script type="text/javascript" src="/js/stickyheader.js"></script>
     {{ end }}
