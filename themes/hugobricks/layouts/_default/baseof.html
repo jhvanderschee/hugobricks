@@ -70,7 +70,7 @@
 
     {{- block "content" . -}}{{- end -}}
 
-    <footer>
+    <footer class="{{ if (index .Site.Data .Language.Lang).footer.dark_footer }}dark{{ end }}">
       <div>
         <div class="container">
           <div>

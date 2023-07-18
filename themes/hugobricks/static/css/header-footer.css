@@ -129,6 +129,12 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
     footer ul {margin: 0.25rem 0 0.5rem;}
 }
 
+footer.dark {background: var(--textDark);}
+footer.dark .logo {filter: grayscale(100%) contrast(1.5) invert(1);}
+footer.dark > div:last-child {border-top: 1px solid rgba(255,255,255,0.1);}
+footer.dark, footer.dark > div:last-child a, footer.dark ul li a {color: rgba(255,255,255,0.5);}
+footer.dark ul.buttons.social .button {background: var(--accent);}
+
 /*------------------------*/
 /* mobile menu
 /*------------------------*/
