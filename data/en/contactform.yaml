@@ -13,14 +13,6 @@ fields:
   input_type: email
   placeholder: Email address
   required: true
-- name: options
-  input_type: radio
-  placeholder: option 1
-  required: true
-- name: options
-  input_type: radio
-  placeholder: option 2
-  required: true
 - name: message
   input_type: textarea
   placeholder: Message
