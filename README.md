@@ -75,15 +75,13 @@ Cloning this repository allows you to start building lightning-fast static sites
 
 ### Hugobricks under the Hood
 
-According to [Hugo's official documentation](https://gohugo.io/overview/introduction/), the framework offers : 
+Hugobricks is build with the regular [Hugo](https://gohugo.io/overview/introduction/) building blocks: 
 
 - [Shortcodes](https://gohugo.io/content-management/shortcodes/#what-a-shortcode-is) 
 - [Partials](https://gohugo.io/templates/partials/)
 - [Layouts / templating](https://gohugo.io/templates/base/)
 
-...we focus on.
-
- Hugobricks takes advantage of these features to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic.
+Hugobricks takes advantage of these things to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic.
 
 ### Get started with Hugobricks
 
