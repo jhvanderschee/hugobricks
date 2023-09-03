@@ -1,3 +1,4 @@
+document.body.classList.add('hidecursor');
 window.addEventListener('scroll', function(){
     document.body.classList.add('hidecursor');
 });
