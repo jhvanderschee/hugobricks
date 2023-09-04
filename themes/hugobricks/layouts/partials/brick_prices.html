@@ -1,0 +1,22 @@
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/prices.md' file." -}}
+    {{- with page.Site.GetPage "bricks/prices.md" -}}
+        {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+{{- $parts := split $inner "---" -}}
+<section class="prices">
+    <div class="container small">
+        {{- markdownify (index $parts 0) -}}
+    </div>
+    <div class="container">
+        <ul class="grid prices">
+            {{ range after 1 $parts }}
+                <li class="">
+                    <div class="box"><div>{{- replace (markdownify .) `<a ` `<a class="button" ` | safeHTML -}}</div></div>
+                </li>
+            {{ end }}
+        </ul>
+    </div>
+</section>
