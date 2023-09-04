@@ -32,9 +32,9 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] Reviews,
 - [x] Team,
 - [x] Blog/posts,
+- [x] Pricing,
 - [ ] Quote,
 - [ ] Stats,
-- [ ] Pricing,
 - [ ] Carousel,
 - [ ] Related
 - [ ] Authors
