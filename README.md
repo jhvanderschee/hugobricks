@@ -107,7 +107,7 @@ Hugobricks takes advantage of these things to allow content re-use, pivot around
 
 ### Hugobricks Feedback 
 
-Make your wishlist. Missing a given [Hugobrick ?,let us know in this open conversation here.](https://github.com/jhvanderschee/hugobricks/issues/5)
+Make your wishlist. Missing a given Hugobrick? [Let us know.](https://github.com/jhvanderschee/hugobricks/issues/5)
 
 
 ### Credits and licenses
