@@ -46,23 +46,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [ ] Brands,
 - [ ] Openinghours
 
-## Other shortcodes that are available:
-- [x] Contact form
-- [x] Map
-- [x] Button (primary and secondary)
-- [x] Social buttons
-- [x] Contact buttons
-- [x] Breadcrumbs
-- [x] FAQ's
-- [x] Tabs
-- [x] Subpages
-- [x] Gallery
-- [x] Video (native html5),
-- [x] Youtube video,
-- [ ] Vimeo video,
-- [ ] more to come ...
-
-### Hugobricks workflow
+## Hugobricks workflow
 
 Hugobricks aims to enhance the Hugo web framework by providing a variety of pre-made bricks for straightforward website-building.
 
@@ -70,7 +54,7 @@ Our companion project, [hugocodex](https://hugocodex.org), guides beginners in s
 
 Cloning this repository allows you to start building lightning-fast static sites with flexibility and ease with and already working website.
 
-### Hugobricks under the Hood
+## Hugobricks under the Hood
 
 Hugobricks is build with the regular [Hugo](https://gohugo.io/overview/introduction/) building blocks: 
 
@@ -78,7 +62,22 @@ Hugobricks is build with the regular [Hugo](https://gohugo.io/overview/introduct
 - [Partials](https://gohugo.io/templates/partials/)
 - [Layouts / templating](https://gohugo.io/templates/base/)
 
-Hugobricks takes advantage of these things to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic.
+Hugobricks takes advantage of these things to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic. Here is an example of two bricks (title and cta):
+
+```
+---
+title: Page title
+---
+{{< brick_title >}}
+
+# Title 1
+Your first paragraph with some lorem ipsum dolor sit amet.
+
+{{< /brick_title >}}
+{{< brick_cta >}}
+
+{{< /brick_cta >}}
+```
 
 ### Get started with Hugobricks
 
@@ -89,13 +88,26 @@ In order to get a working website feel free to
 - re-use default hugobricks
 - and/or customise them !
 
+### Hugobricks theme features
+- Contact form
+- Map
+- Button (primary and secondary)
+- Social buttons
+- Contact buttons
+- Breadcrumbs
+- FAQ's
+- Tabs
+- Subpages
+- Gallery
+- Video (native html5),
+- Youtube video,
+- and much more ...
+
 ### Hugobricks Feedback 
 
 Make your wishlist. Missing a given [Hugobrick ?,let us know in this open conversation here.](https://github.com/jhvanderschee/hugobricks/issues/5)
 
-#### Let's talk about general Hugobricks approach 
 
-[Feel free to give feedback, comment](https://github.com/jhvanderschee/hugobricks/issues/4), issue, submit your wishlist or fork. Hugobricks is here to make your Hugo experience even better.
 
 ### Credits and licenses
 
