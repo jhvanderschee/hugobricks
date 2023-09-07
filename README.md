@@ -46,8 +46,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [ ] Brands,
 - [ ] Openinghours
 
-## Shortcodes that are available:
-- [x] Intro section
+## Other shortcodes that are available:
 - [x] Contact form
 - [x] Map
 - [x] Button (primary and secondary)
