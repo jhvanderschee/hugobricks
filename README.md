@@ -54,15 +54,7 @@ Our companion project, [hugocodex](https://hugocodex.org), guides beginners in s
 
 Cloning this repository allows you to start building lightning-fast static sites with flexibility and ease with and already working website.
 
-## Hugobricks under the Hood
-
-Hugobricks is build with the regular [Hugo](https://gohugo.io/overview/introduction/) building blocks: 
-
-- [Shortcodes](https://gohugo.io/content-management/shortcodes/#what-a-shortcode-is) 
-- [Partials](https://gohugo.io/templates/partials/)
-- [Layouts / templating](https://gohugo.io/templates/base/)
-
-Hugobricks takes advantage of these things to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic. Here is an example of two bricks (title and cta):
+Here is an example of two bricks (title and cta):
 
 ```
 ---
@@ -103,10 +95,19 @@ In order to get a working website feel free to
 - Youtube video,
 - and much more ...
 
+## Hugobricks under the Hood
+
+Hugobricks is build with the regular [Hugo](https://gohugo.io/overview/introduction/) building blocks: 
+
+- [Shortcodes](https://gohugo.io/content-management/shortcodes/#what-a-shortcode-is) 
+- [Partials](https://gohugo.io/templates/partials/)
+- [Layouts / templating](https://gohugo.io/templates/base/)
+
+Hugobricks takes advantage of these things to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic.
+
 ### Hugobricks Feedback 
 
 Make your wishlist. Missing a given [Hugobrick ?,let us know in this open conversation here.](https://github.com/jhvanderschee/hugobricks/issues/5)
-
 
 
 ### Credits and licenses
