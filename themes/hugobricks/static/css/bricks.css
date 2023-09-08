@@ -133,6 +133,7 @@ ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width
 
 section.prices .container.small {margin-bottom: 4rem; text-align: center;}
 section.prices + section.title {padding-top: 0;}
+ul.prices {max-width: 70rem; margin: 0 auto;}
 ul.prices > li {text-align: center;}
 ul.prices > li div.box {padding: 3rem 2rem; height: 100%; background: #f7f7f8;}
 ul.prices li div.box p:first-child {margin: 0;}
@@ -161,7 +162,7 @@ ul.prices li div.box a.button {margin-top: 2.5rem;}
     ul.prices > li:nth-child(1) div.box {border-top-right-radius: 0; border-bottom-right-radius: 0;}
     ul.prices > li:nth-child(3) div.box {border-bottom-left-radius: 0; border-top-left-radius: 0;}
     ul.prices > li:nth-child(2) {transform: scale(1.15); z-index: 2;}
-    ul.prices > li:nth-child(2) div.box {box-shadow: 0 0 1rem rgba(0,0,0,0.15); padding: 4rem 2rem 2rem;}
+    ul.prices > li:nth-child(2) div.box {border: 0.2rem solid var(--light); padding: 4rem 2rem 2rem;}
     ul.prices > li:nth-child(2) div.box > div {transform: scale(0.9);}
     ul.prices > li:nth-child(2) div.box p:first-child strong {position: absolute; left: 50%; bottom: auto; margin-top: -4rem; transform: translateX(-50%);}
 }
