@@ -158,13 +158,16 @@ ul.prices li div.box h3 em {vertical-align: top; font-style: normal;}
 ul.prices li div.box a.button {margin-top: 2.5rem;}
 @media (min-width: 65rem) {
     section.prices .container.small {margin-bottom: 6rem;}
-    ul.prices > li div.box {padding: 4rem 2rem;}
+    ul.prices > li div.box {padding: 3.25rem 2rem 4rem;}
     ul.prices > li:nth-child(1) div.box {border-top-right-radius: 0; border-bottom-right-radius: 0;}
     ul.prices > li:nth-child(3) div.box {border-bottom-left-radius: 0; border-top-left-radius: 0;}
     ul.prices > li:nth-child(2) {transform: scale(1.15); z-index: 2;}
-    ul.prices > li:nth-child(2) div.box {border: 0.2rem solid var(--light); padding: 4rem 2rem 2rem;}
+    ul.prices > li:nth-child(2) div.box {padding: 4rem 2rem 2rem;}
+    ul.prices > li:nth-child(2) div.box::before, 
+    ul.prices > li:nth-child(2) div.box::after {content: ""; position: absolute; background: white; top: 0; right: 0; width: 0.25rem; height: 100%; transform: translateX(calc(100% + 0.1rem));}
+    ul.prices > li:nth-child(2) div.box::before {right: auto; left: 0; transform: translateX(calc(-100% - 0.1rem));}
     ul.prices > li:nth-child(2) div.box > div {transform: scale(0.9);}
-    ul.prices > li:nth-child(2) div.box p:first-child strong {position: absolute; left: 50%; bottom: auto; margin-top: -4rem; transform: translateX(-50%);}
+    ul.prices > li:nth-child(2) div.box p:first-child strong {position: absolute; left: 50%; bottom: auto; margin-top: -5rem; transform: translateX(-50%);}
 }
 
 /*------------------------*/

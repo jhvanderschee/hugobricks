@@ -95,6 +95,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt
 
 ---
 
+**budget**
 ### Open-source
 
 Full-featured theme/page builder to create super fast & amazing website
@@ -128,6 +129,8 @@ Everything in one toolkit – We host your website on our top-notch infrastructu
 [Yes, pick me!](/get-started/)
 
 ---
+
+**everything**
 
 ### Enterprise
 
