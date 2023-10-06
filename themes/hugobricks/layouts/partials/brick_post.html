@@ -4,12 +4,12 @@
         <h1>{{ page.Title | safeHTML }}</h1>
         <div class="meta">
             <div>
-                <img src="/uploads/icons/material-symbols/200/rounded/calendar_month-fill.svg"class="black_2_textDark" alt="" />
+                <img src="/img/icons/material-symbols/200/rounded/calendar_month-fill.svg"class="black_2_textDark" alt="" />
                 {{ page.Date | time.Format ":date_medium"}}
             </div>
             {{ if index page.Params.tags 0 }}
             <div>
-                <img src="/uploads/icons/material-symbols/200/rounded/label-fill.svg"class="black_2_textDark" alt="" />
+                <img src="/img/icons/material-symbols/200/rounded/label-fill.svg"class="black_2_textDark" alt="" />
                 <ul>
                     {{ range page.Params.tags }}
                     <li><a href="/blog/?tag={{ . }}">{{ . }}</a>

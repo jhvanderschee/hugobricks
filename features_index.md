@@ -11,16 +11,16 @@ Say you want to achieve this neat Features 'component' markup (as the source cod
 	<p>Hugobricks covers all components you would like to have at hand. It is a power engine for your web oriented projects. It has excellent performance in all categories.</p></div>
     <div class="container">
         <ul class="grid features">
-            <li class="has_icon"><p class="image"><img class="black_2_accent" src="/uploads/icons/material-symbols/200/rounded/auto_awesome_mosaic.svg" alt=""></p>
+            <li class="has_icon"><p class="image"><img class="black_2_accent" src="/img/icons/material-symbols/200/rounded/auto_awesome_mosaic.svg" alt=""></p>
 				<h3 id="covers-all-components">Covers all components</h3>
 					<p>We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery,
 				quote, faqs, brands, video, blogs, post, related.</p>
 			</li>
-            <li class="has_icon"><p class="image"><img class="black_2_accent" src="/uploads/icons/material-symbols/200/rounded/performance_max.svg" alt=""></p>
+            <li class="has_icon"><p class="image"><img class="black_2_accent" src="/img/icons/material-symbols/200/rounded/performance_max.svg" alt=""></p>
 				<h3 id="99-google-lighthouse-score">99+ Google Lighthouse score</h3>
 				<p>Lightning fast website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.</p>
 	       </li>
-           <li class="has_icon"><p class="image"><img class="black_2_accent" src="/uploads/icons/material-symbols/200/rounded/design_services.svg" alt=""></p>
+           <li class="has_icon"><p class="image"><img class="black_2_accent" src="/img/icons/material-symbols/200/rounded/design_services.svg" alt=""></p>
 			   <h3 id="themeable-through-css-variables">Themeable through CSS variables</h3>
 			   <p>Easily themeable. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.</p>
 		   </li>
