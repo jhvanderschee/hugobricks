@@ -5,6 +5,7 @@
   email: joost@vdschee.nl
   phone:
   linkedin: https://www.linkedin.com/in/joost-van-der-schee-4b26682/
+  website:
 - name: Rasmus Phorfp
   function: All Stacks developer 
   image: /uploads/photos/avatars/1.jpeg
@@ -12,6 +13,7 @@
   email: joost@vdschee.nl
   phone:
   linkedin: https://www.linkedin.com/in/joost-van-der-schee-4b26682/
+  website:
 - name: Madogg Kabul
   function: Keyboard Guru
   image: /uploads/photos/avatars/3.jpeg
@@ -19,6 +21,7 @@
   email: joost@vdschee.nl
   phone:
   linkedin: https://www.linkedin.com/in/joost-van-der-schee-4b26682/
+  website:
 - name: Kenny Thompson
   function: Nix architect
   image: /uploads/photos/avatars/4.jpeg
@@ -26,6 +29,7 @@
   email: joost@vdschee.nl
   phone:
   linkedin: https://www.linkedin.com/in/joost-van-der-schee-4b26682/
+  website:
 - name: Linus O'Callaghan
   function: Systems Administrator
   image: /uploads/photos/avatars/5.jpeg
@@ -33,10 +37,12 @@
   email: joost@vdschee.nl
   phone:
   linkedin: https://www.linkedin.com/in/joost-van-der-schee-4b26682/
+  website:
 - name: Ada Lovelace
   function: Alma (cyber)Mater
   image: /uploads/photos/avatars/6.jpeg
   description: The carbon in our apple pies Drake Equation the only home we've ever known the ash of stellar alchemy Drake Equation star stuff extremely harvesting star light?
   email: joost@vdschee.nl
   phone:
-  linkedin: https://www.linkedin.com/in/joost-van-der-schee-4b26682/
+  linkedin:
+  website: https://www.linkedin.com/in/joost-van-der-schee-4b26682/

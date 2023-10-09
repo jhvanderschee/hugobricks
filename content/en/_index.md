@@ -46,42 +46,42 @@ Hugobricks covers all components you would like to have at hand. It is a power e
 
 ---
 
-![](/uploads/icons/material-symbols/200/rounded/auto_awesome_mosaic.svg)
+![](/img/icons/material-symbols/200/rounded/auto_awesome_mosaic.svg)
 ### Covers all components
 
 We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
 
 ---
 
-![](/uploads/icons/material-symbols/200/rounded/performance_max.svg)
+![](/img/icons/material-symbols/200/rounded/performance_max.svg)
 ### 99+ Google Lighthouse score
 
 Lightning fast website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
 
 ---
 
-![](/uploads/icons/material-symbols/200/rounded/design_services.svg)
+![](/img/icons/material-symbols/200/rounded/design_services.svg)
 ### Themeable through CSS variables
 
 Easily themeable. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
 
 ---
 
-![](/uploads/icons/material-symbols/200/rounded/devices.svg)
+![](/img/icons/material-symbols/200/rounded/devices.svg)
 ### Fully resonsive on all devices
 
 Works on every screen. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
 
 ---
 
-![](/uploads/icons/material-symbols/200/rounded/timer.svg)
+![](/img/icons/material-symbols/200/rounded/timer.svg)
 ### Super fast builds and deploys
 
 Extremely fast. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
 
 ---
 
-![](/uploads/icons/material-symbols/200/rounded/auto_fix.svg)
+![](/img/icons/material-symbols/200/rounded/auto_fix.svg)
 ### 10+ pre-build pages
 
 Start with the end result. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
@@ -95,9 +95,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt
 
 ---
 
+**budget**
 ### Open-source
 
-Full-featured theme/page builder to create super fast and truly amazing website
+Full-featured theme/page builder to create super fast & amazing website
 
 ### _$_**0**/month
 
@@ -125,9 +126,11 @@ Everything in one toolkit – We host your website on our top-notch infrastructu
 - Form handling + notifications
 - CMS system for editors
 
-[Order now](/get-started/)
+[Yes, pick me!](/get-started/)
 
 ---
+
+**everything**
 
 ### Enterprise
 

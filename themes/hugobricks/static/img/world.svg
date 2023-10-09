@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   width="666.66669"
+   height="666.66669"
+   viewBox="-2 -2 20.000001 20.000001"
+   preserveAspectRatio="xMinYMin"
+   class="jam jam-world"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="world.svg"
+   inkscape:version="1.2.2 (1:1.2.2+202305151915+b0a8486541)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.28375"
+     inkscape:cx="133.20351"
+     inkscape:cy="332.61928"
+     inkscape:window-width="3440"
+     inkscape:window-height="1391"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     d="M 0.252,6 A 8.014,8.014 0 0 0 0,8 c 0,0.69 0.088,1.36 0.252,2 H 3.1 a 19.83,19.83 0 0 1 0,-4 z M 1.07,4 H 3.416 C 3.682,2.783 4.066,1.693 4.537,0.786 A 8.035,8.035 0 0 0 1.07,4 Z M 15.748,6 H 12.9 a 19.83,19.83 0 0 1 0,4 h 2.848 C 15.912,9.36 16,8.69 16,8 16,7.31 15.912,6.64 15.748,6 Z M 14.93,4 A 8.035,8.035 0 0 0 11.463,0.786 C 11.935,1.693 12.318,2.783 12.584,4 Z M 5.112,6 A 17.763,17.763 0 0 0 5,8 c 0,0.685 0.038,1.355 0.112,2 h 5.776 a 17.763,17.763 0 0 0 0,-4 z M 5.47,4 h 5.06 A 10.758,10.758 0 0 0 9.747,1.823 C 9.119,0.568 8.447,0 8,0 7.552,0 6.881,0.568 6.253,1.823 5.938,2.455 5.673,3.19 5.47,4 Z m -4.4,8 a 8.035,8.035 0 0 0 3.467,3.214 C 4.065,14.307 3.682,13.217 3.416,12 Z m 13.86,0 h -2.346 c -0.266,1.217 -0.65,2.307 -1.121,3.214 A 8.035,8.035 0 0 0 14.93,12 Z m -9.46,0 c 0.203,0.81 0.468,1.545 0.783,2.177 C 6.881,15.432 7.553,16 8,16 8.448,16 9.119,15.432 9.747,14.177 10.062,13.545 10.327,12.81 10.53,12 Z M 8,18 C 2.477,18 -2,13.523 -2,8 -2,2.477 2.477,-2 8,-2 13.523,-2 18,2.477 18,8 18,13.523 13.523,18 8,18 Z"
+     id="path2" />
+</svg>
