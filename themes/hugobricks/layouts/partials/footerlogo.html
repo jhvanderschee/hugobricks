@@ -3,7 +3,7 @@
         <img src="{{ (index .Site.Data .Language.Lang).footer.logo_image }}" alt="{{ (index .Site.Data .Language.Lang).general.title }} logo" />
     {{ else }}
         <div class="{{ if (index .Site.Data .Language.Lang).header.logo_subtitle }}has_subtitle{{ end}}">
-            <img src="{{ (index .Site.Data .Language.Lang).general.favicon_image }}" alt="{{ (index .Site.Data .Language.Lang).general.title }} logo" class="inline black_2_textDark" />
+            <img src="{{ .Site.Data.settings.favicon_image }}" alt="{{ (index .Site.Data .Language.Lang).general.title }} logo" class="inline black_2_textDark" />
             <div>
                 <span>{{ (index .Site.Data .Language.Lang).general.title }}</span>
                 {{ if (index .Site.Data .Language.Lang).header.logo_subtitle }}<span>{{ (index .Site.Data .Language.Lang).header.logo_subtitle }}</span>{{ end }}

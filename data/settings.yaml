@@ -1,0 +1,5 @@
+favicon_image: /uploads/branding/brick_icon2_bw.svg
+sticky_header: true
+customcursor: true
+intersectionobserver: true
+filter_has_numbers: false
