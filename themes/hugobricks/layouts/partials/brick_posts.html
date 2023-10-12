@@ -18,7 +18,7 @@
                 {{ end }}
             </select>
         </div>
-        <ul class="contentitems grid posts" pagesize="{{ .Site.Data.settings.page_size }}">
+        <ul class="contentitems grid posts" pagesize="{{ page.Site.Data.settings.page_size }}">
             {{ range $index,$post := $posts }}
                 {{- $postimage := (print `/uploads/gallery/0` (string (add (mod $index 5) 1)) `.jpg`) -}}
                 {{- if .Params.image -}}
