@@ -35,7 +35,7 @@ var multiselecttags_update = function(selectelement, selectEl, pillsEl) {
         var numberofitems = document.querySelectorAll('.contentitems > li.tag_'+tag).length;
         option.setAttribute('value',tag);
         option.innerHTML = selectelement.options[i].innerHTML;
-        if(document.querySelectorAll("#filter.number_true")) option.innerHTML += ' ('+numberofitems+')';
+        if(document.querySelectorAll("#filter.numbers_true").length) option.innerHTML += ' ('+numberofitems+')';
         option.setAttribute('disabled','');
         selectEl.append(option);
         if(!selectelement.options[i].selected && itemsLeft(tag)) {
