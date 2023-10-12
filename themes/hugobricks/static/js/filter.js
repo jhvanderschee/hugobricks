@@ -24,7 +24,7 @@ function itemsLeft(tag) {
     }
 }
 
-const pagesize = document.querySelector('.contentitems').dataset.pagesize;
+const pagesize = parseInt(document.querySelector('.contentitems').dataset.pagesize);
 var multiselecttags_update = function(selectelement, selectEl, pillsEl) {
     
     selectEl.innerHTML = '<option>Filter tags</option>';
