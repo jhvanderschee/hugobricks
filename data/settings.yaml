@@ -3,4 +3,4 @@ sticky_header: true
 customcursor: true
 intersectionobserver: true
 filter_has_numbers: true
-page_size: 6
+page_size: 3
