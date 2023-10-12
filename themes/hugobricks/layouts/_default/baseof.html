@@ -14,7 +14,7 @@
   <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }} filename_{{ with .File }}{{ .BaseFileName }}{{ end }}">
     <script>      
       function updateSize() {
-        if(window.innerWidth<{{ (index .Site.Data .Language.Lang).header.mobile_view_at }}) document.body.classList.add('mobilemenu');
+        if(window.innerWidth<{{ (index .Site.Data .Language.Lang).header.mobile_view_width }}) document.body.classList.add('mobilemenu');
         else document.body.classList.remove('mobilemenu');
       }
       updateSize();
