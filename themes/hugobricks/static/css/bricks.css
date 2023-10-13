@@ -222,7 +222,8 @@ section.small h1 {text-align: center;}
 /* brick docs
 /*------------------------*/
 
-section.docs {padding-top: 0!important; margin-top: -3rem;}
+section.docs {padding-top: 0!important; margin-top: 0;}
+.preheader + header + section.docs {margin-top: -3rem;}
 section.docs .container {display: flex; gap: 5rem;}
 section.docs .container .menu {border-right: 1px solid rgba(0,0,0,0.1); width: 20rem; max-width: 20rem; padding: 2rem 0 3.2rem;}
 section.docs .container .content {min-width: 0; min-height: 0; padding: 3.2rem 0; flex-grow: 1;}

@@ -7,7 +7,7 @@
     <meta name="description" content="{{ .Summary }}">
 
     <link rel="canonical" href="{{ .Permalink }}" />
-    <link rel="shortcut icon" href="{{ (index .Site.Data .Language.Lang).general.favicon_image }}">
+    <link rel="shortcut icon" href="{{ .Site.Data.settings.favicon_image }}">
     
     <link href="/css/style.css?version={{ now }}" rel="stylesheet">
   </head>
@@ -95,17 +95,17 @@
   		</div>
 		</footer>
 
-		{{ if (index .Site.Data .Language.Lang).header.sticky_header }}
+		{{ if .Site.Data.settings.sticky_header }}
       <script type="text/javascript" src="/js/stickyheader.js"></script>
     {{ end }}
     <script type="text/javascript" src="/js/faq.js"></script>
     <script type="text/javascript" src="/js/lightbox.js"></script>
 		<link rel="stylesheet" href="/css/lightbox.css">
-    {{ if (index .Site.Data .Language.Lang).general.customcursor }}
+    {{ if .Site.Data.settings.customcursor }}
       <script type="text/javascript" src="/js/customcursor.js"></script>
       <link rel="stylesheet" href="/css/customcursor.css">
     {{ end }}
-    {{ if (index .Site.Data .Language.Lang).general.intersectionobserver }}
+    {{ if .Site.Data.settings.intersectionobserver }}
       <script type="text/javascript" src="/js/intersectionobserver.js"></script>
       <link rel="stylesheet" href="/css/intersectionobserver.css">
     {{ end }}

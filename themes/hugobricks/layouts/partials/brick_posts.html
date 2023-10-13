@@ -12,13 +12,13 @@
     </div>{{ end }}
     <div class="container">
         <div class="filter">
-            <select id="filter" class="multiselecttags" multiple autocomplete="off">
+            <select id="filter" class="multiselecttags numbers_{{ page.Site.Data.settings.filter_has_numbers }}" multiple autocomplete="off">
                 {{ range $name, $taxonomy := page.Site.Taxonomies.tags }}
                     <option value="{{ $name | urlize }}">{{ $name }}</option>
                 {{ end }}
             </select>
         </div>
-        <ul class="contentitems grid posts">
+        <ul class="contentitems grid posts" data-pagesize="{{ page.Site.Data.settings.page_size }}">
             {{ range $index,$post := $posts }}
                 {{- $postimage := (print `/uploads/gallery/0` (string (add (mod $index 5) 1)) `.jpg`) -}}
                 {{- if .Params.image -}}

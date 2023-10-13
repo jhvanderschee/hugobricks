@@ -10,19 +10,35 @@ function findGetParameter(parameterName) {
         });
     return result;
 }
+function itemsLeft(tag) {
+    if(document.getElementById('filter')) {
+        var filter = document.getElementById('filter');
+        var activetags = ".contentitems > li";
+        for (var i=0; i<filter.options.length;i++) {
+            if(filter.options[i].selected) {
+                activetags += '.tag_'+filter.options[i].value;
+            }
+        }
+        activetags += '.tag_'+tag;
+        return document.querySelectorAll(activetags).length
+    }
+}
 
-const pagesize = 3;
+const pagesize = parseInt(document.querySelector('.contentitems').dataset.pagesize);
 var multiselecttags_update = function(selectelement, selectEl, pillsEl) {
     
     selectEl.innerHTML = '<option>Filter tags</option>';
     for (var i=0; i<selectelement.options.length;i++) {
         const j = i;
+        var tag = selectelement.options[i].value;
         var option = document.createElement("option");
-        option.setAttribute('value',selectelement.options[i].value);
+        var numberofitems = document.querySelectorAll('.contentitems > li.tag_'+tag).length;
+        option.setAttribute('value',tag);
         option.innerHTML = selectelement.options[i].innerHTML;
+        if(document.querySelectorAll("#filter.numbers_true").length) option.innerHTML += ' ('+numberofitems+')';
         option.setAttribute('disabled','');
         selectEl.append(option);
-        if(!selectelement.options[i].selected) {
+        if(!selectelement.options[i].selected && itemsLeft(tag)) {
             option.removeAttribute('disabled');
         }
         option.dataset.index = j;
@@ -86,8 +102,8 @@ selectelements.forEach(function(selectelement) {
 });
 
 
-updatePostFilter();
 
+updatePostFilter();
 function updatePostFilter() {
     hideAllPosts();
     document.getElementById('loadmoreposts').style.display = 'none';
