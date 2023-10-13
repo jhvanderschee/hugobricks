@@ -21,8 +21,8 @@
       window.addEventListener("resize", updateSize);
     </script>
     <div class="innerbody">
-    {{- if (index .Site.Data .Language.Lang).header.preheader.active -}}
-    <div class="preheader{{ if (index .Site.Data .Language.Lang).header.preheader.is_light }} light{{- end -}}">
+    {{- if .Site.Data.settings.preheader.active -}}
+    <div class="preheader{{ if .Site.Data.settings.preheader.is_light }} light{{- end -}}">
       <div class="container">
         <div class="icons">
           {{- if (index .Site.Data .Language.Lang).general.contact.phone -}}
@@ -33,7 +33,7 @@
           {{- end -}}
         </div>
         <div>
-          {{- if (index .Site.Data .Language.Lang).header.preheader.text -}}{{ (index .Site.Data .Language.Lang).header.preheader.text }}{{- end -}}
+          {{- if .Site.Data.settings.preheader.text -}}{{ .Site.Data.settings.preheader.text }}{{- end -}}
         </div>
       </div>  
     </div>
