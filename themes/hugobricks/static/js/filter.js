@@ -31,17 +31,19 @@ var multiselecttags_update = function(selectelement, selectEl, pillsEl) {
     for (var i=0; i<selectelement.options.length;i++) {
         const j = i;
         var tag = selectelement.options[i].value;
-        var option = document.createElement("option");
         var numberofitems = document.querySelectorAll('.contentitems > li.tag_'+tag).length;
-        option.setAttribute('value',tag);
-        option.innerHTML = selectelement.options[i].innerHTML;
-        if(document.querySelectorAll("#filter.numbers_true").length) option.innerHTML += ' ('+numberofitems+')';
-        option.setAttribute('disabled','');
-        selectEl.append(option);
-        if(!selectelement.options[i].selected && itemsLeft(tag)) {
-            option.removeAttribute('disabled');
+        if(numberofitems) {
+            var option = document.createElement("option");
+            option.setAttribute('value',tag);
+            option.innerHTML = selectelement.options[i].innerHTML;
+            if(document.querySelectorAll("#filter.numbers_true").length) option.innerHTML += ' ('+numberofitems+')';
+            option.setAttribute('disabled','');
+            selectEl.append(option);
+            if(!selectelement.options[i].selected && itemsLeft(tag)) {
+                option.removeAttribute('disabled');
+            }
+            option.dataset.index = j;
         }
-        option.dataset.index = j;
     }
     selectEl.addEventListener('change', function() {
         if(this.selectedIndex==0) return;
