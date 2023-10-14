@@ -21,7 +21,7 @@
         <ul class="contentitems grid posts" data-pagesize="{{ page.Site.Data.settings.page_size }}">
             {{ range $index,$post := $posts }}                
                 <li class="item{{ range .Params.tags }} tag_{{ . }}{{ end }}">
-                        {{- $postimage = ((resources.GetMatch .Params.image).Fill `1200x600 jpg Smart q50`).RelPermalink -}}
+                        {{- $postimage := ((resources.GetMatch .Params.image).Fill `1200x600 jpg Smart q50`).RelPermalink -}}
                         {{- if $postimage -}}<img data-src="{{ $postimage }}" alt="{{ .Title }}" style="cursor: pointer;" onclick="document.location.href='{{ .RelPermalink }}';" />{{- end -}}
                         <h3>{{ .Title | safeHTML }}</h3>
                         <div class="meta">
