@@ -178,6 +178,7 @@ section.posts .container.small {margin-bottom: 4rem; text-align: center;}
 section.posts .grid {grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 2rem;}
 section.posts .grid .item .img {border-radius: 1rem; margin-bottom: 0.251rem; overflow: hidden;}
 section.posts .grid .item .img img {display: block;}
+section.posts .grid .item h3 {padding-top: 0;}
 section.posts .grid li.placeholder {display: block!important;}
 section.posts .grid .summary .button {position: relative; bottom: 0.8rem;}
 section.posts .filter {display: flex; justify-content: flex-end; align-items: center; gap: 0.75rem; margin: -2rem 0 1.25rem;}
