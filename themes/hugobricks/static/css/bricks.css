@@ -176,7 +176,7 @@ ul.prices li div.box a.button {margin-top: 2.5rem;}
 
 section.posts .container.small {margin-bottom: 4rem; text-align: center;}
 section.posts .grid {grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 2rem;}
-section.posts .grid .item .img {border-radius: 1rem; margin-bottom: 0.251rem;}
+section.posts .grid .item .img {border-radius: 1rem; margin-bottom: 0.251rem; overflow: hidden;}
 section.posts .grid .item .img img {display: block;}
 section.posts .grid li.placeholder {display: block!important;}
 section.posts .grid .summary .button {position: relative; bottom: 0.8rem;}
