@@ -89,7 +89,7 @@ section.stickstofooter + footer {margin-top: 0; border-top: 0;}
 /* box
 /*------------------------*/
 
-div.box {background: var(--light); border: 0.1rem solid var(--light); padding: 3.5rem clamp(2rem, 5vw, 5rem); border-radius: 1rem; position: relative;}
+div.box {background: var(--light); border: 0.1rem solid var(--borderLight); padding: 3.5rem clamp(2rem, 5vw, 5rem); border-radius: 1rem; position: relative;}
 div.box:not(:last-child) {margin-bottom: 1.7em;}
 div.box p img {border-radius: 0;}
 
