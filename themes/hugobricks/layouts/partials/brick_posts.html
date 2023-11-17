@@ -26,12 +26,13 @@
                             {{- if $postimage -}}<div class="img" onclick="document.location.href='{{ .RelPermalink }}';" style="cursor: pointer;"><img data-src="{{ $postimage }}" alt="{{ .Title }}" style="cursor: pointer;" onclick="document.location.href='{{ .RelPermalink }}';" /></div>{{- end -}}
                         {{- end -}}
                         <h3>{{ .Title | safeHTML }}</h3>
-                        <div class="meta">
+                        {{ if .Params.date }}<div class="meta">
                             <div>
                                 <img src="/img/icons/material-symbols/200/rounded/calendar_month-fill.svg"class="black_2_textDark" alt="" />
                                 {{ .Date | time.Format ":date_medium"}}
                             </div>
                         </div>
+                        {{ end }}
                         <div class="summary">
                             <p>{{ substr .Summary 0 190 | safeHTML }}...</p>
                             <p><a href="{{ .RelPermalink }}" class="button ghost smaller">{{ i18n "Read more" }}</a></p>
