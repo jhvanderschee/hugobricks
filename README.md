@@ -82,7 +82,7 @@ In order to get a working website feel free to
 - re-use default hugobricks
 - and/or customise them !
 
-### Hugobricks theme features
+## Hugobricks theme features
 - Contact form
 - Map
 - Button (primary and secondary)
@@ -99,19 +99,12 @@ In order to get a working website feel free to
 
 ## Hugobricks under the Hood
 
-Hugobricks is build with the regular [Hugo](https://gohugo.io/overview/introduction/) building blocks: 
+Hugobricks is build with the regular [Hugo](https://gohugo.io/overview/introduction/) building blocks, like [shortcodes](https://gohugo.io/content-management/shortcodes/#what-a-shortcode-is), [partials](https://gohugo.io/templates/partials/) and [layouts](https://gohugo.io/templates/base/). Hugobricks takes advantage of these things to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic.
 
-- [Shortcodes](https://gohugo.io/content-management/shortcodes/#what-a-shortcode-is) 
-- [Partials](https://gohugo.io/templates/partials/)
-- [Layouts / templating](https://gohugo.io/templates/base/)
-
-Hugobricks takes advantage of these things to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic.
-
-### Hugobricks Feedback 
+## Hugobricks Feedback 
 
 Make your wishlist. Missing a given Hugobrick? [Let us know.](https://github.com/jhvanderschee/hugobricks/issues/5)
 
-
-### Credits and licenses
+## Credits and licenses
 
 The functionality is inspired by the many [Gutenberg Block Plugins](https://wpastra.com/plugins/wordpress-gutenberg-block-plugins/) that are available online. The design has been inspired by the MIT licensed [Hugoplate from Zeon Studio](https://github.com/zeon-studio/hugoplate.git). The fonts and icons are Apache Licensed and come from [Google Fonts](https://fonts.google.com) and [Google Material Symbols](https://fonts.google.com/icons). The illustrations are free to use but require [an attribution to Storyset](https://storyset.com/terms). The avatars are CC0 licensed and come from [Pravatar](https://www.pravatar.cc/images). The social media icons (Facebook, Instagram, etc) belong to the respective social networks/their owners.
