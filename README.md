@@ -50,13 +50,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 
 ## Hugobricks workflow
 
-Hugobricks aims to enhance the Hugo web framework by providing a variety of pre-made bricks for straightforward website-building.
-
-Our companion project, [hugocodex](https://hugocodex.org), guides beginners in starting a Hugo project from scratch. For those who already have experience with Hugo and want to use it for rapid prototyping and iterating, Hugobricks offers premade websites and customizable components powered by Hugo.
-
-Cloning this repository allows you to start building lightning-fast static sites with flexibility and ease with and already working website.
-
-Here is an example of two bricks (title and cta):
+Hugobricks aims to enhance the Hugo web framework by providing a variety of pre-made bricks for straightforward website-building. Our companion project, [hugocodex](https://hugocodex.org), guides beginners in starting a Hugo project from scratch. For those who already have experience with Hugo and want to use it for rapid prototyping and iterating, Hugobricks offers premade websites and customizable components powered by Hugo. Cloning this repository allows you to start building lightning-fast static sites with flexibility and ease with and already working website. Here is an example of two bricks (title and cta):
 
 ```
 ---
@@ -73,11 +67,11 @@ Your first paragraph with some lorem ipsum dolor sit amet.
 {{< /brick_cta >}}
 ```
 
-### Get started with Hugobricks
+## Get started with Hugobricks
 
-In order to get a working website feel free to 
+In order to get a working website you should:
 
-- clone our repository and start building with stackable content bricks.
+- clone our repository and start building with stackable content bricks
 - enjoy your already working hugo website, plan your changes/iterations
 - re-use default hugobricks
 - and/or customise them !
