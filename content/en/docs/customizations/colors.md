@@ -11,7 +11,7 @@ The color definitions can be found in 'style.css' in '/static/css/style.css'. Th
     --textMedium: rgba(38, 50, 56, 0.7);
     --borderMedium: rgba(38, 50, 56, 0.2); 
     --borderLight: rgba(38, 50, 56, 0.075);
-    --accent: #f4b500;
+    --accent: #0C0E99;
     --textAccent: #e6ac00;
     --light: rgba(38, 50, 56, 0.035);
 }

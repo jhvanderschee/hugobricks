@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --textDark: black;
     --textMedium: rgba(0,0,0,0.7);
     --borderMedium: rgba(0,0,0,0.2);
@@ -6,7 +6,7 @@
     --accent: black;
     --textAccent: black;
     --light: rgba(0,0,0,0.03);
-}
+} */
 img {filter: grayscale(100%);}
 
 * {padding: 0; margin: 0; box-sizing: border-box;}

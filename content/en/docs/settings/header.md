@@ -29,7 +29,7 @@ The header CTA is the button in the top right corner of each page. You can turn 
 
 ```
 cta:
-  active: true
+  active: false
   title: Get started
   link: /get-started/
 ```
@@ -40,7 +40,6 @@ Preheader is defined as the first 'section', at the top of the page body. You ca
 
 ```
 preheader: 
-  active: true
-  is_light: true
-  text: Open Mon-Fri from 9.00-5.00
+  active: false
+  is_light: false
 ```

@@ -1,48 +1,21 @@
-- name: Gitio Hamano
-  function: Source Code version controller
+- name: Nico Tshintu-Bakajika
+  function: Director of Operations
   image: /uploads/photos/avatars/2.jpeg
   description: Rings of Uranus hearts of the stars corpus callosum invent the universe take root and flourish concept of the number one.
-  email: joost@vdschee.nl
-  phone:
-  linkedin: https://www.linkedin.com/in/joost-van-der-schee-4b26682/
-  website:
-- name: Rasmus Phorfp
-  function: All Stacks developer 
+  email: n.tshintu@ispa-drc.cd
+  phone: +243 818 149 372
+  linkedin: 
+- name: Davina Mputu
+  function: Assistant Administrator
   image: /uploads/photos/avatars/1.jpeg
   description: Finite but unbounded astonishment two ghostly white figures in coveralls and helmets are softly dancing billions upon billions Vangelis Hypatia.
-  email: joost@vdschee.nl
+  email: davina@ispa-drc.cd
   phone:
-  linkedin: https://www.linkedin.com/in/joost-van-der-schee-4b26682/
-  website:
-- name: Madogg Kabul
-  function: Keyboard Guru
+  linkedin: 
+- name: Daniel Alongi
+  function: Technical Manager
   image: /uploads/photos/avatars/3.jpeg
   description: Hypatia globular star cluster explorations the ash of stellar alchemy rings of Uranus a still more glorious dawn awaits.
-  email: joost@vdschee.nl
+  email: danalongi@ispa-drc.cd
   phone:
-  linkedin: https://www.linkedin.com/in/joost-van-der-schee-4b26682/
-  website:
-- name: Kenny Thompson
-  function: Nix architect
-  image: /uploads/photos/avatars/4.jpeg
-  description: Extraordinary claims require extraordinary evidence how far away a very small stage in a vast cosmic arena something incredible is waiting to be known.
-  email: joost@vdschee.nl
-  phone:
-  linkedin: https://www.linkedin.com/in/joost-van-der-schee-4b26682/
-  website:
-- name: Linus O'Callaghan
-  function: Systems Administrator
-  image: /uploads/photos/avatars/5.jpeg
-  description: Descended from astronomers stirred by starlight circumnavigated colonies dispassionate extraterrestrial observer a very small stage in a vast cosmic arena.
-  email: joost@vdschee.nl
-  phone:
-  linkedin: https://www.linkedin.com/in/joost-van-der-schee-4b26682/
-  website:
-- name: Ada Lovelace
-  function: Alma (cyber)Mater
-  image: /uploads/photos/avatars/6.jpeg
-  description: The carbon in our apple pies Drake Equation the only home we've ever known the ash of stellar alchemy Drake Equation star stuff extremely harvesting star light?
-  email: joost@vdschee.nl
-  phone:
-  linkedin:
-  website: https://www.linkedin.com/in/joost-van-der-schee-4b26682/
+  linkedin: 

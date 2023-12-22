@@ -1,40 +1,35 @@
-logo_image:
-logo_subtitle: The Ultimate Hugo theme
+logo_image: /img/ispadrc_logo2.png
+logo_subtitle:
 mobile_view_width: 1000
 menuitems:
   - title: About
-    link: /about/
+    link: 
     items: 
-      - title:
-        link:
-  - title: Pages
-    link: /contact/
-    items: 
-      - title: Elements
-        link: /elements/
-      - title: Header image 1
-        link: /bgimage3/
-      - title: Header image 2
-        link: /bgimage2/
-      - title: Header image 3
-        link: /bgimage/
-      - title: Basic page 1
-        link: /basic/
-      - title: Basic page 2
-        link: /basic2/
-      - title: Our team
+      - title: Our History
+        link: /history/
+      - title: Our Team
         link: /team/
-      - title: Contact us
-        link: /contact/
+  - title: Community
+    link: 
+    items: 
+      - title: IXPs
+        link: /ixps/
+      - title: Members
+        link: /members/
+      - title: Partnerships
+        link: /partnerships/
+  - title: Resources
+    link: 
+    items:
+      - title: Documents
+        link: /documents/
+      - title: Newsletter
+        link: /newsletter/
       - title: F.A.Q.
         link: /faq/
-      - title: 404 Page
-        link: /404.html
-  - title: Docs
-    link: /docs/
-  - title: Blog
-    link: /blog/
+  - title: Contact
+    link: /contact/
 cta:
   active: true
-  title: Get started
-  link: /get-started/
+  title: Login
+  link: https://portal.ispa-drc.cd/login/

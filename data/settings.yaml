@@ -1,10 +1,10 @@
-favicon_image: /uploads/branding/brick_icon2_bw.svg
-sticky_header: true
+favicon_image: /img/ispadrc_favicon.png
+sticky_header: false
 customcursor: true
 intersectionobserver: true
 filter_has_numbers: true
 page_size: 3
 preheader: 
-  active: true
-  is_light: true
-  text: Open Mon-Fri from 9.00-5.00
+  active: false
+  is_light: false
+  text: 

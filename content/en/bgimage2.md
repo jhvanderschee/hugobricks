@@ -3,7 +3,7 @@ title: Header image 2
 ---
 {{< brick_title >}}
 
-![](/uploads/photos/bricks.jpg)
+![](/uploads/photos/bricks.png)
 
 # Header image 2
 

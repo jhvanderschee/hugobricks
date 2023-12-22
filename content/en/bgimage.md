@@ -8,7 +8,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 {{< button "Get started for free" "/get-started/" >}}
 
-![](/uploads/photos/bricks.jpg)
+![](/uploads/photos/bricks.png)
 
 {{< /brick_title >}}
 {{< brick_features >}}{{< /brick_features >}}

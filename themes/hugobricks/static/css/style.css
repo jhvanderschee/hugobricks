@@ -2,6 +2,7 @@
 @import "base.css";
 @import "header-footer.css";
 @import "bricks.css";
+@import "tabs.css";
 
 /*------------------------*/
 /* theme colors
@@ -12,9 +13,11 @@
     --textMedium: rgba(38, 50, 56, 0.7);
     --borderMedium: rgba(38, 50, 56, 0.2); 
     --borderLight: rgba(38, 50, 56, 0.075);
-    --accent: #f4b500;
-    --textAccent: #e6ac00;
+    --accent: #041062;
+    --textAccent: #041062;
     --light: rgba(38, 50, 56, 0.035);
+    --footerDark: #7B7B97;
+    --redAccent: #FD1207;
 }
 /*------------------------*/
 /* turn grayscale off
@@ -26,7 +29,7 @@ img {filter: grayscale(0);}
 /* colorize_image
 /*------------------------*/
 
-.colorize_image {filter: contrast(1) sepia(1) hue-rotate(160deg) grayscale(0.8)!important;}
+.colorize_image {filter: contrast(1) sepia(1) hue-rotate(110deg) grayscale(0.8)!important;}
 
 /*------------------------*/
 /* black_2_textDark

@@ -11,9 +11,9 @@ languages:
     languageName: English
     contentDir: content/en
     weight: 1
-  nl:
-    languageName: Nederlands
-    contentDir: content/nl
+  fr:
+    languageName: French
+    contentDir: content/fr
     weight: 2
 ```
 

@@ -7,23 +7,22 @@ title: Contact us
 
 # Contact us
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+Have a question about our services, joining the Association or anything else? Complete the form to contact us or reach out to the Secretariat.
 
 {{< /brick_title >}}
 {{< brick_contact >}}
 
 ## Got a question?
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+Building Gécamines-Blvd June 30
+Kinshasa Gombe
+Democratic Republic of Congo
 
-Soetendaal 7  
-1081BL Amsterdam  
-The Netherlands
-
-joost@vdschee.nl  
-+31 618 518 928
+info@ispa-drc.cd  
++243 815 406 303
 
 {{< socialbuttons >}}
 
 {{< /brick_contact >}}
+![](/static/uploads/map2.jpg)
 {{< brick_map >}}{{< /brick_map >}}

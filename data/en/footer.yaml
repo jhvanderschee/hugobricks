@@ -1,10 +1,13 @@
 logo_image:
-dark_footer: true
+logo_text: ISPA-DRC
+footer_text: © ISPA-DRC 2023
+dark_footer: false
+show_logo: false
 menuitems:
   - title: About
-    link:  /about/
-  - title: Elements
-    link:  /elements/
+    link:  /history/
+  - title: Community
+    link:  /members/
   - title: Privacy policy
     link:  /privacy-policy/
 socials:
@@ -13,11 +16,5 @@ socials:
     logo_image: /img/facebook.svg
   - title: Twitter
     link: https://twitter.com
-    logo_image: /img/twitter.svg      
-  - title: Mastodon
-    link: https://joinmastodon.org
-    logo_image: /img/mastodon.svg      
-  - title: Instagram
-    link: https://instagram.com
-    logo_image: /img/instagram.svg
-footer_text: This theme is open source. More info on [Github](https://github.com/jhvanderschee/hugobricks)!
+    logo_image: /img/twitter.svg    
+  
