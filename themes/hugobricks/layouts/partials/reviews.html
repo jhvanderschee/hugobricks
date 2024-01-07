@@ -4,7 +4,7 @@
     <li>
         <div class="box">
             <div>
-                <img src="{{ if (resources.GetMatch .image ) }}{{ ((resources.GetMatch .image).Fit `200x200 jpg Smart q50`).RelPermalink | safeURL }}{{ else }}{{ .image }}{{ end }}" alt="{{ .name }} image" class="avatar colorize_image">
+                <img src="{{ if and (resources.GetMatch .image ) (ne (resources.GetMatch .image).MediaType.SubType "svg") }}{{ ((resources.GetMatch .image).Fit `200x200 jpg Smart q50`).RelPermalink | safeURL }}{{ else }}{{ .image }}{{ end }}" alt="{{ .name }} image" class="avatar colorize_image">
                 <div>
                     <h3>{{ .name }}</h3>
                     <div class="function">{{ .function }}</div>
