@@ -1,0 +1,35 @@
+logo_image: /img/ispadrc_logo2.png
+logo_subtitle:
+mobile_view_width: 1000
+menuitems:
+  - title: À propos
+    link: 
+    items: 
+      - title: Notre histoire
+        link: /history/
+      - title: Notre équipe
+        link: /team/
+  - title: Communauté
+    link: 
+    items: 
+      - title: IXPs
+        link: /ixps/
+      - title: Membres
+        link: /members/
+      - title: Partenariats
+        link: /partnerships/
+  - title: Ressources
+    link: 
+    items:
+      - title: Documents
+        link: /documents/
+      - title: Bulletin
+        link: /newsletter/
+      - title: F.A.Q.
+        link: /faq/
+  - title: Contact
+    link: /contact/
+cta:
+  active: true
+  title: Connexion
+  link: https://portal.ispa-drc.cd/login/

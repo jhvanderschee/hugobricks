@@ -6,29 +6,38 @@ menuitems:
     link: 
     items: 
       - title: Our History
-        link: /history/
+        slug: en
+        link: /en/history/
       - title: Our Team
-        link: /team/
+        slug: en
+        link: /en/team/
   - title: Community
     link: 
     items: 
       - title: IXPs
-        link: /ixps/
+        slug: en
+        link: /en/ixps/
       - title: Members
-        link: /members/
+        slug: en
+        link: /en/members/
       - title: Partnerships
-        link: /partnerships/
+        slug: en
+        link: /en/partnerships/
   - title: Resources
     link: 
     items:
       - title: Documents
-        link: /documents/
+        slug: en
+        link: /en/documents/
       - title: Newsletter
-        link: /newsletter/
+        slug: en
+        link: /en/newsletter/
       - title: F.A.Q.
-        link: /faq/
+        slug: en
+        link: /en/faq/
   - title: Contact
-    link: /contact/
+    slug: en
+    link: /en/contact/
 cta:
   active: true
   title: Login

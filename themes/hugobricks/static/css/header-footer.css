@@ -33,8 +33,10 @@ header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white; positi
 header.sticky > .container {padding-top: 0.75rem; padding-bottom: 0.75rem;}
 header a {text-decoration: none;}
 header ul {display: flex; justify-content: flex-end; gap: 2rem; margin: 0;}
+header div.languages {display: flex; align-items: center; justify-content: flex-end;}
+header div.languages > ul {margin-right: 1rem;}
 header ul li {list-style: none; position: relative;}
-header nav > ul > li a {font-weight: bold; color: var(--textDark); padding: 0.80rem 0 0.65rem 0; display: block; white-space: nowrap;}
+header nav > ul > li a, header div.languages > ul > li a {font-weight: bold; color: var(--textDark); padding: 0.80rem 0 0.65rem 0; display: block; white-space: nowrap;}
 header nav > ul > li::after {
     content: "";
     position: absolute;
@@ -89,7 +91,7 @@ header nav > ul > li > ul li a:hover {background-color: var(--accent); color: wh
 header > .container {display: flex; align-items: center;}
 header > .container > div {flex: 3; text-align: center;}
 header > .container > div:first-child {flex: 1; text-align: left;}
-header > .container.has_cta > div:nth-child(3) {flex: 1; text-align: right;}
+header > .container.has_cta > div:nth-child(3) { text-align: right;}
 header > .container.has_cta ul {justify-content: center;}
 header + section.hasbackgroundcolor {margin-top: 0;}
 header + section:not(.bgimage),
@@ -98,7 +100,7 @@ body:not(.transparent_header) header + section.bgimage .container {padding-top: 
 
 body.transparent_header header:not(.sticky) {background: transparent;}
 body.transparent_header header:not(.sticky) a.logo,
-body.transparent_header header:not(.sticky) nav > ul > li > a {color: white;}
+body.transparent_header header:not(.sticky) nav > ul > li > a, body.transparent_header header:not(.sticky) div.languages > ul > li a {color: white;}
 body.transparent_header header:not(.sticky) nav > ul > li::after {background: white;}
 body.transparent_header header:not(.sticky) nav > ul > li.haschildren > a::after {border-color: white;}
 body.transparent_header header:not(.sticky) #togglemenu,

@@ -5,11 +5,11 @@ dark_footer: false
 show_logo: false
 menuitems:
   - title: About
-    link:  /history/
+    link:  /en/history/
   - title: Community
-    link:  /members/
+    link:  /en/members/
   - title: Privacy policy
-    link:  /privacy-policy/
+    link:  /en/privacy-policy/
 socials:
   - title: Facebook
     link: https://facebook.com

@@ -61,7 +61,27 @@
           </nav>
         </div>
         {{ if (index .Site.Data .Language.Lang).header.cta.active }}
-        <div>
+        
+        <div class="languages">
+          <ul>
+            {{ range $.Site.Home.AllTranslations }}
+            <li><a href="{{ .RelPermalink }}">
+              {{ if (eq .Language.LanguageName "French") }}
+                {{ if (eq site.LanguageCode "en") }}
+                  {{.Language.LanguageName}}
+                {{else}}
+                  {{"Français"}}
+                {{end}}
+              {{else if (eq .Language.LanguageName "English")}}
+                {{ if (eq site.LanguageCode "en") }}
+                  {{.Language.LanguageName}}
+                {{else}}
+                  {{"Anglais"}}
+                {{end}}
+              {{end}}
+            </a></li>
+            {{ end }}
+        </ul> 
           <a href="{{ (index .Site.Data .Language.Lang).header.cta.link }}" class="button ghost smaller">{{ (index .Site.Data .Language.Lang).header.cta.title }}</a>
         </div>
         {{ end }}

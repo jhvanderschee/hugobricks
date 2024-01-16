@@ -70,6 +70,11 @@ LUBIX offers the following services:
 
 GOMIX (GOMA Internet eXchange point) is a layer 2 neutral associative Internet exchange point resulting from the RDC-IX project. It is the third set up, operational since September 17, 2021.
 
+GOMIX offers the following services:
+- Local and national peering
+- Remote peering
+- Unicast
+
 ![](/uploads/branches_logos/GOMIX.png)
 
 {{< /tabs >}}
