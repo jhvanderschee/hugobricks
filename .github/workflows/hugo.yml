@@ -2,8 +2,7 @@ name: Publish to GH Pages
 on:
   push:
     branches:
-      - main
-  pull_request:
+      - "main"
 
 concurrency:
   group: "pages"
