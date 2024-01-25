@@ -23,12 +23,19 @@ jobs:
           ref: gh-pages
           path: built-site
 
-      - name: Setup Hugo
+      - name: Build with Hugo
+        env:
+              # For maximum backward compatibility with Hugo modules
+              HUGO_ENVIRONMENT: production
+              HUGO_ENV: production
         run: |
-          curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.110.0/hugo_extended_0.110.0_linux-amd64.tar.gz'
-          tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo          
-      - name: Build
-        run: ${RUNNER_TEMP}/hugo
+              hugo \
+                --minify \
+                --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+              path: ./public
 
       - name: Deploy
         if: github.ref == 'refs/heads/main'
@@ -39,4 +46,4 @@ jobs:
           git config user.name 'Rivkanexus'
           git config user.email 'rebecca@rivka.uk'
           git commit -m 'Updated site'
-          git push
+          git push          
