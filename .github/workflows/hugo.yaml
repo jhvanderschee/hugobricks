@@ -10,12 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: true
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
       - name: Checkout destination
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         if: github.ref == 'refs/heads/main'
         with:
           ref: gh-pages
