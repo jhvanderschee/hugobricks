@@ -49,7 +49,7 @@ jobs:
         with:
           path: ./public
 
-       - name: Deploy
+    name: Deploy
   deploy:
     environment:
       name: github-pages
