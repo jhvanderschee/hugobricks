@@ -1,4 +1,4 @@
-baseURL: "https://www.hugobricks.preview.usecue.com"
+baseURL: "https://rivkanexus.github.io/ISPA-DRC/"
 title: ISPA DRC.cd
 paginate: 12
 theme: ["hugo-notice", "hugobricks"]
