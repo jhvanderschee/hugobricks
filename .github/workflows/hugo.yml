@@ -49,13 +49,14 @@ jobs:
         with:
           path: ./public
 
-      - name: Deploy
-        if: github.ref == 'refs/heads/main'
-        run: |
-          cp -R public/* ${GITHUB_WORKSPACE}/ISPA-DRC/
-          cd ${GITHUB_WORKSPACE}/ISPA-DRC/
-          git add .
-          git config user.name 'Rivkanexus'
-          git config user.email 'rebecca@rivka.uk'
-          git commit -m 'Updated site'
-          git push          
+       - name: Deploy
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4        
