@@ -1,7 +1,7 @@
 baseURL: "https://rivkanexus.github.io/ISPA-DRC/"
 title: ISPA DRC.cd
 paginate: 12
-theme: hugobricks
+theme: ["hugobricks"]
 defaultContentLanguage: fr
 assetDir: static
 
