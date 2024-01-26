@@ -12,10 +12,9 @@ on:
       - name: Checkout code
         uses: actions/checkout@v1
 
-  Deploy:
-    - name: Deploy the site
+      - name: Deploy the site
       uses: Rivkanexus/ISPA-DRC/hugo-deploy-gh-pages@main
-    env:
+  env:
         HUGO_VERSION: 0.120.4
         TARGET_REPO: github.com/Rivkanexus/ISPA-DRC.git
         TARGET_BRANCH: main
