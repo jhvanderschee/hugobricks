@@ -52,8 +52,8 @@ jobs:
       - name: Deploy
         if: github.ref == 'refs/heads/main'
         run: |
-          cp -R public/* ${GITHUB_WORKSPACE}/built-site/
-          cd ${GITHUB_WORKSPACE}/built-site
+          cp -R public/* ${GITHUB_WORKSPACE}/ISPA-DRC/
+          cd ${GITHUB_WORKSPACE}/ISPA-DRC/
           git add .
           git config user.name 'Rivkanexus'
           git config user.email 'rebecca@rivka.uk'
