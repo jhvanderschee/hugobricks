@@ -1,5 +1,8 @@
 .hugo_build.lock
-resources
+resources/
 public/
 sandbox/
 git-do*
+
+# Node
+node_modules/
