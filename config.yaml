@@ -1,9 +1,9 @@
-baseURL: "https://www.hugobricks.preview.usecue.com"
+baseURL: "https://github.com/Rivkanexus/ISPADRC/"
 title: ISPA DRC.cd
 paginate: 12
 theme: ["hugo-notice", "hugobricks"]
 defaultContentLanguage: fr
-defaultContentLanguageInSubdir: true
+defaultContentLanguageInSubdir: false
 assetDir: static
 
 markup:
@@ -20,7 +20,7 @@ languages:
     weight: 2
     disabled: false
   fr:
-    languageName: Français
+    languageName: French
     contentDir: Content/fr
     publishDir: "public/fr"
     languageCode: fr

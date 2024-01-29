@@ -3,3 +3,4 @@ resources/
 public/
 sandbox/
 git-do*
+script/**/node_modules
