@@ -3,6 +3,7 @@ title: ISPA DRC.cd
 paginate: 12
 theme: ["hugo-notice", "hugobricks"]
 defaultContentLanguage: fr
+defaultContentLanguageInSubdir: true
 assetDir: static
 
 markup:
@@ -14,12 +15,14 @@ languages:
   en:
     languageName: English
     contentDir: content/en
+    publishDir: "public/en"
     languageCode: en
     weight: 2
     disabled: false
   fr:
-    languageName: French
+    languageName: Français
     contentDir: Content/fr
+    publishDir: "public/fr"
     languageCode: fr
     weight: 1
     disabled: false
