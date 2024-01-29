@@ -1,8 +1,0 @@
-{{ page.Scratch.Set "ancestors" page.Ancestors }}
-{{ page.Scratch.Set "curRelPermalink" page.RelPermalink }}
-
-{{ with page.Site.GetPage (print "/" page.Section "/_index.md") }}
-    <ul class="nestedmenu">
-        {{ partial "nested-menu-partial.html" (dict "curRelPermalink" (page.Scratch.Get "curRelPermalink") "ancestors" (page.Scratch.Get "ancestors") "context" . ) }}
-    </ul>
-{{ end }}

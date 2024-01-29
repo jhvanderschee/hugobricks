@@ -1,8 +1,0 @@
-<ul class="buttons">
-    {{- if (index page.Site.Data page.Site.Language.Lang).general.contact.phone -}}
-        <li><a href="tel:{{ replace (index page.Site.Data page.Site.Language.Lang).general.contact.phone " " "" }}" class="button icon"><img src="/img/phone.svg" alt="{{ (index page.Site.Data page.Site.Language.Lang).general.contact.phone }}" /></a></li>
-    {{- end -}}
-    {{- if (index page.Site.Data page.Site.Language.Lang).general.contact.email -}}
-        <li><a href="mailto:{{ (index page.Site.Data page.Site.Language.Lang).general.contact.email }}" class="button icon"><img src="/img/email.svg" alt="{{ (index page.Site.Data page.Site.Language.Lang).general.contact.email }}" /></a></li>
-    {{- end -}}
-</ul>

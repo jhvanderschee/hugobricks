@@ -1,5 +1,0 @@
-<ul class="buttons social">
-    {{- range (index page.Site.Data page.Site.Language.Lang).footer.socials -}}
-    <li><a href="{{ .link | safeURL }}" class="button icon"><img src="{{ .logo_image }}" alt="{{ .title }}" /></a></li>
-    {{- end -}}
-</ul>

@@ -1,8 +1,0 @@
-{{ range .context.Pages }}
-    <li class="{{ if or (in $.ancestors .) (eq $.curRelPermalink .RelPermalink) }}active{{ if (eq $.curRelPermalink .RelPermalink) }} current{{ end }}{{ end }} {{ if len .Pages }}haschildren{{ end }}">
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <ul>
-            {{ partial "nested-menu-partial.html" (dict "curRelPermalink" $.curRelPermalink "ancestors" $.ancestors "context" . ) }}
-        </ul>
-    </li>
-{{ end }}

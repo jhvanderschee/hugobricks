@@ -1,7 +1,0 @@
-<ul>
-    {{ range (where page.Site.Pages "Section" page.Section) }}
-        {{ if and (ne .RelPermalink page.RelPermalink) (in .RelPermalink page.RelPermalink) }}
-            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-        {{ end }}
-    {{ end }}
-</ul>

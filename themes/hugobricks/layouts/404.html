@@ -1,5 +1,0 @@
-{{ define "content" }}
-    {{ with page.Site.GetPage "/404.md" }}
-        {{ replace (replace .Content "<p><section" "<section") "</section></p>" "</section>" | safeHTML }}
-    {{ end }}    
-{{ end }}
