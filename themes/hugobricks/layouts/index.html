@@ -1,0 +1,3 @@
+{{ define "content" }}
+    {{ replace (replace .Content "<p><section" "<section") "</section></p>" "</section>" | safeHTML }}
+{{ end }}

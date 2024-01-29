@@ -1,0 +1,10 @@
+footer > *, section > * {
+    opacity: 1; 
+    transition: all 1s ease-in-out 0.7s; 
+    position: relative;
+}
+footer > * {transition: all 1s ease-in-out 0.5s; }
+section > * {transform: translateY(0rem);}
+section.stickstofooter.opaque > * {transform: translateY(0rem);}
+footer.opaque > *, section.opaque > * {opacity: 0;}
+section.opaque > * {transform: translateY(4rem)}

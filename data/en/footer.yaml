@@ -1,0 +1,20 @@
+logo_image:
+logo_text: ISPA-DRC
+footer_text: © ISPA-DRC 2023
+dark_footer: false
+show_logo: false
+menuitems:
+  - title: About
+    link:  /en/history/
+  - title: Community
+    link:  /en/members/
+  - title: Privacy policy
+    link:  /en/privacy-policy/
+socials:
+  - title: Facebook
+    link: https://facebook.com
+    logo_image: /img/facebook.svg
+  - title: Twitter
+    link: https://twitter.com
+    logo_image: /img/twitter.svg    
+  

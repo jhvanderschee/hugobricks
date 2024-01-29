@@ -1,0 +1,27 @@
+<!-- load reviews from data folder and display them ein a ul -->
+<ul class="grid reviews">
+{{- range (index page.Site.Data page.Site.Language.Lang).reviews -}}
+    <li>
+        <div class="box">
+            <div>
+                <img src="{{ if (resources.GetMatch .image ) }}{{ ((resources.GetMatch .image).Fit `200x200 jpg Smart q50`).RelPermalink | safeURL }}{{ else }}{{ .image }}{{ end }}" alt="{{ .name }} image" class="avatar colorize_image">
+                <div>
+                    <h3>{{ .name }}</h3>
+                    <div class="function">{{ .function }}</div>
+                </div>
+            </div>
+            <div>
+                <div class="stars">
+                    <img src="/img/star.svg" alt="star" class="black_2_accent" />
+                    <img src="/img/star.svg" alt="star" class="black_2_accent" />
+                    <img src="/img/star.svg" alt="star" class="black_2_accent" />
+                    <img src="/img/star.svg" alt="star" class="black_2_accent" />
+                    <img src="/img/star.svg" alt="star" class="black_2_accent" />
+                </div>
+                <p>{{ .description }}</p>
+            </div>
+        </div>
+    </li>
+{{- end -}}
+</ul>	
+

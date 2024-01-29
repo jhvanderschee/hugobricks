@@ -1,0 +1,36 @@
+<section class="post">
+    <div class="container title">
+        {{ partial "breadcrumbs.html" . }}
+        <h1>{{ page.Title | safeHTML }}</h1>
+        <div class="meta">
+            {{ if .Params.date }}<div>
+                <img src="/img/icons/material-symbols/200/rounded/calendar_month-fill.svg"class="black_2_textDark" alt="" />
+                {{ page.Date | time.Format ":date_medium"}}
+            </div>
+            {{ end }}
+            {{ if index page.Params.tags 0 }}
+            <div>
+                <img src="/img/icons/material-symbols/200/rounded/label-fill.svg"class="black_2_textDark" alt="" />
+                <ul>
+                    {{ range page.Params.tags }}
+                    <li><a href="/blog/?tag={{ . }}">{{ . }}</a>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="container wide">
+        {{- $postimage := `/uploads/gallery/01.jpg` -}}
+        {{- if page.Params.image -}}
+            {{- $postimage = page.Params.image -}}
+        {{- end -}}
+        {{- if (resources.GetMatch $postimage) -}}
+            {{- $postimage = ((resources.GetMatch $postimage).Fill `1600x800 jpg Smart q50`).RelPermalink -}}
+        {{- end -}}
+        <img src="{{ $postimage }}" alt="{{ .Title }}" class="featuredimage" />
+    </div>
+    <div class="container post">
+        {{ page.Content }}
+    </div>
+</section>

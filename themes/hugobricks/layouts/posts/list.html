@@ -1,0 +1,8 @@
+{{ define "content" }}
+    {{- if eq true true -}}
+        {{ replace (replace .Content "<p><section" "<section") "</section></p>" "</section>" | safeHTML }}
+    {{- else -}}
+        {{ partial "brick_post.html" }}
+        {{ partial "brick_cta.html" }}
+    {{- end -}}
+{{ end }}

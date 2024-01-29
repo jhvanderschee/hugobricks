@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="674.8902"
+   height="644.30774"
+   viewBox="0 0 20.246706 19.329232"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="star.svg"
+   style="fill:none"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="949"
+     inkscape:window-height="480"
+     id="namedview6"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.295"
+     inkscape:cx="337.46032"
+     inkscape:cy="290.78102"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <path
+     d="m 10.123809,15.933801 -5.4029995,3.286 a 0.75,0.75 0 0 1 -1.12,-0.813 l 1.456,-6.155 -4.796,-4.1229999 a 0.75,0.75 0 0 1 0.428,-1.316 l 6.303,-0.517 2.44,-5.83499999 a 0.75,0.75 0 0 1 1.3839995,0 l 2.44,5.83499999 6.303,0.517 a 0.75,0.75 0 0 1 0.427,1.316 l -4.795,4.1229999 1.456,6.155 a 0.75,0.75 0 0 1 -1.12,0.813 z"
+     id="path2"
+     inkscape:connector-curvature="0"
+     style="fill:#000000" />
+</svg>

@@ -1,0 +1,6 @@
+<ul class="breadcrumbs">
+    {{- range page.Ancestors.Reverse -}}
+        <li><a href="{{ .RelPermalink }}">{{ .Title | truncate 25 }}</a></li>
+    {{- end -}}
+    {{- if ne page.Section "posts" -}}<li><a href="{{ page.RelPermalink }}">{{ page.Title | truncate 25 }}</a></li>{{- end -}}
+</ul>

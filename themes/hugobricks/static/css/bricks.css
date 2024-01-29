@@ -1,0 +1,272 @@
+/*------------------------*/
+/* brick about
+/*------------------------*/
+
+section.about .container.small {text-align: center;}
+section.about .container p img {display: inline-block; border-radius: 100%; overflow: hidden; aspect-ratio: 1; width: 20rem; object-fit: cover;}
+section.about .container h1 {margin: -0.75rem auto 1.5rem; font-size: 2.6rem;}
+section.about .container h1 + p {padding-top: 0;}
+section.about .container .buttons {justify-content: center;}
+
+/*------------------------*/
+/* brick intro
+/*------------------------*/
+
+section.intro {text-align: center; background: white; position: relative;}
+section.intro img {margin: 3rem auto 0; width: 45rem;}
+section.intro h1 + p {padding-top: 0;}
+
+/*------------------------*/
+/* brick post
+/*------------------------*/
+
+section.post .container {max-width: 50rem;}
+section.post .container h1 {text-align: center;}
+section.post .container .featuredimage {border-radius: 1rem; margin-bottom: 3rem;}
+section.post .container.wide {max-width: 62rem;}
+section.post .container.post p:first-child,
+section.post .container.post p:first-child a {color: var(--textDark); font-size: 1.52rem; line-height: 1.4;}
+section.post .container .meta {justify-content: center; margin-bottom: 3rem; margin-top: -0.75rem;}
+
+/*------------------------*/
+/* brick cta
+/*------------------------*/
+
+section.cta {background: white;}
+section.cta .twocols {display: flex;}
+section.cta .twocols .text {flex: 2;}
+section.cta .twocols .image {flex: 1;}
+section.cta .twocols .image img {display: inline-block; width: 20rem;}
+@media (max-width: 600px) {
+    section.cta .twocols {flex-direction: column;}
+    section.cta .twocols .text {text-align: center;}
+    section.cta .twocols .image {text-align: left; display: none;}
+}
+
+/*------------------------*/
+/* brick image
+/*------------------------*/
+
+section.image + section.image.alt {margin-top: 0!important;}
+section.image.alt {background: var(--light); border-top: 0.1rem solid var(--light); border-bottom: 0.1rem solid var(--light);}
+section.image.alt .container {direction: rtl;}
+section.image.alt .container > div {direction: ltr;}
+section.image .twocols .image {text-align: center; position: relative; height: 100%;}
+section.image .twocols .image img {width: auto; display: block; max-width: 85%; width: 100%; margin: auto;}
+@media (max-width: 600px) {
+    section.image .twocols .image {text-align: left;}
+}
+
+/*------------------------*/
+/* brick contact
+/*------------------------*/
+
+section.contact .twocols {align-items: flex-start;}
+
+/*------------------------*/
+/* brick title
+/*------------------------*/
+
+section.title .container.small {text-align: center;}
+section.title:not(.bgimage) {padding-bottom: 3.25rem;}
+
+/*------------------------*/
+/* brick wide
+/*------------------------*/
+
+section.wide {max-width: 60rem; margin-left: auto; margin-right: auto;}
+section.wide h1 {text-align: center;}
+section.wide h1 + * {padding-top: 1.25rem;}
+section.wide a:not(.button) {color: var(--textAccent)}
+
+/*------------------------*/
+/* brick map
+/*------------------------*/
+
+section.map div.map {padding: 3rem 0; aspect-ratio: auto; border-radius: 0;}
+section.map .overlay {position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1; background: rgba(0,0,0,0);}
+section.map div.map > .container {display: flex; justify-content: flex-end;}
+section.map div.map > .container > div {background: white; padding: 2.5rem 3rem 2.5rem; border-radius: 1rem; position: relative; z-index: 2; min-width: 22rem; box-shadow: 0px 0px 1.5rem rgba(0,0,0,0.05);} 
+section.map div.map > .container > div .buttons {padding: 0;}
+@media (max-width: 55rem) {
+    section.map div.map > .container {justify-content: center;}
+}
+
+/*------------------------*/
+/* brick 404
+/*------------------------*/
+
+section.error404 > .container.small {text-align: center;}
+section.error404 > .container.small h1 {font-size: 2.4rem;}
+
+/*------------------------*/
+/* brick reviews
+/*----------------cta--------*/
+
+section.reviews .container.small {margin-bottom: 4.25rem; text-align: center;}
+ul.reviews li div.box {display: flex; flex-direction: column-reverse; padding: 2.25rem 2rem; height: 100%; justify-content: space-between; gap: 2rem;}
+ul.reviews li div.box .avatar {height: 3.25rem; width: 3.25rem;}
+ul.reviews li div.box h3 {margin: 0; line-height: 1.45; font-size: 1.1rem; padding: 0;}
+ul.reviews li div.box .function {color: var(--textDark); line-height: 1.45;}
+ul.reviews li div.box .stars {display: flex; gap: 0.25rem; margin: 0 0 1.5rem;}
+ul.reviews li div.box .stars img {height: 1rem;}
+ul.reviews li div.box > div:nth-child(1) {display: flex; gap: 1rem; align-items: center;}
+
+
+/*------------------------*/
+/* brick features
+/*------------------------*/
+
+section.features .container.small {margin-bottom: 4rem; text-align: center;}
+section.features + section.title {padding-top: 0;}
+ul.features {gap: 3rem 3rem; padding-bottom: 1rem;}
+ul.features li {text-align: center;}
+ul.features li img {aspect-ratio: 1.5; object-fit: contain; width: 100%;}
+ul.features li p.image {margin-bottom: 0.85rem;}
+ul.features li p.image + h3 {padding-top: 0;}
+ul.features li.has_icon p.image {display: inline-block; padding: 1.5rem; border-radius: 100%; border: 0.1rem solid var(--accent);}
+ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width: 3rem; margin: 0 auto; border-radius: 0;}
+
+
+/*------------------------*/
+/* brick prices
+/*------------------------*/
+
+section.prices .container.small {margin-bottom: 4rem; text-align: center;}
+section.prices + section.title {padding-top: 0;}
+ul.prices {max-width: 70rem; margin: 0 auto;}
+ul.prices > li {text-align: center;}
+ul.prices > li div.box {padding: 3rem 2rem; height: 100%; background: #f7f7f8;}
+ul.prices li div.box p:first-child {margin: 0;}
+ul.prices li div.box p:first-child strong {
+    position: relative;
+    margin: 0;
+    bottom: 2rem;
+    display: inline-block;
+    width: auto; 
+    white-space: nowrap;
+    padding: 0.5rem 2rem; 
+    font-weight: normal; 
+    text-transform: uppercase; 
+    font-size: 0.8rem; 
+    letter-spacing: 0.15rem; 
+}
+ul.prices li div.box ul {text-align: left; display: inline-block; margin: 1.5rem 0 0;}
+ul.prices li div.box ul li::before {content: "✓"; display: inline-block; padding: 0 0.15rem;}
+ul.prices li div.box h3 {padding: 0.25rem;}
+ul.prices li div.box h3 strong {font-size: 3rem; padding: 0 0.25rem; vertical-align: bottom; line-height: 0.9; letter-spacing: -0.1rem;}
+ul.prices li div.box h3 em {vertical-align: top; font-style: normal;}
+ul.prices li div.box a.button {margin-top: 2.5rem;}
+@media (min-width: 65rem) {
+    section.prices .container.small {margin-bottom: 6rem;}
+    ul.prices > li div.box {padding: 3.25rem 2rem 4rem;}
+    ul.prices > li:nth-child(1) div.box {border-top-right-radius: 0; border-bottom-right-radius: 0;}
+    ul.prices > li:nth-child(3) div.box {border-bottom-left-radius: 0; border-top-left-radius: 0;}
+    ul.prices > li:nth-child(2) {transform: scale(1.15); z-index: 2;}
+    ul.prices > li:nth-child(2) div.box {padding: 4rem 2rem 2rem;}
+    ul.prices > li:nth-child(2) div.box::before, 
+    ul.prices > li:nth-child(2) div.box::after {content: ""; position: absolute; background: white; top: 0; right: 0; width: 0.25rem; height: 100%; transform: translateX(calc(100% + 0.1rem));}
+    ul.prices > li:nth-child(2) div.box::before {right: auto; left: 0; transform: translateX(calc(-100% - 0.1rem));}
+    ul.prices > li:nth-child(2) div.box > div {transform: scale(0.9);}
+    ul.prices > li:nth-child(2) div.box p:first-child strong {position: absolute; left: 50%; bottom: auto; margin-top: -5rem; transform: translateX(-50%);}
+}
+
+/*------------------------*/
+/* brick posts
+/*------------------------*/
+
+section.posts .container.small {margin-bottom: 4rem; text-align: center;}
+section.posts .grid {grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 2rem;}
+section.posts .grid .item .img {border-radius: 1rem; margin-bottom: 0.251rem; overflow: hidden;}
+section.posts .grid .item .img img {display: block;}
+section.posts .grid .item h3 {padding-top: 1rem;}
+section.posts .grid li.placeholder {display: block!important;}
+section.posts .grid .summary .button {position: relative; bottom: 0.8rem;}
+section.posts .filter {display: flex; justify-content: flex-end; align-items: center; gap: 0.75rem; margin: -2rem 0 1.25rem;}
+section.posts .filter .tags {display: flex; margin: 0; gap: 0.75rem;}
+section.posts .filter .tags li {list-style: none;}
+section.posts .filter .tags.nofilter li {display: none;}
+section.posts #loadmoreposts {position: relative; bottom: 1rem;}
+section.posts .filter .tags li {
+    list-style: none; 
+    background: var(--textDark);
+    color: white;
+    padding: 0 0.6rem 0 1rem;
+    font-size: 0.9rem;
+    border-radius: 1.15rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 2rem;
+    line-height: 1;
+    white-space: nowrap;
+}
+section.posts .filter .tags li::after {
+    content: "+";
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    transform: rotate(45deg);
+}
+section.posts .filter select {
+    border: 0;
+    background: none;
+    padding: 0.25em 0.75em;
+    border: 1px solid var(--borderMedium);
+}
+
+/*------------------------*/
+/* brick small
+/*------------------------*/
+
+section.small h1 {text-align: center;}
+
+/*------------------------*/
+/* brick docs
+/*------------------------*/
+
+section.docs {padding-top: 0!important; margin-top: 0;}
+.preheader + header + section.docs {margin-top: -3rem;}
+section.docs .container {display: flex; gap: 5rem;}
+section.docs .container .menu {border-right: 1px solid rgba(0,0,0,0.1); width: 20rem; max-width: 20rem; padding: 2rem 0 3.2rem;}
+section.docs .container .content {min-width: 0; min-height: 0; padding: 3.2rem 0; flex-grow: 1;}
+section.docs .container .content > * {max-width: 45rem;}
+section.docs .container .content > p img[src$=".svg"] {width: 100%; max-width: 30rem; margin: 3rem 0;}
+section.docs .container .content .breadcrumbs {text-align: left;}
+section.docs .container .content h1 {font-size: 3rem;}
+
+section.docs .container .menu h3 {display: none;}
+section.docs .container .menu ul.nestedmenu {margin-left: 0; position: sticky; top: 8rem; margin-right: 5rem;}
+section.docs .container .menu ul.nestedmenu li {list-style: none; padding: 0.15rem 0;}
+section.docs .container .menu ul.nestedmenu li > ul {display: none;}
+section.docs .container .menu ul.nestedmenu li > a::before {content: " "; display: inline-block; margin-right: 0.75rem; width: 0.5rem; text-align: center;}
+section.docs .container .menu ul.nestedmenu > li > a::before {content: "-";}
+section.docs .container .menu ul.nestedmenu li.haschildren > a::before {content: "›";}
+section.docs .container .menu ul.nestedmenu li.haschildren.active > a::before {transform: rotate(90deg);}
+section.docs .container .menu ul.nestedmenu li.active > ul {display: block;}
+section.docs .container .menu ul.nestedmenu li.active > ul li:last-child {margin-bottom: 0.75rem;}
+section.docs .container .menu ul.nestedmenu li > a {color: var(--textMedium); text-decoration: none; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block;}
+section.docs .container .menu ul.nestedmenu li.current > a {color: var(--textAccent);}
+
+@media (max-width: 65rem) {
+    section.docs {margin-top: -2rem;}
+    section.docs .container {flex-direction: column-reverse; gap: 3rem;}
+    section.docs .container .menu {width: 100%; max-width: 100%; padding-bottom: 0; border: 0;}
+    section.docs .container .menu h3 {display: block;}
+    section.docs .container .content {padding-bottom: 0;}
+    section.docs .container .menu ul.nestedmenu {margin-top: 0.75rem;}
+}  
+
+/*------------------------*/
+/* brick breadcrumb
+/*------------------------*/
+section.bgimage .container ul.breadcrumbs li::before, section.bgimage .container ul.breadcrumbs li a  {color: white}
+
+/*------------------------*/
+/* brick table
+/*------------------------*/
+section.wide .container table {width: 30rem; margin-left:auto; margin-right: auto;}
+section.wide .container table thead {background-color: var(--accent); color: white;}
+section.wide .container table thead tr th {padding-left: 0.5rem; padding-right: 0.5rem;}
+section.wide .container table tbody tr td {padding-left: 0.5rem; padding-right: 0.5rem;}
+section.wide .container table tbody tr:nth-child(even) {background-color:rgba(234, 231, 243, 0.646) }

@@ -1,0 +1,27 @@
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/title.md' file." -}}
+    {{- with page.Site.GetPage "bricks/title.md" -}}
+        {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+{{- $imagesrc := substr (index (split (index (findRE `!\[[^\]]*?]\(([^\)]*?)\)` $inner 1) 0) "](") 1) 0 -1 -}}
+{{- $inner = markdownify $inner -}}
+{{- $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 -}}
+{{- $inner = replace $inner $image "" 1 -}}
+{{- if $imagesrc -}}
+<section class="title bgimage transparent_header hasbackgroundcolor">
+    <div class="bgimage" style="background: url('{{ $imagesrc }}') center center / cover no-repeat;">
+        <div class="overlay"></div>
+        <div class="container small">
+            {{ $inner | safeHTML }}
+        </div>
+    </div>
+</section>
+{{- else -}}
+<section class="title">
+    <div class="container small">
+        {{- markdownify $inner -}}
+    </div>
+</section>
+{{- end -}}

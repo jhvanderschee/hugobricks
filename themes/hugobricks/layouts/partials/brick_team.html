@@ -1,0 +1,17 @@
+
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/team.md' file." -}}
+    {{- with page.Site.GetPage "bricks/team.md" -}}
+        {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+{{- $inner = index (split $inner `<ul class="grid team">`) 0 -}}
+<section class="features">
+    <div class="container small">
+        {{- markdownify $inner -}}
+    </div>
+    <div class="container">
+        {{ partial "people.html" . }}
+    </div>
+</section>

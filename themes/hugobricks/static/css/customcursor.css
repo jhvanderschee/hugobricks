@@ -1,0 +1,31 @@
+body:before {
+    content:"";
+    position:absolute;
+    z-index:999;
+    top:var(--y);
+    left:var(--x);
+    right:0;
+    bottom:0; 
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 0.12rem solid #fff;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    background:#fff;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: 
+        opacity 0.5s ease-in-out,
+        width 0.25s ease-in-out,
+        height 0.25s ease-in-out,
+        background 0.25s ease-in-out;
+    opacity: 0.35;
+}
+body.hidecursor:before {
+    opacity: 0;
+}
+body.cursorpointer:before {
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+}

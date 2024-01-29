@@ -1,0 +1,31 @@
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/title.md' file." -}}
+    {{- with page.Site.GetPage "bricks/title.md" -}}
+        {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+{{- $imagesrc := substr (index (split (index (findRE `!\[[^\]]*?]\(([^\)]*?)\)` $inner 1) 0) "](") 1) 0 -1 -}}
+{{- $raw := (markdownify . | chomp) -}}
+{{- $block := findRE "(?is)^<(?:address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h(?:1|2|3|4|5|6)|header|hgroup|hr|li|main|nav|noscript|ol|output|p|pre|section|table|tfoot|ul|video)\\b" $raw 1 -}}
+{{- if or $block (not $raw) -}}{{- $inner = $raw -}}{{- else -}}{{- $inner = print `<p>` $raw `</p>` -}}{{- end -}}
+{{- $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 -}}
+{{- $inner = replace $inner $image "" 1 -}}
+{{ $empty := false }}
+{{- if lt (len $inner) 3 }}{{ $empty = true }}{{ end }}
+{{- if $imagesrc -}}
+<section class="title bgimage hasbackgroundcolor">
+    <div class="bgimage" style="background: url('{{ ((resources.GetMatch $imagesrc).Fill `3000x1000 jpg Smart q50`).RelPermalink }}') center center / cover no-repeat;">
+        {{ if $empty }}{{ else }}<div class="overlay"></div>{{ end }}
+        <div class="container small">
+            {{ $inner | safeHTML }}
+        </div>
+    </div>
+</section>
+{{- else -}}
+<section class="title">
+    <div class="container small">
+        {{- markdownify $inner -}}
+    </div>
+</section>
+{{- end -}}

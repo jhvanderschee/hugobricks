@@ -1,0 +1,50 @@
+
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- with page.Site.GetPage "bricks/posts.md" -}}
+        {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+{{- $posts := where page.Site.RegularPages "Section" "posts" -}}
+<section class="posts">
+    {{ if $inner }}<div class="container small">
+        {{- markdownify $inner -}}
+    </div>{{ end }}
+    <div class="container">
+        <div class="filter">
+            <select id="filter" class="multiselecttags numbers_{{ page.Site.Data.settings.filter_has_numbers }}" multiple autocomplete="off">
+                {{ range $name, $taxonomy := page.Site.Taxonomies.tags }}
+                    <option value="{{ $name | urlize }}">{{ $name }}</option>
+                {{ end }}
+            </select>
+        </div>
+        <ul class="contentitems grid posts" data-pagesize="{{ page.Site.Data.settings.page_size }}">
+            {{ range $index,$post := $posts }}                
+                <li class="item{{ range .Params.tags }} tag_{{ . }}{{ end }}">
+                        {{- if (resources.GetMatch .Params.image) -}}
+                            {{- $postimage := ((resources.GetMatch .Params.image).Fill `1200x600 jpg Smart q50`).RelPermalink -}}
+                            {{- if $postimage -}}<div class="img" onclick="document.location.href='{{ .RelPermalink }}';" style="cursor: pointer;"><img data-src="{{ $postimage }}" alt="{{ .Title }}" style="cursor: pointer;" onclick="document.location.href='{{ .RelPermalink }}';" /></div>{{- end -}}
+                        {{- end -}}
+                        <h3>{{ .Title | safeHTML }}</h3>
+                        {{ if .Params.date }}<div class="meta">
+                            <div>
+                                <img src="/img/icons/material-symbols/200/rounded/calendar_month-fill.svg"class="black_2_textDark" alt="" />
+                                {{ .Date | time.Format ":date_medium"}}
+                            </div>
+                        </div>
+                        {{ end }}
+                        <div class="summary">
+                            <p>{{ substr .Summary 0 190 | safeHTML }}...</p>
+                            <p><a href="{{ .RelPermalink }}" class="button ghost smaller">{{ i18n "Read more" }}</a></p>
+                        </div>
+                </li>
+            {{ end }}
+            <li class="placeholder"></li>
+            <li class="placeholder"></li>
+        </ul>
+        <a class="button secondary ghost smaller" id="loadmoreposts" onclick="loadMorePosts();">{{ i18n "Load more posts" }}...</a>
+        <script src="/js/filter.js" charset="utf-8"></script>
+    </div>
+</section>
+
+
