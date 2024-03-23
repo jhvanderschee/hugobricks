@@ -3,7 +3,6 @@ title: Our team
 ---
 {{< brick_team >}}
 
-{{< breadcrumbs >}}
 
 # Our team
 

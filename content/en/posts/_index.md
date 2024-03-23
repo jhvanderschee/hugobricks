@@ -4,7 +4,7 @@ url: /blog/
 ---
 {{< brick_posts >}}
 
-{{< breadcrumbs >}}
+
 
 # Blog posts
 

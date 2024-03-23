@@ -2,10 +2,9 @@
 title: intro
 ---
 
-# The Ultimate Theme You Need To Start Your Hugo Website
+# Contribute your song specific tribute art and add to a growing collection of art inspired by and celebrating Gord Downie and The Tragically Hip
 
-Hugobricks is a free website theme built with Hugo and vanilla CSS, providing everything you need to jumpstart your Hugo website and save valuable time.
 
-{{< button "Get started for free" "/get-started/" >}}
+{{< button "Contribute" "/get-started/" >}}
 
-![](/uploads/brick_intro.png)
+![](/uploads/deauces.png)

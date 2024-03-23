@@ -1,40 +1,18 @@
-logo_image:
-logo_subtitle: The Ultimate Hugo theme
+logo_image: /uploads/branding/logo1.svg
+logo_subtitle:
 mobile_view_width: 1000
 menuitems:
-  - title: About
-    link: /about/
-    items: 
-      - title:
-        link:
-  - title: Pages
-    link: /contact/
-    items: 
-      - title: Elements
-        link: /elements/
-      - title: Header image 1
-        link: /bgimage3/
-      - title: Header image 2
-        link: /bgimage2/
-      - title: Header image 3
-        link: /bgimage/
-      - title: Basic page 1
-        link: /basic/
-      - title: Basic page 2
-        link: /basic2/
-      - title: Our team
-        link: /team/
-      - title: Contact us
-        link: /contact/
-      - title: F.A.Q.
-        link: /faq/
-      - title: 404 Page
-        link: /404.html
-  - title: Docs
+     
+  - title: Unofficial Guides
     link: /docs/
+    items: 
+      - title: The Tragically Hip
+        link: /docs/the-hip
+      - title: Gord Downie
+        link: /docs/gord-downie/
   - title: Blog
     link: /blog/
 cta:
-  active: true
+  active: false
   title: Get started
   link: /get-started/

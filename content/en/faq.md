@@ -4,7 +4,7 @@ image:
 --- 
 {{< brick_title >}}
 
-{{< breadcrumbs >}}
+
 
 # Frequently Asked Questions
 

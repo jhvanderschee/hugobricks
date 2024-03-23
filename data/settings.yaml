@@ -1,10 +1,10 @@
-favicon_image: /uploads/branding/brick_icon2_bw.svg
+favicon_image: 
 sticky_header: true
 customcursor: true
 intersectionobserver: true
 filter_has_numbers: true
-page_size: 3
+page_size: 6
 preheader: 
-  active: true
+  active: false
   is_light: true
-  text: Open Mon-Fri from 9.00-5.00
+  text: 

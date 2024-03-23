@@ -1,26 +1,29 @@
-@font-face {
-    font-display: swap;
-    font-family: 'Signika';
-    font-style: normal;
-    font-weight: 700;
-    src: url('/fonts/signika-v20-latin-700.woff2') format('woff2');
-}
-@font-face {
-    font-display: swap;
-    font-family: 'Heebo';
-    font-style: normal;
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.encode-sans-expanded-regular {
+    font-family: "Encode Sans Expanded", sans-serif;
     font-weight: 400;
-    src: url('/fonts/heebo-v21-latin-regular.woff2') format('woff2');
-}
-@font-face {
-    font-display: swap;
-    font-family: 'Heebo';
     font-style: normal;
-    font-weight: 600;
-    src: url('/fonts/heebo-v21-latin-600.woff2') format('woff2');
+}
+
+
+/* Titles */
+h1, h2, h3.your-title-class  { 
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 600; /* Sample weight - Adjust as needed */
+    font-style: normal; 
+}
+
+/* Menus */
+nav ul li a {
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 300; /* Sample weight - Adjust as needed */
+    font-style: normal; 
 }
 
 :root {
-    --fontTitles: 'Signika', sans-serif;
-    --fontBody: 'Heebo', sans-serif;
+    --fontTitles: 'MuseoModerno', sans-serif;
+    --fontBody: 'Encode Sans Expanded', sans-serif;
 }

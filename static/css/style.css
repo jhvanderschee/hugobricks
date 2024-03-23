@@ -8,10 +8,10 @@
 /*------------------------*/
 
 :root {
-    --textDark: rgba(38, 50, 56, 1);
-    --textMedium: rgba(38, 50, 56, 0.7);
-    --borderMedium: rgba(38, 50, 56, 0.2); 
-    --borderLight: rgba(38, 50, 56, 0.075);
+    --textDark: rgb(255, 255, 255);
+    --textMedium: rgba(222, 233, 238, 0.7);
+    --borderMedium: #209bd833
+    --borderLight: rgba(78, 174, 221, 0.075);
     --accent: #f4b500;
     --textAccent: #e6ac00;
     --light: rgba(38, 50, 56, 0.035);
@@ -45,3 +45,75 @@ img {filter: grayscale(0);}
 /*------------------------*/
 
 .black_2_accent {filter: contrast(0.11) sepia(1) hue-rotate(340deg) contrast(13)!important;}
+
+/*------------ CSS overrides below --------------*/
+
+header {
+    background-color: black;
+}
+
+
+html, body, header, footer, {
+    
+    
+    background-color: black; 
+
+
+  }
+  .container {
+    background-color: black;
+  }
+}
+   .container small {
+  background-color: black;
+}
+
+   .box {
+    background-color: black`;
+   }
+
+   .intro {
+    background-color: black;
+   }
+  .innerbody {
+    background-color: black;
+  }
+
+
+
+/* General Text Color */
+p, span, h1, h2, h3, ul, ol, li, a { /* Target common text elements */
+    color: #ffffff; /* Light gray for good contrast against black */
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+
+/* Form Input Fields */
+input, textarea, select {
+    color: #000000;         /* Light text color for input */
+    border-color: #666;      /* Slightly darker border */ 
+}
+
+/* Optional: Placeholder Text */
+input::placeholder, textarea::placeholder {
+    color: #999;  /* Slightly less bright placeholder text */
+
+}
+
+a.logo img { 
+    max-width: 50%; /* Adjust percentage as needed */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+h1, h2, h3, h4, a,  button, label, .meta { 
+    text-transform: capitalize;
+}
+
+body {
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+
+
+
+.first-letter-orange::first-letter {
+    color: orange !important; 
+}

@@ -3,7 +3,7 @@
 /*------------------------*/
 
 .preheader {background: var(--textDark); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid var(--light); font-weight: 600;}
-.preheader, .preheader a {color: white;}
+.preheader, .preheader a {color: rgb(0, 0, 0);}
 .preheader .container {display: flex; justify-content: space-between;}
 .preheader .container a.icon {text-decoration: none; margin-right: 2rem;}
 .preheader .container a.icon img {
@@ -27,9 +27,9 @@
 /* header
 /*------------------------*/
 
-header {position: absolute; background: white; z-index: 9; width: 100%;}
-header > .container {padding-top: 1.5rem; padding-bottom: 1.5rem; position: relative;}
-header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white; position: fixed; top: 0;}
+header {position: absolute; background: rgb(0, 0, 0); z-index: 9; width: 100%;}
+header > .container {padding-top: 0rem; padding-bottom: -1rem; position: relative;}
+header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: rgb(0, 0, 0); position: fixed; top: 0;}
 header.sticky > .container {padding-top: 0.75rem; padding-bottom: 0.75rem;}
 header a {text-decoration: none;}
 header ul {display: flex; justify-content: flex-end; gap: 2rem; margin: 0;}
@@ -54,7 +54,7 @@ header nav > ul > li > ul {
     position: absolute;
     box-shadow: 0px 0px 1.5rem rgba(0,0,0,0.15);
     margin-left: -1rem;
-    background: white;
+    background: rgb(0, 0, 0);
     border-radius: 0.4rem;
     text-align: left;
     padding: 0.75rem 0 0.85rem;
@@ -85,7 +85,7 @@ header nav > ul > li.haschildren > a::after {
 }
 
 header > .container {display: flex; align-items: center;}
-header > .container > div {flex: 3; text-align: center;}
+header > .container > div {flex: 2; text-align: center;}
 header > .container > div:first-child {flex: 1; text-align: left;}
 header > .container.has_cta > div:nth-child(3) {flex: 1; text-align: right;}
 header > .container.has_cta ul {justify-content: center;}
@@ -96,19 +96,19 @@ body:not(.transparent_header) header + section.bgimage .container {padding-top: 
 
 body.transparent_header header:not(.sticky) {background: transparent;}
 body.transparent_header header:not(.sticky) a.logo,
-body.transparent_header header:not(.sticky) nav > ul > li > a {color: white;}
-body.transparent_header header:not(.sticky) nav > ul > li::after {background: white;}
-body.transparent_header header:not(.sticky) nav > ul > li.haschildren > a::after {border-color: white;}
+body.transparent_header header:not(.sticky) nav > ul > li > a {color: rgb(0, 0, 0);}
+body.transparent_header header:not(.sticky) nav > ul > li::after {background: rgb(0, 0, 0);}
+body.transparent_header header:not(.sticky) nav > ul > li.haschildren > a::after {border-color: rgb(0, 0, 0);}
 body.transparent_header header:not(.sticky) #togglemenu,
 body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: invert(1)!important;}
-body.transparent_header header + section.bgimage {padding-top: 0!important;}
-body.transparent_header header:not(.sticky) .button {background: var(--accent); color: white;}
+body.transparent_header header + section.bgimage {padding-top: -1!important;}
+body.transparent_header header:not(.sticky) .button {background: var(--accent); color: rgb(2, 2, 2);}
 
 /*------------------------*/
 /* footer
 /*------------------------*/
 
-footer {background: var(--light); margin-top: 4rem; border-top: 0.1rem solid var(--light);}
+footer {background: rgb(0, 0, 0); margin-top: 0rem; border-top: 0rem solid  ;}
 footer a {text-decoration: none;}
 footer .logo > div.has_subtitle {padding-bottom: 0.5rem;}
 footer ul {display: flex; justify-content: center; gap: 0 2rem; margin: 0; flex-wrap: wrap;}
@@ -129,10 +129,10 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
     footer ul {margin: 0.25rem 0 0.5rem;}
 }
 
-footer.dark {background: var(--textDark);}
-footer.dark a.logo {color: white;}
+footer.dark {background: black(--textDark);}
+footer.dark a.logo {color: rgb(43, 34, 34);}
 footer.dark > div:last-child {border-top: 1px solid rgba(255,255,255,0.1);}
-footer.dark, footer.dark > div:last-child a, footer.dark ul li a {color: rgba(255,255,255,0.5);}
+footer.dark, footer.dark > div:last-child a, footer.dark ul li a {color: rgba(255, 255, 255, 0.5);}
 footer.dark ul.buttons.social .button {background: var(--accent);}
 footer.dark a.logo img.inline {filter: invert(1)!important;}
 
@@ -142,7 +142,7 @@ footer.dark a.logo img.inline {filter: invert(1)!important;}
 
 #togglemenu {
     display: none; 
-    background: transparent url(/img/menu.svg) center center / 2rem auto no-repeat; 
+    background: transparent url(/img/menu.png) center center / 2rem auto no-repeat; 
     border: 0; 
     color: transparent; 
     overflow: hidden; 
@@ -156,7 +156,7 @@ footer.dark a.logo img.inline {filter: invert(1)!important;}
     position: absolute;
 }
 body.mobilemenu #togglemenu {display: block; transition: top 0.15s ease-in-out;}
-body.mobilemenu header.sticky + #togglemenu {position: fixed; top: 0.75rem; margin-top: 0;}
+body.mobilemenu header.sticky + #togglemenu {position: flex; top: 0.75rem; margin-top: 0;}
 body.mobilemenu header .nav {display: grid; transition: grid-template-rows 0.3s ease-in-out;}
 body.mobilemenu header > div.container {display: grid; grid-template-areas: "logo cta" "menu menu";}
 body.mobilemenu header > div.container > div:nth-child(1) {grid-area: logo;}
@@ -164,7 +164,7 @@ body.mobilemenu header > div.container > div:nth-child(2) {
     grid-area: menu; 
     position: fixed;
     background: var(--textDark);
-    color: white;
+    color: rgb(0, 0, 0);
     transform: translateX(100%);
     width: 100%;
     right: 0;
@@ -199,6 +199,7 @@ body.mobilemenu header nav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 5rem
 /*------------------------*/
 
 body.mobilemenu.menushown #togglemenu {
+    background-color: black;
     background: transparent url(/img/close.svg) center center / 2rem auto no-repeat; 
     z-index: 10; 
     position: fixed; 
@@ -208,7 +209,8 @@ body.mobilemenu.menushown #togglemenu {
 body.mobilemenu.menushown .preheader + header #togglemenu {top: 3.75rem;}
 body.mobilemenu.menushown header.sticky #togglemenu {top: 0.75rem;}
 body.mobilemenu.menushown header > div.container > div:nth-child(2) {transform: translateX(0%);}
-body.mobilemenu.menushown header nav > ul > li a {color: white;}
+body.mobilemenu.menushown header nav > ul > li a {color: rgb(255, 255, 255);}
+body.mobilemenu.menushown header nav > ul > li a {background-color: black;}
 
 @media (max-width: 450px) {
     header .button {display: none;}

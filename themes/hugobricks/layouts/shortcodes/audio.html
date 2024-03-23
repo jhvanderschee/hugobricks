@@ -15,7 +15,7 @@
     {{- $preload = .Get 3 | default "metadata" -}}
 {{- end -}}
 <figure {{ with $class }}class="{{ . }}"{{ end }}>
-  <audio controls class="player" preload="{{ $preload }}">
+  <audio controls autoplay class="player" preload="{{ $preload }}">
     {{ with $src }}<source src="{{ . | relURL }}" type="audio/mpeg">{{ end }}
   </audio>
   {{ with $caption }}<figcaption>{{ . }}</figcaption>{{ end }}

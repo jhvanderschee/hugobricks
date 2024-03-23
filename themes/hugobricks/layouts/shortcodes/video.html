@@ -18,7 +18,7 @@
     {{- $preload = .Get 4 | default "metadata" -}}
 {{- end }}
 <figure {{ with $class }}class="{{ . }}"{{ end }}>
-  <video playsinline controls class="player" preload="{{ $preload }}" data-poster="{{ $poster }}">
+  <video playsinline autoplay class="player" preload="{{ $preload }}" data-poster="{{ $poster }}">
     {{ with $src }}<source src="{{ . | relURL }}">{{ end }}
     <p>
       Your browser does not support HTML5 video.

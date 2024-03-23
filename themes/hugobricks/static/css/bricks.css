@@ -12,7 +12,7 @@ section.about .container .buttons {justify-content: center;}
 /* brick intro
 /*------------------------*/
 
-section.intro {text-align: center; background: white; position: relative;}
+section.intro {text-align: center; background: rgb(0, 0, 0); position: relative;}
 section.intro img {margin: 3rem auto 0; width: 38rem;}
 section.intro h1 + p {padding-top: 0;}
 
@@ -20,9 +20,9 @@ section.intro h1 + p {padding-top: 0;}
 /* brick post
 /*------------------------*/
 
-section.post .container {max-width: 50rem;}
+section.post .container {max-width: 50rem; padding-top: 1rem;}
 section.post .container h1 {text-align: center;}
-section.post .container .featuredimage {border-radius: 1rem; margin-bottom: 3rem;}
+section.post .container .featuredimage {border-radius: 0rem; margin-bottom: 3rem;}
 section.post .container.wide {max-width: 62rem;}
 section.post .container.post p:first-child,
 section.post .container.post p:first-child a {color: var(--textDark); font-size: 1.52rem; line-height: 1.4;}
@@ -32,7 +32,7 @@ section.post .container .meta {justify-content: center; margin-bottom: 3rem; mar
 /* brick cta
 /*------------------------*/
 
-section.cta {background: white;}
+section.cta {background: rgb(0, 0, 0);}
 section.cta .twocols {display: flex;}
 section.cta .twocols .text {flex: 2;}
 section.cta .twocols .image {flex: 1;}
@@ -67,8 +67,8 @@ section.contact .twocols {align-items: flex-start;}
 /* brick title
 /*------------------------*/
 
-section.title .container.small {text-align: center;}
-section.title:not(.bgimage) {padding-bottom: 3.25rem;}
+section.title .container.small {text-align: center; padding-top: 1rem;}
+section.title:not(.bgimage) {padding-top: 3.25rem;}
 
 /*------------------------*/
 /* brick wide
@@ -135,7 +135,7 @@ section.prices .container.small {margin-bottom: 4rem; text-align: center;}
 section.prices + section.title {padding-top: 0;}
 ul.prices {max-width: 70rem; margin: 0 auto;}
 ul.prices > li {text-align: center;}
-ul.prices > li div.box {padding: 3rem 2rem; height: 100%; background: #f7f7f8;}
+ul.prices > li div.box {padding: 3rem 2rem; height: 100%; background: #000000;}
 ul.prices li div.box p:first-child {margin: 0;}
 ul.prices li div.box p:first-child strong {
     position: relative;

@@ -18,7 +18,7 @@ body {font-size: 1rem; color: var(--textMedium); background: var(--light);}
 img, figure, video, audio {max-width: 100%; display: block;}
 a {color: var(--textMedium);}
 h1, h2, a.logo {line-height: 1.15; font-size: 2.6rem; color: var(--textDark);}
-h1 {font-size: 3.25rem; margin-bottom: 1.75rem;}
+h1 {font-size: 3.25rem; margin-bottom: 1.75rem; padding-top: 1rem;}
 h1 + p {padding-top: 0.5rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
 h2:first-child {margin-top: 0;}
@@ -73,11 +73,11 @@ a.logo > div.has_subtitle > div span:nth-child(2) {font-size: 0.75rem; font-weig
 /* sections general
 /*------------------------*/
 
-section, section.image.alt {padding: 4.5rem 0 6rem;}
+section, section.image.alt {padding: 1.5rem 0 1rem;}
 section .twocols {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 5.5rem clamp(2rem, 5vw, 5rem);}
 section .twocols > div {display: flex; flex-direction: column; justify-content: center;}
-section .container.small {max-width: 40rem;}
-section.hasbackgroundcolor {padding: 0; margin-top: 2rem;}
+section .container.small {max-width: 40rem;padding-top: 3rem;}
+section.hasbackgroundcolor {padding: 1rem; margin-top: 2rem;}
 section.hasbackgroundcolor + section.hasbackgroundcolor {padding-top: 3.5rem;}
 section.bgimage.hasbackgroundcolor + section:not(.hasbackgroundcolor) {margin-top: 1.5rem;}
 section :last-child {margin-bottom: 0;}
@@ -140,7 +140,7 @@ form > div.submit {padding-top: 0.55rem;}
 form h3 {padding-top: 0; padding-bottom: 1rem;}
 label.inborder {
     position: absolute; 
-    background: white; 
+    background: rgb(12, 12, 12); 
     font-size: 0.85rem; 
     line-height: 1;
     padding: 0 0.25rem;
@@ -166,7 +166,7 @@ div.box label.inborder::after {
 
 .button, button {
     background: var(--accent); 
-    color: white;
+    color: rgb(247, 247, 247);
     text-decoration: none;
     padding: 0.7em 1.25em;
     font-weight: bold;
@@ -180,7 +180,7 @@ div.box label.inborder::after {
 .button.secondary {background: var(--textDark);}
 .button.secondary.ghost,
 .button.secondary:hover {background: transparent; color: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
-.button.secondary.ghost:hover {background: var(--textDark); color: white;}
+.button.secondary.ghost:hover {background: var(--textDark); color: rgb(177, 15, 15);}
 .button.icon {
     padding: 0; 
     position: relative; 
@@ -211,7 +211,7 @@ ul.buttons.social .button:hover {background: var(--accent); box-shadow: inset 0 
 
 section.bgimage .overlay {position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1; background: rgba(0,0,0,0.32);}
 section.bgimage .bgimage {position: relative; display: flex; flex-direction: column; justify-content: center;}
-section.bgimage .container {position: relative; z-index: 2; color: white; padding-top: 5.5rem; padding-bottom: 6rem;} 
+section.bgimage .container {position: relative; z-index: 2; color: rgb(0, 0, 0); padding-top: 5.5rem; padding-bottom: 6rem;} 
 section.bgimage .container h1,
 section.bgimage .container h2 {color: white;}
 section.bgimage h1 + p {padding-top: 0;}
@@ -220,11 +220,11 @@ section.bgimage h1 + p {padding-top: 0;}
 /* breadcrumbs
 /*------------------------*/
 
-ul.breadcrumbs {display: block; margin: -1rem 0 0.25rem; font-size: 0.9rem; text-align: center;}
+ul.breadcrumbs {display: block; margin: 1rem 0 0.25rem; font-size: 0.9rem; text-align: center;}
 h1 + ul.breadcrumbs {margin: -1rem 0 2rem;}
 h1 + ul.breadcrumbs:last-child {margin-bottom: 0;}
 ul.breadcrumbs li {list-style: none; display: inline-block;}
-ul.breadcrumbs li::before {content: "/"; display: inline-block; padding: 0 0.25rem;}
+ul.breadcrumbs li::before {content: "/"; display: inline-block; padding: 0 1.25rem;}
 ul.breadcrumbs li:first-child::before {content: none;}
 ul.breadcrumbs li a {text-decoration: none;}
 ul.breadcrumbs li::before,

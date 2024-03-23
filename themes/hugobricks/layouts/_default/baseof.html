@@ -93,8 +93,19 @@
 		      <div>{{ markdownify (index .Site.Data .Language.Lang).footer.footer_text }}</div>
 		    </div>
   		</div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        let headings = document.querySelectorAll('h1, h2, h3'); // Adjust for your title elements
+        headings.forEach(heading => heading.classList.add('first-letter-orange'));
+  
+      // Add class to menu items
+         let menuItems = document.querySelectorAll('nav ul li a');
+         menuItems.forEach(item => item.classList.add('first-letter-orange'));
+       
+      </script>
 		</footer>
-
+    
+   
 		{{ if .Site.Data.settings.sticky_header }}
       <script type="text/javascript" src="/js/stickyheader.js"></script>
     {{ end }}
