@@ -26,8 +26,8 @@ function itemsLeft(tag) {
 
 const pagesize = parseInt(document.querySelector('.contentitems').dataset.pagesize);
 var multiselecttags_update = function(selectelement, selectEl, pillsEl) {
-    
-    selectEl.innerHTML = '<option>Filter tags</option>';
+
+    selectEl.innerHTML = '<option>'+selectelement.title+'</option>';
     for (var i=0; i<selectelement.options.length;i++) {
         const j = i;
         var tag = selectelement.options[i].value;
@@ -80,12 +80,12 @@ var multiselecttags_update = function(selectelement, selectEl, pillsEl) {
 var selectelements = document.querySelectorAll('select.multiselecttags');
 selectelements.forEach(function(selectelement) {
     selectelement.style.display = 'none';
-    
+
     //create new select with same options
     const selectEl = document.createElement("select");
     selectEl.setAttribute('autocomplete','off');
     selectelement.parentElement.append(selectEl);
-    
+
     //create pill list
     const pillsEl = document.createElement("ul");
     pillsEl.classList.add('tags');
@@ -99,7 +99,7 @@ selectelements.forEach(function(selectelement) {
             }
         }
     }
-    
+
     multiselecttags_update(selectelement, selectEl, pillsEl);
 });
 

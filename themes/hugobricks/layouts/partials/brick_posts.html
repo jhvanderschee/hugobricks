@@ -12,14 +12,14 @@
     </div>{{ end }}
     <div class="container">
         <div class="filter">
-            <select id="filter" class="multiselecttags numbers_{{ page.Site.Data.settings.filter_has_numbers }}" multiple autocomplete="off">
+            <select id="filter" class="multiselecttags numbers_{{ page.Site.Data.settings.filter_has_numbers }}" multiple autocomplete="off" title="{{ i18n "Filter tags" }}">
                 {{ range $name, $taxonomy := page.Site.Taxonomies.tags }}
-                    <option value="{{ $name | urlize }}">{{ $name }}</option>
+                    <option value="{{ $name }}">{{ $name }}</option>
                 {{ end }}
             </select>
         </div>
         <ul class="contentitems grid posts" data-pagesize="{{ page.Site.Data.settings.page_size }}">
-            {{ range $index,$post := $posts }}                
+            {{ range $index,$post := $posts }}
                 <li class="item{{ range .Params.tags }} tag_{{ . }}{{ end }}">
                         {{- if (resources.GetMatch .Params.image) -}}
                             {{- $postimage := ((resources.GetMatch .Params.image).Fill `1200x600 jpg Smart q50`).RelPermalink -}}
