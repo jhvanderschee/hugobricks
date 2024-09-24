@@ -17,7 +17,7 @@
 }
 body.transparent_header .preheader .container a.icon img {filter: invert(1)!important;}
 body:not(.transparent_header) .preheader.light {background: var(--light); font-weight: normal;}
-body.transparent_header .preheader {background: transparent; position: absolute; width: 100%; z-index: 2; border-bottom: 0.1rem solid rgba(255,255,255,0.5);}
+body.transparent_header .preheader {background: transparent; position: absolute; width: 100%; z-index: 2; border-bottom: 0.1rem solid rgba(255,255,255,0.25);}
 body:not(.transparent_header) .preheader.light, body:not(.transparent_header) .preheader.light a {color: var(--textMedium);}
 body:not(.transparent_header) .preheader.light .container a.icon img {filter: invert(0);}
 @media (max-width: 600px) {
