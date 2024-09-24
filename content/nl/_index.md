@@ -24,7 +24,7 @@ Hugoplate is een uitgebreid startersthema dat alles bevat wat je nodig hebt om t
 - 99+ Google Pagespeed Score
 - Gebouwd met CSS-variabelen voor eenvoudige styling
 - Werkt op alle beeldschermformaten
-- SEO-geoptimaliseerd voor betere zoekmachineposities
+- SEO-geoptimaliseerd
 
 {{< /brick_image2 >}}
 {{< brick_image >}}
@@ -33,7 +33,7 @@ Hugoplate is een uitgebreid startersthema dat alles bevat wat je nodig hebt om t
 
 ![](/uploads/illustrations/cuate/version-control.svg)
 
-We streven ernaar om de volgende bricks te leveren: intro, titel, afbeelding, cta, contact, team, getuigenissen, over, prijzen, producten, product, usps, statistieken, galerij, citaat, faqs, merken, video, blogs, bericht, gerelateerd.
+We streven ernaar om de volgende bricks te leveren: intro, titel, afbeelding, cta, contact, team, getuigenissen, over, prijzen, producten, product, usps, statistieken, galerij, citaat, faqs, merken, video, blogs, bericht en gerelateerde items.
 
 We voegen voortdurend bricks en shortcodes toe aan dit thema. Mist u een brick of shortcode? [Laat het ons weten](/contact/)! We bouwen het voor u!
 
