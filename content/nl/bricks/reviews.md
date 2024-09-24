@@ -2,6 +2,6 @@
 title: Reviews
 ---
 
-## What users say about Hugobricks
+## Wat gebruikers zeggen over Hugobricks
 
-Don't just take our word for it - hear from some of our satisfied users! Check out some of our testimonials below to see what others are saying about Hugobricks.
+U hoeft ons niet op ons woord te geloven - luister liever naar onze tevreden gebruikers! Bekijk hieronder enkele getuigenissen om te zien wat men zoal over Hugobricks zegt.
