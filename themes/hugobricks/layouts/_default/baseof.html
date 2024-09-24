@@ -93,7 +93,7 @@
 		      <div>{{ markdownify (index .Site.Data .Language.Lang).footer.footer_text }}</div>
           {{- if gt (len .Site.Languages) 1 -}}
           <div>
-            <select onchange="if(this.value) document.location.href = '/'+this.value+'/';"><option>Change language</option>{{ range .Site.Languages }}<option value="{{ .Lang }}" {{ if eq page.Language.Lang .Lang }}disabled{{ end }}>{{ .LanguageName }}</option>{{ end }}</select></div>
+            <label for="language" style="display: none;">Change Language</label><select id="language" onchange="if(this.value) document.location.href = '/'+this.value+'/';"><option>Change language</option>{{ range .Site.Languages }}<option value="{{ .Lang }}" {{ if eq page.Language.Lang .Lang }}disabled{{ end }}>{{ .LanguageName }}</option>{{ end }}</select></div>
           </div>
           {{- end -}}
 		    </div>
