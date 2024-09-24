@@ -1,0 +1,13 @@
+logo_image:
+logo_subtitle: Het Ultieme Hugo Thema
+mobile_view_width: 1100
+menuitems:
+  - title: Home
+    link: /
+    items: 
+      - title:
+        link:
+cta:
+  active: true
+  title: Get started
+  link: /
