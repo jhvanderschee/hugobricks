@@ -3,7 +3,7 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# Bouw je Hugo website met stapelbare bricks
+# Bouw je Hugo website met stapelbare blokken
 
 Hugobricks is een gratis thema voor Hugo. Het maakt het bouwen van Hugo-websites kinderspel dankzij de stapelbare (LEGO-achtige) content bricks. Wat dacht je van deze 'intro brick' met een duidelijke call-to-action? Stapel hem op wat image bricks en een prijstabel en bouw in seconden een complete website!
 
