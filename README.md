@@ -35,6 +35,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] Team,
 - [x] Blog/posts,
 - [x] Pricing,
+- [x] Services,
 - [ ] Quote,
 - [ ] Stats,
 - [ ] Carousel,
@@ -44,7 +45,6 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [ ] Products,
 - [ ] Product,
 - [ ] Stats,
-- [ ] Gallery,
 - [ ] Brands,
 - [ ] Openinghours
 
