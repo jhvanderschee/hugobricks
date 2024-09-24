@@ -1,6 +1,6 @@
 ---
 title: Third service
-image: /uploads/gallery/03.jpg
+image: /uploads/gallery/05.jpg
 tags:
   - test
 ---
