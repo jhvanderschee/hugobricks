@@ -1,4 +1,4 @@
-{{- if (in .Destination ".svg") -}}
+{{- if or (in (lower .Destination) ".svg") (in (lower .Destination) ".png") -}}
     <img src="{{ .Destination }}" alt="{{ .Text }}" class="is_svg" />
 {{- else -}}
     {{- if (resources.GetMatch .Destination) -}}

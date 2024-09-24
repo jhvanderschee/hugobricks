@@ -1,3 +1,5 @@
+[![](/hugobricks.jpg)](https://vimeo.com/862118474)
+
 # What is Hugobricks?
 
 [View DEMO website](https://www.hugobricks.preview.usecue.com/)
@@ -21,12 +23,12 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] Intro,
 - [x] CTA,
 - [x] Image,
-- [x] Image2 (alt),
+- [x] Image alt,
 - [x] About,
 - [x] Contact,
 - [x] 404 Page
 - [x] Title,
-- [x] Title2 (alt),
+- [x] Title alt,
 - [x] Map,
 - [x] Features,
 - [x] Reviews,
@@ -48,13 +50,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 
 ## Hugobricks workflow
 
-Hugobricks aims to enhance the Hugo web framework by providing a variety of pre-made bricks for straightforward website-building.
-
-Our companion project, [hugocodex](https://hugocodex.org), guides beginners in starting a Hugo project from scratch. For those who already have experience with Hugo and want to use it for rapid prototyping and iterating, Hugobricks offers premade websites and customizable components powered by Hugo.
-
-Cloning this repository allows you to start building lightning-fast static sites with flexibility and ease with and already working website.
-
-Here is an example of two bricks (title and cta):
+Hugobricks aims to enhance the Hugo web framework by providing a variety of pre-made bricks for straightforward website-building. Our companion project, [hugocodex](https://hugocodex.org), guides beginners in starting a Hugo project from scratch. For those who already have experience with Hugo and want to use it for rapid prototyping and iterating, Hugobricks offers premade websites and customizable components powered by Hugo. Cloning this repository allows you to start building lightning-fast static sites with flexibility and ease with and already working website. Here is an example of two bricks (title and cta):
 
 ```
 ---
@@ -71,16 +67,16 @@ Your first paragraph with some lorem ipsum dolor sit amet.
 {{< /brick_cta >}}
 ```
 
-### Get started with Hugobricks
+## Get started with Hugobricks
 
-In order to get a working website feel free to 
+In order to get a working website you should:
 
-- clone our repository and start building with stackable content bricks.
+- clone our repository and start building with stackable content bricks
 - enjoy your already working hugo website, plan your changes/iterations
 - re-use default hugobricks
 - and/or customise them !
 
-### Hugobricks theme features
+## Hugobricks theme features
 - Contact form
 - Map
 - Button (primary and secondary)
@@ -97,19 +93,12 @@ In order to get a working website feel free to
 
 ## Hugobricks under the Hood
 
-Hugobricks is build with the regular [Hugo](https://gohugo.io/overview/introduction/) building blocks: 
+Hugobricks is build with the regular [Hugo](https://gohugo.io/overview/introduction/) building blocks, like [shortcodes](https://gohugo.io/content-management/shortcodes/#what-a-shortcode-is), [partials](https://gohugo.io/templates/partials/) and [layouts](https://gohugo.io/templates/base/). Hugobricks takes advantage of these things to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic.
 
-- [Shortcodes](https://gohugo.io/content-management/shortcodes/#what-a-shortcode-is) 
-- [Partials](https://gohugo.io/templates/partials/)
-- [Layouts / templating](https://gohugo.io/templates/base/)
-
-Hugobricks takes advantage of these things to allow content re-use, pivot around content and layouts, and calling the required styling and functional logic.
-
-### Hugobricks Feedback 
+## Hugobricks Feedback 
 
 Make your wishlist. Missing a given Hugobrick? [Let us know.](https://github.com/jhvanderschee/hugobricks/issues/5)
 
-
-### Credits and licenses
+## Credits and licenses
 
 The functionality is inspired by the many [Gutenberg Block Plugins](https://wpastra.com/plugins/wordpress-gutenberg-block-plugins/) that are available online. The design has been inspired by the MIT licensed [Hugoplate from Zeon Studio](https://github.com/zeon-studio/hugoplate.git). The fonts and icons are Apache Licensed and come from [Google Fonts](https://fonts.google.com) and [Google Material Symbols](https://fonts.google.com/icons). The illustrations are free to use but require [an attribution to Storyset](https://storyset.com/terms). The avatars are CC0 licensed and come from [Pravatar](https://www.pravatar.cc/images). The social media icons (Facebook, Instagram, etc) belong to the respective social networks/their owners.

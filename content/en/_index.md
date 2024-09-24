@@ -68,7 +68,7 @@ Easily themeable. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corpo
 ---
 
 ![](/img/icons/material-symbols/200/rounded/devices.svg)
-### Fully resonsive on all devices
+### Fully responsive on all devices
 
 Works on every screen. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
 
