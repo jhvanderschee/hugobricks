@@ -20,9 +20,9 @@ Hugobricks is een gratis thema voor Hugo. Het maakt het bouwen van Hugo-websites
 
 Hugoplate is een uitgebreid startersthema dat alles bevat wat je nodig hebt om te beginnen met je Hugo-project. Zoals alle WordPress-themabouwers zeggen: dit is het laatste thema dat je ooit nodig zult hebben. Inbegrepen zijn:
 
-- 10+ vooraf gebouwde pagina's
+- 10+ kant-en-klare pagina's
 - 99+ Google Pagespeed Score
-- Gebouwd met Hugo en CSS-variabelen voor eenvoudige styling
+- Gebouwd met CSS-variabelen voor eenvoudige styling
 - Werkt op alle beeldschermformaten
 - SEO-geoptimaliseerd voor betere zoekmachineposities
 
