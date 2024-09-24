@@ -1,6 +1,6 @@
 ---
 title: First service
-image: /uploads/gallery/06.jpg
+image: /uploads/photos/06.jpg
 tags:
   -
 ---
