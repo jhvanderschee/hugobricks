@@ -11,7 +11,7 @@ title: Page title
 ---
 {{</* brick_map */>}}
 
-![](/uploads/map2.png)
+![](/uploads/map.png)
 
 [Google Maps](https://www.google.com/maps)
 

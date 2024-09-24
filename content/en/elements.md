@@ -79,7 +79,7 @@ A grayscale (colorized) image:
 
 ## Map 'brick'
 
-{{< map "/uploads/map2.png" "https://www.google.com/maps/place/52%C2%B022'20.1%22N+4%C2%B054'00.4%22E/@52.372253,4.8991072,18z/data=!3m1!4b1!4m4!3m3!8m2!3d52.372253!4d4.9001?entry=ttu" >}}
+{{< map "/uploads/map.png" "https://www.google.com/maps/place/52%C2%B022'20.1%22N+4%C2%B054'00.4%22E/@52.372253,4.8991072,18z/data=!3m1!4b1!4m4!3m3!8m2!3d52.372253!4d4.9001?entry=ttu" >}}
 
 ---
 
