@@ -6,9 +6,9 @@ title: Headers
 
 ![](/uploads/photos/bricks.jpg)
 
-# Headers
-
 {{< breadcrumbs >}}
+
+# Headers
 
 {{< /brick_title >}}
 {{< brick_wide >}}
