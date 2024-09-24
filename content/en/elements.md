@@ -83,6 +83,12 @@ A grayscale (colorized) image:
 
 ---
 
+## CTA form
+
+{{< ctaform >}}
+
+---
+
 ## Contact form
 
 {{< contactform >}}
