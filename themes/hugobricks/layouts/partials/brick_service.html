@@ -2,9 +2,9 @@
     <div class="container title">
         {{ partial "breadcrumbs.html" . }}
         <h1>{{ page.Title | safeHTML }}</h1>
-        {{ if or .Params.date (index page.Params.tags 0) }}
+        {{ if or page.Params.date (index page.Params.tags 0) }}
         <div class="meta">
-            {{ if .Params.date }}<div>
+            {{ if page.Params.date }}<div>
                 <img src="/img/icons/material-symbols/200/rounded/calendar_month-fill.svg"class="black_2_textDark" alt="" />
                 {{ page.Date | time.Format ":date_medium"}}
             </div>
