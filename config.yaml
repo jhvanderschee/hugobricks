@@ -6,7 +6,17 @@ assetDir: static
 markup:
   goldmark:
     renderer:
-      unsafe: true # Allow HTML in md files
+      unsafe: true
+    extensions:
+      extras:
+        insert:
+          enable: true
+        mark:
+          enable: true
+        subscript:
+          enable: true
+        superscript:
+          enable: true
 
 languages:
   en:
@@ -16,8 +26,8 @@ languages:
     disabled: false
     permalinks:
       page:
-        posts: /blog/:filename
-        services: /services/:filename
+        posts: /blog/:slug
+        services: /services/:slug
       section:
         posts: /blog/
         services: /services/
@@ -25,11 +35,11 @@ languages:
     languageName: Nederlands
     contentDir: content/nl
     weight: 2
-    disabled: true
+    disabled: false
     permalinks:
       page:
-        posts: /blog/:filename
-        services: /diensten/:filename
+        posts: /blog/:slug
+        services: /diensten/:slug
       section:
         posts: /blog/
         services: /diensten/

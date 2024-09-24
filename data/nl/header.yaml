@@ -3,11 +3,27 @@ logo_subtitle: Het Ultieme Hugo Thema
 mobile_view_width: 1100
 menuitems:
   - title: Home
-    link: /
+    link: /nl/
     items: 
       - title:
         link:
+  - title: Lorem
+    link: /nl/lorem/
+    items: 
+      - title:
+        link: /
+  - title: Ipsum
+    link: /nl/ipsum/
+    items: 
+      - title:
+        link:
+  - title: Dolor set
+    link: /nl/dolor/
+    items: 
+      - title:
+        link:
+
 cta:
   active: true
-  title: Get started
-  link: /
+  title: Start direct
+  link: /nl/
