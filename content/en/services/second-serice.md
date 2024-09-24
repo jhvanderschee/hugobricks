@@ -1,6 +1,6 @@
 ---
 title: Second service
-image: /uploads/gallery/04.jpg
+image: /uploads/gallery/07.jpg
 tags:
   - test
 ---
