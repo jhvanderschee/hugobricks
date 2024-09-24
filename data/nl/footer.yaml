@@ -1,11 +1,11 @@
 logo_image:
 dark_footer: true
 menuitems:
-  - title: About
+  - title: Over ons
     link:  /nl/
-  - title: Elements
+  - title: Elementen
     link:  /nl/
-  - title: Privacy policy
+  - title: Privacyverklaring
     link:  /nl/
 socials:
   - title: Facebook
@@ -20,4 +20,4 @@ socials:
   - title: Email
     link: "mailto:?subject:Hugobricks website"
     logo_image: /img/email.svg
-footer_text: This theme is open source. More info on [Github](https://github.com/jhvanderschee/hugobricks)!
+footer_text: Dit thema is open source. Meer info vind je op [Github](https://github.com/jhvanderschee/hugobricks)!
