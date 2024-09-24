@@ -32,6 +32,8 @@ menuitems:
         link: /404.html
   - title: Docs
     link: /docs/
+  - title: Services
+    link: /services/
   - title: Blog
     link: /blog/
 cta:
