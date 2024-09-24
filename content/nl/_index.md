@@ -3,7 +3,7 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# Bouw je volgende Hugo site met stapelbare content bricks
+# Bouw je Hugo website met stapelbare bricks
 
 Hugobricks is een gratis thema voor Hugo. Het maakt het bouwen van Hugo-websites kinderspel dankzij de stapelbare (LEGO-achtige) content bricks. Wat dacht je van deze 'intro brick' met een duidelijke call-to-action? Stapel hem op wat image bricks en een prijstabel en bouw in seconden een complete website!
 
@@ -39,56 +39,7 @@ We voegen voortdurend bricks en shortcodes toe aan dit thema. Mist u een brick o
 
 {{< /brick_image >}}
 {{< brick_reviews >}}{{< /brick_reviews >}}
-{{< brick_features >}}
-## Het ultieme Hugo-thema
-
-Hugobricks omvat alle componenten die u bij de hand wilt hebben. Het is een krachtige motor voor uw webgerichte projecten. Het heeft uitstekende prestaties in alle categorieën.
-
---- 
-
-![](/img/icons/material-symbols/200/rounded/auto_awesome_mosaic.svg) 
-
-### Omvat alle componenten 
-
-We streven ernaar de volgende bouwstenen te leveren: intro, titel, afbeelding, cta, contact, team, getuigenissen, over, prijzen, producten, product, usps, statistieken, galerij, offerte, veelgestelde vragen, merken, video, blogs, post, gerelateerd.
-
---- ![](/img/icons/material-symbols/200/rounded/performance_max.svg) 
-
-### 99+ Google Lighthouse-score 
-
-Razendsnelle website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum is niet meer gebruikelijk, maar anders dan in het verleden, tot nu toe, in een bepaalde tijd, of in een bepaalde tijd.
-
---- 
-
-![](/img/icons/material-symbols/200/rounded/design_services.svg) 
-
-### Te 'themen' via CSS-variabelen 
-
-Gemakkelijk aan te passen aan jouw huisstijl. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum is niet meer gebruikelijk, maar anders dan in het verleden, tot nu toe, in een bepaalde tijd, of in een bepaalde tijd.
-
---- 
-
-![](/img/icons/material-symbols/200/rounded/devices.svg) 
-
-### Werkt op alle beeldschermformaten
-
-Werkt op elk scherm en ieder device. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum is niet meer gebruikelijk, maar anders dan in het verleden, tot nu toe, in een bepaalde tijd, of in een bepaalde tijd.
-
---- ![](/img/icons/material-symbols/200/rounded/timer.svg) 
-
-### Supersnel bouwen en implementeren 
-
-Extreem snel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum is niet meer gebruikelijk, maar anders dan in het verleden, tot een bepaalde tijd, of het bestaat in een bepaalde tijd.
-
---- 
-
-![](/img/icons/material-symbols/200/rounded/auto_fix.svg)
-
-### 10+ vooraf gebouwde pagina's 
- 
-Begin met het eindresultaat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum is niet meer gebruikelijk, maar anders dan in het verleden, tot een bepaalde tijd, of het bestaat in een bepaalde tijd.
-
-{{< /brick_features >}}
+{{< brick_features >}}{{< /brick_features >}}
 {{< brick_prices >}} 
 
 ## Onze vriendelijke prijzen 

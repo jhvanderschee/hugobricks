@@ -3,8 +3,8 @@ title: cta
 ---
 ## Start vandaag nog met Hugobricks!
 
-Experience the future of web development with Hugo and stackable content bricks. Build lightning-fast static sites with ease and flexibility.
+Ervaar de toekomst van webontwikkeling met Hugo en stapelbare content bricks. Bouw razendsnelle flexibele statische sites met het grootste gemak.
 
-{{< button2 "Get started now" "/get-started/" >}}
+{{< button2 "Start nu direct" "/nl/" >}}
 
 ![](/uploads/illustrations/cuate/server.svg)

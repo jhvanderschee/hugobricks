@@ -2,22 +2,22 @@ logo_image:
 dark_footer: true
 menuitems:
   - title: About
-    link:  /about/
+    link:  /nl/
   - title: Elements
-    link:  /elements/
+    link:  /nl/
   - title: Privacy policy
-    link:  /privacy-policy/
+    link:  /nl/
 socials:
   - title: Facebook
     link: https://facebook.com
     logo_image: /img/facebook.svg
-  - title: Twitter
-    link: https://twitter.com
-    logo_image: /img/twitter.svg      
   - title: Mastodon
     link: https://joinmastodon.org
     logo_image: /img/mastodon.svg      
   - title: Instagram
     link: https://instagram.com
     logo_image: /img/instagram.svg
+  - title: Email
+    link: "mailto:?subject:Hugobricks website"
+    logo_image: /img/email.svg
 footer_text: This theme is open source. More info on [Github](https://github.com/jhvanderschee/hugobricks)!

@@ -24,7 +24,7 @@ Razendsnelle website. Lorem ipsum dolor sit amet consectetur adipisicing elit. C
 
 ![](/img/icons/material-symbols/200/rounded/design_services.svg) 
 
-### Te 'themen' via CSS-variabelen 
+### Thema met CSS-variabelen 
 
 Gemakkelijk aan te passen aan jouw huisstijl. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum is niet meer gebruikelijk, maar anders dan in het verleden, tot nu toe, in een bepaalde tijd, of in een bepaalde tijd.
 
@@ -32,13 +32,13 @@ Gemakkelijk aan te passen aan jouw huisstijl. Lorem ipsum dolor sit amet consect
 
 ![](/img/icons/material-symbols/200/rounded/devices.svg) 
 
-### Werkt op alle beeldschermformaten
+### Werkt op ieder formaat
 
 Werkt op elk scherm en ieder device. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum is niet meer gebruikelijk, maar anders dan in het verleden, tot nu toe, in een bepaalde tijd, of in een bepaalde tijd.
 
 --- ![](/img/icons/material-symbols/200/rounded/timer.svg) 
 
-### Supersnel bouwen en implementeren 
+### Supersnel bouwen
 
 Extreem snel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum is niet meer gebruikelijk, maar anders dan in het verleden, tot een bepaalde tijd, of het bestaat in een bepaalde tijd.
 
@@ -46,6 +46,6 @@ Extreem snel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis 
 
 ![](/img/icons/material-symbols/200/rounded/auto_fix.svg)
 
-### 10+ vooraf gebouwde pagina's 
+### 10+ kant-en-klare pagina's 
  
 Begin met het eindresultaat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum is niet meer gebruikelijk, maar anders dan in het verleden, tot een bepaalde tijd, of het bestaat in een bepaalde tijd.
