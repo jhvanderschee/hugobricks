@@ -14,8 +14,22 @@ languages:
     contentDir: content/en
     weight: 1
     disabled: false
+    permalinks:
+      page:
+        posts: /blog/:filename
+        services: /services/:filename
+      section:
+        posts: /blog/
+        services: /services/
   nl:
     languageName: Nederlands
     contentDir: content/nl
     weight: 2
     disabled: true
+    permalinks:
+      page:
+        posts: /blog/:filename
+        services: /diensten/:filename
+      section:
+        posts: /blog/
+        services: /diensten/

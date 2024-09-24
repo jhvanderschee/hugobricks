@@ -7,17 +7,20 @@ menuitems:
     items: 
       - title:
         link:
+  - title: Headers
+    link: /headers/
+    items:
+      - title: Transparent header
+        link: /bgimage3/
+      - title: Header with title
+        link: /bgimage2/
+      - title: Header with content
+        link: /bgimage/
   - title: Pages
-    link: /contact/
+    link: /elements/
     items: 
       - title: Elements
         link: /elements/
-      - title: Header image 1
-        link: /bgimage3/
-      - title: Header image 2
-        link: /bgimage2/
-      - title: Header image 3
-        link: /bgimage/
       - title: Basic page 1
         link: /basic/
       - title: Basic page 2

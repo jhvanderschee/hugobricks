@@ -4,6 +4,7 @@ customcursor: true
 intersectionobserver: true
 filter_has_numbers: true
 page_size: 3
+show_all_services: true
 preheader: 
   active: true
   is_light: true

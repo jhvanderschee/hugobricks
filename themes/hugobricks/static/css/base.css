@@ -29,7 +29,7 @@ p, ul, ol, blockquote, pre, .box.map, figure, details {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
 hr {margin: 3.5rem 0; height: 1px; background: rgba(0,0,0,0.1); border: 0;}
-p > img {border-radius: 1rem; overflow: hidden;}
+p img {border-radius: 1rem; overflow: hidden;}
 pre {
     overflow: auto; 
     background: var(--light); 
@@ -289,6 +289,7 @@ ul.tabs li a::after {
 }
 ul.tabs li a:hover::after,
 ul.tabs li.selected a::after {transform: scaleX(1) translateY(50%);}
+.tabs_container {margin-bottom: 3.5rem;}
 .tabs_container .tab h2 {display: none;}
 
 

@@ -18,7 +18,7 @@
                 {{ end }}
             </select>
         </div>
-        <ul class="contentitems grid posts" data-pagesize="{{ page.Site.Data.settings.page_size }}">
+        <ul class="contentitems grid posts" data-pagesize="{{ if page.Site.Data.settings.show_all_services }}99{{ else }}{{ page.Site.Data.settings.page_size }}{{ end }}">
             {{ range $index,$service := $services }}                
                 <li class="item{{ range .Params.tags }} tag_{{ . }}{{ end }}">
                         {{- if (resources.GetMatch .Params.image) -}}

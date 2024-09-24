@@ -30,8 +30,8 @@ body:not(.transparent_header) .preheader.light .container a.icon img {filter: in
 /*------------------------*/
 
 @keyframes slidedown {
-    from {margin-top: -10rem;}
-    to {margin-top: 0;}
+    from {transform: translateY(-7rem);}
+    to {transform: translateY(0);}
 }
 header {position: absolute; background: white; z-index: 9; width: 100%;}
 body.transparent_header header {padding-top: 2.35rem;}

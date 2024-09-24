@@ -22,6 +22,7 @@ section.intro h1 + p {padding-top: 0;}
 
 section.post .container {max-width: 50rem;}
 section.post .container h1 {text-align: center;}
+section.post .container h1:last-child {margin-bottom: 3rem;}
 section.post .container .featuredimage {border-radius: 1rem; margin-bottom: 3rem;}
 section.post .container.wide {max-width: 62rem;}
 section.post .container.post p:first-child,
@@ -76,7 +77,7 @@ section.title:not(.bgimage) {padding-bottom: 3.25rem;}
 
 section.wide {max-width: 60rem; margin-left: auto; margin-right: auto;}
 section.wide h1 {text-align: center;}
-section.wide h1 + * {padding-top: 1.25rem;}
+section.wide h1 + *:not(.breadcrumbs) {padding-top: 1.25rem;}
 
 /*------------------------*/
 /* brick map
@@ -235,7 +236,8 @@ section.docs .container .content .breadcrumbs {text-align: left;}
 section.docs .container .content h1 {font-size: 3rem;}
 
 section.docs .container .menu h3 {display: none;}
-section.docs .container .menu ul.nestedmenu {margin-left: 0; position: sticky; top: 8rem; margin-right: 5rem;}
+section.docs .container .menu ul.nestedmenu {margin-left: 0; margin-right: 5rem; top: 8rem}
+header.sticky + section.docs .container .menu ul.nestedmenu {position: sticky; animation: slidedown 1s ease-in-out;}
 section.docs .container .menu ul.nestedmenu li {list-style: none; padding: 0.15rem 0;}
 section.docs .container .menu ul.nestedmenu li > ul {display: none;}
 section.docs .container .menu ul.nestedmenu li > a::before {content: " "; display: inline-block; margin-right: 0.75rem; width: 0.5rem; text-align: center;}
