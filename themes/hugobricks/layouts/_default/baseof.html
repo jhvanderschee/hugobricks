@@ -39,7 +39,7 @@
     </div>
     {{- end -}}
     <header>
-      <div class="container {{ if (index .Site.Data .Language.Lang).header.cta.active }}has_cta{{ end }}">
+      <div class="container {{ if (index .Site.Data .Language.Lang).header.cta.active }}has_cta{{ end }}" onclick="document.body.classList.remove('menushown');">
         <div>
           {{ partial "logo.html" . }}
         </div>
@@ -65,7 +65,7 @@
           <a href="{{ (index .Site.Data .Language.Lang).header.cta.link }}" class="button ghost smaller">{{ (index .Site.Data .Language.Lang).header.cta.title }}</a>
         </div>
         {{ end }}
-        <button id="togglemenu" onclick="document.body.classList.toggle('menushown');">Toggle menu</button>
+        <button id="togglemenu" onclick="event.stopPropagation(); document.body.classList.add('menushown');">Toggle menu</button>
     </header>
 
     {{- block "content" . -}}{{- end -}}

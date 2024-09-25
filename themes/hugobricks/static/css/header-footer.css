@@ -36,7 +36,8 @@ body:not(.transparent_header) .preheader.light .container a.icon img {filter: in
 header {position: absolute; background: white; z-index: 9; width: 100%;}
 body.transparent_header header {padding-top: 2.35rem;}
 header > .container {padding-top: 1.5rem; padding-bottom: 1.5rem; position: relative;}
-header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white; position: fixed; top: 0; padding-top: 0!important; animation: slidedown 1s ease-in-out;}
+header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white; position: fixed; top: 0; padding-top: 0!important;}
+body:not(.mobilemenu) header.sticky  {animation: slidedown 1s ease-in-out;}
 header.sticky > .container {padding-top: 0.75rem; padding-bottom: 0.75rem;}
 header a {text-decoration: none;}
 header ul {display: flex; justify-content: flex-end; gap: 2rem; margin: 0;}
@@ -169,7 +170,7 @@ body.mobilemenu header.sticky + #togglemenu {position: fixed; top: 0.75rem; marg
 body.mobilemenu header .nav {display: grid; transition: grid-template-rows 0.3s ease-in-out;}
 body.mobilemenu header > div.container {display: grid; grid-template-areas: "logo cta" "menu menu";}
 body.mobilemenu header > div.container > div:nth-child(1) {grid-area: logo;}
-body.mobilemenu header > div.container > div:nth-child(2) {
+body.mobilemenu header > div.container > div.nav {
     grid-area: menu; 
     position: fixed;
     background: var(--textDark);
@@ -186,7 +187,7 @@ body.mobilemenu header > div.container > div:nth-child(2) {
 }
 body.mobilemenu header > div.container > div:nth-child(3) {grid-area: cta;}
 body.mobilemenu header > .container.has_cta > div:nth-child(3) .button {margin-right: 3rem;}
-body.mobilemenu header nav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 3.85rem 0 4.5rem 0;}
+body.mobilemenu header nav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 2.5rem 0 4rem 0;}
 body.mobilemenu header nav > ul > li::after {content: none;}
 body.mobilemenu header nav > ul > li > ul {
     position: relative; 
@@ -207,16 +208,8 @@ body.mobilemenu header nav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 5rem
 /* menu shown
 /*------------------------*/
 
-body.mobilemenu.menushown #togglemenu {
-    background: transparent url(/img/close.svg) center center / 2rem auto no-repeat; 
-    z-index: 10; 
-    position: fixed; 
-    top: 1.5rem;
-    filter: invert(1);
-}
-body.mobilemenu.menushown .preheader + header #togglemenu {top: 3.75rem;}
-body.mobilemenu.menushown header.sticky #togglemenu {top: 0.75rem;}
-body.mobilemenu.menushown header > div.container > div:nth-child(2) {transform: translateX(0%);}
+body.mobilemenu.menushown header > div.container > div.nav {transform: translateX(0%);}
+body.mobilemenu.menushown header > div.container::before {content: ""; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 2;}
 body.mobilemenu.menushown header nav > ul > li a {color: white;}
 
 @media (max-width: 450px) {
