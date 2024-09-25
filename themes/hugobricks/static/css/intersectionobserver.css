@@ -1,10 +1,11 @@
-footer > *, section > * {
+body:not(.mobilemenu) footer > *, 
+body:not(.mobilemenu) section > * {
     opacity: 1; 
-    transition: all 1s ease-in-out 0.7s; 
+    transition: all 1s ease-in-out 0.5s; 
     position: relative;
 }
-footer > * {transition: all 1s ease-in-out 0.5s; }
-section > * {transform: translateY(0rem);}
-section.stickstofooter.opaque > * {transform: translateY(0rem);}
-footer.opaque > *, section.opaque > * {opacity: 0;}
-section.opaque > * {transform: translateY(4rem)}
+body:not(.mobilemenu) section > * {transform: translateY(0rem);}
+body:not(.mobilemenu) section.stickstofooter.opaque > * {transform: translateY(0rem);}
+body:not(.mobilemenu) footer.opaque > *, 
+body:not(.mobilemenu) section.opaque > * {opacity: 0;}
+body:not(.mobilemenu) section.opaque > * {transform: translateY(4rem)}
