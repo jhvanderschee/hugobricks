@@ -99,8 +99,8 @@ header > .container.has_cta > div:nth-child(3) {flex: 1; text-align: right;}
 header > .container.has_cta ul {justify-content: center;}
 header + section.hasbackgroundcolor {margin-top: 0;}
 header + section:not(.bgimage) {padding-top: 11rem!important;}
-body.transparent_header header + section.bgimage .container,
-body:not(.transparent_header) header + section.bgimage .container {padding-top: 13.5rem!important;}
+body.transparent_header header + section.bgimage .container {padding-top: 13.5rem!important;}
+body:not(.transparent_header) header + section.bgimage .container {padding-top: 11.5rem!important;}
 
 body.transparent_header header:not(.sticky) {background: transparent;}
 body.transparent_header header:not(.sticky) a.logo,
