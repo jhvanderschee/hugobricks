@@ -11,7 +11,7 @@ Want to go all the way with customization? No problem! With CSS overrides you ca
 
 &nbsp;
 
-### Customization examples
+## Customization examples
 
 Some examples of website that use Hugobricks:
 

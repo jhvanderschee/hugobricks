@@ -22,7 +22,7 @@ Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id veli
 
 Proin ac *lobortis* tellus, ut [maximus](https://www.google.com) magna. Aliquam facilisis risus sit amet augue congue varius. Duis augue nulla, aliquam vitae efficitur eget, bibendum et tellus. Aenean quis sagittis felis. 
 
-### Heading 3
+#### Heading 4
 
 Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cras id hendrerit eros. Curabitur tincidunt est magna, ac commodo quam fringilla id. Nullam at imperdiet justo. Donec **dolor quis** nibh *rutrum facilisis* sed vulputate pellentesque. Vivamus id mollis arcu. Cras porttitor eros erat, at semper ligula ultricies nec. Nam lectus ex, mollis efficitur erat pulvinar, gravida faucibus massa.
 
@@ -98,6 +98,16 @@ A grayscale (colorized) image:
 ## Newsletter form
 
 {{< newsletterform >}}
+
+---
+
+## Blockquote
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ---
 
