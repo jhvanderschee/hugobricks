@@ -9,7 +9,10 @@
     <link rel="canonical" href="{{ .Permalink }}" />
     <link rel="shortcut icon" href="{{ .Site.Data.settings.favicon_image }}">
     
-    <link href="/css/{{ if .Params.color_name }}{{ .Params.color_name }}{{ else }}style{{ end }}.css?version={{ now }}" rel="stylesheet">
+    {{- $color := "style" -}}
+    {{- if .Params.color_name -}}{{- $color = .Params.color_name -}}{{- end -}}
+    {{- if .Site.Data.settings.color_name -}}{{- $color = .Site.Data.settings.color_name -}}{{- end -}}
+    <link href="/css/{{ $color }}.css?version={{ now }}" rel="stylesheet">
 
   </head>
   <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }} filename_{{ with .File }}{{ .BaseFileName }}{{ end }}">

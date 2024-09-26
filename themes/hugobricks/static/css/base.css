@@ -5,7 +5,6 @@
     --borderLight: rgba(0,0,0,0.075);
     --accent: black;
     --accentDarker: black;
-    --accentDarkest: black;
     --light: rgba(0,0,0,0.03);
 }
 img {filter: grayscale(100%);}

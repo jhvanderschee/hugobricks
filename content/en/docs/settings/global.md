@@ -9,6 +9,10 @@ The global settings are stored in the settings.yaml file you can find one level 
 
 A website is not complete without a nice favicon image (shown in the address bar of your browser). Use an SVG image for the best result.
 
+## Color name
+
+You can set the color of the theme by entering a color name here. Currently 'yellow' and 'red' are supported. Note that you can also override this on each page by using the variable `color_name` in the front matter.
+
 ## Sticky header
 
 This boolean lets you enable a sticky header, meaning the header (and navigation) will glue to the top when scrolled/scrolling.
