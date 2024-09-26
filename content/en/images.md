@@ -58,3 +58,16 @@ We aim to provide the following bricks: intro, title, image, cta, contact, team,
 We are constantly adding bricks and shortcodes to this theme. Are you missing a brick or a shortcode? Let us know! We will build it for you!
 
 {{< /brick_image2 >}}
+{{< brick_title2 >}}
+
+## "John Doe absolutely rocked my world! He flew me to the moon and back!"
+— &nbsp;Everybody out there
+
+![](/uploads/photos/flyspot3.jpg)
+
+{{< /brick_title2 >}}
+{{< brick_small >}}
+
+{{< ctaform >}}
+
+{{< /brick_small >}}
