@@ -68,6 +68,8 @@ We are constantly adding bricks and shortcodes to this theme. Are you missing a 
 {{< /brick_quote >}}
 {{< brick_small >}}
 
+## Shut up and take my money!
+
 {{< ctaform >}}
 
 {{< /brick_small >}}

@@ -3,7 +3,7 @@ placeholders: false
 fields: 
 - name: title
   input_type: html
-  placeholder: <h3>Like what you see? Sign up now!</h3>
+  placeholder: <h3>Enter your details below.</h3>
   required: true
 - name: name
   input_type: text
