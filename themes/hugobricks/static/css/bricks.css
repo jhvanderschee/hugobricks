@@ -70,6 +70,8 @@ section.contact .twocols {align-items: flex-start;}
 
 section.title .container.small {text-align: center;}
 section.title:not(.bgimage) {padding-bottom: 3.25rem;}
+section.title ul.breadcrumbs li a {color: var(--accent);}
+section.title.bgimage ul.breadcrumbs:first-child {margin-top: -2rem;}
 
 /*------------------------*/
 /* brick wide
@@ -179,7 +181,7 @@ section.posts .container.small {margin-bottom: 4rem; text-align: center;}
 section.posts .grid {grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 2rem;}
 section.posts .grid .item .img {border-radius: 1rem; margin-bottom: 0.251rem; overflow: hidden;}
 section.posts .grid .item .img img {display: block;}
-section.posts .grid .item h3 {padding-top: 1rem; font-size: 1.25rem;}
+section.posts .grid .item h3 {padding-top: 1rem;}
 section.posts .grid li.placeholder {display: block!important;}
 section.posts .grid .summary .button {position: relative; bottom: 0.8rem;}
 section.posts .filter {display: flex; justify-content: flex-end; align-items: center; gap: 0.75rem; margin: -2rem 0 1.25rem;}
@@ -248,7 +250,7 @@ section.docs .container .menu ul.nestedmenu li.haschildren.active > a::before {t
 section.docs .container .menu ul.nestedmenu li.active > ul {display: block;}
 section.docs .container .menu ul.nestedmenu li.active > ul li:last-child {margin-bottom: 0.75rem;}
 section.docs .container .menu ul.nestedmenu li > a {color: var(--textMedium); text-decoration: none; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block;}
-section.docs .container .menu ul.nestedmenu li.current > a {color: var(--textAccent);}
+section.docs .container .menu ul.nestedmenu li.current > a {color: var(--accentDarker);}
 
 @media (max-width: 65rem) {
     section.docs {margin-top: -2rem;}

@@ -4,7 +4,8 @@
     --borderMedium: rgba(0,0,0,0.2);
     --borderLight: rgba(0,0,0,0.075);
     --accent: black;
-    --textAccent: black;
+    --accentDarker: black;
+    --accentDarkest: black;
     --light: rgba(0,0,0,0.03);
 }
 img {filter: grayscale(100%);}
@@ -24,7 +25,7 @@ h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
 h2:first-child {margin-top: 0;}
 section.docs h2,
 .container.post h2,
-h3 {color: var(--textDark); line-height: 1.4; font-size: 1.4rem; margin-top: 0; margin-bottom: 0.4rem; padding-top: 1.5rem; font-weight: bold;}
+h3 {color: var(--textDark); line-height: 1.4; font-size: 1.25rem; margin-top: 0; margin-bottom: 0.4rem; padding-top: 1.5rem; font-weight: bold;}
 section.docs h3,
 .container.post h3,
 h4 {color: var(--textMedium); line-height: 1.4; font-size: 1.1rem; margin-bottom: 0.2rem; padding-top: 1rem;}
@@ -180,7 +181,9 @@ div.box label.inborder::after {
     border: 0;
     transition: all 0.15s ease-in-out;
     cursor: pointer;
+    letter-spacing: 0.02em;
 }
+.button:hover, button:hover {background: transparent; color: var(--accentDarker); box-shadow: inset 0 0 0 0.1rem var(--accent);}
 .button.secondary {background: var(--textDark);}
 .button.secondary.ghost,
 .button.secondary:hover {background: transparent; color: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
@@ -200,7 +203,7 @@ div.box label.inborder::after {
     filter: invert(1);
 }
 .button.icon:hover {background: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
-.button.ghost {background: transparent; color: var(--textAccent); box-shadow: inset 0 0 0 0.1rem var(--accent);}
+.button.ghost {background: transparent; color: var(--accentDarker); box-shadow: inset 0 0 0 0.1rem var(--accent);}
 .button.ghost:hover {color: white; background: var(--accent);}
 .button.smaller {padding: 0.4rem 1rem;}
 p > .button {margin: 0.5rem 0;}
@@ -232,7 +235,7 @@ ul.breadcrumbs li::before {content: "/"; display: inline-block; padding: 0 0.25r
 ul.breadcrumbs li:first-child::before {content: none;}
 ul.breadcrumbs li a {text-decoration: none;}
 ul.breadcrumbs li::before,
-ul.breadcrumbs li a {color: var(--textAccent);}
+ul.breadcrumbs li a {color: var(--accentDarker);}
 
 /*------------------------*/
 /* grid

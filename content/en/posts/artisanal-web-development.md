@@ -16,9 +16,6 @@ Anything CAN be artisanal web development, but what I mean is 'knowing every lin
 
 David asked me how I approach artisanal web development, but I do not feel like I answered the question sufficiently. Here is a very down to earth explanation: 
 
-
-### How does it work?
-
 I always start with a blank HTML page, without CSS and without Javascript. Then I write the HTML, starting with the 'doctype' tag. Sure, I might copy that from another project, but I believe there is value in knowing all these components by heart. When I need columns I choose between flexbox and grid and write the CSS code that is needed to make the columns responsive. I define the breakpoints for each situation. For a [carousel](https://codepen.io/joosts/pen/MWJBPgo) I use a div with flexbox items, horizontal overflow and 'scroll snap'. A little bit of Javascript allows it to be fully functional. This way I go through all code/the whole project. I try to stay away from components and ready made solutions and I try to tailor everything to (the needs of) the project I am working on.
 
 A few years ago this all might have been a huge task, especially when you wanted to make sure it looked the same on all browsers, but nowadays this is very simple. CSS is capable of so much and the variety in the browser landscape has vanished. Chrome is the absolute market leader, Edge is based on Chrome and Safari and Firefox are also based on [WebKit](https://en.wikipedia.org/wiki/List_of_web_browsers#WebKit-based)... which means that these browsers all behave very similar. Making things work cross-browser is no longer a challenge. Creating your own components and solutions is actually a lot of fun!
