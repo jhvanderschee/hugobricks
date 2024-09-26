@@ -60,7 +60,7 @@ We are constantly adding bricks and shortcodes to this theme. Are you missing a 
 {{< /brick_image2 >}}
 {{< brick_title2 >}}
 
-## "John Doe absolutely rocked my world! He flew me to the moon and back!"
+## "John Doe absolutely rocked my world. He flew me to the moon and back!"
 — &nbsp;Everybody out there
 
 ![](/uploads/photos/flyspot3.jpg)

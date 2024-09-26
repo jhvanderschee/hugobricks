@@ -43,10 +43,9 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [ ] Authors
 - [ ] Search
 - [ ] Products,
-- [ ] Product,
 - [ ] Stats,
 - [ ] Brands,
-- [ ] Openinghours
+- [ ] Opening hours
 
 ## Hugobricks workflow
 
