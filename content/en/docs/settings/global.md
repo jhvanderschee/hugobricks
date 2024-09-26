@@ -11,7 +11,7 @@ A website is not complete without a nice favicon image (shown in the address bar
 
 ## Color name
 
-You can set the color of the theme by entering a color name here. Currently 'yellow' and 'red' are supported. Note that you can also override this on each page by using the variable `color_name` in the front matter.
+You can set the color of the theme by entering a color name here. Currently 'yellow' and 'red' are supported. Note that you can also override this on each page by using the variable `color_name` in the front matter. You can also [manually customize](/docs/customizations/colors/) the colors.
 
 ## Sticky header
 
