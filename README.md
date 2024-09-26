@@ -20,32 +20,31 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 
 ##  Hugobricks that are available:
 
-- [x] Intro,
-- [x] CTA,
-- [x] Image,
-- [x] Image alt,
-- [x] About,
-- [x] Contact,
+- [x] Intro
+- [x] CTA
+- [x] Image
+- [x] Image alt
+- [x] About
+- [x] Contact
 - [x] 404 Page
-- [x] Title,
-- [x] Title alt,
-- [x] Map,
-- [x] Features,
-- [x] Reviews,
-- [x] Team,
-- [x] Blog/posts,
-- [x] Pricing,
-- [x] Services,
-- [ ] Quote,
-- [ ] Stats,
-- [ ] Carousel,
+- [x] Title
+- [x] Title alt
+- [x] Map
+- [x] Features
+- [x] Reviews
+- [x] Team
+- [x] Blog/posts
+- [x] Pricing
+- [x] Services
+- [x] Quote
+- [ ] Stats
+- [ ] Carousel
 - [ ] Related
 - [ ] Authors
 - [ ] Search
-- [ ] Products,
-- [ ] Stats,
-- [ ] Brands,
-- [ ] Opening hours
+- [ ] Products
+- [ ] Stats
+- [ ] Brands
 
 ## Hugobricks workflow
 
