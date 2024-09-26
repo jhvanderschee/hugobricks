@@ -69,7 +69,7 @@
           <a href="{{ (index .Site.Data .Language.Lang).header.cta.link }}" class="button ghost smaller">{{ (index .Site.Data .Language.Lang).header.cta.title }}</a>
         </div>
         {{ end }}
-        <button id="togglemenu" onclick="event.stopPropagation(); document.body.classList.add('menushown');">Toggle menu</button>
+        <button id="togglemenu" onclick="event.stopPropagation(); document.body.classList.add('menushown');"><span>Toggle menu</span></button>
     </header>
 
     {{- block "content" . -}}{{- end -}}

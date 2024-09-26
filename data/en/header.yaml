@@ -25,6 +25,8 @@ menuitems:
         link: /basic/
       - title: Basic page 2
         link: /basic2/
+      - title: Images
+        link: /images/
       - title: Our team
         link: /team/
       - title: Contact us

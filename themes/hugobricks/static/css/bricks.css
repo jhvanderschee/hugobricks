@@ -53,7 +53,9 @@ section.image.alt {background: var(--light); border-top: 0.1rem solid var(--ligh
 section.image.alt .container {direction: rtl;}
 section.image.alt .container > div {direction: ltr;}
 section.image .twocols .image {text-align: center; position: relative; height: 100%;}
-section.image .twocols .image img {width: auto; display: block; max-width: 85%; width: 100%; margin: auto;}
+section.image .twocols .image img {width: auto; display: block; width: 100%; margin: auto;}
+section.image .twocols .image img.is_svg {max-width: 85%; margin-block: 3rem;}
+section.image .twocols {row-gap: 2.5rem;}
 @media (max-width: 600px) {
     section.image .twocols .image {text-align: left;}
 }
@@ -72,6 +74,7 @@ section.title .container.small {text-align: center;}
 section.title:not(.bgimage) {padding-bottom: 3.25rem;}
 section.title ul.breadcrumbs li a {color: var(--accent);}
 section.title.bgimage ul.breadcrumbs:first-child {margin-top: -2rem;}
+section.title.bgimage button:hover, section.title.bgimage .button:hover {background: var(--accent); color: white; box-shadow: 0 0 0 0.085rem rgba(255,255,255,0.95);}
 
 /*------------------------*/
 /* brick wide

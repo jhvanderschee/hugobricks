@@ -1,6 +1,5 @@
 ---
 title: Our team
-color_name: red
 ---
 {{< brick_team >}}
 
