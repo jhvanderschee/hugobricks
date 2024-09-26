@@ -42,6 +42,8 @@ We are constantly adding bricks and shortcodes to this theme. Are you missing a 
 
 ## I am John Doe, fly with me!
 
+### Amaze me. Give me wings!
+
 ![](/uploads/photos/flyspot5.jpg)
 
 Together with my friend 'Fenix' I have built Hugobricks, a theme that allows you to create a website by stacking shortcodes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. 
