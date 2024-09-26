@@ -1,10 +1,11 @@
 ---
 title: Footer
+weight: 4
 ---
 
-## Show logo
+## Logo image
 
-With this boolean variable you can choose between showing the logo in the footer, or just the name of the website.
+Here you can specify the path to the logo that should be displayed in the footer.
 
 ## Menu items
 

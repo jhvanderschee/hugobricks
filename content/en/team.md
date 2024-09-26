@@ -1,5 +1,6 @@
 ---
 title: Our team
+color_name: red
 ---
 {{< brick_team >}}
 
@@ -21,4 +22,14 @@ Lorem dolor sit amet, consectetur adipiscing elit. Nam non laoreet nisi, ac hend
 &nbsp;
 
 {{< /brick_title >}}
-{{< brick_cta >}}{{< /brick_cta >}}
+{{< brick_cta >}}
+
+## Get started with Hugobricks today!
+
+Experience the future of web development with Hugo and stackable content bricks. Build lightning-fast static sites with ease and flexibility.
+
+{{< button2 "Get started now" "/get-started/" >}}
+
+![](/uploads/illustrations/cuate/red/server.svg)
+
+{{< /brick_cta >}}

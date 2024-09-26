@@ -9,7 +9,8 @@
     <link rel="canonical" href="{{ .Permalink }}" />
     <link rel="shortcut icon" href="{{ .Site.Data.settings.favicon_image }}">
     
-    <link href="/css/style.css?version={{ now }}" rel="stylesheet">
+    <link href="/css/{{ if .Params.color_name }}{{ .Params.color_name }}{{ else }}style{{ end }}.css?version={{ now }}" rel="stylesheet">
+
   </head>
   <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }} filename_{{ with .File }}{{ .BaseFileName }}{{ end }}">
     <script>      
@@ -33,7 +34,7 @@
           {{- end -}}
         </div>
         <div>
-          {{- if .Site.Data.settings.preheader.text -}}{{ .Site.Data.settings.preheader.text }}{{- end -}}
+          {{- if (index .Site.Data .Language.Lang).header.preheader -}}{{ (index .Site.Data .Language.Lang).header.preheader }}{{- end -}}
         </div>
       </div>  
     </div>

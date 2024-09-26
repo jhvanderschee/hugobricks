@@ -1,5 +1,6 @@
 ---
 title: Header 
+weight: 3
 ---
 
 ## Logo image
@@ -39,8 +40,5 @@ cta:
 Preheader is defined as the first 'section', at the top of the page body. You can activate it, choose a dark or light style and define which text to show.
 
 ```
-preheader: 
-  active: true
-  is_light: true
-  text: Open Mon-Fri from 9.00-5.00
+preheader: Open Mon-Fri from 9.00-5.00
 ```
