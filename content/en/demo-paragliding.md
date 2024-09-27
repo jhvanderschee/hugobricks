@@ -63,7 +63,7 @@ We are constantly adding bricks and shortcodes to this theme. Are you missing a 
 ## "With Hugobricks it is nothing but smooth sailing!"
 — &nbsp;Everybody out there
 
-![](/uploads/photos/paragliding/flyspot16.jpg)
+![](/uploads/photos/paragliding/flyspot17.jpg)
 
 {{< /brick_title >}}
 {{< brick_small >}}
