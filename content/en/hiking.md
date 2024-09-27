@@ -4,7 +4,7 @@ dark_header: true
 dark_footer: false
 preheader_is_light: false
 ---
-{{< brick_title >}}
+{{< brick_title2 >}}
 
 ![](/uploads/photos/hike/hike01.jpg)
 
@@ -14,7 +14,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 {{< button "Get started for free" "/get-started/" >}}
 
-{{< /brick_title >}}
+{{< /brick_title2 >}}
 {{< brick_image >}}
 
 ## The adventure begins here!
