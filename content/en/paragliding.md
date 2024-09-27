@@ -9,14 +9,14 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 {{< button "Get started for free" "/get-started/" >}}
 
-![](/uploads/photos/flyspot3.jpg)
+![](/uploads/photos/paragliding/flyspot3.jpg)
 
 {{< /brick_title2 >}}
 {{< brick_image >}}
 
 ## What’s included in Hugobricks?
 
-![](/uploads/photos/flyspot2.jpg)
+![](/uploads/photos/paragliding/flyspot2.jpg)
 
 Hugoplate is a comprehensive starter theme that includes everything you need to get started with your Hugo project. As all the Wordpress theme builders say: This is the last theme you will ever need. Included are:
 
@@ -31,7 +31,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 
 ## What bricks are available?
 
-![](/uploads/photos/flyspot1.jpg)
+![](/uploads/photos/paragliding/flyspot1.jpg)
 
 We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
 
@@ -44,7 +44,7 @@ We are constantly adding bricks and shortcodes to this theme. Are you missing a 
 
 ### Amaze me. Give me wings!
 
-![](/uploads/photos/flyspot5.jpg)
+![](/uploads/photos/paragliding/flyspot5.jpg)
 
 Together with my friend 'Fenix' I have built Hugobricks, a theme that allows you to create a website by stacking shortcodes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. 
 
@@ -53,7 +53,7 @@ Together with my friend 'Fenix' I have built Hugobricks, a theme that allows you
 
 ## A truly amazing experience!
 
-![](/uploads/photos/flyspot3.jpg)
+![](/uploads/photos/paragliding/flyspot3.jpg)
 
 We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
 
@@ -65,7 +65,7 @@ We are constantly adding bricks and shortcodes to this theme. Are you missing a 
 ## "John Doe absolutely rocked my world. He flew me to the moon and back!"
 — &nbsp;Everybody out there
 
-![](/uploads/photos/flyspot3.jpg)
+![](/uploads/photos/paragliding/flyspot3.jpg)
 
 {{< /brick_quote >}}
 {{< brick_small >}}
