@@ -5,7 +5,7 @@ title: Header image 2
 
 ![](/uploads/photos/bricks.jpg)
 
-# Header image 2
+# Header title
 
 {{< breadcrumbs >}}
 

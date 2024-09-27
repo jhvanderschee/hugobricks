@@ -12,7 +12,7 @@ menuitems:
     items:
       - title: Transparent
         link: /header-transparent/
-      - title: Title only
+      - title: Title
         link: /header-with-title/
       - title: Content block
         link: /header-with-content/
