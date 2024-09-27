@@ -2,7 +2,7 @@
 /* preheader
 /*------------------------*/
 
-.preheader {background: linear-gradient(rgba(255,255,255,0.04),rgba(255,255,255,0.04)),linear-gradient(var(--textDarker),var(--textDarker)); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid var(--light); font-weight: 500;}
+.preheader {background: var(--textDark); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid var(--light); font-weight: 500;}
 .preheader, .preheader a {color: rgba(255,255,255,0.5);}
 .preheader .container {display: flex; justify-content: space-between;}
 .preheader .container a.icon {text-decoration: none; margin-right: 2rem;}
@@ -106,7 +106,6 @@ body.transparent_header header + section.bgimage .container {padding-top: 13.5re
 body:not(.transparent_header) header + section.bgimage .container {padding-top: 11.5rem!important;}
 
 header.dark {background: var(--textDarker);}
-.preheader + header.dark {border-top: 1px solid rgba(255,255,255,0.08);}
 body.transparent_header header:not(.sticky) {background: transparent;}
 header.dark a.logo, body.transparent_header header:not(.sticky) a.logo,
 header.dark nav > ul > li > a, body.transparent_header header:not(.sticky) nav > ul > li > a {color: white;}

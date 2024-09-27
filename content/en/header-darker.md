@@ -8,7 +8,7 @@ preheader_is_light: false
 
 ![](/uploads/photos/bricks.jpg)
 
-# Header darker
+# Darker header
 
 {{< breadcrumbs >}}
 
