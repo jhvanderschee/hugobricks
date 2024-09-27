@@ -10,16 +10,16 @@ menuitems:
   - title: Headers
     link: /headers/
     items:
-      - title: Transparent
-        link: /header-transparent/
       - title: Title
         link: /header-with-title/
       - title: Content block
         link: /header-with-content/
       - title: Dark preheader
         link: /header-dark/
-      - title: Dark header
+      - title: Dark nav
         link: /header-darker/
+      - title: Transparent nav
+        link: /header-transparent/
   - title: Pages
     link: /elements/
     items: 
