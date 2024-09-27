@@ -28,7 +28,7 @@ Mauris in nisi ex. Etiam ultricies ipsum id turpis blandit bibendum. Donec posue
 
 ## Walk like an Egyptian
 
-![](/uploads/photos/hike/hike06.jpg)
+![](/uploads/photos/hike/hike08.jpg)
 
 Curabitur sit amet laoreet urna. Donec vel lobortis nunc. Aliquam scelerisque ultrices ipsum vitae gravida. Nam semper, nibh vitae porttitor auctor, quam dui faucibus diam, sit amet vulputate ligula nibh sed dui. Cras viverra nisl vitae dictum auctor. Aliquam rhoncus dolor nibh, sit amet maximus eros blandit vitae. Sed maximus dui sit amet nibh pulvinar volutpat. Nam odio purus, porta quis ultrices vitae, ultricies non justo. Vestibulum elementum elementum vulputate. Proin facilisis ipsum ipsum, vel ornare orci vehicula sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis congue sit amet est ornare convallis. Etiam viverra bibendum elit vitae blandit. 
 
