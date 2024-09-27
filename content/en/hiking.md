@@ -35,7 +35,7 @@ Curabitur sit amet laoreet urna. Donec vel lobortis nunc. Aliquam scelerisque ul
 {{< /brick_image2 >}}
 {{< brick_image >}}
 
-## Be stunned by the wilderness
+## Stunning wilderness
 
 ![](/uploads/photos/hike/hike07.jpg)
 
