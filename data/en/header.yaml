@@ -29,8 +29,8 @@ menuitems:
         link: /basic/
       - title: Basic page 2
         link: /basic2/
-      - title: Images
-        link: /images/
+      - title: Demo Paragliding
+        link: /paragliding/
       - title: Our team
         link: /team/
       - title: Contact us
