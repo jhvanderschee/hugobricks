@@ -3,7 +3,7 @@ title: About
 ---
 {{< brick_about >}}
 
-{{< colorize_image "This is not me" "/uploads/photos/avatars/2.jpeg" >}}
+{{< colorize_image "This is me" "/uploads/photos/avatars/me.jpg" >}}
 
 # Hey, I am John Doe
 

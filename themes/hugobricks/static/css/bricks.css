@@ -112,7 +112,7 @@ section.reviews .container.small {margin-bottom: 4.25rem; text-align: center;}
 ul.reviews li div.box {display: flex; flex-direction: column-reverse; padding: 2.25rem 2rem; height: 100%; justify-content: space-between; gap: 2rem;}
 ul.reviews li div.box .avatar {height: 3.25rem; width: 3.25rem;}
 ul.reviews li div.box h3 {margin: 0; line-height: 1.45; font-size: 1.1rem; padding: 0;}
-ul.reviews li div.box .function {color: var(--textDark); line-height: 1.45;}
+ul.reviews li div.box .function {color: var(--textDarker); line-height: 1.45;}
 ul.reviews li div.box .stars {display: flex; gap: 0.25rem; margin: 0 0 1.5rem;}
 ul.reviews li div.box .stars img {height: 1rem;}
 ul.reviews li div.box > div:nth-child(1) {display: flex; gap: 1rem; align-items: center;}

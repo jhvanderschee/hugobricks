@@ -397,10 +397,10 @@ details[open]:not(.closing) summary::after {
 /* meta
 /*------------------------*/
 
-.meta {color: var(--textDark); position: relative; margin: 0.5rem 0 1rem; gap: 1rem; font-size: 0.9rem; display: flex; align-items: center; gap: 1rem;}
+.meta {color: var(--textDarker); position: relative; margin: 0.5rem 0 1rem; gap: 1rem; font-size: 0.9rem; display: flex; align-items: center; gap: 1rem;}
 .meta > div {display: flex; align-items: center; gap: 0.4rem;}
 .meta img {height: 1rem; width: 1rem; position: relative; border-radius: 0; display: block; bottom: 0.1rem;}
-.meta a {color: var(--textDark); text-decoration: none;}
+.meta a {color: var(--textDarker); text-decoration: none;}
 .meta ul {margin: 0;display: flex;}
 .meta ul li {display: flex;}
 .meta ul li::before {content: ","; margin-right: 0.4rem;}
