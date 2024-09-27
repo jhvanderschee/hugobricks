@@ -46,7 +46,7 @@ In ultricies vel enim vel pulvinar. Quisque finibus sem velit, sed consequat mi 
 
 ![](/uploads/photos/hike/hike1.jpg)
 
-## "I have never felt so quiet, so serene and at ease. You should try it too!"
+## "Hugobricks makes me feel quiet, serene and at ease. You should try it too!"
 — One happy camper
 
 {{< /brick_quote >}}
