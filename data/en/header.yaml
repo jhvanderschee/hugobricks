@@ -41,12 +41,12 @@ menuitems:
   - title: Docs
     link: /docs/
   - title: Examples
-    link: /paragliding/
+    link: /demo-paragliding/
     items: 
       - title: Paragliding
-        link: /paragliding/
+        link: /demo-paragliding/
       - title: Hiking
-        link: /hiking/
+        link: /demo-hiking/
 cta:
   active: true
   title: Get started
