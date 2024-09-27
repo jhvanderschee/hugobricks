@@ -26,7 +26,7 @@ Mauris in nisi ex. Etiam ultricies ipsum id turpis blandit bibendum. Donec posue
 {{< /brick_image >}}
 {{< brick_image2 >}}
 
-## Walk like an Egyptian
+## Nature, as wild as it gets
 
 ![](/uploads/photos/hike/hike08.jpg)
 
