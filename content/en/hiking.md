@@ -47,16 +47,8 @@ In ultricies vel enim vel pulvinar. Quisque finibus sem velit, sed consequat mi 
 ## "It is a walk in the park... of national proportions."
 — one happy camper
 
-{{< /brick_quote >}}
-{{< brick_features >}}{{< /brick_features >}}
+
 {{< brick_quote >}}
-
-![](/uploads/photos/hike/hike01.jpg)
-
-## "Joe is not just the best guide, he is also a great friend!"
-— another happy camper
-
-{{< /brick_quote >}}
 {{< brick_prices >}}
 
 ## Our friendly pricing
