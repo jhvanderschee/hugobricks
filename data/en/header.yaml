@@ -2,11 +2,6 @@ logo_image:
 logo_subtitle: The Ultimate Hugo Theme
 mobile_view_width: 1100
 menuitems:
-  - title: Examples
-    link: /paragliding/
-    items: 
-      - title: Paragliding
-        link: /paragliding/
   - title: Headers
     link: /headers/
     items:
@@ -39,6 +34,11 @@ menuitems:
         link: /faq/
       - title: 404 Page
         link: /404.html
+  - title: Examples
+    link: /paragliding/
+    items: 
+      - title: Paragliding
+        link: /paragliding/
   - title: Docs
     link: /docs/
   - title: Services
