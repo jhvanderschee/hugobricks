@@ -28,6 +28,10 @@ menuitems:
         link: /basic2/
       - title: Our team
         link: /team/
+      - title: Services
+        link: /services/
+      - title: Blog
+        link: /blog/
       - title: Contact us
         link: /contact/
       - title: F.A.Q.
@@ -41,10 +45,6 @@ menuitems:
     items: 
       - title: Paragliding
         link: /paragliding/
-  - title: Services
-    link: /services/
-  - title: Blog
-    link: /blog/
 cta:
   active: true
   title: Get started
