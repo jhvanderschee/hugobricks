@@ -1,7 +1,7 @@
 ---
 title: Header image 2
 dark_header: true
-dark_footer: false
+dark_footer: true
 preheader_is_light: false
 ---
 {{< brick_title >}}
