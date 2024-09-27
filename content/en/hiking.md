@@ -10,7 +10,7 @@ preheader_is_light: false
 
 {{< breadcrumbs >}}
 
-# All othe website builders: take a hike!
+# All other website builders: take a hike!
 
 Hugobricks is a free website theme for Hugo. It makes building Hugo websites child's play due to its stackable (LEGO-like) content bricks. How about this 'intro brick' with a clear call-to-action? Stack it on top of some image bricks and a pricing table and build a complete website in seconds!
 
