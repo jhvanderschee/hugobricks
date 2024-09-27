@@ -10,12 +10,14 @@ menuitems:
   - title: Headers
     link: /headers/
     items:
-      - title: Transparent header
-        link: /bgimage3/
-      - title: Header with title
-        link: /bgimage2/
-      - title: Header with content
-        link: /bgimage/
+      - title: Transparent
+        link: /header-transparent/
+      - title: Title only
+        link: /header-with-title/
+      - title: Content block
+        link: /header-with-content/
+      - title: Dark with light footer
+        link: /header-dark/
   - title: Pages
     link: /elements/
     items: 

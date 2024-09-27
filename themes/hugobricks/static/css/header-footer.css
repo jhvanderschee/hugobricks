@@ -2,8 +2,8 @@
 /* preheader
 /*------------------------*/
 
-.preheader {background: var(--textDark); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid var(--light); font-weight: 600;}
-.preheader, .preheader a {color: white;}
+.preheader {background: linear-gradient(rgba(255,255,255,0.04),rgba(255,255,255,0.04)),linear-gradient(var(--textDarker),var(--textDarker)); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid var(--light); font-weight: 500;}
+.preheader, .preheader a {color: rgba(255,255,255,0.5);}
 .preheader .container {display: flex; justify-content: space-between;}
 .preheader .container a.icon {text-decoration: none; margin-right: 2rem;}
 .preheader .container a.icon img {
@@ -15,6 +15,7 @@
     bottom: 0.1em;
     filter: invert(1);
 }
+body.transparent_header .preheader, body.transparent_header .preheader a {color: white;}
 body.transparent_header .preheader .container a.icon img {filter: invert(1)!important;}
 body:not(.transparent_header) .preheader.light {background: var(--light); font-weight: normal;}
 body.transparent_header .preheader {background: transparent; position: absolute; width: 100%; z-index: 2; border-bottom: 0.1rem solid rgba(255,255,255,0.25);}
@@ -42,7 +43,8 @@ header.sticky > .container {padding-top: 0.75rem; padding-bottom: 0.75rem;}
 header a {text-decoration: none;}
 header ul {display: flex; justify-content: flex-end; gap: 2rem; margin: 0;}
 header ul li {list-style: none; position: relative;}
-header nav > ul > li a {font-weight: bold; color: var(--textDark); padding: 0.80rem 0 0.65rem 0; display: block; white-space: nowrap;}
+header nav > ul > li a {color: var(--textMedium); padding: 0.80rem 0 0.65rem 0; display: block; white-space: nowrap;}
+header nav > ul > li > a {color: var(--textDarker);}
 header nav > ul > li::after {
     content: "";
     position: absolute;
@@ -72,7 +74,8 @@ header nav > ul > li > ul {
     display: block;
     font-size: 0.95rem;
 }
-header nav > ul > li > ul li a {padding: 0.3rem 2rem 0.3rem 1rem; font-weight: normal;}
+header nav > ul > li > ul li a {padding: 0.3rem 2rem 0.3rem 1rem; font-weight: normal; transition: color 0.2s ease-in-out;}
+header nav > ul > li > ul li a:hover {color: var(--textDarker);}
 header nav > ul > li:hover > ul {
     opacity: 1;
     transform: translateY(0);
@@ -102,13 +105,18 @@ header + section:not(.bgimage) {padding-top: 11rem!important;}
 body.transparent_header header + section.bgimage .container {padding-top: 13.5rem!important;}
 body:not(.transparent_header) header + section.bgimage .container {padding-top: 11.5rem!important;}
 
+header.dark {background: var(--textDarker);}
+.preheader + header.dark {border-top: 1px solid rgba(255,255,255,0.08);}
 body.transparent_header header:not(.sticky) {background: transparent;}
-body.transparent_header header:not(.sticky) a.logo,
-body.transparent_header header:not(.sticky) nav > ul > li > a {color: white;}
-body.transparent_header header:not(.sticky) nav > ul > li::after {background: white;}
-body.transparent_header header:not(.sticky) nav > ul > li.haschildren > a::after {border-color: white;}
+header.dark a.logo, body.transparent_header header:not(.sticky) a.logo,
+header.dark nav > ul > li > a, body.transparent_header header:not(.sticky) nav > ul > li > a {color: white;}
+header.dark nav > ul > li::after, body.transparent_header header:not(.sticky) nav > ul > li::after {background: white;}
+header.dark nav > ul > li.haschildren > a::after, body.transparent_header header:not(.sticky) nav > ul > li.haschildren > a::after {border-color: white;}
+header.dark #togglemenu span,
+header.dark a.logo > div img.inline,
 body.transparent_header header:not(.sticky) #togglemenu span,
 body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: invert(1)!important;}
+header.dark + section.bgimage,
 body.transparent_header header + section.bgimage {padding-top: 0!important;}
 body.transparent_header header:not(.sticky) .button {background: var(--accent); color: white;}
 body.transparent_header header:not(.sticky) .button:hover {box-shadow: 0 0 0 0.085rem rgba(255,255,255,0.95);}
@@ -133,7 +141,7 @@ footer .container {padding-top: 3rem; padding-bottom: 3rem;}
 footer > div:last-child {border-top: 1px solid var(--borderLight); font-size: 0.9rem;}
 footer > div:last-child .container {justify-content: center; padding-top: 1.7rem; padding-bottom: 1.75rem;}
 footer ul.buttons {justify-content: flex-end; padding: 0;}
-footer select {padding: 0; border: 0; background: transparent; border-radius: 0; color: rgba(255,255,255,0.5); font-size: 0.9rem;}
+footer select {padding: 0; border: 0; background: transparent; border-radius: 0; color: var(--textMedium); font-size: 0.9rem;}
 footer select option:not([disabled]) {color: initial;}
 @media (max-width: 1000px) {
     footer .container {flex-direction: column; gap: 1rem; align-items: center;}
@@ -143,7 +151,7 @@ footer select option:not([disabled]) {color: initial;}
 footer.dark {background: var(--textDark);}
 footer.dark a.logo {color: white;}
 footer.dark > div:last-child {border-top: 1px solid rgba(255,255,255,0.1);}
-footer.dark, footer.dark > div:last-child a, footer.dark ul li a {color: rgba(255,255,255,0.5);}
+footer.dark select, footer.dark, footer.dark > div:last-child a, footer.dark ul li a {color: rgba(255,255,255,0.5);}
 footer.dark ul.buttons.social .button {background: var(--accent);}
 footer.dark ul.buttons.social .button:hover {background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)),linear-gradient(var(--textDark),var(--textDark)); box-shadow: none;}
 footer.dark a.logo img.inline {filter: invert(1)!important;}

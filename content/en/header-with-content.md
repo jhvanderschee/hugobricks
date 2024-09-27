@@ -1,5 +1,5 @@
 ---
-title: Header image 1
+title: Headers
 ---
 {{< brick_title >}}
 # Build your next Hugo website with stackable content bricks

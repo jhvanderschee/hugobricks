@@ -1,4 +1,5 @@
 :root {
+    --textDarker: black;
     --textDark: black;
     --textMedium: rgba(0,0,0,0.7);
     --borderMedium: rgba(0,0,0,0.2);

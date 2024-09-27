@@ -1,6 +1,7 @@
 favicon_image: /uploads/branding/brick_icon2_bw.svg
 color_name:
 sticky_header: true
+dark_header: false
 dark_footer: true
 customcursor: false
 intersectionobserver: true

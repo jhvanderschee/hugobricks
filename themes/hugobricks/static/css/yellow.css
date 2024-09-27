@@ -8,6 +8,7 @@
 /*------------------------*/
 
 :root {
+    --textDarker: #1c2428;
     --textDark: rgba(38, 50, 56, 1);
     --textMedium: rgba(38, 50, 56, 0.7);
     --borderMedium: rgba(38, 50, 56, 0.2); 
