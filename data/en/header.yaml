@@ -45,6 +45,8 @@ menuitems:
     items: 
       - title: Paragliding
         link: /paragliding/
+      - title: Hiking
+        link: /hiking/
 cta:
   active: true
   title: Get started

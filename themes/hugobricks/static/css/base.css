@@ -36,7 +36,7 @@ p, ul, ol, blockquote, pre, .box.map, figure, details {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
 hr {margin: 3.5rem 0; height: 1px; background: rgba(0,0,0,0.1); border: 0;}
-p img {border-radius: 1rem; overflow: hidden;}
+p img, p img:last-child {border-radius: 1rem; overflow: hidden; margin-block: 2.25rem;}
 pre {
     overflow: auto; 
     background: var(--light); 
