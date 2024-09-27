@@ -34,13 +34,13 @@ menuitems:
         link: /faq/
       - title: 404 Page
         link: /404.html
+  - title: Docs
+    link: /docs/
   - title: Examples
     link: /paragliding/
     items: 
       - title: Paragliding
         link: /paragliding/
-  - title: Docs
-    link: /docs/
   - title: Services
     link: /services/
   - title: Blog
