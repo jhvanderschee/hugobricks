@@ -53,7 +53,7 @@ In ultricies vel enim vel pulvinar. Quisque finibus sem velit, sed consequat mi 
 
 ![](/uploads/photos/hike/hike01.jpg)
 
-## "Joe is not just the best guide ever, he also a great friend!"
+## "Joe is not just the best guide ever, he is also a great friend!"
 — another happy camper
 
 {{< /brick_quote >}}
