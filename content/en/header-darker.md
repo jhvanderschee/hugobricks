@@ -6,7 +6,7 @@ preheader_is_light: false
 ---
 {{< brick_title >}}
 
-![](/uploads/photos/bricks.jpg)
+![](/uploads/photos/dark01.jpg)
 
 # Dark navigation
 
