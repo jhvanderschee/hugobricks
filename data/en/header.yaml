@@ -16,8 +16,10 @@ menuitems:
         link: /header-with-title/
       - title: Content block
         link: /header-with-content/
-      - title: Dark with light footer
+      - title: Dark header
         link: /header-dark/
+      - title: Darker header
+        link: /header-darker/
   - title: Pages
     link: /elements/
     items: 

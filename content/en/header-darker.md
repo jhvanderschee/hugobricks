@@ -1,6 +1,6 @@
 ---
 title: Header image 2
-dark_header: false
+dark_header: true
 dark_footer: false
 preheader_is_light: false
 ---
@@ -8,7 +8,7 @@ preheader_is_light: false
 
 ![](/uploads/photos/bricks.jpg)
 
-# Header dark
+# Header darker
 
 {{< breadcrumbs >}}
 
