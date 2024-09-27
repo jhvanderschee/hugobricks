@@ -41,7 +41,7 @@ Curabitur sit amet laoreet urna. Donec vel lobortis nunc. Aliquam scelerisque ul
 
 ![](/uploads/photos/hike/hike01.jpg)
 
-## "Asking Joe to be my guide was the best choice I have ever made."
+## "Joe is not just a great guide, he also a great friend!"
 — another happy camper
 
 {{< /brick_quote >}}
