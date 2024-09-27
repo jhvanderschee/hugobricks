@@ -18,8 +18,6 @@ menuitems:
   - title: Pages
     link: /elements/
     items: 
-      - title: Elements
-        link: /elements/
       - title: About
         link: /about/
       - title: Basic page 1
@@ -38,6 +36,8 @@ menuitems:
         link: /faq/
       - title: 404 Page
         link: /404.html
+  - title: Elements
+    link: /elements/
   - title: Docs
     link: /docs/
   - title: Examples
