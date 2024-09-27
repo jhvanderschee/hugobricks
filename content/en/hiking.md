@@ -8,11 +8,11 @@ preheader_is_light: false
 
 ![](/uploads/photos/hike/hike01.jpg)
 
+{{< breadcrumbs >}}
+
 # Go take a hike!
 
 Ask Joe to be your guide!
-
-{{< breadcrumbs >}}
 
 {{< /brick_title >}}
 {{< brick_wide >}}
