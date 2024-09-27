@@ -12,8 +12,6 @@ preheader_is_light: false
 
 # Go take a hike!
 
-Ask Joe to be your guide!
-
 {{< /brick_title >}}
 {{< brick_wide >}}
 
