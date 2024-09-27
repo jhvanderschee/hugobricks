@@ -47,8 +47,7 @@ In ultricies vel enim vel pulvinar. Quisque finibus sem velit, sed consequat mi 
 ## "It is a walk in the park... of national proportions."
 — one happy camper
 
-
-{{< brick_quote >}}
+{{< /brick_quote >}}
 {{< brick_prices >}}
 
 ## Our friendly pricing
