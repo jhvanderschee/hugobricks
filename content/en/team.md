@@ -29,6 +29,6 @@ Experience the future of web development with Hugo and stackable content bricks.
 
 {{< button2 "Get started now" "/get-started/" >}}
 
-![](/uploads/illustrations/cuate/red/server.svg)
+![](/uploads/illustrations/cuate/server.svg)
 
 {{< /brick_cta >}}
