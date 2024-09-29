@@ -47,6 +47,8 @@ menuitems:
         link: /demo-paragliding/
       - title: Hiking
         link: /demo-hiking/
+      - title: Poulterer
+        link: /demo-poulterer/
 cta:
   active: true
   title: Get started
