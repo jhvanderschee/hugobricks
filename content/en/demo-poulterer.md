@@ -4,7 +4,7 @@ site_title: Poelier Jonker
 site_logo_subtitle: Wild & Gevogelte 
 site_favicon_image: /uploads/photos/poulterer/favicon.svg
 dark_header: false
-dark_footer: true
+dark_footer: false
 preheader_is_light: false
 ---
 {{< brick_title >}}
