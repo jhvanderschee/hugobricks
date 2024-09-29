@@ -2,7 +2,7 @@
 title: Poulterer
 dark_header: false
 dark_footer: false
-preheader_is_light: false
+preheader_is_light: true
 ---
 {{< brick_title >}}
 # Nothing is as delicious as Hugobricks!
