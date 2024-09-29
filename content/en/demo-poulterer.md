@@ -47,7 +47,7 @@ We are constantly adding bricks and shortcodes to this theme. Are you missing a 
 
 ## What bricks are available?
 
-![](/uploads/photos/poulterer/5.jpg)
+![](/uploads/photos/poulterer/16.jpg)
 
 We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
 
