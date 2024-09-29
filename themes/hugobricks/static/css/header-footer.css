@@ -57,7 +57,7 @@ header nav > ul > li::after {
     transform: scaleX(0);
     transition: transform 0.15s ease-in-out;
 }
-footer ul li a:after {background: var(--textMedium);}
+footer ul li a:after {background: var(--textMedium); opacity: 0.75;}
 footer ul li a:hover:after,
 header nav > ul > li:hover::after,
 header nav > ul > li:has(li.active)::after,
@@ -160,6 +160,7 @@ footer.dark > div:last-child {border-top: 1px solid rgba(255,255,255,0.1);}
 footer.dark select, footer.dark, footer.dark > div:last-child a, footer.dark ul li a {color: rgba(255,255,255,0.5);}
 footer.dark ul.buttons.social .button {background: var(--accent);}
 footer.dark a.logo img.inline {filter: invert(1)!important;}
+footer.dark ul li a:not(.button)::after {background: rgba(255,255,255,0.5);}
 
 /*------------------------*/
 /* mobile menu
