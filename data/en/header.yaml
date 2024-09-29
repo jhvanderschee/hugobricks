@@ -16,7 +16,7 @@ menuitems:
       - title: Transparent nav
         link: /header-transparent/
   - title: Pages
-    link: /elements/
+    link: /about/
     items: 
       - title: About
         link: /about/

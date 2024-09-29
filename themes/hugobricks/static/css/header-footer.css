@@ -45,6 +45,7 @@ header ul {display: flex; justify-content: flex-end; gap: 2rem; margin: 0;}
 header ul li {list-style: none; position: relative;}
 header nav > ul > li a {color: var(--textMedium); padding: 0.80rem 0 0.65rem 0; display: block; white-space: nowrap;}
 header nav > ul > li > a {color: var(--textDarker);}
+footer ul li a:after,
 header nav > ul > li::after {
     content: "";
     position: absolute;
@@ -56,7 +57,10 @@ header nav > ul > li::after {
     transform: scaleX(0);
     transition: transform 0.15s ease-in-out;
 }
+footer ul li a:after {background: var(--textMedium);}
+footer ul li a:hover:after,
 header nav > ul > li:hover::after,
+header nav > ul > li:has(li.active)::after,
 header nav > ul > li.active::after {transform: scaleX(1);}
 header nav > ul > li > ul {
     opacity: 0;
@@ -75,7 +79,9 @@ header nav > ul > li > ul {
     font-size: 0.95rem;
 }
 header nav > ul > li > ul li a {padding: 0.3rem 2rem 0.3rem 1rem; font-weight: normal;}
-header nav > ul > li > ul li a:hover {color: var(--textDarker);}
+header nav > ul > li > ul li a:hover,
+header nav > ul > li > ul li.active a {color: var(--textDarker);}
+header nav > ul > li > ul li.active a {font-weight: bold; font-size: 1rem;}
 header nav > ul > li:hover > ul {
     opacity: 1;
     transform: translateY(0);
