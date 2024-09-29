@@ -21,7 +21,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 ## What’s included in Hugobricks?
 
-![](/uploads/photos/poulterer/4.jpg)
+![](/uploads/photos/poulterer/15.jpg)
 
 Hugoplate is a comprehensive starter theme that includes everything you need to get started with your Hugo project. As all the Wordpress theme builders say: This is the last theme you will ever need. Included are:
 
@@ -36,7 +36,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 
 ## What bricks are available?
 
-![](/uploads/photos/poulterer/6.jpg)
+![](/uploads/photos/poulterer/16.jpg)
 
 We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
 
