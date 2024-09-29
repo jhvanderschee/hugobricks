@@ -58,7 +58,7 @@ header nav > ul > li::after {
     transition: transform 0.15s ease-in-out;
 }
 footer ul li a:after {background: var(--textMedium);}
-footer ul li a:hover:after,
+footer ul li a:not(.button):hover:after,
 header nav > ul > li:hover::after,
 header nav > ul > li:has(li.active)::after,
 header nav > ul > li.active::after {transform: scaleX(1);}
