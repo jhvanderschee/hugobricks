@@ -36,7 +36,7 @@ Hugoplate is a comprehensive starter theme that includes everything you need to 
 
 ## What bricks are available?
 
-![](/uploads/photos/poulterer/16.jpg)
+![](/uploads/photos/poulterer/4.jpg)
 
 We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
 
