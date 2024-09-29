@@ -18,7 +18,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 ## Hugobricks gives you wings
 
-![](/uploads/photos/poulterer/15.jpg)
+![](/uploads/photos/poulterer/4.jpg)
 
 Hugobricks is a comprehensive starter theme that includes everything you need to get started with your Hugo project. As all the Wordpress theme builders say: This is the last theme you will ever need. Included are:
 
@@ -33,7 +33,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 
 ## Opening hours
 
-![](/uploads/photos/poulterer/4.jpg)
+![](/uploads/photos/poulterer/15.jpg)
 
 We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
 
