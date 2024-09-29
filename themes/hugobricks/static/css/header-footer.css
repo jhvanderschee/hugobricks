@@ -45,7 +45,7 @@ header ul {display: flex; justify-content: flex-end; gap: 2rem; margin: 0;}
 header ul li {list-style: none; position: relative;}
 header nav > ul > li a {color: var(--textMedium); padding: 0.80rem 0 0.65rem 0; display: block; white-space: nowrap;}
 header nav > ul > li > a {color: var(--textDarker);}
-footer ul li a:after,
+footer ul li a:not(.button)::after,
 header nav > ul > li::after {
     content: "";
     position: absolute;
@@ -58,7 +58,7 @@ header nav > ul > li::after {
     transition: transform 0.15s ease-in-out;
 }
 footer ul li a:after {background: var(--textMedium);}
-footer ul li a:not(.button):hover:after,
+footer ul li a:hover:after,
 header nav > ul > li:hover::after,
 header nav > ul > li:has(li.active)::after,
 header nav > ul > li.active::after {transform: scaleX(1);}
