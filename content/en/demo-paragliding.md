@@ -73,3 +73,4 @@ We are constantly adding bricks and shortcodes to this theme. Are you missing a 
 {{< ctaform >}}
 
 {{< /brick_small >}}
+{{< brick_map >}}{{< /brick_map >}}
