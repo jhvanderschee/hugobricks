@@ -181,15 +181,13 @@ div.box label.inborder::after {
     font-size: 1rem;
     border-radius: 0.4rem;
     border: 0;
-    transition: all 0.15s ease-in-out;
     cursor: pointer;
     letter-spacing: 0.02em;
+    transition: transform 0.075s ease-in-out;
 }
-.button:hover, button:hover {background: transparent; color: var(--accentDarker); box-shadow: inset 0 0 0 0.1rem var(--accent);}
+.button:hover, button:hover {transform: scale(1.035);}
 .button.secondary {background: var(--textDark);}
-.button.secondary.ghost,
-.button.secondary:hover {background: transparent; color: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
-.button.secondary.ghost:hover {background: var(--textDark); color: white;}
+.button.secondary.ghost {background: transparent; color: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
 .button.icon {
     padding: 0; 
     position: relative; 
@@ -204,15 +202,12 @@ div.box label.inborder::after {
     height: calc(100% - 1.25em);
     filter: invert(1);
 }
-.button.icon:hover {background: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
 .button.ghost {background: transparent; color: var(--accentDarker); box-shadow: inset 0 0 0 0.1rem var(--accent);}
-.button.ghost:hover {color: white; background: var(--accent);}
 .button.smaller {padding: 0.4rem 1rem;}
 p > .button {margin: 0.5rem 0;}
 ul.buttons {gap: 1rem; margin-left: 0; display: flex; padding: 0.5rem 0;}
 ul.buttons li {list-style: none;}
 ul.buttons.social .button {background: var(--textDark);}
-ul.buttons.social .button:hover {background: var(--accent); box-shadow: inset 0 0 0 0.1rem var(--accent);}
 
 /*------------------------*/
 /* bgimage

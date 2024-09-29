@@ -74,7 +74,7 @@ header nav > ul > li > ul {
     display: block;
     font-size: 0.95rem;
 }
-header nav > ul > li > ul li a {padding: 0.3rem 2rem 0.3rem 1rem; font-weight: normal; transition: color 0.2s ease-in-out;}
+header nav > ul > li > ul li a {padding: 0.3rem 2rem 0.3rem 1rem; font-weight: normal;}
 header nav > ul > li > ul li a:hover {color: var(--textDarker);}
 header nav > ul > li:hover > ul {
     opacity: 1;
@@ -118,8 +118,8 @@ body.transparent_header header:not(.sticky) #togglemenu span,
 body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: invert(1)!important;}
 header.dark + section.bgimage,
 body.transparent_header header + section.bgimage {padding-top: 0!important;}
-body.transparent_header header:not(.sticky) .button {background: var(--accent); color: white; box-shadow: none; transition: none;}
-body.transparent_header header:not(.sticky) .button:hover {background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)),linear-gradient(var(--textDark),var(--textDark));}
+body.transparent_header header:not(.sticky) .button {background: var(--accent); color: white; box-shadow: none;}
+
 
 /*------------------------*/
 /* footer
@@ -152,8 +152,7 @@ footer.dark {background: var(--textDark);}
 footer.dark a.logo {color: white;}
 footer.dark > div:last-child {border-top: 1px solid rgba(255,255,255,0.1);}
 footer.dark select, footer.dark, footer.dark > div:last-child a, footer.dark ul li a {color: rgba(255,255,255,0.5);}
-footer.dark ul.buttons.social .button {background: var(--accent); transition: none;}
-footer.dark ul.buttons.social .button:hover {background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)),linear-gradient(var(--textDark),var(--textDark)); box-shadow: none;}
+footer.dark ul.buttons.social .button {background: var(--accent);}
 footer.dark a.logo img.inline {filter: invert(1)!important;}
 
 /*------------------------*/
