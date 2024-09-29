@@ -16,7 +16,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 {{< /brick_title >}}
 {{< brick_image >}}
 
-## Hugobricks gives you wings?
+## Hugobricks gives you wings
 
 ![](/uploads/photos/poulterer/15.jpg)
 
@@ -42,13 +42,11 @@ We are constantly adding bricks and shortcodes to this theme. Are you missing a 
 {{< /brick_image2 >}}
 {{< brick_image >}}
 
-## What bricks are available?
+## Hugobricks fits any business
 
 ![](/uploads/photos/poulterer/16.jpg)
 
-We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
-
-We are constantly adding bricks and shortcodes to this theme. Are you missing a brick or a shortcode? Let us know! We will build it for you!
+Curabitur sit amet laoreet urna. Donec vel lobortis nunc. Aliquam scelerisque ultrices ipsum vitae gravida. Nam semper, nibh vitae porttitor auctor, quam dui faucibus diam, sit amet vulputate ligula nibh sed dui. Cras viverra nisl vitae dictum auctor. Aliquam rhoncus dolor nibh, sit amet maximus eros blandit vitae. Sed maximus dui sit amet nibh pulvinar volutpat. Nam odio purus, porta quis ultrices vitae, ultricies non justo. Vestibulum elementum elementum vulputate. Proin facilisis ipsum ipsum, vel ornare orci vehicula sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis congue sit amet est ornare convallis. Etiam viverra bibendum elit vitae blandit.
 
 {{< /brick_image >}}
 {{< brick_quote >}}
