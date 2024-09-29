@@ -42,7 +42,7 @@ We are constantly adding bricks and shortcodes to this theme. Are you missing a 
 
 ![](/uploads/photos/poulterer/16.jpg)
 
-Curabitur sit amet laoreet urna. Donec vel lobortis nunc. Aliquam scelerisque ultrices ipsum vitae gravida. Nam semper, nibh vitae porttitor auctor, quam dui faucibus diam, sit amet vulputate ligula nibh sed dui. Cras viverra nisl vitae dictum auctor. Aliquam rhoncus dolor nibh, sit amet maximus eros blandit vitae. Sed maximus dui sit amet nibh pulvinar volutpat. Nam odio purus, porta quis ultrices vitae, ultricies non justo. Vestibulum elementum elementum vulputate. Proin facilisis ipsum ipsum, vel ornare orci vehicula sed.
+Hugobricks is a free website theme for Hugo. It makes building Hugo websites child's play due to its stackable (LEGO-like) content bricks. How about this 'intro brick' with a clear call-to-action? Stack it on top of some image bricks and a pricing table and build a complete website in seconds!
 
 {{< /brick_image >}}
 {{< brick_quote >}}
