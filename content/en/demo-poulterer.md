@@ -31,7 +31,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 {{< /brick_image >}}
 {{< brick_image2 >}}
 
-## What bricks are available?
+## Opening hours
 
 ![](/uploads/photos/poulterer/4.jpg)
 
