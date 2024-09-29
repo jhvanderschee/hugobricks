@@ -51,7 +51,7 @@ Curabitur sit amet laoreet urna. Donec vel lobortis nunc. Aliquam scelerisque ul
 {{< /brick_image >}}
 {{< brick_quote >}}
 
-## "Hugobricks is nothing but smooth sailing!"
+## "Hugobricks keeps you coming back for more!"
 — &nbsp;Everybody out there
 
 ![](/uploads/photos/poulterer/1.jpg)
