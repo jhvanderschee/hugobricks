@@ -64,5 +64,4 @@ Curabitur sit amet laoreet urna. Donec vel lobortis nunc. Aliquam scelerisque ul
 {{< ctaform >}}
 
 {{< /brick_small >}}
-{{< brick_map >}}
-{{< brick_map >}}
+{{< brick_map >}}{{< /brick_map >}}
