@@ -81,7 +81,7 @@ header nav > ul > li > ul {
 header nav > ul > li > ul li a {padding: 0.3rem 2rem 0.3rem 1rem; font-weight: normal;}
 header nav > ul > li > ul li a:hover,
 header nav > ul > li > ul li.active a {color: var(--textDarker);}
-header nav > ul > li > ul li.active a {font-weight: bold; font-size: 1rem;}
+header nav > ul > li > ul li.active a {font-weight: bold; font-size: 1rem; color: var(--textDark);}
 header nav > ul > li:hover > ul {
     opacity: 1;
     transform: translateY(0);

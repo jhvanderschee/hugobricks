@@ -51,11 +51,11 @@
           <nav>
             <ul>
               {{ range (index .Site.Data .Language.Lang).header.menuitems }}
-                <li class="{{ if eq .link `/` }}{{ if eq $.RelPermalink `/` }}active{{ end }}{{ else }}{{ if in $.RelPermalink .link }}active{{ end }}{{ end }}{{ if (index .items 0).title }} haschildren{{ end }}"><a href="{{ .link }}">{{ .title }}</a>
+                <li class="{{ if eq .link `/` }}{{ if eq $.RelPermalink `/` }}active{{ end }}{{ else }}{{ if (hasPrefix $.RelPermalink .link) }}active{{ end }}{{ end }}{{ if (index .items 0).title }} haschildren{{ end }}"><a href="{{ .link }}">{{ .title }}</a>
                   {{ if (index .items 0).title }}
                   <ul>
                     {{ range .items }}
-                      <li class="{{ if in $.Page.RelPermalink .link }}active{{ end }}"><a href="{{ .link }}">{{ .title }}</a></li>
+                      <li class="{{ if hasPrefix $.Page.RelPermalink .link }}active{{ end }}"><a href="{{ .link }}">{{ .title }}</a></li>
                     {{ end }}
                   </ul>
                   {{ end }}

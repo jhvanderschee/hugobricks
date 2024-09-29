@@ -17,7 +17,7 @@
 {{- end -}}
 
 <ul class="breadcrumbs">
-    {{- if and (ne page.Section "services") (ne page.Section "posts") -}}
+    {{- if and (ne $.Page.Section "services") (ne page.Section "posts") -}}
         {{- range page.Ancestors.Reverse -}}
             <li><a href="{{ .RelPermalink }}">{{ .Title | truncate 25 }}</a></li>
         {{- end -}}
