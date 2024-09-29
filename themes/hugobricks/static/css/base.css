@@ -185,7 +185,9 @@ div.box label.inborder::after {
     letter-spacing: 0.02em;
     transition: transform 0.075s ease-in-out;
 }
+@media (min-width: 600px) {
 .button:hover, button:hover {transform: scale(1.035);}
+}
 .button.secondary {background: var(--textDark);}
 .button.secondary.ghost {background: transparent; color: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
 .button.icon {
