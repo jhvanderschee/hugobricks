@@ -119,7 +119,7 @@ body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: inv
 header.dark + section.bgimage,
 body.transparent_header header + section.bgimage {padding-top: 0!important;}
 body.transparent_header header:not(.sticky) .button {background: var(--accent); color: white;}
-body.transparent_header header:not(.sticky) .button:hover {box-shadow: none; background: var(--textDark);}
+body.transparent_header header:not(.sticky) .button:hover {box-shadow: none; background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)),linear-gradient(var(--textDark),var(--textDark));}
 
 /*------------------------*/
 /* footer

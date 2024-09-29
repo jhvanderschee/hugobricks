@@ -74,7 +74,7 @@ section.title .container.small {text-align: center;}
 section.title:not(.bgimage) {padding-bottom: 3.25rem;}
 section.title ul.breadcrumbs li a {color: var(--accent);}
 section.title.bgimage ul.breadcrumbs:first-child {margin-top: -2rem;}
-section.title.bgimage button:hover, section.title.bgimage .button:hover {background: var(--textDark); color: white; box-shadow: none;}
+section.title.bgimage button:hover, section.title.bgimage .button:hover {background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)),linear-gradient(var(--textDark),var(--textDark)); color: white; box-shadow: none;}
 
 
 /*------------------------*/
