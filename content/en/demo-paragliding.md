@@ -18,7 +18,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 ![](/uploads/photos/paragliding/flyspot4.jpg)
 
-Hugoplate is a comprehensive starter theme that includes everything you need to get started with your Hugo project. As all the Wordpress theme builders say: This is the last theme you will ever need. Included are:
+Hugobricks is a comprehensive starter theme that includes everything you need to get started with your Hugo project. As all the Wordpress theme builders say: This is the last theme you will ever need. Included are:
 
 - 10+ Pre-build pages
 - 99+ Google Pagespeed Score

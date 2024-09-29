@@ -5,7 +5,7 @@ dark_footer: false
 preheader_is_light: false
 ---
 {{< brick_title >}}
-# The sky is the limit, with Hugobricks!
+# Nothing is as delicious as Hugobricks!
 
 Hugobricks is a free website theme for Hugo. It makes building Hugo websites child's play due to its stackable (LEGO-like) content bricks. How about this 'intro brick' with a clear call-to-action? Stack it on top of some image bricks and a pricing table and build a complete website in seconds!
 
@@ -16,11 +16,11 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 {{< /brick_title >}}
 {{< brick_image >}}
 
-## What’s included in Hugobricks?
+## Hugobricks gives you wings?
 
 ![](/uploads/photos/poulterer/15.jpg)
 
-Hugoplate is a comprehensive starter theme that includes everything you need to get started with your Hugo project. As all the Wordpress theme builders say: This is the last theme you will ever need. Included are:
+Hugobricks is a comprehensive starter theme that includes everything you need to get started with your Hugo project. As all the Wordpress theme builders say: This is the last theme you will ever need. Included are:
 
 - 10+ Pre-build pages
 - 99+ Google Pagespeed Score
