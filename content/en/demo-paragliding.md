@@ -58,14 +58,14 @@ We aim to provide the following bricks: intro, title, image, cta, contact, team,
 We are constantly adding bricks and shortcodes to this theme. Are you missing a brick or a shortcode? Let us know! We will build it for you!
 
 {{< /brick_image2 >}}
-{{< brick_title >}}
+{{< brick_quote >}}
 
 ## "Hugobricks is nothing but smooth sailing!"
 — &nbsp;Everybody out there
 
 ![](/uploads/photos/paragliding/flyspot15.jpg)
 
-{{< /brick_title >}}
+{{< /brick_quote >}}
 {{< brick_small >}}
 
 ## Shut up and take my money!
