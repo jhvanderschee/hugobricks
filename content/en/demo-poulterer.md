@@ -1,6 +1,5 @@
 ---
 title: Poulterer
-site_favicon_image: /uploads/photos/poulterer/favicon.svg
 dark_header: false
 dark_footer: false
 preheader_is_light: false
