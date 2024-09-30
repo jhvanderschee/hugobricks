@@ -58,6 +58,7 @@ We aim to provide the following bricks: intro, title, image, cta, contact, team,
 We are constantly adding bricks and shortcodes to this theme. Are you missing a brick or a shortcode? Let us know! We will build it for you!
 
 {{< /brick_image2 >}}
+{{< brick_reviews >}}{{< /brick_reviews >}}
 {{< brick_quote >}}
 
 ## "Hugobricks is nothing but smooth sailing!"
