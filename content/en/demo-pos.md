@@ -28,13 +28,6 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 
 {{< /brick_image2 >}}
 {{< brick_reviews >}}{{< /brick_reviews >}}
-{{< brick_small >}}
-
-## Shut up and take my money!
-
-{{< ctaform >}}
-
-{{< /brick_small >}}
 {{< brick_cta >}}
 ## Get started with Hugobricks today!
 
