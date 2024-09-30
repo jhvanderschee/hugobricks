@@ -117,7 +117,9 @@ body.transparent_header header:not(.sticky) {background: transparent;}
 header.dark a.logo, body.transparent_header header:not(.sticky) a.logo,
 header.dark nav > ul > li > a, body.transparent_header header:not(.sticky) nav > ul > li > a {color: white;}
 header.dark nav > ul > li::after, body.transparent_header header:not(.sticky) nav > ul > li::after {background: white;}
-header.dark nav > ul > li.haschildren > a::after, body.transparent_header header:not(.sticky) nav > ul > li.haschildren > a::after {border-color: white;}
+body.mobilemenu header nav > ul > li.haschildren > a::after,
+header.dark nav > ul > li.haschildren > a::after, 
+body.transparent_header header:not(.sticky) nav > ul > li.haschildren > a::after {border-color: white;}
 header.dark #togglemenu span,
 header.dark a.logo > div img.inline,
 body.transparent_header header:not(.sticky) #togglemenu span,
@@ -220,6 +222,7 @@ body.mobilemenu header nav > ul > li > ul {
     border-radius: 0;
 }
 body.mobilemenu header nav > ul li.active > a {color: var(--accent)!important; font-weight: bold; font-size: 1rem;}
+body.mobilemenu header nav > ul > li.active.haschildren > a::after {border-color: var(--accent);}
 body.mobilemenu header nav > ul > li a {padding: 0.45rem 2.5rem 0.45rem 3rem; font-size: 0.95rem;;}
 body.mobilemenu header nav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 5rem;}
 

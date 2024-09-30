@@ -49,6 +49,8 @@ menuitems:
         link: /demo-hiking/
       - title: Poulterer
         link: /demo-poulterer/
+      - title: POS software
+        link: /demo-pos/
 cta:
   active: true
   title: Get started
