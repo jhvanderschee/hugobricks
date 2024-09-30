@@ -27,6 +27,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - SEO-optimized for better search engine rankings
 
 {{< /brick_image2 >}}
+{{< brick_reviews >}}{{< /brick_reviews >}}
 {{< brick_small >}}
 
 ## Shut up and take my money!
