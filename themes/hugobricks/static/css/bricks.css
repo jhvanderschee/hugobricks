@@ -39,6 +39,7 @@ section.cta .twocols {display: flex;}
 section.cta .twocols .text {flex: 2;}
 section.cta .twocols .image {flex: 1;}
 section.cta .twocols .image img {display: inline-block; width: 20rem;}
+section.cta .twocols .image p {margin: 0!important;}
 @media (max-width: 600px) {
     section.cta .twocols {flex-direction: column;}
     section.cta .twocols .text {text-align: center;}
