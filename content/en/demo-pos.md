@@ -16,7 +16,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 ## What’s included in Hugobricks?
 
-![](/uploads/illustrations/cuate/blue/plain-credit-card-cuate.svg)
+![](/uploads/illustrations/cuate/blue/design-status-cuate.svg)
 
 Hugobricks is a comprehensive starter theme that includes everything you need to get started with your Hugo project. As all the Wordpress theme builders say: This is the last theme you will ever need. Included are:
 
