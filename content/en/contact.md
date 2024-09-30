@@ -12,7 +12,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt
 {{< /brick_title >}}
 {{< brick_contact >}}
 
-## Got a question?
+### Got a question?
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
 
