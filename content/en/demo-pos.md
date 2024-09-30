@@ -35,4 +35,12 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 {{< ctaform >}}
 
 {{< /brick_small >}}
-{{< brick_map >}}{{< /brick_map >}}
+{{< brick_cta >}}
+## Get started with Hugobricks today!
+
+Experience the future of web development with Hugo and stackable content bricks. Build lightning-fast static sites with ease and flexibility.
+
+{{< button2 "Get started now" "/get-started/" >}}
+
+![](/uploads/illustrations/cuate/blue/server-cuate.svg)
+{{< /brick_cta >}}
