@@ -1,12 +1,12 @@
 {{- $inner := . -}}
 {{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/title.md' file." -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/quote.md' file." -}}
     {{- with page.Site.GetPage "bricks/quote.md" -}}
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
 {{- $imagesrc := substr (index (split (index (findRE `!\[[^\]]*?]\(([^\)]*?)\)` $inner 1) 0) "](") 1) 0 -1 -}}
-{{- $raw := (markdownify . | chomp) -}}
+{{- $raw := (markdownify $inner | chomp) -}}
 {{- $block := findRE "(?is)^<(?:address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h(?:1|2|3|4|5|6)|header|hgroup|hr|li|main|nav|noscript|ol|output|p|pre|section|table|tfoot|ul|video)\\b" $raw 1 -}}
 {{- if or $block (not $raw) -}}{{- $inner = $raw -}}{{- else -}}{{- $inner = print `<p>` $raw `</p>` -}}{{- end -}}
 {{- $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 -}}

@@ -143,6 +143,7 @@ ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width
 /* brick prices
 /*------------------------*/
 
+section.prices {padding-bottom: 7rem;}
 section.prices .container.small {margin-bottom: 4rem; text-align: center;}
 section.prices + section.title {padding-top: 0;}
 ul.prices {max-width: 70rem; margin: 0 auto;}
