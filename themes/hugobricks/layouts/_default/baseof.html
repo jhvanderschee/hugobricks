@@ -51,7 +51,7 @@
           <nav>
             <ul>
               {{ range (index .Site.Data .Language.Lang).header.menuitems }}
-                <li class="{{ if eq .link `/` }}{{ if eq $.RelPermalink `/` }}active{{ end }}{{ else }}{{ if (hasPrefix $.RelPermalink .link) }}active{{ end }}{{ end }}{{ if (index .items 0).title }} haschildren{{ end }}"><a href="{{ .link }}">{{ .title }}</a>
+                <li class="{{ if eq .link `/` }}{{ if eq $.RelPermalink `/` }}active{{ end }}{{ else }}{{ if (hasPrefix $.RelPermalink .link) }}active{{ end }}{{ end }}{{ if (index .items 0).title }} haschildren{{ end }}"><a href="{{ .link }}" onclick="navClick(event, this);">{{ .title }}</a>
                   {{ if (index .items 0).title }}
                   <ul>
                     {{ range .items }}
@@ -70,6 +70,27 @@
         </div>
         {{ end }}
         <button id="togglemenu" onclick="event.stopPropagation(); document.body.classList.add('menushown');"><span class="black_2_textDark">Toggle menu</span></button>
+        <script>
+          function navClick(event,el) {
+            var li = el.parentElement;
+            if(document.body.classList.contains('mobilemenu')) {
+              if (li.classList.contains('haschildren')) {
+                var ul = li.querySelector('ul');
+                if(ul) {
+                  if(window.getComputedStyle(ul).display == 'none') {
+                    var uls = document.querySelectorAll('nav ul ul');
+                    uls.forEach(function(u) {
+                      u.style.display = 'none';
+                    });
+                    ul.style.display = 'block';
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                }
+              }
+            }
+          }
+        </script>
     </header>
 
     {{- block "content" . -}}{{- end -}}
