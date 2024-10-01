@@ -81,6 +81,7 @@ section.title.bgimage ul.breadcrumbs:first-child {margin-top: -2rem;}
 /* brick quote
 /*------------------------*/
 section.title.quote h2 + p {color: var(--accent);}
+section.title.quote:not(.bgimage) h2 + p {color: var(--textMedium);}
 
 /*------------------------*/
 /* brick wide
