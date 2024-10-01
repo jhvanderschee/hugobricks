@@ -2,5 +2,6 @@
 title: quote
 ---
 
-## "Hugobricks is the best theme I ever used!"
-— &nbsp;Everybody out there
+## "Ready to build your next project with Hugobricks?"
+
+— Lorem ipsum dolor
