@@ -29,6 +29,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 {{< /brick_image2 >}}
 {{< brick_reviews >}}{{< /brick_reviews >}}
 {{< brick_prices >}}{{< /brick_prices >}}
+{{< brick_quote >}}{{< /brick_quote >}}
 {{< brick_cta >}}
 ## Get started with Hugobricks today!
 
