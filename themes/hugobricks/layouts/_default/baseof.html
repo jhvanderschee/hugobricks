@@ -66,6 +66,9 @@
         </div>
         {{ if (index .Site.Data .Language.Lang).header.cta.active }}
         <div>
+          {{- if gt (len .Site.Languages) 1 -}}
+            <span class="languages">{{ range .Site.Languages }}<a href="/{{ .Lang }}/" class="{{ if eq .Lang $.Site.Language.Lang }}active{{ end }}">{{ .Lang }}</a>{{ end }}</span>
+          {{- end -}}
           <a href="{{ (index .Site.Data .Language.Lang).header.cta.link }}" class="button ghost smaller">{{ (index .Site.Data .Language.Lang).header.cta.title }}</a>
         </div>
         {{ end }}
