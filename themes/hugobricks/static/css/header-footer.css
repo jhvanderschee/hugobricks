@@ -43,10 +43,10 @@ header.sticky > .container {padding-top: 0.75rem; padding-bottom: 0.75rem;}
 header a {text-decoration: none;}
 header ul {display: flex; justify-content: flex-end; gap: 2rem; margin: 0;}
 header ul li {list-style: none; position: relative;}
-header nav > ul > li a {color: var(--textMedium); padding: 0.80rem 0 0.65rem 0; display: block; white-space: nowrap;}
-header nav > ul > li > a {color: var(--textDarker);}
+header .navnav > ul > li a {color: var(--textMedium); padding: 0.80rem 0 0.65rem 0; display: block; white-space: nowrap;}
+header .navnav > ul > li > a {color: var(--textDarker);}
 footer ul li a:not(.button)::after,
-header nav > ul > li::after {
+header .navnav > ul > li::after {
     content: "";
     position: absolute;
     left: 0;
@@ -59,10 +59,10 @@ header nav > ul > li::after {
 }
 footer ul li a:after {background: var(--textMedium); opacity: 0.75;}
 footer ul li a:hover:after,
-header nav > ul > li:hover::after,
-header nav > ul > li:has(li.active)::after,
-header nav > ul > li.active::after {transform: scaleX(1);}
-header nav > ul > li > ul {
+header .navnav:not(.languages) > ul > li:hover::after,
+header .navnav:not(.languages) > ul > li:has(li.active)::after,
+header .navnav:not(.languages) > ul > li.active::after {transform: scaleX(1);}
+header .navnav > ul > li > ul {
     opacity: 0;
     transform: translateY(0.25rem);
     position: absolute;
@@ -78,16 +78,16 @@ header nav > ul > li > ul {
     display: block;
     font-size: 0.95rem;
 }
-header nav > ul > li > ul li a {padding: 0.3rem 2rem 0.3rem 1rem; font-weight: normal;}
-header nav > ul > li > ul li a:hover,
-header nav > ul > li > ul li.active a {color: var(--textDarker);}
-header nav > ul > li > ul li.active a {font-weight: bold; font-size: 1rem; color: var(--textDark);}
-header nav > ul > li:hover > ul {
+header .navnav > ul > li > ul li a {padding: 0.3rem 2rem 0.3rem 1rem; font-weight: normal;}
+header .navnav > ul > li > ul li a:hover,
+header .navnav > ul > li > ul li.active a {color: var(--textDarker);}
+header .navnav > ul > li > ul li.active a {font-weight: bold; font-size: 1rem; color: var(--textDark);}
+header .navnav > ul > li:hover > ul {
     opacity: 1;
     transform: translateY(0);
     pointer-events: all;
 }
-header nav > ul > li.haschildren > a::after {
+header .navnav > ul > li.haschildren > a::after {
     content:""; 
     width: 0.3rem; 
     height: 0.3rem; 
@@ -113,17 +113,15 @@ body:not(.transparent_header) header + section.bgimage .container {padding-top: 
 body:not(.transparent_header) header + section.bgimage .container h1:first-child {padding-top: 0.5rem;}
 header .languages {display: inline-block; margin-right: 0.75rem;}
 body.mobilemenu header .languages {display: none;}
-header .languages a {color: var(--textDark); margin-right: 0.75rem; text-transform: uppercase;}
-header .languages a.active {color: var(--textMedium); opacity: 0.5;}
 
 header.dark {background: var(--textDarker);}
 body.transparent_header header:not(.sticky) {background: transparent;}
 header.dark a.logo, body.transparent_header header:not(.sticky) a.logo,
-header.dark nav > ul > li > a, body.transparent_header header:not(.sticky) nav > ul > li > a {color: white;}
-header.dark nav > ul > li::after, body.transparent_header header:not(.sticky) nav > ul > li::after {background: white;}
-body.mobilemenu header nav > ul > li.haschildren > a::after,
-header.dark nav > ul > li.haschildren > a::after, 
-body.transparent_header header:not(.sticky) nav > ul > li.haschildren > a::after {border-color: white;}
+header.dark .navnav > ul > li > a, body.transparent_header header:not(.sticky) .navnav > ul > li > a {color: white;}
+header.dark .navnav > ul > li::after, body.transparent_header header:not(.sticky) .navnav > ul > li::after {background: white;}
+body.mobilemenu header .navnav > ul > li.haschildren > a::after,
+header.dark .navnav > ul > li.haschildren > a::after, 
+body.transparent_header header:not(.sticky) .navnav > ul > li.haschildren > a::after {border-color: white;}
 header.dark #togglemenu span,
 header.dark a.logo > div img.inline,
 body.transparent_header header:not(.sticky) #togglemenu span,
@@ -131,7 +129,7 @@ body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: inv
 header.dark + section.bgimage,
 body.transparent_header header + section.bgimage {padding-top: 0!important;}
 body.transparent_header header:not(.sticky) .button {background: var(--accent); color: white; box-shadow: none;}
-
+header .navnav.languages {margin-right: 1.25rem;}
 
 /*------------------------*/
 /* footer
@@ -211,9 +209,9 @@ body.mobilemenu header > div.container > div.nav {
 }
 body.mobilemenu header > div.container > div:nth-child(3) {grid-area: cta;}
 body.mobilemenu header > .container.has_cta > div:nth-child(3) .button {margin-right: 3rem;}
-body.mobilemenu header nav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 2.5rem 0 4rem 0;}
-body.mobilemenu header nav > ul > li::after {content: none;}
-body.mobilemenu header nav > ul > li > ul {
+body.mobilemenu header .navnav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 2.5rem 0 4rem 0;}
+body.mobilemenu header .navnav > ul > li::after {content: none;}
+body.mobilemenu header .navnav > ul > li > ul {
     position: relative; 
     box-shadow: none; 
     margin: 0; 
@@ -225,14 +223,14 @@ body.mobilemenu header nav > ul > li > ul {
     background: transparent;
     border-radius: 0;
 }
-body.mobilemenu header nav > ul li.active > a {color: var(--accent)!important; font-weight: bold; font-size: 1.25rem;}
-body.mobilemenu header nav > ul > li.active.haschildren > a::after {border-color: var(--accent);}
-body.mobilemenu header nav > ul > li a {padding: 0.45rem 2.5rem 0.45rem 3rem; font-size: 1.15rem;;}
-body.mobilemenu header nav > ul > li > ul > li:last-child {margin-bottom: 0.5rem;}
-body.mobilemenu header nav > ul > li > ul {max-height: 0px; height: 0; overflow: hidden; transition: max-height 0.5s ease-in;}
-body.mobilemenu header nav > ul > li.active ul,
-body.mobilemenu header nav > ul > li:has(.active) ul {max-height: 700px; height: auto;}
-body.mobilemenu header nav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 5rem;}
+body.mobilemenu header .navnav > ul li.active > a {color: var(--accent)!important; font-weight: bold; font-size: 1.25rem;}
+body.mobilemenu header .navnav > ul > li.active.haschildren > a::after {border-color: var(--accent);}
+body.mobilemenu header .navnav > ul > li a {padding: 0.45rem 2.5rem 0.45rem 3rem; font-size: 1.15rem;;}
+body.mobilemenu header .navnav > ul > li > ul > li:last-child {margin-bottom: 0.5rem;}
+body.mobilemenu header .navnav > ul > li > ul {max-height: 0px; height: 0; overflow: hidden; transition: max-height 0.5s ease-in;}
+body.mobilemenu header .navnav > ul > li.active ul,
+body.mobilemenu header .navnav > ul > li:has(.active) ul {max-height: 700px; height: auto;}
+body.mobilemenu header .navnav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 5rem;}
 
 /*------------------------*/
 /* menu shown
@@ -240,7 +238,7 @@ body.mobilemenu header nav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 5rem
 
 body.mobilemenu.menushown header > div.container > div.nav {transform: translateX(0%);}
 body.mobilemenu.menushown header > div.container::before {content: ""; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 2;}
-body.mobilemenu.menushown header nav > ul > li a {color: white;}
+body.mobilemenu.menushown header .navnav > ul > li a {color: white;}
 
 @media (max-width: 450px) {
     header .button {display: none;}

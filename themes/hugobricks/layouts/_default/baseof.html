@@ -48,7 +48,7 @@
           {{ partial "logo.html" . }}
         </div>
         <div class="nav">
-          <nav>
+          <nav class="navnav">
             <ul>
               {{ range (index .Site.Data .Language.Lang).header.menuitems }}
                 <li class="{{ if eq .link `/` }}{{ if eq $.RelPermalink `/` }}active{{ end }}{{ else }}{{ if (hasPrefix $.RelPermalink .link) }}active{{ end }}{{ end }}{{ if (index .items 0).title }} haschildren{{ end }}"><a href="{{ .link }}" onclick="navClick(event, this);">{{ .title }}</a>
@@ -67,7 +67,18 @@
         {{ if (index .Site.Data .Language.Lang).header.cta.active }}
         <div>
           {{- if gt (len .Site.Languages) 1 -}}
-            <span class="languages">{{ range .Site.Languages }}<a href="/{{ .Lang }}/" class="{{ if eq .Lang $.Site.Language.Lang }}active{{ end }}">{{ .Lang }}</a>{{ end }}</span>
+          <div class="navnav languages">
+            <ul>
+              <li class="haschildren">
+                <a href="/{{ .Site.Language.Lang }}/">{{ .Site.Language.Lang | upper }}</a>
+                <ul>
+                  {{ range .Site.Languages }}
+                  {{ if ne .Lang $.Site.Language.Lang }}<li><a href="/{{ .Lang }}/">{{ .LanguageName }}</a></li>{{ end }}
+                  {{ end }}
+                </ul>
+              </li>
+            </ul>
+          </div>
           {{- end -}}
           <a href="{{ (index .Site.Data .Language.Lang).header.cta.link }}" class="button ghost smaller">{{ (index .Site.Data .Language.Lang).header.cta.title }}</a>
         </div>
