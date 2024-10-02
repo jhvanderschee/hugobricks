@@ -77,12 +77,14 @@
               if (li.classList.contains('haschildren')) {
                 var ul = li.querySelector('ul');
                 if(ul) {
-                  if(window.getComputedStyle(ul).display == 'none') {
+                  if(window.getComputedStyle(ul).maxHeight == '0px') {
                     var uls = document.querySelectorAll('nav ul ul');
                     uls.forEach(function(u) {
-                      u.style.display = 'none';
+                      u.style.height = '0px';
+                      u.style.maxHeight = '0px';
                     });
-                    ul.style.display = 'block';
+                    ul.style.height = 'auto';
+                    ul.style.maxHeight = '900px';
                     event.preventDefault();
                     event.stopPropagation();
                   }

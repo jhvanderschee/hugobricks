@@ -224,9 +224,9 @@ body.mobilemenu header nav > ul > li > ul {
 body.mobilemenu header nav > ul li.active > a {color: var(--accent)!important; font-weight: bold; font-size: 1.25rem;}
 body.mobilemenu header nav > ul > li.active.haschildren > a::after {border-color: var(--accent);}
 body.mobilemenu header nav > ul > li a {padding: 0.45rem 2.5rem 0.45rem 3rem; font-size: 1.15rem;;}
-body.mobilemenu header nav > ul > li > ul {display: none;}
+body.mobilemenu header nav > ul > li > ul {max-height: 0px; height: 0; overflow: hidden; transition: max-height 0.5s ease-in;}
 body.mobilemenu header nav > ul > li.active ul,
-body.mobilemenu header nav > ul > li:has(.active) ul {display: block;}
+body.mobilemenu header nav > ul > li:has(.active) ul {max-height: 700px; height: auto;}
 body.mobilemenu header nav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 5rem;}
 
 /*------------------------*/
