@@ -129,7 +129,7 @@ body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: inv
 header.dark + section.bgimage,
 body.transparent_header header + section.bgimage {padding-top: 0!important;}
 body.transparent_header header:not(.sticky) .button {background: var(--accent); color: white; box-shadow: none;}
-header .navnav.languages {margin-right: 1.25rem;}
+header .navnav.languages {margin-right: 1rem;}
 header .navnav.languages > ul > li > a {font-size: 0.9rem;}
 
 /*------------------------*/
