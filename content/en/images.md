@@ -8,14 +8,14 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 {{< button "Get started for free" "/get-started/" >}}
 
-![](/uploads/photos/gallery/01.jpg)
+![](/uploads/gallery/01.jpg)
 
 {{< /brick_title2 >}}
 {{< brick_image >}}
 
 ## What’s included in Hugobricks?
 
-![](/uploads/photos/gallery/02.jpg)
+![](/uploads/gallery/02.jpg)
 
 Hugobricks is a comprehensive starter theme that includes everything you need to get started with your Hugo project. As all the Wordpress theme builders say: This is the last theme you will ever need. Included are:
 
@@ -30,7 +30,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 
 ## What bricks are available?
 
-![](/uploads/photos/gallery/03.jpg)
+![](/uploads/gallery/03.jpg)
 
 We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
 
@@ -41,7 +41,7 @@ We are constantly adding bricks and shortcodes to this theme. Are you missing a 
 
 ## Hugobricks gives me wings!
 
-![](/uploads/photos/gallery/04.jpg)
+![](/uploads/gallery/04.jpg)
 
 Together with my friend 'Fenix' I have built Hugobricks, a theme that allows you to create a website by stacking shortcodes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. 
 
@@ -52,7 +52,7 @@ Together with my friend 'Fenix' I have built Hugobricks, a theme that allows you
 ## "Hugobricks is nothing but smooth sailing!"
 — &nbsp;Everybody out there
 
-![](/uploads/photos/gallery/05.jpg)
+![](/uploads/gallery/05.jpg)
 
 {{< /brick_quote >}}
 {{< brick_small >}}
