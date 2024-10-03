@@ -8,7 +8,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 {{< button "Get started for free" "/get-started/" >}}
 
-![](/uploads/gallery/01.jpg)
+![](/uploads/gallery/07.jpg)
 
 {{< /brick_title2 >}}
 {{< brick_image >}}
@@ -30,7 +30,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 
 ## What bricks are available?
 
-![](/uploads/gallery/03.jpg)
+![](/uploads/phtoos/06.jpg)
 
 We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
 
