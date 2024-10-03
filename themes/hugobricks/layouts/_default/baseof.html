@@ -64,7 +64,7 @@
             </ul>
             <ul>
               {{ range .Site.Languages }}
-              {{ if ne .Lang $.Site.Language.Lang }}<li><a href="/{{ .Lang }}/">{{ upper .Lang }}</a></li>{{ end }}
+              {{ if ne .Lang $.Site.Language.Lang }}<li><a href="/{{ .Lang }}/">&rarr; <span style="font-size: 95%;">{{ upper .Lang }}</span></a></li>{{ end }}
               {{ end }}
             </ul>
           </nav>
