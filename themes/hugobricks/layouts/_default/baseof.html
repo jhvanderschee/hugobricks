@@ -62,6 +62,11 @@
                 </li>
               {{ end }}
             </ul>
+            <ul>
+              {{ range .Site.Languages }}
+              {{ if ne .Lang $.Site.Language.Lang }}<li><a href="/{{ .Lang }}/">{{ upper .Lang }}</a></li>{{ end }}
+              {{ end }}
+            </ul>
           </nav>
         </div>
         {{ if (index .Site.Data .Language.Lang).header.cta.active }}
@@ -80,7 +85,7 @@
             </ul>
           </div>
           {{- end -}}
-          <a href="{{ (index .Site.Data .Language.Lang).header.cta.link }}" class="button ghost smaller">{{ (index .Site.Data .Language.Lang).header.cta.title }}</a>
+          <a href="{{ (index .Site.Data .Language.Lang).header.cta.link }}" class="button smaller">{{ (index .Site.Data .Language.Lang).header.cta.title }}</a>
         </div>
         {{ end }}
         <button id="togglemenu" onclick="event.stopPropagation(); document.body.classList.add('menushown');"><span class="black_2_textDark">Toggle menu</span></button>

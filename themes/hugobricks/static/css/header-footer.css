@@ -59,6 +59,7 @@ header .navnav > ul > li::after {
 }
 footer ul li a:after {background: var(--textMedium); opacity: 0.75;}
 footer ul li a:hover:after,
+header .navnav > ul:nth-child(2) {display: none;}
 header .navnav:not(.languages) > ul > li:hover::after,
 header .navnav:not(.languages) > ul > li:has(li.active)::after,
 header .navnav:not(.languages) > ul > li.active::after {transform: scaleX(1);}
@@ -112,7 +113,8 @@ body.transparent_header header + section.bgimage .container {padding-top: 13.5re
 body:not(.transparent_header) header + section.bgimage .container {padding-top: 11.5rem!important;}
 body:not(.transparent_header) header + section.bgimage .container h1:first-child {padding-top: 0.5rem;}
 header .languages {display: inline-block; margin-right: 0.75rem;}
-body.mobilemenu header .languages {display: none;}
+body.mobilemenu header .navnav {display: flex; flex-direction: column; justify-content: space-between;}
+body.mobilemenu header .navnav.languages {display: none;}
 
 header.dark {background: var(--textDarker);}
 body.transparent_header header:not(.sticky) {background: transparent;}
@@ -128,7 +130,6 @@ body.transparent_header header:not(.sticky) #togglemenu span,
 body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: invert(1)!important;}
 header.dark + section.bgimage,
 body.transparent_header header + section.bgimage {padding-top: 0!important;}
-body.transparent_header header:not(.sticky) .button {background: var(--accent); color: white; box-shadow: none;}
 header .navnav.languages {margin-right: 1rem;}
 header .navnav.languages > ul > li > a {font-size: 0.9rem;}
 
@@ -211,6 +212,7 @@ body.mobilemenu header > div.container > div.nav {
 body.mobilemenu header > div.container > div:nth-child(3) {grid-area: cta;}
 body.mobilemenu header > .container.has_cta > div:nth-child(3) .button {margin-right: 3rem;}
 body.mobilemenu header .navnav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 2.5rem 0 4rem 0;}
+body.mobilemenu.menushown header .navnav > ul:nth-child(2) {margin-bottom: 2rem; display: block;}
 body.mobilemenu header .navnav > ul > li::after {content: none;}
 body.mobilemenu header .navnav > ul > li > ul {
     position: relative; 
