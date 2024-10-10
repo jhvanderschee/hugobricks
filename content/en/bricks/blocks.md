@@ -1,48 +1,61 @@
 ---
-title: features
+title: blocks
 ---
-## The Ultimate Hugo theme
+
+## Alternative services 1
 
 Hugobricks covers all components you would like to have at hand. It is a power engine for your web oriented projects. It has excellent performance in all categories.
 
 ---
 
-![](/img/icons/material-symbols/200/rounded/auto_awesome_mosaic.svg)
+![](/uploads/gallery/01.jpg)
 ### Covers all components
 
-We aim to provide the following bricks: intro, title, image, cta, contact, team, testimonials, about, pricing, products, product, usps, stats, gallery, quote, faqs, brands, video, blogs, post, related.
+Includes many bricks.
+
+[](/services/)
 
 ---
 
-![](/img/icons/material-symbols/200/rounded/performance_max.svg)
+![](/uploads/gallery/02.jpg)
 ### 99+ Google Lighthouse score
 
-Lightning fast website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+Lightning fast website.
+
+[](/services/)
 
 ---
 
-![](/img/icons/material-symbols/200/rounded/design_services.svg)
+![](/uploads/gallery/03.jpg)
 ### Themeable through CSS variables
 
-Easily themeable. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+Easily themeable.
+
+[](/services/)
 
 ---
 
-![](/img/icons/material-symbols/200/rounded/devices.svg)
+![](/uploads/gallery/04.jpg)
 ### Fully responsive on all devices
 
-Works on every screen. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+Works on every screen.
+
+[](/services/)
 
 ---
 
-![](/img/icons/material-symbols/200/rounded/timer.svg)
+![](/uploads/gallery/05.jpg)
 ### Super fast builds and deploys
 
-Extremely fast. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+Extremely fast.
+
+[](/services/)
 
 ---
 
-![](/img/icons/material-symbols/200/rounded/auto_fix.svg)
+![](/uploads/photos/06.jpg)
 ### 10+ pre-build pages
 
-Start with the end result. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed.
+Start with the end result.
+
+[](/services/)
