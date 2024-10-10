@@ -77,10 +77,10 @@ section.title:not(.bgimage) {padding-bottom: 3.25rem;}
 section.title ul.breadcrumbs li a {color: var(--accent);}
 section.title.bgimage ul.breadcrumbs:first-child {margin-top: -2rem;}
 
+
 /*------------------------*/
 /* brick quote
 /*------------------------*/
-section.title.quote h2 + p {color: var(--accent);}
 section.title.quote:not(.bgimage) h2 + p {color: var(--textMedium);}
 
 /*------------------------*/
@@ -139,6 +139,25 @@ ul.features li p.image + h3 {padding-top: 0;}
 ul.features li.has_icon p.image {display: inline-block; padding: 1.5rem; border-radius: 100%; border: 0.1rem solid var(--accent);}
 ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width: 3rem; margin: 0 auto; border-radius: 0;}
 
+
+/*------------------------*/
+/* brick blocks
+/*------------------------*/
+
+section.blocks .container.small {margin-bottom: 4rem; text-align: center;}
+section.blocks + section.title {padding-top: 0;}
+ul.blocks {gap: 2rem; padding-bottom: 1rem;}
+ul.blocks li {text-align: center; aspect-ratio: 1.5; position: relative; border-radius: 1rem; border: 1px solid rgba(0,0,0,0.1);}
+ul.blocks li.hasimage {overflow: hidden;}
+ul.blocks li:has(a[href]):hover {border: 1px solid rgba(0,0,0,0.3);}
+ul.blocks li a {display: block; width: 100%; position: absolute; height: 100%; z-index: 1;}
+ul.blocks li.hasimage a::before {content: ""; background: rgba(0,0,0,0.32); position: absolute; left: 0; top: 0; height: 100%; width: 100%; z-index: 2;}
+ul.blocks li div {position: absolute; top: 50%; transform: translateY(-50%); padding: 1.5rem; z-index: 3; width: 100%;}
+ul.blocks li.hasimage div {color: white;}
+ul.blocks li.hasimage div.img {top: auto; transform: none; padding: 0; z-index: 1;}
+ul.blocks li.hasimage div.img img {aspect-ratio: 1.5; object-fit: cover; width: 100%;}
+ul.blocks li h3 {padding-top: 0; font-size: 1.5rem; line-height: 1.2;}
+ul.blocks li.hasimage h3 {color: white;}
 
 /*------------------------*/
 /* brick prices

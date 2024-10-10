@@ -244,6 +244,13 @@ ul.grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1f
 ul.grid li {list-style: none; position: relative;}
 
 /*------------------------*/
+/* img
+/*------------------------*/
+
+.img img {transform: scale(1); transition: transform 0.35s ease-in-out;}
+a[href]:hover .img img {transform: scale(1.075);}
+
+/*------------------------*/
 /* avatar
 /*------------------------*/
 
