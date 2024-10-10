@@ -150,7 +150,8 @@ ul.blocks {gap: 1.55rem 1.5rem; padding-bottom: 1rem;}
 ul.blocks li {text-align: center; aspect-ratio: 1.5; position: relative; border-radius: 1rem;}
 ul.blocks li.hasimage {overflow: hidden;}
 ul.blocks li:has(a[href]):hover {border: 1px solid rgba(0,0,0,0.2);}
-ul.blocks li a {display: flex; width: 100%; position: absolute; height: 100%; z-index: 1; padding: 1.5rem!important; flex-direction: column; justify-content: center; color: white; text-decoration: none;}
+ul.blocks li a {display: flex; width: 100%; position: absolute; height: 100%; z-index: 1; padding: 1.5rem!important; flex-direction: column; justify-content: center; text-decoration: none;}
+ul.blocks li.hasimage a {color: white;}
 ul.blocks li.hasimage a::before {content: ""; background: rgba(0,0,0,0.32); position: absolute; left: 0; top: 0; height: 100%; width: 100%; z-index: -1;}
 ul.blocks li.box {margin: 0!important; padding: 0;}
 ul.blocks li.hasimage div.img {margin: -1.5rem; position: absolute; z-index: -2;}
