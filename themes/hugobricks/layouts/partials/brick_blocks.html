@@ -25,7 +25,7 @@
                 <li class="{{ if $image }}hasimage{{ else }}box{{ end }}">
                     <a {{ if $href -}}href="{{ $href | safeHTML }}"{{- end -}}>
                     {{ if $image }}<div class="img"><img src="{{- $imagesrc -}}" alt="" /></div>{{ end }}
-                    <div>{{- $i | safeHTML -}}</div>
+                    {{- $i | safeHTML -}}
                     </a>
                 </li>
             {{- end -}}
