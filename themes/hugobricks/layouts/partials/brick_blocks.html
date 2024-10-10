@@ -22,7 +22,7 @@
                 {{- $link := index (findRE `(?s)<p><a href=.*?\<\/a></p>` $i 1) 0 -}}
                 {{- $href := index (split $link `"`) 1 -}}
                 {{- $i = replace $i $link "" 1 -}}
-                <li class="{{ if $image }}hasimage{{ end }}">
+                <li class="{{ if $image }}hasimage{{ else }}box{{ end }}">
                     <a {{ if $href -}}href="{{ $href | safeHTML }}"{{- end -}}>
                     {{ if $image }}<div class="img"><img src="{{- $imagesrc -}}" alt="" /></div>{{ end }}
                     <div>{{- $i | safeHTML -}}</div>

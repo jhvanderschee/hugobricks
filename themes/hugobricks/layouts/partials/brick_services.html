@@ -34,7 +34,7 @@
                         </div>
                         {{ end }}
                         <div class="summary">
-                            <p>{{ substr $service.Summary 0 190 | safeHTML }}...</p>
+                            <p>{{ substr (.Summary | plainify) 0 190 | safeHTML }}...</p>
                             <p><a href="{{ .RelPermalink }}" class="button ghost smaller">{{ i18n "Read more" }}</a></p>
                         </div>
                 </li>

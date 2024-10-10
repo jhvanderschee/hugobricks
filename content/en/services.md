@@ -79,55 +79,6 @@ Hugobricks covers all components you would like to have at hand. It is a power e
 
 ---
 
-![](/uploads/gallery/01.jpg)
-### Covers all components
-
-[](/services/)
-
----
-
-![](/uploads/gallery/02.jpg)
-### 99+ Google Lighthouse score
-
-[](/services/)
-
----
-
-![](/uploads/gallery/03.jpg)
-### Themeable through CSS variables
-
-[](/services/)
-
----
-
-![](/uploads/gallery/04.jpg)
-### Fully responsive on all devices
-
-[](/services/)
-
----
-
-![](/uploads/gallery/05.jpg)
-### Super fast builds and deploys
-
-[](/services/)
-
----
-
-![](/uploads/photos/06.jpg)
-### 10+ pre-build pages
-
-[](/services/)
-
-{{< /brick_blocks >}}
-{{< brick_blocks >}}
-
-## Alternative services 3
-
-Hugobricks covers all components you would like to have at hand. It is a power engine for your web oriented projects. It has excellent performance in all categories.
-
----
-
 ### Covers all components
 
 Includes many bricks.

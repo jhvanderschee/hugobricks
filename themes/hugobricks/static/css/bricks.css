@@ -146,17 +146,18 @@ ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width
 
 section.blocks .container.small {margin-bottom: 4rem; text-align: center;}
 section.blocks + section.title {padding-top: 0;}
-ul.blocks {gap: 2rem; padding-bottom: 1rem;}
-ul.blocks li {text-align: center; aspect-ratio: 1.5; position: relative; border-radius: 1rem; border: 1px solid rgba(0,0,0,0.1);}
+ul.blocks {gap: 1.55rem 1.5rem; padding-bottom: 1rem;}
+ul.blocks li {text-align: center; aspect-ratio: 1.5; position: relative; border-radius: 1rem;}
 ul.blocks li.hasimage {overflow: hidden;}
-ul.blocks li:has(a[href]):hover {border: 1px solid rgba(0,0,0,0.3);}
+ul.blocks li:has(a[href]):hover {border: 1px solid rgba(0,0,0,0.2);}
 ul.blocks li a {display: block; width: 100%; position: absolute; height: 100%; z-index: 1;}
 ul.blocks li.hasimage a::before {content: ""; background: rgba(0,0,0,0.32); position: absolute; left: 0; top: 0; height: 100%; width: 100%; z-index: 2;}
 ul.blocks li div {position: absolute; top: 50%; transform: translateY(-50%); padding: 1.5rem; z-index: 3; width: 100%;}
+ul.blocks li.box {padding: 0; margin: 0!important;}
 ul.blocks li.hasimage div {color: white;}
 ul.blocks li.hasimage div.img {top: auto; transform: none; padding: 0; z-index: 1;}
 ul.blocks li.hasimage div.img img {aspect-ratio: 1.5; object-fit: cover; width: 100%;}
-ul.blocks li h3 {padding-top: 0; font-size: 1.5rem; line-height: 1.2;}
+ul.blocks li h3 {padding-top: 0; }
 ul.blocks li.hasimage h3 {color: white;}
 
 /*------------------------*/
@@ -208,7 +209,7 @@ ul.prices li div.box h3 em {vertical-align: top; font-style: normal;}
 /*------------------------*/
 
 section.posts .container.small {margin-bottom: 4rem; text-align: center;}
-section.posts .grid {grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 2rem;}
+section.posts .grid {grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 1.55rem 2rem;}
 section.posts .grid .item .img {border-radius: 1rem; margin-bottom: 0.251rem; overflow: hidden;}
 section.posts .grid .item .img img {display: block;}
 section.posts .grid .item h3 {padding-top: 1rem;}
