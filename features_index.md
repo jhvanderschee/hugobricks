@@ -35,7 +35,7 @@ Say you sculpt your brick style like this, by means of :
 
 
 
-Basically, the hugobricks way, the Call To Action brick (CTA) is made of text+image '(sub)components'. Add some simple but ellegant styling, and voilà.
+Basically, the hugobricks way, the Call To Action brick (CTA) is made of text+image '(sub)components'. Add some simple but elegant styling, and voilà.
 
 (as a reminder, as long as the following is re-used across several bricks in the project :)
 
