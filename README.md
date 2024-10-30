@@ -37,6 +37,7 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 - [x] Pricing
 - [x] Services
 - [x] Quote
+- [ ] Webshop
 - [ ] Stats
 - [ ] Carousel
 - [ ] Related
