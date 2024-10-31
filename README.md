@@ -99,9 +99,9 @@ Hugobricks is build with the regular [Hugo](https://gohugo.io/overview/introduct
 Make your wishlist. Missing a given Hugobrick? [Let us know.](https://github.com/jhvanderschee/hugobricks/issues/5)
 
 ## Documentation 
-See (and contribute:)
+See (and contribute:-)) / follow-up / [discuss here]((https://github.com/jhvanderschee/hugobricks/issues/72)
 
-DOCUMENTATION.md
+[View Documentation](./DOCUMENTATION.md)
 
 ## Credits and licenses
 

@@ -52,3 +52,6 @@ let's improve it !? :
 - [ ] Hugobricks deployment ~ (not only by '$ git clone ...' ) ~ enter HugOps ;-) 
 - [ ] Webshop  (under construction, see issue #71 ) doc.
 - [ ] ...
+
+
+> [Back to README file](./README.md)
