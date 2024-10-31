@@ -12,7 +12,7 @@
             </div>
         {{- else if eq .input_type `checkbox` -}}
             <div class="checkbox">
-                <label><input type="checkbox" name="{{ .name }}" value="{{ .label }}" required>{{ .placeholder | safeHTML }}</label>
+                <label><input type="checkbox" name="{{ .name }}" value="{{ .label }}" required>{{ .label | safeHTML }}</label>
             </div>
         {{- else if eq .input_type `html` -}}
             {{ .placeholder | safeHTML }}
