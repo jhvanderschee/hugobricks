@@ -34,6 +34,8 @@ Buttons are a great way to drive conversion. They are actually links with the cl
 
 {{< button "Get started for free" "/get-started/" >}}
 
+{{< button2 "Get started for free" "/get-started/" >}}
+
 Donec rutrum felis dignissim nisl tincidunt, sit amet interdum dolor ornare. Cras id hendrerit eros.
 
 {{< socialbuttons >}}
@@ -145,6 +147,16 @@ Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et 
 Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris.
 
 ---
+## Vimeo video
+
+Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris.
+
+{{< vimeo id="727145223" image="/uploads/gallery/01.jpg" >}}
+
+Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris.
+
+---
+
 ## Video
 
 Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris. Aliquam et dictum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum bibendum augue quis hendrerit. Sed lectus neque, efficitur id velit eget, feugiat ultricies mauris.
