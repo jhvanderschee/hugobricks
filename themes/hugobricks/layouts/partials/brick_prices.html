@@ -12,9 +12,15 @@
     </div>
     <div class="container">
         <ul class="grid prices">
-            {{ range after 1 $parts }}
+            {{ range $i,$p := (after 1 $parts) }}
                 <li class="">
-                    <div class="box"><div>{{- replace (markdownify .) `<a ` `<a class="button" ` | safeHTML -}}</div></div>
+                    <div class="box"><div>
+                        {{- if eq $i 1 -}}
+                            {{- replace (markdownify .) `<a ` `<a class="button" ` | safeHTML -}}
+                        {{- else -}}
+                            {{- replace (markdownify .) `<a ` `<a class="button ghost" ` | safeHTML -}}
+                        {{- end -}}
+                    </div></div>
                 </li>
             {{ end }}
         </ul>

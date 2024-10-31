@@ -1,40 +1,60 @@
 logo_image:
-logo_subtitle: The Ultimate Hugo theme
-mobile_view_width: 1000
+logo_subtitle: The Ultimate Hugo Theme
+mobile_view_width: 1100
 menuitems:
-  - title: About
+  - title: Headers
+    link: /headers/
+    items:
+      - title: Title
+        link: /header-with-title/
+      - title: Content block
+        link: /header-with-content/
+      - title: Dark preheader
+        link: /header-dark/
+      - title: Dark nav
+        link: /header-darker/
+      - title: Transparent nav
+        link: /header-transparent/
+  - title: Pages
     link: /about/
     items: 
-      - title:
-        link:
-  - title: Pages
-    link: /contact/
-    items: 
-      - title: Elements
-        link: /elements/
-      - title: Header image 1
-        link: /bgimage3/
-      - title: Header image 2
-        link: /bgimage2/
-      - title: Header image 3
-        link: /bgimage/
+      - title: About
+        link: /about/
       - title: Basic page 1
         link: /basic/
       - title: Basic page 2
         link: /basic2/
+      - title: Images
+        link: /images/
       - title: Our team
         link: /team/
+      - title: Services
+        link: /services/
+      - title: Blog
+        link: /blog/
       - title: Contact us
         link: /contact/
       - title: F.A.Q.
         link: /faq/
       - title: 404 Page
         link: /404.html
+  - title: Elements
+    link: /elements/
   - title: Docs
     link: /docs/
-  - title: Blog
-    link: /blog/
+  - title: Examples
+    link: /demo-paragliding/
+    items: 
+      - title: Paragliding
+        link: /demo-paragliding/
+      - title: Hiking
+        link: /demo-hiking/
+      - title: Poulterer
+        link: /demo-poulterer/
+      - title: POS software
+        link: /demo-pos/
 cta:
   active: true
   title: Get started
   link: /get-started/
+preheader: open Mon-Fri from 9-5

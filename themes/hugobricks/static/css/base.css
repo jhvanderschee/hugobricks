@@ -1,35 +1,43 @@
 :root {
+    --textDarker: black;
     --textDark: black;
     --textMedium: rgba(0,0,0,0.7);
     --borderMedium: rgba(0,0,0,0.2);
     --borderLight: rgba(0,0,0,0.075);
     --accent: black;
-    --textAccent: black;
+    --accentDarker: black;
     --light: rgba(0,0,0,0.03);
 }
 img {filter: grayscale(100%);}
 
 * {padding: 0; margin: 0; box-sizing: border-box;}
 html {font-size: clamp(14px, 2vw, 16px); line-height: 1.7; height: 100%; scroll-behavior: smooth; background: var(--light);}
+body.hasstickyheader *[id] {scroll-margin-top: 10rem;}
 body {font-size: 1rem; color: var(--textMedium); background: var(--light);}
 .innerbody {margin: 0 auto; background: white;}
 .innerbody, .innerbody header {max-width: 100%;}
 .container {margin: 0 auto; max-width: 84rem; padding: 0 clamp(1rem,4vw,3rem);}
 img, figure, video, audio {max-width: 100%; display: block;}
 a {color: var(--textMedium);}
-h1, h2, a.logo {line-height: 1.15; font-size: 2.6rem; color: var(--textDark);}
+h1, h2 {line-height: 1.1; font-size: 2.6rem; color: var(--textDark);}
+a.logo {line-height: 1.15; color: var(--textDark);}
 h1 {font-size: 3.25rem; margin-bottom: 1.75rem;}
 h1 + p {padding-top: 0.5rem;}
 h2 {margin-top: 3.5rem; margin-bottom: 1.25rem;}
 h2:first-child {margin-top: 0;}
+section.docs h2,
 .container.post h2,
-h3 {color: var(--textDark); line-height: 1.4; font-size: 1.25rem; margin-top: 0; margin-bottom: 0.4rem; padding-top: 1rem; font-weight: bold;}
+h3 {color: var(--textDark); line-height: 1.3; font-size: 1.25rem; margin-top: 0; margin-bottom: 0.4rem; padding-top: 1.5rem; font-weight: bold;}
+h2 + h3 {padding-top: 0;}
+section.docs h3,
+.container.post h3,
+h4 {color: var(--textMedium); line-height: 1.4; font-size: 1.1rem; margin-bottom: 0.2rem; padding-top: 1rem;}
 div + h3 {padding-top: 3rem;}
 p, ul, ol, blockquote, pre, .box.map, figure, details {margin-bottom: 1.7em;}
 ul {margin-left: 1rem;}
 ol {margin-left: 2rem;}
 hr {margin: 3.5rem 0; height: 1px; background: rgba(0,0,0,0.1); border: 0;}
-p > img {border-radius: 1rem; overflow: hidden;}
+p img, p img:last-child {border-radius: 1rem; overflow: hidden; margin-block: 2.25rem;}
 pre {
     overflow: auto; 
     background: var(--light); 
@@ -41,7 +49,7 @@ pre {
 }
 blockquote {font-style: italic; border-left: 0.25rem solid var(--borderMedium); padding-left: 1.25rem;}
 video, audio {width: 100%;}
-.sr-only {display: none;}
+.sr-only {display: none!important;}
 :not(pre) > code {
     background: var(--light);
     padding: 0.15rem 0.3rem;
@@ -53,7 +61,7 @@ video, audio {width: 100%;}
 /* fonts
 /*------------------------*/
 
-.container.post h2,
+.container.post h2, section.docs h2,
 body, input, textarea, select, a.logo > div.has_subtitle > div span:nth-child(2) {font-family: var(--fontBody);}
 h1, h2, a.logo {font-family: var(--fontTitles);}
 
@@ -73,7 +81,7 @@ a.logo > div.has_subtitle > div span:nth-child(2) {font-size: 0.75rem; font-weig
 /* sections general
 /*------------------------*/
 
-section, section.image.alt {padding: 4.5rem 0 6rem;}
+section, section.image.alt {padding: 4.5rem 0 5rem;}
 section .twocols {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 5.5rem clamp(2rem, 5vw, 5rem);}
 section .twocols > div {display: flex; flex-direction: column; justify-content: center;}
 section .container.small {max-width: 40rem;}
@@ -89,9 +97,9 @@ section.stickstofooter + footer {margin-top: 0; border-top: 0;}
 /* box
 /*------------------------*/
 
-div.box {background: var(--light); border: 0.1rem solid var(--borderLight); padding: 3.5rem clamp(2rem, 5vw, 5rem); border-radius: 1rem; position: relative;}
-div.box:not(:last-child) {margin-bottom: 1.7em;}
-div.box p img {border-radius: 0;}
+.box {background: var(--light); border: 0.1rem solid var(--borderLight); padding: 3.5rem clamp(2rem, 5vw, 5rem); border-radius: 1rem; position: relative;}
+.box:not(:last-child) {margin-bottom: 1.7em;}
+.box p img {border-radius: 0;}
 
 /*------------------------*/
 /* map
@@ -174,13 +182,15 @@ div.box label.inborder::after {
     font-size: 1rem;
     border-radius: 0.4rem;
     border: 0;
-    transition: all 0.15s ease-in-out;
     cursor: pointer;
+    letter-spacing: 0.02em;
+    transition: transform 0.075s ease-in-out;
+}
+@media (min-width: 600px) {
+.button:hover, button:hover {transform: scale(1.035);}
 }
 .button.secondary {background: var(--textDark);}
-.button.secondary.ghost,
-.button.secondary:hover {background: transparent; color: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
-.button.secondary.ghost:hover {background: var(--textDark); color: white;}
+.button.secondary.ghost {background: transparent; color: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
 .button.icon {
     padding: 0; 
     position: relative; 
@@ -195,15 +205,12 @@ div.box label.inborder::after {
     height: calc(100% - 1.25em);
     filter: invert(1);
 }
-.button.icon:hover {background: var(--textDark); box-shadow: inset 0 0 0 0.1rem var(--textDark);}
-.button.ghost {background: transparent; color: var(--textAccent); box-shadow: inset 0 0 0 0.1rem var(--accent);}
-.button.ghost:hover {color: white; background: var(--accent);}
+.button.ghost {background: transparent; color: var(--accentDarker); box-shadow: inset 0 0 0 0.1rem var(--accent);}
 .button.smaller {padding: 0.4rem 1rem;}
 p > .button {margin: 0.5rem 0;}
 ul.buttons {gap: 1rem; margin-left: 0; display: flex; padding: 0.5rem 0;}
 ul.buttons li {list-style: none;}
 ul.buttons.social .button {background: var(--textDark);}
-ul.buttons.social .button:hover {background: var(--accent); box-shadow: inset 0 0 0 0.1rem var(--accent);}
 
 /*------------------------*/
 /* bgimage
@@ -228,7 +235,7 @@ ul.breadcrumbs li::before {content: "/"; display: inline-block; padding: 0 0.25r
 ul.breadcrumbs li:first-child::before {content: none;}
 ul.breadcrumbs li a {text-decoration: none;}
 ul.breadcrumbs li::before,
-ul.breadcrumbs li a {color: var(--textAccent);}
+ul.breadcrumbs li a {color: var(--accentDarker);}
 
 /*------------------------*/
 /* grid
@@ -236,6 +243,13 @@ ul.breadcrumbs li a {color: var(--textAccent);}
 
 ul.grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 1.55rem 1.5rem; margin: 0; padding-bottom: 1rem;}
 ul.grid li {list-style: none; position: relative;}
+
+/*------------------------*/
+/* img
+/*------------------------*/
+
+a[href] .img img {transform: scale(1); transition: transform 0.35s ease-in-out;}
+a[href]:hover .img img {transform: scale(1.075);}
 
 /*------------------------*/
 /* avatar
@@ -289,6 +303,7 @@ ul.tabs li a::after {
 }
 ul.tabs li a:hover::after,
 ul.tabs li.selected a::after {transform: scaleX(1) translateY(50%);}
+.tabs_container {margin-bottom: 3.5rem;}
 .tabs_container .tab h2 {display: none;}
 
 
@@ -377,20 +392,62 @@ details[open]:not(.closing) summary::after {
 .shortcode-youtube::before {background: url('/img/youtube_button.svg') center center / auto 4rem no-repeat;}
 .shortcode-youtube:hover::before {background-image: url('/img/youtube_button_hover.svg');}
 .shortcode-youtube::after {background: url('/img/youtube_text.svg') calc(100% - 1rem) calc(100% - 1rem) / auto 2rem no-repeat;}
-.shortcode-youtube img {display: block;}
+.shortcode-youtube img {display: block; margin: 0!important;}
 @media (max-width: 45rem) {
     .shortcode-youtube::before {background-size: auto 12vw;}
     .shortcode-youtube::after {background-position: calc(100% - 3vw) calc(100% - 3vw); background-size: auto 6vw;}
 }
 
 /*------------------------*/
+/* vimeo shortcode
+/*------------------------*/
+
+.shortcode-vimeo {
+    position: relative; display: block;
+}
+.shortcode-vimeo::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+.shortcode-vimeo .playbutton {
+    position: absolute;
+    width: 6rem;
+    height: 4rem;
+    border-radius: 0.65rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.6) url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOC43NTgiIGhlaWdodD0iMjguODQ5IiB2aWV3Qm94PSIwIDAgNy42MDkgNy42MzMiIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyI+PHBhdGggZD0iTTAgMHY3LjYzM2w3LjYwOS0zLjg3NHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=') 55% center / auto 1.9rem no-repeat;
+    z-index: 3;
+}
+.shortcode-vimeo .playbutton:hover {background-color: #00adef;}
+.shortcode-vimeo::after {
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgYWx0PSJWaW1lbyIKICAgd2lkdGg9Ijk5LjY0NjYxNCIKICAgaGVpZ2h0PSIyOC4xNjA5OTkiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzQiCiAgIHNvZGlwb2RpOmRvY25hbWU9InRlc3Quc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjEuMiAoMToxLjErMjAyMjAyMDUwOTUwKzBhMDBjZjUzMzkpIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM4IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0ibmFtZWR2aWV3NiIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAuMCIKICAgICBpbmtzY2FwZTpwYWdlY2hlY2tlcmJvYXJkPSIwIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBmaXQtbWFyZ2luLXRvcD0iMCIKICAgICBmaXQtbWFyZ2luLWxlZnQ9IjAiCiAgICAgZml0LW1hcmdpbi1yaWdodD0iMCIKICAgICBmaXQtbWFyZ2luLWJvdHRvbT0iMCIKICAgICBpbmtzY2FwZTp6b29tPSIxMS4yNiIKICAgICBpbmtzY2FwZTpjeD0iNDkuODIyMzgiCiAgICAgaW5rc2NhcGU6Y3k9IjE4LjY1MDA4OSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjM0NDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTM5MSIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzQiIC8+CiAgPHBhdGgKICAgICBkPSJtIDIyLjI3MiwxMy4yNDIgYyAtMC4xMDQsMi4xNyAtMS42MTgsNS4xNDYgLTQuNTQ0LDguOTEyIC0zLjAzLDMuOTQyIC01LjU5LDUuOTEyIC03LjY4Niw1LjkxMiAtMS4yOTcsMCAtMi4zOTcsLTEuMjA0IC0zLjMsLTMuNiAtMC42LC0yLjIgLTEuMjAyLC00LjM5OCAtMS43OTQsLTYuNTk4IC0wLjY2NCwtMi4zOTYgLTEuMzgsLTMuNiAtMi4xNDcsLTMuNiAtMC4xNjYsMCAtMC43NDcsMC4zNTQgLTEuNzUzLDEuMDUgTCAwLDEzLjk2OCBjIDEuMSwtMC45NjUgMi4xOSwtMS45MyAzLjI1NywtMi45MDUgMS40NjMsLTEuMjY1IDIuNTczLC0xLjk0IDMuMywtMi4wMDIgMS43MzIsLTAuMTY2IDIuOCwxLjAxNyAzLjIwNSwzLjU1OCAwLjQzNSwyLjc0IDAuNzM2LDQuNDQgMC45MDIsNS4xMTUgMC40OTgsMi4yNyAxLjA0OCwzLjQwMiAxLjY1LDMuNDAyIDAuNDY2LDAgMS4xNzIsLTAuNzM3IDIuMTA1LC0yLjIxIDAuOTM0LC0xLjQ3MyAxLjQzMiwtMi41OTMgMS41MDQsLTMuMzcgMC4xMzMsLTEuMjc3IC0wLjM2NSwtMS45MSAtMS41MDYsLTEuOTEgLTAuNTMsMCAtMS4wOCwwLjEyNSAtMS42NSwwLjM2NCAxLjEsLTMuNTkgMy4xODYsLTUuMzMzIDYuMjc3LC01LjIzIDIuMjczLDAuMDczIDMuMzUsMS41NTYgMy4yMjcsNC40NiBtIDEzLjc1NSw3LjAzNCBjIC0wLjkzMywxLjc2NCAtMi4yMiwzLjM3IC0zLjg2LDQuODAzIC0yLjI0LDEuOTMgLTQuNDcsMi45MDUgLTYuNywyLjkwNSAtMS4wMzcsMC4wMDIgLTEuODI2LC0wLjMzIC0yLjM3NiwtMC45OTQgLTAuNTUsLTAuNjYzIC0wLjgxLC0xLjUzNSAtMC43NzcsLTIuNjAzIDAuMDMsLTEuMSAwLjM3MiwtMi44IDEuMDI1LC01LjEwNCAwLjY1NCwtMi4zMDMgMC45NzYsLTMuNTM3IDAuOTc2LC0zLjcwMyAwLC0wLjg2IC0wLjMsLTEuMjk3IC0wLjkwMiwtMS4yOTcgLTAuMTk4LDAgLTAuNzcsMC4zNTMgLTEuNzAyLDEuMDQ4IGwgLTEuMTUyLC0xLjM1IGMgMS4wNywtMC45NjIgMi4xMzcsLTEuOTI3IDMuMjA2LC0yLjkwMiAxLjQzLC0xLjI2NiAyLjUsLTEuOTQgMy4yMDUsLTIuMDAyIDEuMSwtMC4xMDMgMS45MSwwLjIzIDIuNDI4LDAuOTc2IDAuNTE4LDAuNzQ3IDAuNzA1LDEuNzIyIDAuNTgsMi45MTUgLTAuNDM1LDIuMDM0IC0wLjkwMiw0LjYwNyAtMS40LDcuNzMgLTAuMDMsMS40MyAwLjQ4OCwyLjE0NiAxLjU1NiwyLjE0NiAwLjQ2NywwIDEuMjk3LC0wLjQ5OCAyLjUsLTEuNDgzIDAuOTk2LC0wLjgyIDEuODE1LC0xLjU5OCAyLjQ1LC0yLjMyNCBsIDAuOTQyLDEuMjQ0IG0gLTQuMzU3LC0xNy44IGMgLTAuMDMsMC44MyAtMC40NDYsMS42MjggLTEuMjU1LDIuMzk1IC0wLjksMC44NiAtMS45NywxLjI5NiAtMy4yMDQsMS4yOTYgLTEuOSwwIC0yLjgyMiwtMC44MyAtMi43NSwtMi40OSAwLjAzMiwtMC44NiAwLjU0LC0xLjY5IDEuNTI2LC0yLjQ5IEMgMjYuOTcsMC4zOTMgMjguMDU5LDAgMjkuMjYzLDAgYyAwLjcwNSwwIDEuMjg2LDAuMjcgMS43NTMsMC44MiAwLjQ2NywwLjU0IDAuNjg0LDEuMSAwLjY1MywxLjY2IG0gMzUuNjEyLDE3LjggYyAtMC45MzMsMS43NjMgLTIuMjIsMy4zNyAtMy44Niw0LjgwMiAtMi4yNCwxLjkzIC00LjQ3LDIuOTA0IC02LjcsMi45MDQgLTIuMTY4LDAuMDAyIC0zLjIxNiwtMS4yMDIgLTMuMTUzLC0zLjU5OCAwLjAzLC0xLjA3IDAuMjM4LC0yLjM1NSAwLjYyMiwtMy44NSAwLjM4NCwtMS41MDMgMC41OSwtMi42NjUgMC42MjMsLTMuNTA1IDAuMDMsLTEuMjY1IC0wLjM1MywtMS44OTggLTEuMTUyLC0xLjg5OCAtMC44NywwIC0xLjkxLDEuMDM2IC0zLjExMiwzLjEgLTEuMjc2LDIuMTY4IC0xLjk2LDQuMjc0IC0yLjA2NCw2LjMwOCAtMC4wNzMsMS40MyAwLjA3MiwyLjU0IDAuNDI1LDMuMjk4IC0yLjMyNCwwLjA2NCAtMy45NjMsLTAuMzIgLTQuODg2LC0xLjE1IC0wLjgzLC0wLjczNyAtMS4yMTIsLTEuOTUgLTEuMTUsLTMuNjUyIDAuMDMsLTEuMDY4IDAuMTk4LC0yLjEzNyAwLjQ4OCwtMy4yMDUgMC4yOSwtMS4wNyAwLjQ1NywtMi4wMjMgMC40ODgsLTIuODUzIDAuMDYyLC0xLjIzNCAtMC4zODQsLTEuODU3IC0xLjM1LC0xLjg1NyAtMC44NCwwIC0xLjc0LDAuOTU1IC0yLjcwNiwyLjg1MyAtMC45NjYsMS45IC0xLjUwNSwzLjg5IC0xLjYxLDUuOTU2IC0wLjA2LDEuODY3IDAuMDUzLDMuMTc0IDAuMzY0LDMuOSAtMi4yOTMsMC4wNjIgLTMuOTIsLTAuNDE1IC00Ljg3NiwtMS40NTIgLTAuNzk4LC0wLjg2IC0xLjE2LC0yLjE4IC0xLjEsLTMuOTQyIDAuMDMyLC0wLjg2IDAuMTg4LC0yLjA3NSAwLjQ1NywtMy42MiAwLjI4LC0xLjU0NiAwLjQyNSwtMi43NSAwLjQ1NywtMy42MiAwLjA2MiwtMC42MDMgLTAuMDgzLC0wLjkwMyAtMC40NDYsLTAuOTAzIC0wLjE5NywwIC0wLjc2OCwwLjM0IC0xLjcwMiwxLjAxNSBsIC0xLjIwMywtMS4zNDggYyAwLjE2OCwtMC4xMzUgMS4yMTYsLTEuMSAzLjE1NiwtMi45MDUgMS40LC0xLjI5NyAyLjM1NCwtMS45NyAyLjg1MiwtMi4wMDIgMC44NzIsLTAuMDczIDEuNTY3LDAuMjkgMi4xMDYsMS4wOCAwLjUzLDAuNzg3IDAuOCwxLjY5IDAuOCwyLjcyNyAwLDAuMzMyIC0wLjAzMiwwLjY1NCAtMC4xMDUsMC45NTQgMC40OTcsLTAuNzY2IDEuMDgsLTEuNDMgMS43NTIsLTIgMS41MzcsLTEuMzQgMy4yNiwtMi4wODYgNS4xNTcsLTIuMjUyIDEuNjQsLTAuMTM1IDIuOCwwLjI1IDMuNTA1LDEuMTUyIDAuNTcsMC43MzYgMC44MywxLjc4NCAwLjgsMy4xNTMgMC4yMzcsLTAuMTk4IDAuNDg2LC0wLjQxNiAwLjc0NiwtMC42NTQgMC43NjcsLTAuOTAzIDEuNTE0LC0xLjYyIDIuMjUsLTIuMTQ4IDEuMjM1LC0wLjkwMiAyLjUyLC0xLjQgMy44NiwtMS41MDQgMS41OTcsLTAuMTM1IDIuNzUsMC4yNSAzLjQ1NCwxLjE1MiAwLjYwMiwwLjcyNiAwLjg3LDEuNzc0IDAuOCwzLjE0MyAtMC4wMzIsMC45MzMgLTAuMjYsMi4yOCAtMC42NzUsNC4wNjUgLTAuNDE2LDEuNzczIC0wLjYyNCwyLjggLTAuNjI0LDMuMDcgLTAuMDMsMC42OTUgMC4wMywxLjE4MiAwLjE5NywxLjQ0MiAwLjE2NiwwLjI3IDAuNTcsMC4zOTQgMS4yMDMsMC4zOTQgMC40NjcsMCAxLjI5NywtMC40OTcgMi41LC0xLjQ4MiAwLjk5NiwtMC44MiAxLjgxNiwtMS41OTggMi40NSwtMi4zMjQgbCAwLjk2MywxLjI1NCBtIDE4Ljc2NSwtMC4wNTIgYyAtMC45NjUsMS41OTggLTIuODc0LDMuMTk1IC01LjcwNiw0Ljc5MyAtMy41MzgsMi4wMzIgLTcuMTI3LDMuMDUgLTEwLjc1OCwzLjA1IC0yLjcwNiwwIC00LjYzNiwtMC45MDQgLTUuODA4LC0yLjcgLTAuODMsLTEuMjMzIC0xLjIzNCwtMi42OTYgLTEuMjAzLC00LjQwNyAwLjAzLC0yLjY5OCAxLjIzNCwtNS4yNyAzLjYsLTcuNzEgMi42MDMsLTIuNjY1IDUuNjc0LC00LjAwMyA5LjIxLC00LjAwMyAzLjI3LDAgNSwxLjMyOCA1LjIwOCwzLjk5NCAwLjEzNSwxLjcwMiAtMC43OTgsMy40NDUgLTIuOCw1LjI0IC0yLjEzNywxLjk2IC00LjgyNCwzLjIxNSAtOC4wNiwzLjc0NCAwLjYsMC44MyAxLjUwNCwxLjI0NSAyLjcwNywxLjI0NSAyLjM5NiwwIDUuMDIsLTAuNjEzIDcuODYzLC0xLjgzNyAyLjAzMywtMC44NiAzLjYzLC0xLjc1MyA0LjgwMywtMi42NzYgbCAwLjk0NSwxLjI2NSBtIC0xMS4zNiwtNS4yMjggYyAwLjAzMiwtMC44OTIgLTAuMzMsLTEuMzUgLTEuMSwtMS4zNSAtMC45OTQsMCAtMi4wMSwwLjY4NiAtMy4wNDgsMi4wNjYgLTEuMDM4LDEuMzggLTEuNTY3LDIuNjk3IC0xLjU5OCwzLjk2MiAtMC4wMiwwIC0wLjAyLDAuMjE4IDAsMC42NDMgMS42MywtMC42IDMuMDUsLTEuNTE0IDQuMjQyLC0yLjczOCAwLjk2NiwtMS4wNTggMS40NjMsLTEuOTIgMS41MDUsLTIuNTgzIG0gMjQuOTQ2LDEuODY4IGMgLTAuMTM1LDMuMDcyIC0xLjI2NSw1LjcxNyAtMy40MDIsNy45NDcgLTIuMTM1LDIuMjMgLTQuNzksMy4zNSAtNy45NTUsMy4zNSAtMi42MzUsMCAtNC42MzcsLTAuODUgLTYuMDA2LC0yLjU1IC0wLjk5NywtMS4yNjcgLTEuNTU3LC0yLjg1NCAtMS42NSwtNC43NTIgLTAuMTY2LC0yLjg2MyAwLjg2LC01LjQ5OCAzLjEsLTcuODk0IDIuNDA4LC0yLjY2NSA1LjQyNywtMy45OTMgOS4wNTcsLTMuOTkzIDIuMzM0LDAgNC4wOTgsMC43ODggNS4zLDIuMzQ0IDEuMTMyLDEuNDQzIDEuNjUsMy4yOSAxLjU1Nyw1LjU1IG0gLTUuNjY0LC0wLjE4NSBjIDAuMDMsLTAuOTAzIC0wLjA5NCwtMS43MzMgLTAuMzc0LC0yLjQ4IC0wLjI4LC0wLjc0NyAtMC42OTUsLTEuMTMgLTEuMjI0LC0xLjEzIC0xLjcwMiwwIC0zLjEwMiwwLjkyMyAtNC4yMDIsMi43NiAtMC45MzMsMS41MDMgLTEuNDMsMy4xMSAtMS41MDQsNC44MTIgLTAuMDMsMC44NCAwLjExNCwxLjU3NyAwLjQ0NiwyLjIxIDAuMzY0LDAuNzM2IDAuODgyLDEuMSAxLjU1NiwxLjEgMS41MDUsMCAyLjc5LC0wLjg4MyAzLjg2LC0yLjY1NiAwLjg5MiwtMS40NzIgMS4zOCwtMy4wMDggMS40NCwtNC42MTUgaCAwLjAwMiB6IgogICAgIGZpbGw9IiMxMTIyMzMiCiAgICAgaWQ9InBhdGgyIgogICAgIHN0eWxlPSJmaWxsOiNmZmZmZmYiIC8+Cjwvc3ZnPgo=') calc(100% - 1rem) calc(100% - 1rem) / auto 2rem no-repeat;
+}
+.shortcode-vimeo img {
+    display: block;
+    aspect-ratio: 1.7777;
+    object-fit: cover;
+    margin: 0;
+}
+@media (max-width: 45rem) {
+    .shortcode-vimeo .playbutton {width: 16.5vw; height: 11vw; background-size: 5.3vw; border-radius: 1.78vw;}
+    .shortcode-vimeo::after {background-position: calc(100% - 3vw) calc(100% - 3vw); background-size: auto 5vw;}
+}
+
+
+/*------------------------*/
 /* meta
 /*------------------------*/
 
-.meta {color: var(--textDark); position: relative; margin: 0.5rem 0 1rem; gap: 1rem; font-size: 0.9rem; display: flex; align-items: center; gap: 1rem;}
+.meta {color: var(--textDarker); position: relative; margin: 0.5rem 0 1rem; gap: 1rem; font-size: 0.9rem; display: flex; align-items: center; gap: 1rem;}
 .meta > div {display: flex; align-items: center; gap: 0.4rem;}
 .meta img {height: 1rem; width: 1rem; position: relative; border-radius: 0; display: block; bottom: 0.1rem;}
-.meta a {color: var(--textDark); text-decoration: none;}
+.meta a {color: var(--textDarker); text-decoration: none;}
 .meta ul {margin: 0;display: flex;}
 .meta ul li {display: flex;}
 .meta ul li::before {content: ","; margin-right: 0.4rem;}

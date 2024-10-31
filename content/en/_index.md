@@ -18,7 +18,7 @@ Hugobricks is a free website theme for Hugo. It makes building Hugo websites chi
 
 ![](/uploads/illustrations/cuate/responsive.svg)
 
-Hugoplate is a comprehensive starter theme that includes everything you need to get started with your Hugo project. As all the Wordpress theme builders say: This is the last theme you will ever need. Included are:
+Hugobricks is a comprehensive starter theme that includes everything you need to get started with your Hugo project. As all the Wordpress theme builders say: This is the last theme you will ever need. Included are:
 
 - 10+ Pre-build pages
 - 99+ Google Pagespeed Score
@@ -40,6 +40,7 @@ We are constantly adding bricks and shortcodes to this theme. Are you missing a 
 {{< /brick_image >}}
 {{< brick_reviews >}}{{< /brick_reviews >}}
 {{< brick_features >}}
+
 ## The Ultimate Hugo theme
 
 Hugobricks covers all components you would like to have at hand. It is a power engine for your web oriented projects. It has excellent performance in all categories.

@@ -8,12 +8,13 @@
 /*------------------------*/
 
 :root {
+    --textDarker: #1e282d;
     --textDark: rgba(38, 50, 56, 1);
     --textMedium: rgba(38, 50, 56, 0.7);
     --borderMedium: rgba(38, 50, 56, 0.2);
     --borderLight: rgba(38, 50, 56, 0.075);
     --accent: #f4b500;
-    --textAccent: #e6ac00;
+    --accentDarker: #e6ac00;
     --light: rgba(38, 50, 56, 0.035);
 }
 /*------------------------*/
@@ -46,9 +47,8 @@ img {filter: grayscale(0);}
 
 .black_2_accent {filter: contrast(0.11) sepia(1) hue-rotate(340deg) contrast(13)!important;}
 
-
 /*------------------------*/
 /* scroll padding top
 /*------------------------*/
 
-html {scroll-padding-top: 8vw!important;}
+html {scroll-padding-top: 10rem;}

@@ -2,8 +2,8 @@
 /* preheader
 /*------------------------*/
 
-.preheader {background: var(--textDark); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid var(--light); font-weight: 600;}
-.preheader, .preheader a {color: white;}
+.preheader {background: var(--textDark); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 0.1rem solid var(--light); font-weight: 500;}
+.preheader, .preheader a {color: rgba(255,255,255,0.5);}
 .preheader .container {display: flex; justify-content: space-between;}
 .preheader .container a.icon {text-decoration: none; margin-right: 2rem;}
 .preheader .container a.icon img {
@@ -15,9 +15,12 @@
     bottom: 0.1em;
     filter: invert(1);
 }
-.preheader.light {background: var(--light); font-weight: normal;}
-.preheader.light, .preheader.light a {color: var(--textMedium);}
-.preheader.light .container a.icon img {filter: invert(0);}
+body.transparent_header .preheader, body.transparent_header .preheader a {color: white;}
+body.transparent_header .preheader .container a.icon img {filter: invert(1)!important;}
+body:not(.transparent_header) .preheader.light {background: var(--light); font-weight: normal;}
+body.transparent_header .preheader {background: transparent; position: absolute; width: 100%; z-index: 2; border-bottom: 0.1rem solid rgba(255,255,255,0.25);}
+body:not(.transparent_header) .preheader.light, body:not(.transparent_header) .preheader.light a {color: var(--textMedium);}
+body:not(.transparent_header) .preheader.light .container a.icon img {filter: invert(0);}
 @media (max-width: 600px) {
     .preheader .container {justify-content: center;}
     .preheader .container .icons {display: none;}
@@ -27,15 +30,23 @@
 /* header
 /*------------------------*/
 
+@keyframes slidedown {
+    from {transform: translateY(-7rem);}
+    to {transform: translateY(0);}
+}
 header {position: absolute; background: white; z-index: 9; width: 100%;}
+body.transparent_header header {padding-top: 2.35rem;}
 header > .container {padding-top: 1.5rem; padding-bottom: 1.5rem; position: relative;}
-header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white; position: fixed; top: 0;}
+header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white; position: fixed; top: 0; padding-top: 0!important;}
+body:not(.mobilemenu) header.sticky  {animation: slidedown 1s ease-in-out;}
 header.sticky > .container {padding-top: 0.75rem; padding-bottom: 0.75rem;}
 header a {text-decoration: none;}
 header ul {display: flex; justify-content: flex-end; gap: 2rem; margin: 0;}
 header ul li {list-style: none; position: relative;}
-header nav > ul > li a {font-weight: bold; color: var(--textDark); padding: 0.80rem 0 0.65rem 0; display: block; white-space: nowrap;}
-header nav > ul > li::after {
+header .navnav > ul > li a {color: var(--textMedium); padding: 0.80rem 0 0.65rem 0; display: block; white-space: nowrap;}
+header .navnav > ul > li > a {color: var(--textDarker);}
+footer ul li a:not(.button)::after,
+header .navnav > ul > li::after {
     content: "";
     position: absolute;
     left: 0;
@@ -46,9 +57,13 @@ header nav > ul > li::after {
     transform: scaleX(0);
     transition: transform 0.15s ease-in-out;
 }
-header nav > ul > li:hover::after,
-header nav > ul > li.active::after {transform: scaleX(1);}
-header nav > ul > li > ul {
+footer ul li a:after {background: var(--textMedium); opacity: 0.75;}
+footer ul li a:hover:after,
+header .navnav > ul:nth-child(2) {display: none;}
+header .navnav:not(.languages) > ul > li:hover::after,
+header .navnav:not(.languages) > ul > li:has(li.active)::after,
+header .navnav:not(.languages) > ul > li.active::after {transform: scaleX(1);}
+header .navnav > ul > li > ul {
     opacity: 0;
     transform: translateY(0.25rem);
     position: absolute;
@@ -64,17 +79,20 @@ header nav > ul > li > ul {
     display: block;
     font-size: 0.95rem;
 }
-header nav > ul > li > ul li a {padding: 0.3rem 2rem 0.3rem 1rem; font-weight: normal;}
-header nav > ul > li:hover > ul {
+header .navnav > ul > li > ul li a {padding: 0.3rem 2rem 0.3rem 1rem; font-weight: normal;}
+header .navnav > ul > li > ul li a:hover,
+header .navnav > ul > li > ul li.active a {color: var(--textDarker);}
+header .navnav > ul > li > ul li.active a {font-weight: bold; font-size: 1rem; color: var(--textDark);}
+header .navnav > ul > li:hover > ul {
     opacity: 1;
     transform: translateY(0);
     pointer-events: all;
 }
-header nav > ul > li.haschildren > a::after {
+header .navnav > ul > li.haschildren > a::after {
     content:""; 
     width: 0.3rem; 
     height: 0.3rem; 
-    border: 0.15rem solid var(--textDark); 
+    border: 0.1rem solid var(--textDarker); 
     border-left: 0; 
     border-top: 0;
     margin-left: 0.4rem;
@@ -90,19 +108,30 @@ header > .container > div:first-child {flex: 1; text-align: left;}
 header > .container.has_cta > div:nth-child(3) {flex: 1; text-align: right;}
 header > .container.has_cta ul {justify-content: center;}
 header + section.hasbackgroundcolor {margin-top: 0;}
-header + section:not(.bgimage),
-body.transparent_header header + section.bgimage .container {padding-top: 11rem!important;}
-body:not(.transparent_header) header + section.bgimage .container {padding-top: 13.5rem!important;}
+header + section:not(.bgimage) {padding-top: 11rem!important;}
+body.transparent_header header + section.bgimage .container {padding-top: 13.5rem!important;}
+body:not(.transparent_header) header + section.bgimage .container {padding-top: 11.5rem!important;}
+body:not(.transparent_header) header + section.bgimage .container h1:first-child {padding-top: 0.5rem;}
+header .languages {display: inline-block; margin-right: 0.75rem;}
+body.mobilemenu header .navnav {display: flex; flex-direction: column; justify-content: space-between;}
+body.mobilemenu header .navnav.languages {display: none;}
 
+header.dark {background: var(--textDarker);}
 body.transparent_header header:not(.sticky) {background: transparent;}
-body.transparent_header header:not(.sticky) a.logo,
-body.transparent_header header:not(.sticky) nav > ul > li > a {color: white;}
-body.transparent_header header:not(.sticky) nav > ul > li::after {background: white;}
-body.transparent_header header:not(.sticky) nav > ul > li.haschildren > a::after {border-color: white;}
-body.transparent_header header:not(.sticky) #togglemenu,
+header.dark a.logo, body.transparent_header header:not(.sticky) a.logo,
+header.dark .navnav > ul > li > a, body.transparent_header header:not(.sticky) .navnav > ul > li > a {color: white;}
+header.dark .navnav > ul > li::after, body.transparent_header header:not(.sticky) .navnav > ul > li::after {background: white;}
+body.mobilemenu header .navnav > ul > li.haschildren > a::after,
+header.dark .navnav > ul > li.haschildren > a::after, 
+body.transparent_header header:not(.sticky) .navnav > ul > li.haschildren > a::after {border-color: white;}
+header.dark #togglemenu span,
+header.dark a.logo > div img.inline,
+body.transparent_header header:not(.sticky) #togglemenu span,
 body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: invert(1)!important;}
+header.dark + section.bgimage,
 body.transparent_header header + section.bgimage {padding-top: 0!important;}
-body.transparent_header header:not(.sticky) .button {background: var(--accent); color: white;}
+header .navnav.languages {margin-right: 1rem;}
+header .navnav.languages > ul > li > a {font-size: 0.9rem;}
 
 /*------------------------*/
 /* footer
@@ -124,6 +153,8 @@ footer .container {padding-top: 3rem; padding-bottom: 3rem;}
 footer > div:last-child {border-top: 1px solid var(--borderLight); font-size: 0.9rem;}
 footer > div:last-child .container {justify-content: center; padding-top: 1.7rem; padding-bottom: 1.75rem;}
 footer ul.buttons {justify-content: flex-end; padding: 0;}
+footer select {padding: 0; border: 0; background: transparent; border-radius: 0; color: var(--textMedium); font-size: 0.9rem;}
+footer select option:not([disabled]) {color: initial;}
 @media (max-width: 1000px) {
     footer .container {flex-direction: column; gap: 1rem; align-items: center;}
     footer ul {margin: 0.25rem 0 0.5rem;}
@@ -132,9 +163,10 @@ footer ul.buttons {justify-content: flex-end; padding: 0;}
 footer.dark {background: var(--textDark);}
 footer.dark a.logo {color: white;}
 footer.dark > div:last-child {border-top: 1px solid rgba(255,255,255,0.1);}
-footer.dark, footer.dark > div:last-child a, footer.dark ul li a {color: rgba(255,255,255,0.5);}
+footer.dark select, footer.dark, footer.dark > div:last-child a, footer.dark ul li a {color: rgba(255,255,255,0.5);}
 footer.dark ul.buttons.social .button {background: var(--accent);}
 footer.dark a.logo img.inline {filter: invert(1)!important;}
+footer.dark ul li a:not(.button)::after {background: rgba(255,255,255,0.5);}
 
 /*------------------------*/
 /* mobile menu
@@ -142,7 +174,6 @@ footer.dark a.logo img.inline {filter: invert(1)!important;}
 
 #togglemenu {
     display: none; 
-    background: transparent url(/img/menu.svg) center center / 2rem auto no-repeat; 
     border: 0; 
     color: transparent; 
     overflow: hidden; 
@@ -154,13 +185,16 @@ footer.dark a.logo img.inline {filter: invert(1)!important;}
     right: clamp(1rem,4vw,3rem); 
     transition: none;
     position: absolute;
+    background: none;
+    padding: 0;
 }
-body.mobilemenu #togglemenu {display: block; transition: top 0.15s ease-in-out;}
+#togglemenu span {display: block; width: 100%; height: 100%; background: transparent url(/img/menu.svg) center center / 2rem auto no-repeat;}
+body.mobilemenu #togglemenu {display: block;}
 body.mobilemenu header.sticky + #togglemenu {position: fixed; top: 0.75rem; margin-top: 0;}
 body.mobilemenu header .nav {display: grid; transition: grid-template-rows 0.3s ease-in-out;}
 body.mobilemenu header > div.container {display: grid; grid-template-areas: "logo cta" "menu menu";}
 body.mobilemenu header > div.container > div:nth-child(1) {grid-area: logo;}
-body.mobilemenu header > div.container > div:nth-child(2) {
+body.mobilemenu header > div.container > div.nav {
     grid-area: menu; 
     position: fixed;
     background: var(--textDark);
@@ -177,9 +211,10 @@ body.mobilemenu header > div.container > div:nth-child(2) {
 }
 body.mobilemenu header > div.container > div:nth-child(3) {grid-area: cta;}
 body.mobilemenu header > .container.has_cta > div:nth-child(3) .button {margin-right: 3rem;}
-body.mobilemenu header nav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 3.85rem 0 4.5rem 0;}
-body.mobilemenu header nav > ul > li::after {content: none;}
-body.mobilemenu header nav > ul > li > ul {
+body.mobilemenu header .navnav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 2.5rem 0 4rem 0;}
+body.mobilemenu.menushown header .navnav > ul:nth-child(2) {margin-bottom: 2rem; display: block;}
+body.mobilemenu header .navnav > ul > li::after {content: none;}
+body.mobilemenu header .navnav > ul > li > ul {
     position: relative; 
     box-shadow: none; 
     margin: 0; 
@@ -191,24 +226,22 @@ body.mobilemenu header nav > ul > li > ul {
     background: transparent;
     border-radius: 0;
 }
-body.mobilemenu header nav > ul > li a {padding: 0.5rem 2.5rem 0.5rem 3rem; font-size: 1.15rem;}
-body.mobilemenu header nav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 5rem;}
+body.mobilemenu header .navnav > ul li.active > a {color: var(--accent)!important; font-weight: bold; font-size: 1.25rem;}
+body.mobilemenu header .navnav > ul > li.active.haschildren > a::after {border-color: var(--accent);}
+body.mobilemenu header .navnav > ul > li a {padding: 0.45rem 2.5rem 0.45rem 3rem; font-size: 1.15rem;;}
+body.mobilemenu header .navnav > ul > li > ul > li:last-child {margin-bottom: 0.5rem;}
+body.mobilemenu header .navnav > ul > li > ul {max-height: 0px; height: 0; overflow: hidden; transition: max-height 0.5s ease-in;}
+body.mobilemenu header .navnav > ul > li.active ul,
+body.mobilemenu header .navnav > ul > li:has(.active) ul {max-height: 700px; height: auto;}
+body.mobilemenu header .navnav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 5rem;}
 
 /*------------------------*/
 /* menu shown
 /*------------------------*/
 
-body.mobilemenu.menushown #togglemenu {
-    background: transparent url(/img/close.svg) center center / 2rem auto no-repeat; 
-    z-index: 10; 
-    position: fixed; 
-    top: 1.5rem;
-    filter: invert(1);
-}
-body.mobilemenu.menushown .preheader + header #togglemenu {top: 3.75rem;}
-body.mobilemenu.menushown header.sticky #togglemenu {top: 0.75rem;}
-body.mobilemenu.menushown header > div.container > div:nth-child(2) {transform: translateX(0%);}
-body.mobilemenu.menushown header nav > ul > li a {color: white;}
+body.mobilemenu.menushown header > div.container > div.nav {transform: translateX(0%); box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);}
+body.mobilemenu.menushown header > div.container::before {content: ""; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 2;}
+body.mobilemenu.menushown header .navnav > ul > li a {color: white;}
 
 @media (max-width: 450px) {
     header .button {display: none;}

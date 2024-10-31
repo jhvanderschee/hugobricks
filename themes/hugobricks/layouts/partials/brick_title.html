@@ -15,7 +15,7 @@
 {{- if lt (len $inner) 3 }}{{ $empty = true }}{{ end }}
 {{- if $imagesrc -}}
 <section class="title bgimage hasbackgroundcolor">
-    <div class="bgimage" style="background: url('{{ ((resources.GetMatch $imagesrc).Fill `3000x1000 jpg Smart q50`).RelPermalink }}') center center / cover no-repeat;">
+    <div class="bgimage" style="background: url('{{ ((resources.GetMatch $imagesrc).Fill `3000x1000 webp Center q50`).RelPermalink }}') center center / cover no-repeat;">
         {{ if $empty }}{{ else }}<div class="overlay"></div>{{ end }}
         <div class="container small">
             {{ $inner | safeHTML }}

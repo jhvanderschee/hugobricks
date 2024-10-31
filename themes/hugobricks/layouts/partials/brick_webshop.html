@@ -1,0 +1,8 @@
+<section class="webshop-brick">
+    <div class="product-details">
+        {{ with .Get "title" }}
+        <h2>{{ . }}</h2>
+        {{ end }}
+        {{ .Inner }}
+    </div>
+</section>

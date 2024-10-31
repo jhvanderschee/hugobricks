@@ -14,6 +14,7 @@ section.about .container .buttons {justify-content: center;}
 
 section.intro {text-align: center; background: white; position: relative;}
 section.intro img {margin: 3rem auto 0; width: 38rem;}
+section.intro img.is_svg {max-width: 85%;}
 section.intro h1 + p {padding-top: 0;}
 
 /*------------------------*/
@@ -22,6 +23,7 @@ section.intro h1 + p {padding-top: 0;}
 
 section.post .container {max-width: 50rem;}
 section.post .container h1 {text-align: center;}
+section.post .container h1:last-child {margin-bottom: 3rem;}
 section.post .container .featuredimage {border-radius: 1rem; margin-bottom: 3rem;}
 section.post .container.wide {max-width: 62rem;}
 section.post .container.post p:first-child,
@@ -37,6 +39,7 @@ section.cta .twocols {display: flex;}
 section.cta .twocols .text {flex: 2;}
 section.cta .twocols .image {flex: 1;}
 section.cta .twocols .image img {display: inline-block; width: 20rem;}
+section.cta .twocols .image img.is_svg {margin: 0!important;}
 @media (max-width: 600px) {
     section.cta .twocols {flex-direction: column;}
     section.cta .twocols .text {text-align: center;}
@@ -52,7 +55,9 @@ section.image.alt {background: var(--light); border-top: 0.1rem solid var(--ligh
 section.image.alt .container {direction: rtl;}
 section.image.alt .container > div {direction: ltr;}
 section.image .twocols .image {text-align: center; position: relative; height: 100%;}
-section.image .twocols .image img {width: auto; display: block; max-width: 85%; width: 100%; margin: auto;}
+section.image .twocols .image img {width: auto; display: block; width: 100%; margin: auto; border-radius: 1rem;}
+section.image .twocols .image img.is_svg {max-width: 85%; border-radius: 0;}
+section.image .twocols {row-gap: 2.5rem;}
 @media (max-width: 600px) {
     section.image .twocols .image {text-align: left;}
 }
@@ -69,6 +74,14 @@ section.contact .twocols {align-items: flex-start;}
 
 section.title .container.small {text-align: center;}
 section.title:not(.bgimage) {padding-bottom: 3.25rem;}
+section.title ul.breadcrumbs li a {color: var(--accent);}
+section.title.bgimage ul.breadcrumbs:first-child {margin-top: -2rem;}
+
+
+/*------------------------*/
+/* brick quote
+/*------------------------*/
+section.title.quote:not(.bgimage) h2 + p {color: var(--textMedium);}
 
 /*------------------------*/
 /* brick wide
@@ -76,7 +89,7 @@ section.title:not(.bgimage) {padding-bottom: 3.25rem;}
 
 section.wide {max-width: 60rem; margin-left: auto; margin-right: auto;}
 section.wide h1 {text-align: center;}
-section.wide h1 + * {padding-top: 1.25rem;}
+section.wide h1 + *:not(.breadcrumbs) {padding-top: 1.25rem;}
 
 /*------------------------*/
 /* brick map
@@ -106,7 +119,7 @@ section.reviews .container.small {margin-bottom: 4.25rem; text-align: center;}
 ul.reviews li div.box {display: flex; flex-direction: column-reverse; padding: 2.25rem 2rem; height: 100%; justify-content: space-between; gap: 2rem;}
 ul.reviews li div.box .avatar {height: 3.25rem; width: 3.25rem;}
 ul.reviews li div.box h3 {margin: 0; line-height: 1.45; font-size: 1.1rem; padding: 0;}
-ul.reviews li div.box .function {color: var(--textDark); line-height: 1.45;}
+ul.reviews li div.box .function {color: var(--textDarker); line-height: 1.45;}
 ul.reviews li div.box .stars {display: flex; gap: 0.25rem; margin: 0 0 1.5rem;}
 ul.reviews li div.box .stars img {height: 1rem;}
 ul.reviews li div.box > div:nth-child(1) {display: flex; gap: 1rem; align-items: center;}
@@ -128,9 +141,29 @@ ul.features li.has_icon p.image img {aspect-ratio: 1; object-fit: contain; width
 
 
 /*------------------------*/
+/* brick blocks
+/*------------------------*/
+
+section.blocks .container.small {margin-bottom: 4rem; text-align: center;}
+section.blocks + section.title {padding-top: 0;}
+ul.blocks {gap: 1.55rem 1.5rem; padding-bottom: 1rem;}
+ul.blocks li {text-align: center; aspect-ratio: 1.5; position: relative; border-radius: 1rem;}
+ul.blocks li.hasimage {overflow: hidden;}
+ul.blocks li:has(a[href]):hover {border: 1px solid rgba(0,0,0,0.2);}
+ul.blocks li a {display: flex; width: 100%; position: absolute; height: 100%; z-index: 1; padding: 1.5rem!important; flex-direction: column; justify-content: center; text-decoration: none;}
+ul.blocks li.hasimage a {color: white;}
+ul.blocks li.hasimage a::before {content: ""; background: rgba(0,0,0,0.32); position: absolute; left: 0; top: 0; height: 100%; width: 100%; z-index: -1;}
+ul.blocks li.box {margin: 0!important; padding: 0;}
+ul.blocks li.hasimage div.img {margin: -1.5rem; position: absolute; z-index: -2;}
+ul.blocks li.hasimage div.img img {aspect-ratio: 1.5; object-fit: cover; width: 100%;}
+ul.blocks li h3 {padding-top: 0; }
+ul.blocks li.hasimage h3 {color: white;}
+
+/*------------------------*/
 /* brick prices
 /*------------------------*/
 
+section.prices {padding-bottom: 5rem;}
 section.prices .container.small {margin-bottom: 4rem; text-align: center;}
 section.prices + section.title {padding-top: 0;}
 ul.prices {max-width: 70rem; margin: 0 auto;}
@@ -150,13 +183,13 @@ ul.prices li div.box p:first-child strong {
     font-size: 0.8rem; 
     letter-spacing: 0.15rem; 
 }
-ul.prices li div.box ul {text-align: left; display: inline-block; margin: 1.5rem 0 0;}
+ul.prices li div.box ul {text-align: left; display: inline-block; margin: 1.5rem 0 2.5rem;}
 ul.prices li div.box ul li::before {content: "✓"; display: inline-block; padding: 0 0.15rem;}
 ul.prices li div.box h3 {padding: 0.25rem;}
 ul.prices li div.box h3 strong {font-size: 3rem; padding: 0 0.25rem; vertical-align: bottom; line-height: 0.9; letter-spacing: -0.1rem;}
 ul.prices li div.box h3 em {vertical-align: top; font-style: normal;}
-ul.prices li div.box a.button {margin-top: 2.5rem;}
 @media (min-width: 65rem) {
+    section.prices {padding-bottom: 7rem;}
     section.prices .container.small {margin-bottom: 6rem;}
     ul.prices > li div.box {padding: 3.25rem 2rem 4rem;}
     ul.prices > li:nth-child(1) div.box {border-top-right-radius: 0; border-bottom-right-radius: 0;}
@@ -175,7 +208,7 @@ ul.prices li div.box a.button {margin-top: 2.5rem;}
 /*------------------------*/
 
 section.posts .container.small {margin-bottom: 4rem; text-align: center;}
-section.posts .grid {grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 2rem;}
+section.posts .grid {grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 1.55rem 2rem;}
 section.posts .grid .item .img {border-radius: 1rem; margin-bottom: 0.251rem; overflow: hidden;}
 section.posts .grid .item .img img {display: block;}
 section.posts .grid .item h3 {padding-top: 1rem;}
@@ -235,7 +268,9 @@ section.docs .container .content .breadcrumbs {text-align: left;}
 section.docs .container .content h1 {font-size: 3rem;}
 
 section.docs .container .menu h3 {display: none;}
-section.docs .container .menu ul.nestedmenu {margin-left: 0; position: sticky; top: 8rem; margin-right: 5rem;}
+section.docs .container .menu ul.nestedmenu {margin-left: 0; margin-right: 5rem; top: 8rem}
+header.sticky + section.docs .container .menu ul.nestedmenu {position: sticky;}
+body:not(.mobilemenu) header.sticky + section.docs .container .menu ul.nestedmenu {animation: slidedown 1s ease-in-out;}
 section.docs .container .menu ul.nestedmenu li {list-style: none; padding: 0.15rem 0;}
 section.docs .container .menu ul.nestedmenu li > ul {display: none;}
 section.docs .container .menu ul.nestedmenu li > a::before {content: " "; display: inline-block; margin-right: 0.75rem; width: 0.5rem; text-align: center;}
@@ -245,7 +280,7 @@ section.docs .container .menu ul.nestedmenu li.haschildren.active > a::before {t
 section.docs .container .menu ul.nestedmenu li.active > ul {display: block;}
 section.docs .container .menu ul.nestedmenu li.active > ul li:last-child {margin-bottom: 0.75rem;}
 section.docs .container .menu ul.nestedmenu li > a {color: var(--textMedium); text-decoration: none; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block;}
-section.docs .container .menu ul.nestedmenu li.current > a {color: var(--textAccent);}
+section.docs .container .menu ul.nestedmenu li.current > a {color: var(--accentDarker);}
 
 @media (max-width: 65rem) {
     section.docs {margin-top: -2rem;}
@@ -254,4 +289,29 @@ section.docs .container .menu ul.nestedmenu li.current > a {color: var(--textAcc
     section.docs .container .menu h3 {display: block;}
     section.docs .container .content {padding-bottom: 0;}
     section.docs .container .menu ul.nestedmenu {margin-top: 0.75rem;}
+}
+
+/*------------------------*/
+/* brick webshop Under construction \!/
+/*------------------------*/
+
+.webshop-brick {
+    padding: 2em;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.webshop-brick .product-details h2 {
+    font-size: 1.75em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.webshop-brick .product-details p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
 }

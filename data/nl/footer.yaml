@@ -1,0 +1,22 @@
+logo_image:
+menuitems:
+  - title: Over ons
+    link:  /nl/
+  - title: Elementen
+    link:  /nl/
+  - title: Privacyverklaring
+    link:  /nl/
+socials:
+  - title: Facebook
+    link: https://facebook.com
+    logo_image: /img/facebook.svg
+  - title: Mastodon
+    link: https://joinmastodon.org
+    logo_image: /img/mastodon.svg      
+  - title: Instagram
+    link: https://instagram.com
+    logo_image: /img/instagram.svg
+  - title: Email
+    link: "mailto:?subject:Hugobricks website"
+    logo_image: /img/email.svg
+footer_text: Dit thema is open source. Meer info vind je op [Github](https://github.com/jhvanderschee/hugobricks)!

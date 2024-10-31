@@ -9,7 +9,11 @@
     <link rel="canonical" href="{{ .Permalink }}" />
     <link rel="shortcut icon" href="{{ .Site.Data.settings.favicon_image }}">
     
-    <link href="/css/style.css?version={{ now }}" rel="stylesheet">
+    {{- $color := "style" -}}
+    {{- if .Params.color_name -}}{{- $color = .Params.color_name -}}{{- end -}}
+    {{- if .Site.Data.settings.color_name -}}{{- $color = .Site.Data.settings.color_name -}}{{- end -}}
+    <link href="/css/{{ $color }}.css?version={{ now }}" rel="stylesheet">
+
   </head>
   <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }} filename_{{ with .File }}{{ .BaseFileName }}{{ end }}">
     <script>      
@@ -22,55 +26,97 @@
     </script>
     <div class="innerbody">
     {{- if .Site.Data.settings.preheader.active -}}
-    <div class="preheader{{ if .Site.Data.settings.preheader.is_light }} light{{- end -}}">
+    <div class="preheader {{ if .Params.preheader_is_light  }}light{{ else }}{{ if and (ne .Params.preheader_is_light false) .Site.Data.settings.preheader.is_light }}light{{ end }}{{ end }}">
       <div class="container">
         <div class="icons">
           {{- if (index .Site.Data .Language.Lang).general.contact.phone -}}
-            <a href="tel:{{ replace (index .Site.Data .Language.Lang).general.contact.phone ` ` `` }}" class="icon"><img src="/img/phone.svg" alt="{{ (index .Site.Data .Language.Lang).general.contact.phone }}" class="black_2_textMedium" /> {{ (index .Site.Data .Language.Lang).general.contact.phone }}</a>
+            <a href="tel:{{ replace (index .Site.Data .Language.Lang).general.contact.phone ` ` `` }}" class="icon"><img src="/img/phone.svg" alt="Phone icon" class="black_2_textMedium" /> {{ (index .Site.Data .Language.Lang).general.contact.phone }}</a>
           {{- end -}}
           {{- if (index .Site.Data .Language.Lang).general.contact.email -}}
-            <a href="mailto:{{ (index .Site.Data .Language.Lang).general.contact.email }}" class="icon"><img src="/img/email.svg" alt="{{ (index .Site.Data .Language.Lang).general.contact.email }}" class="black_2_textMedium" /> {{ (index .Site.Data .Language.Lang).general.contact.email }}</a>
+            <a href="mailto:{{ (index .Site.Data .Language.Lang).general.contact.email }}" class="icon"><img src="/img/email.svg" alt="Email icon" class="black_2_textMedium" /> {{ (index .Site.Data .Language.Lang).general.contact.email }}</a>
           {{- end -}}
         </div>
         <div>
-          {{- if .Site.Data.settings.preheader.text -}}{{ .Site.Data.settings.preheader.text }}{{- end -}}
+          {{- if (index .Site.Data .Language.Lang).header.preheader -}}{{ (index .Site.Data .Language.Lang).header.preheader }}{{- end -}}
         </div>
       </div>  
     </div>
     {{- end -}}
-    <header>
-      <div class="container {{ if (index .Site.Data .Language.Lang).header.cta.active }}has_cta{{ end }}">
+    <header class="{{ if .Params.dark_header }}dark{{ else }}{{ if and (ne .Params.dark_header false) .Site.Data.settings.dark_header }}dark{{ end }}{{ end }}">
+      <div class="container {{ if (index .Site.Data .Language.Lang).header.cta.active }}has_cta{{ end }}" onclick="document.body.classList.remove('menushown');">
         <div>
           {{ partial "logo.html" . }}
         </div>
         <div class="nav">
-          <nav>
+          <nav class="navnav">
             <ul>
               {{ range (index .Site.Data .Language.Lang).header.menuitems }}
-                <li class="{{ if eq .link `/` }}{{ if eq $.RelPermalink `/` }}active{{ end }}{{ else }}{{ if in $.RelPermalink .link }}active{{ end }}{{ end }}{{ if (index .items 0).title }} haschildren{{ end }}"><a href="{{ .link }}">{{ .title }}</a>
+                <li class="{{ if eq .link `/` }}{{ if eq $.RelPermalink `/` }}active{{ end }}{{ else }}{{ if (hasPrefix $.RelPermalink .link) }}active{{ end }}{{ end }}{{ if (index .items 0).title }} haschildren{{ end }}"><a href="{{ .link }}" onclick="navClick(event, this);">{{ .title }}</a>
                   {{ if (index .items 0).title }}
                   <ul>
                     {{ range .items }}
-                      <li><a href="{{ .link }}">{{ .title }}</a></li>
+                      <li class="{{ if hasPrefix $.Page.RelPermalink .link }}active{{ end }}"><a href="{{ .link }}">{{ .title }}</a></li>
                     {{ end }}
                   </ul>
                   {{ end }}
                 </li>
               {{ end }}
             </ul>
+            <ul>
+              {{ range .Site.Languages }}
+              {{ if ne .Lang $.Site.Language.Lang }}<li><a href="/{{ .Lang }}/">&rarr; <span style="font-size: 95%;">{{ upper .Lang }}</span></a></li>{{ end }}
+              {{ end }}
+            </ul>
           </nav>
         </div>
         {{ if (index .Site.Data .Language.Lang).header.cta.active }}
         <div>
-          <a href="{{ (index .Site.Data .Language.Lang).header.cta.link }}" class="button ghost smaller">{{ (index .Site.Data .Language.Lang).header.cta.title }}</a>
+          {{- if gt (len .Site.Languages) 1 -}}
+          <div class="navnav languages">
+            <ul>
+              <li class="haschildren">
+                <a href="/{{ .Site.Language.Lang }}/">{{ .Site.Language.Lang | upper }}</a>
+                <ul>
+                  {{ range .Site.Languages }}
+                  {{ if ne .Lang $.Site.Language.Lang }}<li><a href="/{{ .Lang }}/">{{ .LanguageName }}</a></li>{{ end }}
+                  {{ end }}
+                </ul>
+              </li>
+            </ul>
+          </div>
+          {{- end -}}
+          <a href="{{ (index .Site.Data .Language.Lang).header.cta.link }}" class="button smaller">{{ (index .Site.Data .Language.Lang).header.cta.title }}</a>
         </div>
         {{ end }}
-        <button id="togglemenu" onclick="document.body.classList.toggle('menushown');">Toggle menu</button>
+        <button id="togglemenu" onclick="event.stopPropagation(); document.body.classList.add('menushown');"><span class="black_2_textDark">Toggle menu</span></button>
+        <script>
+          function navClick(event,el) {
+            var li = el.parentElement;
+            if(document.body.classList.contains('mobilemenu')) {
+              if (li.classList.contains('haschildren')) {
+                var ul = li.querySelector('ul');
+                if(ul) {
+                  if(window.getComputedStyle(ul).maxHeight == '0px') {
+                    var uls = document.querySelectorAll('nav ul ul');
+                    uls.forEach(function(u) {
+                      u.style.height = '0px';
+                      u.style.maxHeight = '0px';
+                    });
+                    ul.style.height = 'auto';
+                    ul.style.maxHeight = '700px';
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                }
+              }
+            }
+          }
+        </script>
     </header>
 
     {{- block "content" . -}}{{- end -}}
 
-    <footer class="{{ if (index .Site.Data .Language.Lang).footer.dark_footer }}dark{{ end }}">
+    <footer class="{{ if .Params.dark_footer }}dark{{ else }}{{ if and (ne .Params.dark_footer false) .Site.Data.settings.dark_footer }}dark{{ end }}{{ end }}">
       <div>
         <div class="container">
           <div>
@@ -91,6 +137,11 @@
       <div>
         <div class="container">
 		      <div>{{ markdownify (index .Site.Data .Language.Lang).footer.footer_text }}</div>
+          {{- if gt (len .Site.Languages) 1 -}}
+          <div>
+            <select aria-label="Change language" onchange="if(this.value) document.location.href = '/'+this.value+'/';"><option>Change language</option>{{ range .Site.Languages }}<option value="{{ .Lang }}" {{ if eq page.Language.Lang .Lang }}disabled{{ end }}>{{ .LanguageName }}</option>{{ end }}</select></div>
+          </div>
+          {{- end -}}
 		    </div>
   		</div>
 		</footer>
@@ -112,5 +163,3 @@
       </div>
   </body>
 </html>
-
-

@@ -1,0 +1,36 @@
+
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/blocks.md' file." -}}
+    {{- with page.Site.GetPage "bricks/features.md" -}}
+        {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+{{- $parts := split $inner "---" -}}
+<section class="blocks">
+    <div class="container small">
+        {{- markdownify (index $parts 0) -}}
+    </div>
+    <div class="container">
+        <ul class="grid blocks">
+            {{- range after 1 $parts -}}
+                {{- $i := markdownify . -}}
+                {{- $image := index (findRE `(?s)<p><img.*?p>` $i 1) 0 -}}
+                {{- $imagesrc := index (split $image `"`) 1 -}}
+                {{- $i = replace $i $image "" 1 -}}
+                
+                {{- $link := index (findRE `(?s)<p><a href=.*?\<\/a></p>` $i 1) 0 -}}
+                {{- $href := index (split $link `"`) 1 -}}
+                {{- $i = replace $i $link "" 1 -}}
+                <li class="{{ if $image }}hasimage{{ else }}box{{ end }}">
+                    <a {{ if $href -}}href="{{ $href | safeHTML }}"{{- end -}}>
+                    {{ if $image }}<div class="img"><img src="{{- $imagesrc -}}" alt="" /></div>{{ end }}
+                    {{- $i | safeHTML -}}
+                    </a>
+                </li>
+            {{- end -}}
+        </ul>
+    </div>
+</section>
+
+

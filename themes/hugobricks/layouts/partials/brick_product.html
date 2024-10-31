@@ -1,0 +1,26 @@
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/product.md' file." -}}
+    {{- with page.Site.GetPage "bricks/product.md" -}}
+        {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+<section class="product">
+    <div class="container twocols">
+        <div class="image">
+            <img src="{{ page.Params.image }}" alt="{{ page.Title }}">
+        </div>
+        <div class="text">
+        {{- markdownify $inner -}}
+        <form method="post">
+            <label for="variant" style="text-transform: capitalize;">{{ page.Params.variant_type }}</label><br>
+            <select id="variant" name="variant">
+                {{ range page.Params.variants }}
+                    <option value="{{ .sku }}">{{ .name }}</option>
+                {{ end }}
+            </select>
+        </form>
+        <p><a href="/checkout" class="button">Buy me</a></p>
+        </div>
+    </div>
+</section>

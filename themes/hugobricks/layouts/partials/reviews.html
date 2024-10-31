@@ -12,11 +12,11 @@
             </div>
             <div>
                 <div class="stars">
-                    <img src="/img/star.svg" alt="star" class="black_2_accent" />
-                    <img src="/img/star.svg" alt="star" class="black_2_accent" />
-                    <img src="/img/star.svg" alt="star" class="black_2_accent" />
-                    <img src="/img/star.svg" alt="star" class="black_2_accent" />
-                    <img src="/img/star.svg" alt="star" class="black_2_accent" />
+                    {{ if gt .stars 0 }}<img src="/img/star.svg" alt="star" class="black_2_accent" />{{ end }}
+                    {{ if gt .stars 1 }}<img src="/img/star.svg" alt="star" class="black_2_accent" />{{ end }}
+                    {{ if gt .stars 2 }}<img src="/img/star.svg" alt="star" class="black_2_accent" />{{ end }}
+                    {{ if gt .stars 3 }}<img src="/img/star.svg" alt="star" class="black_2_accent" />{{ end }}
+                    {{ if gt .stars 4 }}<img src="/img/star.svg" alt="star" class="black_2_accent" />{{ end }}
                 </div>
                 <p>{{ .description }}</p>
             </div>

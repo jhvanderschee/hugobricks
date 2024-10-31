@@ -1,12 +1,24 @@
+{{- $logo := (index .Site.Data .Language.Lang).footer.logo_image -}}
+{{- if .Params.site_logo_image -}}{{- $logo = .Params.site_logo_image -}}{{- end -}}
+
+{{- $favicon := .Site.Data.settings.favicon_image -}}
+{{- if .Params.site_favicon_image -}}{{- $favicon = .Params.site_favicon_image -}}{{- end -}}
+
+{{- $title := (index .Site.Data .Language.Lang).general.title -}}
+{{- if .Params.site_title -}}{{- $title = .Params.site_title -}}{{- end -}}
+
+{{- $subtitle := (index .Site.Data .Language.Lang).header.logo_subtitle -}}
+{{- if .Params.site_logo_subtitle -}}{{- $subtitle = .Params.site_logo_subtitle -}}{{- end -}}
+
 <a href="{{ relLangURL `/` }}#top" class="logo">
-    {{ if (index .Site.Data .Language.Lang).footer.logo_image }}
-        <img src="{{ (index .Site.Data .Language.Lang).footer.logo_image }}" alt="{{ (index .Site.Data .Language.Lang).general.title }} logo" />
+    {{ if $logo }}
+        <img src="{{ $logo }}" alt="{{ (index .Site.Data .Language.Lang).general.title }} logo" />
     {{ else }}
-        <div class="{{ if (index .Site.Data .Language.Lang).header.logo_subtitle }}has_subtitle{{ end}}">
-            <img src="{{ .Site.Data.settings.favicon_image }}" alt="{{ (index .Site.Data .Language.Lang).general.title }} logo" class="inline black_2_textDark" />
+        <div class="{{ if $subtitle }}has_subtitle{{ end}}">
+            <img src="{{ $favicon }}" alt="{{ $title }} logo" class="inline black_2_textDark" />
             <div>
-                <span>{{ (index .Site.Data .Language.Lang).general.title }}</span>
-                {{ if (index .Site.Data .Language.Lang).header.logo_subtitle }}<span>{{ (index .Site.Data .Language.Lang).header.logo_subtitle }}</span>{{ end }}
+                <span>{{ $title }}</span>
+                {{ if $subtitle }}<span>{{ $subtitle }}</span>{{ end }}
             </div>
         </div>
     {{ end }}
