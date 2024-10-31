@@ -12,7 +12,6 @@ img {filter: grayscale(100%);}
 
 * {padding: 0; margin: 0; box-sizing: border-box;}
 html {font-size: clamp(14px, 2vw, 16px); line-height: 1.7; height: 100%; scroll-behavior: smooth; background: var(--light);}
-body.hasstickyheader *[id] {scroll-margin-top: 10rem;}
 body {font-size: 1rem; color: var(--textMedium); background: var(--light);}
 .innerbody {margin: 0 auto; background: white;}
 .innerbody, .innerbody header {max-width: 100%;}
