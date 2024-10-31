@@ -14,7 +14,7 @@
                 <img src="/img/icons/material-symbols/200/rounded/label-fill.svg"class="black_2_textDark" alt="" />
                 <ul>
                     {{ range page.Params.tags }}
-                    <li><a href="/blog/?tag={{ . }}">{{ . }}</a>
+                    <li><a href='{{ relLangURL "" }}blog/?tag={{ . }}'>{{ . }}</a>
                     {{ end }}
                 </ul>
             </div>
