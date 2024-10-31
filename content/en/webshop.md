@@ -2,7 +2,6 @@
 title: Webshop TEST page 
 ---
 
-{{< brick_webshop title="Exclusive Product" >}}
 # Amazing Product TEST
 
 This product is crafted to perfection. Limited stock available.
@@ -12,4 +11,5 @@ This product is crafted to perfection. Limited stock available.
 {{< button "Buy Now" "/checkout" >}}
 
 ![Product Image](/uploads/special_product.png)
-{{< /brick_webshop >}} 
+
+

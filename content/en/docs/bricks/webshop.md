@@ -27,8 +27,6 @@ Discover the perfect product to meet your needs.
 {{</* /brick_webshop */>}}
 ```
 
-<!--{{< brick_webshop >}}{{< /brick_webshop >}}-->
-
 
 ## TODO What about the Products 'content' strategy ?
 
