@@ -12,4 +12,4 @@ This product is crafted to perfection. Limited stock available.
 {{< button "Buy Now" "/checkout" >}}
 
 ![Product Image](/uploads/special_product.png)
-{{< /brick_webshop >}}  <!-- Notice: No space after the opening braces -->
+{{< /brick_webshop >}} 
