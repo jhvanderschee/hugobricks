@@ -15,9 +15,14 @@ window.addEventListener('scroll', function ( e ) {
 
         // Run our scroll functions
         var doc = document.documentElement;
-        var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-        if(top>100) document.querySelector('header').classList.add('sticky');
-        else document.querySelector('header').classList.remove('sticky');
+        var top = (doc.scrollTop)  - (doc.clientTop || 0);
+        if(top>100) {
+            document.querySelector('header').classList.add('sticky');
+            document.body.classList.add('hasstickyheader');
+        } else {
+            document.querySelector('header').classList.remove('sticky');
+            document.body.classList.remove('hasstickyheader');
+        }
 
 	});
 
