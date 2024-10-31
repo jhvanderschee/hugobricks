@@ -98,6 +98,13 @@ Hugobricks is build with the regular [Hugo](https://gohugo.io/overview/introduct
 
 Make your wishlist. Missing a given Hugobrick? [Let us know.](https://github.com/jhvanderschee/hugobricks/issues/5)
 
+## Documentation 
+See (and contribute:)
+
+DOCUMENTATION.md
+
 ## Credits and licenses
 
 The functionality is inspired by the many [Gutenberg Block Plugins](https://wpastra.com/plugins/wordpress-gutenberg-block-plugins/) that are available online. The design is based on the MIT licensed [Hugoplate from Zeon Studio](https://github.com/zeon-studio/hugoplate.git). The fonts and icons are Apache Licensed and come from [Google Fonts](https://fonts.google.com) and [Google Material Symbols](https://fonts.google.com/icons). The illustrations are free to use but require [an attribution to Storyset](https://storyset.com/terms). The avatars are CC0 licensed and come from [Pravatar](https://www.pravatar.cc/images). The paragliding photos are provided by and property of the [Flyspot Airsports & Travel Agency](https://flyspot.com.tr/) and cannot be used elsewhere without written permission of Flyspot. All other photos come from [Unsplash](https://unsplash.com/license) and are free to use. The social media icons (Facebook, Instagram, etc) belong to the respective social networks/their owners.
+
+
