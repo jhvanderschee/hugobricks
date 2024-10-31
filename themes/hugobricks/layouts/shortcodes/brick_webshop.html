@@ -7,8 +7,18 @@
 
 	 ## Ready to build your next Webshop ?
 
-	 {{< /brick_cta >}}
+	 {{< /brick_webshop >}}
      
 	 */}}
--->
-{{- partial "webshop_cta.html" .Inner -}}
+
+deprecated	\!/  {{- partial "webshop.html" .Inner -}}
+--
+
+<section class="webshop-brick">
+    <div class="product-details">
+        {{ with .Get "title" }}
+        <h2>{{ . }}</h2>
+        {{ end }}
+        {{ .Inner }}
+    </div>
+</section>

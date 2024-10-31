@@ -1,13 +1,16 @@
 ---
-title: Webshop Product TEST
+title: Webshop Product
 ---
 
-# Introducing Our Exclusive Product
+{{< brick_webshop  >}}
+# Amazing Product
 
 Enjoy this top-quality product, designed to elevate your experience. Available for a limited time only!
+This product is crafted to perfection.
 
-**Price: $49.99**
+**Price: $36.9**
 
-{{</* button "Add to Cart" "/checkout" */>}}
+{{< button "Buy Now" "/checkout" >}}
 
-![Product Image](/uploads/brick_webshop.png)
+
+

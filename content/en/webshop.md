@@ -1,13 +1,15 @@
 ---
-title: Webshop page TEST
+title: Webshop TEST page 
 ---
 
-# Hey, i'm the Webshop page TEST
+{{< brick_webshop title="Exclusive Product" >}}
+# Amazing Product TEST
 
-Together with my friend 'Fenix' I have built Hugobricks, ... iste tempore sed, *Webshop*
+This product is crafted to perfection. Limited stock available.
 
-{{< brick_webshop >}}{{< /brick_webshop >}}
+**Price: $39.99**
 
-.. this is not me, By The Way :
+{{< button "Buy Now" "/checkout" >}}
 
-{{< colorize_image "This is not me" "/uploads/photos/avatars/2.jpeg" >}}
+![Product Image](/uploads/special_product.png)
+{{< /brick_webshop >}}  <!-- Notice: No space after the opening braces -->

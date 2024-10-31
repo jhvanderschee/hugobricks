@@ -1,6 +1,10 @@
 # Documentation
 
+[View Online Documentation](https://www.hugobricks.preview.usecue.com/docs/)
+
 follow-up / contribute / discuss at the related issue #72
+
+Documentation files can be found at 'content/en/docs' folder in the repository 
 
 - [X]     [Getting started](https://www.hugobricks.preview.usecue.com/docs/getting-started/)
   -    Clone the [repository](https://github.com/jhvanderschee/hugobricks) and run Hugo

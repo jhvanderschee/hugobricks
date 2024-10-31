@@ -101,7 +101,10 @@ Make your wishlist. Missing a given Hugobrick? [Let us know.](https://github.com
 ## Documentation 
 See (and contribute:-)) / follow-up / [discuss here]((https://github.com/jhvanderschee/hugobricks/issues/72)
 
-[View Documentation](./DOCUMENTATION.md)
+[View Documentation files](./DOCUMENTATION.md)
+
+[View Online Documentation](https://www.hugobricks.preview.usecue.com/docs/)
+
 
 ## Credits and licenses
 
