@@ -26,7 +26,7 @@ Not using frameworks or any other type of third party code has a lot of advantag
 
 ## When to avoid this approach
 
-When you build software/websites in a large team I would not use this artisanal approach. However, before you fully dismiss it, you should realize that a lot of efficient projects involve very little teamwork at all. A strict seperation between front-end and back-end is often made to make sure developers can work as autonomously as possible. Are you the sole owner of your (front-end or back-end) code? Then the artisanal approach could very well be a valid one. If you write the code together with somebody else, I would always try to find some common ground first.
+When you build software/websites in a large team I would not use this artisanal approach. However, before you fully dismiss it, you should realize that a lot of efficient projects involve very little teamwork at all. A strict separation between front-end and back-end is often made to make sure developers can work as autonomously as possible. Are you the sole owner of your (front-end or back-end) code? Then the artisanal approach could very well be a valid one. If you write the code together with somebody else, I would always try to find some common ground first.
 
 ## The take-away
 
@@ -47,4 +47,4 @@ I did not come up with this term/approach/philosophy by myself. I was inspired b
 - [You might not need jQuery](https://youmightnotneedjquery.com/), Hubspot
 - [VanillaJS](http://vanilla-js.com/), Eric Wastl
 
-PS. I mentioned Kev Quirk in the interview. He pointed me at my missing [RSS feed](https://kevquirk.com/why-having-a-full-post-rss-feed-is-a-good-idea/). I joked about him being agressive. I should have said 'persuasive'. [Thanks again Kev!](https://www.usecue.com/blog/thanks-to-kev-quirk/)
+PS. I mentioned Kev Quirk in the interview. He pointed me at my missing [RSS feed](https://kevquirk.com/why-having-a-full-post-rss-feed-is-a-good-idea/). I joked about him being aggressive. I should have said 'persuasive'. [Thanks again Kev!](https://www.usecue.com/blog/thanks-to-kev-quirk/)

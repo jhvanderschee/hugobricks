@@ -14,7 +14,7 @@ You probably want the CTA brick to be the same on every page. You can stack the 
 
 ## Content in content/en/bricks/cta.md
 
-The content of the brick should be stored in the file 'cta.md' in the 'content/en/bricks/' folder. Note that the filename is equal to the name of the brick (withouth 'brick_'). This file should look like this:
+The content of the brick should be stored in the file 'cta.md' in the 'content/en/bricks/' folder. Note that the filename is equal to the name of the brick (without 'brick_'). This file should look like this:
 
 ```
 ---

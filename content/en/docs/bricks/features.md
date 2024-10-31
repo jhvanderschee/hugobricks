@@ -15,7 +15,7 @@ You probably want the Features brick to be the same on every page. You can stack
 
 ## Content in content/en/bricks/features.md
 
-The content of the brick should be stored in the file 'features.md' in the 'content/en/bricks/' folder. Note that the filename is equal to the name of the brick (withouth 'brick_'). We use an h2 (two hashes) for the title of the brick, an h3 (three hashes) for the title of the feature and an hr (three dashes) for splitting the features. This file should look like this:
+The content of the brick should be stored in the file 'features.md' in the 'content/en/bricks/' folder. Note that the filename is equal to the name of the brick (without 'brick_'). We use an h2 (two hashes) for the title of the brick, an h3 (three hashes) for the title of the feature and an hr (three dashes) for splitting the features. This file should look like this:
 
 ```
 ---
