@@ -76,19 +76,44 @@ In order to get a working website you should:
 - and/or customise them !
 
 ## Hugobricks theme features
-- Contact form
-- Map
-- Button (primary and secondary)
-- Social buttons
-- Contact buttons
-- Breadcrumbs
-- FAQ's
-- Tabs
-- Subpages
-- Gallery
-- Video (native html5),
-- Youtube video,
-- and much more ...
+
+- [X] Bricks
+  - [X] 404 (not found)
+  - [X] About
+  - [X] Call to action
+  - [X] Contact form
+  - [X] Features
+  - [X] Image
+  - [X] Image alt
+  - [X] Intro
+  - [X] Map
+  - [X] Posts
+  - [X] Reviews
+  - [X] Team
+  - [X] Title
+  - [X] Title alt
+  - [X] Wide
+  - [ ] Webshop brick (under construction)
+  - [ ] ..
+
+- [X] Shortcodes
+  - [X] Breadcrumbs
+  - [X] Button
+  - [X] Contact buttons
+  - [X] Contact form
+  - [X] CTA form
+  - [X] F.A.Q.
+  - [X] Gallery
+  - [X] Map
+  - [X] Social buttons
+  - [X] Subpages
+  - [X] Tabs
+  - [X] Video
+  - [X] Youtube
+
+
+
+
 
 ## Hugobricks under the Hood
 
@@ -99,7 +124,7 @@ Hugobricks is build with the regular [Hugo](https://gohugo.io/overview/introduct
 Make your wishlist. Missing a given Hugobrick? [Let us know.](https://github.com/jhvanderschee/hugobricks/issues/5)
 
 ## Documentation 
-See (and contribute:-)) / follow-up / [discuss here]((https://github.com/jhvanderschee/hugobricks/issues/72)
+See (and contribute:-)) / follow-up / [discuss here](https://github.com/jhvanderschee/hugobricks/issues/72)
 
 [View Documentation files](./DOCUMENTATION.md)
 
