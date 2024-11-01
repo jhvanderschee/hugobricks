@@ -20,32 +20,15 @@ Hugobricks is a comprehensive starter theme that includes everything you need to
 
 ##  Hugobricks that are available:
 
-- [x] Intro
-- [x] CTA
-- [x] Image
-- [x] Image alt
-- [x] About
-- [x] Contact
-- [x] 404 Page
-- [x] Title
-- [x] Title alt
-- [x] Map
-- [x] Features
-- [x] Reviews
-- [x] Team
-- [x] Blog/posts
-- [x] Pricing
-- [x] Services
-- [x] Quote
-- [ ] Webshop
-- [ ] Stats
-- [ ] Carousel
-- [ ] Related
-- [ ] Authors
-- [ ] Search
-- [ ] Products
-- [ ] Stats
-- [ ] Brands
+
+## Hugobricks theme features
+
+See follow-up / [discuss here](https://github.com/jhvanderschee/hugobricks/issues/72)
+
+[View roadmap](./DOCUMENTATION.md)
+
+[View Online Documentation](https://www.hugobricks.preview.usecue.com/docs/)
+
 
 ## Hugobricks workflow
 
@@ -75,44 +58,6 @@ In order to get a working website you should:
 - re-use default hugobricks
 - and/or customise them !
 
-## Hugobricks theme features
-
-- [X] Bricks
-  - [X] 404 (not found)
-  - [X] About
-  - [X] Call to action
-  - [X] Contact form
-  - [X] Features
-  - [X] Image
-  - [X] Image alt
-  - [X] Intro
-  - [X] Map
-  - [X] Posts
-  - [X] Reviews
-  - [X] Team
-  - [X] Title
-  - [X] Title alt
-  - [X] Wide
-  - [ ] Webshop brick (under construction)
-  - [ ] ..
-
-- [X] Shortcodes
-  - [X] Breadcrumbs
-  - [X] Button
-  - [X] Contact buttons
-  - [X] Contact form
-  - [X] CTA form
-  - [X] F.A.Q.
-  - [X] Gallery
-  - [X] Map
-  - [X] Social buttons
-  - [X] Subpages
-  - [X] Tabs
-  - [X] Video
-  - [X] Youtube
-
-
-
 
 
 ## Hugobricks under the Hood
@@ -122,13 +67,6 @@ Hugobricks is build with the regular [Hugo](https://gohugo.io/overview/introduct
 ## Hugobricks Feedback 
 
 Make your wishlist. Missing a given Hugobrick? [Let us know.](https://github.com/jhvanderschee/hugobricks/issues/5)
-
-## Documentation 
-See (and contribute:-)) / follow-up / [discuss here](https://github.com/jhvanderschee/hugobricks/issues/72)
-
-[View Documentation files](./DOCUMENTATION.md)
-
-[View Online Documentation](https://www.hugobricks.preview.usecue.com/docs/)
 
 
 ## Credits and licenses

@@ -1,24 +1,17 @@
 <!-- 
-	 {{/* 
+{{/* 
 
-	 Usage:
+Usage:
 
-	 {{< brick_webshop >}}
+{{< brick_webshop >}}
 
-	 ## Ready to build your next Webshop ?
+## Ready to build your next Webshop ?
 
-	 {{< /brick_webshop >}}
-     
-	 */}}
+{{< /brick_webshop >}}
 
-deprecated	\!/  {{- partial "webshop.html" .Inner -}}
---
+*/}}
 
-<section class="webshop-brick">
-    <div class="product-details">
-        {{ with .Get "title" }}
-        <h2>{{ . }}</h2>
-        {{ end }}
-        {{ .Inner }}
-    </div>
-</section>
+
+-->
+
+{{- partial "brick_webshop.html" .Inner -}}

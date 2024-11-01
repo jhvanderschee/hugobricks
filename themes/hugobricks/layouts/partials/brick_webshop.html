@@ -1,8 +1,12 @@
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/webshop.md' file." -}}
+    {{- with page.Site.GetPage "bricks/webshop.md" -}}
+         {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
 <section class="webshop-brick">
     <div class="product-details">
-        {{ with .Get "title" }}
-        <h2>{{ . }}</h2>
-        {{ end }}
-        {{ .Inner }}
+	    {{- markdownify $inner -}}	
     </div>
 </section>
