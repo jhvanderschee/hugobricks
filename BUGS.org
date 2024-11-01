@@ -1,0 +1,10 @@
+* Webshop Brick to be added to the Menu
+  create a page on the top level
+  ++ to the menu
+* Webshop Brick
+ What is a Product ? ~> Section 
+** cart/
+** products (Overview)
+** checkout/
+** payment page   /data/ ... defined
+** thanykyou      /data/ ... defined
