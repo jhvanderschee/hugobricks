@@ -291,27 +291,3 @@ section.docs .container .menu ul.nestedmenu li.current > a {color: var(--accentD
     section.docs .container .menu ul.nestedmenu {margin-top: 0.75rem;}
 }
 
-/*------------------------*/
-/* brick webshop Under construction \!/
-/*------------------------*/
-
-.webshop-brick {
-    padding: 2em;
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    text-align: center;
-    margin: 20px auto;
-    max-width: 400px;
-    border-radius: 8px;
-}
-
-.webshop-brick .product-details h2 {
-    font-size: 1.75em;
-    color: #333;
-    margin-bottom: 0.5em;
-}
-
-.webshop-brick .product-details p {
-    font-size: 1.2em;
-    margin-bottom: 1em;
-}

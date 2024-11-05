@@ -14,9 +14,3 @@ Together with my friend 'Fenix' I have built Hugobricks, a theme that allows you
 {{< /brick_about >}}
 {{< brick_cta >}}{{< /brick_cta >}}
 
-{{< brick_webshop >}}{{< /brick_webshop >}}
-
-{{< brick_cart >}}{{< /brick_cart >}}
-
-
-

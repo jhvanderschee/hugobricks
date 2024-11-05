@@ -1,13 +1,7 @@
 ---
-title: Webshop Product
+title: Webshop
 ---
 
-# Amazing Product
+# Webshop
 
-Enjoy this top-quality product, designed to elevate your experience. Available for a limited time only!
-This product is crafted to perfection.
-
-**Price: $36.9**
-
-{{< button "Buy Now" "/checkout" >}}
-
+All products are crafted to perfection. Limited stock available.

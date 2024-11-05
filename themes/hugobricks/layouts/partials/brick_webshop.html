@@ -7,9 +7,10 @@
 {{- end -}}
 {{- $products := where page.Site.RegularPages "Section" "products" -}}
 <section class="webshop-brick">
-    <div class="product-details">
-	    {{- markdownify $inner -}}	
-    </div>
+    {{ if $inner }}<div class="container small">
+        {{- markdownify $inner -}}
+    </div>{{ end }}
+    <div class="container" style="padding-top: 3rem;">
 	<ul class="contentitems grid products" data-pagesize="{{ page.Site.Data.settings.page_size }}">
         {{ range $index,$product := $products }}
         <li class="item{{ range .Params.tags }} tag_{{ . }}{{ end }}">
@@ -27,4 +28,5 @@
         <li class="placeholder"></li>
         <li class="placeholder"></li>
     </ul>
+    </div>
 </section>

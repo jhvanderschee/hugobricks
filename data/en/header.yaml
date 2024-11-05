@@ -36,6 +36,8 @@ menuitems:
         link: /contact/
       - title: F.A.Q.
         link: /faq/
+      - title: Webshop
+        link: /webshop/
       - title: 404 Page
         link: /404.html
   - title: Elements
