@@ -1,0 +1,50 @@
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/cart.md' file." -}}
+    {{- with page.Site.GetPage "bricks/cart.md" -}}
+         {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+<section class="cart-brick">
+    <div>
+	    {{- markdownify $inner -}}
+		<!-- HTML cart displaying / table -->
+		<div id="shoppingcart">
+    <table celpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Aantal</th>
+                <th>&nbsp;&nbsp;Prijs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="6" style="text-align: center;">Je winkelwagen is momenteel leeg.</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>&euro; <span class="carttotal">0,00</span></div>
+    <form action="/webshop/checkout">
+        <div class="submitbutton">
+            <a href="/webshop" class="gray">verder winkelen</a>
+            <input type="submit" class="reversed" value="Gegevens invoeren" />
+        </div>
+    </form>
+</div>
+<div style="margin-top: 50px; position: relative; top: 30px;">
+    <ul id="checkout_progress">
+        <li class="current"><span><a href="#">Winkelwagen</a></span></li>
+        <li><span><span>Gegevens</span></span></li>
+        <li><span><span>Betalen</span></span></li>
+    </ul>
+</div>
+<script type="text/javascript" src="/js/webshop.js"></script>
+<script type="text/javascript">updateCartCount();</script>
+<script type="text/javascript">populateCart();</script>
+
+    </div>
+</section>
+
