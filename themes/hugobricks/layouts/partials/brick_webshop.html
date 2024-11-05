@@ -5,8 +5,26 @@
          {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
+{{- $products := where page.Site.RegularPages "Section" "products" -}}
 <section class="webshop-brick">
     <div class="product-details">
 	    {{- markdownify $inner -}}	
     </div>
+	<ul class="contentitems grid products" data-pagesize="{{ page.Site.Data.settings.page_size }}">
+        {{ range $index,$product := $products }}
+        <li class="item{{ range .Params.tags }} tag_{{ . }}{{ end }}">
+            {{- if (resources.GetMatch .Params.image) -}}
+            {{- $productimage := ((resources.GetMatch .Params.image).Fill `1200x600 jpg Smart q50`).RelPermalink -}}
+            {{- if $productimage -}}<a href="{{ .RelPermalink }}"><div class="img"><img src="{{ $productimage }}" alt="{{ .Title }}" style="cursor: pointer;" onclick="document.location.href='{{ .RelPermalink }}';" /></div></a>{{- end -}}
+            {{- end -}}
+            <h3>{{ .Title | safeHTML }}</h3>
+            <div class="summary">
+                <p>{{ substr (.Summary | plainify) 0 190 | safeHTML }}...</p>
+                <p><a href="{{ .RelPermalink }}" class="button ghost smaller">{{ i18n "Read more" }}</a></p>
+            </div>
+        </li>
+        {{ end }}
+        <li class="placeholder"></li>
+        <li class="placeholder"></li>
+    </ul>
 </section>
