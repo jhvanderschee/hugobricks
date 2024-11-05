@@ -8,3 +8,5 @@ services:
   other: Services
 posts:
   other: Blog
+products:
+  other: Shop

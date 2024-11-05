@@ -28,9 +28,11 @@ languages:
       page:
         posts: /blog/:slug
         services: /services/:slug
+        products: /shop/:slug
       section:
         posts: /blog/
         services: /services/
+        products: /shop/
   nl:
     languageName: Nederlands
     contentDir: content/nl
@@ -40,6 +42,8 @@ languages:
       page:
         posts: /blog/:slug
         services: /diensten/:slug
+        products: /winkel/:slug
       section:
         posts: /blog/
         services: /diensten/
+        products: /winkel/

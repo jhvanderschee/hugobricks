@@ -1,13 +1,10 @@
 ---
-title: Webshop Cart
+title: Cart
 ---
 
-#  Products in your Cart
+#  Products in your cart
 
-Enjoy this top-quality product, designed to elevate your experience. Available for a limited time only!
-This product is crafted to perfection.
-
-How nice that you're ordering something from us! Complete your purchase by clicking on 'Enter details'.
+Review the items in your cart below.
 
 
 
