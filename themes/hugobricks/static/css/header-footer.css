@@ -142,9 +142,7 @@ header.dark .navnav > ul > li.haschildren > a::after,
 body.transparent_header header:not(.sticky) .navnav > ul > li.haschildren > a::after {border-color: white;}
 header.dark #togglemenu span,
 header.dark > .container.has_cta > div:nth-child(3) > a > img,
-header.dark > .container.has_cta > div:nth-child(3) > a span.itemcount,
 body.transparent_header header:not(.sticky) > .container.has_cta > div:nth-child(3) > a > img,
-body.transparent_header header:not(.sticky) > .container.has_cta > div:nth-child(3) > a span.itemcount,
 header.dark a.logo > div img.inline,
 body.transparent_header header:not(.sticky) #togglemenu span,
 body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: invert(1)!important;}
