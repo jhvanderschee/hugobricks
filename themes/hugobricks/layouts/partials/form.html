@@ -15,7 +15,7 @@
                 <label><input type="checkbox" name="{{ .name }}" value="{{ .label }}" required>{{ .label | safeHTML }}</label>
             </div>
         {{- else if eq .input_type `html` -}}
-            {{ .placeholder | safeHTML }}
+            {{ .label | safeHTML }}
         {{- else if eq .input_type `submit` -}}
             <div class="submit">
                 <div><input type="{{ .input_type }}" value="{{ .label }}" class="button" /></div>
