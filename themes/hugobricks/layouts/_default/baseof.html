@@ -26,7 +26,7 @@
     </script>
     <div class="innerbody">
     {{- if .Site.Data.settings.preheader.active -}}
-    <div class="preheader {{ if .Params.preheader_is_light  }}light{{ else }}{{ if and (ne .Params.preheader_is_light false) .Site.Data.settings.preheader.is_light }}light{{ end }}{{ end }}">
+    <div class="preheader {{ if .Params.preheader.is_light }}light{{ else }}{{ if and (ne .Params.preheader.is_light false) .Site.Data.settings.preheader.is_light }}light{{ end }}{{ end }}">
       <div class="container">
         <div class="icons">
           {{- if (index .Site.Data .Language.Lang).general.contact.phone -}}
@@ -37,7 +37,7 @@
           {{- end -}}
         </div>
         <div>
-          {{- if (index .Site.Data .Language.Lang).header.preheader -}}{{ (index .Site.Data .Language.Lang).header.preheader }}{{- end -}}
+          {{- if (index .Site.Data .Language.Lang).header.preheader -}}{{ (index .Site.Data .Language.Lang).header.preheader.text }}{{- end -}}
         </div>
       </div>  
     </div>

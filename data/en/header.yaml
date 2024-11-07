@@ -1,5 +1,6 @@
 logo_image:
 logo_subtitle: The Ultimate Hugo Theme
+dark_header: false
 mobile_view_width: 1100
 menuitems:
   - title: Headers
@@ -59,4 +60,6 @@ cta:
   active: true
   title: Get started
   link: /get-started/
-preheader: open Mon-Fri from 9-5
+preheader: 
+  text: open Mon-Fri from 9-5
+  is_light: true

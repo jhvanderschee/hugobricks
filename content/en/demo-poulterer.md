@@ -2,7 +2,7 @@
 title: Poulterer
 dark_header: false
 dark_footer: false
-preheader_is_light: true
+preheader.is_light: true
 ---
 {{< brick_title >}}
 # Build your next Hugo website with stackable content bricks

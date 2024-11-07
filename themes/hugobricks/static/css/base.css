@@ -69,6 +69,7 @@ h1, h2, a.logo {font-family: var(--fontTitles);}
 /*------------------------*/
 
 a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: var(--textDark);}
+a.logo img {height: 3rem;}
 a.logo img.inline {height: 2rem;}
 a.logo > div {display: flex; gap: 0.8rem; align-items: center;}
 a.logo > div > div span {display: block;}

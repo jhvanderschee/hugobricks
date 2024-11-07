@@ -1,5 +1,6 @@
 logo_image:
 logo_subtitle: Het ultieme Hugo thema
+dark_header: false
 mobile_view_width: 1100
 menuitems:
   - title: Home
@@ -26,4 +27,6 @@ cta:
   active: true
   title: Start nu direct
   link: /nl/
-preheader: open van 9.00-17.00 uur, weekend gesloten
+preheader: 
+  text: open van 9.00-17.00 uur, weekend gesloten
+  is_light: true
