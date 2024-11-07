@@ -103,16 +103,32 @@ header .navnav > ul > li.haschildren > a::after {
 }
 
 header > .container {display: flex; align-items: center;}
-header > .container > div {flex: 3; text-align: center;}
+header > .container > div {flex: 2; text-align: center;}
 header > .container > div:first-child {flex: 1; text-align: left;}
-header > .container.has_cta > div:nth-child(3) {flex: 1; text-align: right;}
+header > .container.has_cta > div:nth-child(3) {flex: 1; text-align: right; display: flex; justify-content: flex-end; gap: 1rem; align-items: center;}
+header > .container.has_cta > div:nth-child(3) > a > img {height: 1.25rem;}
+header > .container.has_cta > div:nth-child(3) > a span.itemcount {
+    position: absolute;
+    font-size: 0.7rem;
+    color: white;
+    background: red;
+    font-weight: bold;
+    line-height: 1rem;
+    height: 1rem;
+    width: 1rem;
+    text-align: center;
+    border-radius: 100%;
+    top: 50%;
+    transform: translate(-0.6rem, -1rem);
+    display: none;
+}
 header > .container.has_cta ul {justify-content: center;}
 header + section.hasbackgroundcolor {margin-top: 0;}
 header + section:not(.bgimage) {padding-top: 11rem!important;}
 body.transparent_header header + section.bgimage .container {padding-top: 13.5rem!important;}
 body:not(.transparent_header) header + section.bgimage .container {padding-top: 11.5rem!important;}
 body:not(.transparent_header) header + section.bgimage .container h1:first-child {padding-top: 0.5rem;}
-header .languages {display: inline-block; margin-right: 0.75rem;}
+header .languages {display: inline-block;}
 body.mobilemenu header .navnav {display: flex; flex-direction: column; justify-content: space-between;}
 body.mobilemenu header .navnav.languages {display: none;}
 
@@ -125,12 +141,15 @@ body.mobilemenu header .navnav > ul > li.haschildren > a::after,
 header.dark .navnav > ul > li.haschildren > a::after, 
 body.transparent_header header:not(.sticky) .navnav > ul > li.haschildren > a::after {border-color: white;}
 header.dark #togglemenu span,
+header.dark > .container.has_cta > div:nth-child(3) > a > img,
+header.dark > .container.has_cta > div:nth-child(3) > a span.itemcount,
+body.transparent_header header:not(.sticky) > .container.has_cta > div:nth-child(3) > a > img,
+body.transparent_header header:not(.sticky) > .container.has_cta > div:nth-child(3) > a span.itemcount,
 header.dark a.logo > div img.inline,
 body.transparent_header header:not(.sticky) #togglemenu span,
 body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: invert(1)!important;}
 header.dark + section.bgimage,
 body.transparent_header header + section.bgimage {padding-top: 0!important;}
-header .navnav.languages {margin-right: 1rem;}
 header .navnav.languages > ul > li > a {font-size: 0.9rem;}
 
 /*------------------------*/
@@ -209,8 +228,7 @@ body.mobilemenu header > div.container > div.nav {
     height: 100vh;
     overflow-y: auto;
 }
-body.mobilemenu header > div.container > div:nth-child(3) {grid-area: cta;}
-body.mobilemenu header > .container.has_cta > div:nth-child(3) .button {margin-right: 3rem;}
+body.mobilemenu header > div.container > div:nth-child(3) {grid-area: cta; padding-right: 3rem;}
 body.mobilemenu header .navnav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 2.5rem 0 4rem 0;}
 body.mobilemenu.menushown header .navnav > ul:nth-child(2) {margin-bottom: 2rem; display: block;}
 body.mobilemenu header .navnav > ul > li::after {content: none;}

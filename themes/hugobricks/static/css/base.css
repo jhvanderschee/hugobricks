@@ -184,6 +184,7 @@ div.box label.inborder::after {
     cursor: pointer;
     letter-spacing: 0.02em;
     transition: transform 0.075s ease-in-out;
+    white-space: nowrap;
 }
 @media (min-width: 600px) {
 .button:hover, button:hover {transform: scale(1.035);}

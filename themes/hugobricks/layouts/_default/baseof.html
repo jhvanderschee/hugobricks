@@ -62,14 +62,18 @@
                 </li>
               {{ end }}
             </ul>
-            <ul>
-              {{ range .Site.Languages }}
-              {{ if ne .Lang $.Site.Language.Lang }}<li><a href="/{{ .Lang }}/">&rarr; <span style="font-size: 95%;">{{ upper .Lang }}</span></a></li>{{ end }}
-              {{ end }}
-            </ul>
           </nav>
         </div>
         <div>
+		      {{- if (index .Site.Data .Language.Lang).webshop.show_cart_icon -}}
+          <a href="/cart">
+            <img src="/img/shopping-cart.svg" alt="Shopping cart icon" class="black_2_textDark" />
+            <span class="itemcount">0</span>
+          </a>
+          {{- end -}}
+          <a href="/search">
+            <img src="/img/search.svg" alt="Search icon" class="black_2_textDark" />
+          </a>
           {{- if gt (len .Site.Languages) 1 -}}
           <div class="navnav languages">
             <ul>
@@ -84,10 +88,9 @@
             </ul>
           </div>
           {{- end -}}
-		  <span class="itemcount">0</span>
           {{ if (index .Site.Data .Language.Lang).header.cta.active }}
           <a href="{{ (index .Site.Data .Language.Lang).header.cta.link }}" class="button smaller">{{ (index .Site.Data .Language.Lang).header.cta.title }}</a>
-		  {{ end }}
+		      {{ end }}
         </div>
         <button id="togglemenu" onclick="event.stopPropagation(); document.body.classList.add('menushown');"><span class="black_2_textDark">Toggle menu</span></button>
         <script>
@@ -161,6 +164,13 @@
       <script type="text/javascript" src="/js/intersectionobserver.js"></script>
       <link rel="stylesheet" href="/css/intersectionobserver.css">
     {{ end }}
+    {{- if (index .Site.Data .Language.Lang).webshop.show_cart_icon -}}
+    <script type="text/javascript" src="/js/webshop.js"></script>
+    <script type="text/javascript">
+      updateCartCount();
+    </script>
+    {{- end -}}
+
       </div>
   </body>
 </html>
