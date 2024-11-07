@@ -12,7 +12,7 @@ section.about .container .buttons {justify-content: center;}
 /* brick intro
 /*------------------------*/
 
-section.intro {text-align: center; background: white; position: relative;}
+section.intro {text-align: center; position: relative;}
 section.intro img {margin: 3rem auto 0; width: 38rem;}
 section.intro img.is_svg {max-width: 85%;}
 section.intro h1 + p {padding-top: 0;}
