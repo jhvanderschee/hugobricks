@@ -261,4 +261,5 @@ body.mobilemenu.menushown header .navnav > ul > li a {color: white;}
 
 @media (max-width: 450px) {
     header .button {display: none;}
+    header > .container.has_cta > div:nth-child(3) > a > img {height: 1.55rem;}
 }
