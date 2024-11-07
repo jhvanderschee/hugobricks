@@ -28,11 +28,11 @@ languages:
       page:
         posts: /blog/:slug
         services: /services/:slug
-        products: /shop/:slug
+        products: /webshop/:slug
       section:
         posts: /blog/
         services: /services/
-        products: /shop/
+        products: /webshop/
   nl:
     languageName: Nederlands
     contentDir: content/nl
