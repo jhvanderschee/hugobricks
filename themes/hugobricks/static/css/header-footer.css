@@ -34,7 +34,7 @@ body:not(.transparent_header) .preheader.light .container a.icon img {filter: in
     from {transform: translateY(-7rem);}
     to {transform: translateY(0);}
 }
-header {position: absolute; background: white; z-index: 9; width: 100%;}
+header {position: absolute; background: white; z-index: 9; width: 100%; color: var(--textMedium);}
 body.transparent_header header {padding-top: 2.35rem;}
 header > .container {padding-top: 1.5rem; padding-bottom: 1.5rem; position: relative;}
 header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white; position: fixed; top: 0; padding-top: 0!important;}
@@ -154,7 +154,7 @@ header .navnav.languages > ul > li > a {font-size: 0.9rem;}
 /* footer
 /*------------------------*/
 
-footer {background: var(--light); margin-top: 4rem; border-top: 0.1rem solid var(--light);}
+footer {background: var(--light); margin-top: 4rem; border-top: 0.1rem solid var(--light); color: var(--textMedium); }
 footer a {text-decoration: none;}
 footer .logo > div.has_subtitle {padding-bottom: 0.5rem;}
 footer ul {display: flex; justify-content: center; gap: 0 2rem; margin: 0; flex-wrap: wrap;}
