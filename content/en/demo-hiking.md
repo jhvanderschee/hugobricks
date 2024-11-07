@@ -2,7 +2,7 @@
 title: Hiking
 dark_header: true
 dark_footer: false
-preheader.is_light: false
+preheader_is_light: false
 ---
 {{< brick_title >}}
 

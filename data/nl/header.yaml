@@ -27,6 +27,4 @@ cta:
   active: true
   title: Start nu direct
   link: /nl/
-preheader: 
-  text: open van 9.00-17.00 uur, weekend gesloten
-  is_light: true
+preheader: open van 9.00-17.00 uur, weekend gesloten
