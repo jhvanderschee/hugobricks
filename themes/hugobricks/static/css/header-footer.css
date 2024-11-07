@@ -127,7 +127,7 @@ header + section.hasbackgroundcolor {margin-top: 0;}
 header + section:not(.bgimage) {padding-top: 11rem!important;}
 body.transparent_header header + section.bgimage .container {padding-top: 13.5rem!important;}
 body:not(.transparent_header) header + section.bgimage .container {padding-top: 11.5rem!important;}
-body:not(.transparent_header) header + section.bgimage .container h1:first-child {padding-top: 0.5rem;}
+body:not(.transparent_header) header + section.bgimage .container h1:first-child {padding-top: 1.5rem;}
 header .languages {display: inline-block;}
 body.mobilemenu header .navnav {display: flex; flex-direction: column; justify-content: space-between;}
 body.mobilemenu header .navnav.languages {display: none;}
