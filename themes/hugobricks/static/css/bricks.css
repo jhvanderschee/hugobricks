@@ -34,7 +34,6 @@ section.post .container .meta {justify-content: center; margin-bottom: 3rem; mar
 /* brick cta
 /*------------------------*/
 
-section.cta {background: white;}
 section.cta .twocols {display: flex;}
 section.cta .twocols .text {flex: 2;}
 section.cta .twocols .image {flex: 1;}
