@@ -66,7 +66,7 @@
         </div>
         <div>
 		      {{- if (index .Site.Data .Language.Lang).webshop.show_cart_icon -}}
-          <a href="/cart">
+          <a href="{{ (index .Site.Data .Language.Lang).webshop.cart_link }}">
             <img src="/img/shopping-cart.svg" alt="Shopping cart icon" class="black_2_textDark" />
             <span class="itemcount">0</span>
           </a>
