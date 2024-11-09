@@ -7,7 +7,7 @@
 {{- end -}}
 {{- $products := where page.Site.RegularPages "Section" "products" -}}
 <section class="webshop-brick">
-    {{ if $inner }}<div class="container small">
+    {{ if $inner }}<div class="container small" style="text-align: center;">
         {{- markdownify $inner -}}
     </div>{{ end }}
     <div class="container" style="padding-top: 3rem;">
