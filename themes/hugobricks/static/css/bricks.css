@@ -12,7 +12,7 @@ section.about .container .buttons {justify-content: center;}
 /* brick intro
 /*------------------------*/
 
-section.intro {text-align: center; background: white; position: relative;}
+section.intro {text-align: center; position: relative;}
 section.intro img {margin: 3rem auto 0; width: 38rem;}
 section.intro img.is_svg {max-width: 85%;}
 section.intro h1 + p {padding-top: 0;}
@@ -34,7 +34,6 @@ section.post .container .meta {justify-content: center; margin-bottom: 3rem; mar
 /* brick cta
 /*------------------------*/
 
-section.cta {background: white;}
 section.cta .twocols {display: flex;}
 section.cta .twocols .text {flex: 2;}
 section.cta .twocols .image {flex: 1;}

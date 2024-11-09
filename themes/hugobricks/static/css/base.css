@@ -12,7 +12,7 @@ img {filter: grayscale(100%);}
 
 * {padding: 0; margin: 0; box-sizing: border-box;}
 html {font-size: clamp(14px, 2vw, 16px); line-height: 1.7; height: 100%; scroll-behavior: smooth; background: var(--light); scroll-padding-top: 10rem;}
-body {font-size: 1rem; color: var(--textMedium); background: var(--light);}
+body {font-size: 1rem; background: var(--light);}
 .innerbody {margin: 0 auto; background: white;}
 .innerbody, .innerbody header {max-width: 100%;}
 .container {margin: 0 auto; max-width: 84rem; padding: 0 clamp(1rem,4vw,3rem);}
@@ -69,6 +69,7 @@ h1, h2, a.logo {font-family: var(--fontTitles);}
 /*------------------------*/
 
 a.logo {font-size: 1.8rem; font-weight: bold; text-decoration: none; color: var(--textDark);}
+a.logo img {height: 3rem;}
 a.logo img.inline {height: 2rem;}
 a.logo > div {display: flex; gap: 0.8rem; align-items: center;}
 a.logo > div > div span {display: block;}
@@ -80,6 +81,7 @@ a.logo > div.has_subtitle > div span:nth-child(2) {font-size: 0.75rem; font-weig
 /* sections general
 /*------------------------*/
 
+section {color: var(--textMedium);}
 section, section.image.alt {padding: 4.5rem 0 5rem;}
 section .twocols {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 5.5rem clamp(2rem, 5vw, 5rem);}
 section .twocols > div {display: flex; flex-direction: column; justify-content: center;}

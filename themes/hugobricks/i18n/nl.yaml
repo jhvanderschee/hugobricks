@@ -8,9 +8,5 @@ services:
   other: Diensten
 posts:
   other: Blog
-services:
-  other: Diensten
-posts:
-  other: Blog
 products:
   other: Winkel

@@ -6,8 +6,12 @@
     {{- end -}}
 {{- end -}}
 <section class="cart-brick">
+<<<<<<< HEAD
 <div class="container small">
 
+=======
+    <div class="container small">
+>>>>>>> f67c6a818d45da2a39868594cbed14c29bedebd6
 	    {{- markdownify $inner -}}
 		<!-- HTML cart displaying / table -->
 		<div id="shoppingcart">
@@ -43,9 +47,6 @@
     </ul>
 </div>
 {{- if (index page.Site.Data page.Language.Lang).webshop.show_cart_icon -}}
-<script type="text/javascript">
-    populateCart();
-</script>
 {{- else -}}  
 <script type="text/javascript" src="/js/webshop.js"></script>
 <script type="text/javascript">

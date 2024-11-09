@@ -1,5 +1,6 @@
 logo_image:
 logo_subtitle: The Ultimate Hugo Theme
+dark_header: false
 mobile_view_width: 1100
 menuitems:
   - title: Headers
