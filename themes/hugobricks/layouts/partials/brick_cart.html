@@ -5,50 +5,48 @@
          {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
-<section class="cart-brick">
-    <div class="container small">
-	    {{- markdownify $inner -}}
-		<!-- HTML cart displaying / table -->
-		<div id="shoppingcart">
-    <table celpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th>Aantal</th>
-                <th>&nbsp;&nbsp;Prijs</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="6" style="text-align: center;">Je winkelwagen is momenteel leeg.</td>
-            </tr>
-        </tbody>
-    </table>
-    <div>&euro; <span class="carttotal">0,00</span></div>
-    <form action="/webshop/checkout">
-        <div class="submitbutton">
-            <a href="/webshop" class="gray">verder winkelen</a>
-            <input type="submit" class="reversed" value="Gegevens invoeren" />
+{{- $webshopData := (index site.Data site.Language.Lang).webshop -}}
+<section class="cart">
+    <div class="container medium">
+        {{- markdownify $inner -}}
+        <!-- HTML cart displaying / table -->
+        <div id="shoppingcart">
+            <table celpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>{{ i18n "Amount" }}</th>
+                        <th>&nbsp;&nbsp;{{ i18n "Price" }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="6" style="text-align: center;">{{ i18n "Your shopping cart is currently empty" }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>{{ $webshopData.currency_symbol }} <span class="carttotal">0.00</span></div>
+            <form action="/checkout/">
+                <div class="submitbutton">
+                    <a href="/webshop" class="gray">{{ i18n "Continue shopping"}}</a>
+                    <input type="submit" class="button" value='{{ i18n "Continue to checkout" }}' />
+                </div>
+            </form>
         </div>
-    </form>
-</div>
-<div style="margin-top: 50px; position: relative; top: 30px;">
-    <ul id="checkout_progress">
-        <li class="current"><span><a href="#">Winkelwagen</a></span></li>
-        <li><span><span>Gegevens</span></span></li>
-        <li><span><span>Betalen</span></span></li>
-    </ul>
-</div>
-{{- if (index page.Site.Data page.Language.Lang).webshop.show_cart_icon -}}
-{{- else -}}  
-<script type="text/javascript" src="/js/webshop.js"></script>
-<script type="text/javascript">
-  updateCartCount();
-  populateCart();
-</script>
-{{- end -}}
+        <div style="margin-top: 50px; position: relative; top: 30px;">
+            <ul id="checkout_progress">
+                <li class="current"><span><a href="#">{{ i18n "Cart" }}</a></span></li>
+                <li><span><span>{{ i18n "Checkout" }}</span></span></li>
+                <li><span><span>{{ i18n "Payment" }}</span></span></li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="/js/webshop.js"></script>
+        <script type="text/javascript">
+            const currencySymbol = '{{ $webshopData.currency_symbol }}';
+            updateCartCount();
+            populateCart();
+        </script>
     </div>
 </section>
-

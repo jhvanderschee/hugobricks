@@ -1,0 +1,23 @@
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/payment.md' file." -}}
+    {{- with page.Site.GetPage "bricks/payment.md" -}}
+         {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+{{- $parts := split $inner "---" -}}
+<section class="payment">
+    <div class="container small">
+        {{- markdownify $inner -}}
+    </div>
+</section>
+
+
+<script src='/js/webshop.js'></script>
+<script>
+    var carttotal = getCartTotal();
+    var addontotal = getAddonTotal();
+    var paymenttotal = parseFloat(carttotal + addontotal).toFixed(2);
+    const currencySymbol = '{{ site.Data.settings.webshop.currency_symbol }}';
+    if(document.getElementById('paymenttotal')) document.getElementById('paymenttotal').innerHTML  = `${ currencySymbol }${paymenttotal}`;
+</script>

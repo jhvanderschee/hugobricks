@@ -1,0 +1,116 @@
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/cart.md' file." -}}
+    {{- with site.GetPage "bricks/cart.md" -}}
+         {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+{{- $parts := split $inner "---" -}}
+{{- $webshopData := (index site.Data site.Language.Lang).webshop -}}
+<section class="checkout">
+    <div class="container medium">
+        <div id="checkout">
+            {{ index $parts 0 | markdownify }}
+            <form action="/payment/" method="post" onchange="setAddons(this)">
+                <input name="_gotcha" style="display:none" type="text">
+                <input name="_to" type="hidden" value="{{ $webshopData.send_order_to_mail }}">
+                <input name="_subject" value="New order!" type="hidden">
+                <input name="ordernumber" value="" type="hidden">
+
+                <div class="half">
+                    <label for="firstname">{{ i18n "First name" }}</label>
+                    <input type="text" name="firstname" required />
+                </div>
+
+                <div class="half">
+                    <label for="lastname">{{ i18n "Last name" }}</label>
+                    <input type="text" name="lastname" required />
+                </div>
+
+                <div>
+                    <label for="email">{{ i18n "Email address" }}</label>
+                    <input type="email" name="email" required />
+                </div>
+
+                <div>
+                    <label for="address">{{ i18n "Address" }}</label>
+                    <input type="text" name="address" required />
+                </div>
+
+                <div class="half">
+                    <label for="zipcode">{{ i18n "Zipcode" }}</label>
+                    <input type="text" name="zipcode" required />
+                </div>
+
+                <div class="half">
+                    <label for="city">{{ i18n "City" }}</label>
+                    <input type="text" name="city" required />
+                </div>
+
+                {{ if $webshopData.shipping.active }}
+                <div>
+                    <label for="shipping">{{ i18n "Shipping" }}</label>
+                    <select name="shipping" required
+                        onchange="if(this.value == 'Shipping NL') document.querySelector('input[name=\'country\']').value = 'The Netherlands'; else document.querySelector('input[name=\'country\']').value = ''">
+                        <option value=""></option>
+                        
+                        {{ range $webshopData.shipping.options }}
+                            <option value="{{ .title }}" data-title="{{ .title }}" data-price="{{ .price }}">{{ .label }} (+ {{ $webshopData.currency_symbol }}{{ lang.FormatNumber 2 .price }})</option>
+                        {{ end }}
+                    </select>
+                </div>
+                {{ end }}
+
+                <div>
+                    <label for="country">{{ i18n "Country" }}</label>
+                    <input type="text" name="country" required />
+                </div>
+
+                {{ range $customVal := $webshopData.custom_values }}
+                <div>
+                    <label>{{ .title }}</label>
+
+                    {{ range .options }}
+                        <label><input type="radio" name="{{ $customVal.title | urlize }}" data-title='{{ $customVal.title }}' value="{{ .value }}" data-price='{{ .price }}' required>{{ .title }} {{ if ne 0 .price }}(+ {{ $webshopData.currency_symbol }}{{  lang.FormatNumber 2 .price }}){{ end }}</label>
+                    {{ end }}
+                </div>
+                {{ end }}
+
+                <div>
+                    <label for="message">{{ i18n "Message" }}</label>
+                    <textarea name="message"></textarea>
+                </div>
+
+                <div class="submitbutton">
+                    <a href="{{ with site.GetPage `cart.md` }}{{ .RelPermalink }}{{ end }}" class="gray">{{ i18n "back to cart" }}</a>
+                    <input type="submit" class='button' value='{{ i18n "Proceed to payment" }}' onclick="setOrderNumber(this.closest('form'));" />
+                </div>
+
+            </form>
+            <div>
+                <label style="padding-top: 0.8rem;">{{ i18n "Payment total" }}</label>
+                <div id="checkoutcalculation">
+                    <span>{{ i18n "Shopping cart"}}: </span>{{ $webshopData.currency_symbol }} 0.00
+                </div>
+                <p><em>{{ index $parts 1 }}</em></p>
+            </div>
+        </div>
+
+
+        <div style="margin-top: 50px; position: relative; top: 30px;">
+            <ul id="checkout_progress">
+                <li class="past"><span><a href="{{ with site.GetPage `cart.md` }}{{ .RelPermalink }}{{ end }}">{{ i18n "Cart"}}</a></span></li>
+                <li class="current"><span><a href="#">{{ i18n "Checkout" }}</a></span></li>
+                <li><span><span>{{ i18n "Payment" }}</span></span></li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="/js/webshop.js"></script>
+        <script type="text/javascript">
+            const form = document.querySelector('#checkout form');
+            const currencySymbol = '{{ $webshopData.currency_symbol }}';
+            updateCartCount();
+            initCheckoutForm(form)
+            form.onchange({ target:form });
+        </script>
+    </div>
+</section>

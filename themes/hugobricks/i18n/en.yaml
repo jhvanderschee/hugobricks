@@ -10,3 +10,51 @@ posts:
   other: Blog
 products:
   other: Shop
+First name:
+  other: First name
+Last name:
+  other: Last name
+Email address:
+  other: Email address
+Address:
+  other: Address
+Zipcode:
+  other: Zipcode
+City:
+  other: City
+Shipping:
+  other: Shipping
+Country:
+  other: Country
+Gift wrapping:
+  other: Gift wrapping
+Not gift wrapped:
+  other: Not gift wrapped
+Gift wrapped:
+  other: Gift wrapped
+Message:
+  other: Message
+back to cart:
+  other: back to cart
+Payment total:
+  other: Payment total
+Shopping cart:
+  other: Shopping cart
+Proceed to payment:
+  other: Proceed to payment
+Your shopping cart is currently empty:
+  other: Your shopping cart is currently empty
+Amount:
+  other: Amount
+Price:
+  other: Price
+Continue shopping:
+  other: Continue shopping
+Continue to checkout:
+  other: Continue to checkout
+Cart:
+  other: Cart
+Checkout:
+  other: Checkout
+Payment:
+  other: Payment

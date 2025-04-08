@@ -14,10 +14,13 @@ function updateBuyButton(el) {
 
     // assumes el is part of a form where the submit button (input[type="submit"]) looks like 
     // <input type="submit" data-url="" data-sku="" data-title="" data-varianttype="" data-variantname="" data-price="" data-image="" value="Add to cart" />
+    const input = el.closest('form').querySelector('input[type=\'submit\']');
+    input.dataset.sku = el.options[el.selectedIndex].getAttribute('data-sku');
+    input.dataset.variantname = el.options[el.selectedIndex].getAttribute('data-variantname');
+    input.dataset.price = el.options[el.selectedIndex].getAttribute('data-price');
 
-    el.closest('form').querySelector('input[type=\'submit\']').setAttribute('data-sku', el.options[el.selectedIndex].getAttribute('data-sku'));
-    el.closest('form').querySelector('input[type=\'submit\']').setAttribute('data-variantname', el.options[el.selectedIndex].getAttribute('data-variantname'));
-    el.closest('form').querySelector('input[type=\'submit\']').setAttribute('data-price', el.options[el.selectedIndex].getAttribute('data-price'));
+    // <input type="submit" data-url="" data-sku="" data-title="" data-varianttype="" data-variantname="" data-price="" data-image="" value="Add to cart" />
+
 
     updateProductPrice(el.closest('form').querySelector('input[type=\'submit\']').getAttribute('data-price'));
 }
@@ -74,14 +77,15 @@ function addToCart(el) {
 
     // add to cart array when sku does not exist
     if (!found) {
+        const input = el.querySelector('input[type=\'submit\']')
         var newitem = {
-            url: el.querySelector('input[type=\'submit\']').getAttribute('data-url'),
-            sku: el.querySelector('input[type=\'submit\']').getAttribute('data-sku'),
-            title: el.querySelector('input[type=\'submit\']').getAttribute('data-title'),
-            varianttype: el.querySelector('input[type=\'submit\']').getAttribute('data-varianttype'),
-            variantname: el.querySelector('input[type=\'submit\']').getAttribute('data-variantname'),
-            price: el.querySelector('input[type=\'submit\']').getAttribute('data-price'),
-            image: el.querySelector('input[type=\'submit\']').getAttribute('data-image'),
+            url: input.dataset.url,
+            sku: input.dataset.sku,
+            title: input.dataset.title,
+            varianttype: input.dataset.varianttype,
+            variantname: input.dataset.variantname,
+            price: input.dataset.price,
+            image: input.dataset.image,
             quantity: 1
         };
         cart.push(newitem);
@@ -89,9 +93,11 @@ function addToCart(el) {
     // store cart array
     localStorage.setItem("cart", JSON.stringify(cart));
 
+
+    window.location.href = "/cart";
     updateCartCount();
 
-    return true;
+    return false;
 }
 
 function populateCart() {
@@ -106,7 +112,7 @@ function populateCart() {
             for (i = 0; i < cart.length; ++i) {
                 var newline = '<tr><td><a href="' + cart[i].url + '" class="productavatar" style="background-image: url(\'' + cart[i].image + '\');" title="' + cart[i].sku + '"></a></td><td>' + cart[i].title;
                 if (cart[i].varianttype) newline += '<br />' + capitalizeFirstLetter(cart[i].varianttype) + ': ' + cart[i].variantname;
-                newline += '<br />&euro;&nbsp;' + parseFloat(cart[i].price).toFixed(2) + '</td><td><a href="javascript:removeFromCart(\'' + cart[i].sku + '\');">verwijderen</a></td><td><input class="quantity" type="number" value ="' + cart[i].quantity + '" min="0" max="99" onchange="updateQuantity(\'' + cart[i].sku + '\',this.value)" /></td><td>&euro;&nbsp;' + (cart[i].quantity * cart[i].price).toFixed(2).replace('.', ',') + '</td></tr>';
+                newline += '<br />' + currencySymbol + '&nbsp;' + parseFloat(cart[i].price).toFixed(2) + '</td><td><a href="javascript:removeFromCart(\'' + cart[i].sku + '\');">verwijderen</a></td><td><input class="quantity" type="number" value ="' + cart[i].quantity + '" min="0" max="99" onchange="updateQuantity(\'' + cart[i].sku + '\',this.value)" /></td><td>' + currencySymbol + '&nbsp;' + (cart[i].quantity * cart[i].price).toFixed(2).replace('.', ',') + '</td></tr>';
                 document.getElementById('shoppingcart').querySelector('tbody').innerHTML += newline;
                 carttotal += parseFloat(cart[i].quantity * cart[i].price);
             }
@@ -165,7 +171,7 @@ function setAddons(el) {
                 title: inputs[i].getAttribute('data-title'),
                 price: inputs[i].getAttribute('data-price')
             }
-            addons.push(newitem);
+            if (newitem.price != 0) addons.push(newitem);
         }
         if (inputs[i].tagName == 'SELECT') {
             if (inputs[i].value && inputs[i].options[inputs[i].selectedIndex].getAttribute('data-price')) {
@@ -184,11 +190,11 @@ function setAddons(el) {
     // update checkoutcalculation div
     var carttotal = getCartTotal();
     var addontotal = getAddonTotal();
-    var newline = '<span>Winkelwagen: </span>€ ' + parseFloat(carttotal).toFixed(2).replace('.', ',');
+    var newline = `<span>Winkelwagen: </span>${currencySymbol}${parseFloat(carttotal).toFixed(2).replace('.', ',')}`;
     for (i = 0; i < addons.length; i++) {
-        newline += '\n<br /><span>' + addons[i].title + ': </span>€ ' + parseFloat(addons[i].price).toFixed(2).replace('.', ',');
+        newline += `\n<br /><span>${addons[i].title}: </span>${currencySymbol} ${parseFloat(addons[i].price).toFixed(2).replace('.', ',')}`;
     }
-    if (addons.length) newline += '\n<div class="sum"><span>Totaal: </span>€ ' + parseFloat(carttotal + addontotal).toFixed(2).replace('.', ',') + '</div>';
+    if (addons.length) newline += `\n<div class="sum"><span>Totaal: </span>${currencySymbol} ${parseFloat(carttotal + addontotal).toFixed(2).replace('.', ',')} </div>`;
     document.getElementById('checkoutcalculation').innerHTML = newline;
 
     // write this value to the hidden checkout input (for the form)
@@ -215,7 +221,7 @@ function initCheckoutForm(el) {
     newinput.setAttribute('type', "hidden");
     newinput.setAttribute('name', "order");
     for (i = 0; i < cart.length; ++i) {
-        var productdescription = cart[i].quantity + ' x ' + cart[i].title + ' (' + capitalizeFirstLetter(cart[i].varianttype) + ': ' + cart[i].variantname + ') = € ' + parseFloat(cart[i].quantity * cart[i].price).toFixed(2);
+        var productdescription = cart[i].quantity + ' x ' + cart[i].title + ' (' + capitalizeFirstLetter(cart[i].varianttype) + ': ' + cart[i].variantname + ') = ' + currencySymbol + ' ' + parseFloat(cart[i].quantity * cart[i].price).toFixed(2);
         if (i) newinput.setAttribute('value', newinput.getAttribute('value') + ' | ' + productdescription);
         else newinput.setAttribute('value', productdescription);
     }
