@@ -332,6 +332,7 @@ section.product form p { margin: .5rem 0 0;}
 #checkout_progress li {width: 110px; text-align: left; display: inline-block; border-top: 1px solid #dddddd; padding-top: 8px;}
 #checkout_progress li.past {border-color: var(--accent);}
 #checkout_progress li:last-child {border: 0; width: 55px;}
+#checkout_progress li a { text-decoration: none;  }
 #checkout_progress li > span > * {
     white-space: nowrap;
     display: inline-block;

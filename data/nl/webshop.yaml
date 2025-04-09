@@ -6,7 +6,7 @@ products_link: /webshop
 show_cart_icon: true
 send_order_to_mail: joost@vdschee.nl
 currency_code: EUR
-currency_symbol: $
+currency_symbol: €
 shipping:
   active: true
   options:

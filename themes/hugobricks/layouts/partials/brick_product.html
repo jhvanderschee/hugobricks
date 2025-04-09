@@ -6,6 +6,7 @@
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
+{{- $webshopData := (index site.Data site.Language.Lang).webshop -}}
 <section class="product">
     <div class="container twocols">
         <div class="image">
@@ -14,7 +15,7 @@
         <div class="text">
             <h1>{{ page.Title }}</h1>
             <h2>
-                {{ site.Data.settings.webshop.currency_symbol }}
+                {{ $webshopData.currency_symbol }}
                 <span class='productprice'>{{ (index page.Params.variants 0).price | lang.FormatNumber 2 }}</span></h2>
             <form method="post" onsubmit='return addToCart(this)'>
             <label for="variant" style="text-transform: capitalize;">{{ page.Params.variant_type }}</label><br>

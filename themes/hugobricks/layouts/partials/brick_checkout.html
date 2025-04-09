@@ -1,7 +1,7 @@
 {{- $inner := . -}}
 {{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/cart.md' file." -}}
-    {{- with site.GetPage "bricks/cart.md" -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/checkout.md' file." -}}
+    {{- with site.GetPage "bricks/checkout.md" -}}
          {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}

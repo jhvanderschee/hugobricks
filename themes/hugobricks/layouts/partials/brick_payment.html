@@ -6,6 +6,7 @@
     {{- end -}}
 {{- end -}}
 {{- $parts := split $inner "---" -}}
+{{- $webshopData := (index site.Data site.Language.Lang).webshop -}}
 <section class="payment">
     <div class="container small">
         {{- markdownify $inner -}}
@@ -18,6 +19,6 @@
     var carttotal = getCartTotal();
     var addontotal = getAddonTotal();
     var paymenttotal = parseFloat(carttotal + addontotal).toFixed(2);
-    const currencySymbol = '{{ site.Data.settings.webshop.currency_symbol }}';
+    const currencySymbol = '{{ $webshopData.currency_symbol }}';
     if(document.getElementById('paymenttotal')) document.getElementById('paymenttotal').innerHTML  = `${ currencySymbol }${paymenttotal}`;
 </script>

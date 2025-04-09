@@ -1,3 +1,4 @@
+{{- $webshopData := (index site.Data site.Language.Lang).webshop -}}
 <div id="smart-button-container" style="max-width: 350px;">
 
     <input type="hidden" name="descriptionInput" id="description">
@@ -6,7 +7,7 @@
 
     <script>
         window.onload = function() {
-            var amount = getCartTotal() + getAddonTotal();
+            var amount = (getCartTotal() + getAddonTotal()).toFixed(2); 
             var ordernumber = localStorage.getItem('ordernumber');
             
             document.getElementById('description').value = ordernumber;
@@ -17,7 +18,7 @@
     <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
 </div>
 
-<script src="https://www.paypal.com/sdk/js?client-id={{ .Get 0 }}&currency=EUR&components=buttons"></script>
+<script src="https://www.paypal.com/sdk/js?client-id={{ .Get 0 }}&currency={{ $webshopData.currency_code }}&components=buttons"></script>
 <script>
 
 function initPayPalButton() {
@@ -50,7 +51,7 @@ paypal.Buttons({
   onClick: function () {
     
     purchase_units[0].description = description.value;
-    purchase_units[0].amount.value = amount.value;
+    purchase_units[0].amount.value = amount.value
 
     if(invoiceid.value !== '') {
       purchase_units[0].invoice_id = invoiceid.value;
