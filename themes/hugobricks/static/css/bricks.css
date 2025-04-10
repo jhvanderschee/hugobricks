@@ -296,7 +296,7 @@ section.docs .container .menu ul.nestedmenu li.current > a {color: var(--accentD
 /* brick product
 /*------------------------*/
 section.product h1 { margin-bottom: 1.25rem;}
-section.product h1 + h2 {margin-top: 1rem;}
+section.product h1 + h2 {margin-top: 0.5rem;}
 section.product .text { max-width: 30rem;}
 section.product select { width: 100%; background: white; margin-bottom: 1rem;  }
 
