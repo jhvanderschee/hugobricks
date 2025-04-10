@@ -207,7 +207,7 @@ ul.prices li div.box h3 em {vertical-align: top; font-style: normal;}
 /*------------------------*/
 
 section.posts .container.small {margin-bottom: 4rem; text-align: center;}
-section.posts .grid {grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 1.55rem 2rem;}
+section.posts .grid {grid-gap: 1.55rem 2rem;}
 section.posts .grid .item .img {border-radius: 1rem; margin-bottom: 0.251rem; overflow: hidden;}
 section.posts .grid .item .img img {display: block;}
 section.posts .grid .item h3 {padding-top: 1rem;}
@@ -346,7 +346,7 @@ section.product form p { margin: .5rem 0 0;}
 }
 #checkout_progress li.past > span:before,
 #checkout_progress li.current > span:before {box-shadow: 0px 0px 0.1px 1px var(--accent); background: var(--accent);}
-
+#checkout_progress li.current a, #checkout_progress li.past a {color: var(--accentDarker);}
 
 @media only screen and (max-width: 800px)  {
     #shoppingcart > table tr > *:nth-child(3) {display: none;}

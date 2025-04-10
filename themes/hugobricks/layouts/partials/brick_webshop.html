@@ -11,7 +11,7 @@
         {{- markdownify $inner -}}
     </div>{{ end }}
     <div class="container" style="padding-top: 3rem;">
-	<ul class="contentitems grid products" data-pagesize="{{ page.Site.Data.settings.page_size }}">
+	<ul class="contentitems grid posts products" data-pagesize="{{ page.Site.Data.settings.page_size }}">
         {{ range $index,$product := $products }}
         <li class="item{{ range .Params.tags }} tag_{{ . }}{{ end }}">
             {{- if (resources.GetMatch .Params.image) -}}

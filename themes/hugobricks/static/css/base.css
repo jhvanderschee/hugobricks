@@ -246,11 +246,16 @@ ul.breadcrumbs li a {color: var(--accentDarker);}
 
 ul.grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); grid-gap: 1.55rem 1.5rem; margin: 0; padding-bottom: 1rem;}
 ul.grid li {list-style: none; position: relative;}
+ul.grid .item h3 {padding-top: 1rem;}
+ul.grid li.placeholder {display: block!important;}
+ul.grid .summary .button {position: relative; bottom: 0.8rem;}
 
 /*------------------------*/
 /* img
 /*------------------------*/
 
+.img {border-radius: 1rem; margin-bottom: 0.251rem; overflow: hidden;}
+.img img {display: block;}
 a[href] .img img {transform: scale(1); transition: transform 0.35s ease-in-out;}
 a[href]:hover .img img {transform: scale(1.075);}
 
