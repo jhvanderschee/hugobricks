@@ -308,7 +308,7 @@ section.product select { width: 100%; background: white; margin-bottom: 1rem;  }
 #shoppingcart form {max-width: 100%;}
 #shoppingcart > div {text-align: right; padding-top: 1rem; font-size: 1.7rem;}
 #shoppingcart > table {width: 100%;}
-#shoppingcart > table tr > * {text-align: center; line-height: 1.2; padding: 0.8125rem 0 0.9375rem;}
+#shoppingcart > table tr > * {text-align: center; line-height: 1.3; padding: 0.8125rem 0 0.9375rem;}
 #shoppingcart > table tr > *:first-child,
 #shoppingcart > table tr > *:nth-child(2) {text-align: left;}
 #shoppingcart > table tr > *:last-child {text-align: right;}
