@@ -25,7 +25,7 @@
                     {{ end }}
                 </select>
                 <script>window.onload = ()=> updateBuyButton(document.getElementById('variant'));</script>
-                {{- markdownify $inner -}}
+                {{ if strings.Contains (markdownify $inner) "<p>" }}{{- markdownify $inner -}}{{ else }}<p>{{- markdownify $inner -}}</p>{{ end }}
                 <p><input type="submit" value='Add to cart' class='button' data-url='{{ page.RelPermalink }}' data-title='{{ page.Title }}' data-varianttype='{{ page.Params.variant_type }}' data-image='{{ page.Params.image }}'>{{/*  Variant based input dataset assets loaded by Javascript  */}}</p>
             </form>
         </div>
