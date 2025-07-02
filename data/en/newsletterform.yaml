@@ -3,13 +3,13 @@ placeholders: false
 fields: 
 - name: name
   input_type: text
-  placeholder: Name
+  label: Name
   required: true
 - name: email
   input_type: email
-  placeholder: Email address
+  label: Email address
   required: true
 - name: submit
   input_type: submit
-  placeholder: Submit form
+  label: Submit form
   required: true
