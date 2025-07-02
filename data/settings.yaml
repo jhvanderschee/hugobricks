@@ -11,3 +11,4 @@ show_all_services: true
 preheader: 
   active: true
   is_light: true
+enable_search: false
