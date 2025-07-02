@@ -3,6 +3,10 @@ theme: hugobricks
 defaultContentLanguage: en
 assetDir: static
 
+disableKinds:
+  - taxonomy
+  - term
+
 markup:
   goldmark:
     renderer:
