@@ -6,7 +6,7 @@ title: Search
 
 {{< breadcrumbs >}}
 
-# Basic page 2
+# Search
 
 {{< search-google >}}
 
