@@ -1,1 +1,6 @@
-<form method="get" id="search-google" action="http://www.google.com/search" target="_blank"><input type="hidden" name="sitesearch" value="{{ .Site.BaseURL }}" /><input type="text" name="q" maxlength="255" value="" placeholder="Search via Google" class="form-control" /></form>
+<form method="get" id="search-google" action="http://www.google.com/search" target="_blank">
+    <div>
+        <input type="hidden" name="sitesearch" value="{{ .Site.BaseURL }}" />
+        <input type="text" name="q" maxlength="255" value="" placeholder="Search via Google" class="form-control" />
+    </div>
+</form>
