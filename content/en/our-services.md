@@ -23,7 +23,7 @@ Hugobricks covers all components you would like to have at hand. It is a power e
 
 Includes many bricks.
 
-[](/services/)
+[](/our-services/)
 
 ---
 
@@ -32,7 +32,7 @@ Includes many bricks.
 
 Lightning fast website.
 
-[](/services/)
+[](/our-services/)
 
 ---
 
@@ -41,7 +41,7 @@ Lightning fast website.
 
 Easily themeable.
 
-[](/services/)
+[](/our-services/)
 
 ---
 
@@ -50,7 +50,7 @@ Easily themeable.
 
 Works on every screen.
 
-[](/services/)
+[](/our-services/)
 
 ---
 
@@ -59,7 +59,7 @@ Works on every screen.
 
 Extremely fast.
 
-[](/services/)
+[](/our-services/)
 
 ---
 
@@ -68,7 +68,7 @@ Extremely fast.
 
 Start with the end result.
 
-[](/services/)
+[](/our-services/)
 
 {{< /brick_blocks >}}
 {{< brick_blocks >}}
@@ -83,7 +83,7 @@ Hugobricks covers all components you would like to have at hand. It is a power e
 
 Includes many bricks.
 
-[](/services/)
+[](/our-services/)
 
 ---
 
@@ -91,7 +91,7 @@ Includes many bricks.
 
 Lightning fast website.
 
-[](/services/)
+[](/our-services/)
 
 ---
 
@@ -99,7 +99,7 @@ Lightning fast website.
 
 Easily themeable.
 
-[](/services/)
+[](/our-services/)
 
 ---
 
@@ -107,7 +107,7 @@ Easily themeable.
 
 Works on every screen.
 
-[](/services/)
+[](/our-services/)
 
 ---
 
@@ -115,7 +115,7 @@ Works on every screen.
 
 Extremely fast.
 
-[](/services/)
+[](/our-services/)
 
 ---
 
@@ -123,7 +123,7 @@ Extremely fast.
 
 Start with the end result.
 
-[](/services/)
+[](/our-services/)
 
 {{< /brick_blocks >}}
 {{< brick_cta >}}{{< /brick_cta >}}
