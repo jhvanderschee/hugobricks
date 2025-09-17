@@ -1,5 +1,13 @@
 <ul class="buttons social">
+    {{- if page.Site.Data.settings.socials -}}
+    {{/* Hugo Centralized Social Media Configuration */}}
+    {{- range page.Site.Data.settings.socials -}}
+    <li><a {{ if eq .name "Mastodon" }}rel="me" {{ end }}href="{{ if .external }}{{ .url | safeURL }}{{ else }}{{ .url | relLangURL }}{{ end }}" class="button icon"><img src="{{ .icon }}" alt="{{ if .external }}{{ .name }}{{ else }}{{ i18n .name }}{{ end }}" /></a></li>
+    {{- end -}}
+    {{- else -}}
+    {{/* Fallback to Legacy Language-Specific Configuration */}}
     {{- range (index page.Site.Data page.Site.Language.Lang).footer.socials -}}
     <li><a href="{{ .link | safeURL }}" class="button icon"><img src="{{ .logo_image }}" alt="{{ .title }}" /></a></li>
+    {{- end -}}
     {{- end -}}
 </ul>
