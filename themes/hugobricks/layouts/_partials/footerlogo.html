@@ -4,7 +4,7 @@
 {{- $favicon := .Site.Data.settings.favicon_image -}}
 {{- if .Params.site_favicon_image -}}{{- $favicon = .Params.site_favicon_image -}}{{- end -}}
 
-{{- $title := (index .Site.Data .Language.Lang).general.title -}}
+{{- $title := .Site.Data.settings.title | default (index .Site.Data .Language.Lang).general.title -}}
 {{- if .Params.site_title -}}{{- $title = .Params.site_title -}}{{- end -}}
 
 {{- $subtitle := (index .Site.Data .Language.Lang).header.logo_subtitle -}}
@@ -12,7 +12,7 @@
 
 <a href="{{ relLangURL `/` }}#top" class="logo">
     {{ if $logo }}
-        <img src="{{ $logo }}" alt="{{ (index .Site.Data .Language.Lang).general.title }} logo" />
+        <img src="{{ $logo }}" alt="{{ .Site.Data.settings.title | default (index .Site.Data .Language.Lang).general.title }} logo" />
     {{ else }}
         <div class="{{ if $subtitle }}has_subtitle{{ end}}">
             <img src="{{ $favicon }}" alt="{{ $title }} logo" class="inline black_2_textDark" />
@@ -23,3 +23,8 @@
         </div>
     {{ end }}
 </a>
+{{- if i18n "footer_text" -}}
+<div style="font-size: 0.75rem; font-weight: normal;">{{ markdownify (i18n "footer_text") }}</div>
+{{- else if (index .Site.Data .Language.Lang).footer.footer_text -}}
+<div style="font-size: 0.75rem; font-weight: normal;">{{ markdownify (index .Site.Data .Language.Lang).footer.footer_text }}</div>
+{{- end -}}
