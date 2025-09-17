@@ -80,10 +80,10 @@
           <div class="navnav languages">
             <ul>
               <li class="haschildren">
-                <a href="/{{ .Site.Language.Lang }}/">{{ .Site.Language.Lang | upper }}</a>
+                <a href="/{{ .Site.Language.Lang }}/">{{ if .Site.Language.Params.flag }}{{ .Site.Language.Params.flag }} {{ end }}{{ .Site.Language.LanguageName | default (.Site.Language.Lang | upper) }}</a>
                 <ul>
 					{{ range .Site.Languages }}
-					{{ if ne .Lang $.Site.Language.Lang }}<li><a href="/{{ .Lang }}/">{{ .LanguageName }}</a></li>{{ end }}
+					{{ if ne .Lang $.Site.Language.Lang }}<li><a href="{{ if eq .Lang $.Site.Language.Lang }}/{{ else }}/{{ .Lang }}/{{ end }}">{{ if .Params.flag }}{{ .Params.flag }} {{ end }}{{ .LanguageName }}</a></li>{{ end }}
 					{{ end }}
                 </ul>
               </li>
@@ -145,7 +145,7 @@
 		      <div>{{ markdownify (index .Site.Data .Language.Lang).footer.footer_text }}</div>
           {{- if gt (len .Site.Languages) 1 -}}
           <div>
-            <select aria-label="Change language" onchange="if(this.value) document.location.href = '/'+this.value+'/';"><option>Change language</option>{{ range .Site.Languages }}<option value="{{ .Lang }}" {{ if eq page.Language.Lang .Lang }}disabled{{ end }}>{{ .LanguageName }}</option>{{ end }}</select></div>
+            <select aria-label="Change language" onchange="if(this.value) document.location.href = this.value;"><option>Change language</option>{{ range .Site.Languages }}<option value="{{ if eq .Lang $.Site.Language.Lang }}/{{ else }}/{{ .Lang }}/{{ end }}" {{ if eq $.Language.Lang .Lang }}disabled{{ end }}>{{ if .Params.flag }}{{ .Params.flag }} {{ end }}{{ .LanguageName }}</option>{{ end }}</select></div>
           </div>
           {{- end -}}
 		    </div>
