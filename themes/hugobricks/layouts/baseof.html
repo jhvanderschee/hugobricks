@@ -50,6 +50,23 @@
         <div class="nav">
           <nav class="navnav">
             <ul>
+              {{- if .Site.Menus.main -}}
+              {{/* Hugo Native Menu System */}}
+              {{ range .Site.Menus.main }}
+                {{ if not .Parent }}
+                <li class="{{ if eq .URL `/` }}{{ if eq $.RelPermalink `/` }}active{{ end }}{{ else }}{{ if (hasPrefix $.RelPermalink (.URL | relLangURL)) }}active{{ end }}{{ end }}{{ if .HasChildren }} haschildren{{ end }}"><a href="{{ .URL | relLangURL }}" onclick="navClick(event, this);">{{ .Name }}</a>
+                {{ if .HasChildren }}
+                <ul>
+                  {{ range .Children }}
+                      <li class="{{ if hasPrefix $.Page.RelPermalink (.URL | relLangURL) }}active{{ end }}"><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                  {{ end }}
+                </ul>
+                {{ end }}
+              </li>
+              {{ end }}
+              {{ end }}
+              {{- else -}}
+              {{/* Fallback to Legacy Data Files */}}
               {{ range (index .Site.Data .Language.Lang).header.menuitems }}
                 <li class="{{ if eq .link `/` }}{{ if eq $.RelPermalink `/` }}active{{ end }}{{ else }}{{ if (hasPrefix $.RelPermalink .link) }}active{{ end }}{{ end }}{{ if (index .items 0).title }} haschildren{{ end }}"><a href="{{ .link }}" onclick="navClick(event, this);">{{ .title }}</a>
                   {{ if (index .items 0).title }}
@@ -61,6 +78,7 @@
                   {{ end }}
                 </li>
               {{ end }}
+              {{- end -}}
             </ul>
           </nav>
         </div>
@@ -130,10 +148,18 @@
           </div>
           <div>
             <ul>
+              {{- if .Site.Menus.footer -}}
+              {{/* Hugo Native Footer Menu */}}
+              {{ range .Site.Menus.footer }}
+              <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+              {{ end }}
+              {{- else -}}
+              {{/* Fallback to Legacy Data Files */}}
               {{ range (index .Site.Data .Language.Lang).footer.menuitems }}
                 <li><a href="{{ .link }}">{{ .title }}</a></li>
               {{ end }}
-            </ul>  
+              {{- end -}}
+            </ul>
           </div>
           <div>
             {{ partial "socialbuttons.html" . }}
