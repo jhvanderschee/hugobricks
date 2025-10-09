@@ -14,6 +14,7 @@
     {{- if .Site.Data.settings.color_name -}}{{- $color = .Site.Data.settings.color_name -}}{{- end -}}
     <link href="/css/{{ $color }}.css?version={{ now }}" rel="stylesheet">
 
+    {{ partial "header.html" . }}
   </head>
   <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }} filename_{{ with .File }}{{ .BaseFileName }}{{ end }}">
     <script>      
