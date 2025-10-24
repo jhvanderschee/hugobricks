@@ -35,7 +35,7 @@ body:not(.transparent_header) .preheader.light .container a.icon img {filter: in
     to {transform: translateY(0);}
 }
 header {position: absolute; background: white; z-index: 9; width: 100%; color: var(--textMedium);}
-body.transparent_header header {padding-top: 2.35rem;}
+body.transparent_header header {margin-top: 2.35rem;}
 header > .container {padding-top: 1.5rem; padding-bottom: 1.5rem; position: relative;}
 header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white; position: fixed; top: 0; padding-top: 0!important;}
 body:not(.mobilemenu) header.sticky  {animation: slidedown 1s ease-in-out;}
