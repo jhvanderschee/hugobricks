@@ -12,7 +12,10 @@
     {{- $color := "style" -}}
     {{- if .Params.color_name -}}{{- $color = .Params.color_name -}}{{- end -}}
     {{- if .Site.Data.settings.color_name -}}{{- $color = .Site.Data.settings.color_name -}}{{- end -}}
-    <link href="{{ (resources.Get (print `/css/` $color `.css`)).RelPermalink }}" rel="stylesheet">
+    {{ with (resources.Get (printf `/css/%s.css` $color)) }}
+      {{ $fingerprinted := . | resources.Fingerprint "md5" }}
+      <link href="{{ $fingerprinted.RelPermalink }}" rel="stylesheet">
+    {{ end }}
 
   </head>
   <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }} filename_{{ with .File }}{{ .BaseFileName }}{{ end }}">
