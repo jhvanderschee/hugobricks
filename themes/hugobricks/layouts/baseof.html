@@ -17,6 +17,7 @@
       <link href="{{ $fingerprinted.RelPermalink }}" rel="stylesheet">
     {{ end }}
 
+    {{ partial "header.html" . }}
   </head>
   <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }} filename_{{ with .File }}{{ .BaseFileName }}{{ end }}">
     <script>      
