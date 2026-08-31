@@ -3,9 +3,11 @@ theme: hugobricks
 defaultContentLanguage: en
 assetDir: static
 
-disableKinds:
-  - taxonomy
-  - term
+# Keep taxonomy/term data available to templates (the blog tag filter reads
+# .Site.Taxonomies) but do not render /tags/ pages.
+outputs:
+  taxonomy: []
+  term: []
 
 markup:
   goldmark:
