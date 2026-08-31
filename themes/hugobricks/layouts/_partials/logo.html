@@ -1,18 +1,18 @@
-{{- $logo := (index hugo.Data .Language.Lang).header.logo_image -}}
+{{- $logo := (index site.Data .Language.Lang).header.logo_image -}}
 {{- if .Params.site_logo_image -}}{{- $logo = .Params.site_logo_image -}}{{- end -}}
 
-{{- $favicon := hugo.Data.settings.favicon_image -}}
+{{- $favicon := site.Data.settings.favicon_image -}}
 {{- if .Params.site_favicon_image -}}{{- $favicon = .Params.site_favicon_image -}}{{- end -}}
 
-{{- $title := (index hugo.Data .Language.Lang).general.title -}}
+{{- $title := (index site.Data .Language.Lang).general.title -}}
 {{- if .Params.site_title -}}{{- $title = .Params.site_title -}}{{- end -}}
 
-{{- $subtitle := (index hugo.Data .Language.Lang).header.logo_subtitle -}}
+{{- $subtitle := (index site.Data .Language.Lang).header.logo_subtitle -}}
 {{- if .Params.site_logo_subtitle -}}{{- $subtitle = .Params.site_logo_subtitle -}}{{- end -}}
 
 <a href="{{ relLangURL `/` }}#top" class="logo">
     {{ if $logo }}
-        <img src="{{ $logo }}" alt="{{ (index hugo.Data .Language.Lang).general.title }} logo" />
+        <img src="{{ $logo }}" alt="{{ (index site.Data .Language.Lang).general.title }} logo" />
     {{ else }}
         <div class="{{ if $subtitle }}has_subtitle{{ end}}">
             <img src="{{ $favicon }}" alt="{{ $title }} logo" class="inline black_2_textDark" />
