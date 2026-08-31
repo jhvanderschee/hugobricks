@@ -68,11 +68,13 @@
           </nav>
         </div>
         <div>
-		      {{- if (index .Site.Data .Language.Lang).webshop.show_cart_icon -}}
-          <a href="{{ (index .Site.Data .Language.Lang).webshop.cart_link }}">
-            <img src="/img/shopping-cart.svg" alt="Shopping cart icon" class="black_2_textDark" />
-            <span class="itemcount">0</span>
-          </a>
+		      {{- if .Site.Data.settings.enable_webshop -}}
+            {{- if (index .Site.Data .Language.Lang).webshop.show_cart_icon -}}
+            <a href="{{ (index .Site.Data .Language.Lang).webshop.cart_link }}">
+              <img src="/img/shopping-cart.svg" alt="Shopping cart icon" class="black_2_textDark" />
+              <span class="itemcount">0</span>
+            </a>
+            {{- end -}}
           {{- end -}}
           {{ if .Site.Data.settings.enable_search }}
           <a href="/search">
@@ -169,12 +171,14 @@
       <script type="text/javascript" src="/js/intersectionobserver.js"></script>
       <link rel="stylesheet" href="/css/intersectionobserver.css">
     {{ end }}
-    {{- if (index .Site.Data .Language.Lang).webshop.show_cart_icon -}}
-    <script type="text/javascript" src="/js/webshop.js"></script>
-    <script type="text/javascript">
-      updateCartCount();
-      populateCart();
-    </script>
+    {{- if .Site.Data.settings.enable_webshop -}}
+      {{- if (index .Site.Data .Language.Lang).webshop.show_cart_icon -}}
+      <script type="text/javascript" src="/js/webshop.js"></script>
+      <script type="text/javascript">
+        updateCartCount();
+        populateCart();
+      </script>
+      {{- end -}}
     {{- end -}}
 
       </div>
