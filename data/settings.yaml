@@ -12,3 +12,4 @@ preheader:
   active: true
   is_light: true
 enable_search: false
+enable_webshop: true

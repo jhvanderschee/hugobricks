@@ -3,9 +3,13 @@ theme: hugobricks
 defaultContentLanguage: en
 assetDir: static
 
-disableKinds:
-  - taxonomy
-  - term
+outputs:
+  home:
+    - html
+    - rss
+    - json
+  taxonomy: []
+  term: []
 
 markup:
   goldmark:
@@ -28,6 +32,8 @@ languages:
     contentDir: content/en
     weight: 1
     disabled: false
+    params:
+      flag:
     permalinks:
       page:
         posts: /blog/:slug
@@ -42,6 +48,8 @@ languages:
     contentDir: content/nl
     weight: 2
     disabled: false
+    params:
+      flag:
     permalinks:
       page:
         posts: /blog/:slug
