@@ -1,0 +1,10 @@
+loadJsonForCMSLookup({{- $pages := slice -}}
+{{- range .Site.AllPages -}}
+  {{- $path := `` -}}
+  {{- with .File -}}{{ $path = .Filename }}{{ end -}}
+  {{- $path = replace $path hugo.WorkingDir `` -}}
+  {{- if $path -}}
+    {{- $pages = $pages | append (dict "permalink" .Permalink "path" $path) -}}
+  {{- end -}}
+{{- end -}}
+{{- $pages | jsonify -}});

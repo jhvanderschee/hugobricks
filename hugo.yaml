@@ -55,3 +55,8 @@ languages:
         posts: /blog/
         services: /diensten/
         products: /winkel/
+outputs:
+  home:
+    - html
+    - rss
+    - json

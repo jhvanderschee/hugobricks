@@ -178,5 +178,13 @@
     {{- end -}}
 
       </div>
-  </body>
+  <script>
+    if (window.location !== window.parent.location) {
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://cms.usecue.com/js/monitoriframe.js';
+        document.body.append(script);
+    }
+</script>
+</body>
 </html>
