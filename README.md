@@ -1,4 +1,4 @@
-THERE IS A NEW VERSION OF HUGOBRICKS (V2) THAT IS BETTER: [check it out](https://github.com/jhvanderschee/hugobricks_v2)!
+# THERE IS A NEW VERSION OF HUGOBRICKS (V2) THAT IS BETTER: [check it out!](https://github.com/jhvanderschee/hugobricks_v2)
 
 [![](/hugobricks.jpg)](https://vimeo.com/862118474)
 
