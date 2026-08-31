@@ -2,7 +2,7 @@
   "name": "{{ .Site.Data.settings.favicon.site_webmanifest.name }}",
   "short_name": "{{ .Site.Data.settings.favicon.site_webmanifest.shortname }}",
   "icons": [
-{{ $favicon := resources.Get hugo.Data.settings.favicon.asset }}    {
+{{ $favicon := resources.Get site.Data.settings.favicon.asset }}    {
 {{ $resized192 := $favicon.Resize "192x192" | resources.Copy "web-app-manifest-192x192.png" }}      "src": "{{ $resized192.RelPermalink }}",
       "sizes": "192x192",
       "type": "image/png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "{{ hugo.Data.settings.favicon.site_webmanifest.theme_color }}",
-  "background_color": "{{ hugo.Data.settings.favicon.site_webmanifest.background_color }}",
+  "theme_color": "{{ site.Data.settings.favicon.site_webmanifest.theme_color }}",
+  "background_color": "{{ site.Data.settings.favicon.site_webmanifest.background_color }}",
   "display": "standalone"
 }
