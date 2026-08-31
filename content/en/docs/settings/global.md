@@ -9,6 +9,16 @@ The global settings are stored in the settings.yaml file you can find one level 
 
 A website is not complete without a nice favicon image (shown in the address bar of your browser). Use an SVG image for the best result.
 
+For more fine-grained control over favicons, you can also provide detailed tags (all are optional):
+- `favicon.asset`: A path to a rastered (non-svg) image in your `assets/` folder. This is used to generate multiple sizes of favicons.
+- `favicon.svg_image`: A path to an SVG image in your `static/` folder.
+- `favicon.ico_image`: A path to an ICO image in your `static/` folder.
+- `favicon.apple_mobile_web_app_title`: The title for an Apple Touch Icon
+- `favicon.site_webmanifest.name`: Name for Android
+- `favicon.site_webmanifest.shortname`: Short name for Android
+- `favicon.site_webmanifest.theme_color`: Theme color for Android like `"#000000"`.
+- `favicon.site_webmanifest.background_color`: Background colour for Android like `"#000000"`.
+
 ## Color name
 
 You can set the color of the theme by entering a color name here. Currently 'yellow' and 'red' are supported. Note that you can also override this on each page by using the variable `color_name` in the front matter. You can also [manually customize](/docs/customizations/colors/) the colors.

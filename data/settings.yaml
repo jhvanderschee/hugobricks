@@ -1,4 +1,14 @@
 favicon_image: /uploads/branding/brick_icon2_bw.svg
+favicon:
+  asset: /uploads/branding/brick_icon2_bw.png
+  svg_image: /uploads/branding/brick_icon2_bw.svg
+  ico_image: /uploads/branding/brick_icon2_bw.ico
+  apple_mobile_web_app_title: Hugobricks
+  site_webmanifest:
+    name: Hugobricks The Ultimate Hugo Theme
+    shortname: Hugobricks
+    theme_color: "#000000"
+    background_color: "#000000"
 color_name:
 sticky_header: true
 dark_header: false

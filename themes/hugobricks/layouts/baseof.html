@@ -7,7 +7,13 @@
     <meta name="description" content="{{ if .Params.seo.description }}{{ .Params.seo.description }}{{ else }}{{ .Summary }}{{ end }}">
 
     <link rel="canonical" href="{{ .Permalink }}" />
-    <link rel="shortcut icon" href="{{ site.Data.settings.favicon_image }}">
+    {{ $favicon := resources.Get hugo.Data.settings.favicon.asset }}
+    {{ if hugo.Data.settings.favicon.asset }}{{ $resized := $favicon.Resize "96x96" | resources.Copy "favicon-96x96.png" }}<link rel="icon" type="image/png" href="{{ $resized.RelPermalink }}" sizes="96x96" />{{ end }}
+    {{ if hugo.Data.settings.favicon.svg_image }}<link rel="icon" type="image/svg+xml" href="{{ hugo.Data.settings.favicon.svg_image }}" />{{ end }}
+    {{ if hugo.Data.settings.favicon.ico_image }}<link rel="shortcut icon" href="{{ hugo.Data.settings.favicon.ico_image }}" />{{ else }}<link rel="shortcut icon" href="{{ hugo.Data.settings.favicon_image }}">{{ end }}
+    {{ if hugo.Data.settings.favicon.asset }}{{ $resized := $favicon.Resize "180x180" | resources.Copy "apple-touch-icon.png" }}<link rel="apple-touch-icon" sizes="180x180" href="{{ $resized.RelPermalink }}" />{{ end }}
+    {{ if hugo.Data.settings.favicon.apple_mobile_web_app_title }}<meta name="apple-mobile-web-app-title" content="{{ hugo.Data.settings.favicon.apple_mobile_web_app_title }}" />{{ end }}
+    {{ if hugo.Data.settings.favicon.site_webmanifest }}{{ $bc := resources.Get "site.webmanifest" | resources.ExecuteAsTemplate "site.webmanifest" . }}<link rel="manifest" href="{{ $bc.RelPermalink }}" />{{ end }}
     
     {{- $color := "style" -}}
     {{- if .Params.color_name -}}{{- $color = .Params.color_name -}}{{- end -}}
