@@ -6,7 +6,7 @@
     {{- end -}}
 {{- end -}}
 {{- $parts := split $inner "---" -}}
-{{- $webshopData := (index site.Data site.Language.Lang).webshop -}}
+{{- $webshopData := (index hugo.Data site.Language.Lang).webshop -}}
 <section class="checkout">
     <div class="container medium">
         <div id="checkout">

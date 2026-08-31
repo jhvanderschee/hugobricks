@@ -5,7 +5,7 @@
          {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
-{{- $webshopData := (index site.Data site.Language.Lang).webshop -}}
+{{- $webshopData := (index hugo.Data site.Language.Lang).webshop -}}
 <section class="cart">
     <div class="container medium">
         {{- markdownify $inner -}}

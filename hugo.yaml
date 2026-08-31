@@ -3,9 +3,11 @@ theme: hugobricks
 defaultContentLanguage: en
 assetDir: static
 
-# Keep taxonomy/term data available to templates (the blog tag filter reads
-# .Site.Taxonomies) but do not render /tags/ pages.
 outputs:
+  home:
+    - html
+    - rss
+    - json
   taxonomy: []
   term: []
 
@@ -57,8 +59,3 @@ languages:
         posts: /blog/
         services: /diensten/
         products: /winkel/
-outputs:
-  home:
-    - html
-    - rss
-    - json

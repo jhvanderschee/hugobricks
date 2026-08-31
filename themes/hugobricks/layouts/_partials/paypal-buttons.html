@@ -1,4 +1,4 @@
-{{- $webshopData := (index site.Data site.Language.Lang).webshop -}}
+{{- $webshopData := (index hugo.Data site.Language.Lang).webshop -}}
 <div id="smart-button-container" style="max-width: 350px;">
 
     <input type="hidden" name="descriptionInput" id="description">

@@ -6,7 +6,7 @@
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
-{{- $webshopData := (index site.Data site.Language.Lang).webshop -}}
+{{- $webshopData := (index hugo.Data site.Language.Lang).webshop -}}
 <section class="product">
     <div class="container twocols">
         <div class="image">
